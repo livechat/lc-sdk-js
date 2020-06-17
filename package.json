@@ -1,0 +1,22 @@
+{
+  "name": "lc-sdk-js",
+  "version": "1.0.0",
+  "description": "LiveChat SDK in JS",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "LiveChat",
+    "SDK"
+  ],
+  "author": "Krystian Ogierman <k.ogierman@livechatinc.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
