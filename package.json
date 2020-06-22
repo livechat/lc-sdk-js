@@ -1,6 +1,6 @@
 {
   "name": "lc-sdk-js",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "LiveChat SDK in JS",
   "main": "lib/index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "SDK"
   ],
   "author": "Krystian Ogierman <k.ogierman@livechatinc.com>",
-  "license": "MIT",
+  "license": "Apache",
   "devDependencies": {
     "typescript": "^3.9.5"
   },
