@@ -135,6 +135,5 @@ export interface GetURLInfoResponse {
 }
 
 export interface UploadFileResponse {
-	url: string;
-  }
-  
+  url: string;
+}
