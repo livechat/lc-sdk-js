@@ -109,13 +109,18 @@ export class CustomerAPI extends WebAPI {
 
   /**
    * Uploads a file to the server as a temporary file. It returns a URL that expires after 24 hours unless the URL is used in send_event.
-   * @param filePath - path of file to upload
+   * @param file - path of file to upload or Buffer with content
+   * @param filename - filename for uploaded file
    */
-  async uploadFile(filePath: string): Promise<UploadFileResponse> {
-    const file = await fs.readFile(filePath, "binary");
+  async uploadFile(
+    file: string | Buffer,
+    filename: string
+  ): Promise<UploadFileResponse> {
+    let content = file;
+    if (typeof file === "string") content = await fs.readFile(file, "binary");
     const url = `${this.APIURL}/${this.version}/${this.type}/action/upload_file`;
     const formData = new FormData();
-    formData.append("file", file);
+    formData.append("file", content, filename);
 
     return axios.post(url, formData.getBuffer(), formData.getHeaders());
   }
