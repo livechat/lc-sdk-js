@@ -18,7 +18,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "form-data": "^3.0.0"
+    "axios": "0.19.2",
+    "form-data": "3.0.0"
   }
 }
