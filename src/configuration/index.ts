@@ -21,7 +21,7 @@ import { Properties } from "../objects/index";
 
 export class ConfigurationAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, "configuration", tokenGetter);
+    super(clientID, tokenGetter, "configuration");
   }
 
   async createAgent(
@@ -30,6 +30,8 @@ export class ConfigurationAPI extends WebAPI {
   ): Promise<CreateAgentResponse> {
     return this.handleAction("create_agent", { id, ...fields });
   }
+
+  async getAgent(){}
 
   async listAgents(group_ids?: number[], fields?: string[]): Promise<Agent[]> {
     return this.handleAction("list_agents", { fields, filters: { group_ids } });
@@ -120,7 +122,7 @@ export class ConfigurationAPI extends WebAPI {
   async registerProperties(
     properties: PropertiesConfig
   ): Promise<EmptyResponse> {
-    return this.handleAction("register_properties", { ...properties });
+    return this.handleAction("register_properties", properties);
   }
 
   async listRegisteredProperties(all?: boolean): Promise<PropertiesConfig> {
@@ -182,7 +184,7 @@ export class ConfigurationAPI extends WebAPI {
   }
 
   async registerWebhook(webhook: Webhook): Promise<RegisterWebhookResponse> {
-    return this.handleAction("register_webhook", { ...webhook });
+    return this.handleAction("register_webhook", webhook);
   }
 
   async listRegisteredWebhooks(): Promise<RegisteredWebhook[]> {

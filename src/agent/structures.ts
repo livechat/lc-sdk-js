@@ -241,3 +241,7 @@ export interface AgentForTransfer {
   agent_id: string;
   total_active_chats: number;
 }
+
+export interface UploadFileResponse {
+  url: string;
+}

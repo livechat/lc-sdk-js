@@ -133,3 +133,8 @@ export interface GetURLInfoResponse {
   image_height: number;
   url: string;
 }
+
+export interface UploadFileResponse {
+	url: string;
+  }
+  

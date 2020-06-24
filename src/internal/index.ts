@@ -12,7 +12,7 @@ export class WebAPI {
   type: apiType;
   tokenGetter: TokenGetter;
 
-  constructor(clientID: string, type: apiType, tokenGetter: TokenGetter) {
+  constructor(clientID: string, tokenGetter: TokenGetter, type: apiType) {
     this.APIURL = ApiURL;
     this.version = ApiVersion;
     this.clientID = clientID;
@@ -21,13 +21,12 @@ export class WebAPI {
   }
 
   async handleAction(name: string, req: any): Promise<any> {
-    let response;
     try {
-      response = await this.call(name, req || {});
+	  const response = await this.call(name, req || {});
+	  return response.data;
     } catch (e) {
       return Promise.reject(e.response.data.error as APIError);
     }
-    return response.data;
   }
 
   private async call(action: string, payload: any): Promise<any> {

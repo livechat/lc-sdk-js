@@ -23,12 +23,16 @@ import type {
   CreateCustomerResponse,
   MulticastRecipients,
   AgentForTransfer,
+  UploadFileResponse,
 } from "./structures";
 import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
+import { promises as fs } from "fs";
+import axios from "axios";
+import FormData from "form-data";
 
 export class AgentAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, "agent", tokenGetter);
+    super(clientID, tokenGetter, "agent");
   }
 
   /**
@@ -65,11 +69,9 @@ export class AgentAPI extends WebAPI {
     return this.handleAction("start_chat", opts || {});
   }
 
-  async activateChat(id: string): Promise<ActivateChatResponse>;
   async activateChat(
-    req: ActivateChatParameters
-  ): Promise<ActivateChatResponse>;
-  async activateChat(param: any): Promise<ActivateChatResponse> {
+    param: string | ActivateChatParameters
+  ): Promise<ActivateChatResponse> {
     if (typeof param === "string")
       return this.handleAction("activate_chat", { chat: { id: param } });
     return this.handleAction("activate_chat", param || {});
@@ -153,12 +155,19 @@ export class AgentAPI extends WebAPI {
     });
   }
 
-  async uploadFile() {}
+  async uploadFile(filePath: string): Promise<UploadFileResponse> {
+    const file = await fs.readFile(filePath, "binary");
+    const url = `${this.APIURL}/${this.version}/${this.type}/action/upload_file`;
+    const formData = new FormData();
+    formData.append("file", file);
+
+    return axios.post(url, formData.getBuffer(), formData.getHeaders());
+  }
 
   async sendRichMessagePostback(
     opts: SendRichMessagePostbackParameters
   ): Promise<EmptyResponse> {
-    return this.handleAction("send_rich_message_postback", { ...opts });
+    return this.handleAction("send_rich_message_postback", opts);
   }
 
   async updateChatProperties(

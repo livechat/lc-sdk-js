@@ -18,12 +18,16 @@ import type {
   GetFormResponse,
   GetPredictedAgentResponse,
   GetURLInfoResponse,
+  UploadFileResponse,
 } from "./structures";
 import { Properties } from "../objects";
+import { promises as fs } from "fs";
+import axios from "axios";
+import FormData from "form-data";
 
 export class CustomerAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, "customer", tokenGetter);
+    super(clientID, tokenGetter, "customer");
   }
 
   async listChats(opts?: ListChatParameters): Promise<ListChatsResponse> {
@@ -45,11 +49,9 @@ export class CustomerAPI extends WebAPI {
     return this.handleAction("start_chat", opts || {});
   }
 
-  async activateChat(id: string): Promise<ActivateChatResponse>;
   async activateChat(
-    req: ActivateChatParameters
-  ): Promise<ActivateChatResponse>;
-  async activateChat(param: any): Promise<ActivateChatResponse> {
+    param: string | ActivateChatParameters
+  ): Promise<ActivateChatResponse> {
     if (typeof param === "string")
       return this.handleAction("activate_chat", { chat: { id: param } });
     return this.handleAction("activate_chat", param || {});
@@ -71,7 +73,14 @@ export class CustomerAPI extends WebAPI {
     });
   }
 
-  async uploadFile() {}
+  async uploadFile(filePath: string): Promise<UploadFileResponse> {
+    const file = await fs.readFile(filePath, "binary");
+    const url = `${this.APIURL}/${this.version}/${this.type}/action/upload_file`;
+    const formData = new FormData();
+    formData.append("file", file);
+
+    return axios.post(url, formData.getBuffer(), formData.getHeaders());
+  }
 
   async sendRichMessagePostback(
     opts: SendRichMessagePostbackParameters
@@ -190,12 +199,10 @@ export class CustomerAPI extends WebAPI {
     return this.handleAction("get_customer", {});
   }
 
-  async listGroupStatuses(all: boolean): Promise<ListGroupStatusesResponse>;
   async listGroupStatuses(
-    group_ids: number[]
-  ): Promise<ListGroupStatusesResponse>;
-  async listGroupStatuses(param: any): Promise<ListGroupStatusesResponse> {
-    let req =
+    param: boolean | number[]
+  ): Promise<ListGroupStatusesResponse> {
+    const req =
       typeof param === "boolean" ? { all: param } : { group_ids: param };
 
     return this.handleAction("list_group_statuses", req);
