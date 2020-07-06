@@ -12,7 +12,7 @@
     "SDK"
   ],
   "author": "Krystian Ogierman <k.ogierman@livechatinc.com>",
-  "license": "Apache",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@types/node": "^14.0.13",
     "typescript": "^3.9.5"
