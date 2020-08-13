@@ -8,7 +8,9 @@ import {
   Customer,
   InitialChat,
   ChatsSummary,
+  MyProfile,
 } from "../objects";
+import { ExecFileOptionsWithStringEncoding } from "child_process";
 
 export interface EmptyResponse {}
 
@@ -244,4 +246,44 @@ export interface AgentForTransfer {
 
 export interface UploadFileResponse {
   url: string;
+}
+
+export interface LoginRequest {
+  token: string;
+  timezone?: string;
+  reconnect?: boolean;
+  push_notifications?: PushNotifications;
+  application?: Application;
+  away?: boolean;
+}
+
+export interface PushNotifications {
+  platform: string;
+  firebase_token?: string;
+}
+
+export interface Application {
+  name?: string;
+  version?: string;
+}
+
+export interface LoginResponse {
+  license: License;
+  my_profile: MyProfile;
+  chats_summary: ChatsSummary;
+}
+
+export interface License {
+  id: string;
+  plan: string;
+  expiration_timestamp: number;
+  creation_timestamp: number;
+  in_trial: boolean;
+  website_last_activity?: string;
+}
+
+export interface ChangePushNotificationsRequest {
+	firebase_token: string;
+	platform: string;
+	enabled: boolean;
 }

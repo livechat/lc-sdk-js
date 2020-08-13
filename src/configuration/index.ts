@@ -19,7 +19,7 @@ import {
 } from "./structures";
 import { Properties } from "../objects/index";
 
-export class ConfigurationAPI extends WebAPI {
+export default class ConfigurationAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter) {
     super(clientID, tokenGetter, "configuration");
   }

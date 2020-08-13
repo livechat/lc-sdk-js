@@ -7,6 +7,7 @@ import {
   Access,
   InitialChat,
   GroupStatus,
+  Customer,
 } from "../objects";
 
 export interface EmptyResponse {}
@@ -136,4 +137,41 @@ export interface GetURLInfoResponse {
 
 export interface UploadFileResponse {
   url: string;
+}
+
+export interface LoginRequest {
+  token: string;
+  customer?: LoginCustomer;
+  customer_page?: CustomerPage;
+  application?: Application;
+  is_mobile?: boolean;
+  customer_side_storage?: object;
+  group_id?: number;
+  referrer?: string;
+}
+
+export interface LoginCustomer {
+  avatar?: string;
+  email?: string;
+  name?: string;
+  session_fields?: object[];
+}
+
+export interface CustomerPage {
+  url?: string;
+  title?: string;
+}
+
+export interface Application {
+  name?: string;
+  version?: string;
+  channel_type?: string;
+}
+
+export interface LoginResponse {
+  customer: Customer;
+  has_active_thread: boolean;
+  chats?: object[];
+  greeting?: object;
+  __priv_dynamic_config: object;
 }
