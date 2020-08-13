@@ -1,6 +1,5 @@
 import axios from "axios";
 import ws from "ws";
-import * as _ from "lodash";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
