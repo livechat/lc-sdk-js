@@ -24,6 +24,7 @@ import type {
   LoginResponse,
   ChangePushNotificationsRequest,
   LoginRequest,
+  Pushes,
 } from "./structures";
 import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
 import { RTMAPI } from "../internal/index";
@@ -32,9 +33,21 @@ export default class RTM extends RTMAPI {
   constructor() {
     super("agent");
   }
+
+  /**
+   * Allows to subscribe a handler for a given push. Returns function to unsubscribe.
+   * Note: multiple subscriptions for the same push are not allowed in sigle websocket connection.
+   * @param push - push name to subscribe to
+   * @param handler - function receiving push payload
+   */
+  on(push: Pushes, handler: (payload: any) => void): () => void {
+	  this.subscribePush(push, handler);
+	  return this.unsubscribePush.bind(this, push);
+  }
+
   /**
    * It returns the initial state of the current Agent.
-   * @param loginData - OAtuh token from Agent's account or full object with login options
+   * @param loginData - OAuth token from Agent's account or full object with login options
    */
   async login(loginData: string | LoginRequest): Promise<LoginResponse> {
     if (typeof loginData === "string") {
@@ -178,18 +191,6 @@ export default class RTM extends RTMAPI {
     access: ChatAccess
   ): Promise<EmptyResponse> {
     return this.send("revoke_chat_access", { chat_id, access });
-  }
-
-  /**
-   * Grants access to a new chat overwriting the existing ones.
-   * @param chat_id - chat ID to grant access to
-   * @param access - access to set
-   */
-  async setChatAccess(
-    chat_id: string,
-    access: ChatAccess
-  ): Promise<EmptyResponse> {
-    return this.send("set_chat_access", { chat_id, access });
   }
 
   /**
@@ -515,267 +516,5 @@ export default class RTM extends RTMAPI {
    */
   async listAgentsForTransfer(chat_id: string): Promise<AgentForTransfer[]> {
     return this.send("list_agents_for_transfer", { chat_id });
-  }
-
-  /**
-   * Informs about a chat coming with a new thread. The push payload contains the whole chat data structure.
-   * If the chat was started with some initial events, the thread object contains them.
-   * @param cb - callback
-   */
-  subscribeIncomingChat(cb: Function) {
-    this.subscribePush("incoming_chat", cb);
-  }
-
-  /**
-   * Informs that a chat was deactivated by closing the currently open thread.
-   * @param cb - callback
-   */
-  subscribeChatDeactivated(cb: Function) {
-    this.subscribePush("chat_deactivated", cb);
-  }
-
-  /**
-   * Informs that new, single access to a chat was granted. The existing access isn't overwritten.
-   * @param cb - callback
-   */
-  subscribeChatAccessGranted(cb: Function) {
-    this.subscribePush("chat_access_granted", cb);
-  }
-
-  /**
-   * Informs that access to a certain chat was revoked.
-   * @param cb - callback
-   */
-  subscribeChatAccessRevoked(cb: Function) {
-    this.subscribePush("chat_access_revoked", cb);
-  }
-
-  /**
-   * Informs that a chat was transferred to a different group or to an Agent.
-   * @param cb - callback
-   */
-  subscribeChatTransferred(cb: Function) {
-    this.subscribePush("chat_transferred", cb);
-  }
-
-  /**
-   * Informs that a user (Customer or Agent) was added to a chat.
-   * This push can be emitted with user.present set to false when a user writes to a chat without joining it
-   * You can achieve that via the Send Event method.
-   * @param cb - callback
-   */
-  subscribeUserAddedToChat(cb: Function) {
-    this.subscribePush("user_added_to_chat", cb);
-  }
-
-  /**
-   * Informs that a user (Customer or Agent) was removed from a chat.
-   * @param cb - callback
-   */
-  subscribeUserRemovedFromChat(cb: Function) {
-    this.subscribePush("user_removed_from_chat", cb);
-  }
-
-  /**
-   * Informs about an incoming event sent to a chat.
-   * @param cb - callback
-   */
-  subscribeIncomingEvent(cb: Function) {
-    this.subscribePush("incoming_event", cb);
-  }
-
-  /**
-   * Informs that an event was updated.
-   * @param cb - callback
-   */
-  subscribeEventUpdated(cb: Function) {
-    this.subscribePush("event_updated", cb);
-  }
-
-  /**
-   * Informs about an incoming rich message postback. The push payload contains the info on the postback itself,
-   * as well as the chat it was sent in.
-   * @param cb - callback
-   */
-  subscribeIncomingRichMessagePostback(cb: Function) {
-    this.subscribePush("incoming_rich_message_postback", cb);
-  }
-
-  /**
-   * Informs about those chat properties that were updated.
-   * @param cb - callback
-   */
-  subscribeChatPropertiesUpdated(cb: Function) {
-    this.subscribePush("chat_properties_updated", cb);
-  }
-
-  /**
-   * Informs about those chat properties that were deleted.
-   * @param cb - callback
-   */
-  subscribeChatPropertiesDeleted(cb: Function) {
-    this.subscribePush("chat_properties_deleted", cb);
-  }
-
-  /**
-   * Informs about those thread properties that were updated.
-   * @param cb - callback
-   */
-  subscribeThreadPropertiesUpdated(cb: Function) {
-    this.subscribePush("thread_properties_updated", cb);
-  }
-
-  /**
-   * Informs about those thread properties that were deleted.
-   * @param cb - callback
-   */
-  subscribeThreadPropertiesDeleted(cb: Function) {
-    this.subscribePush("thread_properties_deleted", cb);
-  }
-
-  /**
-   * Informs about those event properties that were updated.
-   * @param cb - callback
-   */
-  subscribeEventPropertiesUpdated(cb: Function) {
-    this.subscribePush("event_properties_updated", cb);
-  }
-
-  /**
-   * Informs about those event properties that were deleted.
-   * @param cb - callback
-   */
-  subscribeEventPropertiesDeleted(cb: Function) {
-    this.subscribePush("event_properties_deleted", cb);
-  }
-
-  /**
-   * Informs that a chat thread was tagged.
-   * @param cb - callback
-   */
-  subscribeThreadTagged(cb: Function) {
-    this.subscribePush("thread_tagged", cb);
-  }
-
-  /**
-   * Informs that a chat thread was untagged.
-   * @param cb - callback
-   */
-  subscribeThreadUntagged(cb: Function) {
-    this.subscribePush("thread_untagged", cb);
-  }
-
-  /**
-   * Informs that a Customer entered the tracked website.
-   * @param cb - callback
-   */
-  subscribeCustomerVisitStarted(cb: Function) {
-    this.subscribePush("customer_visit_started", cb);
-  }
-
-  /**
-   * Informs that a new Customer registered.
-   * @param cb - callback
-   */
-  subscribeCustomerCreated(cb: Function) {
-    this.subscribePush("customer_created", cb);
-  }
-
-  /**
-   * Informs that Customer's data was updated.
-   * @param cb - callback
-   */
-  subscribeCustomerUpdated(cb: Function) {
-    this.subscribePush("customer_updated", cb);
-  }
-
-  /**
-   * Informs that a Customer moved to another page of the website.
-   * @param cb - callback
-   */
-  subscribeCustomerPageUpdated(cb: Function) {
-    this.subscribePush("customer_page_updated", cb);
-  }
-
-  /**
-   * Informs that a Customer was banned for a specified number of days.
-   * @param cb - callback
-   */
-  subscribeCustomerBanned(cb: Function) {
-    this.subscribePush("customer_banned", cb);
-  }
-
-  /**
-   * Informs that a Customer left the tracked website.
-   * @param cb - callback
-   */
-  subscribeCustomerVisitEnded(cb: Function) {
-    this.subscribePush("customer_visit_ended", cb);
-  }
-
-  /**
-   * Informs that an Agent's or Bot Agent's status was changed.
-   * @param cb - callback
-   */
-  subscribeRoutingStatusSet(cb: Function) {
-    this.subscribePush("routing_status_set", cb);
-  }
-
-  /**
-   * Informs that an Agent was disconnected. The payload contains the reason of Customer's disconnection.
-   * @param cb - callback
-   */
-  subscribeAgentDisconnected(cb: Function) {
-    this.subscribePush("agent_disconnected", cb);
-  }
-
-/**
- * Informs that one of the chat users is currently typing a message. The message hasn't been sent yet.
- * The push payload contains the typing indicator object.
- * @param cb - callback
- */
-  subscribeIncomingTypingIndicator(cb: Function) {
-    this.subscribePush("incoming_typing_indicator", cb);
-  }
-
-  /**
-   * Informs about the message a Customer is currently typing. The push payload contains the sneak peek object.
-   * @param cb - callback
-   */
-  subscribeIncomingSneakPeek(cb: Function) {
-    this.subscribePush("incoming_sneak_peek", cb);
-  }
-
-  /**
-   * Informs that a user has seen events up to a specific time.
-   * @param cb - callback
-   */
-  subscribeEventsMarkedAsSeen(cb: Function) {
-    this.subscribePush("events_marked_as_seen", cb);
-  }
-
-  /**
-   * Informs about messages sent via the multicast method or by the system.
-   * @param cb - callback
-   */
-  subscribeIncomingMulticast(cb: Function) {
-    this.subscribePush("incoming_multicast", cb);
-  }
-
-  /**
-   * Informs that a chat has been unfollowed. Useful in multiple connection scenarios,
-   * where one app/integration needs to know that another one unfollowed the chat.
-   * @param cb - callback
-   */
-  subscribeChatUnfollowed(cb: Function) {
-    this.subscribePush("chat_unfollowed", cb);
-  }
-
-  /**
-   * New positions and wait times for queued chats.
-   * @param cb - callback
-   */
-  subscribeQueuePostitionsUpdated(cb: Function) {
-    this.subscribePush("queue_postitions_updated", cb);
   }
 }

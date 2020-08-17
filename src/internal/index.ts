@@ -22,7 +22,7 @@ export class WebAPI {
     this.tokenGetter = tokenGetter;
   }
 
-  async handleAction(name: string, req: any): Promise<any> {
+  async send(name: string, req: any): Promise<any> {
     try {
       const response = await this.call(name, req || {});
       return response.data;
@@ -79,28 +79,33 @@ export class RTMAPI {
     }
   }
 
-  connect(): Promise<any> {
+  connect(): Promise<void> {
     return new Promise((resolve, reject) => {
       const wsURL =
-        `wss://${this.APIURL}/${this.version}/${this.type}/rtm/ws` + (this.license ? `?license_id=${this.license}` : "");
-      this.socket = new ws(wsURL, {origin: "https://secure.livechatinc.com"});
+        `wss://${this.APIURL}/${this.version}/${this.type}/rtm/ws` +
+        (this.license ? `?license_id=${this.license}` : "");
+
+      this.socket = new ws(wsURL);
       this.socket.on("open", () => {
         this.heartbeatInterval = setInterval(() => this.socket?.ping(), 10000);
         resolve();
       });
 
       this.socket.on("message", (msg) => {
-        const { request_id, action, success, type, payload } = JSON.parse(
-          msg.toString()
-        );
-        console.log(this.type, msg.toString());
-        if (type === "response") {
-          console.log("Response", request_id);
-          this.handleResponse(request_id, success, payload);
+        let parsedMessage;
+        try {
+          parsedMessage = JSON.parse(msg.toString());
+        } catch (e) {
+          return
         }
-
-        if (type === "push") {
-          this.handlePush(action, payload);
+        const { request_id, action, success, type, payload } = parsedMessage;
+        switch (type) {
+          case "response": {
+            return this.handleResponse(request_id, success, payload);
+          }
+          case "push": {
+            return this.handlePush(action, payload);
+          }
         }
       });
 
@@ -137,7 +142,6 @@ export class RTMAPI {
 
     return new Promise((resolve, reject) => {
       this.socket?.send(JSON.stringify(req), (err) => {
-        console.log("send req", action, request_id);
         this.requestsQueue[request_id] = { resolve, reject };
       });
     });

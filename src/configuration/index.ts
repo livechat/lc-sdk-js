@@ -33,7 +33,7 @@ export default class ConfigurationAPI extends WebAPI {
     id: string,
     fields: AgentFields
   ): Promise<CreateAgentResponse> {
-    return this.handleAction("create_agent", { id, ...fields });
+    return this.send("create_agent", { id, ...fields });
   }
 
   /**
@@ -42,7 +42,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additional fields to include
    */
   async getAgent(id: string, fields?: string[]): Promise<Agent> {
-    return this.handleAction("get_agent", { id, fields });
+    return this.send("get_agent", { id, fields });
   }
 
   /**
@@ -51,7 +51,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additional fields to include
    */
   async listAgents(group_ids?: number[], fields?: string[]): Promise<Agent[]> {
-    return this.handleAction("list_agents", { fields, filters: { group_ids } });
+    return this.send("list_agents", { fields, filters: { group_ids } });
   }
 
   /**
@@ -60,7 +60,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - properties to update
    */
   async updateAgent(id: string, fields: AgentFields): Promise<EmptyResponse> {
-    return this.handleAction("update_agent", { id, ...fields });
+    return this.send("update_agent", { id, ...fields });
   }
 
   /**
@@ -68,7 +68,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of agent to delete
    */
   async deleteAgent(id: string): Promise<EmptyResponse> {
-    return this.handleAction("delete_agent", { id });
+    return this.send("delete_agent", { id });
   }
 
   /**
@@ -76,7 +76,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of agent to suspend
    */
   async suspendAgent(id: string): Promise<EmptyResponse> {
-    return this.handleAction("suspend_agent", { id });
+    return this.send("suspend_agent", { id });
   }
 
   /**
@@ -84,14 +84,14 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of agent to unsuspend
    */
   async unsuspendAgent(id: string): Promise<EmptyResponse> {
-    return this.handleAction("unsuspend_agent", { id });
+    return this.send("unsuspend_agent", { id });
   }
 
   /**
    * A suspended Agent can send emails to license owners and vice owners with an unsuspension request.
    */
   async requestAgentUnsuspension(): Promise<EmptyResponse> {
-    return this.handleAction("request_agent_unsuspension", {});
+    return this.send("request_agent_unsuspension", {});
   }
 
   /**
@@ -99,7 +99,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of agent to approve
    */
   async approveAgent(id: string): Promise<EmptyResponse> {
-    return this.handleAction("approve_agent", { id });
+    return this.send("approve_agent", { id });
   }
 
   /**
@@ -107,7 +107,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - bot agent properties
    */
   async createBot(fields: BotFields): Promise<CreateBotResponse> {
-    return this.handleAction("create_bot", fields || {});
+    return this.send("create_bot", fields || {});
   }
 
   /**
@@ -115,7 +115,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param bot_agent_id - ID of bot to delete
    */
   async deleteBot(bot_agent_id: string): Promise<EmptyResponse> {
-    return this.handleAction("delete_bot", { bot_agent_id });
+    return this.send("delete_bot", { bot_agent_id });
   }
 
   /**
@@ -124,7 +124,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - properties to update
    */
   async updateBot(id: string, fields: BotFields): Promise<EmptyResponse> {
-    return this.handleAction("update_bot", { id, ...fields });
+    return this.send("update_bot", { id, ...fields });
   }
 
   /**
@@ -132,7 +132,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param all - switch if should return all bots or only caller's bots
    */
   async listBots(all?: boolean): Promise<ListBotsResponse> {
-    return this.handleAction("list_bots", { all });
+    return this.send("list_bots", { all });
   }
 
   /**
@@ -140,7 +140,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param bot_agent_id - bot agent ID to get info about
    */
   async getBot(bot_agent_id: string): Promise<GetBotResponse> {
-    return this.handleAction("get_bot", { bot_agent_id });
+    return this.send("get_bot", { bot_agent_id });
   }
 
   /**
@@ -154,7 +154,7 @@ export default class ConfigurationAPI extends WebAPI {
     agent_priorities: AgentPriorities,
     language_code?: string
   ): Promise<CreateGroupResponse> {
-    return this.handleAction("create_group", {
+    return this.send("create_group", {
       name,
       agent_priorities,
       language_code,
@@ -174,7 +174,7 @@ export default class ConfigurationAPI extends WebAPI {
     agent_priorities?: AgentPriorities,
     language_code?: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("create_group", {
+    return this.send("create_group", {
       id,
       name,
       agent_priorities,
@@ -187,7 +187,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of group to delete
    */
   async deleteGroup(id: number): Promise<EmptyResponse> {
-    return this.handleAction("delete_group", { id });
+    return this.send("delete_group", { id });
   }
 
   /**
@@ -195,7 +195,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additional fields to include
    */
   async listGroups(fields?: string[]): Promise<Group[]> {
-    return this.handleAction("list_groups", { fields });
+    return this.send("list_groups", { fields });
   }
 
   /**
@@ -204,7 +204,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additiona fields to include
    */
   async getGroup(id: number, fields?: string[]): Promise<Group> {
-    return this.handleAction("get_group", { id, fields });
+    return this.send("get_group", { id, fields });
   }
 
   /**
@@ -214,7 +214,7 @@ export default class ConfigurationAPI extends WebAPI {
   async registerProperties(
     properties: PropertiesConfig
   ): Promise<EmptyResponse> {
-    return this.handleAction("register_properties", properties);
+    return this.send("register_properties", properties);
   }
 
   /**
@@ -222,7 +222,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param all - if should return all properties within license
    */
   async listRegisteredProperties(all?: boolean): Promise<PropertiesConfig> {
-    return this.handleAction("list_registered_properties", { all });
+    return this.send("list_registered_properties", { all });
   }
 
   /**
@@ -232,7 +232,7 @@ export default class ConfigurationAPI extends WebAPI {
   async updateLicenseProperties(
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("update_license_properties", { properties });
+    return this.send("update_license_properties", { properties });
   }
 
   /**
@@ -244,7 +244,7 @@ export default class ConfigurationAPI extends WebAPI {
     namespace_prefix?: string,
     name_prefix?: string
   ): Promise<Properties> {
-    return this.handleAction("list_license_properties", {
+    return this.send("list_license_properties", {
       namespace_prefix,
       name_prefix,
     });
@@ -257,7 +257,7 @@ export default class ConfigurationAPI extends WebAPI {
   async deleteLicenseProperties(
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("delete_license_properties", { properties });
+    return this.send("delete_license_properties", { properties });
   }
 
   /**
@@ -269,7 +269,7 @@ export default class ConfigurationAPI extends WebAPI {
     group_id: number,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("update_group_properties", {
+    return this.send("update_group_properties", {
       group_id,
       properties,
     });
@@ -285,7 +285,7 @@ export default class ConfigurationAPI extends WebAPI {
     namespace_prefix?: string,
     name_prefix?: string
   ): Promise<Properties> {
-    return this.handleAction("list_group_properties", {
+    return this.send("list_group_properties", {
       group_id,
       namespace_prefix,
       name_prefix,
@@ -301,7 +301,7 @@ export default class ConfigurationAPI extends WebAPI {
     group_id: number,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("delete_group_properties", {
+    return this.send("delete_group_properties", {
       group_id,
       properties,
     });
@@ -312,14 +312,14 @@ export default class ConfigurationAPI extends WebAPI {
    * @param webhook - webhook to register
    */
   async registerWebhook(webhook: Webhook): Promise<RegisterWebhookResponse> {
-    return this.handleAction("register_webhook", webhook);
+    return this.send("register_webhook", webhook);
   }
 
   /**
    * Lists registered webhooks.
    */
   async listRegisteredWebhooks(): Promise<RegisteredWebhook[]> {
-    return this.handleAction("list_registered_webhooks", {});
+    return this.send("list_registered_webhooks", {});
   }
 
   /**
@@ -327,6 +327,6 @@ export default class ConfigurationAPI extends WebAPI {
    * @param webhook_id - webhook to unregister
    */
   async unregister_webhook(webhook_id: string): Promise<EmptyResponse> {
-    return this.handleAction("unregister_webhook", { webhook_id });
+    return this.send("unregister_webhook", { webhook_id });
   }
 }

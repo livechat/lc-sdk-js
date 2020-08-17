@@ -1,6 +1,6 @@
 import { Agent, Customer } from "./index";
 import { Event } from "./src/objects";
-
+const {IncomingEvent} = Agent.Objects.Pushes;
 const aapi = new Agent.RTM();
 const capi = new Customer.RTM(1234567890);
 
@@ -13,16 +13,13 @@ const capi = new Customer.RTM(1234567890);
       ])
     )
     .then(async () => {
-      let chat: string;
-      aapi.subscribeIncomingEvent(async (event: any) => {
-        await aapi.sendEvent(chat, {
+      let { chat_id } = await capi.startChat();
+      aapi.on(IncomingEvent, (event: any) => {
+        aapi.sendEvent(chat_id, {
           type: "message",
           text: "agent msg 1",
         } as Event);
       });
-
-      let { chat_id } = await capi.startChat();
-      chat = chat_id;
       await capi.sendEvent(chat_id, {
         type: "message",
         text: "customer msg 1",

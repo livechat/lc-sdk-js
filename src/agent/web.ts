@@ -40,7 +40,7 @@ export default class Web extends WebAPI {
 	 * @param opts - set of filters and pagination to limit returned entries
 	 */
 	async listChats(opts?: ListChatParameters): Promise<ListChatsResponse> {
-	  return this.handleAction("list_chats", opts || {});
+	  return this.send("list_chats", opts || {});
 	}
   
 	/**
@@ -52,7 +52,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  opts?: ListThreadsParameters
 	): Promise<ListThreadsResponse> {
-	  return this.handleAction("list_threads", { chat_id, ...opts });
+	  return this.send("list_threads", { chat_id, ...opts });
 	}
   
 	/**
@@ -61,7 +61,7 @@ export default class Web extends WebAPI {
 	 * @param thread_id - thread ID to get (if not provided, last thread is returned)
 	 */
 	async getChat(chat_id: string, thread_id?: string): Promise<GetChatResponse> {
-	  return this.handleAction("get_chat", { chat_id, thread_id });
+	  return this.send("get_chat", { chat_id, thread_id });
 	}
 	/**
 	 * It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
@@ -73,7 +73,7 @@ export default class Web extends WebAPI {
 	async listArchives(
 	  opts?: ListArchivesParameters
 	): Promise<ListArchivesResponse> {
-	  return this.handleAction("list_archives", opts || {});
+	  return this.send("list_archives", opts || {});
 	}
   
 	/**
@@ -81,7 +81,7 @@ export default class Web extends WebAPI {
 	 * @param opts - options like initial chat data or continuous switch
 	 */
 	async startChat(opts?: StartChatParameters): Promise<StartChatResponse> {
-	  return this.handleAction("start_chat", opts || {});
+	  return this.send("start_chat", opts || {});
 	}
   
 	/**
@@ -92,8 +92,8 @@ export default class Web extends WebAPI {
 	  param: string | ActivateChatParameters
 	): Promise<ActivateChatResponse> {
 	  if (typeof param === "string")
-		return this.handleAction("activate_chat", { chat: { id: param } });
-	  return this.handleAction("activate_chat", param || {});
+		return this.send("activate_chat", { chat: { id: param } });
+	  return this.send("activate_chat", param || {});
 	}
   
 	/**
@@ -101,7 +101,7 @@ export default class Web extends WebAPI {
 	 * @param chat_id - chat ID to deactivate
 	 */
 	async deactivateChat(chat_id: string): Promise<EmptyResponse> {
-	  return this.handleAction("deactivate_chat", { chat_id });
+	  return this.send("deactivate_chat", { chat_id });
 	}
   
 	/**
@@ -110,7 +110,7 @@ export default class Web extends WebAPI {
 	 * @param chat_id - chat ID to follow
 	 */
 	async followChat(chat_id: string): Promise<EmptyResponse> {
-	  return this.handleAction("follow_chat", { chat_id });
+	  return this.send("follow_chat", { chat_id });
 	}
   
 	/**
@@ -119,7 +119,7 @@ export default class Web extends WebAPI {
 	 * @param chat_id - chat ID to unfollow
 	 */
 	async unfollowChat(chat_id: string): Promise<EmptyResponse> {
-	  return this.handleAction("unfollow_chat", { chat_id });
+	  return this.send("unfollow_chat", { chat_id });
 	}
   
 	/**
@@ -131,7 +131,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  access: ChatAccess
 	): Promise<EmptyResponse> {
-	  return this.handleAction("grant_chat_access", { chat_id, access });
+	  return this.send("grant_chat_access", { chat_id, access });
 	}
   
 	/**
@@ -143,19 +143,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  access: ChatAccess
 	): Promise<EmptyResponse> {
-	  return this.handleAction("revoke_chat_access", { chat_id, access });
-	}
-  
-	/**
-	 * Grants access to a new chat overwriting the existing ones.
-	 * @param chat_id - chat ID to grant access to
-	 * @param access - access to set
-	 */
-	async setChatAccess(
-	  chat_id: string,
-	  access: ChatAccess
-	): Promise<EmptyResponse> {
-	  return this.handleAction("set_chat_access", { chat_id, access });
+	  return this.send("revoke_chat_access", { chat_id, access });
 	}
   
 	/**
@@ -167,7 +155,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  opts?: TransferChatParameters
 	): Promise<EmptyResponse> {
-	  return this.handleAction("transfer_chat", { chat_id, ...opts });
+	  return this.send("transfer_chat", { chat_id, ...opts });
 	}
   
 	/**
@@ -183,7 +171,7 @@ export default class Web extends WebAPI {
 	  user_type: string,
 	  require_active_thread?: boolean
 	): Promise<EmptyResponse> {
-	  return this.handleAction("add_user_to_chat", {
+	  return this.send("add_user_to_chat", {
 		chat_id,
 		user_id,
 		user_type,
@@ -199,7 +187,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  user_id: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("remove_user_from_chat", {
+	  return this.send("remove_user_from_chat", {
 		chat_id,
 		user_id,
 		user_type: "agent",
@@ -218,7 +206,7 @@ export default class Web extends WebAPI {
 	  event: Event,
 	  attach_to_last_thread?: boolean
 	): Promise<SendEventResponse> {
-	  return this.handleAction("send_event", {
+	  return this.send("send_event", {
 		chat_id,
 		event,
 		attach_to_last_thread,
@@ -250,7 +238,7 @@ export default class Web extends WebAPI {
 	async sendRichMessagePostback(
 	  opts: SendRichMessagePostbackParameters
 	): Promise<EmptyResponse> {
-	  return this.handleAction("send_rich_message_postback", opts);
+	  return this.send("send_rich_message_postback", opts);
 	}
   
 	/**
@@ -262,7 +250,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  properties: Properties
 	): Promise<EmptyResponse> {
-	  return this.handleAction("update_chat_properties", { chat_id, properties });
+	  return this.send("update_chat_properties", { chat_id, properties });
 	}
   
 	/**
@@ -274,7 +262,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  properties: Properties
 	): Promise<EmptyResponse> {
-	  return this.handleAction("delete_chat_properties", { chat_id, properties });
+	  return this.send("delete_chat_properties", { chat_id, properties });
 	}
   
 	/**
@@ -288,7 +276,7 @@ export default class Web extends WebAPI {
 	  thread_id: string,
 	  properties: Properties
 	): Promise<EmptyResponse> {
-	  return this.handleAction("update_thread_properties", {
+	  return this.send("update_thread_properties", {
 		chat_id,
 		thread_id,
 		properties,
@@ -306,7 +294,7 @@ export default class Web extends WebAPI {
 	  thread_id: string,
 	  properties: Properties
 	): Promise<EmptyResponse> {
-	  return this.handleAction("delete_thread_properties", {
+	  return this.send("delete_thread_properties", {
 		chat_id,
 		thread_id,
 		properties,
@@ -326,7 +314,7 @@ export default class Web extends WebAPI {
 	  event_id: string,
 	  properties: Properties
 	): Promise<EmptyResponse> {
-	  return this.handleAction("update_event_properties", {
+	  return this.send("update_event_properties", {
 		chat_id,
 		thread_id,
 		event_id,
@@ -347,7 +335,7 @@ export default class Web extends WebAPI {
 	  event_id: string,
 	  properties: Properties
 	): Promise<EmptyResponse> {
-	  return this.handleAction("delete_event_properties", {
+	  return this.send("delete_event_properties", {
 		chat_id,
 		thread_id,
 		event_id,
@@ -366,7 +354,7 @@ export default class Web extends WebAPI {
 	  thread_id: string,
 	  tag: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("tag_thread", { chat_id, thread_id, tag });
+	  return this.send("tag_thread", { chat_id, thread_id, tag });
 	}
   
 	/**
@@ -380,7 +368,7 @@ export default class Web extends WebAPI {
 	  thread_id: string,
 	  tag: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("untag_thread", { chat_id, thread_id, tag });
+	  return this.send("untag_thread", { chat_id, thread_id, tag });
 	}
   
 	/**
@@ -388,7 +376,7 @@ export default class Web extends WebAPI {
 	 * @param customer_id - customer ID to teg
 	 */
 	async getCustomer(customer_id: string): Promise<GetCustomerResponse> {
-	  return this.handleAction("get_customer", { customer_id });
+	  return this.send("get_customer", { customer_id });
 	}
   
 	/**
@@ -398,7 +386,7 @@ export default class Web extends WebAPI {
 	async listCustomers(
 	  opts?: ListCustomersParameters
 	): Promise<ListCustomersResponse> {
-	  return this.handleAction("list_customers", opts || {});
+	  return this.send("list_customers", opts || {});
 	}
   
 	/**
@@ -408,7 +396,7 @@ export default class Web extends WebAPI {
 	async createCustomer(
 	  opts?: CustomerParameters
 	): Promise<CreateCustomerResponse> {
-	  return this.handleAction("create_customer", opts || {});
+	  return this.send("create_customer", opts || {});
 	}
   
 	/**
@@ -420,7 +408,7 @@ export default class Web extends WebAPI {
 	  customer_id: string,
 	  opts: CustomerParameters
 	): Promise<EmptyResponse> {
-	  return this.handleAction("update_customer", { customer_id, ...opts });
+	  return this.send("update_customer", { customer_id, ...opts });
 	}
   
 	/**
@@ -430,7 +418,7 @@ export default class Web extends WebAPI {
 	 * @param days - ban duration in days
 	 */
 	async banCustomer(customer_id: string, days: number): Promise<EmptyResponse> {
-	  return this.handleAction("ban_customer", { customer_id, ban: { days } });
+	  return this.send("ban_customer", { customer_id, ban: { days } });
 	}
   
 	/**
@@ -442,7 +430,7 @@ export default class Web extends WebAPI {
 	  status: RoutingStatus,
 	  agent_id?: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("set_routing_status", { status, agent_id });
+	  return this.send("set_routing_status", { status, agent_id });
 	}
   
 	/**
@@ -454,7 +442,7 @@ export default class Web extends WebAPI {
 	  chat_id: string,
 	  seen_up_to: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("mark_events_as_seen", { chat_id, seen_up_to });
+	  return this.send("mark_events_as_seen", { chat_id, seen_up_to });
 	}
   
 	/**
@@ -468,7 +456,7 @@ export default class Web extends WebAPI {
 	  is_typing: boolean,
 	  recipients?: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("send_typing_indicator", {
+	  return this.send("send_typing_indicator", {
 		chat_id,
 		is_typing,
 		recipients,
@@ -488,7 +476,7 @@ export default class Web extends WebAPI {
 	  content: object,
 	  type?: string
 	): Promise<EmptyResponse> {
-	  return this.handleAction("multicast", { recipients, content, type });
+	  return this.send("multicast", { recipients, content, type });
 	}
   
 	/**
@@ -498,7 +486,7 @@ export default class Web extends WebAPI {
 	 * @param chat_id - chat ID you want to transfer
 	 */
 	async listAgentsForTransfer(chat_id: string): Promise<AgentForTransfer[]> {
-	  return this.handleAction("list_agents_for_transfer", { chat_id });
+	  return this.send("list_agents_for_transfer", { chat_id });
 	}
   }
   
