@@ -23,7 +23,7 @@
 
 • **action**: *string*
 
-*Defined in [src/webhooks/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L15)*
+*Defined in [src/webhooks/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L15)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **additional_data**: *object*
 
-*Defined in [src/webhooks/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L17)*
+*Defined in [src/webhooks/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L17)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **license_id**: *string*
 
-*Defined in [src/webhooks/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L16)*
+*Defined in [src/webhooks/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L16)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **payload**: *[WebhookPayload](../modules/_src_webhooks_index_.md#webhookpayload)*
 
-*Defined in [src/webhooks/index.ts:18](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L18)*
+*Defined in [src/webhooks/index.ts:18](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L18)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **secret_key**: *string*
 
-*Defined in [src/webhooks/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L14)*
+*Defined in [src/webhooks/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L14)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **webhook_id**: *string*
 
-*Defined in [src/webhooks/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L13)*
+*Defined in [src/webhooks/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L13)*

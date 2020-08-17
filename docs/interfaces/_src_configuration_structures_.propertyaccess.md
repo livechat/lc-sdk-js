@@ -19,7 +19,7 @@
 
 • **read**: *boolean*
 
-*Defined in [src/configuration/structures.ts:139](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L139)*
+*Defined in [src/configuration/structures.ts:139](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L139)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **write**: *boolean*
 
-*Defined in [src/configuration/structures.ts:140](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L140)*
+*Defined in [src/configuration/structures.ts:140](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L140)*

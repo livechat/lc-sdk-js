@@ -18,4 +18,4 @@
 
 • **group_ids**: *number[]*
 
-*Defined in [src/objects/index.ts:246](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L246)*
+*Defined in [src/objects/index.ts:246](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L246)*

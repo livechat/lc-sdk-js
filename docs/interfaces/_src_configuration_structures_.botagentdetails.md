@@ -28,7 +28,7 @@
 
 • **application**: *object*
 
-*Defined in [src/configuration/structures.ts:88](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L88)*
+*Defined in [src/configuration/structures.ts:88](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L88)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 *Inherited from [BotAgent](_src_configuration_structures_.botagent.md).[avatar](_src_configuration_structures_.botagent.md#avatar)*
 
-*Defined in [src/configuration/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L72)*
+*Defined in [src/configuration/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L72)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **default_group_priority**: *[GroupPriority](../enums/_src_configuration_structures_.grouppriority.md)*
 
-*Defined in [src/configuration/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L87)*
+*Defined in [src/configuration/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L87)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **groups**: *[GroupConfig](_src_configuration_structures_.groupconfig.md)[]*
 
-*Defined in [src/configuration/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L90)*
+*Defined in [src/configuration/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L90)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 *Inherited from [BotAgent](_src_configuration_structures_.botagent.md).[id](_src_configuration_structures_.botagent.md#id)*
 
-*Defined in [src/configuration/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L70)*
+*Defined in [src/configuration/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L70)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **max_chats_count**: *number*
 
-*Defined in [src/configuration/structures.ts:89](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L89)*
+*Defined in [src/configuration/structures.ts:89](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L89)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 *Inherited from [BotAgent](_src_configuration_structures_.botagent.md).[name](_src_configuration_structures_.botagent.md#name)*
 
-*Defined in [src/configuration/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L71)*
+*Defined in [src/configuration/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L71)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 *Inherited from [BotAgent](_src_configuration_structures_.botagent.md).[status](_src_configuration_structures_.botagent.md#status)*
 
-*Defined in [src/configuration/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L73)*
+*Defined in [src/configuration/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L73)*
 
 ___
 
@@ -100,4 +100,4 @@ ___
 
 • **webhooks**: *[BotWebhooks](_src_configuration_structures_.botwebhooks.md)[]*
 
-*Defined in [src/configuration/structures.ts:91](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L91)*
+*Defined in [src/configuration/structures.ts:91](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L91)*

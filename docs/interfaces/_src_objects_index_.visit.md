@@ -23,7 +23,7 @@
 
 • **geolocation**: *[Geolocation](_src_objects_index_.geolocation.md)*
 
-*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L190)*
+*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L190)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **ip**: *string*
 
-*Defined in [src/objects/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L188)*
+*Defined in [src/objects/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L188)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **last_pages**: *[LastPage](_src_objects_index_.lastpage.md)[]*
 
-*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L191)*
+*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L191)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **referrer**: *string*
 
-*Defined in [src/objects/index.ts:187](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L187)*
+*Defined in [src/objects/index.ts:187](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L187)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **started_at**: *string*
 
-*Defined in [src/objects/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L186)*
+*Defined in [src/objects/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L186)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **user_agent**: *string*
 
-*Defined in [src/objects/index.ts:189](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L189)*
+*Defined in [src/objects/index.ts:189](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L189)*

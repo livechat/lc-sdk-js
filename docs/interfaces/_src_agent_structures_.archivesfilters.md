@@ -30,7 +30,7 @@
 
 • **agent_ids**: *string[]*
 
-*Defined in [src/agent/structures.ts:74](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L74)*
+*Defined in [src/agent/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L73)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **agents**: *[FilterType](_src_agent_structures_.filtertype.md)*
 
-*Defined in [src/agent/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L76)*
+*Defined in [src/agent/structures.ts:75](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L75)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **events**: *[EventsFilter](_src_agent_structures_.eventsfilter.md)*
 
-*Defined in [src/agent/structures.ts:81](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L81)*
+*Defined in [src/agent/structures.ts:80](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L80)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **from**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L70)*
+*Defined in [src/agent/structures.ts:69](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L69)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **goals**: *[FilterType](_src_agent_structures_.filtertype.md)*
 
-*Defined in [src/agent/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L79)*
+*Defined in [src/agent/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L78)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **group_ids**? : *number[]*
 
-*Defined in [src/agent/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L73)*
+*Defined in [src/agent/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L72)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **properties**: *[PropertiesFilter](_src_agent_structures_.propertiesfilter.md)*
 
-*Defined in [src/agent/structures.ts:75](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L75)*
+*Defined in [src/agent/structures.ts:74](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L74)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **query**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:69](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L69)*
+*Defined in [src/agent/structures.ts:68](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L68)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 • **sales**: *[FilterType](_src_agent_structures_.filtertype.md)*
 
-*Defined in [src/agent/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L78)*
+*Defined in [src/agent/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L77)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 • **surveys**: *[SurveyFilter](_src_agent_structures_.surveyfilter.md)[]*
 
-*Defined in [src/agent/structures.ts:80](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L80)*
+*Defined in [src/agent/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L79)*
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 • **tags**: *[FilterType](_src_agent_structures_.filtertype.md)*
 
-*Defined in [src/agent/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L77)*
+*Defined in [src/agent/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L76)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 • **thread_ids**? : *string[]*
 
-*Defined in [src/agent/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L72)*
+*Defined in [src/agent/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L71)*
 
 ___
 
@@ -126,4 +126,4 @@ ___
 
 • **to**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L71)*
+*Defined in [src/agent/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L70)*

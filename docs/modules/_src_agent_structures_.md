@@ -6,6 +6,7 @@
 
 ### Enumerations
 
+* [Pushes](../enums/_src_agent_structures_.pushes.md)
 * [SurveyType](../enums/_src_agent_structures_.surveytype.md)
 
 ### Interfaces

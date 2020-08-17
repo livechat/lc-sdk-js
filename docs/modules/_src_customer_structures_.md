@@ -4,6 +4,10 @@
 
 ## Index
 
+### Enumerations
+
+* [Pushes](../enums/_src_customer_structures_.pushes.md)
+
 ### Interfaces
 
 * [ActivateChatParameters](../interfaces/_src_customer_structures_.activatechatparameters.md)

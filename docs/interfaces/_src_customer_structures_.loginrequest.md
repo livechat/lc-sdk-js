@@ -25,7 +25,7 @@
 
 • **application**? : *[Application](_src_customer_structures_.application.md)*
 
-*Defined in [src/customer/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L146)*
+*Defined in [src/customer/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L146)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **customer**? : *[LoginCustomer](_src_customer_structures_.logincustomer.md)*
 
-*Defined in [src/customer/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L144)*
+*Defined in [src/customer/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L144)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **customer_page**? : *[CustomerPage](_src_customer_structures_.customerpage.md)*
 
-*Defined in [src/customer/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L145)*
+*Defined in [src/customer/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L145)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **customer_side_storage**? : *undefined | object*
 
-*Defined in [src/customer/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L148)*
+*Defined in [src/customer/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L148)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **group_id**? : *undefined | number*
 
-*Defined in [src/customer/structures.ts:149](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L149)*
+*Defined in [src/customer/structures.ts:149](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L149)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **is_mobile**? : *undefined | false | true*
 
-*Defined in [src/customer/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L147)*
+*Defined in [src/customer/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L147)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **referrer**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:150](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L150)*
+*Defined in [src/customer/structures.ts:150](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L150)*
 
 ___
 
@@ -81,4 +81,4 @@ ___
 
 • **token**: *string*
 
-*Defined in [src/customer/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L143)*
+*Defined in [src/customer/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L143)*

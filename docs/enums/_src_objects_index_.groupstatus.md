@@ -16,7 +16,7 @@
 
 • **Offline**: = "offline"
 
-*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L330)*
+*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L330)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **Online**: = "online"
 
-*Defined in [src/objects/index.ts:329](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L329)*
+*Defined in [src/objects/index.ts:329](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L329)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **OnlineForQueue**: = "online_for_queue"
 
-*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/objects/index.ts#L331)*
+*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L331)*

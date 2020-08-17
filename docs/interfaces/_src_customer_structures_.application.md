@@ -20,7 +20,7 @@
 
 • **channel_type**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L168)*
+*Defined in [src/customer/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L168)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:166](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L166)*
+*Defined in [src/customer/structures.ts:166](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L166)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **version**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:167](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/customer/structures.ts#L167)*
+*Defined in [src/customer/structures.ts:167](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L167)*

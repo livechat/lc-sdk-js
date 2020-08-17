@@ -21,7 +21,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/agent/structures.ts:153](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L153)*
+*Defined in [src/agent/structures.ts:152](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L152)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **event_id**: *string*
 
-*Defined in [src/agent/structures.ts:155](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L155)*
+*Defined in [src/agent/structures.ts:154](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L154)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **postback**: *[PostbackToggle](_src_agent_structures_.postbacktoggle.md)*
 
-*Defined in [src/agent/structures.ts:156](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L156)*
+*Defined in [src/agent/structures.ts:155](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L155)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/agent/structures.ts:154](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L154)*
+*Defined in [src/agent/structures.ts:153](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L153)*

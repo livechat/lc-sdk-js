@@ -18,4 +18,4 @@
 
 • **customer**: *[Customer](_src_objects_index_.customer.md)*
 
-*Defined in [src/webhooks/index.ts:162](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/webhooks/index.ts#L162)*
+*Defined in [src/webhooks/index.ts:162](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L162)*

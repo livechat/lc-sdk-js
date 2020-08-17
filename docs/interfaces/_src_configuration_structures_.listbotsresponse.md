@@ -18,4 +18,4 @@
 
 • **bot_agents**: *[BotAgent](_src_configuration_structures_.botagent.md)[]*
 
-*Defined in [src/configuration/structures.ts:66](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L66)*
+*Defined in [src/configuration/structures.ts:66](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L66)*

@@ -19,7 +19,7 @@
 
 • **exclude_values**? : *string[]*
 
-*Defined in [src/agent/structures.ts:190](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L190)*
+*Defined in [src/agent/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L189)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **values**? : *string[]*
 
-*Defined in [src/agent/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/agent/structures.ts#L189)*
+*Defined in [src/agent/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L188)*

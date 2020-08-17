@@ -29,7 +29,7 @@
 
 *Inherited from [Webhook](_src_configuration_structures_.webhook.md).[action](_src_configuration_structures_.webhook.md#action)*
 
-*Defined in [src/configuration/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L144)*
+*Defined in [src/configuration/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L144)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 *Inherited from [Webhook](_src_configuration_structures_.webhook.md).[additional_data](_src_configuration_structures_.webhook.md#optional-additional_data)*
 
-*Defined in [src/configuration/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L147)*
+*Defined in [src/configuration/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L147)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 *Inherited from [Webhook](_src_configuration_structures_.webhook.md).[description](_src_configuration_structures_.webhook.md#optional-description)*
 
-*Defined in [src/configuration/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L148)*
+*Defined in [src/configuration/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L148)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 *Inherited from [Webhook](_src_configuration_structures_.webhook.md).[filters](_src_configuration_structures_.webhook.md#optional-filters)*
 
-*Defined in [src/configuration/structures.ts:149](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L149)*
+*Defined in [src/configuration/structures.ts:149](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L149)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **owner_client_id**: *string*
 
-*Defined in [src/configuration/structures.ts:163](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L163)*
+*Defined in [src/configuration/structures.ts:163](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L163)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 *Inherited from [Webhook](_src_configuration_structures_.webhook.md).[secret_key](_src_configuration_structures_.webhook.md#secret_key)*
 
-*Defined in [src/configuration/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L145)*
+*Defined in [src/configuration/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L145)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 *Inherited from [Webhook](_src_configuration_structures_.webhook.md).[url](_src_configuration_structures_.webhook.md#url)*
 
-*Defined in [src/configuration/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L146)*
+*Defined in [src/configuration/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L146)*
 
 ___
 
@@ -95,4 +95,4 @@ ___
 
 • **webhook_id**: *string*
 
-*Defined in [src/configuration/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L162)*
+*Defined in [src/configuration/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L162)*

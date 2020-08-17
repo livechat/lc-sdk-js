@@ -19,7 +19,7 @@
 
 • **id**: *number*
 
-*Defined in [src/configuration/structures.ts:28](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L28)*
+*Defined in [src/configuration/structures.ts:28](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L28)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **priority**: *string*
 
-*Defined in [src/configuration/structures.ts:29](https://github.com/livechat/lc-sdk-js/blob/5281c0a/src/configuration/structures.ts#L29)*
+*Defined in [src/configuration/structures.ts:29](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L29)*
