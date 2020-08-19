@@ -130,7 +130,7 @@ export class RTMAPI {
   }
 
   send(action: string, payload: any): Promise<any> {
-    if (this.socket?.readyState != ws.OPEN) {
+    if (this.socket?.readyState !== ws.OPEN) {
       return Promise.reject(new Error("socket not connected"));
     }
     const request_id = v4();
@@ -147,14 +147,14 @@ export class RTMAPI {
     });
   }
 
-  subscribePush(push: string, callback: Function) {
+  subscribePush(push: string, callback: (payload: any) => void): void {
     if (this.subscribedPushes[push]) {
       throw new Error("Push already subscribed");
     }
     this.subscribedPushes[push] = callback;
   }
 
-  unsubscribePush(push: string) {
+  unsubscribePush(push: string): void {
     delete this.subscribedPushes[push];
   }
 }
