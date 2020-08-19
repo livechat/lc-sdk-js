@@ -1,19 +1,19 @@
 # LiveChat Platform API SDK for JavaScript
 
-This library is in alpha-phase and due to that, subject to breaking changes without further notice
+This library is in alpha-phase and due to that, there might be interface breaking changes without further notice
 
 # Installation
 ## npm
-Package is not yet published in npm until the end of alpha phase
+Package will not be published in npm until the end of alpha phase
 
 ## manual
-1. Clone repository
-2. Run following commands:
+1. Clone the repository
+2. Run the following commands:
   ```bash
   npm install
   npm run build
   ```
-3. This will generate js files in `./lib` directory and SDK is ready to use
+3. This will generate js files in `./lib` directory and the SDK is ready to use
 4. You can reference it in your `package.json`:
 ```json
 {
@@ -28,7 +28,6 @@ Package is not yet published in npm until the end of alpha phase
 
 Check [LiveChat Platform documentation](https://developers.livechat.com/docs/) for details of API usage (authorization flow, methods etc.)
 
-All methods are promise-based
 ```javascript
 const lcSDK = require("lc-sdk-js");
 

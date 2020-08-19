@@ -142,6 +142,18 @@ export enum RoutingStatus {
   Offline = "offline",
 }
 
+export interface MyProfile {
+  id: string;
+  type: string;
+  name: string;
+  email: string;
+  present: boolean;
+  events_seen_up_to: string;
+  avatar: string;
+  routing_status: string;
+  permission: string;
+}
+
 export interface Agent {
   id: string;
   type: string;
@@ -317,4 +329,19 @@ export enum GroupStatus {
   Online = "online",
   Offline = "offline",
   OnlineForQueue = "online_for_queue",
+}
+
+export interface RTMRequest {
+  action: string;
+  payload: any;
+  author_id?: string;
+  request_id?: string;
+}
+
+export interface RTMResponse {
+  request_id?: string;
+  action: string;
+  type: string;
+  success: boolean;
+  payload: any;
 }

@@ -1,5 +1,3 @@
-import { WebAPI, APIError } from "../internal";
-import { TokenGetter } from "../authorization";
 import type {
   ListChatsResponse,
   ListChatParameters,
@@ -23,16 +21,65 @@ import type {
   CreateCustomerResponse,
   MulticastRecipients,
   AgentForTransfer,
-  UploadFileResponse,
+  LoginResponse,
+  ChangePushNotificationsRequest,
+  LoginRequest,
+  Pushes,
 } from "./structures";
 import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
-import { promises as fs } from "fs";
-import axios from "axios";
-import FormData from "form-data";
+import { RTMAPI } from "../internal/index";
 
-export class AgentAPI extends WebAPI {
-  constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, tokenGetter, "agent");
+export default class RTM extends RTMAPI {
+  constructor() {
+    super("agent");
+  }
+
+  /**
+   * Allows to subscribe a handler for a given push. Returns function to unsubscribe.
+   * Note: multiple subscriptions for the same push are not allowed in sigle websocket connection.
+   * @param push - push name to subscribe to
+   * @param handler - function receiving push payload
+   */
+  on(push: Pushes, handler: (payload: any) => void): () => void {
+	  this.subscribePush(push, handler);
+	  return this.unsubscribePush.bind(this, push);
+  }
+
+  /**
+   * It returns the initial state of the current Agent.
+   * @param loginData - OAuth token from Agent's account or full object with login options
+   */
+  async login(loginData: string | LoginRequest): Promise<LoginResponse> {
+    if (typeof loginData === "string") {
+      return this.send("login", { token: loginData });
+    }
+    return this.send("login", loginData);
+  }
+  /**
+   * Change the firebase push notifications properties.
+   * @param change - properties to change
+   */
+  async changePushNotifications(
+    change: ChangePushNotificationsRequest
+  ): Promise<EmptyResponse> {
+    return this.send("change_push_notifications", change);
+  }
+
+  /**
+   * Sets an Agent's connection to the away state. You can use this method to manipulate the Agent's status.
+   * The method works per connection - all connections an Agent has (desktop, mobile, etc) must be in the away state
+   * for the Agent's status to be changed to not_accepting_chats.
+   * @param away - away status
+   */
+  async setAwayStatus(away: boolean): Promise<EmptyResponse> {
+    return this.send("set_away_status", { away });
+  }
+
+  /**
+   * Logs the Agent out.
+   */
+  async logout(): Promise<EmptyResponse> {
+    return this.send("logout", {});
   }
 
   /**
@@ -40,7 +87,7 @@ export class AgentAPI extends WebAPI {
    * @param opts - set of filters and pagination to limit returned entries
    */
   async listChats(opts?: ListChatParameters): Promise<ListChatsResponse> {
-    return this.handleAction("list_chats", opts || {});
+    return this.send("list_chats", opts || {});
   }
 
   /**
@@ -52,7 +99,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     opts?: ListThreadsParameters
   ): Promise<ListThreadsResponse> {
-    return this.handleAction("list_threads", { chat_id, ...opts });
+    return this.send("list_threads", { chat_id, ...opts });
   }
 
   /**
@@ -61,7 +108,7 @@ export class AgentAPI extends WebAPI {
    * @param thread_id - thread ID to get (if not provided, last thread is returned)
    */
   async getChat(chat_id: string, thread_id?: string): Promise<GetChatResponse> {
-    return this.handleAction("get_chat", { chat_id, thread_id });
+    return this.send("get_chat", { chat_id, thread_id });
   }
   /**
    * It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
@@ -73,7 +120,7 @@ export class AgentAPI extends WebAPI {
   async listArchives(
     opts?: ListArchivesParameters
   ): Promise<ListArchivesResponse> {
-    return this.handleAction("list_archives", opts || {});
+    return this.send("list_archives", opts || {});
   }
 
   /**
@@ -81,7 +128,7 @@ export class AgentAPI extends WebAPI {
    * @param opts - options like initial chat data or continuous switch
    */
   async startChat(opts?: StartChatParameters): Promise<StartChatResponse> {
-    return this.handleAction("start_chat", opts || {});
+    return this.send("start_chat", opts || {});
   }
 
   /**
@@ -92,8 +139,8 @@ export class AgentAPI extends WebAPI {
     param: string | ActivateChatParameters
   ): Promise<ActivateChatResponse> {
     if (typeof param === "string")
-      return this.handleAction("activate_chat", { chat: { id: param } });
-    return this.handleAction("activate_chat", param || {});
+      return this.send("activate_chat", { chat: { id: param } });
+    return this.send("activate_chat", param || {});
   }
 
   /**
@@ -101,7 +148,7 @@ export class AgentAPI extends WebAPI {
    * @param chat_id - chat ID to deactivate
    */
   async deactivateChat(chat_id: string): Promise<EmptyResponse> {
-    return this.handleAction("deactivate_chat", { chat_id });
+    return this.send("deactivate_chat", { chat_id });
   }
 
   /**
@@ -110,7 +157,7 @@ export class AgentAPI extends WebAPI {
    * @param chat_id - chat ID to follow
    */
   async followChat(chat_id: string): Promise<EmptyResponse> {
-    return this.handleAction("follow_chat", { chat_id });
+    return this.send("follow_chat", { chat_id });
   }
 
   /**
@@ -119,7 +166,7 @@ export class AgentAPI extends WebAPI {
    * @param chat_id - chat ID to unfollow
    */
   async unfollowChat(chat_id: string): Promise<EmptyResponse> {
-    return this.handleAction("unfollow_chat", { chat_id });
+    return this.send("unfollow_chat", { chat_id });
   }
 
   /**
@@ -131,7 +178,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     access: ChatAccess
   ): Promise<EmptyResponse> {
-    return this.handleAction("grant_chat_access", { chat_id, access });
+    return this.send("grant_chat_access", { chat_id, access });
   }
 
   /**
@@ -143,19 +190,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     access: ChatAccess
   ): Promise<EmptyResponse> {
-    return this.handleAction("revoke_chat_access", { chat_id, access });
-  }
-
-  /**
-   * Grants access to a new chat overwriting the existing ones.
-   * @param chat_id - chat ID to grant access to
-   * @param access - access to set
-   */
-  async setChatAccess(
-    chat_id: string,
-    access: ChatAccess
-  ): Promise<EmptyResponse> {
-    return this.handleAction("set_chat_access", { chat_id, access });
+    return this.send("revoke_chat_access", { chat_id, access });
   }
 
   /**
@@ -167,7 +202,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     opts?: TransferChatParameters
   ): Promise<EmptyResponse> {
-    return this.handleAction("transfer_chat", { chat_id, ...opts });
+    return this.send("transfer_chat", { chat_id, ...opts });
   }
 
   /**
@@ -183,7 +218,7 @@ export class AgentAPI extends WebAPI {
     user_type: string,
     require_active_thread?: boolean
   ): Promise<EmptyResponse> {
-    return this.handleAction("add_user_to_chat", {
+    return this.send("add_user_to_chat", {
       chat_id,
       user_id,
       user_type,
@@ -199,7 +234,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     user_id: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("remove_user_from_chat", {
+    return this.send("remove_user_from_chat", {
       chat_id,
       user_id,
       user_type: "agent",
@@ -218,29 +253,11 @@ export class AgentAPI extends WebAPI {
     event: Event,
     attach_to_last_thread?: boolean
   ): Promise<SendEventResponse> {
-    return this.handleAction("send_event", {
+    return this.send("send_event", {
       chat_id,
       event,
       attach_to_last_thread,
     });
-  }
-
-  /**
-   * Uploads a file to the server as a temporary file. It returns a URL that expires after 24 hours unless the URL is used in send_event.
-   * @param file - path of file to upload or Buffer with content
-   * @param filename - filename for uploaded file
-   */
-  async uploadFile(
-    file: string | Buffer,
-    filename: string
-  ): Promise<UploadFileResponse> {
-    let content = file;
-    if (typeof file === "string") content = await fs.readFile(file, "binary");
-    const url = `${this.APIURL}/${this.version}/${this.type}/action/upload_file`;
-    const formData = new FormData();
-    formData.append("file", content, filename);
-
-    return axios.post(url, formData.getBuffer(), formData.getHeaders());
   }
 
   /**
@@ -250,7 +267,7 @@ export class AgentAPI extends WebAPI {
   async sendRichMessagePostback(
     opts: SendRichMessagePostbackParameters
   ): Promise<EmptyResponse> {
-    return this.handleAction("send_rich_message_postback", opts);
+    return this.send("send_rich_message_postback", opts);
   }
 
   /**
@@ -262,7 +279,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("update_chat_properties", { chat_id, properties });
+    return this.send("update_chat_properties", { chat_id, properties });
   }
 
   /**
@@ -274,7 +291,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("delete_chat_properties", { chat_id, properties });
+    return this.send("delete_chat_properties", { chat_id, properties });
   }
 
   /**
@@ -288,7 +305,7 @@ export class AgentAPI extends WebAPI {
     thread_id: string,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("update_thread_properties", {
+    return this.send("update_thread_properties", {
       chat_id,
       thread_id,
       properties,
@@ -306,7 +323,7 @@ export class AgentAPI extends WebAPI {
     thread_id: string,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("delete_thread_properties", {
+    return this.send("delete_thread_properties", {
       chat_id,
       thread_id,
       properties,
@@ -326,7 +343,7 @@ export class AgentAPI extends WebAPI {
     event_id: string,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("update_event_properties", {
+    return this.send("update_event_properties", {
       chat_id,
       thread_id,
       event_id,
@@ -347,7 +364,7 @@ export class AgentAPI extends WebAPI {
     event_id: string,
     properties: Properties
   ): Promise<EmptyResponse> {
-    return this.handleAction("delete_event_properties", {
+    return this.send("delete_event_properties", {
       chat_id,
       thread_id,
       event_id,
@@ -366,7 +383,7 @@ export class AgentAPI extends WebAPI {
     thread_id: string,
     tag: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("tag_thread", { chat_id, thread_id, tag });
+    return this.send("tag_thread", { chat_id, thread_id, tag });
   }
 
   /**
@@ -380,7 +397,7 @@ export class AgentAPI extends WebAPI {
     thread_id: string,
     tag: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("untag_thread", { chat_id, thread_id, tag });
+    return this.send("untag_thread", { chat_id, thread_id, tag });
   }
 
   /**
@@ -388,7 +405,7 @@ export class AgentAPI extends WebAPI {
    * @param customer_id - customer ID to teg
    */
   async getCustomer(customer_id: string): Promise<GetCustomerResponse> {
-    return this.handleAction("get_customer", { customer_id });
+    return this.send("get_customer", { customer_id });
   }
 
   /**
@@ -398,7 +415,7 @@ export class AgentAPI extends WebAPI {
   async listCustomers(
     opts?: ListCustomersParameters
   ): Promise<ListCustomersResponse> {
-    return this.handleAction("list_customers", opts || {});
+    return this.send("list_customers", opts || {});
   }
 
   /**
@@ -408,7 +425,7 @@ export class AgentAPI extends WebAPI {
   async createCustomer(
     opts?: CustomerParameters
   ): Promise<CreateCustomerResponse> {
-    return this.handleAction("create_customer", opts || {});
+    return this.send("create_customer", opts || {});
   }
 
   /**
@@ -420,7 +437,7 @@ export class AgentAPI extends WebAPI {
     customer_id: string,
     opts: CustomerParameters
   ): Promise<EmptyResponse> {
-    return this.handleAction("update_customer", { customer_id, ...opts });
+    return this.send("update_customer", { customer_id, ...opts });
   }
 
   /**
@@ -430,7 +447,7 @@ export class AgentAPI extends WebAPI {
    * @param days - ban duration in days
    */
   async banCustomer(customer_id: string, days: number): Promise<EmptyResponse> {
-    return this.handleAction("ban_customer", { customer_id, ban: { days } });
+    return this.send("ban_customer", { customer_id, ban: { days } });
   }
 
   /**
@@ -442,7 +459,7 @@ export class AgentAPI extends WebAPI {
     status: RoutingStatus,
     agent_id?: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("set_routing_status", { status, agent_id });
+    return this.send("set_routing_status", { status, agent_id });
   }
 
   /**
@@ -454,7 +471,7 @@ export class AgentAPI extends WebAPI {
     chat_id: string,
     seen_up_to: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("mark_events_as_seen", { chat_id, seen_up_to });
+    return this.send("mark_events_as_seen", { chat_id, seen_up_to });
   }
 
   /**
@@ -468,7 +485,7 @@ export class AgentAPI extends WebAPI {
     is_typing: boolean,
     recipients?: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("send_typing_indicator", {
+    return this.send("send_typing_indicator", {
       chat_id,
       is_typing,
       recipients,
@@ -488,7 +505,7 @@ export class AgentAPI extends WebAPI {
     content: object,
     type?: string
   ): Promise<EmptyResponse> {
-    return this.handleAction("multicast", { recipients, content, type });
+    return this.send("multicast", { recipients, content, type });
   }
 
   /**
@@ -498,6 +515,6 @@ export class AgentAPI extends WebAPI {
    * @param chat_id - chat ID you want to transfer
    */
   async listAgentsForTransfer(chat_id: string): Promise<AgentForTransfer[]> {
-    return this.handleAction("list_agents_for_transfer", { chat_id });
+    return this.send("list_agents_for_transfer", { chat_id });
   }
 }
