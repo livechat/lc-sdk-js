@@ -1,5 +1,5 @@
 {
-  "name": "lc-sdk-js",
+  "name": "@livechat/lc-sdk-js",
   "version": "1.0.0",
   "description": "LiveChat SDK in JS",
   "main": "lib/index.js",
