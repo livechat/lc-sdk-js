@@ -32,19 +32,9 @@ export class WebAPI {
   }
 
   private async call(action: string, payload: any): Promise<any> {
-    const url = [
-      "https:/",
-      this.APIURL,
-      this.version,
-      this.type,
-      "action",
-      action,
-    ].join("/");
+    const url = ["https:/", this.APIURL, this.version, this.type, "action", action].join("/");
     const token = this.tokenGetter();
-    const method =
-      action in ["list_license_properties", "list_group_properties"]
-        ? "GET"
-        : "POST";
+    const method = action in ["list_license_properties", "list_group_properties"] ? "GET" : "POST";
 
     return axios({
       method,
@@ -96,7 +86,7 @@ export class RTMAPI {
         try {
           parsedMessage = JSON.parse(msg.toString());
         } catch (e) {
-          return
+          return;
         }
         const { request_id, action, success, type, payload } = parsedMessage;
         switch (type) {
@@ -116,9 +106,7 @@ export class RTMAPI {
   private handleResponse(request_id: string, success: boolean, payload: any) {
     const enqueuedRequest = this.requestsQueue[request_id];
     if (enqueuedRequest) {
-      success
-        ? enqueuedRequest.resolve(payload)
-        : enqueuedRequest.reject(payload);
+      success ? enqueuedRequest.resolve(payload) : enqueuedRequest.reject(payload);
       delete this.requestsQueue[request_id];
     }
   }

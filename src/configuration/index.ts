@@ -29,10 +29,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of an agent to create
    * @param fields - agent properties
    */
-  async createAgent(
-    id: string,
-    fields: AgentFields
-  ): Promise<CreateAgentResponse> {
+  async createAgent(id: string, fields: AgentFields): Promise<CreateAgentResponse> {
     return this.send("create_agent", { id, ...fields });
   }
 
@@ -152,7 +149,7 @@ export default class ConfigurationAPI extends WebAPI {
   async createGroup(
     name: string,
     agent_priorities: AgentPriorities,
-    language_code?: string
+    language_code?: string,
   ): Promise<CreateGroupResponse> {
     return this.send("create_group", {
       name,
@@ -172,7 +169,7 @@ export default class ConfigurationAPI extends WebAPI {
     id: number,
     name?: string,
     agent_priorities?: AgentPriorities,
-    language_code?: string
+    language_code?: string,
   ): Promise<EmptyResponse> {
     return this.send("create_group", {
       id,
@@ -211,9 +208,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Registers properties.
    * @param properties - properties to register
    */
-  async registerProperties(
-    properties: PropertiesConfig
-  ): Promise<EmptyResponse> {
+  async registerProperties(properties: PropertiesConfig): Promise<EmptyResponse> {
     return this.send("register_properties", properties);
   }
 
@@ -229,9 +224,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Updates a property value within a license. This operation doesn't overwrite the existing values.
    * @param properties - properties to update
    */
-  async updateLicenseProperties(
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async updateLicenseProperties(properties: Properties): Promise<EmptyResponse> {
     return this.send("update_license_properties", { properties });
   }
 
@@ -240,10 +233,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param namespace_prefix - namsepace prefix
    * @param name_prefix - name prefix
    */
-  async listLicenseProperties(
-    namespace_prefix?: string,
-    name_prefix?: string
-  ): Promise<Properties> {
+  async listLicenseProperties(namespace_prefix?: string, name_prefix?: string): Promise<Properties> {
     return this.send("list_license_properties", {
       namespace_prefix,
       name_prefix,
@@ -254,9 +244,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Deletes the properties set within a license.
    * @param properties - properties to delete
    */
-  async deleteLicenseProperties(
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async deleteLicenseProperties(properties: Properties): Promise<EmptyResponse> {
     return this.send("delete_license_properties", { properties });
   }
 
@@ -265,10 +253,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param group_id - group ID to update properties
    * @param properties - properties to update
    */
-  async updateGroupProperties(
-    group_id: number,
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async updateGroupProperties(group_id: number, properties: Properties): Promise<EmptyResponse> {
     return this.send("update_group_properties", {
       group_id,
       properties,
@@ -280,11 +265,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param namespace_prefix - namespace prefix
    * @param name_prefix - name prefix
    */
-  async listGroupProperties(
-    group_id: number,
-    namespace_prefix?: string,
-    name_prefix?: string
-  ): Promise<Properties> {
+  async listGroupProperties(group_id: number, namespace_prefix?: string, name_prefix?: string): Promise<Properties> {
     return this.send("list_group_properties", {
       group_id,
       namespace_prefix,
@@ -297,10 +278,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param group_id - group ID to delete properties from
    * @param properties - properties to delete
    */
-  async deleteGroupProperties(
-    group_id: number,
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async deleteGroupProperties(group_id: number, properties: Properties): Promise<EmptyResponse> {
     return this.send("delete_group_properties", {
       group_id,
       properties,

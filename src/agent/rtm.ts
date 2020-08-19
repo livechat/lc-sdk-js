@@ -41,8 +41,8 @@ export default class RTM extends RTMAPI {
    * @param handler - function receiving push payload
    */
   on(push: Pushes, handler: (payload: any) => void): () => void {
-	  this.subscribePush(push, handler);
-	  return this.unsubscribePush.bind(this, push);
+    this.subscribePush(push, handler);
+    return this.unsubscribePush.bind(this, push);
   }
 
   /**
@@ -59,9 +59,7 @@ export default class RTM extends RTMAPI {
    * Change the firebase push notifications properties.
    * @param change - properties to change
    */
-  async changePushNotifications(
-    change: ChangePushNotificationsRequest
-  ): Promise<EmptyResponse> {
+  async changePushNotifications(change: ChangePushNotificationsRequest): Promise<EmptyResponse> {
     return this.send("change_push_notifications", change);
   }
 
@@ -95,10 +93,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat ID to get threads from
    * @param opts - additional options like pagination and sorting
    */
-  async listThreads(
-    chat_id: string,
-    opts?: ListThreadsParameters
-  ): Promise<ListThreadsResponse> {
+  async listThreads(chat_id: string, opts?: ListThreadsParameters): Promise<ListThreadsResponse> {
     return this.send("list_threads", { chat_id, ...opts });
   }
 
@@ -117,9 +112,7 @@ export default class RTM extends RTMAPI {
    * but each time with a different thread. The returned chat is a complete object, not only a chat summary.
    * @param opts - options like filters or pagination
    */
-  async listArchives(
-    opts?: ListArchivesParameters
-  ): Promise<ListArchivesResponse> {
+  async listArchives(opts?: ListArchivesParameters): Promise<ListArchivesResponse> {
     return this.send("list_archives", opts || {});
   }
 
@@ -135,11 +128,8 @@ export default class RTM extends RTMAPI {
    * Restarts an archived chat
    * @param param - either string ID of a chat to activate or full initial chat object
    */
-  async activateChat(
-    param: string | ActivateChatParameters
-  ): Promise<ActivateChatResponse> {
-    if (typeof param === "string")
-      return this.send("activate_chat", { chat: { id: param } });
+  async activateChat(param: string | ActivateChatParameters): Promise<ActivateChatResponse> {
+    if (typeof param === "string") return this.send("activate_chat", { chat: { id: param } });
     return this.send("activate_chat", param || {});
   }
 
@@ -174,10 +164,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat ID to grant access to
    * @param access - access to grant
    */
-  async grantChatAccess(
-    chat_id: string,
-    access: ChatAccess
-  ): Promise<EmptyResponse> {
+  async grantChatAccess(chat_id: string, access: ChatAccess): Promise<EmptyResponse> {
     return this.send("grant_chat_access", { chat_id, access });
   }
 
@@ -186,10 +173,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat ID to grant access to
    * @param access - access to revoke
    */
-  async revokeChatAccess(
-    chat_id: string,
-    access: ChatAccess
-  ): Promise<EmptyResponse> {
+  async revokeChatAccess(chat_id: string, access: ChatAccess): Promise<EmptyResponse> {
     return this.send("revoke_chat_access", { chat_id, access });
   }
 
@@ -198,10 +182,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat to transfer
    * @param opts - specific target or force flag
    */
-  async transferChat(
-    chat_id: string,
-    opts?: TransferChatParameters
-  ): Promise<EmptyResponse> {
+  async transferChat(chat_id: string, opts?: TransferChatParameters): Promise<EmptyResponse> {
     return this.send("transfer_chat", { chat_id, ...opts });
   }
 
@@ -216,7 +197,7 @@ export default class RTM extends RTMAPI {
     chat_id: string,
     user_id: string,
     user_type: string,
-    require_active_thread?: boolean
+    require_active_thread?: boolean,
   ): Promise<EmptyResponse> {
     return this.send("add_user_to_chat", {
       chat_id,
@@ -230,10 +211,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat to remove user from
    * @param user_id - user to remove
    */
-  async removeUserFromChat(
-    chat_id: string,
-    user_id: string
-  ): Promise<EmptyResponse> {
+  async removeUserFromChat(chat_id: string, user_id: string): Promise<EmptyResponse> {
     return this.send("remove_user_from_chat", {
       chat_id,
       user_id,
@@ -248,11 +226,7 @@ export default class RTM extends RTMAPI {
    * @param event - Event object
    * @param attach_to_last_thread - if true, adds event to last inactive thread
    */
-  async sendEvent(
-    chat_id: string,
-    event: Event,
-    attach_to_last_thread?: boolean
-  ): Promise<SendEventResponse> {
+  async sendEvent(chat_id: string, event: Event, attach_to_last_thread?: boolean): Promise<SendEventResponse> {
     return this.send("send_event", {
       chat_id,
       event,
@@ -264,9 +238,7 @@ export default class RTM extends RTMAPI {
    * Sends postback for rich message
    * @param opts - postback data
    */
-  async sendRichMessagePostback(
-    opts: SendRichMessagePostbackParameters
-  ): Promise<EmptyResponse> {
+  async sendRichMessagePostback(opts: SendRichMessagePostbackParameters): Promise<EmptyResponse> {
     return this.send("send_rich_message_postback", opts);
   }
 
@@ -275,10 +247,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat to update properties
    * @param properties - properties to update
    */
-  async updateChatProperties(
-    chat_id: string,
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async updateChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
     return this.send("update_chat_properties", { chat_id, properties });
   }
 
@@ -287,10 +256,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat to delete properties
    * @param properties - properties to delete
    */
-  async deleteChatProperties(
-    chat_id: string,
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async deleteChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
     return this.send("delete_chat_properties", { chat_id, properties });
   }
 
@@ -300,11 +266,7 @@ export default class RTM extends RTMAPI {
    * @param thread_id - thread to update properties
    * @param properties - properties to update
    */
-  async updateThreadProperties(
-    chat_id: string,
-    thread_id: string,
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async updateThreadProperties(chat_id: string, thread_id: string, properties: Properties): Promise<EmptyResponse> {
     return this.send("update_thread_properties", {
       chat_id,
       thread_id,
@@ -318,11 +280,7 @@ export default class RTM extends RTMAPI {
    * @param thread_id - thread to delete properties
    * @param properties - properties to delete
    */
-  async deleteThreadProperties(
-    chat_id: string,
-    thread_id: string,
-    properties: Properties
-  ): Promise<EmptyResponse> {
+  async deleteThreadProperties(chat_id: string, thread_id: string, properties: Properties): Promise<EmptyResponse> {
     return this.send("delete_thread_properties", {
       chat_id,
       thread_id,
@@ -341,7 +299,7 @@ export default class RTM extends RTMAPI {
     chat_id: string,
     thread_id: string,
     event_id: string,
-    properties: Properties
+    properties: Properties,
   ): Promise<EmptyResponse> {
     return this.send("update_event_properties", {
       chat_id,
@@ -362,7 +320,7 @@ export default class RTM extends RTMAPI {
     chat_id: string,
     thread_id: string,
     event_id: string,
-    properties: Properties
+    properties: Properties,
   ): Promise<EmptyResponse> {
     return this.send("delete_event_properties", {
       chat_id,
@@ -378,11 +336,7 @@ export default class RTM extends RTMAPI {
    * @param thread_id - thread to tag
    * @param tag - tag to add
    */
-  async tagThread(
-    chat_id: string,
-    thread_id: string,
-    tag: string
-  ): Promise<EmptyResponse> {
+  async tagThread(chat_id: string, thread_id: string, tag: string): Promise<EmptyResponse> {
     return this.send("tag_thread", { chat_id, thread_id, tag });
   }
 
@@ -392,11 +346,7 @@ export default class RTM extends RTMAPI {
    * @param thread_id - thread to untag
    * @param tag - tag to remove
    */
-  async untagThread(
-    chat_id: string,
-    thread_id: string,
-    tag: string
-  ): Promise<EmptyResponse> {
+  async untagThread(chat_id: string, thread_id: string, tag: string): Promise<EmptyResponse> {
     return this.send("untag_thread", { chat_id, thread_id, tag });
   }
 
@@ -412,9 +362,7 @@ export default class RTM extends RTMAPI {
    * It returns the list of Customers.
    * @param opts - options like filters or pagination
    */
-  async listCustomers(
-    opts?: ListCustomersParameters
-  ): Promise<ListCustomersResponse> {
+  async listCustomers(opts?: ListCustomersParameters): Promise<ListCustomersResponse> {
     return this.send("list_customers", opts || {});
   }
 
@@ -422,9 +370,7 @@ export default class RTM extends RTMAPI {
    * Creates a new Customer user type.
    * @param opts - customer data
    */
-  async createCustomer(
-    opts?: CustomerParameters
-  ): Promise<CreateCustomerResponse> {
+  async createCustomer(opts?: CustomerParameters): Promise<CreateCustomerResponse> {
     return this.send("create_customer", opts || {});
   }
 
@@ -433,10 +379,7 @@ export default class RTM extends RTMAPI {
    * @param customer_id - ID of a customer to update
    * @param opts - properties to update
    */
-  async updateCustomer(
-    customer_id: string,
-    opts: CustomerParameters
-  ): Promise<EmptyResponse> {
+  async updateCustomer(customer_id: string, opts: CustomerParameters): Promise<EmptyResponse> {
     return this.send("update_customer", { customer_id, ...opts });
   }
 
@@ -455,10 +398,7 @@ export default class RTM extends RTMAPI {
    * @param status - status to set
    * @param agent_id - ID of agent to update status
    */
-  async setRoutingStatus(
-    status: RoutingStatus,
-    agent_id?: string
-  ): Promise<EmptyResponse> {
+  async setRoutingStatus(status: RoutingStatus, agent_id?: string): Promise<EmptyResponse> {
     return this.send("set_routing_status", { status, agent_id });
   }
 
@@ -467,10 +407,7 @@ export default class RTM extends RTMAPI {
    * @param chat_id - chat to mark events
    * @param seen_up_to - date up to which mark events
    */
-  async markEventsAsSeen(
-    chat_id: string,
-    seen_up_to: string
-  ): Promise<EmptyResponse> {
+  async markEventsAsSeen(chat_id: string, seen_up_to: string): Promise<EmptyResponse> {
     return this.send("mark_events_as_seen", { chat_id, seen_up_to });
   }
 
@@ -480,11 +417,7 @@ export default class RTM extends RTMAPI {
    * @param is_typing - status of typing
    * @param recipients - possible values: all, agents
    */
-  async sendTypingIndicator(
-    chat_id: string,
-    is_typing: boolean,
-    recipients?: string
-  ): Promise<EmptyResponse> {
+  async sendTypingIndicator(chat_id: string, is_typing: boolean, recipients?: string): Promise<EmptyResponse> {
     return this.send("send_typing_indicator", {
       chat_id,
       is_typing,
@@ -500,11 +433,7 @@ export default class RTM extends RTMAPI {
    * @param content = JSON content to send
    * @param type - message type
    */
-  async multicast(
-    recipients: MulticastRecipients,
-    content: object,
-    type?: string
-  ): Promise<EmptyResponse> {
+  async multicast(recipients: MulticastRecipients, content: object, type?: string): Promise<EmptyResponse> {
     return this.send("multicast", { recipients, content, type });
   }
 

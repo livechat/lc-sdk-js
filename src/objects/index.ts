@@ -121,13 +121,7 @@ export interface SystemMessage {
   recipients?: string;
 }
 
-export type Event =
-  | File
-  | FilledForm
-  | Message
-  | RichMessage
-  | CustomEvent
-  | SystemMessage;
+export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage;
 
 export type User = Agent | Customer;
 

@@ -1,13 +1,4 @@
-import {
-  Chat,
-  Access,
-  User,
-  Event,
-  Postback,
-  Properties,
-  Customer,
-  RoutingStatus,
-} from "../objects";
+import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus } from "../objects";
 
 export interface Webhook {
   webhook_id: string;
