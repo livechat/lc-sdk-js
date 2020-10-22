@@ -182,6 +182,7 @@ export interface CustomerFilters {
   created_at?: DateRangeFilter;
   agent_last_event_created_at?: DateRangeFilter;
   customer_last_event_created_at?: DateRangeFilter;
+  include_customers_without_chats?: boolean;
 }
 
 export interface StringFilter {
