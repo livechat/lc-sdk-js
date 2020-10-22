@@ -169,7 +169,17 @@ export interface ListCustomersParameters {
   limit?: number;
   sort_order?: SortOrder;
   filters?: CustomerFilters;
-  sort_by?: "created_at" | "name" | "email" | "threads_count" | "visits_count" | "created_at" | "agent_last_event" | "customer_last_event";
+  sort_by?: CustomerSortBy;
+}
+
+export enum CustomerSortBy {
+  CreateAt = "created_at",
+  Name = "name",
+  Email = "email",
+  ThreadsCount = "threads_count",
+  VisitsCount = "visits_count",
+  AgentLastEvent = "agent_last_event",
+  CustomerLastEvent = "customer_last_event",
 }
 
 export interface CustomerFilters {
