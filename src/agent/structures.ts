@@ -169,6 +169,7 @@ export interface ListCustomersParameters {
   limit?: number;
   sort_order?: SortOrder;
   filters?: CustomerFilters;
+  sort_by?: "created_at" | "name" | "email" | "threads_count" | "visits_count" | "created_at" | "agent_last_event" | "customer_last_event";
 }
 
 export interface CustomerFilters {
