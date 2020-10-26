@@ -174,8 +174,6 @@ export interface ListCustomersParameters {
 
 export enum CustomerSortBy {
   CreateAt = "created_at",
-  Name = "name",
-  Email = "email",
   ThreadsCount = "threads_count",
   VisitsCount = "visits_count",
   AgentLastEvent = "agent_last_event",
