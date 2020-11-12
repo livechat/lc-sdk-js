@@ -119,9 +119,11 @@ export interface PropertiesConfig {
 }
 
 export interface PropertyConfig {
+  name: string;
+  owner_client_id: string;
   type: string;
-  locations: {
-    [locationName: string]: Location;
+  access: {
+    [locationName: string]: LocationAccess;
   };
   description?: string;
   domain?: any[];
@@ -129,15 +131,12 @@ export interface PropertyConfig {
     from: number;
     to: number;
   };
+  public_access?: string[];
 }
 
-export interface Location {
-  access: PropertyAccess;
-}
-
-export interface PropertyAccess {
-  read: boolean;
-  write: boolean;
+export interface LocationAccess {
+  agent?: string[];
+  customer?: string[];
 }
 
 export interface Webhook {

@@ -12,6 +12,7 @@ import {
   AgentPriorities,
   CreateGroupResponse,
   Group,
+  PropertyConfig,
   PropertiesConfig,
   Webhook,
   RegisteredWebhook,
@@ -205,19 +206,46 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
-   * Registers properties.
-   * @param properties - properties to register
+   * Registers private property.
+   * @param property - property to register
    */
-  async registerProperties(properties: PropertiesConfig): Promise<EmptyResponse> {
-    return this.send("register_properties", properties);
+  async registerProperty(property: PropertyConfig): Promise<EmptyResponse> {
+    return this.send("register_property", property);
   }
 
   /**
-   * Lists registered properties.
-   * @param all - if should return all properties within license
+   * Unregisters private property.
+   * @param name - property name
+   * @param owner_client_id - clientID of property owner
    */
-  async listRegisteredProperties(all?: boolean): Promise<PropertiesConfig> {
-    return this.send("list_registered_properties", { all });
+  async unregisterProperty(name: string, owner_client_id: string): Promise<EmptyResponse> {
+    return this.send("unregister_property", { name, owner_client_id });
+  }
+
+  /**
+   * Publishes private property.
+   * @param name - property name
+   * @param owner_client_id - clientID of property owner
+   * @param read - determines whether non-owners can read the property
+   * @param write - determines whether non-owners can write the property
+   */
+  async publishProperty(name: string, owner_client_id: string, read: boolean, write: boolean): Promise<EmptyResponse> {
+    let access_type = new Array<string>();
+    if (read) {
+      access_type.push("read")
+    }
+    if (write) {
+      access_type.push("write")
+    }
+    return this.send("publish_property", { name, owner_client_id, access_type });
+  }
+
+  /**
+   * Lists properties for given client_id.
+   * @param owner_client_id - client_id of property owner
+   */
+  async listProperties(owner_client_id: string): Promise<PropertiesConfig> {
+    return this.send("list_properties", { owner_client_id });
   }
 
   /**
