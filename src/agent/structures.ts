@@ -39,6 +39,12 @@ export interface ListThreadsParameters {
   limit?: number;
   page_id?: string;
   min_events_count?: number;
+  filters?: ThreadsFilters;
+}
+
+export interface ThreadsFilters {
+  from?: string;
+  to?: string;
 }
 
 export interface ListThreadsResponse {
