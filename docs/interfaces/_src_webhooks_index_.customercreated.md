@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [CustomerCreated](_src_webhooks_index_.customercreated.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [CustomerCreated](_src_webhooks_index_.customercreated.md)
 
 # Interface: CustomerCreated
 
@@ -18,4 +18,4 @@
 
 • **customer**: *[Customer](_src_objects_index_.customer.md)*
 
-*Defined in [src/webhooks/index.ts:162](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L162)*
+*Defined in [src/webhooks/index.ts:153](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L153)*

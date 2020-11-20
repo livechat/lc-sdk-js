@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [BotStatus](_src_configuration_structures_.botstatus.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [BotStatus](_src_configuration_structures_.botstatus.md)
 
 # Enumeration: BotStatus
 
@@ -16,7 +16,7 @@
 
 • **AcceptingChats**: = "accepting chats"
 
-*Defined in [src/configuration/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L77)*
+*Defined in [src/configuration/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L77)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **NotAcceptingChats**: = "not accepting chats"
 
-*Defined in [src/configuration/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L78)*
+*Defined in [src/configuration/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L78)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **Offline**: = "offline"
 
-*Defined in [src/configuration/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L79)*
+*Defined in [src/configuration/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L79)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [LoginRequest](_src_agent_structures_.loginrequest.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [LoginRequest](_src_agent_structures_.loginrequest.md)
 
 # Interface: LoginRequest
 
@@ -23,7 +23,7 @@
 
 • **application**? : *[Application](_src_agent_structures_.application.md)*
 
-*Defined in [src/agent/structures.ts:255](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L255)*
+*Defined in [src/agent/structures.ts:267](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L267)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **away**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:256](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L256)*
+*Defined in [src/agent/structures.ts:268](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L268)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **push_notifications**? : *[PushNotifications](_src_agent_structures_.pushnotifications.md)*
 
-*Defined in [src/agent/structures.ts:254](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L254)*
+*Defined in [src/agent/structures.ts:266](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L266)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **reconnect**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:253](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L253)*
+*Defined in [src/agent/structures.ts:265](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L265)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **timezone**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:252](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L252)*
+*Defined in [src/agent/structures.ts:264](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L264)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **token**: *string*
 
-*Defined in [src/agent/structures.ts:251](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L251)*
+*Defined in [src/agent/structures.ts:263](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L263)*

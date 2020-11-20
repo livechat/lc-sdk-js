@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Element](_src_objects_index_.element.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Element](_src_objects_index_.element.md)
 
 # Interface: Element
 
@@ -21,7 +21,7 @@
 
 • **buttons**? : *[Button](_src_objects_index_.button.md)[]*
 
-*Defined in [src/objects/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L81)*
+*Defined in [src/objects/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L81)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **image**: *[Image](_src_objects_index_.image.md)*
 
-*Defined in [src/objects/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L80)*
+*Defined in [src/objects/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L80)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **subtitle**: *string*
 
-*Defined in [src/objects/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L79)*
+*Defined in [src/objects/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L79)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/objects/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L78)*
+*Defined in [src/objects/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L78)*

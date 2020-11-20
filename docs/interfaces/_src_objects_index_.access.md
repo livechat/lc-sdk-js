@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Access](_src_objects_index_.access.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Access](_src_objects_index_.access.md)
 
 # Interface: Access
 
@@ -18,4 +18,4 @@
 
 • **group_ids**: *number[]*
 
-*Defined in [src/objects/index.ts:246](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L246)*
+*Defined in [src/objects/index.ts:240](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L240)*

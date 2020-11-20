@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/web"](_src_agent_web_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/web"](_src_agent_web_.md)
 
 # Module: "src/agent/web"
 

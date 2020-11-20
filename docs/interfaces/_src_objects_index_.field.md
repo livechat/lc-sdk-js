@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Field](_src_objects_index_.field.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Field](_src_objects_index_.field.md)
 
 # Interface: Field
 
@@ -21,7 +21,7 @@
 
 • **answer**: *string*
 
-*Defined in [src/objects/index.ts:266](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L266)*
+*Defined in [src/objects/index.ts:260](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L260)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/objects/index.ts:263](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L263)*
+*Defined in [src/objects/index.ts:257](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L257)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/objects/index.ts:265](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L265)*
+*Defined in [src/objects/index.ts:259](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L259)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L264)*
+*Defined in [src/objects/index.ts:258](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L258)*

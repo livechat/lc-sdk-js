@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [LastPage](_src_objects_index_.lastpage.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [LastPage](_src_objects_index_.lastpage.md)
 
 # Interface: LastPage
 
@@ -20,7 +20,7 @@
 
 • **opened_at**: *string*
 
-*Defined in [src/objects/index.ts:203](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L203)*
+*Defined in [src/objects/index.ts:197](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L197)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/objects/index.ts:205](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L205)*
+*Defined in [src/objects/index.ts:199](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L199)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/objects/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L204)*
+*Defined in [src/objects/index.ts:198](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L198)*

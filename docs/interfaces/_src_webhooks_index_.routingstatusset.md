@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [RoutingStatusSet](_src_webhooks_index_.routingstatusset.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [RoutingStatusSet](_src_webhooks_index_.routingstatusset.md)
 
 # Interface: RoutingStatusSet
 
@@ -19,7 +19,7 @@
 
 • **agent_id**: *string*
 
-*Defined in [src/webhooks/index.ts:153](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L153)*
+*Defined in [src/webhooks/index.ts:144](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L144)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **status**: *[RoutingStatus](../enums/_src_objects_index_.routingstatus.md)*
 
-*Defined in [src/webhooks/index.ts:154](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L154)*
+*Defined in [src/webhooks/index.ts:145](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L145)*

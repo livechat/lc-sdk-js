@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [Application](_src_customer_structures_.application.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [Application](_src_customer_structures_.application.md)
 
 # Interface: Application
 
@@ -20,7 +20,7 @@
 
 • **channel_type**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L168)*
+*Defined in [src/customer/structures.ts:170](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L170)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:166](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L166)*
+*Defined in [src/customer/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L168)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **version**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:167](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L167)*
+*Defined in [src/customer/structures.ts:169](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L169)*

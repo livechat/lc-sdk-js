@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [PushNotifications](_src_agent_structures_.pushnotifications.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [PushNotifications](_src_agent_structures_.pushnotifications.md)
 
 # Interface: PushNotifications
 
@@ -19,7 +19,7 @@
 
 • **firebase_token**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:261](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L261)*
+*Defined in [src/agent/structures.ts:273](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L273)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **platform**: *string*
 
-*Defined in [src/agent/structures.ts:260](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L260)*
+*Defined in [src/agent/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L272)*

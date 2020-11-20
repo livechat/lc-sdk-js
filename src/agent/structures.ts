@@ -122,6 +122,7 @@ export interface ListArchivesResponse {
 export interface StartChatParameters {
   chat?: InitialChat;
   continuous?: boolean;
+  active?: boolean;
 }
 
 export interface StartChatResponse {
@@ -130,12 +131,13 @@ export interface StartChatResponse {
   event_ids?: string[];
 }
 
-export interface ActivateChatParameters {
+export interface ResumeChatParameters {
   chat: InitialChat;
   continuous?: boolean;
+  active?: boolean;
 }
 
-export interface ActivateChatResponse {
+export interface ResumeChatResponse {
   thread_id: string;
   event_ids?: string[];
 }

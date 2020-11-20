@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [DaySchedule](_src_configuration_structures_.dayschedule.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [DaySchedule](_src_configuration_structures_.dayschedule.md)
 
 # Interface: DaySchedule
 
@@ -19,7 +19,7 @@
 
 • **end**: *string*
 
-*Defined in [src/configuration/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L38)*
+*Defined in [src/configuration/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L38)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **start**: *string*
 
-*Defined in [src/configuration/structures.ts:37](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L37)*
+*Defined in [src/configuration/structures.ts:37](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L37)*

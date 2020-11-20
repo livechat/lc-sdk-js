@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/authorization/index"](../modules/_src_authorization_index_.md) › [Token](_src_authorization_index_.token.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/authorization/index"](../modules/_src_authorization_index_.md) › [Token](_src_authorization_index_.token.md)
 
 # Interface: Token
 
@@ -20,7 +20,7 @@
 
 • **accessToken**: *string*
 
-*Defined in [src/authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/authorization/index.ts#L3)*
+*Defined in [src/authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/authorization/index.ts#L3)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **licenseID**: *number*
 
-*Defined in [src/authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/authorization/index.ts#L2)*
+*Defined in [src/authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/authorization/index.ts#L2)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **region**: *string*
 
-*Defined in [src/authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/authorization/index.ts#L4)*
+*Defined in [src/authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/authorization/index.ts#L4)*

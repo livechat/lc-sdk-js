@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [EventsFilter](_src_agent_structures_.eventsfilter.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [EventsFilter](_src_agent_structures_.eventsfilter.md)
 
 # Interface: EventsFilter
 
@@ -18,4 +18,4 @@
 
 • **types**: *string[]*
 
-*Defined in [src/agent/structures.ts:106](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L106)*
+*Defined in [src/agent/structures.ts:106](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L106)*

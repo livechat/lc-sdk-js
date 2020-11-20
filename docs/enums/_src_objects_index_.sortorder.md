@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [SortOrder](_src_objects_index_.sortorder.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [SortOrder](_src_objects_index_.sortorder.md)
 
 # Enumeration: SortOrder
 
@@ -15,7 +15,7 @@
 
 • **Asc**: = "asc"
 
-*Defined in [src/objects/index.ts:135](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L135)*
+*Defined in [src/objects/index.ts:129](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L129)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Desc**: = "desc"
 
-*Defined in [src/objects/index.ts:136](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L136)*
+*Defined in [src/objects/index.ts:130](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L130)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [GetPredictedAgentResponse](_src_customer_structures_.getpredictedagentresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [GetPredictedAgentResponse](_src_customer_structures_.getpredictedagentresponse.md)
 
 # Interface: GetPredictedAgentResponse
 
@@ -23,7 +23,7 @@
 
 • **avatar**: *string*
 
-*Defined in [src/customer/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L122)*
+*Defined in [src/customer/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L124)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/customer/structures.ts:120](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L120)*
+*Defined in [src/customer/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L122)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **is_bot**: *boolean*
 
-*Defined in [src/customer/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L123)*
+*Defined in [src/customer/structures.ts:125](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L125)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **job_title**: *string*
 
-*Defined in [src/customer/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L124)*
+*Defined in [src/customer/structures.ts:126](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L126)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/customer/structures.ts:121](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L121)*
+*Defined in [src/customer/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L123)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/customer/structures.ts:125](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L125)*
+*Defined in [src/customer/structures.ts:127](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L127)*

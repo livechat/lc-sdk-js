@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [Application](_src_agent_structures_.application.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [Application](_src_agent_structures_.application.md)
 
 # Interface: Application
 
@@ -19,7 +19,7 @@
 
 • **name**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:265](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L265)*
+*Defined in [src/agent/structures.ts:277](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L277)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **version**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:266](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L266)*
+*Defined in [src/agent/structures.ts:278](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L278)*

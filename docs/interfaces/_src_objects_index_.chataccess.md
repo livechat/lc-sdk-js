@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [ChatAccess](_src_objects_index_.chataccess.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [ChatAccess](_src_objects_index_.chataccess.md)
 
 # Interface: ChatAccess
 
@@ -19,7 +19,7 @@
 
 • **id**: *number*
 
-*Defined in [src/objects/index.ts:301](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L301)*
+*Defined in [src/objects/index.ts:295](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L295)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:300](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L300)*
+*Defined in [src/objects/index.ts:294](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L294)*

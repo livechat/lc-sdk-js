@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [GroupStatus](_src_objects_index_.groupstatus.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [GroupStatus](_src_objects_index_.groupstatus.md)
 
 # Enumeration: GroupStatus
 
@@ -16,7 +16,7 @@
 
 • **Offline**: = "offline"
 
-*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L330)*
+*Defined in [src/objects/index.ts:324](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L324)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **Online**: = "online"
 
-*Defined in [src/objects/index.ts:329](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L329)*
+*Defined in [src/objects/index.ts:323](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L323)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **OnlineForQueue**: = "online_for_queue"
 
-*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L331)*
+*Defined in [src/objects/index.ts:325](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L325)*

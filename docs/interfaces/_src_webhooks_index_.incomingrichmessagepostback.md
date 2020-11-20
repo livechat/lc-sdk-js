@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [IncomingRichMessagePostback](_src_webhooks_index_.incomingrichmessagepostback.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [IncomingRichMessagePostback](_src_webhooks_index_.incomingrichmessagepostback.md)
 
 # Interface: IncomingRichMessagePostback
 
@@ -22,7 +22,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:98](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L98)*
+*Defined in [src/webhooks/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L89)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **event_id**: *string*
 
-*Defined in [src/webhooks/index.ts:100](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L100)*
+*Defined in [src/webhooks/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L91)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **postback**: *[Postback](_src_objects_index_.postback.md)*
 
-*Defined in [src/webhooks/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L101)*
+*Defined in [src/webhooks/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L92)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/webhooks/index.ts:99](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L99)*
+*Defined in [src/webhooks/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L90)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/webhooks/index.ts:97](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L97)*
+*Defined in [src/webhooks/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L88)*

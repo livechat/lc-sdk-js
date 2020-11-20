@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ListCustomersParameters](_src_agent_structures_.listcustomersparameters.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ListCustomersParameters](_src_agent_structures_.listcustomersparameters.md)
 
 # Interface: ListCustomersParameters
 
@@ -13,6 +13,7 @@
 * [filters](_src_agent_structures_.listcustomersparameters.md#optional-filters)
 * [limit](_src_agent_structures_.listcustomersparameters.md#optional-limit)
 * [page_id](_src_agent_structures_.listcustomersparameters.md#optional-page_id)
+* [sort_by](_src_agent_structures_.listcustomersparameters.md#optional-sort_by)
 * [sort_order](_src_agent_structures_.listcustomersparameters.md#optional-sort_order)
 
 ## Properties
@@ -21,7 +22,7 @@
 
 • **filters**? : *[CustomerFilters](_src_agent_structures_.customerfilters.md)*
 
-*Defined in [src/agent/structures.ts:171](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L171)*
+*Defined in [src/agent/structures.ts:173](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L173)*
 
 ___
 
@@ -29,7 +30,7 @@ ___
 
 • **limit**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:169](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L169)*
+*Defined in [src/agent/structures.ts:171](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L171)*
 
 ___
 
@@ -37,7 +38,15 @@ ___
 
 • **page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L168)*
+*Defined in [src/agent/structures.ts:170](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L170)*
+
+___
+
+### `Optional` sort_by
+
+• **sort_by**? : *[CustomerSortBy](../enums/_src_agent_structures_.customersortby.md)*
+
+*Defined in [src/agent/structures.ts:174](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L174)*
 
 ___
 
@@ -45,4 +54,4 @@ ___
 
 • **sort_order**? : *[SortOrder](../enums/_src_objects_index_.sortorder.md)*
 
-*Defined in [src/agent/structures.ts:170](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L170)*
+*Defined in [src/agent/structures.ts:172](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L172)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ChatUserRemoved](_src_webhooks_index_.chatuserremoved.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ChatUserRemoved](_src_webhooks_index_.chatuserremoved.md)
 
 # Interface: ChatUserRemoved
 
@@ -21,7 +21,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L78)*
+*Defined in [src/webhooks/index.ts:69](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L69)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/webhooks/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L79)*
+*Defined in [src/webhooks/index.ts:70](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L70)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **user_id**: *string*
 
-*Defined in [src/webhooks/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L80)*
+*Defined in [src/webhooks/index.ts:71](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L71)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **user_type**: *string*
 
-*Defined in [src/webhooks/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L81)*
+*Defined in [src/webhooks/index.ts:72](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L72)*

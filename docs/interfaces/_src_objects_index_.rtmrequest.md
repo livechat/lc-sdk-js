@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [RTMRequest](_src_objects_index_.rtmrequest.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [RTMRequest](_src_objects_index_.rtmrequest.md)
 
 # Interface: RTMRequest
 
@@ -21,7 +21,7 @@
 
 • **action**: *string*
 
-*Defined in [src/objects/index.ts:335](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L335)*
+*Defined in [src/objects/index.ts:329](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L329)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **author_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:337](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L337)*
+*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L331)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **payload**: *any*
 
-*Defined in [src/objects/index.ts:336](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L336)*
+*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L330)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **request_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:338](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L338)*
+*Defined in [src/objects/index.ts:332](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L332)*

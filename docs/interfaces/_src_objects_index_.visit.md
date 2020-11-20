@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Visit](_src_objects_index_.visit.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Visit](_src_objects_index_.visit.md)
 
 # Interface: Visit
 
@@ -23,7 +23,7 @@
 
 • **geolocation**: *[Geolocation](_src_objects_index_.geolocation.md)*
 
-*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L190)*
+*Defined in [src/objects/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L184)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **ip**: *string*
 
-*Defined in [src/objects/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L188)*
+*Defined in [src/objects/index.ts:182](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L182)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **last_pages**: *[LastPage](_src_objects_index_.lastpage.md)[]*
 
-*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L191)*
+*Defined in [src/objects/index.ts:185](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L185)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **referrer**: *string*
 
-*Defined in [src/objects/index.ts:187](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L187)*
+*Defined in [src/objects/index.ts:181](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L181)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **started_at**: *string*
 
-*Defined in [src/objects/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L186)*
+*Defined in [src/objects/index.ts:180](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L180)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **user_agent**: *string*
 
-*Defined in [src/objects/index.ts:189](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L189)*
+*Defined in [src/objects/index.ts:183](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L183)*

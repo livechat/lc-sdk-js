@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/internal/constants"](_src_internal_constants_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/internal/constants"](_src_internal_constants_.md)
 
 # Module: "src/internal/constants"
 
@@ -15,12 +15,12 @@
 
 • **ApiURL**: *string* = "api.livechatinc.com"
 
-*Defined in [src/internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/internal/constants.ts#L2)*
+*Defined in [src/internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/constants.ts#L2)*
 
 ___
 
 ### `Const` ApiVersion
 
-• **ApiVersion**: *string* = "v3.2"
+• **ApiVersion**: *string* = "v3.3"
 
-*Defined in [src/internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/internal/constants.ts#L1)*
+*Defined in [src/internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/constants.ts#L1)*

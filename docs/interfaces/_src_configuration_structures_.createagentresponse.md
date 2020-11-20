@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [CreateAgentResponse](_src_configuration_structures_.createagentresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [CreateAgentResponse](_src_configuration_structures_.createagentresponse.md)
 
 # Interface: CreateAgentResponse
 
@@ -18,4 +18,4 @@
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:6](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L6)*
+*Defined in [src/configuration/structures.ts:6](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L6)*

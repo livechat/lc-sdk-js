@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ChangePushNotificationsRequest](_src_agent_structures_.changepushnotificationsrequest.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ChangePushNotificationsRequest](_src_agent_structures_.changepushnotificationsrequest.md)
 
 # Interface: ChangePushNotificationsRequest
 
@@ -20,7 +20,7 @@
 
 • **enabled**: *boolean*
 
-*Defined in [src/agent/structures.ts:287](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L287)*
+*Defined in [src/agent/structures.ts:299](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L299)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **firebase_token**: *string*
 
-*Defined in [src/agent/structures.ts:285](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L285)*
+*Defined in [src/agent/structures.ts:297](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L297)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **platform**: *string*
 
-*Defined in [src/agent/structures.ts:286](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L286)*
+*Defined in [src/agent/structures.ts:298](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L298)*

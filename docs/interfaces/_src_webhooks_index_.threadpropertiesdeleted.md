@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ThreadPropertiesDeleted](_src_webhooks_index_.threadpropertiesdeleted.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ThreadPropertiesDeleted](_src_webhooks_index_.threadpropertiesdeleted.md)
 
 # Interface: ThreadPropertiesDeleted
 
@@ -20,7 +20,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:121](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L121)*
+*Defined in [src/webhooks/index.ts:112](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L112)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **properties**: *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/webhooks/index.ts:123](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L123)*
+*Defined in [src/webhooks/index.ts:114](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L114)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/webhooks/index.ts:122](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L122)*
+*Defined in [src/webhooks/index.ts:113](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L113)*

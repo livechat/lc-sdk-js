@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [CreateCustomerResponse](_src_agent_structures_.createcustomerresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [CreateCustomerResponse](_src_agent_structures_.createcustomerresponse.md)
 
 # Interface: CreateCustomerResponse
 
@@ -18,4 +18,4 @@
 
 • **customer_id**: *string*
 
-*Defined in [src/agent/structures.ts:223](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L223)*
+*Defined in [src/agent/structures.ts:235](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L235)*

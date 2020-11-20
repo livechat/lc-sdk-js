@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [TransferTarget](_src_agent_structures_.transfertarget.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [TransferTarget](_src_agent_structures_.transfertarget.md)
 
 # Interface: TransferTarget
 
@@ -19,7 +19,7 @@
 
 • **ids**: *number[]*
 
-*Defined in [src/agent/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L144)*
+*Defined in [src/agent/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L146)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/agent/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L143)*
+*Defined in [src/agent/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L145)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [PropertyConfig](_src_configuration_structures_.propertyconfig.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [PropertyConfig](_src_configuration_structures_.propertyconfig.md)
 
 # Interface: PropertyConfig
 
@@ -22,7 +22,7 @@
 
 • **description**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:126](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L126)*
+*Defined in [src/configuration/structures.ts:126](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L126)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **domain**? : *any[]*
 
-*Defined in [src/configuration/structures.ts:127](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L127)*
+*Defined in [src/configuration/structures.ts:127](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L127)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **locations**: *object*
 
-*Defined in [src/configuration/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L123)*
+*Defined in [src/configuration/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L123)*
 
 #### Type declaration:
 
@@ -50,7 +50,7 @@ ___
 
 • **range**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:128](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L128)*
+*Defined in [src/configuration/structures.ts:128](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L128)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/configuration/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L122)*
+*Defined in [src/configuration/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L122)*

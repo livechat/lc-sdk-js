@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [GetFormResponse](_src_customer_structures_.getformresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [GetFormResponse](_src_customer_structures_.getformresponse.md)
 
 # Interface: GetFormResponse
 
@@ -19,7 +19,7 @@
 
 • **enabled**: *boolean*
 
-*Defined in [src/customer/structures.ts:103](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L103)*
+*Defined in [src/customer/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L105)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **form**? : *[Form](_src_customer_structures_.form.md)*
 
-*Defined in [src/customer/structures.ts:102](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L102)*
+*Defined in [src/customer/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L104)*

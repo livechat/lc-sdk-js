@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Geolocation](_src_objects_index_.geolocation.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [Geolocation](_src_objects_index_.geolocation.md)
 
 # Interface: Geolocation
 
@@ -22,7 +22,7 @@
 
 • **city**: *string*
 
-*Defined in [src/objects/index.ts:198](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L198)*
+*Defined in [src/objects/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L192)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **country**: *string*
 
-*Defined in [src/objects/index.ts:195](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L195)*
+*Defined in [src/objects/index.ts:189](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L189)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **country_code**: *string*
 
-*Defined in [src/objects/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L196)*
+*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L190)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **region**: *string*
 
-*Defined in [src/objects/index.ts:197](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L197)*
+*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L191)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **timezone**: *string*
 
-*Defined in [src/objects/index.ts:199](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L199)*
+*Defined in [src/objects/index.ts:193](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L193)*

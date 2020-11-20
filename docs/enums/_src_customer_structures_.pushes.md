@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [Pushes](_src_customer_structures_.pushes.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [Pushes](_src_customer_structures_.pushes.md)
 
 # Enumeration: Pushes
 
@@ -38,7 +38,7 @@
 
 • **ChatDeactivated**: = "chat_deactivated"
 
-*Defined in [src/customer/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L189)*
+*Defined in [src/customer/structures.ts:191](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L191)*
 
 Informs that a chat was deactivated by closing the currently open thread.
 
@@ -48,7 +48,7 @@ ___
 
 • **ChatPropertiesDeleted**: = "chat_properties_deleted"
 
-*Defined in [src/customer/structures.ts:232](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L232)*
+*Defined in [src/customer/structures.ts:234](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L234)*
 
 Informs about those chat properties that were deleted.
 
@@ -58,7 +58,7 @@ ___
 
 • **ChatPropertiesUpdated**: = "chat_properties_updated"
 
-*Defined in [src/customer/structures.ts:227](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L227)*
+*Defined in [src/customer/structures.ts:229](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L229)*
 
 Informs about those chat properties that were updated.
 
@@ -68,7 +68,7 @@ ___
 
 • **ChatTransferred**: = "chat_transferred"
 
-*Defined in [src/customer/structures.ts:194](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L194)*
+*Defined in [src/customer/structures.ts:196](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L196)*
 
 Informs that a chat was transferred to a different group or to an Agent.
 
@@ -78,7 +78,7 @@ ___
 
 • **CustomerDisconnected**: = "customer_disconnected"
 
-*Defined in [src/customer/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L272)*
+*Defined in [src/customer/structures.ts:274](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L274)*
 
 Informs that a Customer was disconnected. The payload contains the reason of Customer's disconnection.
 
@@ -88,7 +88,7 @@ ___
 
 • **CustomerPageUpdated**: = "customer_page_updated"
 
-*Defined in [src/customer/structures.ts:262](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L262)*
+*Defined in [src/customer/structures.ts:264](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L264)*
 
 Informs that a Customer moved to another page of the website.
 
@@ -98,7 +98,7 @@ ___
 
 • **CustomerSideStorageUpdated**: = "customer_side_storage_updated"
 
-*Defined in [src/customer/structures.ts:267](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L267)*
+*Defined in [src/customer/structures.ts:269](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L269)*
 
 Informs that a Customer updated the data stored on their side.
 
@@ -108,7 +108,7 @@ ___
 
 • **CustomerUpdated**: = "customer_updated"
 
-*Defined in [src/customer/structures.ts:257](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L257)*
+*Defined in [src/customer/structures.ts:259](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L259)*
 
 Informs that Customer's data was updated.
 
@@ -118,7 +118,7 @@ ___
 
 • **EventPropertiesDeleted**: = "event_properties_deleted"
 
-*Defined in [src/customer/structures.ts:252](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L252)*
+*Defined in [src/customer/structures.ts:254](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L254)*
 
 Informs about those event properties that were deleted.
 
@@ -128,7 +128,7 @@ ___
 
 • **EventPropertiesUpdated**: = "event_properties_updated"
 
-*Defined in [src/customer/structures.ts:247](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L247)*
+*Defined in [src/customer/structures.ts:249](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L249)*
 
 Informs about those event properties that were updated.
 
@@ -138,7 +138,7 @@ ___
 
 • **EventUpdated**: = "event_updated"
 
-*Defined in [src/customer/structures.ts:216](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L216)*
+*Defined in [src/customer/structures.ts:218](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L218)*
 
 Informs that an event was updated.
 
@@ -148,7 +148,7 @@ ___
 
 • **EventsMarkedAsSeen**: = "events_marked_as_seen"
 
-*Defined in [src/customer/structures.ts:284](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L284)*
+*Defined in [src/customer/structures.ts:286](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L286)*
 
 Informs that a user has seen events up to a specific time.
 
@@ -158,7 +158,7 @@ ___
 
 • **GreetingAccepted**: = "greeting_accepted"
 
-*Defined in [src/customer/structures.ts:299](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L299)*
+*Defined in [src/customer/structures.ts:301](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L301)*
 
 Informs about a greeting accepted by the Customer.
 
@@ -168,7 +168,7 @@ ___
 
 • **GreetingCancelled**: = "greeting_cancelled"
 
-*Defined in [src/customer/structures.ts:305](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L305)*
+*Defined in [src/customer/structures.ts:307](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L307)*
 
 Informs about a greeting rejected by the Customer.
 Also, the push is sent when a new greeting automatically cancels the currently displayed one.
@@ -179,7 +179,7 @@ ___
 
 • **IncomingChat**: = "incoming_chat"
 
-*Defined in [src/customer/structures.ts:184](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L184)*
+*Defined in [src/customer/structures.ts:186](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L186)*
 
 Informs about a chat coming with a new thread. The push payload contains the whole chat data structure.
 If the chat was started with some initial events, the thread object contains them.
@@ -190,7 +190,7 @@ ___
 
 • **IncomingEvent**: = "incoming_event"
 
-*Defined in [src/customer/structures.ts:211](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L211)*
+*Defined in [src/customer/structures.ts:213](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L213)*
 
 Informs about an incoming event sent to a chat.
 
@@ -200,7 +200,7 @@ ___
 
 • **IncomingGreeting**: = "incoming_greeting"
 
-*Defined in [src/customer/structures.ts:294](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L294)*
+*Defined in [src/customer/structures.ts:296](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L296)*
 
 Informs about an incoming greeting.
 
@@ -210,7 +210,7 @@ ___
 
 • **IncomingMulticast**: = "incoming_multicast"
 
-*Defined in [src/customer/structures.ts:289](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L289)*
+*Defined in [src/customer/structures.ts:291](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L291)*
 
 Informs about messages sent via the multicast method or by the system.
 
@@ -220,7 +220,7 @@ ___
 
 • **IncomingRichMessagePostback**: = "incoming_rich_message_postback"
 
-*Defined in [src/customer/structures.ts:222](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L222)*
+*Defined in [src/customer/structures.ts:224](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L224)*
 
 Informs about an incoming rich message postback. The push payload contains the info on the postback itself,
 as well as the chat it was sent in.
@@ -231,7 +231,7 @@ ___
 
 • **IncomingTypingIndicator**: = "incoming_typing_indicator"
 
-*Defined in [src/customer/structures.ts:279](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L279)*
+*Defined in [src/customer/structures.ts:281](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L281)*
 
 Informs that one of the chat users is currently typing a message. The message hasn't been sent yet.
 The push payload contains the typing indicator object.
@@ -244,7 +244,7 @@ ___
 
 • **QueuePostitionUpdated**: = "queue_postition_updated"
 
-*Defined in [src/customer/structures.ts:310](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L310)*
+*Defined in [src/customer/structures.ts:312](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L312)*
 
 Informs about an updated position in the queue and about the wait time.
 
@@ -254,7 +254,7 @@ ___
 
 • **ThreadPropertiesDeleted**: = "thread_properties_deleted"
 
-*Defined in [src/customer/structures.ts:242](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L242)*
+*Defined in [src/customer/structures.ts:244](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L244)*
 
 Informs about those thread properties that were deleted.
 
@@ -264,7 +264,7 @@ ___
 
 • **ThreadPropertiesUpdated**: = "thread_properties_updated"
 
-*Defined in [src/customer/structures.ts:237](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L237)*
+*Defined in [src/customer/structures.ts:239](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L239)*
 
 Informs about those thread properties that were updated.
 
@@ -274,7 +274,7 @@ ___
 
 • **UserAddedToChat**: = "user_added_to_chat"
 
-*Defined in [src/customer/structures.ts:201](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L201)*
+*Defined in [src/customer/structures.ts:203](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L203)*
 
 Informs that a user (Customer or Agent) was added to a chat.
 This push can be emitted with user.present set to false when a user writes to a chat without joining it
@@ -286,6 +286,6 @@ ___
 
 • **UserRemovedFromChat**: = "user_removed_from_chat"
 
-*Defined in [src/customer/structures.ts:206](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L206)*
+*Defined in [src/customer/structures.ts:208](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L208)*
 
 Informs that a user (Customer or Agent) was removed from a chat.

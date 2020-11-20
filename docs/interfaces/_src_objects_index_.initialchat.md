@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [InitialChat](_src_objects_index_.initialchat.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [InitialChat](_src_objects_index_.initialchat.md)
 
 # Interface: InitialChat
 
@@ -21,7 +21,7 @@
 
 • **access**? : *[Access](_src_objects_index_.access.md)*
 
-*Defined in [src/objects/index.ts:230](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L230)*
+*Defined in [src/objects/index.ts:224](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L224)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **properties**? : *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/objects/index.ts:229](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L229)*
+*Defined in [src/objects/index.ts:223](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L223)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **thread**? : *[InitialThread](_src_objects_index_.initialthread.md)*
 
-*Defined in [src/objects/index.ts:232](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L232)*
+*Defined in [src/objects/index.ts:226](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L226)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **users**? : *[InitialUser](_src_objects_index_.initialuser.md)[]*
 
-*Defined in [src/objects/index.ts:231](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L231)*
+*Defined in [src/objects/index.ts:225](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L225)*

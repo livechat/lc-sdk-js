@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ListCustomersResponse](_src_agent_structures_.listcustomersresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ListCustomersResponse](_src_agent_structures_.listcustomersresponse.md)
 
 # Interface: ListCustomersResponse
 
@@ -21,7 +21,7 @@
 
 • **customers**: *[Customer](_src_objects_index_.customer.md)[]*
 
-*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L209)*
+*Defined in [src/agent/structures.ts:221](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L221)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **next_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:211](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L211)*
+*Defined in [src/agent/structures.ts:223](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L223)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **previous_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:212](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L212)*
+*Defined in [src/agent/structures.ts:224](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L224)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **total_customers**: *number*
 
-*Defined in [src/agent/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L210)*
+*Defined in [src/agent/structures.ts:222](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L222)*

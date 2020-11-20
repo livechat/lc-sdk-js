@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [Field](_src_customer_structures_.field.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [Field](_src_customer_structures_.field.md)
 
 # Interface: Field
 
@@ -22,7 +22,7 @@
 
 • **id**: *string*
 
-*Defined in [src/customer/structures.ts:112](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L112)*
+*Defined in [src/customer/structures.ts:114](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L114)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/customer/structures.ts:114](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L114)*
+*Defined in [src/customer/structures.ts:116](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L116)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **options**? : *object[]*
 
-*Defined in [src/customer/structures.ts:116](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L116)*
+*Defined in [src/customer/structures.ts:118](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L118)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **required**? : *undefined | false | true*
 
-*Defined in [src/customer/structures.ts:115](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L115)*
+*Defined in [src/customer/structures.ts:117](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L117)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/customer/structures.ts:113](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L113)*
+*Defined in [src/customer/structures.ts:115](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L115)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ThreadTagged](_src_webhooks_index_.threadtagged.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ThreadTagged](_src_webhooks_index_.threadtagged.md)
 
 # Interface: ThreadTagged
 
@@ -20,7 +20,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:141](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L141)*
+*Defined in [src/webhooks/index.ts:132](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L132)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **tag**: *string*
 
-*Defined in [src/webhooks/index.ts:143](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L143)*
+*Defined in [src/webhooks/index.ts:134](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L134)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/webhooks/index.ts:142](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L142)*
+*Defined in [src/webhooks/index.ts:133](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L133)*

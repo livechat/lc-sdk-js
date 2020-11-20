@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/authorization/index"](_src_authorization_index_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/authorization/index"](_src_authorization_index_.md)
 
 # Module: "src/authorization/index"
 
@@ -18,7 +18,7 @@
 
 Ƭ **TokenGetter**: *function*
 
-*Defined in [src/authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/authorization/index.ts#L7)*
+*Defined in [src/authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/authorization/index.ts#L7)*
 
 #### Type declaration:
 

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](_src_objects_index_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](_src_objects_index_.md)
 
 # Module: "src/objects/index"
 
@@ -59,7 +59,7 @@
 
 Ƭ **Event**: *[File](../interfaces/_src_objects_index_.file.md) | [FilledForm](../interfaces/_src_objects_index_.filledform.md) | [Message](../interfaces/_src_objects_index_.message.md) | [RichMessage](../interfaces/_src_objects_index_.richmessage.md) | [CustomEvent](../interfaces/_src_objects_index_.customevent.md) | [SystemMessage](../interfaces/_src_objects_index_.systemmessage.md)*
 
-*Defined in [src/objects/index.ts:124](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L124)*
+*Defined in [src/objects/index.ts:124](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L124)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 Ƭ **User**: *[Agent](../interfaces/_src_objects_index_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
 
-*Defined in [src/objects/index.ts:132](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L132)*
+*Defined in [src/objects/index.ts:126](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L126)*

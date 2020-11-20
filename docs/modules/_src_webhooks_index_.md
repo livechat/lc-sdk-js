@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](_src_webhooks_index_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](_src_webhooks_index_.md)
 
 # Module: "src/webhooks/index"
 
@@ -40,4 +40,4 @@
 
 Ƭ **WebhookPayload**: *[IncomingChat](../interfaces/_src_webhooks_index_.incomingchat.md) | [ChatDeactivated](../interfaces/_src_webhooks_index_.chatdeactivated.md) | [ChatAccessGranted](../interfaces/_src_webhooks_index_.chataccessgranted.md) | [ChatAccessRevoked](../interfaces/_src_webhooks_index_.chataccessrevoked.md) | [ChatAccessSet](../interfaces/_src_webhooks_index_.chataccessset.md) | [ChatUserAdded](../interfaces/_src_webhooks_index_.chatuseradded.md) | [ChatUserRemoved](../interfaces/_src_webhooks_index_.chatuserremoved.md) | [IncomingEvent](../interfaces/_src_webhooks_index_.incomingevent.md) | [EventUpdated](../interfaces/_src_webhooks_index_.eventupdated.md) | [IncomingRichMessagePostback](../interfaces/_src_webhooks_index_.incomingrichmessagepostback.md) | [ChatPropertiesUpdated](../interfaces/_src_webhooks_index_.chatpropertiesupdated.md) | [ChatPropertiesDeleted](../interfaces/_src_webhooks_index_.chatpropertiesdeleted.md) | [ThreadPropertiesUpdated](../interfaces/_src_webhooks_index_.threadpropertiesupdated.md) | [ThreadPropertiesDeleted](../interfaces/_src_webhooks_index_.threadpropertiesdeleted.md) | [EventPropertiesUpdated](../interfaces/_src_webhooks_index_.eventpropertiesupdated.md) | [EventPropertiesDeleted](../interfaces/_src_webhooks_index_.eventpropertiesdeleted.md) | [ThreadTagged](../interfaces/_src_webhooks_index_.threadtagged.md) | [ThreadUntagged](../interfaces/_src_webhooks_index_.threaduntagged.md) | [RoutingStatusSet](../interfaces/_src_webhooks_index_.routingstatusset.md) | [AgentDeleted](../interfaces/_src_webhooks_index_.agentdeleted.md) | [CustomerCreated](../interfaces/_src_webhooks_index_.customercreated.md) | [EventsMarkedAsSeen](../interfaces/_src_webhooks_index_.eventsmarkedasseen.md)*
 
-*Defined in [src/webhooks/index.ts:21](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L21)*
+*Defined in [src/webhooks/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L12)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [AgentDeleted](_src_webhooks_index_.agentdeleted.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [AgentDeleted](_src_webhooks_index_.agentdeleted.md)
 
 # Interface: AgentDeleted
 
@@ -18,4 +18,4 @@
 
 • **agent_id**: *string*
 
-*Defined in [src/webhooks/index.ts:158](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L158)*
+*Defined in [src/webhooks/index.ts:149](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L149)*

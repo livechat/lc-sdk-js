@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [FilterType](_src_agent_structures_.filtertype.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [FilterType](_src_agent_structures_.filtertype.md)
 
 # Interface: FilterType
 
@@ -20,7 +20,7 @@
 
 • **exclude_values**? : *any[]*
 
-*Defined in [src/agent/structures.ts:92](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L92)*
+*Defined in [src/agent/structures.ts:92](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L92)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **exists**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L90)*
+*Defined in [src/agent/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L90)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **values**? : *any[]*
 
-*Defined in [src/agent/structures.ts:91](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L91)*
+*Defined in [src/agent/structures.ts:91](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L91)*

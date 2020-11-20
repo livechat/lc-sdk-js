@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](_src_customer_structures_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](_src_customer_structures_.md)
 
 # Module: "src/customer/structures"
 
@@ -10,8 +10,6 @@
 
 ### Interfaces
 
-* [ActivateChatParameters](../interfaces/_src_customer_structures_.activatechatparameters.md)
-* [ActivateChatResponse](../interfaces/_src_customer_structures_.activatechatresponse.md)
 * [Application](../interfaces/_src_customer_structures_.application.md)
 * [CustomerPage](../interfaces/_src_customer_structures_.customerpage.md)
 * [CustomerParameters](../interfaces/_src_customer_structures_.customerparameters.md)
@@ -31,6 +29,8 @@
 * [LoginRequest](../interfaces/_src_customer_structures_.loginrequest.md)
 * [LoginResponse](../interfaces/_src_customer_structures_.loginresponse.md)
 * [PostbackToggle](../interfaces/_src_customer_structures_.postbacktoggle.md)
+* [ResumeChatParameters](../interfaces/_src_customer_structures_.resumechatparameters.md)
+* [ResumeChatResponse](../interfaces/_src_customer_structures_.resumechatresponse.md)
 * [SendEventResponse](../interfaces/_src_customer_structures_.sendeventresponse.md)
 * [SendRichMessagePostbackParameters](../interfaces/_src_customer_structures_.sendrichmessagepostbackparameters.md)
 * [StartChatParameters](../interfaces/_src_customer_structures_.startchatparameters.md)

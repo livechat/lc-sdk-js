@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ChatPropertiesDeleted](_src_webhooks_index_.chatpropertiesdeleted.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [ChatPropertiesDeleted](_src_webhooks_index_.chatpropertiesdeleted.md)
 
 # Interface: ChatPropertiesDeleted
 
@@ -19,7 +19,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:110](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L110)*
+*Defined in [src/webhooks/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L101)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **properties**: *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/webhooks/index.ts:111](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L111)*
+*Defined in [src/webhooks/index.ts:102](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L102)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [CustomerPage](_src_customer_structures_.customerpage.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [CustomerPage](_src_customer_structures_.customerpage.md)
 
 # Interface: CustomerPage
 
@@ -19,7 +19,7 @@
 
 • **title**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L162)*
+*Defined in [src/customer/structures.ts:164](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L164)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **url**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:161](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L161)*
+*Defined in [src/customer/structures.ts:163](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L163)*

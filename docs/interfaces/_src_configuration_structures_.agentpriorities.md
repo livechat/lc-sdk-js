@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [AgentPriorities](_src_configuration_structures_.agentpriorities.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [AgentPriorities](_src_configuration_structures_.agentpriorities.md)
 
 # Interface: AgentPriorities
 

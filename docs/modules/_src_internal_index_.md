@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/internal/index"](_src_internal_index_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/internal/index"](_src_internal_index_.md)
 
 # Module: "src/internal/index"
 
@@ -23,4 +23,4 @@
 
 Ƭ **apiType**: *"agent" | "customer" | "configuration"*
 
-*Defined in [src/internal/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/internal/index.ts#L8)*
+*Defined in [src/internal/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L8)*

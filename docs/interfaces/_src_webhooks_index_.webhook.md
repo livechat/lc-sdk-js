@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [Webhook](_src_webhooks_index_.webhook.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/webhooks/index"](../modules/_src_webhooks_index_.md) › [Webhook](_src_webhooks_index_.webhook.md)
 
 # Interface: Webhook
 
@@ -23,7 +23,7 @@
 
 • **action**: *string*
 
-*Defined in [src/webhooks/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L15)*
+*Defined in [src/webhooks/index.ts:6](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L6)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **additional_data**: *object*
 
-*Defined in [src/webhooks/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L17)*
+*Defined in [src/webhooks/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L8)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **license_id**: *string*
 
-*Defined in [src/webhooks/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L16)*
+*Defined in [src/webhooks/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L7)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **payload**: *[WebhookPayload](../modules/_src_webhooks_index_.md#webhookpayload)*
 
-*Defined in [src/webhooks/index.ts:18](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L18)*
+*Defined in [src/webhooks/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L9)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **secret_key**: *string*
 
-*Defined in [src/webhooks/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L14)*
+*Defined in [src/webhooks/index.ts:5](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L5)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **webhook_id**: *string*
 
-*Defined in [src/webhooks/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/webhooks/index.ts#L13)*
+*Defined in [src/webhooks/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/webhooks/index.ts#L4)*

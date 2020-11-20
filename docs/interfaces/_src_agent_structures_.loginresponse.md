@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [LoginResponse](_src_agent_structures_.loginresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [LoginResponse](_src_agent_structures_.loginresponse.md)
 
 # Interface: LoginResponse
 
@@ -20,7 +20,7 @@
 
 • **chats_summary**: *[ChatsSummary](_src_objects_index_.chatssummary.md)*
 
-*Defined in [src/agent/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L272)*
+*Defined in [src/agent/structures.ts:284](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L284)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **license**: *[License](_src_agent_structures_.license.md)*
 
-*Defined in [src/agent/structures.ts:270](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L270)*
+*Defined in [src/agent/structures.ts:282](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L282)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **my_profile**: *[MyProfile](_src_objects_index_.myprofile.md)*
 
-*Defined in [src/agent/structures.ts:271](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L271)*
+*Defined in [src/agent/structures.ts:283](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L283)*

@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [StartChatResponse](_src_customer_structures_.startchatresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [StartChatResponse](_src_customer_structures_.startchatresponse.md)
 
 # Interface: StartChatResponse
 
@@ -20,7 +20,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/customer/structures.ts:57](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L57)*
+*Defined in [src/customer/structures.ts:58](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L58)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **event_ids**? : *string[]*
 
-*Defined in [src/customer/structures.ts:59](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L59)*
+*Defined in [src/customer/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L60)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/customer/structures.ts:58](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L58)*
+*Defined in [src/customer/structures.ts:59](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L59)*

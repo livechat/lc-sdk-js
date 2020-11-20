@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [InitialUser](_src_objects_index_.initialuser.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [InitialUser](_src_objects_index_.initialuser.md)
 
 # Interface: InitialUser
 
@@ -19,7 +19,7 @@
 
 • **id**: *string*
 
-*Defined in [src/objects/index.ts:236](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L236)*
+*Defined in [src/objects/index.ts:230](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L230)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:237](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L237)*
+*Defined in [src/objects/index.ts:231](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L231)*

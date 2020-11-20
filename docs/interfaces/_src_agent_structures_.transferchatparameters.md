@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [TransferChatParameters](_src_agent_structures_.transferchatparameters.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [TransferChatParameters](_src_agent_structures_.transferchatparameters.md)
 
 # Interface: TransferChatParameters
 
@@ -19,7 +19,7 @@
 
 • **force**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:139](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L139)*
+*Defined in [src/agent/structures.ts:141](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L141)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **target**? : *[TransferTarget](_src_agent_structures_.transfertarget.md)*
 
-*Defined in [src/agent/structures.ts:138](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L138)*
+*Defined in [src/agent/structures.ts:140](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L140)*

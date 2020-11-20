@@ -1,6 +1,6 @@
-[lc-sdk-js](README.md) › [Globals](globals.md)
+[@livechat/lc-sdk-js](README.md) › [Globals](globals.md)
 
-# lc-sdk-js
+# @livechat/lc-sdk-js
 
 ## Index
 

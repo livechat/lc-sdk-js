@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ListThreadsResponse](_src_agent_structures_.listthreadsresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ListThreadsResponse](_src_agent_structures_.listthreadsresponse.md)
 
 # Interface: ListThreadsResponse
 
@@ -21,7 +21,7 @@
 
 • **found_threads**: *number*
 
-*Defined in [src/agent/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L46)*
+*Defined in [src/agent/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L46)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **next_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L47)*
+*Defined in [src/agent/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L47)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **previous_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L48)*
+*Defined in [src/agent/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L48)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **threads**: *[Thread](_src_objects_index_.thread.md)[]*
 
-*Defined in [src/agent/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L45)*
+*Defined in [src/agent/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L45)*

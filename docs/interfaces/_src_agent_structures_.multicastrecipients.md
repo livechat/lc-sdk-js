@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [MulticastRecipients](_src_agent_structures_.multicastrecipients.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [MulticastRecipients](_src_agent_structures_.multicastrecipients.md)
 
 # Interface: MulticastRecipients
 
@@ -19,7 +19,7 @@
 
 • **agents**: *[MulticastAgents](_src_agent_structures_.multicastagents.md)*
 
-*Defined in [src/agent/structures.ts:227](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L227)*
+*Defined in [src/agent/structures.ts:239](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L239)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **customers**: *[MulticastCustomers](_src_agent_structures_.multicastcustomers.md)*
 
-*Defined in [src/agent/structures.ts:228](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L228)*
+*Defined in [src/agent/structures.ts:240](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L240)*

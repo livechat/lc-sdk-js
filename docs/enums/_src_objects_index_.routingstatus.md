@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [RoutingStatus](_src_objects_index_.routingstatus.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [RoutingStatus](_src_objects_index_.routingstatus.md)
 
 # Enumeration: RoutingStatus
 
@@ -16,7 +16,7 @@
 
 • **AcceptingChats**: = "accepting_chats"
 
-*Defined in [src/objects/index.ts:140](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L140)*
+*Defined in [src/objects/index.ts:134](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L134)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **NotAcceptingChats**: = "not_accepting_chats"
 
-*Defined in [src/objects/index.ts:141](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L141)*
+*Defined in [src/objects/index.ts:135](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L135)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **Offline**: = "offline"
 
-*Defined in [src/objects/index.ts:142](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/objects/index.ts#L142)*
+*Defined in [src/objects/index.ts:136](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L136)*

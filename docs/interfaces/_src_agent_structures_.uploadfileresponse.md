@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [UploadFileResponse](_src_agent_structures_.uploadfileresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [UploadFileResponse](_src_agent_structures_.uploadfileresponse.md)
 
 # Interface: UploadFileResponse
 
@@ -18,4 +18,4 @@
 
 • **url**: *string*
 
-*Defined in [src/agent/structures.ts:247](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L247)*
+*Defined in [src/agent/structures.ts:259](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L259)*

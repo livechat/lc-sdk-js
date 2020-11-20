@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [PostbackToggle](_src_customer_structures_.postbacktoggle.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [PostbackToggle](_src_customer_structures_.postbacktoggle.md)
 
 # Interface: PostbackToggle
 
@@ -19,7 +19,7 @@
 
 • **id**: *string*
 
-*Defined in [src/customer/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L84)*
+*Defined in [src/customer/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L86)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **toggled**: *boolean*
 
-*Defined in [src/customer/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L85)*
+*Defined in [src/customer/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L87)*

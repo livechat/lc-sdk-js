@@ -9,8 +9,8 @@ import type {
   GetChatResponse,
   StartChatParameters,
   StartChatResponse,
-  ActivateChatResponse,
-  ActivateChatParameters,
+  ResumeChatResponse,
+  ResumeChatParameters,
   SendEventResponse,
   SendRichMessagePostbackParameters,
   CustomerParameters,
@@ -68,9 +68,9 @@ export default class Web extends WebAPI {
    * Restarts an archived chat
    * @param param - either string ID of a chat to activate or full initial chat object
    */
-  async activateChat(param: string | ActivateChatParameters): Promise<ActivateChatResponse> {
-    if (typeof param === "string") return this.send("activate_chat", { chat: { id: param } });
-    return this.send("activate_chat", param || {});
+  async resumeChat(param: string | ResumeChatParameters): Promise<ResumeChatResponse> {
+    if (typeof param === "string") return this.send("resume_chat", { chat: { id: param } });
+    return this.send("resume_chat", param || {});
   }
 
   /**

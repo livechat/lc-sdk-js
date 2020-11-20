@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [WebhookAction](_src_configuration_structures_.webhookaction.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/configuration/structures"](../modules/_src_configuration_structures_.md) › [WebhookAction](_src_configuration_structures_.webhookaction.md)
 
 # Interface: WebhookAction
 
@@ -20,7 +20,7 @@
 
 • **additional_data**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:62](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L62)*
+*Defined in [src/configuration/structures.ts:62](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L62)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **filters**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:61](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L61)*
+*Defined in [src/configuration/structures.ts:61](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L61)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/configuration/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/configuration/structures.ts#L60)*
+*Defined in [src/configuration/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L60)*

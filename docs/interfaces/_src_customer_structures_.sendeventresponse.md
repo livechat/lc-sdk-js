@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [SendEventResponse](_src_customer_structures_.sendeventresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [SendEventResponse](_src_customer_structures_.sendeventresponse.md)
 
 # Interface: SendEventResponse
 
@@ -18,4 +18,4 @@
 
 • **event_id**: *string*
 
-*Defined in [src/customer/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L73)*
+*Defined in [src/customer/structures.ts:75](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L75)*

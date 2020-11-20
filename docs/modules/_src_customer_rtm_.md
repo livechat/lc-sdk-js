@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/rtm"](_src_customer_rtm_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/rtm"](_src_customer_rtm_.md)
 
 # Module: "src/customer/rtm"
 

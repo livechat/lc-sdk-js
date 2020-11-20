@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [MulticastAgents](_src_agent_structures_.multicastagents.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [MulticastAgents](_src_agent_structures_.multicastagents.md)
 
 # Interface: MulticastAgents
 
@@ -20,7 +20,7 @@
 
 • **all**: *boolean*
 
-*Defined in [src/agent/structures.ts:232](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L232)*
+*Defined in [src/agent/structures.ts:244](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L244)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **groups**: *number[]*
 
-*Defined in [src/agent/structures.ts:234](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L234)*
+*Defined in [src/agent/structures.ts:246](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L246)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **ids**: *string[]*
 
-*Defined in [src/agent/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L233)*
+*Defined in [src/agent/structures.ts:245](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L245)*

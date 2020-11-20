@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [StringFilter](_src_agent_structures_.stringfilter.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [StringFilter](_src_agent_structures_.stringfilter.md)
 
 # Interface: StringFilter
 
@@ -19,7 +19,7 @@
 
 • **exclude_values**? : *string[]*
 
-*Defined in [src/agent/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L189)*
+*Defined in [src/agent/structures.ts:201](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L201)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **values**? : *string[]*
 
-*Defined in [src/agent/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L188)*
+*Defined in [src/agent/structures.ts:200](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L200)*

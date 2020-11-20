@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [ListChatParameters](_src_customer_structures_.listchatparameters.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [ListChatParameters](_src_customer_structures_.listchatparameters.md)
 
 # Interface: ListChatParameters
 
@@ -20,7 +20,7 @@
 
 • **limit**? : *undefined | number*
 
-*Defined in [src/customer/structures.ts:17](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L17)*
+*Defined in [src/customer/structures.ts:17](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L17)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **page_id**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:18](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L18)*
+*Defined in [src/customer/structures.ts:18](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L18)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **sort_order**? : *[SortOrder](../enums/_src_objects_index_.sortorder.md)*
 
-*Defined in [src/customer/structures.ts:16](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L16)*
+*Defined in [src/customer/structures.ts:16](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L16)*

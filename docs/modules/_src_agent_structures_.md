@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](_src_agent_structures_.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](_src_agent_structures_.md)
 
 # Module: "src/agent/structures"
 
@@ -6,13 +6,12 @@
 
 ### Enumerations
 
+* [CustomerSortBy](../enums/_src_agent_structures_.customersortby.md)
 * [Pushes](../enums/_src_agent_structures_.pushes.md)
 * [SurveyType](../enums/_src_agent_structures_.surveytype.md)
 
 ### Interfaces
 
-* [ActivateChatParameters](../interfaces/_src_agent_structures_.activatechatparameters.md)
-* [ActivateChatResponse](../interfaces/_src_agent_structures_.activatechatresponse.md)
 * [AgentForTransfer](../interfaces/_src_agent_structures_.agentfortransfer.md)
 * [Application](../interfaces/_src_agent_structures_.application.md)
 * [ArchivesFilters](../interfaces/_src_agent_structures_.archivesfilters.md)
@@ -45,6 +44,8 @@
 * [PropertiesFilter](../interfaces/_src_agent_structures_.propertiesfilter.md)
 * [PushNotifications](../interfaces/_src_agent_structures_.pushnotifications.md)
 * [RangeFilter](../interfaces/_src_agent_structures_.rangefilter.md)
+* [ResumeChatParameters](../interfaces/_src_agent_structures_.resumechatparameters.md)
+* [ResumeChatResponse](../interfaces/_src_agent_structures_.resumechatresponse.md)
 * [SendEventResponse](../interfaces/_src_agent_structures_.sendeventresponse.md)
 * [SendRichMessagePostbackParameters](../interfaces/_src_agent_structures_.sendrichmessagepostbackparameters.md)
 * [StartChatParameters](../interfaces/_src_agent_structures_.startchatparameters.md)

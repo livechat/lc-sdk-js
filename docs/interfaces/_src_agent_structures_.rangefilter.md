@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [RangeFilter](_src_agent_structures_.rangefilter.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [RangeFilter](_src_agent_structures_.rangefilter.md)
 
 # Interface: RangeFilter
 
@@ -22,7 +22,7 @@
 
 • **eq**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:197](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L197)*
+*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L209)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **gt**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:196](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L196)*
+*Defined in [src/agent/structures.ts:208](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L208)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **gte**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:195](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L195)*
+*Defined in [src/agent/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L207)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **lt**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:194](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L194)*
+*Defined in [src/agent/structures.ts:206](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L206)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **lte**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:193](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/agent/structures.ts#L193)*
+*Defined in [src/agent/structures.ts:205](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L205)*

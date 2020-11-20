@@ -1,4 +1,4 @@
-[lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [ListGroupStatusesResponse](_src_customer_structures_.listgroupstatusesresponse.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/customer/structures"](../modules/_src_customer_structures_.md) › [ListGroupStatusesResponse](_src_customer_structures_.listgroupstatusesresponse.md)
 
 # Interface: ListGroupStatusesResponse
 
@@ -18,7 +18,7 @@
 
 • **group_status**: *object*
 
-*Defined in [src/customer/structures.ts:96](https://github.com/livechat/lc-sdk-js/blob/38eeefe/src/customer/structures.ts#L96)*
+*Defined in [src/customer/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L98)*
 
 #### Type declaration:
 
