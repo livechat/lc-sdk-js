@@ -226,6 +226,7 @@ export interface DateRangeFilter {
 export interface ListCustomersResponse {
   customers: Customer[];
   total_customers: number;
+  limited_customers?: number;
   next_page_id?: string;
   previous_page_id?: string;
 }
