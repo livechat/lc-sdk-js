@@ -88,6 +88,7 @@ export interface Button {
   type: string;
   value: string;
   webview_height?: string;
+  target?: string;
 }
 
 export interface Image {
