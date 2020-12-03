@@ -18,4 +18,4 @@
 
 • **webhook_id**: *string*
 
-*Defined in [src/configuration/structures.ts:167](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L167)*
+*Defined in [src/configuration/structures.ts:166](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L166)*

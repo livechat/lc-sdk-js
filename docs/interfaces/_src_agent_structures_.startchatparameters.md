@@ -20,7 +20,7 @@
 
 • **active**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:119](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L119)*
+*Defined in [src/agent/structures.ts:125](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L125)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **chat**? : *[InitialChat](_src_objects_index_.initialchat.md)*
 
-*Defined in [src/agent/structures.ts:117](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L117)*
+*Defined in [src/agent/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L123)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **continuous**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:118](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L118)*
+*Defined in [src/agent/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L124)*

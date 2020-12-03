@@ -20,7 +20,7 @@
 
 • **author_type**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:153](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L153)*
+*Defined in [src/configuration/structures.ts:152](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L152)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **chat_member_ids**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:155](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L155)*
+*Defined in [src/configuration/structures.ts:154](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L154)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **only_my_chats**? : *undefined | false | true*
 
-*Defined in [src/configuration/structures.ts:154](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L154)*
+*Defined in [src/configuration/structures.ts:153](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L153)*

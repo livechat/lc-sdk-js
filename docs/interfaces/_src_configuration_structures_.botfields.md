@@ -22,7 +22,7 @@
 
 • **avatar**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L47)*
+*Defined in [src/configuration/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L47)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **groups**? : *[GroupConfig](_src_configuration_structures_.groupconfig.md)[]*
 
-*Defined in [src/configuration/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L49)*
+*Defined in [src/configuration/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L49)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **max_chats_count**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L48)*
+*Defined in [src/configuration/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L48)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L46)*
+*Defined in [src/configuration/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L46)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **webhooks**? : *[BotWebhooks](_src_configuration_structures_.botwebhooks.md)*
 
-*Defined in [src/configuration/structures.ts:50](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L50)*
+*Defined in [src/configuration/structures.ts:50](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L50)*

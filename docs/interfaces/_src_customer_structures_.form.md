@@ -19,7 +19,7 @@
 
 • **fields**: *[Field](_src_customer_structures_.field.md)[]*
 
-*Defined in [src/customer/structures.ts:110](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L110)*
+*Defined in [src/customer/structures.ts:110](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/customer/structures.ts#L110)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/customer/structures.ts:109](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/customer/structures.ts#L109)*
+*Defined in [src/customer/structures.ts:109](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/customer/structures.ts#L109)*

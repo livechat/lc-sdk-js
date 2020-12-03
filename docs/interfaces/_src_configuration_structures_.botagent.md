@@ -23,7 +23,7 @@
 
 • **avatar**: *string*
 
-*Defined in [src/configuration/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L72)*
+*Defined in [src/configuration/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L72)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L70)*
+*Defined in [src/configuration/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L70)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/configuration/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L71)*
+*Defined in [src/configuration/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L71)*
 
 ___
 
@@ -47,4 +47,4 @@ ___
 
 • **status**: *[BotStatus](../enums/_src_configuration_structures_.botstatus.md)*
 
-*Defined in [src/configuration/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L73)*
+*Defined in [src/configuration/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L73)*

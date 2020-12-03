@@ -21,7 +21,7 @@
 
 • **found_threads**: *number*
 
-*Defined in [src/agent/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L46)*
+*Defined in [src/agent/structures.ts:52](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L52)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **next_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L47)*
+*Defined in [src/agent/structures.ts:53](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L53)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **previous_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L48)*
+*Defined in [src/agent/structures.ts:54](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L54)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **threads**: *[Thread](_src_objects_index_.thread.md)[]*
 
-*Defined in [src/agent/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L45)*
+*Defined in [src/agent/structures.ts:51](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L51)*

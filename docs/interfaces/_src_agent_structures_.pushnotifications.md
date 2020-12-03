@@ -19,7 +19,7 @@
 
 • **firebase_token**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:273](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L273)*
+*Defined in [src/agent/structures.ts:280](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L280)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **platform**: *string*
 
-*Defined in [src/agent/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L272)*
+*Defined in [src/agent/structures.ts:279](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L279)*
