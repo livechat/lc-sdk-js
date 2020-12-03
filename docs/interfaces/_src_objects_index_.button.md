@@ -66,6 +66,8 @@ ___
 
 *Defined in [src/objects/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L90)*
 
+___
+
 ### `Optional` target
 
 • **target**? : *undefined | string*
