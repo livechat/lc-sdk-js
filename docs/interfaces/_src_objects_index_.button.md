@@ -65,3 +65,9 @@ ___
 • **webview_height**? : *undefined | string*
 
 *Defined in [src/objects/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L90)*
+
+### `Optional` target
+
+• **target**? : *undefined | string*
+
+*Defined in [src/objects/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L91)*
