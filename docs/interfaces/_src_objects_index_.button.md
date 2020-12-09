@@ -11,6 +11,7 @@
 ### Properties
 
 * [postback_id](_src_objects_index_.button.md#postback_id)
+* [target](_src_objects_index_.button.md#optional-target)
 * [text](_src_objects_index_.button.md#text)
 * [type](_src_objects_index_.button.md#type)
 * [user_ids](_src_objects_index_.button.md#user_ids)
@@ -23,7 +24,15 @@
 
 • **postback_id**: *string*
 
-*Defined in [src/objects/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L86)*
+*Defined in [src/objects/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L86)*
+
+___
+
+### `Optional` target
+
+• **target**? : *undefined | string*
+
+*Defined in [src/objects/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L91)*
 
 ___
 
@@ -31,7 +40,7 @@ ___
 
 • **text**: *string*
 
-*Defined in [src/objects/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L85)*
+*Defined in [src/objects/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L85)*
 
 ___
 
@@ -39,7 +48,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L88)*
+*Defined in [src/objects/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L88)*
 
 ___
 
@@ -47,7 +56,7 @@ ___
 
 • **user_ids**: *string[]*
 
-*Defined in [src/objects/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L87)*
+*Defined in [src/objects/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L87)*
 
 ___
 
@@ -55,7 +64,7 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/objects/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L89)*
+*Defined in [src/objects/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L89)*
 
 ___
 
@@ -63,4 +72,4 @@ ___
 
 • **webview_height**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/objects/index.ts#L90)*
+*Defined in [src/objects/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L90)*

@@ -19,7 +19,7 @@
 
 • **agents**: *[MulticastAgents](_src_agent_structures_.multicastagents.md)*
 
-*Defined in [src/agent/structures.ts:239](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L239)*
+*Defined in [src/agent/structures.ts:246](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L246)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **customers**: *[MulticastCustomers](_src_agent_structures_.multicastcustomers.md)*
 
-*Defined in [src/agent/structures.ts:240](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L240)*
+*Defined in [src/agent/structures.ts:247](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L247)*

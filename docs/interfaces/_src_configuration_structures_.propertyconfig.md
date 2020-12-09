@@ -10,19 +10,34 @@
 
 ### Properties
 
+* [access](_src_configuration_structures_.propertyconfig.md#access)
 * [description](_src_configuration_structures_.propertyconfig.md#optional-description)
 * [domain](_src_configuration_structures_.propertyconfig.md#optional-domain)
-* [locations](_src_configuration_structures_.propertyconfig.md#locations)
+* [name](_src_configuration_structures_.propertyconfig.md#name)
+* [owner_client_id](_src_configuration_structures_.propertyconfig.md#owner_client_id)
+* [public_access](_src_configuration_structures_.propertyconfig.md#optional-public_access)
 * [range](_src_configuration_structures_.propertyconfig.md#optional-range)
 * [type](_src_configuration_structures_.propertyconfig.md#type)
 
 ## Properties
 
+###  access
+
+• **access**: *object*
+
+*Defined in [src/configuration/structures.ts:125](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L125)*
+
+#### Type declaration:
+
+* \[ **locationName**: *string*\]: [LocationAccess](_src_configuration_structures_.locationaccess.md)
+
+___
+
 ### `Optional` description
 
 • **description**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:126](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L126)*
+*Defined in [src/configuration/structures.ts:128](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L128)*
 
 ___
 
@@ -30,19 +45,31 @@ ___
 
 • **domain**? : *any[]*
 
-*Defined in [src/configuration/structures.ts:127](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L127)*
+*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L129)*
 
 ___
 
-###  locations
+###  name
 
-• **locations**: *object*
+• **name**: *string*
 
-*Defined in [src/configuration/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L123)*
+*Defined in [src/configuration/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L122)*
 
-#### Type declaration:
+___
 
-* \[ **locationName**: *string*\]: [Location](_src_configuration_structures_.location.md)
+###  owner_client_id
+
+• **owner_client_id**: *string*
+
+*Defined in [src/configuration/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L123)*
+
+___
+
+### `Optional` public_access
+
+• **public_access**? : *string[]*
+
+*Defined in [src/configuration/structures.ts:134](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L134)*
 
 ___
 
@@ -50,7 +77,7 @@ ___
 
 • **range**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:128](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L128)*
+*Defined in [src/configuration/structures.ts:130](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L130)*
 
 ___
 
@@ -58,4 +85,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/configuration/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L122)*
+*Defined in [src/configuration/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L124)*

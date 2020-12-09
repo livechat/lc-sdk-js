@@ -18,4 +18,4 @@
 
 • **bot_agent_id**: *string*
 
-*Defined in [src/configuration/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/structures.ts#L42)*
+*Defined in [src/configuration/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L42)*

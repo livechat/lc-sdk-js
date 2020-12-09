@@ -41,13 +41,15 @@
 * [listGroupProperties](_src_configuration_index_.configurationapi.md#listgroupproperties)
 * [listGroups](_src_configuration_index_.configurationapi.md#listgroups)
 * [listLicenseProperties](_src_configuration_index_.configurationapi.md#listlicenseproperties)
-* [listRegisteredProperties](_src_configuration_index_.configurationapi.md#listregisteredproperties)
+* [listProperties](_src_configuration_index_.configurationapi.md#listproperties)
 * [listRegisteredWebhooks](_src_configuration_index_.configurationapi.md#listregisteredwebhooks)
-* [registerProperties](_src_configuration_index_.configurationapi.md#registerproperties)
+* [publishProperty](_src_configuration_index_.configurationapi.md#publishproperty)
+* [registerProperty](_src_configuration_index_.configurationapi.md#registerproperty)
 * [registerWebhook](_src_configuration_index_.configurationapi.md#registerwebhook)
 * [requestAgentUnsuspension](_src_configuration_index_.configurationapi.md#requestagentunsuspension)
 * [send](_src_configuration_index_.configurationapi.md#send)
 * [suspendAgent](_src_configuration_index_.configurationapi.md#suspendagent)
+* [unregisterProperty](_src_configuration_index_.configurationapi.md#unregisterproperty)
 * [unregister_webhook](_src_configuration_index_.configurationapi.md#unregister_webhook)
 * [unsuspendAgent](_src_configuration_index_.configurationapi.md#unsuspendagent)
 * [updateAgent](_src_configuration_index_.configurationapi.md#updateagent)
@@ -64,7 +66,7 @@
 
 *Overrides [WebAPI](_src_internal_index_.webapi.md).[constructor](_src_internal_index_.webapi.md#constructor)*
 
-*Defined in [src/configuration/index.ts:22](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L22)*
+*Defined in [src/configuration/index.ts:23](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L23)*
 
 **Parameters:**
 
@@ -83,7 +85,7 @@ Name | Type |
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[APIURL](_src_internal_index_.webapi.md#apiurl)*
 
-*Defined in [src/internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L11)*
+*Defined in [src/internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L11)*
 
 ___
 
@@ -93,7 +95,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[clientID](_src_internal_index_.webapi.md#clientid)*
 
-*Defined in [src/internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L12)*
+*Defined in [src/internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L12)*
 
 ___
 
@@ -103,7 +105,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[tokenGetter](_src_internal_index_.webapi.md#tokengetter)*
 
-*Defined in [src/internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L15)*
+*Defined in [src/internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L15)*
 
 ___
 
@@ -113,7 +115,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[type](_src_internal_index_.webapi.md#type)*
 
-*Defined in [src/internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L14)*
+*Defined in [src/internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L14)*
 
 ___
 
@@ -123,7 +125,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[version](_src_internal_index_.webapi.md#version)*
 
-*Defined in [src/internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L13)*
+*Defined in [src/internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L13)*
 
 ## Methods
 
@@ -131,7 +133,7 @@ ___
 
 ▸ **approveAgent**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:98](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L98)*
+*Defined in [src/configuration/index.ts:99](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L99)*
 
 Approves an Agent thus allowing the Agent to use the application.
 
@@ -149,7 +151,7 @@ ___
 
 ▸ **createAgent**(`id`: string, `fields`: [AgentFields](../interfaces/_src_configuration_structures_.agentfields.md)): *Promise‹[CreateAgentResponse](../interfaces/_src_configuration_structures_.createagentresponse.md)›*
 
-*Defined in [src/configuration/index.ts:32](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L32)*
+*Defined in [src/configuration/index.ts:33](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L33)*
 
 Creates a new Agent with specified parameters within a license.
 
@@ -168,7 +170,7 @@ ___
 
 ▸ **createBot**(`fields`: [BotFields](../interfaces/_src_configuration_structures_.botfields.md)): *Promise‹[CreateBotResponse](../interfaces/_src_configuration_structures_.createbotresponse.md)›*
 
-*Defined in [src/configuration/index.ts:106](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L106)*
+*Defined in [src/configuration/index.ts:107](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L107)*
 
 Creates a new Bot Agent with specified parameters within a license.
 
@@ -186,7 +188,7 @@ ___
 
 ▸ **createGroup**(`name`: string, `agent_priorities`: [AgentPriorities](../interfaces/_src_configuration_structures_.agentpriorities.md), `language_code?`: undefined | string): *Promise‹[CreateGroupResponse](../interfaces/_src_configuration_structures_.creategroupresponse.md)›*
 
-*Defined in [src/configuration/index.ts:149](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L149)*
+*Defined in [src/configuration/index.ts:150](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L150)*
 
 Creates new group.
 
@@ -206,7 +208,7 @@ ___
 
 ▸ **deleteAgent**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:67](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L67)*
+*Defined in [src/configuration/index.ts:68](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L68)*
 
 Deletes an Agent specified by id.
 
@@ -224,7 +226,7 @@ ___
 
 ▸ **deleteBot**(`bot_agent_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:114](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L114)*
+*Defined in [src/configuration/index.ts:115](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L115)*
 
 Deletes bot specified by id.
 
@@ -242,7 +244,7 @@ ___
 
 ▸ **deleteGroup**(`id`: number): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L186)*
+*Defined in [src/configuration/index.ts:187](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L187)*
 
 Deletes group specified by id.
 
@@ -260,7 +262,7 @@ ___
 
 ▸ **deleteGroupProperties**(`group_id`: number, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:281](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L281)*
+*Defined in [src/configuration/index.ts:309](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L309)*
 
 Deletes the properties set within a group.
 
@@ -279,7 +281,7 @@ ___
 
 ▸ **deleteLicenseProperties**(`properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:247](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L247)*
+*Defined in [src/configuration/index.ts:275](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L275)*
 
 Deletes the properties set within a license.
 
@@ -297,7 +299,7 @@ ___
 
 ▸ **getAgent**(`id`: string, `fields?`: string[]): *Promise‹[Agent](../interfaces/_src_configuration_structures_.agent.md)›*
 
-*Defined in [src/configuration/index.ts:41](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L41)*
+*Defined in [src/configuration/index.ts:42](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L42)*
 
 It returns the info about an Agent specified by id.
 
@@ -316,7 +318,7 @@ ___
 
 ▸ **getBot**(`bot_agent_id`: string): *Promise‹[GetBotResponse](../interfaces/_src_configuration_structures_.getbotresponse.md)›*
 
-*Defined in [src/configuration/index.ts:139](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L139)*
+*Defined in [src/configuration/index.ts:140](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L140)*
 
 Gets info about Bot Agent.
 
@@ -334,7 +336,7 @@ ___
 
 ▸ **getGroup**(`id`: number, `fields?`: string[]): *Promise‹[Group](../interfaces/_src_configuration_structures_.group.md)›*
 
-*Defined in [src/configuration/index.ts:203](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L203)*
+*Defined in [src/configuration/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L204)*
 
 Returns details about a group specified by its id.
 
@@ -353,7 +355,7 @@ ___
 
 ▸ **listAgents**(`group_ids?`: number[], `fields?`: string[]): *Promise‹[Agent](../interfaces/_src_configuration_structures_.agent.md)[]›*
 
-*Defined in [src/configuration/index.ts:50](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L50)*
+*Defined in [src/configuration/index.ts:51](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L51)*
 
 Returns all Agents within a license.
 
@@ -372,7 +374,7 @@ ___
 
 ▸ **listBots**(`all?`: undefined | false | true): *Promise‹[ListBotsResponse](../interfaces/_src_configuration_structures_.listbotsresponse.md)›*
 
-*Defined in [src/configuration/index.ts:131](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L131)*
+*Defined in [src/configuration/index.ts:132](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L132)*
 
 Lists all bot agents within license.
 
@@ -390,7 +392,7 @@ ___
 
 ▸ **listGroupProperties**(`group_id`: number, `namespace_prefix?`: undefined | string, `name_prefix?`: undefined | string): *Promise‹[Properties](../interfaces/_src_objects_index_.properties.md)›*
 
-*Defined in [src/configuration/index.ts:268](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L268)*
+*Defined in [src/configuration/index.ts:296](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L296)*
 
 Returns the properties set within a group.
 
@@ -410,7 +412,7 @@ ___
 
 ▸ **listGroups**(`fields?`: string[]): *Promise‹[Group](../interfaces/_src_configuration_structures_.group.md)[]›*
 
-*Defined in [src/configuration/index.ts:194](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L194)*
+*Defined in [src/configuration/index.ts:195](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L195)*
 
 Lists all existing groups.
 
@@ -428,7 +430,7 @@ ___
 
 ▸ **listLicenseProperties**(`namespace_prefix?`: undefined | string, `name_prefix?`: undefined | string): *Promise‹[Properties](../interfaces/_src_objects_index_.properties.md)›*
 
-*Defined in [src/configuration/index.ts:236](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L236)*
+*Defined in [src/configuration/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L264)*
 
 Returns the properties set within a license.
 
@@ -443,19 +445,19 @@ Name | Type | Description |
 
 ___
 
-###  listRegisteredProperties
+###  listProperties
 
-▸ **listRegisteredProperties**(`all?`: undefined | false | true): *Promise‹[PropertiesConfig](../interfaces/_src_configuration_structures_.propertiesconfig.md)›*
+▸ **listProperties**(`owner_client_id`: string): *Promise‹[PropertiesConfig](../interfaces/_src_configuration_structures_.propertiesconfig.md)›*
 
-*Defined in [src/configuration/index.ts:219](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L219)*
+*Defined in [src/configuration/index.ts:247](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L247)*
 
-Lists registered properties.
+Lists properties for given client_id.
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`all?` | undefined &#124; false &#124; true | if should return all properties within license  |
+`owner_client_id` | string | client_id of property owner  |
 
 **Returns:** *Promise‹[PropertiesConfig](../interfaces/_src_configuration_structures_.propertiesconfig.md)›*
 
@@ -465,7 +467,7 @@ ___
 
 ▸ **listRegisteredWebhooks**(): *Promise‹[RegisteredWebhook](../interfaces/_src_configuration_structures_.registeredwebhook.md)[]›*
 
-*Defined in [src/configuration/index.ts:299](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L299)*
+*Defined in [src/configuration/index.ts:327](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L327)*
 
 Lists registered webhooks.
 
@@ -473,19 +475,40 @@ Lists registered webhooks.
 
 ___
 
-###  registerProperties
+###  publishProperty
 
-▸ **registerProperties**(`properties`: [PropertiesConfig](../interfaces/_src_configuration_structures_.propertiesconfig.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
+▸ **publishProperty**(`name`: string, `owner_client_id`: string, `read`: boolean, `write`: boolean): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:211](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L211)*
+*Defined in [src/configuration/index.ts:232](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L232)*
 
-Registers properties.
+Publishes private property.
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`properties` | [PropertiesConfig](../interfaces/_src_configuration_structures_.propertiesconfig.md) | properties to register  |
+`name` | string | property name |
+`owner_client_id` | string | clientID of property owner |
+`read` | boolean | determines whether non-owners can read the property |
+`write` | boolean | determines whether non-owners can write the property  |
+
+**Returns:** *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
+
+___
+
+###  registerProperty
+
+▸ **registerProperty**(`property`: [PropertyConfig](../interfaces/_src_configuration_structures_.propertyconfig.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
+
+*Defined in [src/configuration/index.ts:212](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L212)*
+
+Registers private property.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`property` | [PropertyConfig](../interfaces/_src_configuration_structures_.propertyconfig.md) | property to register  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
@@ -495,7 +518,7 @@ ___
 
 ▸ **registerWebhook**(`webhook`: [Webhook](../interfaces/_src_configuration_structures_.webhook.md)): *Promise‹[RegisterWebhookResponse](../interfaces/_src_configuration_structures_.registerwebhookresponse.md)›*
 
-*Defined in [src/configuration/index.ts:292](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L292)*
+*Defined in [src/configuration/index.ts:320](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L320)*
 
 Registers webhook on a license.
 
@@ -513,7 +536,7 @@ ___
 
 ▸ **requestAgentUnsuspension**(): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L90)*
+*Defined in [src/configuration/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L91)*
 
 A suspended Agent can send emails to license owners and vice owners with an unsuspension request.
 
@@ -527,7 +550,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[send](_src_internal_index_.webapi.md#send)*
 
-*Defined in [src/internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/internal/index.ts#L25)*
+*Defined in [src/internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L25)*
 
 **Parameters:**
 
@@ -544,7 +567,7 @@ ___
 
 ▸ **suspendAgent**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L75)*
+*Defined in [src/configuration/index.ts:76](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L76)*
 
 Suspends an Agent specified by id.
 
@@ -558,11 +581,30 @@ Name | Type | Description |
 
 ___
 
+###  unregisterProperty
+
+▸ **unregisterProperty**(`name`: string, `owner_client_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
+
+*Defined in [src/configuration/index.ts:221](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L221)*
+
+Unregisters private property.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`name` | string | property name |
+`owner_client_id` | string | clientID of property owner  |
+
+**Returns:** *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
+
+___
+
 ###  unregister_webhook
 
 ▸ **unregister_webhook**(`webhook_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:307](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L307)*
+*Defined in [src/configuration/index.ts:335](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L335)*
 
 Removes webhook from license.
 
@@ -580,7 +622,7 @@ ___
 
 ▸ **unsuspendAgent**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L83)*
+*Defined in [src/configuration/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L84)*
 
 Unsuspends an Agent specified by id.
 
@@ -598,7 +640,7 @@ ___
 
 ▸ **updateAgent**(`id`: string, `fields`: [AgentFields](../interfaces/_src_configuration_structures_.agentfields.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:59](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L59)*
+*Defined in [src/configuration/index.ts:60](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L60)*
 
 Updates the properties of an Agent specified by id.
 
@@ -617,7 +659,7 @@ ___
 
 ▸ **updateBot**(`id`: string, `fields`: [BotFields](../interfaces/_src_configuration_structures_.botfields.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:123](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L123)*
+*Defined in [src/configuration/index.ts:124](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L124)*
 
 Updates the properties of Bot Agent specified by id.
 
@@ -636,7 +678,7 @@ ___
 
 ▸ **updateGroup**(`id`: number, `name?`: undefined | string, `agent_priorities?`: [AgentPriorities](../interfaces/_src_configuration_structures_.agentpriorities.md), `language_code?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:168](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L168)*
+*Defined in [src/configuration/index.ts:169](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L169)*
 
 Updates an existing group.
 
@@ -657,7 +699,7 @@ ___
 
 ▸ **updateGroupProperties**(`group_id`: number, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:256](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L256)*
+*Defined in [src/configuration/index.ts:284](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L284)*
 
 Updates a property value within a group as the property location. This operation doesn't overwrite the existing values.
 
@@ -676,7 +718,7 @@ ___
 
 ▸ **updateLicenseProperties**(`properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)›*
 
-*Defined in [src/configuration/index.ts:227](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/configuration/index.ts#L227)*
+*Defined in [src/configuration/index.ts:255](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/index.ts#L255)*
 
 Updates a property value within a license. This operation doesn't overwrite the existing values.
 

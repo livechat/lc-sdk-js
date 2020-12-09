@@ -19,7 +19,7 @@
 
 • **ids**: *number[]*
 
-*Defined in [src/agent/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L146)*
+*Defined in [src/agent/structures.ts:152](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L152)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/agent/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L145)*
+*Defined in [src/agent/structures.ts:151](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L151)*

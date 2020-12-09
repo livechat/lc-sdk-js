@@ -23,7 +23,7 @@
 
 • **application**? : *[Application](_src_agent_structures_.application.md)*
 
-*Defined in [src/agent/structures.ts:267](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L267)*
+*Defined in [src/agent/structures.ts:274](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L274)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **away**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:268](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L268)*
+*Defined in [src/agent/structures.ts:275](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L275)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **push_notifications**? : *[PushNotifications](_src_agent_structures_.pushnotifications.md)*
 
-*Defined in [src/agent/structures.ts:266](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L266)*
+*Defined in [src/agent/structures.ts:273](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L273)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **reconnect**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:265](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L265)*
+*Defined in [src/agent/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L272)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **timezone**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:264](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L264)*
+*Defined in [src/agent/structures.ts:271](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L271)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **token**: *string*
 
-*Defined in [src/agent/structures.ts:263](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L263)*
+*Defined in [src/agent/structures.ts:270](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L270)*

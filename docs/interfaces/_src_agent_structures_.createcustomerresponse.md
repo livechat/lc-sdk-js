@@ -18,4 +18,4 @@
 
 • **customer_id**: *string*
 
-*Defined in [src/agent/structures.ts:235](https://github.com/livechat/lc-sdk-js/blob/e25bbbb/src/agent/structures.ts#L235)*
+*Defined in [src/agent/structures.ts:242](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L242)*

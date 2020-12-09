@@ -52,6 +52,7 @@
 * [StartChatResponse](../interfaces/_src_agent_structures_.startchatresponse.md)
 * [StringFilter](../interfaces/_src_agent_structures_.stringfilter.md)
 * [SurveyFilter](../interfaces/_src_agent_structures_.surveyfilter.md)
+* [ThreadsFilters](../interfaces/_src_agent_structures_.threadsfilters.md)
 * [TransferChatParameters](../interfaces/_src_agent_structures_.transferchatparameters.md)
 * [TransferTarget](../interfaces/_src_agent_structures_.transfertarget.md)
 * [UploadFileResponse](../interfaces/_src_agent_structures_.uploadfileresponse.md)
