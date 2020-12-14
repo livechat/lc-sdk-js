@@ -165,3 +165,9 @@ export interface RegisteredWebhook extends Webhook {
 export interface RegisterWebhookResponse {
   webhook_id: string;
 }
+
+export interface AvailableWebhook {
+  action: string;
+  additional_data?: string[];
+  filters?: string[];
+}
