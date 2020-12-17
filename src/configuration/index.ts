@@ -17,6 +17,7 @@ import {
   Webhook,
   RegisteredWebhook,
   RegisterWebhookResponse,
+  WebhookData,
 } from "./structures";
 import { Properties } from "../objects/index";
 
@@ -230,12 +231,12 @@ export default class ConfigurationAPI extends WebAPI {
    * @param write - determines whether non-owners can write the property
    */
   async publishProperty(name: string, owner_client_id: string, read: boolean, write: boolean): Promise<EmptyResponse> {
-    let access_type = new Array<string>();
+    const access_type = new Array<string>();
     if (read) {
-      access_type.push("read")
+      access_type.push("read");
     }
     if (write) {
-      access_type.push("write")
+      access_type.push("write");
     }
     return this.send("publish_property", { name, owner_client_id, access_type });
   }
@@ -334,5 +335,13 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async unregister_webhook(webhook_id: string): Promise<EmptyResponse> {
     return this.send("unregister_webhook", { webhook_id });
+  }
+
+  /**
+   * Lists webhooks available in given API version
+   * @param version - version of API for webhooks
+   */
+  async listWebhookNames(version?: string): Promise<WebhookData[]> {
+    return this.send("list_webhook_names", { version });
   }
 }
