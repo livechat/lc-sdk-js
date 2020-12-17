@@ -17,7 +17,7 @@ import {
   Webhook,
   RegisteredWebhook,
   RegisterWebhookResponse,
-  AvailableWebhook,
+  WebhookData,
 } from "./structures";
 import { Properties } from "../objects/index";
 
@@ -341,7 +341,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Lists webhooks available in given API version
    * @param version - version of API for webhooks
    */
-  async listAvailableWebhooks(version?: string): Promise<AvailableWebhook[]> {
-    return this.send("list_available_webhooks", { version });
+  async listWebhookNames(version?: string): Promise<WebhookData[]> {
+    return this.send("list_webhook_names", { version });
   }
 }

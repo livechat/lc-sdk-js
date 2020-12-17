@@ -166,7 +166,7 @@ export interface RegisterWebhookResponse {
   webhook_id: string;
 }
 
-export interface AvailableWebhook {
+export interface WebhookData {
   action: string;
   additional_data?: string[];
   filters?: string[];
