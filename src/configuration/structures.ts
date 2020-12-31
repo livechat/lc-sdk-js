@@ -158,12 +158,12 @@ export interface WebhookFilters {
 }
 
 export interface RegisteredWebhook extends Webhook {
-  webhook_id: string;
+  id: string;
   owner_client_id: string;
 }
 
 export interface RegisterWebhookResponse {
-  webhook_id: string;
+  id: string;
 }
 
 export interface WebhookData {

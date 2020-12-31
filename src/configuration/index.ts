@@ -317,24 +317,27 @@ export default class ConfigurationAPI extends WebAPI {
   /**
    * Registers webhook on a license.
    * @param webhook - webhook to register
+   * @param owner_client_id - must be provided when authorizing with Personal Access Token
    */
-  async registerWebhook(webhook: Webhook): Promise<RegisterWebhookResponse> {
-    return this.send("register_webhook", webhook);
+  async registerWebhook(webhook: Webhook, owner_client_id?: string): Promise<RegisterWebhookResponse> {
+    return this.send("register_webhook", { ...webhook, owner_client_id });
   }
 
   /**
    * Lists registered webhooks.
+   * @param owner_client_id - must be provided when authorizing with Personal Access Token
    */
-  async listRegisteredWebhooks(): Promise<RegisteredWebhook[]> {
-    return this.send("list_registered_webhooks", {});
+  async listWebhooks(owner_client_id?: string): Promise<RegisteredWebhook[]> {
+    return this.send("list_webhooks", { owner_client_id });
   }
 
   /**
    * Removes webhook from license.
-   * @param webhook_id - webhook to unregister
+   * @param id - ID of webhook to unregister
+   * @param owner_client_id - must be provided when authorizing with Personal Access Token
    */
-  async unregister_webhook(webhook_id: string): Promise<EmptyResponse> {
-    return this.send("unregister_webhook", { webhook_id });
+  async unregisterWebhook(id: string, owner_client_id?: string): Promise<EmptyResponse> {
+    return this.send("unregister_webhook", { id, owner_client_id });
   }
 
   /**
