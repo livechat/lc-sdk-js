@@ -171,3 +171,7 @@ export interface WebhookData {
   additional_data?: string[];
   filters?: string[];
 }
+
+export interface WebhooksState {
+  webhooks_enabled: boolean;
+}
