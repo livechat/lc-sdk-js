@@ -39,14 +39,18 @@ export interface DaySchedule {
 }
 
 export interface CreateBotResponse {
-  bot_agent_id: string;
+  id: string;
 }
 
 export interface BotFields {
   name?: string;
-  avatar?: string;
-  max_chats_count?: string;
+  avatar_path?: string;
+  default_group_priority?: GroupPriority;
+  job_title?: string;
+  mobile?: string;
+  max_chats_count?: number;
   groups?: GroupConfig[];
+  work_scheduler?: WorkScheduler;
   webhooks?: BotWebhooks;
 }
 
@@ -62,33 +66,17 @@ export interface WebhookAction {
   additional_data?: string[];
 }
 
-export interface ListBotsResponse {
-  bot_agents: BotAgent[];
-}
-
-export interface BotAgent {
+export interface Bot {
   id: string;
-  name: string;
-  avatar: string;
-  status: BotStatus;
-}
-
-export enum BotStatus {
-  AcceptingChats = "accepting chats",
-  NotAcceptingChats = "not accepting chats",
-  Offline = "offline",
-}
-
-export interface GetBotResponse {
-  bot_agent: BotAgentDetails;
-}
-
-export interface BotAgentDetails extends BotAgent {
-  default_group_priority: GroupPriority;
-  application: object;
-  max_chats_count: number;
-  groups: GroupConfig[];
+  name?: string;
+  avatar_path?: string;
+  default_group_priority?: GroupPriority;
+  owner_client_id?: string;
+  max_chats_count?: number;
+  groups?: GroupConfig[];
   webhooks: BotWebhooks[];
+  job_title?: string;
+  work_scheduler?: WorkScheduler;
 }
 
 export enum GroupPriority {

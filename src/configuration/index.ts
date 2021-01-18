@@ -7,8 +7,7 @@ import {
   CreateAgentResponse,
   BotFields,
   CreateBotResponse,
-  ListBotsResponse,
-  GetBotResponse,
+  Bot,
   AgentPriorities,
   CreateGroupResponse,
   Group,
@@ -103,8 +102,8 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
-   * Creates a new Bot Agent with specified parameters within a license.
-   * @param fields - bot agent properties
+   * Creates a new Bot with specified parameters within a license.
+   * @param fields - bot properties
    */
   async createBot(fields: BotFields): Promise<CreateBotResponse> {
     return this.send("create_bot", fields || {});
@@ -112,15 +111,15 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Deletes bot specified by id.
-   * @param bot_agent_id - ID of bot to delete
+   * @param id - ID of bot to delete
    */
-  async deleteBot(bot_agent_id: string): Promise<EmptyResponse> {
-    return this.send("delete_bot", { bot_agent_id });
+  async deleteBot(id: string): Promise<EmptyResponse> {
+    return this.send("delete_bot", { id });
   }
 
   /**
-   * Updates the properties of Bot Agent specified by id.
-   * @param id - ID of bot agent to update
+   * Updates the properties of Bot specified by id.
+   * @param id - ID of bot to update
    * @param fields - properties to update
    */
   async updateBot(id: string, fields: BotFields): Promise<EmptyResponse> {
@@ -128,19 +127,21 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
-   * Lists all bot agents within license.
+   * Lists all bots within license.
    * @param all - switch if should return all bots or only caller's bots
+   * @param fields - additional fields to include
    */
-  async listBots(all?: boolean): Promise<ListBotsResponse> {
-    return this.send("list_bots", { all });
+  async listBots(all?: boolean, fields?: BotFields): Promise<Bot[]> {
+    return this.send("list_bots", { all, ...fields});
   }
 
   /**
-   * Gets info about Bot Agent.
-   * @param bot_agent_id - bot agent ID to get info about
+   * Gets info about Bot.
+   * @param id - bot ID to get info about
+   * @param fields - additional fields to include
    */
-  async getBot(bot_agent_id: string): Promise<GetBotResponse> {
-    return this.send("get_bot", { bot_agent_id });
+  async getBot(id: string, fields?: BotFields): Promise<Bot> {
+    return this.send("get_bot", { id, ...fields });
   }
 
   /**
