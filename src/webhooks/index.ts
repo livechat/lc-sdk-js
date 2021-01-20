@@ -31,7 +31,8 @@ type WebhookPayload =
   | RoutingStatusSet
   | AgentDeleted
   | CustomerCreated
-  | EventsMarkedAsSeen;
+  | EventsMarkedAsSeen
+  | ChatTransferred;
 
 export interface IncomingChat {
   chat: Chat;
@@ -157,4 +158,20 @@ export interface EventsMarkedAsSeen {
   user_id: string;
   chat_id: string;
   seen_up_to: string;
+}
+
+export interface ChatTransferred {
+  chat_id: string;
+  thread_id?: string;
+  requester_id?: string;
+  reason: string;
+  transferred_to: {
+    agent_ids?: string[];
+    group_ids?: number[];
+  };
+  queue?: {
+    position: number;
+    wait_time: number;
+    queued_at: string;
+  };
 }
