@@ -162,16 +162,16 @@ export interface EventsMarkedAsSeen {
 
 export interface ChatTransferred {
   chat_id: string;
-  thread_id: string;
-  requester_id: string;
+  thread_id?: string;
+  requester_id?: string;
   reason: string;
   transferred_to: {
-    agent_ids: string[];
-    group_ids: number[];
-  }
-  queue: {
+    agent_ids?: string[];
+    group_ids?: number[];
+  };
+  queue?: {
     position: number;
     wait_time: number;
     queued_at: string;
-  }
+  };
 }
