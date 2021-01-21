@@ -193,6 +193,7 @@ export interface CustomerFilters {
   email?: StringFilter;
   name?: StringFilter;
   customer_id?: StringFilter;
+  chat_group_ids?: IntegerFilter;
   chats_count?: RangeFilter;
   threads_count?: RangeFilter;
   visits_count?: RangeFilter;
@@ -205,6 +206,11 @@ export interface CustomerFilters {
 export interface StringFilter {
   values?: string[];
   exclude_values?: string[];
+}
+
+export interface IntegerFilter {
+  values?: number[];
+  exclude_values?: number[];
 }
 
 export interface RangeFilter {
