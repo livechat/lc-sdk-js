@@ -17,6 +17,7 @@
 * [description](_src_configuration_structures_.webhook.md#optional-description)
 * [filters](_src_configuration_structures_.webhook.md#optional-filters)
 * [secret_key](_src_configuration_structures_.webhook.md#secret_key)
+* [type](_src_configuration_structures_.webhook.md#type)
 * [url](_src_configuration_structures_.webhook.md#url)
 
 ## Properties
@@ -25,7 +26,7 @@
 
 • **action**: *string*
 
-*Defined in [src/configuration/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L143)*
+*Defined in [src/configuration/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L131)*
 
 ___
 
@@ -33,7 +34,7 @@ ___
 
 • **additional_data**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L146)*
+*Defined in [src/configuration/structures.ts:135](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L135)*
 
 ___
 
@@ -41,7 +42,7 @@ ___
 
 • **description**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L147)*
+*Defined in [src/configuration/structures.ts:136](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L136)*
 
 ___
 
@@ -49,7 +50,7 @@ ___
 
 • **filters**? : *[WebhookFilters](_src_configuration_structures_.webhookfilters.md)*
 
-*Defined in [src/configuration/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L148)*
+*Defined in [src/configuration/structures.ts:137](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L137)*
 
 ___
 
@@ -57,7 +58,15 @@ ___
 
 • **secret_key**: *string*
 
-*Defined in [src/configuration/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L144)*
+*Defined in [src/configuration/structures.ts:132](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L132)*
+
+___
+
+###  type
+
+• **type**: *string*
+
+*Defined in [src/configuration/structures.ts:134](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L134)*
 
 ___
 
@@ -65,4 +74,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/configuration/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L145)*
+*Defined in [src/configuration/structures.ts:133](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L133)*

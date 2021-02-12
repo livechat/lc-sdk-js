@@ -21,7 +21,7 @@
 
 • **action**: *string*
 
-*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L330)*
+*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L330)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **author_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:332](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L332)*
+*Defined in [src/objects/index.ts:332](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L332)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **payload**: *any*
 
-*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L331)*
+*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L331)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **request_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:333](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L333)*
+*Defined in [src/objects/index.ts:333](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L333)*

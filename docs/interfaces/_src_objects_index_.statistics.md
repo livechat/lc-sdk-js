@@ -23,9 +23,9 @@
 
 • **chats_count**: *number*
 
-*Defined in [src/objects/index.ts:209](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L209)*
+*Defined in [src/objects/index.ts:209](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L209)*
 
-*Defined in [src/objects/index.ts:265](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L265)*
+*Defined in [src/objects/index.ts:265](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L265)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **greetings_accepted_count**: *number*
 
-*Defined in [src/objects/index.ts:270](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L270)*
+*Defined in [src/objects/index.ts:270](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L270)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **greetings_shown_count**: *number*
 
-*Defined in [src/objects/index.ts:269](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L269)*
+*Defined in [src/objects/index.ts:269](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L269)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **page_views_count**: *number*
 
-*Defined in [src/objects/index.ts:268](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L268)*
+*Defined in [src/objects/index.ts:268](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L268)*
 
 ___
 
@@ -57,9 +57,9 @@ ___
 
 • **threads_count**: *number*
 
-*Defined in [src/objects/index.ts:210](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L210)*
+*Defined in [src/objects/index.ts:210](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L210)*
 
-*Defined in [src/objects/index.ts:266](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L266)*
+*Defined in [src/objects/index.ts:266](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L266)*
 
 ___
 
@@ -67,6 +67,6 @@ ___
 
 • **visits_count**: *number*
 
-*Defined in [src/objects/index.ts:211](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L211)*
+*Defined in [src/objects/index.ts:211](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L211)*
 
-*Defined in [src/objects/index.ts:267](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/objects/index.ts#L267)*
+*Defined in [src/objects/index.ts:267](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L267)*

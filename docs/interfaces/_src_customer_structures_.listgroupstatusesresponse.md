@@ -18,7 +18,7 @@
 
 • **group_status**: *object*
 
-*Defined in [src/customer/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/customer/structures.ts#L98)*
+*Defined in [src/customer/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/customer/structures.ts#L98)*
 
 #### Type declaration:
 

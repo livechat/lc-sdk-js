@@ -23,4 +23,4 @@
 
 Ƭ **apiType**: *"agent" | "customer" | "configuration"*
 
-*Defined in [src/internal/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/internal/index.ts#L8)*
+*Defined in [src/internal/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/internal/index.ts#L8)*
