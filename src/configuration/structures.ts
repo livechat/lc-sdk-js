@@ -131,6 +131,7 @@ export interface Webhook {
   action: string;
   secret_key: string;
   url: string;
+  type: string;
   additional_data?: string[];
   description?: string;
   filters?: WebhookFilters;
@@ -161,5 +162,5 @@ export interface WebhookData {
 }
 
 export interface WebhooksState {
-  webhooks_enabled: boolean;
+  license_webhooks_enabled: boolean;
 }
