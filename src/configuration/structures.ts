@@ -120,6 +120,7 @@ export interface PropertyConfig {
     to: number;
   };
   public_access?: string[];
+  defatuu
 }
 
 export interface LocationAccess {
