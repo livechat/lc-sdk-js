@@ -26,6 +26,7 @@
 * [FilterType](../interfaces/_src_agent_structures_.filtertype.md)
 * [GetChatResponse](../interfaces/_src_agent_structures_.getchatresponse.md)
 * [GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)
+* [IntegerFilter](../interfaces/_src_agent_structures_.integerfilter.md)
 * [License](../interfaces/_src_agent_structures_.license.md)
 * [ListArchivesParameters](../interfaces/_src_agent_structures_.listarchivesparameters.md)
 * [ListArchivesResponse](../interfaces/_src_agent_structures_.listarchivesresponse.md)

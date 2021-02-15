@@ -10,12 +10,12 @@
 
 ### Properties
 
-* [webhook_id](_src_configuration_structures_.registerwebhookresponse.md#webhook_id)
+* [id](_src_configuration_structures_.registerwebhookresponse.md#id)
 
 ## Properties
 
-###  webhook_id
+###  id
 
-• **webhook_id**: *string*
+• **id**: *string*
 
-*Defined in [src/configuration/structures.ts:166](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L166)*
+*Defined in [src/configuration/structures.ts:155](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L155)*

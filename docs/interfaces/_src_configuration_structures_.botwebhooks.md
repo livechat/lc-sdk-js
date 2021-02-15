@@ -20,7 +20,7 @@
 
 • **actions**: *[WebhookAction](_src_configuration_structures_.webhookaction.md)[]*
 
-*Defined in [src/configuration/structures.ts:56](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L56)*
+*Defined in [src/configuration/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L60)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **secret_key**: *string*
 
-*Defined in [src/configuration/structures.ts:55](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L55)*
+*Defined in [src/configuration/structures.ts:59](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L59)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/configuration/structures.ts:54](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L54)*
+*Defined in [src/configuration/structures.ts:58](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L58)*

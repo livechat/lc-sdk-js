@@ -19,7 +19,7 @@
 
 • **agent_id**: *string*
 
-*Defined in [src/agent/structures.ts:261](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L261)*
+*Defined in [src/agent/structures.ts:267](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/agent/structures.ts#L267)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **total_active_chats**: *number*
 
-*Defined in [src/agent/structures.ts:262](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/agent/structures.ts#L262)*
+*Defined in [src/agent/structures.ts:268](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/agent/structures.ts#L268)*

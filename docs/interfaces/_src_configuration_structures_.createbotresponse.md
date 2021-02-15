@@ -10,12 +10,12 @@
 
 ### Properties
 
-* [bot_agent_id](_src_configuration_structures_.createbotresponse.md#bot_agent_id)
+* [id](_src_configuration_structures_.createbotresponse.md#id)
 
 ## Properties
 
-###  bot_agent_id
+###  id
 
-• **bot_agent_id**: *string*
+• **id**: *string*
 
-*Defined in [src/configuration/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/8143b05/src/configuration/structures.ts#L42)*
+*Defined in [src/configuration/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L42)*

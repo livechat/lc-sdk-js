@@ -351,26 +351,26 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
-   * Enables webhooks for authorization token's clientID
+   * Enables license webhooks for authorization token's clientID
    * @param clientID - clientID when authorizing via Personal Access Token
    */
-  async enableWebhooks(client_id?: string): Promise<EmptyResponse> {
-    return this.send("enable_webhooks", { client_id });
+  async enableLicenseWebhooks(client_id?: string): Promise<EmptyResponse> {
+    return this.send("enable_license_webhooks", { client_id });
   }
 
   /**
-   * Disables webhooks for authorization token's clientID
+   * Disables license webhooks for authorization token's clientID
    * @param clientID - clientID when authorizing via Personal Access Token
    */
-  async disableWebhooks(client_id?: string): Promise<EmptyResponse> {
-    return this.send("disable_webhooks", { client_id });
+  async disableLicenseWebhooks(client_id?: string): Promise<EmptyResponse> {
+    return this.send("disable_license_webhooks", { client_id });
   }
 
   /**
-   * Gets webhooks' state for authorization token's clientID
+   * Gets license webhooks' state for authorization token's clientID
    * @param clientID - clientID when authorizing via Personal Access Token
    */
-  async getWebhooksState(client_id?: string): Promise<WebhooksState> {
-    return this.send("get_webhooks_state", { client_id });
+  async getLicenseWebhooksState(client_id?: string): Promise<WebhooksState> {
+    return this.send("get_license_webhooks_state", { client_id });
   }
 }
