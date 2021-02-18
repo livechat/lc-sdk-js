@@ -19,7 +19,7 @@
 
 • **enabled**: *boolean*
 
-*Defined in [src/customer/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/customer/structures.ts#L105)*
+*Defined in [src/customer/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/customer/structures.ts#L105)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **form**? : *[Form](_src_customer_structures_.form.md)*
 
-*Defined in [src/customer/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/customer/structures.ts#L104)*
+*Defined in [src/customer/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/customer/structures.ts#L104)*

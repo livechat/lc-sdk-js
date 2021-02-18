@@ -22,7 +22,7 @@
 
 • **city**: *string*
 
-*Defined in [src/objects/index.ts:193](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L193)*
+*Defined in [src/objects/index.ts:193](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L193)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **country**: *string*
 
-*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L190)*
+*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L190)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **country_code**: *string*
 
-*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L191)*
+*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L191)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **region**: *string*
 
-*Defined in [src/objects/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L192)*
+*Defined in [src/objects/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L192)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **timezone**: *string*
 
-*Defined in [src/objects/index.ts:194](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L194)*
+*Defined in [src/objects/index.ts:194](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L194)*

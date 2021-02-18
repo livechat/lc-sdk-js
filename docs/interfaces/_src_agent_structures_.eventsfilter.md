@@ -18,4 +18,4 @@
 
 • **types**: *string[]*
 
-*Defined in [src/agent/structures.ts:112](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/agent/structures.ts#L112)*
+*Defined in [src/agent/structures.ts:112](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/agent/structures.ts#L112)*

@@ -18,7 +18,6 @@
 * [max_chats_count](_src_configuration_structures_.bot.md#optional-max_chats_count)
 * [name](_src_configuration_structures_.bot.md#optional-name)
 * [owner_client_id](_src_configuration_structures_.bot.md#optional-owner_client_id)
-* [webhooks](_src_configuration_structures_.bot.md#webhooks)
 * [work_scheduler](_src_configuration_structures_.bot.md#optional-work_scheduler)
 
 ## Properties
@@ -27,7 +26,7 @@
 
 • **avatar_path**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L72)*
+*Defined in [src/configuration/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L60)*
 
 ___
 
@@ -35,7 +34,7 @@ ___
 
 • **default_group_priority**? : *[GroupPriority](../enums/_src_configuration_structures_.grouppriority.md)*
 
-*Defined in [src/configuration/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L73)*
+*Defined in [src/configuration/structures.ts:61](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L61)*
 
 ___
 
@@ -43,7 +42,7 @@ ___
 
 • **groups**? : *[GroupConfig](_src_configuration_structures_.groupconfig.md)[]*
 
-*Defined in [src/configuration/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L76)*
+*Defined in [src/configuration/structures.ts:64](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L64)*
 
 ___
 
@@ -51,7 +50,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L70)*
+*Defined in [src/configuration/structures.ts:58](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L58)*
 
 ___
 
@@ -59,7 +58,7 @@ ___
 
 • **job_title**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L78)*
+*Defined in [src/configuration/structures.ts:65](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L65)*
 
 ___
 
@@ -67,7 +66,7 @@ ___
 
 • **max_chats_count**? : *undefined | number*
 
-*Defined in [src/configuration/structures.ts:75](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L75)*
+*Defined in [src/configuration/structures.ts:63](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L63)*
 
 ___
 
@@ -75,7 +74,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L71)*
+*Defined in [src/configuration/structures.ts:59](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L59)*
 
 ___
 
@@ -83,15 +82,7 @@ ___
 
 • **owner_client_id**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:74](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L74)*
-
-___
-
-###  webhooks
-
-• **webhooks**: *[BotWebhooks](_src_configuration_structures_.botwebhooks.md)[]*
-
-*Defined in [src/configuration/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L77)*
+*Defined in [src/configuration/structures.ts:62](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L62)*
 
 ___
 
@@ -99,4 +90,4 @@ ___
 
 • **work_scheduler**? : *[WorkScheduler](_src_configuration_structures_.workscheduler.md)*
 
-*Defined in [src/configuration/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L79)*
+*Defined in [src/configuration/structures.ts:66](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L66)*

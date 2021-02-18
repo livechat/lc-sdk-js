@@ -21,7 +21,7 @@
 
 • **buttons**? : *[Button](_src_objects_index_.button.md)[]*
 
-*Defined in [src/objects/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L81)*
+*Defined in [src/objects/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L81)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **image**: *[Image](_src_objects_index_.image.md)*
 
-*Defined in [src/objects/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L80)*
+*Defined in [src/objects/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L80)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **subtitle**: *string*
 
-*Defined in [src/objects/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L79)*
+*Defined in [src/objects/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L79)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/objects/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L78)*
+*Defined in [src/objects/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L78)*

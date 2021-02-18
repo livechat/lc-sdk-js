@@ -17,7 +17,7 @@
 
 • **DoNotAssign**: = "supervisor"
 
-*Defined in [src/configuration/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L86)*
+*Defined in [src/configuration/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L73)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **First**: = "first"
 
-*Defined in [src/configuration/structures.ts:83](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L83)*
+*Defined in [src/configuration/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L70)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **Last**: = "last"
 
-*Defined in [src/configuration/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L85)*
+*Defined in [src/configuration/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L72)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **Normal**: = "normal"
 
-*Defined in [src/configuration/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/configuration/structures.ts#L84)*
+*Defined in [src/configuration/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/configuration/structures.ts#L71)*

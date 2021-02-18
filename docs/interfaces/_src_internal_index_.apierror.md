@@ -19,7 +19,7 @@
 
 • **message**: *string*
 
-*Defined in [src/internal/index.ts:152](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/internal/index.ts#L152)*
+*Defined in [src/internal/index.ts:152](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/internal/index.ts#L152)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/internal/index.ts:151](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/internal/index.ts#L151)*
+*Defined in [src/internal/index.ts:151](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/internal/index.ts#L151)*

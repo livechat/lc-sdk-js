@@ -51,19 +51,7 @@ export interface BotFields {
   max_chats_count?: number;
   groups?: GroupConfig[];
   work_scheduler?: WorkScheduler;
-  webhooks?: BotWebhooks;
-}
-
-export interface BotWebhooks {
-  url: string;
-  secret_key: string;
-  actions: WebhookAction[];
-}
-
-export interface WebhookAction {
-  name: string;
-  filters?: object;
-  additional_data?: string[];
+  owner_client_id?: string;
 }
 
 export interface Bot {
@@ -74,7 +62,6 @@ export interface Bot {
   owner_client_id?: string;
   max_chats_count?: number;
   groups?: GroupConfig[];
-  webhooks: BotWebhooks[];
   job_title?: string;
   work_scheduler?: WorkScheduler;
 }

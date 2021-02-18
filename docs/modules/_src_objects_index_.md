@@ -59,7 +59,7 @@
 
 Ƭ **Event**: *[File](../interfaces/_src_objects_index_.file.md) | [FilledForm](../interfaces/_src_objects_index_.filledform.md) | [Message](../interfaces/_src_objects_index_.message.md) | [RichMessage](../interfaces/_src_objects_index_.richmessage.md) | [CustomEvent](../interfaces/_src_objects_index_.customevent.md) | [SystemMessage](../interfaces/_src_objects_index_.systemmessage.md)*
 
-*Defined in [src/objects/index.ts:125](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L125)*
+*Defined in [src/objects/index.ts:125](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L125)*
 
 ___
 
@@ -67,4 +67,4 @@ ___
 
 Ƭ **User**: *[Agent](../interfaces/_src_objects_index_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
 
-*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/21d7a55/src/objects/index.ts#L127)*
+*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/objects/index.ts#L127)*
