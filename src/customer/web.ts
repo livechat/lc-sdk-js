@@ -352,4 +352,12 @@ export default class Web extends WebAPI {
   async cancelGreeting(unique_id: string): Promise<EmptyResponse> {
     return this.send("cancel_greeting", { unique_id });
   }
+
+  /**
+   * Requests customer to verify email.
+   * @param callback_uri - URI to send webhook when customer confirms identity
+   */
+  async requestEmailVerification(callback_uri: string): Promise<EmptyResponse> {
+	  return this.send("request_email_verification", { callback_uri });
+  }
 }
