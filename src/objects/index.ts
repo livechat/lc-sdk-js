@@ -165,6 +165,7 @@ export interface Customer {
   type: string;
   name: string;
   email: string;
+  email_verified: boolean;
   avatar: string;
   last_visit: Visit;
   session_fields: SessionField[];
