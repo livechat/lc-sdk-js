@@ -18,4 +18,4 @@
 
 • **license_webhooks_enabled**: *boolean*
 
-*Defined in [src/configuration/structures.ts:153](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L153)*
+*Defined in [src/configuration/structures.ts:156](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L156)*
