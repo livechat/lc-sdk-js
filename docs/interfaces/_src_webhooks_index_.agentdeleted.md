@@ -18,4 +18,4 @@
 
 • **agent_id**: *string*
 
-*Defined in [src/webhooks/index.ts:150](https://github.com/livechat/lc-sdk-js/blob/d0a32c0/src/webhooks/index.ts#L150)*
+*Defined in [src/webhooks/index.ts:150](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/webhooks/index.ts#L150)*

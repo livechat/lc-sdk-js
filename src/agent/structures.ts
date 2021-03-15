@@ -279,6 +279,15 @@ export interface LoginRequest {
   push_notifications?: PushNotifications;
   application?: Application;
   away?: boolean;
+  customer_monitoring_level?: CustomerMonitoringLevel;
+  pushes?: { [key: string]: Pushes[]};
+}
+
+export enum CustomerMonitoringLevel {
+  My = "my",
+  Chatting = "chatting",
+  Invited = "invited",
+  Online = "online",
 }
 
 export interface PushNotifications {

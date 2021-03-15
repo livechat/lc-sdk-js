@@ -6,6 +6,7 @@
 
 ### Enumerations
 
+* [CustomerMonitoringLevel](../enums/_src_agent_structures_.customermonitoringlevel.md)
 * [CustomerSortBy](../enums/_src_agent_structures_.customersortby.md)
 * [Pushes](../enums/_src_agent_structures_.pushes.md)
 * [SurveyType](../enums/_src_agent_structures_.surveytype.md)
