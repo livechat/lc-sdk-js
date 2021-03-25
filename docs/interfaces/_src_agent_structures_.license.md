@@ -23,7 +23,7 @@
 
 • **creation_timestamp**: *number*
 
-*Defined in [src/agent/structures.ts:313](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/agent/structures.ts#L313)*
+*Defined in [src/agent/structures.ts:313](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L313)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **expiration_timestamp**: *number*
 
-*Defined in [src/agent/structures.ts:312](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/agent/structures.ts#L312)*
+*Defined in [src/agent/structures.ts:312](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L312)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/agent/structures.ts:310](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/agent/structures.ts#L310)*
+*Defined in [src/agent/structures.ts:310](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L310)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **in_trial**: *boolean*
 
-*Defined in [src/agent/structures.ts:314](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/agent/structures.ts#L314)*
+*Defined in [src/agent/structures.ts:314](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L314)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **plan**: *string*
 
-*Defined in [src/agent/structures.ts:311](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/agent/structures.ts#L311)*
+*Defined in [src/agent/structures.ts:311](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L311)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **website_last_activity**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/agent/structures.ts#L315)*
+*Defined in [src/agent/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L315)*

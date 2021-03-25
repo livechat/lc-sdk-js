@@ -128,9 +128,12 @@ export interface Webhook {
 export interface WebhookFilters {
   author_type?: string;
   only_my_chats?: boolean;
-  chat_member_ids?: {
-    agents_any?: string[];
-    agents_exlude?: string[];
+  chat_presence?: {
+    user_ids?: {
+      values?: string[];
+      exclude_values?: string[];
+    };
+    my_bots: boolean;
   };
 }
 

@@ -11,7 +11,7 @@
 ### Properties
 
 * [author_type](_src_configuration_structures_.webhookfilters.md#optional-author_type)
-* [chat_member_ids](_src_configuration_structures_.webhookfilters.md#optional-chat_member_ids)
+* [chat_presence](_src_configuration_structures_.webhookfilters.md#optional-chat_presence)
 * [only_my_chats](_src_configuration_structures_.webhookfilters.md#optional-only_my_chats)
 
 ## Properties
@@ -20,15 +20,15 @@
 
 • **author_type**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L129)*
+*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L129)*
 
 ___
 
-### `Optional` chat_member_ids
+### `Optional` chat_presence
 
-• **chat_member_ids**? : *undefined | object*
+• **chat_presence**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L131)*
+*Defined in [src/configuration/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L131)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **only_my_chats**? : *undefined | false | true*
 
-*Defined in [src/configuration/structures.ts:130](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L130)*
+*Defined in [src/configuration/structures.ts:130](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L130)*

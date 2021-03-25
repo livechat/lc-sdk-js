@@ -26,7 +26,7 @@
 
 • **access**: *object*
 
-*Defined in [src/configuration/structures.ts:100](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L100)*
+*Defined in [src/configuration/structures.ts:100](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L100)*
 
 #### Type declaration:
 
@@ -38,7 +38,7 @@ ___
 
 • **default_value**? : *any*
 
-*Defined in [src/configuration/structures.ts:110](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L110)*
+*Defined in [src/configuration/structures.ts:110](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L110)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **description**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:103](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L103)*
+*Defined in [src/configuration/structures.ts:103](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L103)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **domain**? : *any[]*
 
-*Defined in [src/configuration/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L104)*
+*Defined in [src/configuration/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L104)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/configuration/structures.ts:97](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L97)*
+*Defined in [src/configuration/structures.ts:97](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L97)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **owner_client_id**: *string*
 
-*Defined in [src/configuration/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L98)*
+*Defined in [src/configuration/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L98)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 • **public_access**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:109](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L109)*
+*Defined in [src/configuration/structures.ts:109](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L109)*
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 • **range**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L105)*
+*Defined in [src/configuration/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L105)*
 
 ___
 
@@ -94,4 +94,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/configuration/structures.ts:99](https://github.com/livechat/lc-sdk-js/blob/ce4846a/src/configuration/structures.ts#L99)*
+*Defined in [src/configuration/structures.ts:99](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L99)*
