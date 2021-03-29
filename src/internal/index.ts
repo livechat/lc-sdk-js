@@ -36,16 +36,26 @@ export class WebAPI {
     const token = this.tokenGetter();
     const method = action in ["list_license_properties", "list_group_properties"] ? "GET" : "POST";
 
+    const headers: any = {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token.accessToken}`,
+      "X-Region": token.region,
+    }
+    if (typeof window === 'undefined') {
+      headers["User-Agent"] = `JS SDK Application ${this.clientID}`
+    }
+
+    let params: any
+    if (this.type === 'customer') {
+      params = { license_id: token.licenseID }
+    }
+
     return axios({
       method,
       url,
       data: payload,
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token.accessToken}`,
-        "User-Agent": `JS SDK Application ${this.clientID}`,
-        "X-Region": token.region,
-      },
+      params,
+      headers,
     });
   }
 }
