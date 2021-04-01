@@ -1,5 +1,5 @@
 import axios from "axios";
-import ws from "ws";
+import WebSocket from "isomorphic-ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
@@ -36,16 +36,26 @@ export class WebAPI {
     const token = this.tokenGetter();
     const method = action in ["list_license_properties", "list_group_properties"] ? "GET" : "POST";
 
+    const headers: any = {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token.accessToken}`,
+      "X-Region": token.region,
+    }
+    if (typeof window === 'undefined') {
+      headers["User-Agent"] = `JS SDK Application ${this.clientID}`
+    }
+
+    let params: any
+    if (this.type === 'customer') {
+      params = { license_id: token.licenseID }
+    }
+
     return axios({
       method,
       url,
       data: payload,
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token.accessToken}`,
-        "User-Agent": `JS SDK Application ${this.clientID}`,
-        "X-Region": token.region,
-      },
+      params,
+      headers,
     });
   }
 }
@@ -55,7 +65,7 @@ export class RTMAPI {
   version: string;
   type: apiType;
   license?: number;
-  socket?: ws;
+  socket?: WebSocket;
   heartbeatInterval?: NodeJS.Timeout;
   requestsQueue: any = {};
   subscribedPushes: any = {};
@@ -75,16 +85,16 @@ export class RTMAPI {
         `wss://${this.APIURL}/${this.version}/${this.type}/rtm/ws` +
         (this.license ? `?license_id=${this.license}` : "");
 
-      this.socket = new ws(wsURL);
-      this.socket.on("open", () => {
-        this.heartbeatInterval = setInterval(() => this.socket?.ping(), 10000);
+      this.socket = new WebSocket(wsURL);
+      this.socket.onopen = () => {
+        this.heartbeatInterval = setInterval(() => this.send("ping", undefined), 10000);
         resolve();
-      });
+      };
 
-      this.socket.on("message", (msg) => {
+      this.socket.onmessage = (msg) => {
         let parsedMessage;
         try {
-          parsedMessage = JSON.parse(msg.toString());
+          parsedMessage = JSON.parse(msg.data.toString());
         } catch (e) {
           return;
         }
@@ -97,9 +107,9 @@ export class RTMAPI {
             return this.handlePush(action, payload);
           }
         }
-      });
+      };
 
-      this.socket.on("error", reject);
+      this.socket.onerror = reject
     });
   }
 
@@ -118,7 +128,7 @@ export class RTMAPI {
   }
 
   send(action: string, payload: any): Promise<any> {
-    if (this.socket?.readyState !== ws.OPEN) {
+    if (this.socket?.readyState !== 1) {
       return Promise.reject(new Error("socket not connected"));
     }
     const request_id = v4();
@@ -129,9 +139,8 @@ export class RTMAPI {
     };
 
     return new Promise((resolve, reject) => {
-      this.socket?.send(JSON.stringify(req), (err) => {
-        this.requestsQueue[request_id] = { resolve, reject };
-      });
+      this.socket?.send(JSON.stringify(req));
+      this.requestsQueue[request_id] = { resolve, reject };
     });
   }
 
