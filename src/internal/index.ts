@@ -3,13 +3,9 @@ import WebSocket from "isomorphic-ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
-import { RTMRequest, RTMResponse } from "../objects";
+import { RTMAPIOptions, RTMRequest, RTMResponse, WebAPIOptions } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
-
-export interface WebAPIOptions {
-  apiUrl?: string;
-}
 
 export class WebAPI {
   APIURL: string;
@@ -62,10 +58,6 @@ export class WebAPI {
       headers,
     });
   }
-}
-
-export interface RTMAPIOptions {
-  apiUrl?: string;
 }
 
 export class RTMAPI {

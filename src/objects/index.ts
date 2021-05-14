@@ -341,3 +341,11 @@ export interface RTMResponse {
   success: boolean;
   payload: any;
 }
+
+export interface WebAPIOptions {
+  apiUrl?: string;
+}
+
+export interface RTMAPIOptions {
+  apiUrl?: string;
+}
