@@ -27,11 +27,11 @@ import type {
   Pushes,
 } from "./structures";
 import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
-import { RTMAPI } from "../internal/index";
+import { RTMAPI, RTMAPIOptions } from "../internal/index";
 
 export default class RTM extends RTMAPI {
-  constructor() {
-    super("agent");
+  constructor(options?: RTMAPIOptions) {
+    super("agent", undefined, options);
   }
 
   /**

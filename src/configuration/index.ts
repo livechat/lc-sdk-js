@@ -1,4 +1,4 @@
-import { WebAPI } from "../internal";
+import { WebAPI, WebAPIOptions } from "../internal";
 import { TokenGetter } from "../authorization";
 import {
   AgentFields,
@@ -22,8 +22,8 @@ import {
 import { Properties } from "../objects/index";
 
 export default class ConfigurationAPI extends WebAPI {
-  constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, tokenGetter, "configuration");
+  constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
+    super(clientID, tokenGetter, "configuration", options);
   }
 
   /**

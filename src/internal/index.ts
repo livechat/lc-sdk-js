@@ -7,6 +7,10 @@ import { RTMRequest, RTMResponse } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
 
+export interface WebAPIOptions {
+  apiUrl?: string;
+}
+
 export class WebAPI {
   APIURL: string;
   clientID: string;
@@ -14,8 +18,8 @@ export class WebAPI {
   type: apiType;
   tokenGetter: TokenGetter;
 
-  constructor(clientID: string, tokenGetter: TokenGetter, type: apiType) {
-    this.APIURL = ApiURL;
+  constructor(clientID: string, tokenGetter: TokenGetter, type: apiType, options?: WebAPIOptions) {
+    this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.clientID = clientID;
     this.type = type;
@@ -60,6 +64,10 @@ export class WebAPI {
   }
 }
 
+export interface RTMAPIOptions {
+  apiUrl?: string;
+}
+
 export class RTMAPI {
   APIURL: string;
   version: string;
@@ -70,8 +78,8 @@ export class RTMAPI {
   requestsQueue: any = {};
   subscribedPushes: any = {};
 
-  constructor(type: apiType, license?: number) {
-    this.APIURL = ApiURL;
+  constructor(type: apiType, license?: number, options?: RTMAPIOptions) {
+    this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
     if (license) {

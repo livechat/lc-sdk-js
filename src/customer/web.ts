@@ -1,4 +1,4 @@
-import { WebAPI } from "../internal";
+import { WebAPI, WebAPIOptions } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
   EmptyResponse,
@@ -26,8 +26,8 @@ import axios from "axios";
 import FormData from "form-data";
 
 export default class Web extends WebAPI {
-  constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, tokenGetter, "customer");
+  constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
+    super(clientID, tokenGetter, "customer", options);
   }
 
   /**
