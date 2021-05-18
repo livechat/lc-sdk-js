@@ -1,4 +1,4 @@
-import { RoutingStatus } from "../objects";
+import { Filter, RoutingStatus } from "../objects";
 
 export interface EmptyResponse {}
 
@@ -52,6 +52,7 @@ export interface BotFields {
   groups?: GroupConfig[];
   work_scheduler?: WorkScheduler;
   owner_client_id?: string;
+  timezone?: string;
 }
 
 export interface Bot {
@@ -129,10 +130,7 @@ export interface WebhookFilters {
   author_type?: string;
   only_my_chats?: boolean;
   chat_presence?: {
-    user_ids?: {
-      values?: string[];
-      exclude_values?: string[];
-    };
+    user_ids?: Filter<string>;
     my_bots: boolean;
   };
 }
@@ -154,4 +152,42 @@ export interface WebhookData {
 
 export interface WebhooksState {
   license_webhooks_enabled: boolean;
+}
+
+interface AutoAccessConditions {
+  url?: Filter<{
+    value: string;
+    exact_match?: boolean;
+  }>;
+  domain?: Filter<{
+    value: string;
+    exact_match?: boolean;
+  }>;
+  geolocation?: Filter<{
+    country?: string;
+    country_code?: string;
+    region?: string;
+    city?: string;
+  }>;
+}
+
+export interface AutoAccess {
+  id: string;
+  access: {
+    groups: number[];
+  };
+  description?: string;
+  next_id?: string;
+}
+
+export interface AddAutoAccessRequest extends Omit<AutoAccess, 'id'> {
+  conditions: AutoAccessConditions;
+}
+
+export interface UpdateAutoAccessRequest extends Omit<AutoAccess, 'id'> {
+  conditions?: AutoAccessConditions;
+}
+
+export interface AddAutoAccessResponse {
+  id: string;
 }

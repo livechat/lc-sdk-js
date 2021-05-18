@@ -119,12 +119,15 @@ export interface Field {
 }
 
 export interface GetPredictedAgentResponse {
-  id: string;
-  name: string;
-  avatar: string;
-  is_bot: boolean;
-  job_title: string;
-  type: string;
+  agent: {
+    id: string;
+    name: string;
+    avatar: string;
+    is_bot: boolean;
+    job_title: string;
+    type: string;
+  };
+  queue: boolean;
 }
 
 export interface GetURLInfoResponse {
@@ -177,6 +180,39 @@ export interface LoginResponse {
   chats?: object[];
   greeting?: object;
   __priv_dynamic_config: object;
+}
+
+export interface GetDynamicConfigurationRequest {
+  group_id?: number;
+  url?: string;
+  channel_type?: string;
+  test?: boolean;
+}
+
+export interface GetDynamicConfigurationResponse {
+  group_id: number;
+  client_limit_exceeded: boolean;
+  domain_allowed: boolean;
+  config_version: string;
+  localization_version: string;
+  language: string;
+}
+
+export interface GroupConfiguration {
+  buttons: {
+    id: string;
+    type: string;
+    online_value: string;
+    offline_valie: string;
+  }[];
+  properties: {
+    group: Properties;
+    license: Properties;
+  };
+  integrations: unknown; // @TODO verify integrations
+  ticket_form: Form;
+  prechat_form: Form;
+
 }
 
 export enum Pushes {

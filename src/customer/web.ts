@@ -19,6 +19,9 @@ import type {
   GetPredictedAgentResponse,
   GetURLInfoResponse,
   UploadFileResponse,
+  GetDynamicConfigurationRequest,
+  GetDynamicConfigurationResponse,
+  GroupConfiguration,
 } from "./structures";
 import { Properties, Event } from "../objects";
 import { promises as fs } from "fs";
@@ -75,10 +78,10 @@ export default class Web extends WebAPI {
 
   /**
    * Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
-   * @param chat_id - chat ID to deactivate
+   * @param id - chat ID to deactivate
    */
-  async deactivateChat(chat_id: string): Promise<EmptyResponse> {
-    return this.send("deactivate_chat", { chat_id });
+  async deactivateChat(id: string): Promise<EmptyResponse> {
+    return this.send("deactivate_chat", { id });
   }
 
   /**
@@ -132,20 +135,20 @@ export default class Web extends WebAPI {
 
   /**
    * Updates chat properties
-   * @param chat_id - chat to update properties
+   * @param id - chat to update properties
    * @param properties - properties to update
    */
-  async updateChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
-    return this.send("update_chat_properties", { chat_id, properties });
+  async updateChatProperties(id: string, properties: Properties): Promise<EmptyResponse> {
+    return this.send("update_chat_properties", { id, properties });
   }
 
   /**
    * Deletes chat properties
-   * @param chat_id - chat to delete properties
+   * @param id - chat to delete properties
    * @param properties - properties to delete
    */
-  async deleteChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
-    return this.send("delete_chat_properties", { chat_id, properties });
+  async deleteChatProperties(id: string, properties: Properties): Promise<EmptyResponse> {
+    return this.send("delete_chat_properties", { id, properties });
   }
 
   /**
@@ -220,13 +223,11 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the properties of a given license. It only returns the properties a Customer has access to.
-   * @param license_id - ID of license to return properties of
    * @param namespace - property namespace
    * @param name - property name
    */
-  async listLicenseProperties(license_id: number, namespace?: string, name?: string): Promise<Properties> {
+  async listLicenseProperties(namespace?: string, name?: string): Promise<Properties> {
     return this.send("list_license_properties", {
-      license_id,
       namespace,
       name,
     });
@@ -234,20 +235,17 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the properties of a given group. It only returns the properties a Customer has access to.
-   * @param license_id - ID of license to return properties of
-   * @param group_id - ID of group to return properties of
+   * @param id - ID of group to return properties of
    * @param namespace - property namespace
    * @param name - property name
    */
   async listGroupProperties(
-    license_id: number,
-    group_id: number,
+    id: number,
     namespace?: string,
     name?: string,
   ): Promise<Properties> {
     return this.send("list_group_properties", {
-      license_id,
-      group_id,
+      id,
       namespace,
       name,
     });
@@ -359,5 +357,39 @@ export default class Web extends WebAPI {
    */
   async requestEmailVerification(callback_uri: string): Promise<EmptyResponse> {
 	  return this.send("request_email_verification", { callback_uri });
+  }
+
+  /**
+   * Returns the dynamic configuration of a given group.
+   * @param opts - properties used to groups' filtering
+   */
+  async getDynamicConfiguration(opts: GetDynamicConfigurationRequest = {}): Promise<GetDynamicConfigurationResponse> {
+    return this.send("get_dynamic_configuration", opts)
+  }
+
+  /**
+   * Returns the configuration of a given group in a given version.
+   * @param group_id 
+   * @param version 
+   */
+  async getConfiguration(group_id: string, version: string): Promise<GroupConfiguration> {
+    return this.send("get_configuration", {
+      group_id,
+      version,
+    })
+  }
+
+  /**
+   * Returns the localization of a given language and group in a given version.
+   * @param group_id - The ID of the group that you want to get a localization for
+   * @param language - 	The language that you want to get a localization for
+   * @param version  - The version that you want to get a localization for
+   */
+  async getLocalization(group_id: string, language: string, version: string): Promise<Record<string, string>> {
+    return this.send("get_localization", {
+      group_id,
+      language,
+      version,
+    })
   }
 }

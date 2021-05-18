@@ -9,6 +9,8 @@ import {
   InitialChat,
   ChatsSummary,
   MyProfile,
+  RoutingStatus,
+  Filter,
 } from "../objects";
 
 export interface EmptyResponse {}
@@ -92,10 +94,8 @@ export interface PropertiesFilter {
   };
 }
 
-interface FilterType {
+interface FilterType extends Filter<any> {
   exists?: boolean;
-  values?: any[];
-  exclude_values?: any[];
 }
 
 export enum SurveyType {
@@ -203,15 +203,9 @@ export interface CustomerFilters {
   include_customers_without_chats?: boolean;
 }
 
-export interface StringFilter {
-  values?: string[];
-  exclude_values?: string[];
-}
+export type StringFilter = Filter<string>;
 
-export interface IntegerFilter {
-  values?: number[];
-  exclude_values?: number[];
-}
+export type IntegerFilter = Filter<number>;
 
 export interface RangeFilter {
   lte?: number;
@@ -319,6 +313,11 @@ export interface ChangePushNotificationsRequest {
   firebase_token: string;
   platform: string;
   enabled: boolean;
+}
+
+export interface SetRoutingStatusResponse {
+  agent_id: string;
+  status: RoutingStatus;
 }
 
 export enum Pushes {
@@ -487,4 +486,24 @@ export enum Pushes {
    * New positions and wait times for queued chats.
    */
   QueuePostitionsUpdated = "queue_postitions_updated",
+
+  /**
+   * Informs about customers the agent should be aware of.
+   */
+  IncomingCustomers = "incoming_customers",
+
+  /**
+   * Informs that a new or returning customer is available to the agent.
+   */
+  IncomingCustomer = "incoming_customer",
+
+  /**
+   * Informs that a Customer left the tracked website.
+   */
+  CustomerLeft = "customer_left",
+
+  /**
+   * Informs that a customer was unfollowed.
+   */
+  CustomerUnfollowed = "customer_unfollowed",
 }

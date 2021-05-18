@@ -14,6 +14,7 @@ export interface File {
   size?: number;
   width?: number;
   height?: number;
+  alternative_text?: string;
 }
 
 export interface FilledForm {
@@ -98,6 +99,7 @@ export interface Image {
   size: number;
   width: number;
   height: number;
+  alternative_text: string;
 }
 
 export interface CustomEvent {
@@ -176,10 +178,14 @@ export interface Customer {
   created_at: string;
   present: boolean;
   events_seen_up_to: string;
+  followed: boolean;
+  group_ids: number[];
+  state: string;
 }
 
 export interface Visit {
   started_at: string;
+  ended_at: string;
   referrer: string;
   ip: string;
   user_agent: string;
@@ -340,4 +346,9 @@ export interface RTMResponse {
   type: string;
   success: boolean;
   payload: any;
+}
+
+export interface Filter<T> {
+  values?: T[];
+  exclude_values?: T[];
 }
