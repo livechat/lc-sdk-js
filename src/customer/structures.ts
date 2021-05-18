@@ -209,10 +209,9 @@ export interface GroupConfiguration {
     group: Properties;
     license: Properties;
   };
-  integrations: unknown; // @TODO verify integrations
+  integrations: Properties;
   ticket_form: Form;
   prechat_form: Form;
-
 }
 
 export enum Pushes {
