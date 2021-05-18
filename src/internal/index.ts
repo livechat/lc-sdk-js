@@ -3,7 +3,7 @@ import WebSocket from "isomorphic-ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
-import { RTMAPIOptions, RTMRequest, RTMResponse, WebAPIOptions } from "../objects";
+import { RTMAPIOptions, RTMRequest, WebAPIOptions } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
 
@@ -40,14 +40,14 @@ export class WebAPI {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token.accessToken}`,
       "X-Region": token.region,
-    }
-    if (typeof window === 'undefined') {
-      headers["User-Agent"] = `JS SDK Application ${this.clientID}`
+    };
+    if (typeof window === "undefined") {
+      headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
     }
 
-    let params: any
-    if (this.type === 'customer') {
-      params = { license_id: token.licenseID }
+    let params: any;
+    if (this.type === "customer") {
+      params = { license_id: token.licenseID };
     }
 
     return axios({
@@ -109,7 +109,7 @@ export class RTMAPI {
         }
       };
 
-      this.socket.onerror = reject
+      this.socket.onerror = reject;
     });
   }
 

@@ -26,8 +26,8 @@ import type {
   LoginRequest,
   Pushes,
 } from "./structures";
-import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
-import { RTMAPI, RTMAPIOptions } from "../internal/index";
+import { ChatAccess, Event, Properties, RoutingStatus, RTMAPIOptions } from "../objects";
+import { RTMAPI } from "../internal/index";
 
 export default class RTM extends RTMAPI {
   constructor(options?: RTMAPIOptions) {

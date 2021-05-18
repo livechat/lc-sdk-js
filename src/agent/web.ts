@@ -1,4 +1,4 @@
-import { WebAPI, WebAPIOptions } from "../internal";
+import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
   ListChatsResponse,
@@ -25,7 +25,7 @@ import type {
   AgentForTransfer,
   UploadFileResponse,
 } from "./structures";
-import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
+import { ChatAccess, Event, Properties, RoutingStatus, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";

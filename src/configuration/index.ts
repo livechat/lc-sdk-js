@@ -1,4 +1,4 @@
-import { WebAPI, WebAPIOptions } from "../internal";
+import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import {
   AgentFields,
@@ -19,7 +19,7 @@ import {
   WebhookData,
   WebhooksState,
 } from "./structures";
-import { Properties } from "../objects/index";
+import { Properties, WebAPIOptions } from "../objects/index";
 
 export default class ConfigurationAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
@@ -132,7 +132,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additional fields to include
    */
   async listBots(all?: boolean, fields?: BotFields): Promise<Bot[]> {
-    return this.send("list_bots", { all, ...fields});
+    return this.send("list_bots", { all, ...fields });
   }
 
   /**

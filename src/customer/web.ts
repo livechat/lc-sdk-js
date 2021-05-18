@@ -1,4 +1,4 @@
-import { WebAPI, WebAPIOptions } from "../internal";
+import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
   EmptyResponse,
@@ -20,7 +20,7 @@ import type {
   GetURLInfoResponse,
   UploadFileResponse,
 } from "./structures";
-import { Properties, Event } from "../objects";
+import { Properties, Event, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";
@@ -358,6 +358,6 @@ export default class Web extends WebAPI {
    * @param callback_uri - URI to send webhook when customer confirms identity
    */
   async requestEmailVerification(callback_uri: string): Promise<EmptyResponse> {
-	  return this.send("request_email_verification", { callback_uri });
+    return this.send("request_email_verification", { callback_uri });
   }
 }

@@ -1,4 +1,4 @@
-import { RTMAPI, RTMAPIOptions } from "../internal";
+import { RTMAPI } from "../internal";
 import type {
   EmptyResponse,
   ListChatParameters,
@@ -21,7 +21,7 @@ import type {
   LoginResponse,
   Pushes,
 } from "./structures";
-import { Properties, Event } from "../objects";
+import { Properties, Event, RTMAPIOptions } from "../objects";
 
 export default class RTM extends RTMAPI {
   constructor(license: number, options?: RTMAPIOptions) {
