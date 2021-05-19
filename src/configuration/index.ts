@@ -380,7 +380,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Creates an auto access data structure, which is a set of conditions for the tracking URL and geolocation of a customer.
-   * @param opts - options for
+   * @param opts - options for auto access like conditions
    */
   async addAutoAccess(opts: AddAutoAccessRequest): Promise<AddAutoAccessResponse> {
     return this.send("add_auto_access", opts);
@@ -395,7 +395,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Deletes an existing auto access data structure specified by its ID.
-   * @param id - auto access ID
+   * @param id - ID of the auto access to remove
    */
   async deleteAutoAccess(id: string): Promise<EmptyResponse> {
     return this.send("delete_auto_access", { id });
@@ -403,8 +403,8 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Updates an existing auto access. Only specified fields are updated (overwritten), leaving unspecified fields unchanged.
-   * @param id - 	ID of the auto access to modify
-   * @param access - fields to update
+   * @param id - ID of the auto access to modify
+   * @param access - fields of auto access you want to overwrite
    */
   async updateAutoAccess(id: string, access: UpdateAutoAccessRequest): Promise<EmptyResponse> {
     return this.send("update_auto_access", {

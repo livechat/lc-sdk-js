@@ -297,7 +297,7 @@ export default class Web extends WebAPI {
   }
   /**
    * Returns an empty ticket form of a prechat or postchat survey.
-   * @param group_id = group id to get form for
+   * @param group_id - group id to get form for
    * @param type - prechat or postchat
    */
   async getForm(group_id: number, type: string): Promise<GetFormResponse> {
@@ -365,8 +365,8 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the configuration of a given group in a given version.
-   * @param group_id
-   * @param version
+   * @param group_id - the ID of group that you want to get configuration
+   * @param version - the version that you want to get a configuration for
    */
   async getConfiguration(group_id: string, version: string): Promise<GroupConfiguration> {
     return this.send("get_configuration", {
@@ -377,9 +377,9 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the localization of a given language and group in a given version.
-   * @param group_id - The ID of the group that you want to get a localization for
-   * @param language - 	The language that you want to get a localization for
-   * @param version  - The version that you want to get a localization for
+   * @param group_id - the ID of the group that you want to get a localization for
+   * @param language - the language that you want to get a localization for
+   * @param version - the version that you want to get a localization for
    */
   async getLocalization(group_id: string, language: string, version: string): Promise<Record<string, string>> {
     return this.send("get_localization", {

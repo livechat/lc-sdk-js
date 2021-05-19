@@ -323,7 +323,7 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the info about the Customer with a given id.
-   * @param id - customer ID to teg
+   * @param id - customer ID to get
    */
   async getCustomer(id: string): Promise<GetCustomerResponse> {
     return this.send("get_customer", { id });
@@ -357,7 +357,7 @@ export default class Web extends WebAPI {
   /**
    * Bans the customer for a specific period of time. It immediately disconnects all active sessions of this customer
    * and does not accept new ones during the ban lifespan.
-   * @param id = ID of customer to ban
+   * @param id - ID of customer to ban
    * @param days - ban duration in days
    */
   async banCustomer(id: string, days: number): Promise<EmptyResponse> {
@@ -421,7 +421,7 @@ export default class Web extends WebAPI {
   /**
    * Marks a customer as followed. As a result, the requester (an agent) will receive
    * the info about all the changes related to that customer via pushes.
-   * @param id - ID of customer
+   * @param id - ID of customer to follow
    */
   async followCustomer(id: string): Promise<EmptyResponse> {
     return this.send("follow_customer", { id });
@@ -429,7 +429,7 @@ export default class Web extends WebAPI {
 
   /**
    * Removes the agent from the list of customer's followers.
-   * @param id - ID of customer
+   * @param id - ID of customer to unfollow
    */
   async unfollowCustomer(id: string): Promise<EmptyResponse> {
     return this.send("unfollow_customer", { id });
@@ -437,14 +437,9 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the current routing status of each agent.
-   * @param groupIds - Array of group IDs.
+   * @param group_ids - groups to list agent routing statuses from
    */
-  async listRoutingStatuses(groupIds?: number[]): Promise<SetRoutingStatusResponse[]> {
-    const filters: { group_ids?: number[] } = {};
-    if (groupIds && groupIds?.length > 0) {
-      filters.group_ids = groupIds;
-    }
-
-    return this.send("list_routing_statuses", { filters });
+  async listRoutingStatuses(group_ids?: number[]): Promise<SetRoutingStatusResponse[]> {
+    return this.send("list_routing_statuses", { filters: { group_ids } });
   }
 }
