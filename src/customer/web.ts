@@ -359,8 +359,8 @@ export default class Web extends WebAPI {
    * Returns the dynamic configuration of a given group.
    * @param opts - properties used to groups' filtering
    */
-  async getDynamicConfiguration(opts: GetDynamicConfigurationRequest = {}): Promise<GetDynamicConfigurationResponse> {
-    return this.send("get_dynamic_configuration", opts);
+  async getDynamicConfiguration(opts?: GetDynamicConfigurationRequest): Promise<GetDynamicConfigurationResponse> {
+    return this.send("get_dynamic_configuration", opts || {});
   }
 
   /**
