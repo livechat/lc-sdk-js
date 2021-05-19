@@ -241,11 +241,7 @@ export default class RTM extends RTMAPI {
    * @param namespace - property namespace
    * @param name - property name
    */
-  async listGroupProperties(
-    id: number,
-    namespace?: string,
-    name?: string,
-  ): Promise<Properties> {
+  async listGroupProperties(id: number, namespace?: string, name?: string): Promise<Properties> {
     return this.send("list_group_properties", {
       id,
       namespace,

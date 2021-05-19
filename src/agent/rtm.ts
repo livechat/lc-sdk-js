@@ -453,7 +453,7 @@ export default class RTM extends RTMAPI {
    * the info about all the changes related to that customer via pushes.
    * @param id - ID of customer to follow
    */
-   async followCustomer(id: string): Promise<EmptyResponse> {
+  async followCustomer(id: string): Promise<EmptyResponse> {
     return this.send("follow_customer", { id });
   }
 
