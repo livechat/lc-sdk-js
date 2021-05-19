@@ -180,11 +180,11 @@ export interface AutoAccess {
   next_id?: string;
 }
 
-export interface AddAutoAccessRequest extends Omit<AutoAccess, 'id'> {
+export interface AddAutoAccessRequest extends Omit<AutoAccess, "id"> {
   conditions: AutoAccessConditions;
 }
 
-export interface UpdateAutoAccessRequest extends Omit<AutoAccess, 'id'> {
+export interface UpdateAutoAccessRequest extends Omit<AutoAccess, "id"> {
   conditions?: AutoAccessConditions;
 }
 

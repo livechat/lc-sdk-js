@@ -419,20 +419,20 @@ export default class Web extends WebAPI {
   }
 
   /**
-   * Marks a customer as followed. As a result, the requester (an agent) will receive 
+   * Marks a customer as followed. As a result, the requester (an agent) will receive
    * the info about all the changes related to that customer via pushes.
    * @param id - ID of customer
    */
   async followCustomer(id: string): Promise<EmptyResponse> {
     return this.send("follow_customer", { id });
   }
-  
+
   /**
    * Removes the agent from the list of customer's followers.
    * @param id - ID of customer
    */
   async unfollowCustomer(id: string): Promise<EmptyResponse> {
-    return this.send("unfollow_customer", {id });
+    return this.send("unfollow_customer", { id });
   }
 
   /**
@@ -440,11 +440,11 @@ export default class Web extends WebAPI {
    * @param groupIds - Array of group IDs.
    */
   async listRoutingStatuses(groupIds?: number[]): Promise<SetRoutingStatusResponse[]> {
-    const filters: { group_ids?: number[] } = {}
+    const filters: { group_ids?: number[] } = {};
     if (groupIds && groupIds?.length > 0) {
-      filters.group_ids = groupIds
+      filters.group_ids = groupIds;
     }
-    
+
     return this.send("list_routing_statuses", { filters });
   }
 }

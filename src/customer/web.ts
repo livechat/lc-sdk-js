@@ -239,11 +239,7 @@ export default class Web extends WebAPI {
    * @param namespace - property namespace
    * @param name - property name
    */
-  async listGroupProperties(
-    id: number,
-    namespace?: string,
-    name?: string,
-  ): Promise<Properties> {
+  async listGroupProperties(id: number, namespace?: string, name?: string): Promise<Properties> {
     return this.send("list_group_properties", {
       id,
       namespace,
@@ -356,7 +352,7 @@ export default class Web extends WebAPI {
    * @param callback_uri - URI to send webhook when customer confirms identity
    */
   async requestEmailVerification(callback_uri: string): Promise<EmptyResponse> {
-	  return this.send("request_email_verification", { callback_uri });
+    return this.send("request_email_verification", { callback_uri });
   }
 
   /**
@@ -364,19 +360,19 @@ export default class Web extends WebAPI {
    * @param opts - properties used to groups' filtering
    */
   async getDynamicConfiguration(opts: GetDynamicConfigurationRequest = {}): Promise<GetDynamicConfigurationResponse> {
-    return this.send("get_dynamic_configuration", opts)
+    return this.send("get_dynamic_configuration", opts);
   }
 
   /**
    * Returns the configuration of a given group in a given version.
-   * @param group_id 
-   * @param version 
+   * @param group_id
+   * @param version
    */
   async getConfiguration(group_id: string, version: string): Promise<GroupConfiguration> {
     return this.send("get_configuration", {
       group_id,
       version,
-    })
+    });
   }
 
   /**
@@ -390,6 +386,6 @@ export default class Web extends WebAPI {
       group_id,
       language,
       version,
-    })
+    });
   }
 }

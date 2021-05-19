@@ -153,7 +153,7 @@ export interface LoginRequest {
   customer_side_storage?: object;
   group_id?: number;
   referrer?: string;
-  pushes?: { [key: string]: Pushes[]};
+  pushes?: { [key: string]: Pushes[] };
 }
 
 export interface LoginCustomer {

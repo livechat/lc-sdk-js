@@ -34,20 +34,30 @@ export class WebAPI {
   private async call(action: string, payload: any): Promise<any> {
     const url = ["https:/", this.APIURL, this.version, this.type, "action", action].join("/");
     const token = this.tokenGetter();
-    const method = action in ["list_license_properties", "list_group_properties", "get_dynamic_configuration", "get_configuration", "get_localization"] ? "GET" : "POST";
+    const method =
+      action in
+      [
+        "list_license_properties",
+        "list_group_properties",
+        "get_dynamic_configuration",
+        "get_configuration",
+        "get_localization",
+      ]
+        ? "GET"
+        : "POST";
 
     const headers: any = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token.accessToken}`,
       "X-Region": token.region,
-    }
-    if (typeof window === 'undefined') {
-      headers["User-Agent"] = `JS SDK Application ${this.clientID}`
+    };
+    if (typeof window === "undefined") {
+      headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
     }
 
-    let params: any
-    if (this.type === 'customer') {
-      params = { license_id: token.licenseID }
+    let params: any;
+    if (this.type === "customer") {
+      params = { license_id: token.licenseID };
     }
 
     return axios({
@@ -109,7 +119,7 @@ export class RTMAPI {
         }
       };
 
-      this.socket.onerror = reject
+      this.socket.onerror = reject;
     });
   }
 

@@ -136,7 +136,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additional fields to include
    */
   async listBots(all?: boolean, fields?: BotFields): Promise<Bot[]> {
-    return this.send("list_bots", { all, ...fields});
+    return this.send("list_bots", { all, ...fields });
   }
 
   /**
@@ -410,6 +410,6 @@ export default class ConfigurationAPI extends WebAPI {
     return this.send("update_auto_access", {
       id,
       ...access,
-    })
+    });
   }
 }
