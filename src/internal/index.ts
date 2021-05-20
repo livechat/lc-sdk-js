@@ -3,7 +3,7 @@ import WebSocket from "isomorphic-ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
-import { RTMRequest } from "../objects";
+import { Push, RTMRequest } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
 
@@ -131,7 +131,7 @@ export class RTMAPI {
     }
   }
 
-  private handlePush(type: string, payload: any) {
+  private handlePush(type: string, payload: Push) {
     if (this.subscribedPushes[type]) {
       this.subscribedPushes[type](payload);
     }
@@ -146,6 +146,7 @@ export class RTMAPI {
       request_id,
       action,
       payload,
+      version: this.version,
     };
 
     return new Promise((resolve, reject) => {
@@ -154,7 +155,7 @@ export class RTMAPI {
     });
   }
 
-  subscribePush(push: string, callback: (payload: any) => void): void {
+  subscribePush(push: string, callback: (payload: Push) => void): void {
     if (this.subscribedPushes[push]) {
       throw new Error("Push already subscribed");
     }

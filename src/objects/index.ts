@@ -338,6 +338,7 @@ export interface RTMRequest {
   payload: any;
   author_id?: string;
   request_id?: string;
+  version?: string;
 }
 
 export interface RTMResponse {
@@ -351,4 +352,12 @@ export interface RTMResponse {
 export interface Filter<T> {
   values?: T[];
   exclude_values?: T[];
+}
+
+export interface Push<P = unknown> {
+  version: string;
+  request_id?: string;
+  action: string;
+  type: string;
+  payload: P;
 }

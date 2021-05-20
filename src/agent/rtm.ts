@@ -27,7 +27,7 @@ import type {
   Pushes,
   SetRoutingStatusResponse,
 } from "./structures";
-import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
+import { ChatAccess, Event, Properties, Push, RoutingStatus } from "../objects";
 import { RTMAPI } from "../internal/index";
 
 export default class RTM extends RTMAPI {
@@ -41,7 +41,7 @@ export default class RTM extends RTMAPI {
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
-  on(push: Pushes, handler: (payload: any) => void): () => void {
+  on(push: Pushes, handler: (payload: Push) => void): () => void {
     this.subscribePush(push, handler);
     return this.unsubscribePush.bind(this, push);
   }

@@ -61,6 +61,7 @@ export default class Web extends WebAPI {
   async getChat(chat_id: string, thread_id?: string): Promise<GetChatResponse> {
     return this.send("get_chat", { chat_id, thread_id });
   }
+
   /**
    * It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
    *

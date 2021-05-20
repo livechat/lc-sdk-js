@@ -21,7 +21,7 @@ import type {
   LoginResponse,
   Pushes,
 } from "./structures";
-import { Properties, Event } from "../objects";
+import { Properties, Event, Push } from "../objects";
 
 export default class RTM extends RTMAPI {
   constructor(license: number) {
@@ -34,7 +34,7 @@ export default class RTM extends RTMAPI {
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
-  on(push: Pushes, handler: (payload: any) => void): () => void {
+  on(push: Pushes, handler: (payload: Push) => void): () => void {
     this.subscribePush(push, handler);
     return this.unsubscribePush.bind(this, push);
   }

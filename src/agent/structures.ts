@@ -274,7 +274,7 @@ export interface LoginRequest {
   application?: Application;
   away?: boolean;
   customer_monitoring_level?: CustomerMonitoringLevel;
-  pushes?: { [key: string]: Pushes[] };
+  pushes?: { [key: string]: Array<Pushes | "all"> };
 }
 
 export enum CustomerMonitoringLevel {
