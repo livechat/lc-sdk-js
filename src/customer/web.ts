@@ -365,7 +365,7 @@ export default class Web extends WebAPI {
 
   /**
    * Returns the configuration of a given group in a given version.
-   * @param group_id - the ID of group that you want to get configuration
+   * @param group_id - the ID of group that you want to get configuration for
    * @param version - the version that you want to get a configuration for
    */
   async getConfiguration(group_id: string, version: string): Promise<GroupConfiguration> {
