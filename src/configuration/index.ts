@@ -23,11 +23,11 @@ import {
   AddAutoAccessRequest,
   UpdateAutoAccessRequest,
 } from "./structures";
-import { Properties } from "../objects/index";
+import { Properties, WebAPIOptions } from "../objects/index";
 
 export default class ConfigurationAPI extends WebAPI {
-  constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, tokenGetter, "configuration");
+  constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
+    super(clientID, tokenGetter, "configuration", options);
   }
 
   /**

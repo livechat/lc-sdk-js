@@ -3,7 +3,7 @@ import WebSocket from "isomorphic-ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
-import { Push, RTMRequest } from "../objects";
+import { Push, RTMRequest, RTMAPIOptions, WebAPIOptions } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
 
@@ -14,8 +14,8 @@ export class WebAPI {
   type: apiType;
   tokenGetter: TokenGetter;
 
-  constructor(clientID: string, tokenGetter: TokenGetter, type: apiType) {
-    this.APIURL = ApiURL;
+  constructor(clientID: string, tokenGetter: TokenGetter, type: apiType, options?: WebAPIOptions) {
+    this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.clientID = clientID;
     this.type = type;
@@ -80,8 +80,8 @@ export class RTMAPI {
   requestsQueue: any = {};
   subscribedPushes: any = {};
 
-  constructor(type: apiType, license?: number) {
-    this.APIURL = ApiURL;
+  constructor(type: apiType, license?: number, options?: RTMAPIOptions) {
+    this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
     if (license) {

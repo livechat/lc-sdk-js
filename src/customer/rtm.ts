@@ -21,11 +21,11 @@ import type {
   LoginResponse,
   Pushes,
 } from "./structures";
-import { Properties, Event, Push } from "../objects";
+import { Properties, Event, Push, RTMAPIOptions } from "../objects";
 
 export default class RTM extends RTMAPI {
-  constructor(license: number) {
-    super("customer", license);
+  constructor(license: number, options?: RTMAPIOptions) {
+    super("customer", license, options);
   }
 
   /**

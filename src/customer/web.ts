@@ -23,14 +23,14 @@ import type {
   GetDynamicConfigurationResponse,
   GroupConfiguration,
 } from "./structures";
-import { Properties, Event } from "../objects";
+import { Properties, Event, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";
 
 export default class Web extends WebAPI {
-  constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, tokenGetter, "customer");
+  constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
+    super(clientID, tokenGetter, "customer", options);
   }
 
   /**

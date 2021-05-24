@@ -26,14 +26,14 @@ import type {
   UploadFileResponse,
   SetRoutingStatusResponse,
 } from "./structures";
-import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
+import { ChatAccess, Event, Properties, RoutingStatus, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";
 
 export default class Web extends WebAPI {
-  constructor(clientID: string, tokenGetter: TokenGetter) {
-    super(clientID, tokenGetter, "agent");
+  constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
+    super(clientID, tokenGetter, "agent", options);
   }
 
   /**

@@ -349,6 +349,14 @@ export interface RTMResponse {
   payload: any;
 }
 
+export interface WebAPIOptions {
+  apiUrl?: string;
+}
+
+export interface RTMAPIOptions {
+  apiUrl?: string;
+}
+
 export interface Filter<T> {
   values?: T[];
   exclude_values?: T[];
