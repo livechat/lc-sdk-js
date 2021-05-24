@@ -3,7 +3,7 @@ import WebSocket from "isomorphic-ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
-import { RTMAPIOptions, RTMRequest, WebAPIOptions } from "../objects";
+import { Push, RTMRequest, RTMAPIOptions, WebAPIOptions } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
 
@@ -34,7 +34,17 @@ export class WebAPI {
   private async call(action: string, payload: any): Promise<any> {
     const url = ["https:/", this.APIURL, this.version, this.type, "action", action].join("/");
     const token = this.tokenGetter();
-    const method = action in ["list_license_properties", "list_group_properties"] ? "GET" : "POST";
+    const method =
+      action in
+      [
+        "list_license_properties",
+        "list_group_properties",
+        "get_dynamic_configuration",
+        "get_configuration",
+        "get_localization",
+      ]
+        ? "GET"
+        : "POST";
 
     const headers: any = {
       "Content-Type": "application/json",
@@ -121,7 +131,7 @@ export class RTMAPI {
     }
   }
 
-  private handlePush(type: string, payload: any) {
+  private handlePush(type: string, payload: Push) {
     if (this.subscribedPushes[type]) {
       this.subscribedPushes[type](payload);
     }
@@ -136,6 +146,7 @@ export class RTMAPI {
       request_id,
       action,
       payload,
+      version: this.version,
     };
 
     return new Promise((resolve, reject) => {
@@ -144,7 +155,7 @@ export class RTMAPI {
     });
   }
 
-  subscribePush(push: string, callback: (payload: any) => void): void {
+  subscribePush(push: string, callback: (payload: Push) => void): void {
     if (this.subscribedPushes[push]) {
       throw new Error("Push already subscribed");
     }

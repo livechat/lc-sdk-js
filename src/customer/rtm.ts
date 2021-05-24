@@ -21,7 +21,7 @@ import type {
   LoginResponse,
   Pushes,
 } from "./structures";
-import { Properties, Event, RTMAPIOptions } from "../objects";
+import { Properties, Event, Push, RTMAPIOptions } from "../objects";
 
 export default class RTM extends RTMAPI {
   constructor(license: number, options?: RTMAPIOptions) {
@@ -34,7 +34,7 @@ export default class RTM extends RTMAPI {
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
-  on(push: Pushes, handler: (payload: any) => void): () => void {
+  on(push: Pushes, handler: (payload: Push) => void): () => void {
     this.subscribePush(push, handler);
     return this.unsubscribePush.bind(this, push);
   }
@@ -95,10 +95,10 @@ export default class RTM extends RTMAPI {
 
   /**
    * Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
-   * @param chat_id - chat ID to deactivate
+   * @param id - chat ID to deactivate
    */
-  async deactivateChat(chat_id: string): Promise<EmptyResponse> {
-    return this.send("deactivate_chat", { chat_id });
+  async deactivateChat(id: string): Promise<EmptyResponse> {
+    return this.send("deactivate_chat", { id });
   }
 
   /**
@@ -137,20 +137,20 @@ export default class RTM extends RTMAPI {
 
   /**
    * Updates chat properties
-   * @param chat_id - chat to update properties
+   * @param id - chat to update properties
    * @param properties - properties to update
    */
-  async updateChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
-    return this.send("update_chat_properties", { chat_id, properties });
+  async updateChatProperties(id: string, properties: Properties): Promise<EmptyResponse> {
+    return this.send("update_chat_properties", { id, properties });
   }
 
   /**
    * Deletes chat properties
-   * @param chat_id - chat to delete properties
+   * @param id - chat to delete properties
    * @param properties - properties to delete
    */
-  async deleteChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
-    return this.send("delete_chat_properties", { chat_id, properties });
+  async deleteChatProperties(id: string, properties: Properties): Promise<EmptyResponse> {
+    return this.send("delete_chat_properties", { id, properties });
   }
 
   /**
@@ -225,13 +225,11 @@ export default class RTM extends RTMAPI {
 
   /**
    * Returns the properties of a given license. It only returns the properties a Customer has access to.
-   * @param license_id - ID of license to return properties of
    * @param namespace - property namespace
    * @param name - property name
    */
-  async listLicenseProperties(license_id: number, namespace?: string, name?: string): Promise<Properties> {
+  async listLicenseProperties(namespace?: string, name?: string): Promise<Properties> {
     return this.send("list_license_properties", {
-      license_id,
       namespace,
       name,
     });
@@ -239,20 +237,13 @@ export default class RTM extends RTMAPI {
 
   /**
    * Returns the properties of a given group. It only returns the properties a Customer has access to.
-   * @param license_id - ID of license to return properties of
-   * @param group_id - ID of group to return properties of
+   * @param id - ID of group to return properties of
    * @param namespace - property namespace
    * @param name - property name
    */
-  async listGroupProperties(
-    license_id: number,
-    group_id: number,
-    namespace?: string,
-    name?: string,
-  ): Promise<Properties> {
+  async listGroupProperties(id: number, namespace?: string, name?: string): Promise<Properties> {
     return this.send("list_group_properties", {
-      license_id,
-      group_id,
+      id,
       namespace,
       name,
     });
