@@ -153,7 +153,7 @@ export interface LoginRequest {
   customer_side_storage?: object;
   group_id?: number;
   referrer?: string;
-  pushes?: { [key: string]: Pushes[] };
+  pushes?: { [key: string]: Array<Pushes | "all"> };
 }
 
 export interface LoginCustomer {
@@ -203,7 +203,7 @@ export interface GroupConfiguration {
     id: string;
     type: string;
     online_value: string;
-    offline_valie: string;
+    offline_value: string;
   }[];
   properties: {
     group: Properties;
