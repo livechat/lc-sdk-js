@@ -18,6 +18,10 @@ import {
   RegisterWebhookResponse,
   WebhookData,
   WebhooksState,
+  AddAutoAccessResponse,
+  AutoAccess,
+  AddAutoAccessRequest,
+  UpdateAutoAccessRequest,
 } from "./structures";
 import { Properties } from "../objects/index";
 
@@ -132,7 +136,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param fields - additional fields to include
    */
   async listBots(all?: boolean, fields?: BotFields): Promise<Bot[]> {
-    return this.send("list_bots", { all, ...fields});
+    return this.send("list_bots", { all, ...fields });
   }
 
   /**
@@ -292,13 +296,13 @@ export default class ConfigurationAPI extends WebAPI {
   }
   /**
    * Returns the properties set within a group.
-   * @param group_id - group ID to get properties from
+   * @param id - group ID to get properties from
    * @param namespace_prefix - namespace prefix
    * @param name_prefix - name prefix
    */
-  async listGroupProperties(group_id: number, namespace_prefix?: string, name_prefix?: string): Promise<Properties> {
+  async listGroupProperties(id: number, namespace_prefix?: string, name_prefix?: string): Promise<Properties> {
     return this.send("list_group_properties", {
-      group_id,
+      id,
       namespace_prefix,
       name_prefix,
     });
@@ -306,12 +310,12 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Deletes the properties set within a group.
-   * @param group_id - group ID to delete properties from
+   * @param id - group ID to delete properties from
    * @param properties - properties to delete
    */
-  async deleteGroupProperties(group_id: number, properties: Properties): Promise<EmptyResponse> {
+  async deleteGroupProperties(id: number, properties: Properties): Promise<EmptyResponse> {
     return this.send("delete_group_properties", {
-      group_id,
+      id,
       properties,
     });
   }
@@ -372,5 +376,40 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async getLicenseWebhooksState(client_id?: string): Promise<WebhooksState> {
     return this.send("get_license_webhooks_state", { client_id });
+  }
+
+  /**
+   * Creates an auto access data structure, which is a set of conditions for the tracking URL and geolocation of a customer.
+   * @param opts - options for auto access like conditions
+   */
+  async addAutoAccess(opts: AddAutoAccessRequest): Promise<AddAutoAccessResponse> {
+    return this.send("add_auto_access", opts);
+  }
+
+  /**
+   * Returns all existing auto access data structures.
+   */
+  async listAutoAccesses(): Promise<AutoAccess[]> {
+    return this.send("list_auto_accesses", {});
+  }
+
+  /**
+   * Deletes an existing auto access data structure specified by its ID.
+   * @param id - ID of the auto access to remove
+   */
+  async deleteAutoAccess(id: string): Promise<EmptyResponse> {
+    return this.send("delete_auto_access", { id });
+  }
+
+  /**
+   * Updates an existing auto access. Only specified fields are updated (overwritten), leaving unspecified fields unchanged.
+   * @param id - ID of the auto access to modify
+   * @param access - fields of auto access you want to overwrite
+   */
+  async updateAutoAccess(id: string, access: UpdateAutoAccessRequest): Promise<EmptyResponse> {
+    return this.send("update_auto_access", {
+      id,
+      ...access,
+    });
   }
 }

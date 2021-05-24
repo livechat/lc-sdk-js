@@ -30,9 +30,10 @@ type WebhookPayload =
   | ThreadUntagged
   | RoutingStatusSet
   | AgentDeleted
-  | CustomerCreated
+  | IncomingCustomer
   | EventsMarkedAsSeen
-  | ChatTransferred;
+  | ChatTransferred
+  | CustomerSessionFieldsUpdated;
 
 export interface IncomingChat {
   chat: Chat;
@@ -150,7 +151,7 @@ export interface AgentDeleted {
   agent_id: string;
 }
 
-export interface CustomerCreated {
+export interface IncomingCustomer {
   customer: Customer;
 }
 
@@ -174,4 +175,13 @@ export interface ChatTransferred {
     wait_time: number;
     queued_at: string;
   };
+}
+
+export interface CustomerSessionFieldsUpdated {
+  id: string;
+  active_chat: {
+    chat_id: string;
+    thread_id: string;
+  };
+  session_fields: Record<string, string>[];
 }

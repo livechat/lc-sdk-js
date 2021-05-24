@@ -25,8 +25,9 @@ import type {
   ChangePushNotificationsRequest,
   LoginRequest,
   Pushes,
+  SetRoutingStatusResponse,
 } from "./structures";
-import { ChatAccess, Event, Properties, RoutingStatus } from "../objects";
+import { ChatAccess, Event, Properties, Push, RoutingStatus } from "../objects";
 import { RTMAPI } from "../internal/index";
 
 export default class RTM extends RTMAPI {
@@ -40,7 +41,7 @@ export default class RTM extends RTMAPI {
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
-  on(push: Pushes, handler: (payload: any) => void): () => void {
+  on(push: Pushes, handler: (payload: Push) => void): () => void {
     this.subscribePush(push, handler);
     return this.unsubscribePush.bind(this, push);
   }
@@ -135,28 +136,28 @@ export default class RTM extends RTMAPI {
 
   /**
    * Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
-   * @param chat_id - chat ID to deactivate
+   * @param id - chat ID to deactivate
    */
-  async deactivateChat(chat_id: string): Promise<EmptyResponse> {
-    return this.send("deactivate_chat", { chat_id });
+  async deactivateChat(id: string): Promise<EmptyResponse> {
+    return this.send("deactivate_chat", { id });
   }
 
   /**
    * Marks a chat as followed. All changes to the chat will be sent to the requester until the chat is reactivated or unfollowed.
    * Chat members don't need to follow their chats. They receive all chat pushes regardless of their follower status.
-   * @param chat_id - chat ID to follow
+   * @param id - chat ID to follow
    */
-  async followChat(chat_id: string): Promise<EmptyResponse> {
-    return this.send("follow_chat", { chat_id });
+  async followChat(id: string): Promise<EmptyResponse> {
+    return this.send("follow_chat", { id });
   }
 
   /**
    * Removes the requester from the chat followers. After that, only key changes to the chat (like transfer_chat or close_active_thread)
    * will be sent to the requester. Chat members cannot unfollow the chat.
-   * @param chat_id - chat ID to unfollow
+   * @param id - chat ID to unfollow
    */
-  async unfollowChat(chat_id: string): Promise<EmptyResponse> {
-    return this.send("unfollow_chat", { chat_id });
+  async unfollowChat(id: string): Promise<EmptyResponse> {
+    return this.send("unfollow_chat", { id });
   }
 
   /**
@@ -179,11 +180,11 @@ export default class RTM extends RTMAPI {
 
   /**
    * Transfers a chat to an Agent or a group.
-   * @param chat_id - chat to transfer
+   * @param id - chat to transfer
    * @param opts - specific target or force flag
    */
-  async transferChat(chat_id: string, opts?: TransferChatParameters): Promise<EmptyResponse> {
-    return this.send("transfer_chat", { chat_id, ...opts });
+  async transferChat(id: string, opts?: TransferChatParameters): Promise<EmptyResponse> {
+    return this.send("transfer_chat", { id, ...opts });
   }
 
   /**
@@ -244,20 +245,20 @@ export default class RTM extends RTMAPI {
 
   /**
    * Updates chat properties
-   * @param chat_id - chat to update properties
+   * @param id - chat to update properties
    * @param properties - properties to update
    */
-  async updateChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
-    return this.send("update_chat_properties", { chat_id, properties });
+  async updateChatProperties(id: string, properties: Properties): Promise<EmptyResponse> {
+    return this.send("update_chat_properties", { id, properties });
   }
 
   /**
    * Deletes chat properties
-   * @param chat_id - chat to delete properties
+   * @param id - chat to delete properties
    * @param properties - properties to delete
    */
-  async deleteChatProperties(chat_id: string, properties: Properties): Promise<EmptyResponse> {
-    return this.send("delete_chat_properties", { chat_id, properties });
+  async deleteChatProperties(id: string, properties: Properties): Promise<EmptyResponse> {
+    return this.send("delete_chat_properties", { id, properties });
   }
 
   /**
@@ -351,11 +352,11 @@ export default class RTM extends RTMAPI {
   }
 
   /**
-   * Returns the info about the Customer with a given customer_id.
-   * @param customer_id - customer ID to teg
+   * Returns the info about the Customer with a given id.
+   * @param id - customer ID to get
    */
-  async getCustomer(customer_id: string): Promise<GetCustomerResponse> {
-    return this.send("get_customer", { customer_id });
+  async getCustomer(id: string): Promise<GetCustomerResponse> {
+    return this.send("get_customer", { id });
   }
 
   /**
@@ -376,21 +377,21 @@ export default class RTM extends RTMAPI {
 
   /**
    * Updates Customer's properties.
-   * @param customer_id - ID of a customer to update
+   * @param id - ID of a customer to update
    * @param opts - properties to update
    */
-  async updateCustomer(customer_id: string, opts: CustomerParameters): Promise<EmptyResponse> {
-    return this.send("update_customer", { customer_id, ...opts });
+  async updateCustomer(id: string, opts: CustomerParameters): Promise<EmptyResponse> {
+    return this.send("update_customer", { id, ...opts });
   }
 
   /**
    * Bans the customer for a specific period of time. It immediately disconnects all active sessions of this customer
    * and does not accept new ones during the ban lifespan.
-   * @param customer_id = ID of customer to ban
+   * @param id - ID of customer to ban
    * @param days - ban duration in days
    */
-  async banCustomer(customer_id: string, days: number): Promise<EmptyResponse> {
-    return this.send("ban_customer", { customer_id, ban: { days } });
+  async banCustomer(id: string, days: number): Promise<EmptyResponse> {
+    return this.send("ban_customer", { id, ban: { days } });
   }
 
   /**
@@ -445,5 +446,30 @@ export default class RTM extends RTMAPI {
    */
   async listAgentsForTransfer(chat_id: string): Promise<AgentForTransfer[]> {
     return this.send("list_agents_for_transfer", { chat_id });
+  }
+
+  /**
+   * Marks a customer as followed. As a result, the requester (an agent) will receive
+   * the info about all the changes related to that customer via pushes.
+   * @param id - ID of customer to follow
+   */
+  async followCustomer(id: string): Promise<EmptyResponse> {
+    return this.send("follow_customer", { id });
+  }
+
+  /**
+   * Removes the agent from the list of customer's followers.
+   * @param id - ID of customer to unfollow
+   */
+  async unfollowCustomer(id: string): Promise<EmptyResponse> {
+    return this.send("unfollow_customer", { id });
+  }
+
+  /**
+   * Returns the current routing status of each agent.
+   * @param group_ids - groups to list agent routing statuses from
+   */
+  async listRoutingStatuses(group_ids?: number[]): Promise<SetRoutingStatusResponse[]> {
+    return this.send("list_routing_statuses", { filters: { group_ids } });
   }
 }
