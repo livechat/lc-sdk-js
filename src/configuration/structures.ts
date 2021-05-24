@@ -133,6 +133,7 @@ export interface WebhookFilters {
     user_ids?: Filter<string>;
     my_bots: boolean;
   };
+  source_type?: Array<"my_client" | "other_clients" | "system">;
 }
 
 export interface RegisteredWebhook extends Webhook {
