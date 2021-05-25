@@ -536,4 +536,19 @@ export enum Pushes {
    * Informs that an agent has been approved.
    */
   AgentApproved = "agent_approved",
+
+  /**
+   * Informs that a bot has been created.
+   */
+  BotCreated = "bot_created",
+
+  /**
+   * Informs that a bot has been updated.
+   */
+  BotUpdated = "bot_updated",
+
+  /**
+   * Informs that a bot has been deleted.
+   */
+  BotDeleted = "bot_deleted",
 }

@@ -187,6 +187,16 @@ export interface CustomerSessionFieldsUpdated {
   session_fields: Record<string, string>[];
 }
 
+interface GroupAssignment {
+  id: number;
+  priority: number;
+}
+
+type WorkScheduler = Record<string, {
+  start: string;
+  end: string;
+}>;
+
 export interface AgentCreated {
   id: string;
   name: string;
@@ -196,16 +206,10 @@ export interface AgentCreated {
   mobile?: string;
   max_chats_count?: number;
   awaiting_approval: boolean;
-  groups?: {
-    id: number;
-    priority: string;
-  }[];
+  groups?: GroupAssignment[];
   notifications?: string[];
   email_subscriptions?: string[];
-  work_scheduler?: Record<string, {
-    start: string;
-    end: string;
-  }>;
+  work_scheduler?: WorkScheduler;
 }
 
 export interface AgentUpdated {
@@ -216,16 +220,10 @@ export interface AgentUpdated {
   job_title?: string;
   mobile?: string;
   max_chats_count?: number;
-  groups?: {
-    id: number;
-    priority: string;
-  }[];
+  groups?: GroupAssignment[];
   notifications?: string[];
   email_subscriptions?: string[];
-  work_scheduler?: Record<string, {
-    start: string;
-    end: string;
-  }>;
+  work_scheduler?: WorkScheduler;
 }
 
 export interface AgentDeleted {
@@ -241,5 +239,34 @@ export interface AgentUnsuspended {
 }
 
 export interface AgentApproved {
+  id: string;
+}
+
+export interface BotCreated {
+  id: string;
+  name: string;
+  avatar?: string;
+  max_chats_count?: number;
+  default_group_priority: string;
+  groups: GroupAssignment[];
+  work_scheduler?: WorkScheduler;
+  timezone?: string;
+  owner_client_id: string;
+  job_title?: string;
+}
+
+export interface BotUpdated {
+  id: string;
+  name?: string;
+  avatar?: string;
+  max_chats_count?: number;
+  default_group_priority: string;
+  groups?: GroupAssignment[];
+  work_scheduler?: WorkScheduler;
+  timezone?: string;
+  job_title?: string;
+}
+
+export interface BotDeleted {
   id: string;
 }
