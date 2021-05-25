@@ -32,7 +32,7 @@ export class WebAPI {
   }
 
   private async call(action: string, payload: any): Promise<any> {
-    const url = ["https:/", this.APIURL, this.version, this.type, "action", action].join("/");
+    const url = ["https:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
     const token = this.tokenGetter();
     const method =
       action in
@@ -92,7 +92,7 @@ export class RTMAPI {
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
       const wsURL =
-        `wss://${this.APIURL}/${this.version}/${this.type}/rtm/ws` +
+        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` +
         (this.license ? `?license_id=${this.license}` : "");
 
       this.socket = new WebSocket(wsURL);
@@ -146,7 +146,6 @@ export class RTMAPI {
       request_id,
       action,
       payload,
-      version: this.version,
     };
 
     return new Promise((resolve, reject) => {

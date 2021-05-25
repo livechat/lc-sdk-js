@@ -1,3 +1,4 @@
+import { ApiVersion } from "../internal/constants";
 import {
   SortOrder,
   ChatsSummary,
@@ -153,7 +154,7 @@ export interface LoginRequest {
   customer_side_storage?: object;
   group_id?: number;
   referrer?: string;
-  pushes?: { [key: string]: (Pushes | "all")[] };
+  pushes?: { [ApiVersion]: Pushes[] };
 }
 
 export interface LoginCustomer {
