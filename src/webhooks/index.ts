@@ -29,11 +29,16 @@ type WebhookPayload =
   | ThreadTagged
   | ThreadUntagged
   | RoutingStatusSet
-  | AgentDeleted
   | IncomingCustomer
   | EventsMarkedAsSeen
   | ChatTransferred
-  | CustomerSessionFieldsUpdated;
+  | CustomerSessionFieldsUpdated
+  | AgentCreated
+  | AgentUpdated
+  | AgentDeleted
+  | AgentSuspended
+  | AgentUnsuspended
+  | AgentApproved;
 
 export interface IncomingChat {
   chat: Chat;
@@ -147,10 +152,6 @@ export interface RoutingStatusSet {
   status: RoutingStatus;
 }
 
-export interface AgentDeleted {
-  agent_id: string;
-}
-
 export interface IncomingCustomer {
   customer: Customer;
 }
@@ -184,4 +185,61 @@ export interface CustomerSessionFieldsUpdated {
     thread_id: string;
   };
   session_fields: Record<string, string>[];
+}
+
+export interface AgentCreated {
+  id: string;
+  name: string;
+  role?: string;
+  avatar?: string;
+  job_title?: string;
+  mobile?: string;
+  max_chats_count?: number;
+  awaiting_approval: boolean;
+  groups?: {
+    id: number;
+    priority: string;
+  }[];
+  notifications?: string[];
+  email_subscriptions?: string[];
+  work_scheduler?: Record<string, {
+    start: string;
+    end: string;
+  }>;
+}
+
+export interface AgentUpdated {
+  id: string;
+  name?: string;
+  role?: string;
+  avatar?: string;
+  job_title?: string;
+  mobile?: string;
+  max_chats_count?: number;
+  groups?: {
+    id: number;
+    priority: string;
+  }[];
+  notifications?: string[];
+  email_subscriptions?: string[];
+  work_scheduler?: Record<string, {
+    start: string;
+    end: string;
+  }>;
+}
+
+export interface AgentDeleted {
+  id: string;
+}
+
+export interface AgentSuspended {
+  id: string;
+}
+
+export interface AgentUnsuspended {
+  id: string;
+}
+
+export interface AgentApproved {
+  id: string;
 }
