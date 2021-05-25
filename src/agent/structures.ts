@@ -566,4 +566,19 @@ export enum Pushes {
    * Informs that a group has been deleted.
    */
   GroupDeleted = "group_deleted",
+
+  /**
+   * Informs that an auto access has been added.
+   */
+  AutoAccessAdded = "auto_access_added",
+
+  /**
+   * Informs that an auto access has been deleted.
+   */
+  AutoAccessDeleted = "auto_access_deleted",
+
+  /**
+   * Informs that an auto access has been updated.
+   */
+  AutoAccessUpdated = "auto_access_updated"
 }
