@@ -4,13 +4,13 @@ import {
   Properties,
   SortOrder,
   Thread,
-  Chat,
   Customer,
   InitialChat,
   ChatsSummary,
   MyProfile,
   RoutingStatus,
   Filter,
+  ArchivedChat,
 } from "../objects";
 
 export interface EmptyResponse {}
@@ -113,7 +113,7 @@ export interface EventsFilter {
 }
 
 export interface ListArchivesResponse {
-  chats: Chat[];
+  chats: ArchivedChat[];
   found_chats: number;
   next_page_id: string;
   previous_page_id: string;
