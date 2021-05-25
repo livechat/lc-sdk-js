@@ -1,4 +1,4 @@
-import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus } from "../objects";
+import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus, Filter } from "../objects";
 
 export interface Webhook {
   webhook_id: string;
@@ -38,7 +38,16 @@ type WebhookPayload =
   | AgentDeleted
   | AgentSuspended
   | AgentUnsuspended
-  | AgentApproved;
+  | AgentApproved
+  | BotCreated
+  | BotUpdated
+  | BotDeleted
+  | GroupCreated
+  | GroupUpdated
+  | GroupDeleted
+  | AutoAccessAdded
+  | AutoAccessUpdated
+  | AutoAccessDeleted;
 
 export interface IncomingChat {
   chat: Chat;
@@ -287,4 +296,47 @@ export interface GroupUpdated {
 
 export interface GroupDeleted {
   id: number;
+}
+
+
+export interface AutoAccessAdded {
+  id: string;
+  description: string;
+  access: {
+    group_ids: number[];
+  };
+  conditions: {
+    url: Filter<{ value: string; exact_match: boolean; }>;
+    domain: Filter<{ value: string; exact_match: boolean; }>;
+    geolocation: Pick<Filter<{
+      country?: string;
+      country_code?: string;
+      region?: string;
+      city?: string;
+    }>, 'values'>
+  };
+  next_id?: string;
+}
+
+export interface AutoAccessDeleted {
+  id: string;
+}
+
+export interface AutoAccessUpdated {
+  id: string;
+  description?: string;
+  access: {
+    group_ids: number[];
+  };
+  conditions: {
+    url: Filter<{ value: string; exact_match: boolean; }>;
+    domain: Filter<{ value: string; exact_match: boolean; }>;
+    geolocation: Pick<Filter<{
+      country?: string;
+      country_code?: string;
+      region?: string;
+      city?: string;
+    }>, 'values'>
+  };
+  next_id?: string;
 }
