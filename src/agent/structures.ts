@@ -551,4 +551,19 @@ export enum Pushes {
    * Informs that a bot has been deleted.
    */
   BotDeleted = "bot_deleted",
+
+  /**
+   * Informs that a group has been created.
+   */
+  GroupCreated = "group_created",
+  
+  /**
+   * Informs that a group has been updated.
+   */
+  GroupUpdated = "group_updated",
+
+  /**
+   * Informs that a group has been deleted.
+   */
+  GroupDeleted = "group_deleted",
 }

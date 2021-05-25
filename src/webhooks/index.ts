@@ -270,3 +270,21 @@ export interface BotUpdated {
 export interface BotDeleted {
   id: string;
 }
+
+export interface GroupCreated {
+  id: number;
+  name: string;
+  language_code: string;
+  agent_priorities: Record<string, string>;
+}
+
+export interface GroupUpdated {
+  id: number;
+  name?: string;
+  language_code?: string;
+  agent_priorities?: Record<string, string>;
+}
+
+export interface GroupDeleted {
+  id: number;
+}
