@@ -1,3 +1,4 @@
+import { ApiVersion } from "../internal/constants";
 import {
   Access,
   User,
@@ -274,7 +275,7 @@ export interface LoginRequest {
   application?: Application;
   away?: boolean;
   customer_monitoring_level?: CustomerMonitoringLevel;
-  pushes?: { [key: string]: (Pushes | "all")[] };
+  pushes?: { [ApiVersion]: Pushes[] };
 }
 
 export enum CustomerMonitoringLevel {
