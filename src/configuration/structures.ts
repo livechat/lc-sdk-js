@@ -126,6 +126,8 @@ export interface Webhook {
   filters?: WebhookFilters;
 }
 
+type WebhookSourceType = "my_client" | "other_clients" | "system"
+
 export interface WebhookFilters {
   author_type?: string;
   only_my_chats?: boolean;
@@ -133,6 +135,7 @@ export interface WebhookFilters {
     user_ids?: Filter<string>;
     my_bots: boolean;
   };
+  source_type?: WebhookSourceType[];
 }
 
 export interface RegisteredWebhook extends Webhook {

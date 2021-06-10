@@ -227,6 +227,10 @@ export interface Chat {
   is_followed: boolean;
 }
 
+export interface ArchivedChat extends Chat {
+  threads: ArchivedThread[];
+}
+
 export interface InitialChat {
   properties?: Properties;
   access?: Access;
@@ -246,19 +250,6 @@ export interface InitialThread {
 
 export interface Access {
   group_ids: number[];
-}
-
-export interface Thread {
-  id: string;
-  timestamp: number;
-  active: boolean;
-  user_ids: string[];
-  events: Event[];
-  order: number;
-  properties?: Properties;
-  access: Access;
-  previous_thread_id: string;
-  created_at: string;
 }
 
 export interface Field {
@@ -288,6 +279,11 @@ export interface Thread {
   previous_thread_id: string;
   next_thread_id: string;
   created_at: string;
+}
+
+export interface ArchivedThread extends Thread {
+  previous_accessible_thread_id?: string;
+  next_accessible_thread_id?: string;
 }
 
 export interface Properties {

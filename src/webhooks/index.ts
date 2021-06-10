@@ -1,4 +1,4 @@
-import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus } from "../objects";
+import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus, Filter } from "../objects";
 
 export interface Webhook {
   webhook_id: string;
@@ -29,11 +29,25 @@ type WebhookPayload =
   | ThreadTagged
   | ThreadUntagged
   | RoutingStatusSet
-  | AgentDeleted
   | IncomingCustomer
   | EventsMarkedAsSeen
   | ChatTransferred
-  | CustomerSessionFieldsUpdated;
+  | CustomerSessionFieldsUpdated
+  | AgentCreated
+  | AgentUpdated
+  | AgentDeleted
+  | AgentSuspended
+  | AgentUnsuspended
+  | AgentApproved
+  | BotCreated
+  | BotUpdated
+  | BotDeleted
+  | GroupCreated
+  | GroupUpdated
+  | GroupDeleted
+  | AutoAccessAdded
+  | AutoAccessUpdated
+  | AutoAccessDeleted;
 
 export interface IncomingChat {
   chat: Chat;
@@ -147,10 +161,6 @@ export interface RoutingStatusSet {
   status: RoutingStatus;
 }
 
-export interface AgentDeleted {
-  agent_id: string;
-}
-
 export interface IncomingCustomer {
   customer: Customer;
 }
@@ -184,4 +194,149 @@ export interface CustomerSessionFieldsUpdated {
     thread_id: string;
   };
   session_fields: Record<string, string>[];
+}
+
+interface GroupAssignment {
+  id: number;
+  priority: number;
+}
+
+type WorkScheduler = Record<string, {
+  start: string;
+  end: string;
+}>;
+
+export interface AgentCreated {
+  id: string;
+  name: string;
+  role?: string;
+  avatar?: string;
+  job_title?: string;
+  mobile?: string;
+  max_chats_count?: number;
+  awaiting_approval: boolean;
+  groups?: GroupAssignment[];
+  notifications?: string[];
+  email_subscriptions?: string[];
+  work_scheduler?: WorkScheduler;
+}
+
+export interface AgentUpdated {
+  id: string;
+  name?: string;
+  role?: string;
+  avatar?: string;
+  job_title?: string;
+  mobile?: string;
+  max_chats_count?: number;
+  groups?: GroupAssignment[];
+  notifications?: string[];
+  email_subscriptions?: string[];
+  work_scheduler?: WorkScheduler;
+}
+
+export interface AgentDeleted {
+  id: string;
+}
+
+export interface AgentSuspended {
+  id: string;
+}
+
+export interface AgentUnsuspended {
+  id: string;
+}
+
+export interface AgentApproved {
+  id: string;
+}
+
+export interface BotCreated {
+  id: string;
+  name: string;
+  avatar?: string;
+  max_chats_count?: number;
+  default_group_priority: string;
+  groups: GroupAssignment[];
+  work_scheduler?: WorkScheduler;
+  timezone?: string;
+  owner_client_id: string;
+  job_title?: string;
+}
+
+export interface BotUpdated {
+  id: string;
+  name?: string;
+  avatar?: string;
+  max_chats_count?: number;
+  default_group_priority: string;
+  groups?: GroupAssignment[];
+  work_scheduler?: WorkScheduler;
+  timezone?: string;
+  job_title?: string;
+}
+
+export interface BotDeleted {
+  id: string;
+}
+
+export interface GroupCreated {
+  id: number;
+  name: string;
+  language_code: string;
+  agent_priorities: Record<string, string>;
+}
+
+export interface GroupUpdated {
+  id: number;
+  name?: string;
+  language_code?: string;
+  agent_priorities?: Record<string, string>;
+}
+
+export interface GroupDeleted {
+  id: number;
+}
+
+
+export interface AutoAccessAdded {
+  id: string;
+  description: string;
+  access: {
+    group_ids: number[];
+  };
+  conditions: {
+    url: Filter<{ value: string; exact_match: boolean; }>;
+    domain: Filter<{ value: string; exact_match: boolean; }>;
+    geolocation: Pick<Filter<{
+      country?: string;
+      country_code?: string;
+      region?: string;
+      city?: string;
+    }>, 'values'>
+  };
+  next_id?: string;
+}
+
+export interface AutoAccessDeleted {
+  id: string;
+}
+
+export interface AutoAccessUpdated {
+  id: string;
+  description?: string;
+  access: {
+    group_ids: number[];
+  };
+  conditions: {
+    url: Filter<{ value: string; exact_match: boolean; }>;
+    domain: Filter<{ value: string; exact_match: boolean; }>;
+    geolocation: Pick<Filter<{
+      country?: string;
+      country_code?: string;
+      region?: string;
+      city?: string;
+    }>, 'values'>
+  };
+  next_id?: string;
 }
