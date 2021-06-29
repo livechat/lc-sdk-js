@@ -148,19 +148,16 @@ export default class Web extends WebAPI {
    * @param chat_id - chat to add user to
    * @param user_id - user to add
    * @param user_type - customer or agent
-   * @param require_active_thread - if true, adds user only if chat has an active thread
    */
   async addUserToChat(
     chat_id: string,
     user_id: string,
     user_type: string,
-    require_active_thread?: boolean,
   ): Promise<EmptyResponse> {
     return this.send("add_user_to_chat", {
       chat_id,
       user_id,
       user_type,
-      require_active_thread,
     });
   }
   /**
