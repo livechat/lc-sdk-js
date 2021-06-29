@@ -19,7 +19,7 @@
 
 • **agent**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:114](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L114)*
+*Defined in [src/configuration/structures.ts:115](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L115)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **customer**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:115](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L115)*
+*Defined in [src/configuration/structures.ts:116](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L116)*

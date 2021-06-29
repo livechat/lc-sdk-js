@@ -15,6 +15,8 @@
 * [Access](../interfaces/_src_objects_index_.access.md)
 * [Agent](../interfaces/_src_objects_index_.agent.md)
 * [Answer](../interfaces/_src_objects_index_.answer.md)
+* [ArchivedChat](../interfaces/_src_objects_index_.archivedchat.md)
+* [ArchivedThread](../interfaces/_src_objects_index_.archivedthread.md)
 * [Button](../interfaces/_src_objects_index_.button.md)
 * [Chat](../interfaces/_src_objects_index_.chat.md)
 * [ChatAccess](../interfaces/_src_objects_index_.chataccess.md)
@@ -25,6 +27,7 @@
 * [Field](../interfaces/_src_objects_index_.field.md)
 * [File](../interfaces/_src_objects_index_.file.md)
 * [FilledForm](../interfaces/_src_objects_index_.filledform.md)
+* [Filter](../interfaces/_src_objects_index_.filter.md)
 * [FormField](../interfaces/_src_objects_index_.formfield.md)
 * [Geolocation](../interfaces/_src_objects_index_.geolocation.md)
 * [Image](../interfaces/_src_objects_index_.image.md)
@@ -39,6 +42,8 @@
 * [Postback](../interfaces/_src_objects_index_.postback.md)
 * [Properties](../interfaces/_src_objects_index_.properties.md)
 * [PropertyNamespace](../interfaces/_src_objects_index_.propertynamespace.md)
+* [Push](../interfaces/_src_objects_index_.push.md)
+* [RTMAPIOptions](../interfaces/_src_objects_index_.rtmapioptions.md)
 * [RTMRequest](../interfaces/_src_objects_index_.rtmrequest.md)
 * [RTMResponse](../interfaces/_src_objects_index_.rtmresponse.md)
 * [RichMessage](../interfaces/_src_objects_index_.richmessage.md)
@@ -47,6 +52,7 @@
 * [SystemMessage](../interfaces/_src_objects_index_.systemmessage.md)
 * [Thread](../interfaces/_src_objects_index_.thread.md)
 * [Visit](../interfaces/_src_objects_index_.visit.md)
+* [WebAPIOptions](../interfaces/_src_objects_index_.webapioptions.md)
 
 ### Type aliases
 
@@ -59,7 +65,7 @@
 
 Ƭ **Event**: *[File](../interfaces/_src_objects_index_.file.md) | [FilledForm](../interfaces/_src_objects_index_.filledform.md) | [Message](../interfaces/_src_objects_index_.message.md) | [RichMessage](../interfaces/_src_objects_index_.richmessage.md) | [CustomEvent](../interfaces/_src_objects_index_.customevent.md) | [SystemMessage](../interfaces/_src_objects_index_.systemmessage.md)*
 
-*Defined in [src/objects/index.ts:125](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/objects/index.ts#L125)*
+*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L127)*
 
 ___
 
@@ -67,4 +73,4 @@ ___
 
 Ƭ **User**: *[Agent](../interfaces/_src_objects_index_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
 
-*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/objects/index.ts#L127)*
+*Defined in [src/objects/index.ts:129](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L129)*

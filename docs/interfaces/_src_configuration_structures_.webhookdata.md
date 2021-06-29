@@ -20,7 +20,7 @@
 
 • **action**: *string*
 
-*Defined in [src/configuration/structures.ts:150](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L150)*
+*Defined in [src/configuration/structures.ts:151](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L151)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **additional_data**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:151](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L151)*
+*Defined in [src/configuration/structures.ts:152](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L152)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **filters**? : *string[]*
 
-*Defined in [src/configuration/structures.ts:152](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/configuration/structures.ts#L152)*
+*Defined in [src/configuration/structures.ts:153](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L153)*

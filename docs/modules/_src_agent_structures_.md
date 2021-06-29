@@ -27,7 +27,6 @@
 * [FilterType](../interfaces/_src_agent_structures_.filtertype.md)
 * [GetChatResponse](../interfaces/_src_agent_structures_.getchatresponse.md)
 * [GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)
-* [IntegerFilter](../interfaces/_src_agent_structures_.integerfilter.md)
 * [License](../interfaces/_src_agent_structures_.license.md)
 * [ListArchivesParameters](../interfaces/_src_agent_structures_.listarchivesparameters.md)
 * [ListArchivesResponse](../interfaces/_src_agent_structures_.listarchivesresponse.md)
@@ -50,11 +49,32 @@
 * [ResumeChatResponse](../interfaces/_src_agent_structures_.resumechatresponse.md)
 * [SendEventResponse](../interfaces/_src_agent_structures_.sendeventresponse.md)
 * [SendRichMessagePostbackParameters](../interfaces/_src_agent_structures_.sendrichmessagepostbackparameters.md)
+* [SetRoutingStatusResponse](../interfaces/_src_agent_structures_.setroutingstatusresponse.md)
 * [StartChatParameters](../interfaces/_src_agent_structures_.startchatparameters.md)
 * [StartChatResponse](../interfaces/_src_agent_structures_.startchatresponse.md)
-* [StringFilter](../interfaces/_src_agent_structures_.stringfilter.md)
 * [SurveyFilter](../interfaces/_src_agent_structures_.surveyfilter.md)
 * [ThreadsFilters](../interfaces/_src_agent_structures_.threadsfilters.md)
 * [TransferChatParameters](../interfaces/_src_agent_structures_.transferchatparameters.md)
 * [TransferTarget](../interfaces/_src_agent_structures_.transfertarget.md)
 * [UploadFileResponse](../interfaces/_src_agent_structures_.uploadfileresponse.md)
+
+### Type aliases
+
+* [IntegerFilter](_src_agent_structures_.md#integerfilter)
+* [StringFilter](_src_agent_structures_.md#stringfilter)
+
+## Type aliases
+
+###  IntegerFilter
+
+Ƭ **IntegerFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹number›*
+
+*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L209)*
+
+___
+
+###  StringFilter
+
+Ƭ **StringFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹string›*
+
+*Defined in [src/agent/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L207)*

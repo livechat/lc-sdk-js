@@ -10,12 +10,12 @@
 
 ### Properties
 
-* [agent_id](_src_webhooks_index_.agentdeleted.md#agent_id)
+* [id](_src_webhooks_index_.agentdeleted.md#id)
 
 ## Properties
 
-###  agent_id
+###  id
 
-• **agent_id**: *string*
+• **id**: *string*
 
-*Defined in [src/webhooks/index.ts:150](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L150)*
+*Defined in [src/webhooks/index.ts:239](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L239)*

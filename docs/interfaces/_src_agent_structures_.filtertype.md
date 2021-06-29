@@ -4,7 +4,9 @@
 
 ## Hierarchy
 
-* **FilterType**
+* [Filter](_src_objects_index_.filter.md)‹any›
+
+  ↳ **FilterType**
 
 ## Index
 
@@ -20,7 +22,9 @@
 
 • **exclude_values**? : *any[]*
 
-*Defined in [src/agent/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L98)*
+*Inherited from [Filter](_src_objects_index_.filter.md).[exclude_values](_src_objects_index_.filter.md#optional-exclude_values)*
+
+*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L358)*
 
 ___
 
@@ -28,7 +32,7 @@ ___
 
 • **exists**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:96](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L96)*
+*Defined in [src/agent/structures.ts:99](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L99)*
 
 ___
 
@@ -36,4 +40,6 @@ ___
 
 • **values**? : *any[]*
 
-*Defined in [src/agent/structures.ts:97](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/structures.ts#L97)*
+*Inherited from [Filter](_src_objects_index_.filter.md).[values](_src_objects_index_.filter.md#optional-values)*
+
+*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L357)*

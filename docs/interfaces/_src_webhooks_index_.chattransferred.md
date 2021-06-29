@@ -23,7 +23,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:164](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L164)*
+*Defined in [src/webhooks/index.ts:175](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L175)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **queue**? : *undefined | object*
 
-*Defined in [src/webhooks/index.ts:172](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L172)*
+*Defined in [src/webhooks/index.ts:183](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L183)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **reason**: *string*
 
-*Defined in [src/webhooks/index.ts:167](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L167)*
+*Defined in [src/webhooks/index.ts:178](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L178)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **requester_id**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:166](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L166)*
+*Defined in [src/webhooks/index.ts:177](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L177)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **thread_id**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:165](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L165)*
+*Defined in [src/webhooks/index.ts:176](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L176)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **transferred_to**: *object*
 
-*Defined in [src/webhooks/index.ts:168](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/webhooks/index.ts#L168)*
+*Defined in [src/webhooks/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L179)*
 
 #### Type declaration:
 

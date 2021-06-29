@@ -14,6 +14,7 @@
 * [author_id](_src_objects_index_.rtmrequest.md#optional-author_id)
 * [payload](_src_objects_index_.rtmrequest.md#payload)
 * [request_id](_src_objects_index_.rtmrequest.md#optional-request_id)
+* [version](_src_objects_index_.rtmrequest.md#optional-version)
 
 ## Properties
 
@@ -21,7 +22,7 @@
 
 • **action**: *string*
 
-*Defined in [src/objects/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/objects/index.ts#L330)*
+*Defined in [src/objects/index.ts:333](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L333)*
 
 ___
 
@@ -29,7 +30,7 @@ ___
 
 • **author_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:332](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/objects/index.ts#L332)*
+*Defined in [src/objects/index.ts:335](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L335)*
 
 ___
 
@@ -37,7 +38,7 @@ ___
 
 • **payload**: *any*
 
-*Defined in [src/objects/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/objects/index.ts#L331)*
+*Defined in [src/objects/index.ts:334](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L334)*
 
 ___
 
@@ -45,4 +46,12 @@ ___
 
 • **request_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:333](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/objects/index.ts#L333)*
+*Defined in [src/objects/index.ts:336](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L336)*
+
+___
+
+### `Optional` version
+
+• **version**? : *undefined | string*
+
+*Defined in [src/objects/index.ts:337](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L337)*

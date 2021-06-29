@@ -10,57 +10,35 @@
 
 ### Properties
 
-* [avatar](_src_customer_structures_.getpredictedagentresponse.md#avatar)
-* [id](_src_customer_structures_.getpredictedagentresponse.md#id)
-* [is_bot](_src_customer_structures_.getpredictedagentresponse.md#is_bot)
-* [job_title](_src_customer_structures_.getpredictedagentresponse.md#job_title)
-* [name](_src_customer_structures_.getpredictedagentresponse.md#name)
-* [type](_src_customer_structures_.getpredictedagentresponse.md#type)
+* [agent](_src_customer_structures_.getpredictedagentresponse.md#agent)
+* [queue](_src_customer_structures_.getpredictedagentresponse.md#queue)
 
 ## Properties
 
-###  avatar
+###  agent
 
-• **avatar**: *string*
+• **agent**: *object*
 
-*Defined in [src/customer/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/customer/structures.ts#L124)*
+*Defined in [src/customer/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L123)*
 
-___
+#### Type declaration:
 
-###  id
+* **avatar**: *string*
 
-• **id**: *string*
+* **id**: *string*
 
-*Defined in [src/customer/structures.ts:122](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/customer/structures.ts#L122)*
+* **is_bot**: *boolean*
 
-___
+* **job_title**: *string*
 
-###  is_bot
+* **name**: *string*
 
-• **is_bot**: *boolean*
-
-*Defined in [src/customer/structures.ts:125](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/customer/structures.ts#L125)*
+* **type**: *string*
 
 ___
 
-###  job_title
+###  queue
 
-• **job_title**: *string*
+• **queue**: *boolean*
 
-*Defined in [src/customer/structures.ts:126](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/customer/structures.ts#L126)*
-
-___
-
-###  name
-
-• **name**: *string*
-
-*Defined in [src/customer/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/customer/structures.ts#L123)*
-
-___
-
-###  type
-
-• **type**: *string*
-
-*Defined in [src/customer/structures.ts:127](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/customer/structures.ts#L127)*
+*Defined in [src/customer/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L131)*

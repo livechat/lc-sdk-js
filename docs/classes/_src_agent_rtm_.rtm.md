@@ -37,6 +37,7 @@
 * [deleteEventProperties](_src_agent_rtm_.rtm.md#deleteeventproperties)
 * [deleteThreadProperties](_src_agent_rtm_.rtm.md#deletethreadproperties)
 * [followChat](_src_agent_rtm_.rtm.md#followchat)
+* [followCustomer](_src_agent_rtm_.rtm.md#followcustomer)
 * [getChat](_src_agent_rtm_.rtm.md#getchat)
 * [getCustomer](_src_agent_rtm_.rtm.md#getcustomer)
 * [grantChatAccess](_src_agent_rtm_.rtm.md#grantchataccess)
@@ -44,6 +45,7 @@
 * [listArchives](_src_agent_rtm_.rtm.md#listarchives)
 * [listChats](_src_agent_rtm_.rtm.md#listchats)
 * [listCustomers](_src_agent_rtm_.rtm.md#listcustomers)
+* [listRoutingStatuses](_src_agent_rtm_.rtm.md#listroutingstatuses)
 * [listThreads](_src_agent_rtm_.rtm.md#listthreads)
 * [login](_src_agent_rtm_.rtm.md#login)
 * [logout](_src_agent_rtm_.rtm.md#logout)
@@ -64,6 +66,7 @@
 * [tagThread](_src_agent_rtm_.rtm.md#tagthread)
 * [transferChat](_src_agent_rtm_.rtm.md#transferchat)
 * [unfollowChat](_src_agent_rtm_.rtm.md#unfollowchat)
+* [unfollowCustomer](_src_agent_rtm_.rtm.md#unfollowcustomer)
 * [unsubscribePush](_src_agent_rtm_.rtm.md#unsubscribepush)
 * [untagThread](_src_agent_rtm_.rtm.md#untagthread)
 * [updateChatProperties](_src_agent_rtm_.rtm.md#updatechatproperties)
@@ -75,11 +78,17 @@
 
 ###  constructor
 
-\+ **new RTM**(): *[RTM](_src_agent_rtm_.rtm.md)*
+\+ **new RTM**(`options?`: [RTMAPIOptions](../interfaces/_src_objects_index_.rtmapioptions.md)): *[RTM](_src_agent_rtm_.rtm.md)*
 
 *Overrides [RTMAPI](_src_internal_index_.rtmapi.md).[constructor](_src_internal_index_.rtmapi.md#constructor)*
 
-*Defined in [src/agent/rtm.ts:32](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L32)*
+*Defined in [src/agent/rtm.ts:33](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L33)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options?` | [RTMAPIOptions](../interfaces/_src_objects_index_.rtmapioptions.md) |
 
 **Returns:** *[RTM](_src_agent_rtm_.rtm.md)*
 
@@ -91,7 +100,7 @@
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[APIURL](_src_internal_index_.rtmapi.md#apiurl)*
 
-*Defined in [src/internal/index.ts:54](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L54)*
+*Defined in [src/internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L74)*
 
 ___
 
@@ -101,7 +110,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[heartbeatInterval](_src_internal_index_.rtmapi.md#optional-heartbeatinterval)*
 
-*Defined in [src/internal/index.ts:59](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L59)*
+*Defined in [src/internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L79)*
 
 ___
 
@@ -111,7 +120,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[license](_src_internal_index_.rtmapi.md#optional-license)*
 
-*Defined in [src/internal/index.ts:57](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L57)*
+*Defined in [src/internal/index.ts:77](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L77)*
 
 ___
 
@@ -121,17 +130,17 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[requestsQueue](_src_internal_index_.rtmapi.md#requestsqueue)*
 
-*Defined in [src/internal/index.ts:60](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L60)*
+*Defined in [src/internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L80)*
 
 ___
 
 ### `Optional` socket
 
-• **socket**? : *ws*
+• **socket**? : *WebSocket*
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[socket](_src_internal_index_.rtmapi.md#optional-socket)*
 
-*Defined in [src/internal/index.ts:58](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L58)*
+*Defined in [src/internal/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L78)*
 
 ___
 
@@ -141,7 +150,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[subscribedPushes](_src_internal_index_.rtmapi.md#subscribedpushes)*
 
-*Defined in [src/internal/index.ts:61](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L61)*
+*Defined in [src/internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L81)*
 
 ___
 
@@ -151,7 +160,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[type](_src_internal_index_.rtmapi.md#type)*
 
-*Defined in [src/internal/index.ts:56](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L56)*
+*Defined in [src/internal/index.ts:76](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L76)*
 
 ___
 
@@ -161,15 +170,15 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[version](_src_internal_index_.rtmapi.md#version)*
 
-*Defined in [src/internal/index.ts:55](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L55)*
+*Defined in [src/internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L75)*
 
 ## Methods
 
 ###  addUserToChat
 
-▸ **addUserToChat**(`chat_id`: string, `user_id`: string, `user_type`: string, `require_active_thread?`: undefined | false | true): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **addUserToChat**(`chat_id`: string, `user_id`: string, `user_type`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:196](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L196)*
+*Defined in [src/agent/rtm.ts:196](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L196)*
 
 Adds a user to the chat. You can't add more than one customer user type to the chat.
 
@@ -179,8 +188,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `chat_id` | string | chat to add user to |
 `user_id` | string | user to add |
-`user_type` | string | customer or agent |
-`require_active_thread?` | undefined &#124; false &#124; true | if true, adds user only if chat has an active thread  |
+`user_type` | string | customer or agent  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
@@ -188,9 +196,9 @@ ___
 
 ###  banCustomer
 
-▸ **banCustomer**(`customer_id`: string, `days`: number): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **banCustomer**(`id`: string, `days`: number): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:392](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L392)*
+*Defined in [src/agent/rtm.ts:390](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L390)*
 
 Bans the customer for a specific period of time. It immediately disconnects all active sessions of this customer
 and does not accept new ones during the ban lifespan.
@@ -199,7 +207,7 @@ and does not accept new ones during the ban lifespan.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`customer_id` | string | = ID of customer to ban |
+`id` | string | ID of customer to ban |
 `days` | number | ban duration in days  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
@@ -210,7 +218,7 @@ ___
 
 ▸ **changePushNotifications**(`change`: [ChangePushNotificationsRequest](../interfaces/_src_agent_structures_.changepushnotificationsrequest.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:62](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L62)*
+*Defined in [src/agent/rtm.ts:63](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L63)*
 
 Change the firebase push notifications properties.
 
@@ -230,7 +238,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[connect](_src_internal_index_.rtmapi.md#connect)*
 
-*Defined in [src/internal/index.ts:72](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L72)*
+*Defined in [src/internal/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L92)*
 
 **Returns:** *Promise‹void›*
 
@@ -240,7 +248,7 @@ ___
 
 ▸ **createCustomer**(`opts?`: [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md)): *Promise‹[CreateCustomerResponse](../interfaces/_src_agent_structures_.createcustomerresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:373](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L373)*
+*Defined in [src/agent/rtm.ts:371](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L371)*
 
 Creates a new Customer user type.
 
@@ -256,9 +264,9 @@ ___
 
 ###  deactivateChat
 
-▸ **deactivateChat**(`chat_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **deactivateChat**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:140](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L140)*
+*Defined in [src/agent/rtm.ts:141](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L141)*
 
 Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
 
@@ -266,7 +274,7 @@ Deactivates a chat by closing the currently open thread. Sending messages to thi
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`chat_id` | string | chat ID to deactivate  |
+`id` | string | chat ID to deactivate  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
@@ -274,9 +282,9 @@ ___
 
 ###  deleteChatProperties
 
-▸ **deleteChatProperties**(`chat_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **deleteChatProperties**(`id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:259](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L259)*
+*Defined in [src/agent/rtm.ts:257](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L257)*
 
 Deletes chat properties
 
@@ -284,7 +292,7 @@ Deletes chat properties
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`chat_id` | string | chat to delete properties |
+`id` | string | chat to delete properties |
 `properties` | [Properties](../interfaces/_src_objects_index_.properties.md) | properties to delete  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
@@ -295,7 +303,7 @@ ___
 
 ▸ **deleteEventProperties**(`chat_id`: string, `thread_id`: string, `event_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:319](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L319)*
+*Defined in [src/agent/rtm.ts:317](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L317)*
 
 Deletes event properties
 
@@ -316,7 +324,7 @@ ___
 
 ▸ **deleteThreadProperties**(`chat_id`: string, `thread_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:283](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L283)*
+*Defined in [src/agent/rtm.ts:281](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L281)*
 
 Deletes thread properties
 
@@ -334,9 +342,9 @@ ___
 
 ###  followChat
 
-▸ **followChat**(`chat_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **followChat**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:149](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L149)*
+*Defined in [src/agent/rtm.ts:150](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L150)*
 
 Marks a chat as followed. All changes to the chat will be sent to the requester until the chat is reactivated or unfollowed.
 Chat members don't need to follow their chats. They receive all chat pushes regardless of their follower status.
@@ -345,7 +353,26 @@ Chat members don't need to follow their chats. They receive all chat pushes rega
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`chat_id` | string | chat ID to follow  |
+`id` | string | chat ID to follow  |
+
+**Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+
+___
+
+###  followCustomer
+
+▸ **followCustomer**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+
+*Defined in [src/agent/rtm.ts:453](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L453)*
+
+Marks a customer as followed. As a result, the requester (an agent) will receive
+the info about all the changes related to that customer via pushes.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | ID of customer to follow  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
@@ -355,7 +382,7 @@ ___
 
 ▸ **getChat**(`chat_id`: string, `thread_id?`: undefined | string): *Promise‹[GetChatResponse](../interfaces/_src_agent_structures_.getchatresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:105](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L105)*
+*Defined in [src/agent/rtm.ts:106](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L106)*
 
 It returns a thread that the current Agent has access to in a given chat.
 
@@ -372,17 +399,17 @@ ___
 
 ###  getCustomer
 
-▸ **getCustomer**(`customer_id`: string): *Promise‹[GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)›*
+▸ **getCustomer**(`id`: string): *Promise‹[GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:357](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L357)*
+*Defined in [src/agent/rtm.ts:355](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L355)*
 
-Returns the info about the Customer with a given customer_id.
+Returns the info about the Customer with a given id.
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`customer_id` | string | customer ID to teg  |
+`id` | string | customer ID to get  |
 
 **Returns:** *Promise‹[GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)›*
 
@@ -392,7 +419,7 @@ ___
 
 ▸ **grantChatAccess**(`chat_id`: string, `access`: [ChatAccess](../interfaces/_src_objects_index_.chataccess.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:167](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L167)*
+*Defined in [src/agent/rtm.ts:168](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L168)*
 
 Grants access to a new chat without overwriting the existing ones.
 
@@ -411,7 +438,7 @@ ___
 
 ▸ **listAgentsForTransfer**(`chat_id`: string): *Promise‹[AgentForTransfer](../interfaces/_src_agent_structures_.agentfortransfer.md)[]›*
 
-*Defined in [src/agent/rtm.ts:446](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L446)*
+*Defined in [src/agent/rtm.ts:444](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L444)*
 
 It returns the Agents you can transfer a chat to. Agents are sorted ascendingly by the total number of active chats they have. Note that:
 - The method only returns Agents with statuses online and not accepting chats. Offline Agents aren't returned.
@@ -431,7 +458,7 @@ ___
 
 ▸ **listArchives**(`opts?`: [ListArchivesParameters](../interfaces/_src_agent_structures_.listarchivesparameters.md)): *Promise‹[ListArchivesResponse](../interfaces/_src_agent_structures_.listarchivesresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:115](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L115)*
+*Defined in [src/agent/rtm.ts:116](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L116)*
 
 It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
 
@@ -452,7 +479,7 @@ ___
 
 ▸ **listChats**(`opts?`: [ListChatParameters](../interfaces/_src_agent_structures_.listchatparameters.md)): *Promise‹[ListChatsResponse](../interfaces/_src_agent_structures_.listchatsresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:87](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L87)*
+*Defined in [src/agent/rtm.ts:88](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L88)*
 
 It returns summaries of the chats an Agent has access to.
 
@@ -470,7 +497,7 @@ ___
 
 ▸ **listCustomers**(`opts?`: [ListCustomersParameters](../interfaces/_src_agent_structures_.listcustomersparameters.md)): *Promise‹[ListCustomersResponse](../interfaces/_src_agent_structures_.listcustomersresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:365](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L365)*
+*Defined in [src/agent/rtm.ts:363](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L363)*
 
 It returns the list of Customers.
 
@@ -484,11 +511,29 @@ Name | Type | Description |
 
 ___
 
+###  listRoutingStatuses
+
+▸ **listRoutingStatuses**(`group_ids?`: number[]): *Promise‹[SetRoutingStatusResponse](../interfaces/_src_agent_structures_.setroutingstatusresponse.md)[]›*
+
+*Defined in [src/agent/rtm.ts:469](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L469)*
+
+Returns the current routing status of each agent.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`group_ids?` | number[] | groups to list agent routing statuses from  |
+
+**Returns:** *Promise‹[SetRoutingStatusResponse](../interfaces/_src_agent_structures_.setroutingstatusresponse.md)[]›*
+
+___
+
 ###  listThreads
 
 ▸ **listThreads**(`chat_id`: string, `opts?`: [ListThreadsParameters](../interfaces/_src_agent_structures_.listthreadsparameters.md)): *Promise‹[ListThreadsResponse](../interfaces/_src_agent_structures_.listthreadsresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:96](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L96)*
+*Defined in [src/agent/rtm.ts:97](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L97)*
 
 Returns threads that the current Agent has access to in a given chat.
 
@@ -507,7 +552,7 @@ ___
 
 ▸ **login**(`loginData`: string | [LoginRequest](../interfaces/_src_agent_structures_.loginrequest.md)): *Promise‹[LoginResponse](../interfaces/_src_agent_structures_.loginresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:52](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L52)*
+*Defined in [src/agent/rtm.ts:53](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L53)*
 
 It returns the initial state of the current Agent.
 
@@ -525,7 +570,7 @@ ___
 
 ▸ **logout**(): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:79](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L79)*
+*Defined in [src/agent/rtm.ts:80](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L80)*
 
 Logs the Agent out.
 
@@ -537,7 +582,7 @@ ___
 
 ▸ **markEventsAsSeen**(`chat_id`: string, `seen_up_to`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:410](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L410)*
+*Defined in [src/agent/rtm.ts:408](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L408)*
 
 Marks events as seen by Agent.
 
@@ -556,7 +601,7 @@ ___
 
 ▸ **multicast**(`recipients`: [MulticastRecipients](../interfaces/_src_agent_structures_.multicastrecipients.md), `content`: object, `type?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:436](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L436)*
+*Defined in [src/agent/rtm.ts:434](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L434)*
 
 This method serves for the chat-unrelated communication. Messages sent using multicast are not being saved.
 For example, it could be used in an app that sends notifications to Agents or Customers,
@@ -578,7 +623,7 @@ ___
 
 ▸ **on**(`push`: [Pushes](../enums/_src_agent_structures_.pushes.md), `handler`: function): *function*
 
-*Defined in [src/agent/rtm.ts:43](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L43)*
+*Defined in [src/agent/rtm.ts:44](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L44)*
 
 Allows to subscribe a handler for a given push. Returns function to unsubscribe.
 Note: multiple subscriptions for the same push are not allowed in sigle websocket connection.
@@ -593,13 +638,13 @@ push name to subscribe to
 
 function receiving push payload
 
-▸ (`payload`: any): *void*
+▸ (`payload`: [Push](../interfaces/_src_objects_index_.push.md)): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`payload` | any |
+`payload` | [Push](../interfaces/_src_objects_index_.push.md) |
 
 **Returns:** *function*
 
@@ -611,7 +656,7 @@ ___
 
 ▸ **removeUserFromChat**(`chat_id`: string, `user_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:214](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L214)*
+*Defined in [src/agent/rtm.ts:212](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L212)*
 
 Removes a user from chat. Removing customer user type is not allowed. It's always possible to remove the requester from the chat.
 
@@ -630,7 +675,7 @@ ___
 
 ▸ **resumeChat**(`param`: string | [ResumeChatParameters](../interfaces/_src_agent_structures_.resumechatparameters.md)): *Promise‹[ResumeChatResponse](../interfaces/_src_agent_structures_.resumechatresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:131](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L131)*
+*Defined in [src/agent/rtm.ts:132](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L132)*
 
 Restarts an archived chat
 
@@ -648,7 +693,7 @@ ___
 
 ▸ **revokeChatAccess**(`chat_id`: string, `access`: [ChatAccess](../interfaces/_src_objects_index_.chataccess.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:176](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L176)*
+*Defined in [src/agent/rtm.ts:177](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L177)*
 
 Revokes access to chat
 
@@ -669,7 +714,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[send](_src_internal_index_.rtmapi.md#send)*
 
-*Defined in [src/internal/index.ts:120](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L120)*
+*Defined in [src/internal/index.ts:140](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L140)*
 
 **Parameters:**
 
@@ -686,7 +731,7 @@ ___
 
 ▸ **sendEvent**(`chat_id`: string, `event`: [Event](../modules/_src_objects_index_.md#event), `attach_to_last_thread?`: undefined | false | true): *Promise‹[SendEventResponse](../interfaces/_src_agent_structures_.sendeventresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:229](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L229)*
+*Defined in [src/agent/rtm.ts:227](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L227)*
 
 Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
 It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
@@ -708,7 +753,7 @@ ___
 
 ▸ **sendRichMessagePostback**(`opts`: [SendRichMessagePostbackParameters](../interfaces/_src_agent_structures_.sendrichmessagepostbackparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:241](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L241)*
+*Defined in [src/agent/rtm.ts:239](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L239)*
 
 Sends postback for rich message
 
@@ -726,7 +771,7 @@ ___
 
 ▸ **sendTypingIndicator**(`chat_id`: string, `is_typing`: boolean, `recipients?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:420](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L420)*
+*Defined in [src/agent/rtm.ts:418](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L418)*
 
 Sends typing indicator
 
@@ -746,7 +791,7 @@ ___
 
 ▸ **setAwayStatus**(`away`: boolean): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:72](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L72)*
+*Defined in [src/agent/rtm.ts:73](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L73)*
 
 Sets an Agent's connection to the away state. You can use this method to manipulate the Agent's status.
 The method works per connection - all connections an Agent has (desktop, mobile, etc) must be in the away state
@@ -766,7 +811,7 @@ ___
 
 ▸ **setRoutingStatus**(`status`: [RoutingStatus](../enums/_src_objects_index_.routingstatus.md), `agent_id?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:401](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L401)*
+*Defined in [src/agent/rtm.ts:399](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L399)*
 
 Changes the status of an Agent or a Bot Agent.
 
@@ -785,7 +830,7 @@ ___
 
 ▸ **startChat**(`opts?`: [StartChatParameters](../interfaces/_src_agent_structures_.startchatparameters.md)): *Promise‹[StartChatResponse](../interfaces/_src_agent_structures_.startchatresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:123](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L123)*
+*Defined in [src/agent/rtm.ts:124](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L124)*
 
 Starts a chat
 
@@ -805,7 +850,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[subscribePush](_src_internal_index_.rtmapi.md#subscribepush)*
 
-*Defined in [src/internal/index.ts:138](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L138)*
+*Defined in [src/internal/index.ts:157](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L157)*
 
 **Parameters:**
 
@@ -813,13 +858,13 @@ ___
 
 ▪ **callback**: *function*
 
-▸ (`payload`: any): *void*
+▸ (`payload`: [Push](../interfaces/_src_objects_index_.push.md)): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`payload` | any |
+`payload` | [Push](../interfaces/_src_objects_index_.push.md) |
 
 **Returns:** *void*
 
@@ -829,7 +874,7 @@ ___
 
 ▸ **tagThread**(`chat_id`: string, `thread_id`: string, `tag`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:339](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L339)*
+*Defined in [src/agent/rtm.ts:337](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L337)*
 
 Tags thread with given tag
 
@@ -847,9 +892,9 @@ ___
 
 ###  transferChat
 
-▸ **transferChat**(`chat_id`: string, `opts?`: [TransferChatParameters](../interfaces/_src_agent_structures_.transferchatparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **transferChat**(`id`: string, `opts?`: [TransferChatParameters](../interfaces/_src_agent_structures_.transferchatparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:185](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L185)*
+*Defined in [src/agent/rtm.ts:186](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L186)*
 
 Transfers a chat to an Agent or a group.
 
@@ -857,7 +902,7 @@ Transfers a chat to an Agent or a group.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`chat_id` | string | chat to transfer |
+`id` | string | chat to transfer |
 `opts?` | [TransferChatParameters](../interfaces/_src_agent_structures_.transferchatparameters.md) | specific target or force flag  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
@@ -866,9 +911,9 @@ ___
 
 ###  unfollowChat
 
-▸ **unfollowChat**(`chat_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **unfollowChat**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:158](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L158)*
+*Defined in [src/agent/rtm.ts:159](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L159)*
 
 Removes the requester from the chat followers. After that, only key changes to the chat (like transfer_chat or close_active_thread)
 will be sent to the requester. Chat members cannot unfollow the chat.
@@ -877,7 +922,25 @@ will be sent to the requester. Chat members cannot unfollow the chat.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`chat_id` | string | chat ID to unfollow  |
+`id` | string | chat ID to unfollow  |
+
+**Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+
+___
+
+###  unfollowCustomer
+
+▸ **unfollowCustomer**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+
+*Defined in [src/agent/rtm.ts:461](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L461)*
+
+Removes the agent from the list of customer's followers.
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`id` | string | ID of customer to unfollow  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
@@ -889,7 +952,7 @@ ___
 
 *Inherited from [RTMAPI](_src_internal_index_.rtmapi.md).[unsubscribePush](_src_internal_index_.rtmapi.md#unsubscribepush)*
 
-*Defined in [src/internal/index.ts:145](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/internal/index.ts#L145)*
+*Defined in [src/internal/index.ts:164](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L164)*
 
 **Parameters:**
 
@@ -905,7 +968,7 @@ ___
 
 ▸ **untagThread**(`chat_id`: string, `thread_id`: string, `tag`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:349](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L349)*
+*Defined in [src/agent/rtm.ts:347](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L347)*
 
 Removes tag from thread
 
@@ -923,9 +986,9 @@ ___
 
 ###  updateChatProperties
 
-▸ **updateChatProperties**(`chat_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **updateChatProperties**(`id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:250](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L250)*
+*Defined in [src/agent/rtm.ts:248](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L248)*
 
 Updates chat properties
 
@@ -933,7 +996,7 @@ Updates chat properties
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`chat_id` | string | chat to update properties |
+`id` | string | chat to update properties |
 `properties` | [Properties](../interfaces/_src_objects_index_.properties.md) | properties to update  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
@@ -942,9 +1005,9 @@ ___
 
 ###  updateCustomer
 
-▸ **updateCustomer**(`customer_id`: string, `opts`: [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **updateCustomer**(`id`: string, `opts`: [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:382](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L382)*
+*Defined in [src/agent/rtm.ts:380](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L380)*
 
 Updates Customer's properties.
 
@@ -952,7 +1015,7 @@ Updates Customer's properties.
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`customer_id` | string | ID of a customer to update |
+`id` | string | ID of a customer to update |
 `opts` | [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md) | properties to update  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
@@ -963,7 +1026,7 @@ ___
 
 ▸ **updateEventProperties**(`chat_id`: string, `thread_id`: string, `event_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:298](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L298)*
+*Defined in [src/agent/rtm.ts:296](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L296)*
 
 Updates event properties
 
@@ -984,7 +1047,7 @@ ___
 
 ▸ **updateThreadProperties**(`chat_id`: string, `thread_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/rtm.ts:269](https://github.com/livechat/lc-sdk-js/blob/3cb601c/src/agent/rtm.ts#L269)*
+*Defined in [src/agent/rtm.ts:267](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/rtm.ts#L267)*
 
 Updates thread properties
 
