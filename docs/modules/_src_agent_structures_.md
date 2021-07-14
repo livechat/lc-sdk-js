@@ -69,7 +69,7 @@
 
 Ƭ **IntegerFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹number›*
 
-*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L209)*
+*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L209)*
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 Ƭ **StringFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹string›*
 
-*Defined in [src/agent/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L207)*
+*Defined in [src/agent/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L207)*
