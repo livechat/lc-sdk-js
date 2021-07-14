@@ -67,7 +67,7 @@ export interface GetChatResponse {
 }
 
 export interface ListArchivesParameters {
-  filters?: object;
+  filters?: ArchivesFilters;
   page_id?: string;
   sort_order?: SortOrder;
   limit?: number;
@@ -79,24 +79,24 @@ export interface ArchivesFilters {
   to?: string;
   thread_ids?: string[];
   group_ids?: number[];
-  agent_ids: string[];
   properties: PropertiesFilter;
-  agents: FilterType;
-  tags: FilterType;
-  sales: FilterType;
-  goals: FilterType;
+  agents: FilterType<string>;
+  tags: FilterType<string>;
+  sales: FilterType<number>;
+  goals: FilterType<number>;
   surveys: SurveyFilter[];
-  events: EventsFilter;
+  event_types: Omit<FilterType<string>, "exists">;
 }
 
 export interface PropertiesFilter {
   [namespace: string]: {
-    [name: string]: FilterType;
+    [name: string]: Omit<FilterType<any>, "require_every_value">;
   };
 }
 
-interface FilterType extends Filter<any> {
+interface FilterType<T> extends Filter<T> {
   exists?: boolean;
+  require_every_value?: boolean;
 }
 
 export enum SurveyType {
@@ -107,10 +107,6 @@ export enum SurveyType {
 export interface SurveyFilter {
   type: SurveyType;
   answer_id: string;
-}
-
-export interface EventsFilter {
-  types: string[];
 }
 
 export interface ListArchivesResponse {
@@ -557,7 +553,7 @@ export enum Pushes {
    * Informs that a group has been created.
    */
   GroupCreated = "group_created",
-  
+
   /**
    * Informs that a group has been updated.
    */
