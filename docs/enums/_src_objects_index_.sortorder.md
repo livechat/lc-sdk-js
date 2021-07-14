@@ -15,7 +15,7 @@
 
 • **Asc**: = "asc"
 
-*Defined in [src/objects/index.ts:132](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L132)*
+*Defined in [src/objects/index.ts:132](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L132)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **Desc**: = "desc"
 
-*Defined in [src/objects/index.ts:133](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L133)*
+*Defined in [src/objects/index.ts:133](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L133)*

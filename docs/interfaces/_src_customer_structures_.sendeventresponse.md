@@ -18,4 +18,4 @@
 
 • **event_id**: *string*
 
-*Defined in [src/customer/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L76)*
+*Defined in [src/customer/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L76)*

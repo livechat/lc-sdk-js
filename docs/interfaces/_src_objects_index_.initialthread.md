@@ -19,7 +19,7 @@
 
 • **events**? : *[Event](../modules/_src_objects_index_.md#event)[]*
 
-*Defined in [src/objects/index.ts:247](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L247)*
+*Defined in [src/objects/index.ts:247](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L247)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **properties**? : *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/objects/index.ts:248](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L248)*
+*Defined in [src/objects/index.ts:248](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L248)*

@@ -12,9 +12,7 @@ export interface Webhook {
 type WebhookPayload =
   | IncomingChat
   | ChatDeactivated
-  | ChatAccessGranted
-  | ChatAccessRevoked
-  | ChatAccessSet
+  | ChatAccessUpdated
   | ChatUserAdded
   | ChatUserRemoved
   | IncomingEvent
@@ -59,17 +57,7 @@ export interface ChatDeactivated {
   user_id?: string;
 }
 
-export interface ChatAccessGranted {
-  id: string;
-  access: Access;
-}
-
-export interface ChatAccessRevoked {
-  id: string;
-  access: Access;
-}
-
-export interface ChatAccessSet {
+export interface ChatAccessUpdated {
   id: string;
   access: Access;
 }

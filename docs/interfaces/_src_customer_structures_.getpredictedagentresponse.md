@@ -19,7 +19,7 @@
 
 • **agent**: *object*
 
-*Defined in [src/customer/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L123)*
+*Defined in [src/customer/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L123)*
 
 #### Type declaration:
 
@@ -41,4 +41,4 @@ ___
 
 • **queue**: *boolean*
 
-*Defined in [src/customer/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L131)*
+*Defined in [src/customer/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L131)*

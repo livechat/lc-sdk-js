@@ -19,7 +19,7 @@
 
 • **agent_id**: *string*
 
-*Defined in [src/webhooks/index.ts:160](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L160)*
+*Defined in [src/webhooks/index.ts:148](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/webhooks/index.ts#L148)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **status**: *[RoutingStatus](../enums/_src_objects_index_.routingstatus.md)*
 
-*Defined in [src/webhooks/index.ts:161](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L161)*
+*Defined in [src/webhooks/index.ts:149](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/webhooks/index.ts#L149)*

@@ -20,7 +20,7 @@
 
 • **active_chat**: *object*
 
-*Defined in [src/webhooks/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L192)*
+*Defined in [src/webhooks/index.ts:180](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/webhooks/index.ts#L180)*
 
 #### Type declaration:
 
@@ -34,7 +34,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/webhooks/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L191)*
+*Defined in [src/webhooks/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/webhooks/index.ts#L179)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 • **session_fields**: *Record‹string, string›[]*
 
-*Defined in [src/webhooks/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L196)*
+*Defined in [src/webhooks/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/webhooks/index.ts#L184)*

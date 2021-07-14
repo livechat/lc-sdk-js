@@ -18,4 +18,4 @@
 
 • **chat**: *[Chat](_src_objects_index_.chat.md)*
 
-*Defined in [src/webhooks/index.ts:53](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L53)*
+*Defined in [src/webhooks/index.ts:51](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/webhooks/index.ts#L51)*

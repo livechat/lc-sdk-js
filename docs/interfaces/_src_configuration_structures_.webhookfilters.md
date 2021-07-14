@@ -21,7 +21,7 @@
 
 • **author_type**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:132](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L132)*
+*Defined in [src/configuration/structures.ts:132](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/configuration/structures.ts#L132)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **chat_presence**? : *undefined | object*
 
-*Defined in [src/configuration/structures.ts:134](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L134)*
+*Defined in [src/configuration/structures.ts:134](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/configuration/structures.ts#L134)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **only_my_chats**? : *undefined | false | true*
 
-*Defined in [src/configuration/structures.ts:133](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L133)*
+*Defined in [src/configuration/structures.ts:133](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/configuration/structures.ts#L133)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **source_type**? : *[WebhookSourceType](../modules/_src_configuration_structures_.md#webhooksourcetype)[]*
 
-*Defined in [src/configuration/structures.ts:138](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/configuration/structures.ts#L138)*
+*Defined in [src/configuration/structures.ts:138](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/configuration/structures.ts#L138)*

@@ -161,24 +161,6 @@ export default class RTM extends RTMAPI {
   }
 
   /**
-   * Grants access to a new chat without overwriting the existing ones.
-   * @param chat_id - chat ID to grant access to
-   * @param access - access to grant
-   */
-  async grantChatAccess(chat_id: string, access: ChatAccess): Promise<EmptyResponse> {
-    return this.send("grant_chat_access", { chat_id, access });
-  }
-
-  /**
-   * Revokes access to chat
-   * @param chat_id - chat ID to grant access to
-   * @param access - access to revoke
-   */
-  async revokeChatAccess(chat_id: string, access: ChatAccess): Promise<EmptyResponse> {
-    return this.send("revoke_chat_access", { chat_id, access });
-  }
-
-  /**
    * Transfers a chat to an Agent or a group.
    * @param id - chat to transfer
    * @param opts - specific target or force flag
