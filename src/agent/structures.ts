@@ -334,14 +334,9 @@ export enum Pushes {
   ChatDeactivated = "chat_deactivated",
 
   /**
-   * Informs that new, single access to a chat was granted. The existing access isn't overwritten.
+   * Informs that the chat's access is updated. It contains full access of the chat.
    */
-  ChatAccessGranted = "chat_access_granted",
-
-  /**
-   * Informs that access to a certain chat was revoked.
-   */
-  ChatAccessRevoked = "chat_access_revoked",
+  ChatAccessUpdated = "chat_access_updated",
 
   /**
    * Informs that a chat was transferred to a different group or to an Agent.
