@@ -20,7 +20,7 @@
 
 • **opened_at**: *string*
 
-*Defined in [src/objects/index.ts:205](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L205)*
+*Defined in [src/objects/index.ts:205](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L205)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/objects/index.ts:207](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L207)*
+*Defined in [src/objects/index.ts:207](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L207)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/objects/index.ts:206](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L206)*
+*Defined in [src/objects/index.ts:206](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L206)*

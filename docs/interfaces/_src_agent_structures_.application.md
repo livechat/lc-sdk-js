@@ -19,7 +19,7 @@
 
 • **name**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:294](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L294)*
+*Defined in [src/agent/structures.ts:294](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L294)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **version**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:295](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L295)*
+*Defined in [src/agent/structures.ts:295](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L295)*

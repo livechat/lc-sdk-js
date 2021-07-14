@@ -19,7 +19,7 @@
 
 • **force**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L148)*
+*Defined in [src/agent/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L148)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **target**? : *[TransferTarget](_src_agent_structures_.transfertarget.md)*
 
-*Defined in [src/agent/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L147)*
+*Defined in [src/agent/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L147)*
