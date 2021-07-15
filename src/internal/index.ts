@@ -1,5 +1,5 @@
 import axios from "axios";
-import WebSocket from "isomorphic-ws";
+import WebSocket = require("isomorphic-ws");
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
