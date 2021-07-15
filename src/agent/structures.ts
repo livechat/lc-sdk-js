@@ -79,13 +79,13 @@ export interface ArchivesFilters {
   to?: string;
   thread_ids?: string[];
   group_ids?: number[];
-  properties: PropertiesFilter;
-  agents: FilterType<string>;
-  tags: FilterType<string>;
-  sales: FilterType<number>;
-  goals: FilterType<number>;
-  surveys: SurveyFilter[];
-  event_types: Omit<FilterType<string>, "exists">;
+  properties?: PropertiesFilter;
+  agents?: FilterType<string>;
+  tags?: FilterType<string>;
+  sales?: FilterType<number>;
+  goals?: FilterType<number>;
+  surveys?: SurveyFilter[];
+  event_types?: Omit<FilterType<string>, "exists">;
 }
 
 export interface PropertiesFilter {
