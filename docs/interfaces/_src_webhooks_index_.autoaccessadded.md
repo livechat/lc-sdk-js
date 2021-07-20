@@ -22,7 +22,7 @@
 
 • **access**: *object*
 
-*Defined in [src/webhooks/index.ts:305](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L305)*
+*Defined in [src/webhooks/index.ts:319](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L319)*
 
 #### Type declaration:
 
@@ -34,7 +34,7 @@ ___
 
 • **conditions**: *object*
 
-*Defined in [src/webhooks/index.ts:308](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L308)*
+*Defined in [src/webhooks/index.ts:322](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L322)*
 
 #### Type declaration:
 
@@ -50,7 +50,7 @@ ___
 
 • **description**: *string*
 
-*Defined in [src/webhooks/index.ts:304](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L304)*
+*Defined in [src/webhooks/index.ts:318](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L318)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/webhooks/index.ts:303](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L303)*
+*Defined in [src/webhooks/index.ts:317](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L317)*
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 • **next_id**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:318](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L318)*
+*Defined in [src/webhooks/index.ts:335](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L335)*

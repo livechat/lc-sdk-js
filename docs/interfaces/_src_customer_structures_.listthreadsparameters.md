@@ -21,7 +21,7 @@
 
 • **limit**? : *undefined | number*
 
-*Defined in [src/customer/structures.ts:31](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L31)*
+*Defined in [src/customer/structures.ts:69](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L69)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **min_events_count**? : *undefined | number*
 
-*Defined in [src/customer/structures.ts:33](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L33)*
+*Defined in [src/customer/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L71)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **page_id**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:32](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L32)*
+*Defined in [src/customer/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L70)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **sort_order**? : *[SortOrder](../enums/_src_objects_index_.sortorder.md)*
 
-*Defined in [src/customer/structures.ts:30](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L30)*
+*Defined in [src/customer/structures.ts:68](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L68)*

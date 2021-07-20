@@ -18,6 +18,7 @@
 * [BotCreated](../interfaces/_src_webhooks_index_.botcreated.md)
 * [BotDeleted](../interfaces/_src_webhooks_index_.botdeleted.md)
 * [BotUpdated](../interfaces/_src_webhooks_index_.botupdated.md)
+* [Chat](../interfaces/_src_webhooks_index_.chat.md)
 * [ChatAccessGranted](../interfaces/_src_webhooks_index_.chataccessgranted.md)
 * [ChatAccessRevoked](../interfaces/_src_webhooks_index_.chataccessrevoked.md)
 * [ChatAccessSet](../interfaces/_src_webhooks_index_.chataccessset.md)
@@ -49,16 +50,25 @@
 
 ### Type aliases
 
+* [User](_src_webhooks_index_.md#user)
 * [WebhookPayload](_src_webhooks_index_.md#webhookpayload)
 * [WorkScheduler](_src_webhooks_index_.md#workscheduler)
 
 ## Type aliases
 
+###  User
+
+Ƭ **User**: *[Agent](../interfaces/_src_agent_structures_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
+
+*Defined in [src/webhooks/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L4)*
+
+___
+
 ###  WebhookPayload
 
 Ƭ **WebhookPayload**: *[IncomingChat](../interfaces/_src_webhooks_index_.incomingchat.md) | [ChatDeactivated](../interfaces/_src_webhooks_index_.chatdeactivated.md) | [ChatAccessGranted](../interfaces/_src_webhooks_index_.chataccessgranted.md) | [ChatAccessRevoked](../interfaces/_src_webhooks_index_.chataccessrevoked.md) | [ChatAccessSet](../interfaces/_src_webhooks_index_.chataccessset.md) | [ChatUserAdded](../interfaces/_src_webhooks_index_.chatuseradded.md) | [ChatUserRemoved](../interfaces/_src_webhooks_index_.chatuserremoved.md) | [IncomingEvent](../interfaces/_src_webhooks_index_.incomingevent.md) | [EventUpdated](../interfaces/_src_webhooks_index_.eventupdated.md) | [IncomingRichMessagePostback](../interfaces/_src_webhooks_index_.incomingrichmessagepostback.md) | [ChatPropertiesUpdated](../interfaces/_src_webhooks_index_.chatpropertiesupdated.md) | [ChatPropertiesDeleted](../interfaces/_src_webhooks_index_.chatpropertiesdeleted.md) | [ThreadPropertiesUpdated](../interfaces/_src_webhooks_index_.threadpropertiesupdated.md) | [ThreadPropertiesDeleted](../interfaces/_src_webhooks_index_.threadpropertiesdeleted.md) | [EventPropertiesUpdated](../interfaces/_src_webhooks_index_.eventpropertiesupdated.md) | [EventPropertiesDeleted](../interfaces/_src_webhooks_index_.eventpropertiesdeleted.md) | [ThreadTagged](../interfaces/_src_webhooks_index_.threadtagged.md) | [ThreadUntagged](../interfaces/_src_webhooks_index_.threaduntagged.md) | [RoutingStatusSet](../interfaces/_src_webhooks_index_.routingstatusset.md) | [IncomingCustomer](../interfaces/_src_webhooks_index_.incomingcustomer.md) | [EventsMarkedAsSeen](../interfaces/_src_webhooks_index_.eventsmarkedasseen.md) | [ChatTransferred](../interfaces/_src_webhooks_index_.chattransferred.md) | [CustomerSessionFieldsUpdated](../interfaces/_src_webhooks_index_.customersessionfieldsupdated.md) | [AgentCreated](../interfaces/_src_webhooks_index_.agentcreated.md) | [AgentUpdated](../interfaces/_src_webhooks_index_.agentupdated.md) | [AgentDeleted](../interfaces/_src_webhooks_index_.agentdeleted.md) | [AgentSuspended](../interfaces/_src_webhooks_index_.agentsuspended.md) | [AgentUnsuspended](../interfaces/_src_webhooks_index_.agentunsuspended.md) | [AgentApproved](../interfaces/_src_webhooks_index_.agentapproved.md) | [BotCreated](../interfaces/_src_webhooks_index_.botcreated.md) | [BotUpdated](../interfaces/_src_webhooks_index_.botupdated.md) | [BotDeleted](../interfaces/_src_webhooks_index_.botdeleted.md) | [GroupCreated](../interfaces/_src_webhooks_index_.groupcreated.md) | [GroupUpdated](../interfaces/_src_webhooks_index_.groupupdated.md) | [GroupDeleted](../interfaces/_src_webhooks_index_.groupdeleted.md) | [AutoAccessAdded](../interfaces/_src_webhooks_index_.autoaccessadded.md) | [AutoAccessUpdated](../interfaces/_src_webhooks_index_.autoaccessupdated.md) | [AutoAccessDeleted](../interfaces/_src_webhooks_index_.autoaccessdeleted.md)*
 
-*Defined in [src/webhooks/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L12)*
+*Defined in [src/webhooks/index.ts:24](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L24)*
 
 ___
 
@@ -66,4 +76,4 @@ ___
 
 Ƭ **WorkScheduler**: *Record‹string, object›*
 
-*Defined in [src/webhooks/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L204)*
+*Defined in [src/webhooks/index.ts:216](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L216)*

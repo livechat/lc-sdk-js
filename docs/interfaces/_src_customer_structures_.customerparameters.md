@@ -21,7 +21,7 @@
 
 • **avatar**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:94](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L94)*
+*Defined in [src/customer/structures.ts:132](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L132)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **email**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:93](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L93)*
+*Defined in [src/customer/structures.ts:131](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L131)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:92](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L92)*
+*Defined in [src/customer/structures.ts:130](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L130)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **session_fields**? : *object[]*
 
-*Defined in [src/customer/structures.ts:95](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L95)*
+*Defined in [src/customer/structures.ts:133](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L133)*

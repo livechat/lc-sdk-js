@@ -19,7 +19,7 @@
 
 • **event_ids**? : *string[]*
 
-*Defined in [src/customer/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L72)*
+*Defined in [src/customer/structures.ts:110](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L110)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/customer/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L71)*
+*Defined in [src/customer/structures.ts:109](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L109)*

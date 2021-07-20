@@ -19,7 +19,7 @@
 
 • **access**: *[Access](_src_objects_index_.access.md)*
 
-*Defined in [src/webhooks/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L74)*
+*Defined in [src/webhooks/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L86)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/webhooks/index.ts:73](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L73)*
+*Defined in [src/webhooks/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L85)*
