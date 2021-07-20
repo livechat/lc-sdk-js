@@ -126,8 +126,6 @@ export interface SystemMessage {
 
 export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage;
 
-export type User = Agent | Customer;
-
 export enum SortOrder {
   Asc = "asc",
   Desc = "desc",
@@ -149,17 +147,6 @@ export interface MyProfile {
   avatar: string;
   routing_status: string;
   permission: string;
-}
-
-export interface Agent {
-  id: string;
-  type: string;
-  name: string;
-  email: string;
-  present: boolean;
-  events_seen_up_to: string;
-  avatar: string;
-  routing_status: string;
 }
 
 export interface Customer {
@@ -216,19 +203,6 @@ export interface Statistics {
   chats_count: number;
   threads_count: number;
   visits_count: number;
-}
-
-export interface Chat {
-  id: string;
-  users: User[];
-  threads: Thread[];
-  properties?: Properties;
-  access: Access;
-  is_followed: boolean;
-}
-
-export interface ArchivedChat extends Chat {
-  threads: ArchivedThread[];
 }
 
 export interface InitialChat {
@@ -299,18 +273,7 @@ export interface ChatAccess {
   id: number;
 }
 
-export interface ChatsSummary {
-  id: string;
-  last_event_per_type: LastEventPerType;
-  users: User[];
-  last_thread_summary: LastThreadSummary;
-  properties: Properties;
-  access: Access;
-  order: number;
-  is_followed: boolean;
-}
-
-interface LastEventPerType {
+export interface LastEventPerType {
   [type: string]: Event;
 }
 
