@@ -13,14 +13,10 @@
 ### Interfaces
 
 * [Access](../interfaces/_src_objects_index_.access.md)
-* [Agent](../interfaces/_src_objects_index_.agent.md)
 * [Answer](../interfaces/_src_objects_index_.answer.md)
-* [ArchivedChat](../interfaces/_src_objects_index_.archivedchat.md)
 * [ArchivedThread](../interfaces/_src_objects_index_.archivedthread.md)
 * [Button](../interfaces/_src_objects_index_.button.md)
-* [Chat](../interfaces/_src_objects_index_.chat.md)
 * [ChatAccess](../interfaces/_src_objects_index_.chataccess.md)
-* [ChatsSummary](../interfaces/_src_objects_index_.chatssummary.md)
 * [CustomEvent](../interfaces/_src_objects_index_.customevent.md)
 * [Customer](../interfaces/_src_objects_index_.customer.md)
 * [Element](../interfaces/_src_objects_index_.element.md)
@@ -57,7 +53,6 @@
 ### Type aliases
 
 * [Event](_src_objects_index_.md#event)
-* [User](_src_objects_index_.md#user)
 
 ## Type aliases
 
@@ -65,12 +60,4 @@
 
 Ƭ **Event**: *[File](../interfaces/_src_objects_index_.file.md) | [FilledForm](../interfaces/_src_objects_index_.filledform.md) | [Message](../interfaces/_src_objects_index_.message.md) | [RichMessage](../interfaces/_src_objects_index_.richmessage.md) | [CustomEvent](../interfaces/_src_objects_index_.customevent.md) | [SystemMessage](../interfaces/_src_objects_index_.systemmessage.md)*
 
-*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L127)*
-
-___
-
-###  User
-
-Ƭ **User**: *[Agent](../interfaces/_src_objects_index_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
-
-*Defined in [src/objects/index.ts:129](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/objects/index.ts#L129)*
+*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/objects/index.ts#L127)*

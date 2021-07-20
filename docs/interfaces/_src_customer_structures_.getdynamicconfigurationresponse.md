@@ -23,7 +23,7 @@
 
 • **client_limit_exceeded**: *boolean*
 
-*Defined in [src/customer/structures.ts:195](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L195)*
+*Defined in [src/customer/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L233)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **config_version**: *string*
 
-*Defined in [src/customer/structures.ts:197](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L197)*
+*Defined in [src/customer/structures.ts:235](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L235)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **domain_allowed**: *boolean*
 
-*Defined in [src/customer/structures.ts:196](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L196)*
+*Defined in [src/customer/structures.ts:234](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L234)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **group_id**: *number*
 
-*Defined in [src/customer/structures.ts:194](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L194)*
+*Defined in [src/customer/structures.ts:232](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L232)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **language**: *string*
 
-*Defined in [src/customer/structures.ts:199](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L199)*
+*Defined in [src/customer/structures.ts:237](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L237)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **localization_version**: *string*
 
-*Defined in [src/customer/structures.ts:198](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L198)*
+*Defined in [src/customer/structures.ts:236](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L236)*

@@ -10,7 +10,11 @@
 
 ### Interfaces
 
+* [Agent](../interfaces/_src_customer_structures_.agent.md)
 * [Application](../interfaces/_src_customer_structures_.application.md)
+* [ArchivedChat](../interfaces/_src_customer_structures_.archivedchat.md)
+* [Chat](../interfaces/_src_customer_structures_.chat.md)
+* [ChatsSummary](../interfaces/_src_customer_structures_.chatssummary.md)
 * [CustomerPage](../interfaces/_src_customer_structures_.customerpage.md)
 * [CustomerParameters](../interfaces/_src_customer_structures_.customerparameters.md)
 * [EmptyResponse](../interfaces/_src_customer_structures_.emptyresponse.md)
@@ -39,3 +43,15 @@
 * [StartChatParameters](../interfaces/_src_customer_structures_.startchatparameters.md)
 * [StartChatResponse](../interfaces/_src_customer_structures_.startchatresponse.md)
 * [UploadFileResponse](../interfaces/_src_customer_structures_.uploadfileresponse.md)
+
+### Type aliases
+
+* [User](_src_customer_structures_.md#user)
+
+## Type aliases
+
+###  User
+
+Ƭ **User**: *[Agent](../interfaces/_src_customer_structures_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
+
+*Defined in [src/customer/structures.ts:15](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L15)*

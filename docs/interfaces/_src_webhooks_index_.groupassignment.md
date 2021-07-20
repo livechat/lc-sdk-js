@@ -19,7 +19,7 @@
 
 • **id**: *number*
 
-*Defined in [src/webhooks/index.ts:200](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L200)*
+*Defined in [src/webhooks/index.ts:212](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L212)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **priority**: *number*
 
-*Defined in [src/webhooks/index.ts:201](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/webhooks/index.ts#L201)*
+*Defined in [src/webhooks/index.ts:213](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/webhooks/index.ts#L213)*

@@ -18,4 +18,4 @@
 
 • **url**: *string*
 
-*Defined in [src/customer/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/customer/structures.ts#L145)*
+*Defined in [src/customer/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/customer/structures.ts#L183)*

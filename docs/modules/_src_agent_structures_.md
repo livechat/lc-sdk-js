@@ -13,11 +13,15 @@
 
 ### Interfaces
 
+* [Agent](../interfaces/_src_agent_structures_.agent.md)
 * [AgentForTransfer](../interfaces/_src_agent_structures_.agentfortransfer.md)
 * [Application](../interfaces/_src_agent_structures_.application.md)
+* [ArchivedChat](../interfaces/_src_agent_structures_.archivedchat.md)
 * [ArchivesFilters](../interfaces/_src_agent_structures_.archivesfilters.md)
 * [ChangePushNotificationsRequest](../interfaces/_src_agent_structures_.changepushnotificationsrequest.md)
+* [Chat](../interfaces/_src_agent_structures_.chat.md)
 * [ChatsFilters](../interfaces/_src_agent_structures_.chatsfilters.md)
+* [ChatsSummary](../interfaces/_src_agent_structures_.chatssummary.md)
 * [CreateCustomerResponse](../interfaces/_src_agent_structures_.createcustomerresponse.md)
 * [CustomerFilters](../interfaces/_src_agent_structures_.customerfilters.md)
 * [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md)
@@ -62,6 +66,7 @@
 
 * [IntegerFilter](_src_agent_structures_.md#integerfilter)
 * [StringFilter](_src_agent_structures_.md#stringfilter)
+* [User](_src_agent_structures_.md#user)
 
 ## Type aliases
 
@@ -69,7 +74,7 @@
 
 Ƭ **IntegerFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹number›*
 
-*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L209)*
+*Defined in [src/agent/structures.ts:246](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/structures.ts#L246)*
 
 ___
 
@@ -77,4 +82,12 @@ ___
 
 Ƭ **StringFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹string›*
 
-*Defined in [src/agent/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/structures.ts#L207)*
+*Defined in [src/agent/structures.ts:244](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/structures.ts#L244)*
+
+___
+
+###  User
+
+Ƭ **User**: *[Agent](../interfaces/_src_agent_structures_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
+
+*Defined in [src/agent/structures.ts:17](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/structures.ts#L17)*

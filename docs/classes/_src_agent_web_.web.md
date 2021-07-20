@@ -72,7 +72,7 @@
 
 *Overrides [WebAPI](_src_internal_index_.webapi.md).[constructor](_src_internal_index_.webapi.md#constructor)*
 
-*Defined in [src/agent/web.ts:34](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L34)*
+*Defined in [src/agent/web.ts:34](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L34)*
 
 **Parameters:**
 
@@ -92,7 +92,7 @@ Name | Type |
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[APIURL](_src_internal_index_.webapi.md#apiurl)*
 
-*Defined in [src/internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L11)*
+*Defined in [src/internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/internal/index.ts#L11)*
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[clientID](_src_internal_index_.webapi.md#clientid)*
 
-*Defined in [src/internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L12)*
+*Defined in [src/internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/internal/index.ts#L12)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[tokenGetter](_src_internal_index_.webapi.md#tokengetter)*
 
-*Defined in [src/internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L15)*
+*Defined in [src/internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/internal/index.ts#L15)*
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[type](_src_internal_index_.webapi.md#type)*
 
-*Defined in [src/internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L14)*
+*Defined in [src/internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/internal/index.ts#L14)*
 
 ___
 
@@ -132,15 +132,15 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[version](_src_internal_index_.webapi.md#version)*
 
-*Defined in [src/internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L13)*
+*Defined in [src/internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/internal/index.ts#L13)*
 
 ## Methods
 
 ###  addUserToChat
 
-▸ **addUserToChat**(`chat_id`: string, `user_id`: string, `user_type`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **addUserToChat**(`chat_id`: string, `user_id`: string, `user_type`: string, `visibility`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:152](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L152)*
+*Defined in [src/agent/web.ts:153](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L153)*
 
 Adds a user to the chat. You can't add more than one customer user type to the chat.
 
@@ -150,7 +150,8 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `chat_id` | string | chat to add user to |
 `user_id` | string | user to add |
-`user_type` | string | customer or agent  |
+`user_type` | string | customer or agent |
+`visibility` | string | possible values: all, agents  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
@@ -160,7 +161,7 @@ ___
 
 ▸ **banCustomer**(`id`: string, `days`: number): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:361](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L361)*
+*Defined in [src/agent/web.ts:359](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L359)*
 
 Bans the customer for a specific period of time. It immediately disconnects all active sessions of this customer
 and does not accept new ones during the ban lifespan.
@@ -180,7 +181,7 @@ ___
 
 ▸ **createCustomer**(`opts?`: [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md)): *Promise‹[CreateCustomerResponse](../interfaces/_src_agent_structures_.createcustomerresponse.md)›*
 
-*Defined in [src/agent/web.ts:342](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L342)*
+*Defined in [src/agent/web.ts:340](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L340)*
 
 Creates a new Customer user type.
 
@@ -198,7 +199,7 @@ ___
 
 ▸ **deactivateChat**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:97](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L97)*
+*Defined in [src/agent/web.ts:97](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L97)*
 
 Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
 
@@ -216,7 +217,7 @@ ___
 
 ▸ **deleteChatProperties**(`id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:228](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L228)*
+*Defined in [src/agent/web.ts:226](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L226)*
 
 Deletes chat properties
 
@@ -235,7 +236,7 @@ ___
 
 ▸ **deleteEventProperties**(`chat_id`: string, `thread_id`: string, `event_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:288](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L288)*
+*Defined in [src/agent/web.ts:286](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L286)*
 
 Deletes event properties
 
@@ -256,7 +257,7 @@ ___
 
 ▸ **deleteThreadProperties**(`chat_id`: string, `thread_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:252](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L252)*
+*Defined in [src/agent/web.ts:250](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L250)*
 
 Deletes thread properties
 
@@ -276,7 +277,7 @@ ___
 
 ▸ **followChat**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:106](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L106)*
+*Defined in [src/agent/web.ts:106](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L106)*
 
 Marks a chat as followed. All changes to the chat will be sent to the requester until the chat is reactivated or unfollowed.
 Chat members don't need to follow their chats. They receive all chat pushes regardless of their follower status.
@@ -295,7 +296,7 @@ ___
 
 ▸ **followCustomer**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:424](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L424)*
+*Defined in [src/agent/web.ts:422](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L422)*
 
 Marks a customer as followed. As a result, the requester (an agent) will receive
 the info about all the changes related to that customer via pushes.
@@ -314,7 +315,7 @@ ___
 
 ▸ **getChat**(`chat_id`: string, `thread_id?`: undefined | string): *Promise‹[GetChatResponse](../interfaces/_src_agent_structures_.getchatresponse.md)›*
 
-*Defined in [src/agent/web.ts:61](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L61)*
+*Defined in [src/agent/web.ts:61](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L61)*
 
 It returns a thread that the current Agent has access to in a given chat.
 
@@ -333,7 +334,7 @@ ___
 
 ▸ **getCustomer**(`id`: string): *Promise‹[GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)›*
 
-*Defined in [src/agent/web.ts:326](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L326)*
+*Defined in [src/agent/web.ts:324](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L324)*
 
 Returns the info about the Customer with a given id.
 
@@ -351,7 +352,7 @@ ___
 
 ▸ **grantChatAccess**(`chat_id`: string, `access`: [ChatAccess](../interfaces/_src_objects_index_.chataccess.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:124](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L124)*
+*Defined in [src/agent/web.ts:124](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L124)*
 
 Grants access to a new chat without overwriting the existing ones.
 
@@ -370,7 +371,7 @@ ___
 
 ▸ **listAgentsForTransfer**(`chat_id`: string): *Promise‹[AgentForTransfer](../interfaces/_src_agent_structures_.agentfortransfer.md)[]›*
 
-*Defined in [src/agent/web.ts:415](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L415)*
+*Defined in [src/agent/web.ts:413](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L413)*
 
 It returns the Agents you can transfer a chat to. Agents are sorted ascendingly by the total number of active chats they have. Note that:
 - The method only returns Agents with statuses online and not accepting chats. Offline Agents aren't returned.
@@ -390,7 +391,7 @@ ___
 
 ▸ **listArchives**(`opts?`: [ListArchivesParameters](../interfaces/_src_agent_structures_.listarchivesparameters.md)): *Promise‹[ListArchivesResponse](../interfaces/_src_agent_structures_.listarchivesresponse.md)›*
 
-*Defined in [src/agent/web.ts:72](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L72)*
+*Defined in [src/agent/web.ts:72](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L72)*
 
 It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
 
@@ -411,7 +412,7 @@ ___
 
 ▸ **listChats**(`opts?`: [ListChatParameters](../interfaces/_src_agent_structures_.listchatparameters.md)): *Promise‹[ListChatsResponse](../interfaces/_src_agent_structures_.listchatsresponse.md)›*
 
-*Defined in [src/agent/web.ts:43](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L43)*
+*Defined in [src/agent/web.ts:43](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L43)*
 
 It returns summaries of the chats an Agent has access to.
 
@@ -429,7 +430,7 @@ ___
 
 ▸ **listCustomers**(`opts?`: [ListCustomersParameters](../interfaces/_src_agent_structures_.listcustomersparameters.md)): *Promise‹[ListCustomersResponse](../interfaces/_src_agent_structures_.listcustomersresponse.md)›*
 
-*Defined in [src/agent/web.ts:334](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L334)*
+*Defined in [src/agent/web.ts:332](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L332)*
 
 It returns the list of Customers.
 
@@ -447,7 +448,7 @@ ___
 
 ▸ **listRoutingStatuses**(`group_ids?`: number[]): *Promise‹[SetRoutingStatusResponse](../interfaces/_src_agent_structures_.setroutingstatusresponse.md)[]›*
 
-*Defined in [src/agent/web.ts:440](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L440)*
+*Defined in [src/agent/web.ts:438](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L438)*
 
 Returns the current routing status of each agent.
 
@@ -465,7 +466,7 @@ ___
 
 ▸ **listThreads**(`chat_id`: string, `opts?`: [ListThreadsParameters](../interfaces/_src_agent_structures_.listthreadsparameters.md)): *Promise‹[ListThreadsResponse](../interfaces/_src_agent_structures_.listthreadsresponse.md)›*
 
-*Defined in [src/agent/web.ts:52](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L52)*
+*Defined in [src/agent/web.ts:52](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L52)*
 
 Returns threads that the current Agent has access to in a given chat.
 
@@ -484,7 +485,7 @@ ___
 
 ▸ **markEventsAsSeen**(`chat_id`: string, `seen_up_to`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:379](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L379)*
+*Defined in [src/agent/web.ts:377](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L377)*
 
 Marks events as seen by Agent.
 
@@ -503,7 +504,7 @@ ___
 
 ▸ **multicast**(`recipients`: [MulticastRecipients](../interfaces/_src_agent_structures_.multicastrecipients.md), `content`: object, `type?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:405](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L405)*
+*Defined in [src/agent/web.ts:403](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L403)*
 
 This method serves for the chat-unrelated communication. Messages sent using multicast are not being saved.
 For example, it could be used in an app that sends notifications to Agents or Customers,
@@ -525,7 +526,7 @@ ___
 
 ▸ **removeUserFromChat**(`chat_id`: string, `user_id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:168](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L168)*
+*Defined in [src/agent/web.ts:166](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L166)*
 
 Removes a user from chat. Removing customer user type is not allowed. It's always possible to remove the requester from the chat.
 
@@ -544,7 +545,7 @@ ___
 
 ▸ **resumeChat**(`param`: string | [ResumeChatParameters](../interfaces/_src_agent_structures_.resumechatparameters.md)): *Promise‹[ResumeChatResponse](../interfaces/_src_agent_structures_.resumechatresponse.md)›*
 
-*Defined in [src/agent/web.ts:88](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L88)*
+*Defined in [src/agent/web.ts:88](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L88)*
 
 Restarts an archived chat
 
@@ -562,7 +563,7 @@ ___
 
 ▸ **revokeChatAccess**(`chat_id`: string, `access`: [ChatAccess](../interfaces/_src_objects_index_.chataccess.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:133](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L133)*
+*Defined in [src/agent/web.ts:133](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L133)*
 
 Revokes access to chat
 
@@ -583,7 +584,7 @@ ___
 
 *Inherited from [WebAPI](_src_internal_index_.webapi.md).[send](_src_internal_index_.webapi.md#send)*
 
-*Defined in [src/internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/internal/index.ts#L25)*
+*Defined in [src/internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/internal/index.ts#L25)*
 
 **Parameters:**
 
@@ -600,7 +601,7 @@ ___
 
 ▸ **sendEvent**(`chat_id`: string, `event`: [Event](../modules/_src_objects_index_.md#event), `attach_to_last_thread?`: undefined | false | true): *Promise‹[SendEventResponse](../interfaces/_src_agent_structures_.sendeventresponse.md)›*
 
-*Defined in [src/agent/web.ts:183](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L183)*
+*Defined in [src/agent/web.ts:181](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L181)*
 
 Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
 It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
@@ -622,7 +623,7 @@ ___
 
 ▸ **sendRichMessagePostback**(`opts`: [SendRichMessagePostbackParameters](../interfaces/_src_agent_structures_.sendrichmessagepostbackparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:210](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L210)*
+*Defined in [src/agent/web.ts:208](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L208)*
 
 Sends postback for rich message
 
@@ -638,9 +639,9 @@ ___
 
 ###  sendTypingIndicator
 
-▸ **sendTypingIndicator**(`chat_id`: string, `is_typing`: boolean, `recipients?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
+▸ **sendTypingIndicator**(`chat_id`: string, `is_typing`: boolean, `visibility?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:389](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L389)*
+*Defined in [src/agent/web.ts:387](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L387)*
 
 Sends typing indicator
 
@@ -650,7 +651,7 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `chat_id` | string | chat for typing indicator |
 `is_typing` | boolean | status of typing |
-`recipients?` | undefined &#124; string | possible values: all, agents  |
+`visibility?` | undefined &#124; string | possible values: all, agents  |
 
 **Returns:** *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
@@ -660,7 +661,7 @@ ___
 
 ▸ **setRoutingStatus**(`status`: [RoutingStatus](../enums/_src_objects_index_.routingstatus.md), `agent_id?`: undefined | string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:370](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L370)*
+*Defined in [src/agent/web.ts:368](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L368)*
 
 Changes the status of an Agent or a Bot Agent.
 
@@ -679,7 +680,7 @@ ___
 
 ▸ **startChat**(`opts?`: [StartChatParameters](../interfaces/_src_agent_structures_.startchatparameters.md)): *Promise‹[StartChatResponse](../interfaces/_src_agent_structures_.startchatresponse.md)›*
 
-*Defined in [src/agent/web.ts:80](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L80)*
+*Defined in [src/agent/web.ts:80](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L80)*
 
 Starts a chat
 
@@ -697,7 +698,7 @@ ___
 
 ▸ **tagThread**(`chat_id`: string, `thread_id`: string, `tag`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:308](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L308)*
+*Defined in [src/agent/web.ts:306](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L306)*
 
 Tags thread with given tag
 
@@ -717,7 +718,7 @@ ___
 
 ▸ **transferChat**(`id`: string, `opts?`: [TransferChatParameters](../interfaces/_src_agent_structures_.transferchatparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:142](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L142)*
+*Defined in [src/agent/web.ts:142](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L142)*
 
 Transfers a chat to an Agent or a group.
 
@@ -736,7 +737,7 @@ ___
 
 ▸ **unfollowChat**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:115](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L115)*
+*Defined in [src/agent/web.ts:115](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L115)*
 
 Removes the requester from the chat followers. After that, only key changes to the chat (like transfer_chat or close_active_thread)
 will be sent to the requester. Chat members cannot unfollow the chat.
@@ -755,7 +756,7 @@ ___
 
 ▸ **unfollowCustomer**(`id`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:432](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L432)*
+*Defined in [src/agent/web.ts:430](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L430)*
 
 Removes the agent from the list of customer's followers.
 
@@ -773,7 +774,7 @@ ___
 
 ▸ **untagThread**(`chat_id`: string, `thread_id`: string, `tag`: string): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:318](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L318)*
+*Defined in [src/agent/web.ts:316](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L316)*
 
 Removes tag from thread
 
@@ -793,7 +794,7 @@ ___
 
 ▸ **updateChatProperties**(`id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:219](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L219)*
+*Defined in [src/agent/web.ts:217](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L217)*
 
 Updates chat properties
 
@@ -812,7 +813,7 @@ ___
 
 ▸ **updateCustomer**(`id`: string, `opts`: [CustomerParameters](../interfaces/_src_agent_structures_.customerparameters.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:351](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L351)*
+*Defined in [src/agent/web.ts:349](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L349)*
 
 Updates Customer's properties.
 
@@ -831,7 +832,7 @@ ___
 
 ▸ **updateEventProperties**(`chat_id`: string, `thread_id`: string, `event_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:267](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L267)*
+*Defined in [src/agent/web.ts:265](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L265)*
 
 Updates event properties
 
@@ -852,7 +853,7 @@ ___
 
 ▸ **updateThreadProperties**(`chat_id`: string, `thread_id`: string, `properties`: [Properties](../interfaces/_src_objects_index_.properties.md)): *Promise‹[EmptyResponse](../interfaces/_src_agent_structures_.emptyresponse.md)›*
 
-*Defined in [src/agent/web.ts:238](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L238)*
+*Defined in [src/agent/web.ts:236](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L236)*
 
 Updates thread properties
 
@@ -872,7 +873,7 @@ ___
 
 ▸ **uploadFile**(`file`: string | Buffer, `filename`: string): *Promise‹[UploadFileResponse](../interfaces/_src_agent_structures_.uploadfileresponse.md)›*
 
-*Defined in [src/agent/web.ts:196](https://github.com/livechat/lc-sdk-js/blob/04572ce/src/agent/web.ts#L196)*
+*Defined in [src/agent/web.ts:194](https://github.com/livechat/lc-sdk-js/blob/c561adf/src/agent/web.ts#L194)*
 
 Uploads a file to the server as a temporary file. It returns a URL that expires after 24 hours unless the URL is used in send_event.
 
