@@ -130,16 +130,14 @@ export default class Web extends WebAPI {
    * @param chat_id - chat to add user to
    * @param user_id - user to add
    * @param user_type - customer or agent
+   * @param visibility - possible values: all, agents
    */
-  async addUserToChat(
-    chat_id: string,
-    user_id: string,
-    user_type: string,
-  ): Promise<EmptyResponse> {
+  async addUserToChat(chat_id: string, user_id: string, user_type: string, visibility: string): Promise<EmptyResponse> {
     return this.send("add_user_to_chat", {
       chat_id,
       user_id,
       user_type,
+      visibility,
     });
   }
   /**
@@ -366,13 +364,13 @@ export default class Web extends WebAPI {
    * Sends typing indicator
    * @param chat_id - chat for typing indicator
    * @param is_typing - status of typing
-   * @param recipients - possible values: all, agents
+   * @param visibility - possible values: all, agents
    */
-  async sendTypingIndicator(chat_id: string, is_typing: boolean, recipients?: string): Promise<EmptyResponse> {
+  async sendTypingIndicator(chat_id: string, is_typing: boolean, visibility?: string): Promise<EmptyResponse> {
     return this.send("send_typing_indicator", {
       chat_id,
       is_typing,
-      recipients,
+      visibility,
     });
   }
 

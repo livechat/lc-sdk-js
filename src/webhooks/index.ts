@@ -1,4 +1,7 @@
-import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus, Filter } from "../objects";
+import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter, Thread } from "../objects";
+import { Agent } from "../agent/structures";
+
+type User = Agent | Customer;
 
 export interface Webhook {
   webhook_id: string;
@@ -7,6 +10,15 @@ export interface Webhook {
   license_id: string;
   additional_data: object;
   payload: WebhookPayload;
+}
+
+export interface Chat {
+  id: string;
+  users: User[];
+  threads: Thread[];
+  properties?: Properties;
+  access: Access;
+  is_followed: boolean;
 }
 
 type WebhookPayload =
@@ -189,10 +201,13 @@ interface GroupAssignment {
   priority: number;
 }
 
-type WorkScheduler = Record<string, {
-  start: string;
-  end: string;
-}>;
+type WorkScheduler = Record<
+  string,
+  {
+    start: string;
+    end: string;
+  }
+>;
 
 export interface AgentCreated {
   id: string;
@@ -286,7 +301,6 @@ export interface GroupDeleted {
   id: number;
 }
 
-
 export interface AutoAccessAdded {
   id: string;
   description: string;
@@ -294,14 +308,17 @@ export interface AutoAccessAdded {
     group_ids: number[];
   };
   conditions: {
-    url: Filter<{ value: string; exact_match: boolean; }>;
-    domain: Filter<{ value: string; exact_match: boolean; }>;
-    geolocation: Pick<Filter<{
-      country?: string;
-      country_code?: string;
-      region?: string;
-      city?: string;
-    }>, 'values'>
+    url: Filter<{ value: string; exact_match: boolean }>;
+    domain: Filter<{ value: string; exact_match: boolean }>;
+    geolocation: Pick<
+      Filter<{
+        country?: string;
+        country_code?: string;
+        region?: string;
+        city?: string;
+      }>,
+      "values"
+    >;
   };
   next_id?: string;
 }
@@ -317,14 +334,17 @@ export interface AutoAccessUpdated {
     group_ids: number[];
   };
   conditions: {
-    url: Filter<{ value: string; exact_match: boolean; }>;
-    domain: Filter<{ value: string; exact_match: boolean; }>;
-    geolocation: Pick<Filter<{
-      country?: string;
-      country_code?: string;
-      region?: string;
-      city?: string;
-    }>, 'values'>
+    url: Filter<{ value: string; exact_match: boolean }>;
+    domain: Filter<{ value: string; exact_match: boolean }>;
+    geolocation: Pick<
+      Filter<{
+        country?: string;
+        country_code?: string;
+        region?: string;
+        city?: string;
+      }>,
+      "values"
+    >;
   };
   next_id?: string;
 }

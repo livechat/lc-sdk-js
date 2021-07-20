@@ -1,19 +1,56 @@
 import { ApiVersion } from "../internal/constants";
 import {
   Access,
-  User,
   Properties,
   SortOrder,
   Thread,
   Customer,
   InitialChat,
-  ChatsSummary,
   MyProfile,
   RoutingStatus,
   Filter,
-  ArchivedChat,
+  ArchivedThread,
+  LastEventPerType,
+  LastThreadSummary,
 } from "../objects";
 
+export type User = Agent | Customer;
+
+export interface Agent {
+  id: string;
+  type: string;
+  name: string;
+  email: string;
+  present: boolean;
+  events_seen_up_to: string;
+  avatar: string;
+  routing_status: string;
+  visibility?: string;
+}
+
+export interface Chat {
+  id: string;
+  users: User[];
+  threads: Thread[];
+  properties?: Properties;
+  access: Access;
+  is_followed: boolean;
+}
+
+export interface ArchivedChat extends Chat {
+  threads: ArchivedThread[];
+}
+
+export interface ChatsSummary {
+  id: string;
+  last_event_per_type: LastEventPerType;
+  users: User[];
+  last_thread_summary: LastThreadSummary;
+  properties: Properties;
+  access: Access;
+  order: number;
+  is_followed: boolean;
+}
 export interface EmptyResponse {}
 
 export interface ListChatParameters {
@@ -572,5 +609,5 @@ export enum Pushes {
   /**
    * Informs that an auto access has been updated.
    */
-  AutoAccessUpdated = "auto_access_updated"
+  AutoAccessUpdated = "auto_access_updated",
 }
