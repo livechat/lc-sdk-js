@@ -93,9 +93,13 @@ export default class Web extends WebAPI {
   /**
    * Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
    * @param id - chat ID to deactivate
+   * @param ignore_requester_presence - if true, allows to deactivate the chat even if the requester is not present in the chat
    */
-  async deactivateChat(id: string): Promise<EmptyResponse> {
-    return this.send("deactivate_chat", { id });
+  async deactivateChat(id: string, ignore_requester_presence?: boolean): Promise<EmptyResponse> {
+    return this.send("deactivate_chat", {
+      id,
+      ignore_requester_presence
+    });
   }
 
   /**
@@ -119,7 +123,7 @@ export default class Web extends WebAPI {
   /**
    * Transfers a chat to an Agent or a group.
    * @param id - chat to transfer
-   * @param opts - specific target or force flag
+   * @param opts - specific request flags
    */
   async transferChat(id: string, opts?: TransferChatParameters): Promise<EmptyResponse> {
     return this.send("transfer_chat", { id, ...opts });
@@ -131,25 +135,29 @@ export default class Web extends WebAPI {
    * @param user_id - user to add
    * @param user_type - customer or agent
    * @param visibility - possible values: all, agents
+   * @param ignore_requester_presence - if true, allows to add user to chat even if the requester is not present in the chat
    */
-  async addUserToChat(chat_id: string, user_id: string, user_type: string, visibility: string): Promise<EmptyResponse> {
+  async addUserToChat(chat_id: string, user_id: string, user_type: string, visibility: string, ignore_requester_presence?: boolean): Promise<EmptyResponse> {
     return this.send("add_user_to_chat", {
       chat_id,
       user_id,
       user_type,
       visibility,
+      ignore_requester_presence,
     });
   }
   /**
    * Removes a user from chat. Removing customer user type is not allowed. It's always possible to remove the requester from the chat.
    * @param chat_id - chat to remove user from
    * @param user_id - user to remove
+   * @param ignore_requester_presence - if true, allows to remove user from chat even if the requester is not present in the chat
    */
-  async removeUserFromChat(chat_id: string, user_id: string): Promise<EmptyResponse> {
+  async removeUserFromChat(chat_id: string, user_id: string, ignore_requester_presence?: boolean): Promise<EmptyResponse> {
     return this.send("remove_user_from_chat", {
       chat_id,
       user_id,
       user_type: "agent",
+      ignore_requester_presence,
     });
   }
   /**

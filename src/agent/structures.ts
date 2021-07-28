@@ -33,7 +33,7 @@ export interface ChatsSummary extends CommonChatSummary {
   users: User[];
 }
 
-export interface EmptyResponse {}
+export interface EmptyResponse { }
 
 export interface ListChatParameters {
   filters?: ChatsFilters;
@@ -160,7 +160,8 @@ export interface ResumeChatResponse {
 
 export interface TransferChatParameters {
   target?: TransferTarget;
-  force?: boolean;
+  ignore_requester_presence?: boolean;
+  ignore_agents_availability?: boolean;
 }
 
 interface TransferTarget {
