@@ -1,7 +1,5 @@
 import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter, Thread } from "../objects";
-import { Agent } from "../agent/structures";
-
-type User = Agent | Customer;
+import { User, Chat } from "../agent/structures";
 
 export interface Webhook {
   webhook_id: string;
@@ -10,15 +8,6 @@ export interface Webhook {
   license_id: string;
   additional_data: object;
   payload: WebhookPayload;
-}
-
-export interface Chat {
-  id: string;
-  users: User[];
-  threads: Thread[];
-  properties?: Properties;
-  access: Access;
-  is_followed: boolean;
 }
 
 type WebhookPayload =
