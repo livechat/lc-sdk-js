@@ -26,7 +26,7 @@
 
 • **author_id**: *string*
 
-*Defined in [src/objects/index.ts:70](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L70)*
+*Defined in [src/objects/index.ts:107](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L107)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **created_at**: *string*
 
-*Defined in [src/objects/index.ts:71](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L71)*
+*Defined in [src/objects/index.ts:108](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L108)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **custom_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:68](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L68)*
+*Defined in [src/objects/index.ts:105](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L105)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **elements**? : *[Element](_src_objects_index_.element.md)[]*
 
-*Defined in [src/objects/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L75)*
+*Defined in [src/objects/index.ts:112](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L112)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/objects/index.ts:67](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L67)*
+*Defined in [src/objects/index.ts:104](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L104)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **properties**? : *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/objects/index.ts:73](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L73)*
+*Defined in [src/objects/index.ts:110](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L110)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **recipients**: *string*
 
-*Defined in [src/objects/index.ts:72](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L72)*
+*Defined in [src/objects/index.ts:109](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L109)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **template_id**: *string*
 
-*Defined in [src/objects/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L74)*
+*Defined in [src/objects/index.ts:111](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L111)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:69](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L69)*
+*Defined in [src/objects/index.ts:106](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L106)*

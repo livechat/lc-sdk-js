@@ -22,7 +22,7 @@
 
 • **filters**? : *[CustomerFilters](_src_agent_structures_.customerfilters.md)*
 
-*Defined in [src/agent/structures.ts:180](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L180)*
+*Defined in [src/agent/structures.ts:195](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L195)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **limit**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:178](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L178)*
+*Defined in [src/agent/structures.ts:193](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L193)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:177](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L177)*
+*Defined in [src/agent/structures.ts:192](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L192)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **sort_by**? : *[CustomerSortBy](../enums/_src_agent_structures_.customersortby.md)*
 
-*Defined in [src/agent/structures.ts:181](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L181)*
+*Defined in [src/agent/structures.ts:196](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L196)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **sort_order**? : *[SortOrder](../enums/_src_objects_index_.sortorder.md)*
 
-*Defined in [src/agent/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L179)*
+*Defined in [src/agent/structures.ts:194](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L194)*

@@ -24,7 +24,7 @@
 
 • **alternative_text**: *string*
 
-*Defined in [src/objects/index.ts:102](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L102)*
+*Defined in [src/objects/index.ts:139](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L139)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **content_type**: *string*
 
-*Defined in [src/objects/index.ts:98](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L98)*
+*Defined in [src/objects/index.ts:135](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L135)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **height**: *number*
 
-*Defined in [src/objects/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L101)*
+*Defined in [src/objects/index.ts:138](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L138)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/objects/index.ts:96](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L96)*
+*Defined in [src/objects/index.ts:133](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L133)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **size**: *number*
 
-*Defined in [src/objects/index.ts:99](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L99)*
+*Defined in [src/objects/index.ts:136](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L136)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/objects/index.ts:97](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L97)*
+*Defined in [src/objects/index.ts:134](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L134)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **width**: *number*
 
-*Defined in [src/objects/index.ts:100](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L100)*
+*Defined in [src/objects/index.ts:137](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L137)*

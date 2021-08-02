@@ -17,7 +17,7 @@
 
 • **Chatting**: = "chatting"
 
-*Defined in [src/agent/structures.ts:283](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L283)*
+*Defined in [src/agent/structures.ts:298](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L298)*
 
 ___
 
@@ -25,7 +25,7 @@ ___
 
 • **Invited**: = "invited"
 
-*Defined in [src/agent/structures.ts:284](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L284)*
+*Defined in [src/agent/structures.ts:299](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L299)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **My**: = "my"
 
-*Defined in [src/agent/structures.ts:282](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L282)*
+*Defined in [src/agent/structures.ts:297](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L297)*
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 • **Online**: = "online"
 
-*Defined in [src/agent/structures.ts:285](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L285)*
+*Defined in [src/agent/structures.ts:300](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L300)*

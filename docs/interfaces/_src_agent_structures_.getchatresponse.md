@@ -23,7 +23,7 @@
 
 • **access**: *[Access](_src_objects_index_.access.md)*
 
-*Defined in [src/agent/structures.ts:65](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L65)*
+*Defined in [src/agent/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L84)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/agent/structures.ts:61](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L61)*
+*Defined in [src/agent/structures.ts:80](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L80)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **is_followed**: *boolean*
 
-*Defined in [src/agent/structures.ts:66](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L66)*
+*Defined in [src/agent/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L85)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **properties**? : *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/agent/structures.ts:64](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L64)*
+*Defined in [src/agent/structures.ts:83](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L83)*
 
 ___
 
@@ -55,12 +55,12 @@ ___
 
 • **thread**: *[Thread](_src_objects_index_.thread.md)*
 
-*Defined in [src/agent/structures.ts:63](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L63)*
+*Defined in [src/agent/structures.ts:82](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L82)*
 
 ___
 
 ###  users
 
-• **users**: *[User](../modules/_src_objects_index_.md#user)[]*
+• **users**: *[User](../modules/_src_agent_structures_.md#user)[]*
 
-*Defined in [src/agent/structures.ts:62](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L62)*
+*Defined in [src/agent/structures.ts:81](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L81)*

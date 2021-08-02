@@ -24,7 +24,7 @@
 
 • **postback_id**: *string*
 
-*Defined in [src/objects/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L87)*
+*Defined in [src/objects/index.ts:124](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L124)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **target**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L92)*
+*Defined in [src/objects/index.ts:129](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L129)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **text**: *string*
 
-*Defined in [src/objects/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L86)*
+*Defined in [src/objects/index.ts:123](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L123)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L89)*
+*Defined in [src/objects/index.ts:126](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L126)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **user_ids**: *string[]*
 
-*Defined in [src/objects/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L88)*
+*Defined in [src/objects/index.ts:125](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L125)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **value**: *string*
 
-*Defined in [src/objects/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L90)*
+*Defined in [src/objects/index.ts:127](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L127)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **webview_height**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/objects/index.ts#L91)*
+*Defined in [src/objects/index.ts:128](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L128)*
