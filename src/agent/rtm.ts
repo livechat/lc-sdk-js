@@ -173,7 +173,7 @@ export default class RTM extends RTMAPI {
    * Adds a user to the chat. You can't add more than one customer user type to the chat.
    * @param chat_id - chat to add user to
    * @param user_id - user to add
-   * @param user_type - customer or agent   
+   * @param user_type - customer or agent
    * @param visibility - possible values: all, agents
    */
   async addUserToChat(chat_id: string, user_id: string, user_type: string, visibility: string): Promise<EmptyResponse> {

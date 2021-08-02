@@ -8,7 +8,7 @@ import {
   GroupStatus,
   Customer,
   User,
-  ChatsSummary
+  ChatsSummary,
 } from "../objects";
 
 export interface EmptyResponse {}

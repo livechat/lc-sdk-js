@@ -12,7 +12,7 @@ import {
   ArchivedThread,
   Agent as CommonAgent,
   Chat as CommonChat,
-  ChatsSummary as CommonChatSummary
+  ChatsSummary as CommonChatSummary,
 } from "../objects";
 
 export interface Agent extends CommonAgent {
@@ -26,7 +26,7 @@ export interface Chat extends CommonChat {
 }
 
 export interface ArchivedChat extends Chat {
-	threads: ArchivedThread[];
+  threads: ArchivedThread[];
 }
 
 export interface ChatsSummary extends CommonChatSummary {
