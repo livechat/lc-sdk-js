@@ -22,7 +22,7 @@
 
 • **buttons**: *object[]*
 
-*Defined in [src/customer/structures.ts:203](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L203)*
+*Defined in [src/customer/structures.ts:203](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/customer/structures.ts#L203)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **integrations**: *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/customer/structures.ts:213](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L213)*
+*Defined in [src/customer/structures.ts:213](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/customer/structures.ts#L213)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **prechat_form**: *[Form](_src_customer_structures_.form.md)*
 
-*Defined in [src/customer/structures.ts:215](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L215)*
+*Defined in [src/customer/structures.ts:215](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/customer/structures.ts#L215)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **properties**: *object*
 
-*Defined in [src/customer/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L209)*
+*Defined in [src/customer/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/customer/structures.ts#L209)*
 
 #### Type declaration:
 
@@ -60,4 +60,4 @@ ___
 
 • **ticket_form**: *[Form](_src_customer_structures_.form.md)*
 
-*Defined in [src/customer/structures.ts:214](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/customer/structures.ts#L214)*
+*Defined in [src/customer/structures.ts:214](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/customer/structures.ts#L214)*

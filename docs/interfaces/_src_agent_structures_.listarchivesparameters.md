@@ -19,9 +19,9 @@
 
 ### `Optional` filters
 
-• **filters**? : *undefined | object*
+• **filters**? : *[ArchivesFilters](_src_agent_structures_.archivesfilters.md)*
 
-*Defined in [src/agent/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L70)*
+*Defined in [src/agent/structures.ts:89](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L89)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **limit**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L73)*
+*Defined in [src/agent/structures.ts:92](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L92)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L71)*
+*Defined in [src/agent/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L90)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **sort_order**? : *[SortOrder](../enums/_src_objects_index_.sortorder.md)*
 
-*Defined in [src/agent/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L72)*
+*Defined in [src/agent/structures.ts:91](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L91)*

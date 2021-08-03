@@ -126,7 +126,7 @@ export interface Webhook {
   filters?: WebhookFilters;
 }
 
-type WebhookSourceType = "my_client" | "other_clients" | "system"
+type WebhookSourceType = "my_client" | "other_clients" | "system";
 
 export interface WebhookFilters {
   author_type?: string;

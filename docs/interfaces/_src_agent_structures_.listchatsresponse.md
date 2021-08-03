@@ -19,9 +19,9 @@
 
 ###  chats_summary
 
-• **chats_summary**: *[ChatsSummary](_src_objects_index_.chatssummary.md)[]*
+• **chats_summary**: *[ChatsSummary](_src_agent_structures_.chatssummary.md)[]*
 
-*Defined in [src/agent/structures.ts:36](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L36)*
+*Defined in [src/agent/structures.ts:55](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L55)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **found_chats**: *number*
 
-*Defined in [src/agent/structures.ts:37](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L37)*
+*Defined in [src/agent/structures.ts:56](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L56)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **next_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:35](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L35)*
+*Defined in [src/agent/structures.ts:54](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L54)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **previuous_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:34](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L34)*
+*Defined in [src/agent/structures.ts:53](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L53)*

@@ -10,4 +10,4 @@
 
 * \[ **namespace**: *string*\]: object
 
-* \[ **name**: *string*\]: [FilterType](_src_agent_structures_.filtertype.md)
+* \[ **name**: *string*\]: Omit‹[FilterType](_src_agent_structures_.filtertype.md)‹any›, "require_every_value"›

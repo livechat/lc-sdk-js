@@ -20,7 +20,7 @@
 
 • **enabled**: *boolean*
 
-*Defined in [src/agent/structures.ts:316](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L316)*
+*Defined in [src/agent/structures.ts:331](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L331)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **firebase_token**: *string*
 
-*Defined in [src/agent/structures.ts:314](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L314)*
+*Defined in [src/agent/structures.ts:329](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L329)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **platform**: *string*
 
-*Defined in [src/agent/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/aff69b2/src/agent/structures.ts#L315)*
+*Defined in [src/agent/structures.ts:330](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L330)*

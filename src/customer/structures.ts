@@ -1,14 +1,14 @@
 import { ApiVersion } from "../internal/constants";
 import {
   SortOrder,
-  ChatsSummary,
   Thread,
-  User,
   Properties,
   Access,
   InitialChat,
   GroupStatus,
   Customer,
+  User,
+  ChatsSummary,
 } from "../objects";
 
 export interface EmptyResponse {}

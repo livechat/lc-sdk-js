@@ -1,10 +1,10 @@
-[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/objects/index"](../modules/_src_objects_index_.md) › [ArchivedChat](_src_objects_index_.archivedchat.md)
+[@livechat/lc-sdk-js](../README.md) › [Globals](../globals.md) › ["src/agent/structures"](../modules/_src_agent_structures_.md) › [ArchivedChat](_src_agent_structures_.archivedchat.md)
 
 # Interface: ArchivedChat
 
 ## Hierarchy
 
-* [Chat](_src_objects_index_.chat.md)
+  ↳ [Chat](_src_agent_structures_.chat.md)
 
   ↳ **ArchivedChat**
 
@@ -12,12 +12,12 @@
 
 ### Properties
 
-* [access](_src_objects_index_.archivedchat.md#access)
-* [id](_src_objects_index_.archivedchat.md#id)
-* [is_followed](_src_objects_index_.archivedchat.md#is_followed)
-* [properties](_src_objects_index_.archivedchat.md#optional-properties)
-* [threads](_src_objects_index_.archivedchat.md#threads)
-* [users](_src_objects_index_.archivedchat.md#users)
+* [access](_src_agent_structures_.archivedchat.md#access)
+* [id](_src_agent_structures_.archivedchat.md#id)
+* [is_followed](_src_agent_structures_.archivedchat.md#is_followed)
+* [properties](_src_agent_structures_.archivedchat.md#optional-properties)
+* [threads](_src_agent_structures_.archivedchat.md#threads)
+* [users](_src_agent_structures_.archivedchat.md#users)
 
 ## Properties
 
@@ -67,14 +67,16 @@ ___
 
 *Overrides [Chat](_src_objects_index_.chat.md).[threads](_src_objects_index_.chat.md#threads)*
 
-*Defined in [src/objects/index.ts:24](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L24)*
+*Defined in [src/agent/structures.ts:29](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L29)*
 
 ___
 
 ###  users
 
-• **users**: *[User](../modules/_src_objects_index_.md#user)[]*
+• **users**: *[User](../modules/_src_agent_structures_.md#user)[]*
 
-*Inherited from [Chat](_src_objects_index_.chat.md).[users](_src_objects_index_.chat.md#users)*
+*Inherited from [Chat](_src_agent_structures_.chat.md).[users](_src_agent_structures_.chat.md#users)*
 
-*Defined in [src/objects/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L16)*
+*Overrides [Chat](_src_objects_index_.chat.md).[users](_src_objects_index_.chat.md#users)*
+
+*Defined in [src/agent/structures.ts:25](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L25)*
