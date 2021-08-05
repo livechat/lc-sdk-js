@@ -27,7 +27,7 @@
 
 *Inherited from [Chat](_src_objects_index_.chat.md).[access](_src_objects_index_.chat.md#access)*
 
-*Defined in [src/objects/index.ts:19](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L19)*
+*Defined in [src/objects/index.ts:19](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L19)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 *Inherited from [Chat](_src_objects_index_.chat.md).[id](_src_objects_index_.chat.md#id)*
 
-*Defined in [src/objects/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L15)*
+*Defined in [src/objects/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L15)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 *Inherited from [Chat](_src_objects_index_.chat.md).[is_followed](_src_objects_index_.chat.md#is_followed)*
 
-*Defined in [src/objects/index.ts:20](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L20)*
+*Defined in [src/objects/index.ts:20](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L20)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 *Inherited from [Chat](_src_objects_index_.chat.md).[properties](_src_objects_index_.chat.md#optional-properties)*
 
-*Defined in [src/objects/index.ts:18](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L18)*
+*Defined in [src/objects/index.ts:18](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L18)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 *Overrides [Chat](_src_objects_index_.chat.md).[threads](_src_objects_index_.chat.md#threads)*
 
-*Defined in [src/objects/index.ts:24](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L24)*
+*Defined in [src/objects/index.ts:24](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L24)*
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 *Inherited from [Chat](_src_objects_index_.chat.md).[users](_src_objects_index_.chat.md#users)*
 
-*Defined in [src/objects/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L16)*
+*Defined in [src/objects/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L16)*

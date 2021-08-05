@@ -18,4 +18,4 @@
 
 • **id**: *string*
 
-*Defined in [src/webhooks/index.ts:235](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/webhooks/index.ts#L235)*
+*Defined in [src/webhooks/index.ts:235](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L235)*

@@ -48,4 +48,4 @@
 
 Ƭ **WebhookSourceType**: *"my_client" | "other_clients" | "system"*
 
-*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/configuration/structures.ts#L129)*
+*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/configuration/structures.ts#L129)*
