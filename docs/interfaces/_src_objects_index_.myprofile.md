@@ -26,7 +26,7 @@
 
 • **avatar**: *string*
 
-*Defined in [src/objects/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L184)*
+*Defined in [src/objects/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L184)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **email**: *string*
 
-*Defined in [src/objects/index.ts:181](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L181)*
+*Defined in [src/objects/index.ts:181](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L181)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **events_seen_up_to**: *string*
 
-*Defined in [src/objects/index.ts:183](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L183)*
+*Defined in [src/objects/index.ts:183](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L183)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/objects/index.ts:178](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L178)*
+*Defined in [src/objects/index.ts:178](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L178)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/objects/index.ts:180](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L180)*
+*Defined in [src/objects/index.ts:180](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L180)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **permission**: *string*
 
-*Defined in [src/objects/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L186)*
+*Defined in [src/objects/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L186)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **present**: *boolean*
 
-*Defined in [src/objects/index.ts:182](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L182)*
+*Defined in [src/objects/index.ts:182](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L182)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **routing_status**: *string*
 
-*Defined in [src/objects/index.ts:185](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L185)*
+*Defined in [src/objects/index.ts:185](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L185)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/objects/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L179)*
+*Defined in [src/objects/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L179)*

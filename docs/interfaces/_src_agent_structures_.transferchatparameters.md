@@ -10,16 +10,25 @@
 
 ### Properties
 
-* [force](_src_agent_structures_.transferchatparameters.md#optional-force)
+* [ignore_agents_availability](_src_agent_structures_.transferchatparameters.md#optional-ignore_agents_availability)
+* [ignore_requester_presence](_src_agent_structures_.transferchatparameters.md#optional-ignore_requester_presence)
 * [target](_src_agent_structures_.transferchatparameters.md#optional-target)
 
 ## Properties
 
-### `Optional` force
+### `Optional` ignore_agents_availability
 
-• **force**? : *undefined | false | true*
+• **ignore_agents_availability**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:163](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L163)*
+*Defined in [src/agent/structures.ts:164](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L164)*
+
+___
+
+### `Optional` ignore_requester_presence
+
+• **ignore_requester_presence**? : *undefined | false | true*
+
+*Defined in [src/agent/structures.ts:163](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L163)*
 
 ___
 
@@ -27,4 +36,4 @@ ___
 
 • **target**? : *[TransferTarget](_src_agent_structures_.transfertarget.md)*
 
-*Defined in [src/agent/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L162)*
+*Defined in [src/agent/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L162)*

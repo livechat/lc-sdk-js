@@ -18,7 +18,7 @@
 
 Ƭ **TokenGetter**: *function*
 
-*Defined in [src/authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/authorization/index.ts#L7)*
+*Defined in [src/authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/authorization/index.ts#L7)*
 
 #### Type declaration:
 

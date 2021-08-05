@@ -20,7 +20,7 @@
 
 • **chats_summary**: *[ChatsSummary](_src_agent_structures_.chatssummary.md)*
 
-*Defined in [src/agent/structures.ts:316](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L316)*
+*Defined in [src/agent/structures.ts:317](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L317)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **license**: *[License](_src_agent_structures_.license.md)*
 
-*Defined in [src/agent/structures.ts:314](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L314)*
+*Defined in [src/agent/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L315)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **my_profile**: *[MyProfile](_src_objects_index_.myprofile.md)*
 
-*Defined in [src/agent/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L315)*
+*Defined in [src/agent/structures.ts:316](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L316)*

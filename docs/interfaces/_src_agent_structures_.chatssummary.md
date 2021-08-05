@@ -29,7 +29,7 @@
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[access](_src_objects_index_.chatssummary.md#access)*
 
-*Defined in [src/objects/index.ts:33](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L33)*
+*Defined in [src/objects/index.ts:33](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L33)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[id](_src_objects_index_.chatssummary.md#id)*
 
-*Defined in [src/objects/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L28)*
+*Defined in [src/objects/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L28)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[is_followed](_src_objects_index_.chatssummary.md#is_followed)*
 
-*Defined in [src/objects/index.ts:35](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L35)*
+*Defined in [src/objects/index.ts:35](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L35)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[last_event_per_type](_src_objects_index_.chatssummary.md#last_event_per_type)*
 
-*Defined in [src/objects/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L29)*
+*Defined in [src/objects/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L29)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[last_thread_summary](_src_objects_index_.chatssummary.md#last_thread_summary)*
 
-*Defined in [src/objects/index.ts:31](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L31)*
+*Defined in [src/objects/index.ts:31](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L31)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[order](_src_objects_index_.chatssummary.md#order)*
 
-*Defined in [src/objects/index.ts:34](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L34)*
+*Defined in [src/objects/index.ts:34](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L34)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 *Inherited from [ChatsSummary](_src_objects_index_.chatssummary.md).[properties](_src_objects_index_.chatssummary.md#properties)*
 
-*Defined in [src/objects/index.ts:32](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/objects/index.ts#L32)*
+*Defined in [src/objects/index.ts:32](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L32)*
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 *Overrides [ChatsSummary](_src_objects_index_.chatssummary.md).[users](_src_objects_index_.chatssummary.md#users)*
 
-*Defined in [src/agent/structures.ts:33](https://github.com/livechat/lc-sdk-js/blob/228cb10/src/agent/structures.ts#L33)*
+*Defined in [src/agent/structures.ts:33](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L33)*
