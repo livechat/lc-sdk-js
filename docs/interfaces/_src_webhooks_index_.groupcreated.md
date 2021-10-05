@@ -21,7 +21,7 @@
 
 • **agent_priorities**: *Record‹string, string›*
 
-*Defined in [src/webhooks/index.ts:279](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L279)*
+*Defined in [src/webhooks/index.ts:279](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L279)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **id**: *number*
 
-*Defined in [src/webhooks/index.ts:276](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L276)*
+*Defined in [src/webhooks/index.ts:276](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L276)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **language_code**: *string*
 
-*Defined in [src/webhooks/index.ts:278](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L278)*
+*Defined in [src/webhooks/index.ts:278](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L278)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/webhooks/index.ts:277](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L277)*
+*Defined in [src/webhooks/index.ts:277](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L277)*
