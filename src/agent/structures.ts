@@ -105,6 +105,7 @@ export interface ArchivesFilters {
   goals?: FilterType<number>;
   surveys?: SurveyFilter[];
   event_types?: Omit<FilterType<string>, "exists">;
+  greetings?: GreetingsFilter;
 }
 
 export interface PropertiesFilter {
@@ -126,6 +127,13 @@ export enum SurveyType {
 export interface SurveyFilter {
   type: SurveyType;
   answer_id: string;
+}
+
+export interface GreetingsFilter extends Filter<number> {
+  from?: string;
+  to?: string;
+  exists?: boolean;
+  groups?: Filter<number>;
 }
 
 export interface ListArchivesResponse {
