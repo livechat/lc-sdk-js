@@ -20,7 +20,7 @@
 
 • **chat_id**: *string*
 
-*Defined in [src/webhooks/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L81)*
+*Defined in [src/webhooks/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L81)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **event**: *[Event](../modules/_src_objects_index_.md#event)*
 
-*Defined in [src/webhooks/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L83)*
+*Defined in [src/webhooks/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L83)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **thread_id**: *string*
 
-*Defined in [src/webhooks/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L82)*
+*Defined in [src/webhooks/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L82)*

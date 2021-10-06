@@ -19,7 +19,7 @@
 
 • **title**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:169](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L169)*
+*Defined in [src/customer/structures.ts:169](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L169)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **url**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L168)*
+*Defined in [src/customer/structures.ts:168](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L168)*

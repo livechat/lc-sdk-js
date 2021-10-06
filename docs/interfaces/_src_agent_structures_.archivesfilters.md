@@ -29,7 +29,7 @@
 
 • **agents**? : *[FilterType](_src_agent_structures_.filtertype.md)‹string›*
 
-*Defined in [src/agent/structures.ts:102](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L102)*
+*Defined in [src/agent/structures.ts:102](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L102)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **event_types**? : *Omit‹[FilterType](_src_agent_structures_.filtertype.md)‹string›, "exists"›*
 
-*Defined in [src/agent/structures.ts:107](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L107)*
+*Defined in [src/agent/structures.ts:107](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L107)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **from**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:97](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L97)*
+*Defined in [src/agent/structures.ts:97](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L97)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **goals**? : *[FilterType](_src_agent_structures_.filtertype.md)‹number›*
 
-*Defined in [src/agent/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L105)*
+*Defined in [src/agent/structures.ts:105](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L105)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **group_ids**? : *number[]*
 
-*Defined in [src/agent/structures.ts:100](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L100)*
+*Defined in [src/agent/structures.ts:100](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L100)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **properties**? : *[PropertiesFilter](_src_agent_structures_.propertiesfilter.md)*
 
-*Defined in [src/agent/structures.ts:101](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L101)*
+*Defined in [src/agent/structures.ts:101](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L101)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **query**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:96](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L96)*
+*Defined in [src/agent/structures.ts:96](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L96)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **sales**? : *[FilterType](_src_agent_structures_.filtertype.md)‹number›*
 
-*Defined in [src/agent/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L104)*
+*Defined in [src/agent/structures.ts:104](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L104)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **surveys**? : *[SurveyFilter](_src_agent_structures_.surveyfilter.md)[]*
 
-*Defined in [src/agent/structures.ts:106](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L106)*
+*Defined in [src/agent/structures.ts:106](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L106)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **tags**? : *[FilterType](_src_agent_structures_.filtertype.md)‹string›*
 
-*Defined in [src/agent/structures.ts:103](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L103)*
+*Defined in [src/agent/structures.ts:103](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L103)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **thread_ids**? : *string[]*
 
-*Defined in [src/agent/structures.ts:99](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L99)*
+*Defined in [src/agent/structures.ts:99](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L99)*
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 • **to**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L98)*
+*Defined in [src/agent/structures.ts:98](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L98)*

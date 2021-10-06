@@ -24,7 +24,7 @@
 
 • **description**: *string*
 
-*Defined in [src/customer/structures.ts:136](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L136)*
+*Defined in [src/customer/structures.ts:136](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L136)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **image_height**: *number*
 
-*Defined in [src/customer/structures.ts:140](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L140)*
+*Defined in [src/customer/structures.ts:140](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L140)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **image_original_url**: *string*
 
-*Defined in [src/customer/structures.ts:138](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L138)*
+*Defined in [src/customer/structures.ts:138](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L138)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **image_url**: *string*
 
-*Defined in [src/customer/structures.ts:137](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L137)*
+*Defined in [src/customer/structures.ts:137](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L137)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **image_width**: *number*
 
-*Defined in [src/customer/structures.ts:139](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L139)*
+*Defined in [src/customer/structures.ts:139](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L139)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **title**: *string*
 
-*Defined in [src/customer/structures.ts:135](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L135)*
+*Defined in [src/customer/structures.ts:135](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L135)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **url**: *string*
 
-*Defined in [src/customer/structures.ts:141](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L141)*
+*Defined in [src/customer/structures.ts:141](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L141)*

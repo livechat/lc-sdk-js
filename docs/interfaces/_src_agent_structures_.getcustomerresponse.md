@@ -40,7 +40,7 @@
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[__priv_lc2_customer_id](_src_objects_index_.customer.md#__priv_lc2_customer_id)*
 
-*Defined in [src/objects/index.ts:199](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L199)*
+*Defined in [src/objects/index.ts:199](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L199)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[agent_last_event_created_at](_src_objects_index_.customer.md#agent_last_event_created_at)*
 
-*Defined in [src/objects/index.ts:200](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L200)*
+*Defined in [src/objects/index.ts:200](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L200)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[avatar](_src_objects_index_.customer.md#avatar)*
 
-*Defined in [src/objects/index.ts:195](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L195)*
+*Defined in [src/objects/index.ts:195](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L195)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **chat_ids**: *string[]*
 
-*Defined in [src/agent/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/agent/structures.ts#L189)*
+*Defined in [src/agent/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L189)*
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[created_at](_src_objects_index_.customer.md#created_at)*
 
-*Defined in [src/objects/index.ts:202](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L202)*
+*Defined in [src/objects/index.ts:202](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L202)*
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[customer_last_event_created_at](_src_objects_index_.customer.md#customer_last_event_created_at)*
 
-*Defined in [src/objects/index.ts:201](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L201)*
+*Defined in [src/objects/index.ts:201](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L201)*
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[email](_src_objects_index_.customer.md#email)*
 
-*Defined in [src/objects/index.ts:193](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L193)*
+*Defined in [src/objects/index.ts:193](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L193)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[email_verified](_src_objects_index_.customer.md#email_verified)*
 
-*Defined in [src/objects/index.ts:194](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L194)*
+*Defined in [src/objects/index.ts:194](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L194)*
 
 ___
 
@@ -118,7 +118,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[events_seen_up_to](_src_objects_index_.customer.md#events_seen_up_to)*
 
-*Defined in [src/objects/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L204)*
+*Defined in [src/objects/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L204)*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[followed](_src_objects_index_.customer.md#followed)*
 
-*Defined in [src/objects/index.ts:205](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L205)*
+*Defined in [src/objects/index.ts:205](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L205)*
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[group_ids](_src_objects_index_.customer.md#group_ids)*
 
-*Defined in [src/objects/index.ts:206](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L206)*
+*Defined in [src/objects/index.ts:206](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L206)*
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[id](_src_objects_index_.customer.md#id)*
 
-*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L190)*
+*Defined in [src/objects/index.ts:190](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L190)*
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[last_visit](_src_objects_index_.customer.md#last_visit)*
 
-*Defined in [src/objects/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L196)*
+*Defined in [src/objects/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L196)*
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[name](_src_objects_index_.customer.md#name)*
 
-*Defined in [src/objects/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L192)*
+*Defined in [src/objects/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L192)*
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[present](_src_objects_index_.customer.md#present)*
 
-*Defined in [src/objects/index.ts:203](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L203)*
+*Defined in [src/objects/index.ts:203](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L203)*
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[session_fields](_src_objects_index_.customer.md#session_fields)*
 
-*Defined in [src/objects/index.ts:197](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L197)*
+*Defined in [src/objects/index.ts:197](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L197)*
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[state](_src_objects_index_.customer.md#state)*
 
-*Defined in [src/objects/index.ts:207](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L207)*
+*Defined in [src/objects/index.ts:207](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L207)*
 
 ___
 
@@ -208,7 +208,7 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[statistics](_src_objects_index_.customer.md#statistics)*
 
-*Defined in [src/objects/index.ts:198](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L198)*
+*Defined in [src/objects/index.ts:198](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L198)*
 
 ___
 
@@ -218,4 +218,4 @@ ___
 
 *Inherited from [Customer](_src_objects_index_.customer.md).[type](_src_objects_index_.customer.md#type)*
 
-*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/objects/index.ts#L191)*
+*Defined in [src/objects/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L191)*
