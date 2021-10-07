@@ -24,8 +24,8 @@ import type {
 import { Properties, Event, Push, RTMAPIOptions } from "../objects";
 
 export default class RTM extends RTMAPI {
-  constructor(license: number, options?: RTMAPIOptions) {
-    super("customer", license, options);
+  constructor(license: number, organization: string, options?: RTMAPIOptions) {
+    super("customer", license, organization, options);
   }
 
   /**

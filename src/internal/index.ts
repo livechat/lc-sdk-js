@@ -57,7 +57,8 @@ export class WebAPI {
 
     let params: any;
     if (this.type === "customer") {
-      params = { license_id: token.licenseID };
+      // keep license_id for compatibility of get_dynamic_configuration and open_chat
+      params = { license_id: token.licenseID, organization_id: token.organizationID };
     }
 
     return axios({
@@ -75,25 +76,37 @@ export class RTMAPI {
   version: string;
   type: apiType;
   license?: number;
+  organization?: string;
   socket?: WebSocket;
   heartbeatInterval?: NodeJS.Timeout;
   requestsQueue: any = {};
   subscribedPushes: any = {};
 
-  constructor(type: apiType, license?: number, options?: RTMAPIOptions) {
+  constructor(type: apiType, license?: number, organization?: string, options?: RTMAPIOptions) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
     if (license) {
       this.license = license;
     }
+
+    if (organization) {
+      this.organization = organization;
+    }
   }
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
+      const qs = new URLSearchParams({});
+      if (this.license) {
+        qs.append("license_id", `${this.license}`);
+      }
+      if (this.organization) {
+        qs.append("organization_id", this.organization);
+      }
       const wsURL =
         `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` +
-        (this.license ? `?license_id=${this.license}` : "");
+        (this.license || this.organization ? `?${qs.toString()}` : "");
 
       this.socket = new WebSocket(wsURL);
       this.socket.onopen = () => {

@@ -33,7 +33,7 @@ export interface ChatsSummary extends CommonChatSummary {
   users: User[];
 }
 
-export interface EmptyResponse { }
+export interface EmptyResponse {}
 
 export interface ListChatParameters {
   filters?: ChatsFilters;
@@ -327,6 +327,7 @@ export interface LoginResponse {
 
 export interface License {
   id: string;
+  organization_id: string;
   plan: string;
   expiration_timestamp: number;
   creation_timestamp: number;
