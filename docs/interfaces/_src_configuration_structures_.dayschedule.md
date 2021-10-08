@@ -19,7 +19,7 @@
 
 • **end**: *string*
 
-*Defined in [src/configuration/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/configuration/structures.ts#L38)*
+*Defined in [src/configuration/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L38)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **start**: *string*
 
-*Defined in [src/configuration/structures.ts:37](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/configuration/structures.ts#L37)*
+*Defined in [src/configuration/structures.ts:37](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L37)*

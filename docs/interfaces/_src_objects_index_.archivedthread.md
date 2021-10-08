@@ -33,7 +33,7 @@
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[access](_src_objects_index_.thread.md#access)*
 
-*Defined in [src/objects/index.ts:289](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L289)*
+*Defined in [src/objects/index.ts:289](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L289)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[active](_src_objects_index_.thread.md#active)*
 
-*Defined in [src/objects/index.ts:284](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L284)*
+*Defined in [src/objects/index.ts:284](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L284)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[created_at](_src_objects_index_.thread.md#created_at)*
 
-*Defined in [src/objects/index.ts:292](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L292)*
+*Defined in [src/objects/index.ts:292](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L292)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[events](_src_objects_index_.thread.md#events)*
 
-*Defined in [src/objects/index.ts:287](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L287)*
+*Defined in [src/objects/index.ts:287](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L287)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[id](_src_objects_index_.thread.md#id)*
 
-*Defined in [src/objects/index.ts:283](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L283)*
+*Defined in [src/objects/index.ts:283](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L283)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • **next_accessible_thread_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:297](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L297)*
+*Defined in [src/objects/index.ts:297](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L297)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[next_thread_id](_src_objects_index_.thread.md#next_thread_id)*
 
-*Defined in [src/objects/index.ts:291](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L291)*
+*Defined in [src/objects/index.ts:291](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L291)*
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 • **previous_accessible_thread_id**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:296](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L296)*
+*Defined in [src/objects/index.ts:296](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L296)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[previous_thread_id](_src_objects_index_.thread.md#previous_thread_id)*
 
-*Defined in [src/objects/index.ts:290](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L290)*
+*Defined in [src/objects/index.ts:290](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L290)*
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[properties](_src_objects_index_.thread.md#optional-properties)*
 
-*Defined in [src/objects/index.ts:288](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L288)*
+*Defined in [src/objects/index.ts:288](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L288)*
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[restricted_access](_src_objects_index_.thread.md#restricted_access)*
 
-*Defined in [src/objects/index.ts:286](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L286)*
+*Defined in [src/objects/index.ts:286](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L286)*
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 *Inherited from [Thread](_src_objects_index_.thread.md).[user_ids](_src_objects_index_.thread.md#user_ids)*
 
-*Defined in [src/objects/index.ts:285](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L285)*
+*Defined in [src/objects/index.ts:285](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L285)*

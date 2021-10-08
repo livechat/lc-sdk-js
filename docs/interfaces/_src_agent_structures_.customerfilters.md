@@ -29,7 +29,7 @@
 
 • **agent_last_event_created_at**? : *[DateRangeFilter](_src_agent_structures_.daterangefilter.md)*
 
-*Defined in [src/agent/structures.ts:218](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L218)*
+*Defined in [src/agent/structures.ts:226](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L226)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **chat_group_ids**? : *[IntegerFilter](../modules/_src_agent_structures_.md#integerfilter)*
 
-*Defined in [src/agent/structures.ts:213](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L213)*
+*Defined in [src/agent/structures.ts:221](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L221)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **chats_count**? : *[RangeFilter](_src_agent_structures_.rangefilter.md)*
 
-*Defined in [src/agent/structures.ts:214](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L214)*
+*Defined in [src/agent/structures.ts:222](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L222)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **country**? : *[StringFilter](../modules/_src_agent_structures_.md#stringfilter)*
 
-*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L209)*
+*Defined in [src/agent/structures.ts:217](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L217)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **created_at**? : *[DateRangeFilter](_src_agent_structures_.daterangefilter.md)*
 
-*Defined in [src/agent/structures.ts:217](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L217)*
+*Defined in [src/agent/structures.ts:225](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L225)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **customer_id**? : *[StringFilter](../modules/_src_agent_structures_.md#stringfilter)*
 
-*Defined in [src/agent/structures.ts:212](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L212)*
+*Defined in [src/agent/structures.ts:220](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L220)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **customer_last_event_created_at**? : *[DateRangeFilter](_src_agent_structures_.daterangefilter.md)*
 
-*Defined in [src/agent/structures.ts:219](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L219)*
+*Defined in [src/agent/structures.ts:227](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L227)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **email**? : *[StringFilter](../modules/_src_agent_structures_.md#stringfilter)*
 
-*Defined in [src/agent/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L210)*
+*Defined in [src/agent/structures.ts:218](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L218)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **include_customers_without_chats**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:220](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L220)*
+*Defined in [src/agent/structures.ts:228](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L228)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 • **name**? : *[StringFilter](../modules/_src_agent_structures_.md#stringfilter)*
 
-*Defined in [src/agent/structures.ts:211](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L211)*
+*Defined in [src/agent/structures.ts:219](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L219)*
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 • **threads_count**? : *[RangeFilter](_src_agent_structures_.rangefilter.md)*
 
-*Defined in [src/agent/structures.ts:215](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L215)*
+*Defined in [src/agent/structures.ts:223](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L223)*
 
 ___
 
@@ -117,4 +117,4 @@ ___
 
 • **visits_count**? : *[RangeFilter](_src_agent_structures_.rangefilter.md)*
 
-*Defined in [src/agent/structures.ts:216](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L216)*
+*Defined in [src/agent/structures.ts:224](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L224)*

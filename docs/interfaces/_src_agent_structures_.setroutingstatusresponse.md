@@ -19,7 +19,7 @@
 
 • **agent_id**: *string*
 
-*Defined in [src/agent/structures.ts:336](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L336)*
+*Defined in [src/agent/structures.ts:344](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L344)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **status**: *[RoutingStatus](../enums/_src_objects_index_.routingstatus.md)*
 
-*Defined in [src/agent/structures.ts:337](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L337)*
+*Defined in [src/agent/structures.ts:345](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L345)*
