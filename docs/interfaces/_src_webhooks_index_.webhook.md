@@ -12,7 +12,7 @@
 
 * [action](_src_webhooks_index_.webhook.md#action)
 * [additional_data](_src_webhooks_index_.webhook.md#additional_data)
-* [license_id](_src_webhooks_index_.webhook.md#license_id)
+* [organization_id](_src_webhooks_index_.webhook.md#organization_id)
 * [payload](_src_webhooks_index_.webhook.md#payload)
 * [secret_key](_src_webhooks_index_.webhook.md#secret_key)
 * [webhook_id](_src_webhooks_index_.webhook.md#webhook_id)
@@ -23,7 +23,7 @@
 
 • **action**: *string*
 
-*Defined in [src/webhooks/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L7)*
+*Defined in [src/webhooks/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L7)*
 
 ___
 
@@ -31,15 +31,15 @@ ___
 
 • **additional_data**: *object*
 
-*Defined in [src/webhooks/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L9)*
+*Defined in [src/webhooks/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L9)*
 
 ___
 
-###  license_id
+###  organization_id
 
-• **license_id**: *string*
+• **organization_id**: *string*
 
-*Defined in [src/webhooks/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L8)*
+*Defined in [src/webhooks/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L8)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **payload**: *[WebhookPayload](../modules/_src_webhooks_index_.md#webhookpayload)*
 
-*Defined in [src/webhooks/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L10)*
+*Defined in [src/webhooks/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L10)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **secret_key**: *string*
 
-*Defined in [src/webhooks/index.ts:6](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L6)*
+*Defined in [src/webhooks/index.ts:6](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L6)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **webhook_id**: *string*
 
-*Defined in [src/webhooks/index.ts:5](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L5)*
+*Defined in [src/webhooks/index.ts:5](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L5)*

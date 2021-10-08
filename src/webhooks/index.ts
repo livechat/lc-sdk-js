@@ -5,7 +5,7 @@ export interface Webhook {
   webhook_id: string;
   secret_key: string;
   action: string;
-  license_id: string;
+  organization_id: string;
   additional_data: object;
   payload: WebhookPayload;
 }

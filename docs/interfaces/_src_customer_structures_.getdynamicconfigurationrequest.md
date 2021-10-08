@@ -21,7 +21,7 @@
 
 • **channel_type**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L189)*
+*Defined in [src/customer/structures.ts:189](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L189)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **group_id**? : *undefined | number*
 
-*Defined in [src/customer/structures.ts:187](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L187)*
+*Defined in [src/customer/structures.ts:187](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L187)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **test**? : *undefined | false | true*
 
-*Defined in [src/customer/structures.ts:190](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L190)*
+*Defined in [src/customer/structures.ts:190](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L190)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **url**? : *undefined | string*
 
-*Defined in [src/customer/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/customer/structures.ts#L188)*
+*Defined in [src/customer/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/customer/structures.ts#L188)*

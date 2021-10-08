@@ -26,7 +26,7 @@
 
 • **avatar**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:262](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L262)*
+*Defined in [src/webhooks/index.ts:262](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L262)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **default_group_priority**: *string*
 
-*Defined in [src/webhooks/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L264)*
+*Defined in [src/webhooks/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L264)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **groups**? : *[GroupAssignment](_src_webhooks_index_.groupassignment.md)[]*
 
-*Defined in [src/webhooks/index.ts:265](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L265)*
+*Defined in [src/webhooks/index.ts:265](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L265)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/webhooks/index.ts:260](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L260)*
+*Defined in [src/webhooks/index.ts:260](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L260)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **job_title**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:268](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L268)*
+*Defined in [src/webhooks/index.ts:268](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L268)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **max_chats_count**? : *undefined | number*
 
-*Defined in [src/webhooks/index.ts:263](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L263)*
+*Defined in [src/webhooks/index.ts:263](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L263)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:261](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L261)*
+*Defined in [src/webhooks/index.ts:261](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L261)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **timezone**? : *undefined | string*
 
-*Defined in [src/webhooks/index.ts:267](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L267)*
+*Defined in [src/webhooks/index.ts:267](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L267)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **work_scheduler**? : *[WorkScheduler](../modules/_src_webhooks_index_.md#workscheduler)*
 
-*Defined in [src/webhooks/index.ts:266](https://github.com/livechat/lc-sdk-js/blob/de56f05/src/webhooks/index.ts#L266)*
+*Defined in [src/webhooks/index.ts:266](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/webhooks/index.ts#L266)*
