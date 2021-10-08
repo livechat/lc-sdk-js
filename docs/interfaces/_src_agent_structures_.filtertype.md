@@ -29,7 +29,7 @@
 
 *Inherited from [Filter](_src_objects_index_.filter.md).[exclude_values](_src_objects_index_.filter.md#optional-exclude_values)*
 
-*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L358)*
+*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L358)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **exists**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:117](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L117)*
+*Defined in [src/agent/structures.ts:118](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L118)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 • **require_every_value**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:118](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L118)*
+*Defined in [src/agent/structures.ts:119](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L119)*
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 *Inherited from [Filter](_src_objects_index_.filter.md).[values](_src_objects_index_.filter.md#optional-values)*
 
-*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/objects/index.ts#L357)*
+*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L357)*

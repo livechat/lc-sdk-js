@@ -19,7 +19,7 @@
 
 • **id**: *string*
 
-*Defined in [src/agent/structures.ts:184](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L184)*
+*Defined in [src/agent/structures.ts:192](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L192)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **toggled**: *boolean*
 
-*Defined in [src/agent/structures.ts:185](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L185)*
+*Defined in [src/agent/structures.ts:193](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L193)*

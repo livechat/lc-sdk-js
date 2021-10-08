@@ -22,7 +22,7 @@
 
 • **eq**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:240](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L240)*
+*Defined in [src/agent/structures.ts:248](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L248)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **gt**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:239](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L239)*
+*Defined in [src/agent/structures.ts:247](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L247)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **gte**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:238](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L238)*
+*Defined in [src/agent/structures.ts:246](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L246)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **lt**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:237](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L237)*
+*Defined in [src/agent/structures.ts:245](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L245)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **lte**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:236](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L236)*
+*Defined in [src/agent/structures.ts:244](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L244)*

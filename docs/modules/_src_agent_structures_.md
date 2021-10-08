@@ -30,6 +30,7 @@
 * [FilterType](../interfaces/_src_agent_structures_.filtertype.md)
 * [GetChatResponse](../interfaces/_src_agent_structures_.getchatresponse.md)
 * [GetCustomerResponse](../interfaces/_src_agent_structures_.getcustomerresponse.md)
+* [GreetingsFilter](../interfaces/_src_agent_structures_.greetingsfilter.md)
 * [License](../interfaces/_src_agent_structures_.license.md)
 * [ListArchivesParameters](../interfaces/_src_agent_structures_.listarchivesparameters.md)
 * [ListArchivesResponse](../interfaces/_src_agent_structures_.listarchivesresponse.md)
@@ -73,7 +74,7 @@
 
 Ƭ **IntegerFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹number›*
 
-*Defined in [src/agent/structures.ts:225](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L225)*
+*Defined in [src/agent/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L233)*
 
 ___
 
@@ -81,7 +82,7 @@ ___
 
 Ƭ **StringFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹string›*
 
-*Defined in [src/agent/structures.ts:223](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L223)*
+*Defined in [src/agent/structures.ts:231](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L231)*
 
 ___
 
@@ -89,4 +90,4 @@ ___
 
 Ƭ **User**: *[Agent](../interfaces/_src_agent_structures_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
 
-*Defined in [src/agent/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/agent/structures.ts#L22)*
+*Defined in [src/agent/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L22)*

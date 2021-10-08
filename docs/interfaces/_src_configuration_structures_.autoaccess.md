@@ -21,7 +21,7 @@
 
 • **access**: *object*
 
-*Defined in [src/configuration/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/configuration/structures.ts#L179)*
+*Defined in [src/configuration/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L179)*
 
 #### Type declaration:
 
@@ -33,7 +33,7 @@ ___
 
 • **description**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:182](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/configuration/structures.ts#L182)*
+*Defined in [src/configuration/structures.ts:182](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L182)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:178](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/configuration/structures.ts#L178)*
+*Defined in [src/configuration/structures.ts:178](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L178)*
 
 ___
 
@@ -49,4 +49,4 @@ ___
 
 • **next_id**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/efba8ac/src/configuration/structures.ts#L183)*
+*Defined in [src/configuration/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L183)*
