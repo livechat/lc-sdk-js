@@ -74,30 +74,30 @@ export class RTMAPI {
   APIURL: string;
   version: string;
   type: apiType;
-  organization?: string;
+  organization_id?: string;
   socket?: WebSocket;
   heartbeatInterval?: NodeJS.Timeout;
   requestsQueue: any = {};
   subscribedPushes: any = {};
 
-  constructor(type: apiType, organization?: string, options?: RTMAPIOptions) {
+  constructor(type: apiType, organization_id?: string, options?: RTMAPIOptions) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
 
-    if (organization) {
-      this.organization = organization;
+    if (organization_id) {
+      this.organization_id = organization_id;
     }
   }
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
       const qs = new URLSearchParams({});
-      if (this.organization) {
-        qs.append("organization_id", this.organization);
+      if (this.organization_id) {
+        qs.append("organization_id", this.organization_id);
       }
       const wsURL =
-        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` + (this.organization ? `?${qs.toString()}` : "");
+        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` + (this.organization_id ? `?${qs.toString()}` : "");
 
       this.socket = new WebSocket(wsURL);
       this.socket.onopen = () => {
