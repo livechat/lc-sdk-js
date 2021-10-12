@@ -20,7 +20,7 @@
 
 * [APIURL](_src_internal_index_.rtmapi.md#apiurl)
 * [heartbeatInterval](_src_internal_index_.rtmapi.md#optional-heartbeatinterval)
-* [license](_src_internal_index_.rtmapi.md#optional-license)
+* [organization_id](_src_internal_index_.rtmapi.md#optional-organization_id)
 * [requestsQueue](_src_internal_index_.rtmapi.md#requestsqueue)
 * [socket](_src_internal_index_.rtmapi.md#optional-socket)
 * [subscribedPushes](_src_internal_index_.rtmapi.md#subscribedpushes)
@@ -40,16 +40,16 @@
 
 ###  constructor
 
-\+ **new RTMAPI**(`type`: [apiType](../modules/_src_internal_index_.md#apitype), `license?`: undefined | number, `options?`: [RTMAPIOptions](../interfaces/_src_objects_index_.rtmapioptions.md)): *[RTMAPI](_src_internal_index_.rtmapi.md)*
+\+ **new RTMAPI**(`type`: [apiType](../modules/_src_internal_index_.md#apitype), `organization_id?`: undefined | string, `options?`: [RTMAPIOptions](../interfaces/_src_objects_index_.rtmapioptions.md)): *[RTMAPI](_src_internal_index_.rtmapi.md)*
 
-*Defined in [src/internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L81)*
+*Defined in [src/internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L81)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `type` | [apiType](../modules/_src_internal_index_.md#apitype) |
-`license?` | undefined &#124; number |
+`organization_id?` | undefined &#124; string |
 `options?` | [RTMAPIOptions](../interfaces/_src_objects_index_.rtmapioptions.md) |
 
 **Returns:** *[RTMAPI](_src_internal_index_.rtmapi.md)*
@@ -60,7 +60,7 @@ Name | Type |
 
 • **APIURL**: *string*
 
-*Defined in [src/internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L74)*
+*Defined in [src/internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L74)*
 
 ___
 
@@ -68,15 +68,15 @@ ___
 
 • **heartbeatInterval**? : *NodeJS.Timeout*
 
-*Defined in [src/internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L79)*
+*Defined in [src/internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L79)*
 
 ___
 
-### `Optional` license
+### `Optional` organization_id
 
-• **license**? : *undefined | number*
+• **organization_id**? : *undefined | string*
 
-*Defined in [src/internal/index.ts:77](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L77)*
+*Defined in [src/internal/index.ts:77](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L77)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **requestsQueue**: *any*
 
-*Defined in [src/internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L80)*
+*Defined in [src/internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L80)*
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **socket**? : *[WebSocket](../modules/_src_internal_index_.md#websocket)*
 
-*Defined in [src/internal/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L78)*
+*Defined in [src/internal/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L78)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 • **subscribedPushes**: *any*
 
-*Defined in [src/internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L81)*
+*Defined in [src/internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L81)*
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 • **type**: *[apiType](../modules/_src_internal_index_.md#apitype)*
 
-*Defined in [src/internal/index.ts:76](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L76)*
+*Defined in [src/internal/index.ts:76](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L76)*
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 • **version**: *string*
 
-*Defined in [src/internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L75)*
+*Defined in [src/internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L75)*
 
 ## Methods
 
@@ -124,7 +124,7 @@ ___
 
 ▸ **connect**(): *Promise‹void›*
 
-*Defined in [src/internal/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L92)*
+*Defined in [src/internal/index.ts:93](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L93)*
 
 **Returns:** *Promise‹void›*
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **handlePush**(`type`: string, `payload`: [Push](../interfaces/_src_objects_index_.push.md)): *void*
 
-*Defined in [src/internal/index.ts:134](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L134)*
+*Defined in [src/internal/index.ts:138](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L138)*
 
 **Parameters:**
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **handleResponse**(`request_id`: string, `success`: boolean, `payload`: any): *void*
 
-*Defined in [src/internal/index.ts:126](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L126)*
+*Defined in [src/internal/index.ts:130](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L130)*
 
 **Parameters:**
 
@@ -169,7 +169,7 @@ ___
 
 ▸ **send**(`action`: string, `payload`: any): *Promise‹any›*
 
-*Defined in [src/internal/index.ts:140](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L140)*
+*Defined in [src/internal/index.ts:144](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L144)*
 
 **Parameters:**
 
@@ -186,7 +186,7 @@ ___
 
 ▸ **subscribePush**(`push`: string, `callback`: function): *void*
 
-*Defined in [src/internal/index.ts:157](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L157)*
+*Defined in [src/internal/index.ts:161](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L161)*
 
 **Parameters:**
 
@@ -210,7 +210,7 @@ ___
 
 ▸ **unsubscribePush**(`push`: string): *void*
 
-*Defined in [src/internal/index.ts:164](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L164)*
+*Defined in [src/internal/index.ts:168](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L168)*
 
 **Parameters:**
 

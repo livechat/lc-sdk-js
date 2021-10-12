@@ -22,7 +22,7 @@
 
 • **agent_priorities**? : *[AgentPriorities](_src_configuration_structures_.agentpriorities.md)*
 
-*Defined in [src/configuration/structures.ts:89](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L89)*
+*Defined in [src/configuration/structures.ts:89](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L89)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **id**: *number*
 
-*Defined in [src/configuration/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L86)*
+*Defined in [src/configuration/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L86)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **language_code**: *string*
 
-*Defined in [src/configuration/structures.ts:88](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L88)*
+*Defined in [src/configuration/structures.ts:88](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L88)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [src/configuration/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L87)*
+*Defined in [src/configuration/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L87)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **routing_status**? : *[RoutingStatus](../enums/_src_objects_index_.routingstatus.md)*
 
-*Defined in [src/configuration/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/configuration/structures.ts#L90)*
+*Defined in [src/configuration/structures.ts:90](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L90)*

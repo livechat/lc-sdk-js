@@ -15,7 +15,7 @@
 
 • **ApiURL**: *string* = "api.livechatinc.com"
 
-*Defined in [src/internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/constants.ts#L2)*
+*Defined in [src/internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/constants.ts#L2)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **ApiVersion**: *"3.4"* = "3.4"
 
-*Defined in [src/internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/constants.ts#L1)*
+*Defined in [src/internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/constants.ts#L1)*

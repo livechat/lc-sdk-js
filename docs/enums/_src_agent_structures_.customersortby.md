@@ -18,7 +18,7 @@
 
 • **AgentLastEvent**: = "agent_last_event"
 
-*Defined in [src/agent/structures.ts:212](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L212)*
+*Defined in [src/agent/structures.ts:212](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L212)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **CreateAt**: = "created_at"
 
-*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L209)*
+*Defined in [src/agent/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L209)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **CustomerLastEvent**: = "customer_last_event"
 
-*Defined in [src/agent/structures.ts:213](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L213)*
+*Defined in [src/agent/structures.ts:213](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L213)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **ThreadsCount**: = "threads_count"
 
-*Defined in [src/agent/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L210)*
+*Defined in [src/agent/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L210)*
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 • **VisitsCount**: = "visits_count"
 
-*Defined in [src/agent/structures.ts:211](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L211)*
+*Defined in [src/agent/structures.ts:211](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L211)*

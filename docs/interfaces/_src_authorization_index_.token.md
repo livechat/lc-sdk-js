@@ -11,7 +11,7 @@
 ### Properties
 
 * [accessToken](_src_authorization_index_.token.md#accesstoken)
-* [licenseID](_src_authorization_index_.token.md#licenseid)
+* [organizationID](_src_authorization_index_.token.md#organizationid)
 * [region](_src_authorization_index_.token.md#region)
 
 ## Properties
@@ -20,15 +20,15 @@
 
 • **accessToken**: *string*
 
-*Defined in [src/authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/authorization/index.ts#L3)*
+*Defined in [src/authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/authorization/index.ts#L3)*
 
 ___
 
-###  licenseID
+###  organizationID
 
-• **licenseID**: *number*
+• **organizationID**: *string*
 
-*Defined in [src/authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/authorization/index.ts#L2)*
+*Defined in [src/authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/authorization/index.ts#L2)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **region**: *string*
 
-*Defined in [src/authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/authorization/index.ts#L4)*
+*Defined in [src/authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/authorization/index.ts#L4)*
