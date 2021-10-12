@@ -181,7 +181,13 @@ export default class RTM extends RTMAPI {
    * @param visibility - possible values: all, agents
    * @param ignore_requester_presence - if true, allows to add user to chat even if the requester is not present in the chat
    */
-  async addUserToChat(chat_id: string, user_id: string, user_type: string, visibility: string, ignore_requester_presence?: boolean): Promise<EmptyResponse> {
+  async addUserToChat(
+    chat_id: string,
+    user_id: string,
+    user_type: string,
+    visibility: string,
+    ignore_requester_presence?: boolean,
+  ): Promise<EmptyResponse> {
     return this.send("add_user_to_chat", {
       chat_id,
       user_id,
@@ -196,7 +202,11 @@ export default class RTM extends RTMAPI {
    * @param user_id - user to remove
    * @param ignore_requester_presence - if true, allows to remove user from chat even if the requester is not present in the chat
    */
-  async removeUserFromChat(chat_id: string, user_id: string, ignore_requester_presence?: boolean): Promise<EmptyResponse> {
+  async removeUserFromChat(
+    chat_id: string,
+    user_id: string,
+    ignore_requester_presence?: boolean,
+  ): Promise<EmptyResponse> {
     return this.send("remove_user_from_chat", {
       chat_id,
       user_id,

@@ -57,7 +57,7 @@ export class WebAPI {
 
     let params: any;
     if (this.type === "customer") {
-      params = { license_id: token.licenseID };
+      params = { organization_id: token.organizationID };
     }
 
     return axios({
@@ -74,26 +74,30 @@ export class RTMAPI {
   APIURL: string;
   version: string;
   type: apiType;
-  license?: number;
+  organization_id?: string;
   socket?: WebSocket;
   heartbeatInterval?: NodeJS.Timeout;
   requestsQueue: any = {};
   subscribedPushes: any = {};
 
-  constructor(type: apiType, license?: number, options?: RTMAPIOptions) {
+  constructor(type: apiType, organization_id?: string, options?: RTMAPIOptions) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
-    if (license) {
-      this.license = license;
+
+    if (organization_id) {
+      this.organization_id = organization_id;
     }
   }
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
+      const qs = new URLSearchParams({});
+      if (this.organization_id) {
+        qs.append("organization_id", this.organization_id);
+      }
       const wsURL =
-        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` +
-        (this.license ? `?license_id=${this.license}` : "");
+        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` + (this.organization_id ? `?${qs.toString()}` : "");
 
       this.socket = new WebSocket(wsURL);
       this.socket.onopen = () => {

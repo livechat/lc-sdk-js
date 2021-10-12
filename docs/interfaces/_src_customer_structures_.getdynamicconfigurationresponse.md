@@ -16,6 +16,7 @@
 * [group_id](_src_customer_structures_.getdynamicconfigurationresponse.md#group_id)
 * [language](_src_customer_structures_.getdynamicconfigurationresponse.md#language)
 * [localization_version](_src_customer_structures_.getdynamicconfigurationresponse.md#localization_version)
+* [organization_id](_src_customer_structures_.getdynamicconfigurationresponse.md#organization_id)
 
 ## Properties
 
@@ -23,7 +24,7 @@
 
 • **client_limit_exceeded**: *boolean*
 
-*Defined in [src/customer/structures.ts:195](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/customer/structures.ts#L195)*
+*Defined in [src/customer/structures.ts:196](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L196)*
 
 ___
 
@@ -31,7 +32,7 @@ ___
 
 • **config_version**: *string*
 
-*Defined in [src/customer/structures.ts:197](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/customer/structures.ts#L197)*
+*Defined in [src/customer/structures.ts:198](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L198)*
 
 ___
 
@@ -39,7 +40,7 @@ ___
 
 • **domain_allowed**: *boolean*
 
-*Defined in [src/customer/structures.ts:196](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/customer/structures.ts#L196)*
+*Defined in [src/customer/structures.ts:197](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L197)*
 
 ___
 
@@ -47,7 +48,7 @@ ___
 
 • **group_id**: *number*
 
-*Defined in [src/customer/structures.ts:194](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/customer/structures.ts#L194)*
+*Defined in [src/customer/structures.ts:194](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L194)*
 
 ___
 
@@ -55,7 +56,7 @@ ___
 
 • **language**: *string*
 
-*Defined in [src/customer/structures.ts:199](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/customer/structures.ts#L199)*
+*Defined in [src/customer/structures.ts:200](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L200)*
 
 ___
 
@@ -63,4 +64,12 @@ ___
 
 • **localization_version**: *string*
 
-*Defined in [src/customer/structures.ts:198](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/customer/structures.ts#L198)*
+*Defined in [src/customer/structures.ts:199](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L199)*
+
+___
+
+###  organization_id
+
+• **organization_id**: *string*
+
+*Defined in [src/customer/structures.ts:195](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L195)*

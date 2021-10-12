@@ -27,7 +27,7 @@
 
 • **exclude_values**? : *T[]*
 
-*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L358)*
+*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L358)*
 
 ___
 
@@ -35,4 +35,4 @@ ___
 
 • **values**? : *T[]*
 
-*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/objects/index.ts#L357)*
+*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L357)*

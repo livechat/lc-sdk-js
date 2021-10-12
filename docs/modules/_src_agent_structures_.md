@@ -74,7 +74,7 @@
 
 Ƭ **IntegerFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹number›*
 
-*Defined in [src/agent/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L233)*
+*Defined in [src/agent/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L233)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 Ƭ **StringFilter**: *[Filter](../interfaces/_src_objects_index_.filter.md)‹string›*
 
-*Defined in [src/agent/structures.ts:231](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L231)*
+*Defined in [src/agent/structures.ts:231](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L231)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 Ƭ **User**: *[Agent](../interfaces/_src_agent_structures_.agent.md) | [Customer](../interfaces/_src_objects_index_.customer.md)*
 
-*Defined in [src/agent/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/agent/structures.ts#L22)*
+*Defined in [src/agent/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L22)*

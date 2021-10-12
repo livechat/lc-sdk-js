@@ -27,7 +27,7 @@
 
 Ƭ **apiType**: *"agent" | "customer" | "configuration"*
 
-*Defined in [src/internal/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L8)*
+*Defined in [src/internal/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L8)*
 
 ## Variables
 
@@ -35,4 +35,4 @@
 
 • **WebSocket**: *[WebSocket](_src_internal_index_.md#websocket)*
 
-*Defined in [src/internal/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/adb7bb1/src/internal/index.ts#L2)*
+*Defined in [src/internal/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/internal/index.ts#L2)*
