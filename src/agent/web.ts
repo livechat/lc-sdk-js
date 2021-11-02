@@ -26,7 +26,7 @@ import type {
   UploadFileResponse,
   SetRoutingStatusResponse,
 } from "./structures";
-import { ChatAccess, Event, Properties, RoutingStatus, WebAPIOptions } from "../objects";
+import { Event, Properties, RoutingStatus, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";

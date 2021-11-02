@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import WebSocket = require("isomorphic-ws");
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
@@ -6,6 +6,10 @@ import { ApiURL, ApiVersion } from "./constants";
 import { Push, RTMRequest, RTMAPIOptions, WebAPIOptions } from "../objects";
 
 type apiType = "agent" | "customer" | "configuration";
+
+function isAxiosError<T = unknown>(e: unknown): e is AxiosError<T> {
+  return typeof e === "object" && null !== e && "isAxiosError" in e;
+}
 
 export class WebAPI {
   APIURL: string;
@@ -22,12 +26,15 @@ export class WebAPI {
     this.tokenGetter = tokenGetter;
   }
 
-  async send(name: string, req: any): Promise<any> {
+  async send<T = unknown>(name: string, req: any): Promise<T> {
     try {
       const response = await this.call(name, req || {});
       return response.data;
     } catch (e) {
-      return Promise.reject(e.response.data.error as APIError);
+      if (isAxiosError<APIError>(e)) {
+        throw e.response?.data.error;
+      }
+      throw e;
     }
   }
 
@@ -42,11 +49,13 @@ export class WebAPI {
         "get_dynamic_configuration",
         "get_configuration",
         "get_localization",
+        "get_organization_id",
+        "get_license_id",
       ]
         ? "GET"
         : "POST";
 
-    const headers: any = {
+    const headers: Record<string, string> = {
       "Content-Type": "application/json",
       Authorization: `Bearer ${token.accessToken}`,
       "X-Region": token.region,
@@ -171,6 +180,9 @@ export class RTMAPI {
 }
 
 export interface APIError {
-  type: string;
-  message: string;
+  error: {
+    type: string;
+    message: string;
+    data?: unknown;
+  };
 }

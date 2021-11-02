@@ -27,7 +27,7 @@ import type {
   Pushes,
   SetRoutingStatusResponse,
 } from "./structures";
-import { ChatAccess, Event, Properties, Push, RoutingStatus, RTMAPIOptions } from "../objects";
+import { Event, Properties, Push, RoutingStatus, RTMAPIOptions } from "../objects";
 import { RTMAPI } from "../internal/index";
 
 export default class RTM extends RTMAPI {

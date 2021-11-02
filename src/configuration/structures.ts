@@ -194,3 +194,11 @@ export interface UpdateAutoAccessRequest extends Omit<AutoAccess, "id"> {
 export interface AddAutoAccessResponse {
   id: string;
 }
+
+export interface GetOrganizationIDResponse {
+  organization_id: string;
+}
+
+export interface GetLicenseIDResponse {
+  license_id: string;
+}
