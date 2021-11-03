@@ -13,17 +13,25 @@ function isAxiosError<T = unknown>(e: unknown): e is AxiosError<T> {
 
 export class WebAPI {
   APIURL: string;
-  clientID: string;
   version: string;
-  type: apiType;
-  tokenGetter: TokenGetter;
+  private readonly actionsMethodGet = [
+    "list_license_properties",
+    "list_group_properties",
+    "get_dynamic_configuration",
+    "get_configuration",
+    "get_localization",
+    "get_organization_id",
+    "get_license_id",
+  ];
 
-  constructor(clientID: string, tokenGetter: TokenGetter, type: apiType, options?: WebAPIOptions) {
+  constructor(
+    protected readonly clientID: string, 
+    protected readonly tokenGetter: TokenGetter, 
+    protected readonly type: apiType, 
+    options?: WebAPIOptions
+  ) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
-    this.clientID = clientID;
-    this.type = type;
-    this.tokenGetter = tokenGetter;
   }
 
   async send<T = unknown>(name: string, req: any): Promise<T> {
@@ -31,7 +39,7 @@ export class WebAPI {
       const response = await this.call(name, req || {});
       return response.data;
     } catch (e) {
-      if (isAxiosError<APIError>(e)) {
+      if (isAxiosError<APIError>(e) && e.response) {
         throw e.response?.data.error;
       }
       throw e;
@@ -39,21 +47,9 @@ export class WebAPI {
   }
 
   private async call(action: string, payload: any): Promise<any> {
-    const url = ["https:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
+    const url = ["http:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
     const token = this.tokenGetter();
-    const method =
-      action in
-      [
-        "list_license_properties",
-        "list_group_properties",
-        "get_dynamic_configuration",
-        "get_configuration",
-        "get_localization",
-        "get_organization_id",
-        "get_license_id",
-      ]
-        ? "GET"
-        : "POST";
+    const method = this.actionsMethodGet.indexOf(action) >= 0 ? 'GET' : 'POST'
 
     const headers: Record<string, string> = {
       "Content-Type": "application/json",
@@ -64,9 +60,9 @@ export class WebAPI {
       headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
     }
 
-    let params: any;
+    let params = method === 'GET' ? payload : {};
     if (this.type === "customer") {
-      params = { organization_id: token.organizationID };
+      params = { ...params, organization_id: token.organizationID };
     }
 
     return axios({
