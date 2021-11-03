@@ -47,7 +47,7 @@ export class WebAPI {
   }
 
   private async call(action: string, payload: any): Promise<any> {
-    const url = ["http:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
+    const url = ["https:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
     const token = this.tokenGetter();
     const method = this.actionsMethodGet.indexOf(action) >= 0 ? "GET" : "POST";
 

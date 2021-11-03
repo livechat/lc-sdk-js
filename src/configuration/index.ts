@@ -417,7 +417,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Returns organization ID for given license ID.
-   * @param licenseID -
+   * @param licenseID - ID of the license
    */
   async getOrganizationID(licenseID: number): Promise<GetOrganizationIDResponse> {
     return this.send("get_organization_id", { license_id: licenseID });
@@ -425,7 +425,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Returns license ID for given organizationID.
-   * @param organizationID -
+   * @param organizationID - UUID of the organization
    */
   async getLicenseID(organizationID: string): Promise<GetLicenseIDResponse> {
     return this.send("get_license_id", { organization_id: organizationID });
