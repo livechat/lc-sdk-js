@@ -25,10 +25,10 @@ export class WebAPI {
   ];
 
   constructor(
-    protected readonly clientID: string, 
-    protected readonly tokenGetter: TokenGetter, 
-    protected readonly type: apiType, 
-    options?: WebAPIOptions
+    protected readonly clientID: string,
+    protected readonly tokenGetter: TokenGetter,
+    protected readonly type: apiType,
+    options?: WebAPIOptions,
   ) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
@@ -49,7 +49,7 @@ export class WebAPI {
   private async call(action: string, payload: any): Promise<any> {
     const url = ["http:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
     const token = this.tokenGetter();
-    const method = this.actionsMethodGet.indexOf(action) >= 0 ? 'GET' : 'POST'
+    const method = this.actionsMethodGet.indexOf(action) >= 0 ? "GET" : "POST";
 
     const headers: Record<string, string> = {
       "Content-Type": "application/json",
@@ -60,7 +60,7 @@ export class WebAPI {
       headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
     }
 
-    let params = method === 'GET' ? payload : {};
+    let params = method === "GET" ? payload : {};
     if (this.type === "customer") {
       params = { ...params, organization_id: token.organizationID };
     }
