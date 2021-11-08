@@ -39,7 +39,7 @@ export class WebAPI {
       const response = await this.call(name, req || {});
       return response.data;
     } catch (e) {
-      if (isAxiosError<APIError>(e) && e.response) {
+      if (isAxiosError<ResponseError>(e) && e.response) {
         throw e.response?.data.error;
       }
       throw e;
@@ -175,10 +175,12 @@ export class RTMAPI {
   }
 }
 
-export interface APIError {
-  error: {
-    type: string;
-    message: string;
-    data?: unknown;
-  };
+interface ResponseError {
+  error: APIError;
+}
+
+export interface APIError<P = unknown> {
+  type: string;
+  message: string;
+  data?: P;
 }
