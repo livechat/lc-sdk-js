@@ -106,6 +106,7 @@ export interface ArchivesFilters {
   surveys?: SurveyFilter[];
   event_types?: Omit<FilterType<string>, "exists">;
   greetings?: GreetingsFilter;
+  agent_response?: AgentResponseFilter;
 }
 
 export interface PropertiesFilter {
@@ -133,6 +134,13 @@ export interface GreetingsFilter extends Filter<number> {
   from?: string;
   to?: string;
   exists?: boolean;
+  groups?: Filter<number>;
+}
+
+export interface AgentResponseFilter {
+  first?: boolean;
+  exists?: boolean;
+  agents?: Filter<string>;
   groups?: Filter<number>;
 }
 
