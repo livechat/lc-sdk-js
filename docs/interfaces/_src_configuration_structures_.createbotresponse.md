@@ -18,4 +18,4 @@
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L42)*
+*Defined in [src/configuration/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L42)*

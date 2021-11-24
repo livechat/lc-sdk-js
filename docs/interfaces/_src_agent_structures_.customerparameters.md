@@ -21,7 +21,7 @@
 
 • **avatar**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:262](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L262)*
+*Defined in [src/agent/structures.ts:270](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L270)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **email**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:261](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L261)*
+*Defined in [src/agent/structures.ts:269](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L269)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:260](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L260)*
+*Defined in [src/agent/structures.ts:268](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L268)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **session_fields**? : *object[]*
 
-*Defined in [src/agent/structures.ts:263](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L263)*
+*Defined in [src/agent/structures.ts:271](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L271)*

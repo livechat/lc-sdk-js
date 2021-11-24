@@ -20,7 +20,7 @@
 
 • **group_id**? : *undefined | number*
 
-*Defined in [src/objects/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L80)*
+*Defined in [src/objects/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L80)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/objects/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L78)*
+*Defined in [src/objects/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L78)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **label**: *string*
 
-*Defined in [src/objects/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L79)*
+*Defined in [src/objects/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L79)*

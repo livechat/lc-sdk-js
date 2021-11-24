@@ -21,7 +21,7 @@
 
 • **group_ids**? : *number[]*
 
-*Defined in [src/agent/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L48)*
+*Defined in [src/agent/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L48)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **include_active**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L46)*
+*Defined in [src/agent/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L46)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **include_chats_without_threads**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L47)*
+*Defined in [src/agent/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L47)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **properties**? : *[Properties](_src_objects_index_.properties.md)*
 
-*Defined in [src/agent/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L49)*
+*Defined in [src/agent/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L49)*

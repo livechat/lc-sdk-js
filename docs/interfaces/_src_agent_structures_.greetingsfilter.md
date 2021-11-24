@@ -27,7 +27,7 @@
 
 *Inherited from [Filter](_src_objects_index_.filter.md).[exclude_values](_src_objects_index_.filter.md#optional-exclude_values)*
 
-*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L358)*
+*Defined in [src/objects/index.ts:358](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L358)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **exists**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:135](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L135)*
+*Defined in [src/agent/structures.ts:136](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L136)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **from**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:133](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L133)*
+*Defined in [src/agent/structures.ts:134](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L134)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **groups**? : *[Filter](_src_objects_index_.filter.md)‹number›*
 
-*Defined in [src/agent/structures.ts:136](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L136)*
+*Defined in [src/agent/structures.ts:137](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L137)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **to**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:134](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L134)*
+*Defined in [src/agent/structures.ts:135](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L135)*
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 *Inherited from [Filter](_src_objects_index_.filter.md).[values](_src_objects_index_.filter.md#optional-values)*
 
-*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L357)*
+*Defined in [src/objects/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L357)*
