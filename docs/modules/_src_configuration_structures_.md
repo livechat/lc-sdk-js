@@ -24,6 +24,8 @@
 * [CreateGroupResponse](../interfaces/_src_configuration_structures_.creategroupresponse.md)
 * [DaySchedule](../interfaces/_src_configuration_structures_.dayschedule.md)
 * [EmptyResponse](../interfaces/_src_configuration_structures_.emptyresponse.md)
+* [GetLicenseIDResponse](../interfaces/_src_configuration_structures_.getlicenseidresponse.md)
+* [GetOrganizationIDResponse](../interfaces/_src_configuration_structures_.getorganizationidresponse.md)
 * [Group](../interfaces/_src_configuration_structures_.group.md)
 * [GroupConfig](../interfaces/_src_configuration_structures_.groupconfig.md)
 * [LocationAccess](../interfaces/_src_configuration_structures_.locationaccess.md)
@@ -48,4 +50,4 @@
 
 Ƭ **WebhookSourceType**: *"my_client" | "other_clients" | "system"*
 
-*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/configuration/structures.ts#L129)*
+*Defined in [src/configuration/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L129)*

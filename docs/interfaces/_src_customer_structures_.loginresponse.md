@@ -22,7 +22,7 @@
 
 • **__priv_dynamic_config**: *object*
 
-*Defined in [src/customer/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L183)*
+*Defined in [src/customer/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/9364105/src/customer/structures.ts#L183)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **chats**? : *object[]*
 
-*Defined in [src/customer/structures.ts:181](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L181)*
+*Defined in [src/customer/structures.ts:181](https://github.com/livechat/lc-sdk-js/blob/9364105/src/customer/structures.ts#L181)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **customer**: *[Customer](_src_objects_index_.customer.md)*
 
-*Defined in [src/customer/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L179)*
+*Defined in [src/customer/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/9364105/src/customer/structures.ts#L179)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **greeting**? : *undefined | object*
 
-*Defined in [src/customer/structures.ts:182](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L182)*
+*Defined in [src/customer/structures.ts:182](https://github.com/livechat/lc-sdk-js/blob/9364105/src/customer/structures.ts#L182)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **has_active_thread**: *boolean*
 
-*Defined in [src/customer/structures.ts:180](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/customer/structures.ts#L180)*
+*Defined in [src/customer/structures.ts:180](https://github.com/livechat/lc-sdk-js/blob/9364105/src/customer/structures.ts#L180)*

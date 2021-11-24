@@ -16,7 +16,7 @@
 
 • **AcceptingChats**: = "accepting_chats"
 
-*Defined in [src/objects/index.ts:172](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L172)*
+*Defined in [src/objects/index.ts:172](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L172)*
 
 ___
 
@@ -24,7 +24,7 @@ ___
 
 • **NotAcceptingChats**: = "not_accepting_chats"
 
-*Defined in [src/objects/index.ts:173](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L173)*
+*Defined in [src/objects/index.ts:173](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L173)*
 
 ___
 
@@ -32,4 +32,4 @@ ___
 
 • **Offline**: = "offline"
 
-*Defined in [src/objects/index.ts:174](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L174)*
+*Defined in [src/objects/index.ts:174](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L174)*

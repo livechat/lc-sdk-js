@@ -19,7 +19,7 @@
 
 • **another_custom_key**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:236](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L236)*
+*Defined in [src/objects/index.ts:236](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L236)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **custom_key**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:235](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/objects/index.ts#L235)*
+*Defined in [src/objects/index.ts:235](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L235)*

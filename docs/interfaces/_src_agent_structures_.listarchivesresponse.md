@@ -21,7 +21,7 @@
 
 • **chats**: *[ArchivedChat](_src_agent_structures_.archivedchat.md)[]*
 
-*Defined in [src/agent/structures.ts:140](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L140)*
+*Defined in [src/agent/structures.ts:148](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L148)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **found_chats**: *number*
 
-*Defined in [src/agent/structures.ts:141](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L141)*
+*Defined in [src/agent/structures.ts:149](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L149)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **next_page_id**: *string*
 
-*Defined in [src/agent/structures.ts:142](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L142)*
+*Defined in [src/agent/structures.ts:150](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L150)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **previous_page_id**: *string*
 
-*Defined in [src/agent/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L143)*
+*Defined in [src/agent/structures.ts:151](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L151)*

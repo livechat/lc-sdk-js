@@ -15,7 +15,7 @@
 
 • **PostChat**: = "post_chat"
 
-*Defined in [src/agent/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L124)*
+*Defined in [src/agent/structures.ts:125](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L125)*
 
 ___
 
@@ -23,4 +23,4 @@ ___
 
 • **PreChat**: = "pre_chat"
 
-*Defined in [src/agent/structures.ts:123](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L123)*
+*Defined in [src/agent/structures.ts:124](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L124)*

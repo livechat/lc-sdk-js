@@ -19,7 +19,7 @@
 
 • **answer_id**: *string*
 
-*Defined in [src/agent/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L129)*
+*Defined in [src/agent/structures.ts:130](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L130)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **type**: *[SurveyType](../enums/_src_agent_structures_.surveytype.md)*
 
-*Defined in [src/agent/structures.ts:128](https://github.com/livechat/lc-sdk-js/blob/ac28f06/src/agent/structures.ts#L128)*
+*Defined in [src/agent/structures.ts:129](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L129)*
