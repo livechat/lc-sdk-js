@@ -24,7 +24,7 @@
 
 • **data**? : *P*
 
-*Defined in [src/internal/index.ts:185](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L185)*
+*Defined in [src/internal/index.ts:185](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L185)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **message**: *string*
 
-*Defined in [src/internal/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L184)*
+*Defined in [src/internal/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L184)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **type**: *string*
 
-*Defined in [src/internal/index.ts:183](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L183)*
+*Defined in [src/internal/index.ts:183](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L183)*

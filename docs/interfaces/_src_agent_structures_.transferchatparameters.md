@@ -20,7 +20,7 @@
 
 • **ignore_agents_availability**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:180](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L180)*
+*Defined in [src/agent/structures.ts:185](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L185)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **ignore_requester_presence**? : *undefined | false | true*
 
-*Defined in [src/agent/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L179)*
+*Defined in [src/agent/structures.ts:184](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L184)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **target**? : *[TransferTarget](_src_agent_structures_.transfertarget.md)*
 
-*Defined in [src/agent/structures.ts:178](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L178)*
+*Defined in [src/agent/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L183)*

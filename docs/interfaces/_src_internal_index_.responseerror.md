@@ -18,4 +18,4 @@
 
 • **error**: *[APIError](_src_internal_index_.apierror.md)*
 
-*Defined in [src/internal/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L179)*
+*Defined in [src/internal/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L179)*

@@ -126,8 +126,13 @@ export enum SurveyType {
 }
 
 export interface SurveyFilter {
+  from?: string;
+  to?: string;
   type: SurveyType;
-  answer_id: string;
+  values?: string[];
+  exclude_values?: string[];
+  exists?: boolean;
+  groups?: Filter<number>;
 }
 
 export interface GreetingsFilter extends Filter<number> {

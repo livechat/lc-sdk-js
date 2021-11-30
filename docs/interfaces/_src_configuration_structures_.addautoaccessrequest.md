@@ -20,4 +20,4 @@
 
 • **conditions**: *[AutoAccessConditions](_src_configuration_structures_.autoaccessconditions.md)*
 
-*Defined in [src/configuration/structures.ts:187](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L187)*
+*Defined in [src/configuration/structures.ts:187](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L187)*

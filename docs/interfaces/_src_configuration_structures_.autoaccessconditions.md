@@ -20,7 +20,7 @@
 
 • **domain**? : *[Filter](_src_objects_index_.filter.md)‹object›*
 
-*Defined in [src/configuration/structures.ts:165](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L165)*
+*Defined in [src/configuration/structures.ts:165](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L165)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **geolocation**? : *[Filter](_src_objects_index_.filter.md)‹object›*
 
-*Defined in [src/configuration/structures.ts:169](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L169)*
+*Defined in [src/configuration/structures.ts:169](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L169)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **url**? : *[Filter](_src_objects_index_.filter.md)‹object›*
 
-*Defined in [src/configuration/structures.ts:161](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L161)*
+*Defined in [src/configuration/structures.ts:161](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L161)*

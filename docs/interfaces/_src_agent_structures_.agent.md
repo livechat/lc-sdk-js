@@ -30,7 +30,7 @@
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[avatar](_src_objects_index_.agent.md#avatar)*
 
-*Defined in [src/objects/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L10)*
+*Defined in [src/objects/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L10)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[email](_src_objects_index_.agent.md#email)*
 
-*Defined in [src/objects/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L7)*
+*Defined in [src/objects/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L7)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[events_seen_up_to](_src_objects_index_.agent.md#events_seen_up_to)*
 
-*Defined in [src/objects/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L9)*
+*Defined in [src/objects/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L9)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[id](_src_objects_index_.agent.md#id)*
 
-*Defined in [src/objects/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L4)*
+*Defined in [src/objects/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L4)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[name](_src_objects_index_.agent.md#name)*
 
-*Defined in [src/objects/index.ts:6](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L6)*
+*Defined in [src/objects/index.ts:6](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L6)*
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[present](_src_objects_index_.agent.md#present)*
 
-*Defined in [src/objects/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L8)*
+*Defined in [src/objects/index.ts:8](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L8)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[routing_status](_src_objects_index_.agent.md#routing_status)*
 
-*Defined in [src/objects/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L11)*
+*Defined in [src/objects/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L11)*
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 *Inherited from [Agent](_src_objects_index_.agent.md).[type](_src_objects_index_.agent.md#type)*
 
-*Defined in [src/objects/index.ts:5](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L5)*
+*Defined in [src/objects/index.ts:5](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L5)*
 
 ___
 
@@ -108,4 +108,4 @@ ___
 
 • **visibility**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:19](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L19)*
+*Defined in [src/agent/structures.ts:19](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L19)*

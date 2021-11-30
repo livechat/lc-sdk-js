@@ -18,4 +18,4 @@
 
 • **apiUrl**? : *undefined | string*
 
-*Defined in [src/objects/index.ts:353](https://github.com/livechat/lc-sdk-js/blob/9364105/src/objects/index.ts#L353)*
+*Defined in [src/objects/index.ts:353](https://github.com/livechat/lc-sdk-js/blob/61db942/src/objects/index.ts#L353)*

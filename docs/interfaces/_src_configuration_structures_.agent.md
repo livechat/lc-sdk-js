@@ -33,7 +33,7 @@
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[avatar_path](_src_configuration_structures_.agent.md#optional-avatar_path)*
 
-*Defined in [src/configuration/structures.ts:16](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L16)*
+*Defined in [src/configuration/structures.ts:16](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L16)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[awaiting_approval](_src_configuration_structures_.agent.md#optional-awaiting_approval)*
 
-*Defined in [src/configuration/structures.ts:20](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L20)*
+*Defined in [src/configuration/structures.ts:20](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L20)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[email_subscriptions](_src_configuration_structures_.agent.md#optional-email_subscriptions)*
 
-*Defined in [src/configuration/structures.ts:24](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L24)*
+*Defined in [src/configuration/structures.ts:24](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L24)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[groups](_src_configuration_structures_.agent.md#optional-groups)*
 
-*Defined in [src/configuration/structures.ts:21](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L21)*
+*Defined in [src/configuration/structures.ts:21](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L21)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:10](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L10)*
+*Defined in [src/configuration/structures.ts:10](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L10)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[job_title](_src_configuration_structures_.agent.md#optional-job_title)*
 
-*Defined in [src/configuration/structures.ts:17](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L17)*
+*Defined in [src/configuration/structures.ts:17](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L17)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[max_chats_count](_src_configuration_structures_.agent.md#optional-max_chats_count)*
 
-*Defined in [src/configuration/structures.ts:19](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L19)*
+*Defined in [src/configuration/structures.ts:19](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L19)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[mobile](_src_configuration_structures_.agent.md#optional-mobile)*
 
-*Defined in [src/configuration/structures.ts:18](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L18)*
+*Defined in [src/configuration/structures.ts:18](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L18)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[name](_src_configuration_structures_.agent.md#optional-name)*
 
-*Defined in [src/configuration/structures.ts:14](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L14)*
+*Defined in [src/configuration/structures.ts:14](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L14)*
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[notifications](_src_configuration_structures_.agent.md#optional-notifications)*
 
-*Defined in [src/configuration/structures.ts:23](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L23)*
+*Defined in [src/configuration/structures.ts:23](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L23)*
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[role](_src_configuration_structures_.agent.md#optional-role)*
 
-*Defined in [src/configuration/structures.ts:15](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L15)*
+*Defined in [src/configuration/structures.ts:15](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L15)*
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 *Inherited from [Agent](_src_configuration_structures_.agent.md).[work_scheduler](_src_configuration_structures_.agent.md#optional-work_scheduler)*
 
-*Defined in [src/configuration/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L22)*
+*Defined in [src/configuration/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L22)*

@@ -38,7 +38,7 @@
 
 \+ **new WebAPI**(`clientID`: string, `tokenGetter`: [TokenGetter](../modules/_src_authorization_index_.md#tokengetter), `type`: [apiType](../modules/_src_internal_index_.md#apitype), `options?`: [WebAPIOptions](../interfaces/_src_objects_index_.webapioptions.md)): *[WebAPI](_src_internal_index_.webapi.md)*
 
-*Defined in [src/internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L25)*
+*Defined in [src/internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L25)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ Name | Type |
 
 • **APIURL**: *string*
 
-*Defined in [src/internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L15)*
+*Defined in [src/internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L15)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
     "get_license_id",
   ]
 
-*Defined in [src/internal/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L17)*
+*Defined in [src/internal/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L17)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • **clientID**: *string*
 
-*Defined in [src/internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L28)*
+*Defined in [src/internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L28)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 • **tokenGetter**: *[TokenGetter](../modules/_src_authorization_index_.md#tokengetter)*
 
-*Defined in [src/internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L29)*
+*Defined in [src/internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L29)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • **type**: *[apiType](../modules/_src_internal_index_.md#apitype)*
 
-*Defined in [src/internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L30)*
+*Defined in [src/internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L30)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 • **version**: *string*
 
-*Defined in [src/internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L16)*
+*Defined in [src/internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L16)*
 
 ## Methods
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **call**(`action`: string, `payload`: any): *Promise‹any›*
 
-*Defined in [src/internal/index.ts:49](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L49)*
+*Defined in [src/internal/index.ts:49](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L49)*
 
 **Parameters:**
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **send**‹**T**›(`name`: string, `req`: any): *Promise‹T›*
 
-*Defined in [src/internal/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/9364105/src/internal/index.ts#L37)*
+*Defined in [src/internal/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/61db942/src/internal/index.ts#L37)*
 
 **Type parameters:**
 

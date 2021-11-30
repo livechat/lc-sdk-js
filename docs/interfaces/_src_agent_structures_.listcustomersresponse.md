@@ -22,7 +22,7 @@
 
 • **customers**: *[Customer](_src_objects_index_.customer.md)[]*
 
-*Defined in [src/agent/structures.ts:260](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L260)*
+*Defined in [src/agent/structures.ts:265](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L265)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **limited_customers**? : *undefined | number*
 
-*Defined in [src/agent/structures.ts:262](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L262)*
+*Defined in [src/agent/structures.ts:267](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L267)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **next_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:263](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L263)*
+*Defined in [src/agent/structures.ts:268](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L268)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **previous_page_id**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:264](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L264)*
+*Defined in [src/agent/structures.ts:269](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L269)*
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 • **total_customers**: *number*
 
-*Defined in [src/agent/structures.ts:261](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L261)*
+*Defined in [src/agent/structures.ts:266](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L266)*

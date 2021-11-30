@@ -18,4 +18,4 @@
 
 • **organization_id**: *string*
 
-*Defined in [src/configuration/structures.ts:199](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L199)*
+*Defined in [src/configuration/structures.ts:199](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L199)*

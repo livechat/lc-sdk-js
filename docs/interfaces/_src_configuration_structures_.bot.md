@@ -26,7 +26,7 @@
 
 • **avatar_path**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:61](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L61)*
+*Defined in [src/configuration/structures.ts:61](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L61)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **default_group_priority**? : *[GroupPriority](../enums/_src_configuration_structures_.grouppriority.md)*
 
-*Defined in [src/configuration/structures.ts:62](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L62)*
+*Defined in [src/configuration/structures.ts:62](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L62)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **groups**? : *[GroupConfig](_src_configuration_structures_.groupconfig.md)[]*
 
-*Defined in [src/configuration/structures.ts:65](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L65)*
+*Defined in [src/configuration/structures.ts:65](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L65)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/configuration/structures.ts:59](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L59)*
+*Defined in [src/configuration/structures.ts:59](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L59)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **job_title**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:66](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L66)*
+*Defined in [src/configuration/structures.ts:66](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L66)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **max_chats_count**? : *undefined | number*
 
-*Defined in [src/configuration/structures.ts:64](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L64)*
+*Defined in [src/configuration/structures.ts:64](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L64)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **name**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L60)*
+*Defined in [src/configuration/structures.ts:60](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L60)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **owner_client_id**? : *undefined | string*
 
-*Defined in [src/configuration/structures.ts:63](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L63)*
+*Defined in [src/configuration/structures.ts:63](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L63)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **work_scheduler**? : *[WorkScheduler](_src_configuration_structures_.workscheduler.md)*
 
-*Defined in [src/configuration/structures.ts:67](https://github.com/livechat/lc-sdk-js/blob/9364105/src/configuration/structures.ts#L67)*
+*Defined in [src/configuration/structures.ts:67](https://github.com/livechat/lc-sdk-js/blob/61db942/src/configuration/structures.ts#L67)*

@@ -24,7 +24,7 @@
 
 • **creation_timestamp**: *number*
 
-*Defined in [src/agent/structures.ts:341](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L341)*
+*Defined in [src/agent/structures.ts:346](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L346)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **expiration_timestamp**: *number*
 
-*Defined in [src/agent/structures.ts:340](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L340)*
+*Defined in [src/agent/structures.ts:345](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L345)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **id**: *string*
 
-*Defined in [src/agent/structures.ts:337](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L337)*
+*Defined in [src/agent/structures.ts:342](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L342)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **in_trial**: *boolean*
 
-*Defined in [src/agent/structures.ts:342](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L342)*
+*Defined in [src/agent/structures.ts:347](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L347)*
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 • **organization_id**: *string*
 
-*Defined in [src/agent/structures.ts:338](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L338)*
+*Defined in [src/agent/structures.ts:343](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L343)*
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 • **plan**: *string*
 
-*Defined in [src/agent/structures.ts:339](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L339)*
+*Defined in [src/agent/structures.ts:344](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L344)*
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 • **website_last_activity**? : *undefined | string*
 
-*Defined in [src/agent/structures.ts:343](https://github.com/livechat/lc-sdk-js/blob/9364105/src/agent/structures.ts#L343)*
+*Defined in [src/agent/structures.ts:348](https://github.com/livechat/lc-sdk-js/blob/61db942/src/agent/structures.ts#L348)*
