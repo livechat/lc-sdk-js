@@ -57,77 +57,86 @@ describe("WebSocket adapter", () => {
       .catch((err) => done(err));
   });
 
-  it('should propagate `push` to all listeners', (done) => {
-    const mock = jest.fn()
-    adapter.on('push', mock)
-    adapter.on('push', mock)
+  it("should propagate `push` to all listeners", (done) => {
+    const mock = jest.fn();
+    adapter.on("push", mock);
+    adapter.on("push", mock);
 
     socket.on.mockImplementation((eventType, cb) => {
-      if (eventType === 'open') cb();
-      if (eventType === 'message') cb(JSON.stringify({
-        type: 'push',
-        request_id: 'some id',
-        action: 'some action'
-      }))
+      if (eventType === "open") cb();
+      if (eventType === "message")
+        cb(
+          JSON.stringify({
+            type: "push",
+            request_id: "some id",
+            action: "some action",
+          }),
+        );
     });
 
     adapter
       .connect()
       .then(() => delay(100))
       .then(() => {
-        expect(mock).toHaveBeenCalledTimes(2)
-        done()
+        expect(mock).toHaveBeenCalledTimes(2);
+        done();
       })
-      .catch(err => done(err))
-  }, 200)
+      .catch((err) => done(err));
+  }, 200);
 
-  it('should propagate `response` to all listeners', (done) => {
-    const mock = jest.fn()
-    adapter.on('response', mock)
-    adapter.on('response', mock)
+  it("should propagate `response` to all listeners", (done) => {
+    const mock = jest.fn();
+    adapter.on("response", mock);
+    adapter.on("response", mock);
 
     socket.on.mockImplementation((eventType, cb) => {
-      if (eventType === 'open') cb();
-      if (eventType === 'message') cb(JSON.stringify({
-        type: 'response',
-        request_id: 'some id',
-        action: 'some action'
-      }))
+      if (eventType === "open") cb();
+      if (eventType === "message")
+        cb(
+          JSON.stringify({
+            type: "response",
+            request_id: "some id",
+            action: "some action",
+          }),
+        );
     });
 
     adapter
       .connect()
       .then(() => delay(100))
       .then(() => {
-        expect(mock).toHaveBeenCalledTimes(2)
-        done()
+        expect(mock).toHaveBeenCalledTimes(2);
+        done();
       })
-      .catch(err => done(err))
-  }, 200)
+      .catch((err) => done(err));
+  }, 200);
 
-  it('should not mix `push` and `response` listeners', done => {
-    const mockPush = jest.fn()
-    const mockResponse = jest.fn()
-    adapter.on('push', mockPush)
-    adapter.on('response', mockResponse)
+  it("should not mix `push` and `response` listeners", (done) => {
+    const mockPush = jest.fn();
+    const mockResponse = jest.fn();
+    adapter.on("push", mockPush);
+    adapter.on("response", mockResponse);
 
     socket.on.mockImplementation((eventType, cb) => {
-      if (eventType === 'open') cb();
-      if (eventType === 'message') cb(JSON.stringify({
-        type: 'push',
-        request_id: 'some id',
-        action: 'some action'
-      }))
+      if (eventType === "open") cb();
+      if (eventType === "message")
+        cb(
+          JSON.stringify({
+            type: "push",
+            request_id: "some id",
+            action: "some action",
+          }),
+        );
     });
 
     adapter
       .connect()
       .then(() => delay(100))
       .then(() => {
-        expect(mockPush).toHaveBeenCalled()
-        expect(mockResponse).not.toHaveBeenCalled()
-        done()
+        expect(mockPush).toHaveBeenCalled();
+        expect(mockResponse).not.toHaveBeenCalled();
+        done();
       })
-      .catch(err => done(err))
-  })
+      .catch((err) => done(err));
+  });
 });
