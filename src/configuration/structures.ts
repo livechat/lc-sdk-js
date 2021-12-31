@@ -1,6 +1,6 @@
 import { Filter, RoutingStatus } from "../objects";
 
-export interface EmptyResponse {}
+export type EmptyResponse = Record<string, never>;
 
 export interface CreateAgentResponse {
   id: string;

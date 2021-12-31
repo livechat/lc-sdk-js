@@ -1,4 +1,4 @@
-import { ApiVersion } from "../internal/constants";
+import { AvailableVersions } from "../internal";
 import {
   SortOrder,
   Thread,
@@ -11,7 +11,7 @@ import {
   ChatsSummary,
 } from "../objects";
 
-export interface EmptyResponse {}
+export type EmptyResponse = Record<string, never>;
 
 export interface ListChatParameters {
   sort_order?: SortOrder;
@@ -154,7 +154,7 @@ export interface LoginRequest {
   customer_side_storage?: object;
   group_id?: number;
   referrer?: string;
-  pushes?: { [ApiVersion]: Pushes[] };
+  pushes?: Record<AvailableVersions, PushesCustomerAPI[]>;
 }
 
 export interface LoginCustomer {
@@ -216,7 +216,7 @@ export interface GroupConfiguration {
   prechat_form: Form;
 }
 
-export enum Pushes {
+export enum PushesCustomerAPI {
   /**
    * Informs about a chat coming with a new thread. The push payload contains the whole chat data structure.
    * If the chat was started with some initial events, the thread object contains them.

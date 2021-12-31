@@ -1,28 +1,26 @@
-import { Agent, Customer } from "./index";
-import { Event } from "./src/objects";
+import { Agent, Customer, Objects } from "./dist/cjs";
 
-const { IncomingEvent } = Agent.Objects.Pushes;
-const agentAPI = new Agent.RTM();
-const customerAPI = new Customer.RTM('a24e2422-db10-4714-9852-dd74e0ad6420');
+const agentAPI = Agent.RTM();
+const customerAPI = Customer.RTM('a24e2422-db10-4714-9852-dd74e0ad6420');
 
 (async () => {
   await Promise.all([
-    agentAPI.login("Bearer dal:xDDDDDDDDDDDDDD"),
-    customerAPI.login("Bearer dal:XDDDDDDDDDDDDDD"),
+    agentAPI.login("Bearer access_token"),
+    customerAPI.login("Bearer access_token"),
   ])
 
   const { chat_id } = await customerAPI.startChat();
-  agentAPI.on(IncomingEvent, () => {
+  agentAPI.on(Agent.Pushes.IncomingEvent, () => {
     agentAPI.sendEvent(chat_id, {
       type: "message",
       text: "agent msg 1",
-    } as Event);
+    } as Objects.Event);
   })
 
   customerAPI.sendEvent(chat_id, {
     type: "message",
     text: "customer msg 1",
-  } as Event);
+  } as Objects.Event);
 
   await agentAPI.logout();
 })();

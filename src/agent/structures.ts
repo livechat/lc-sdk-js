@@ -1,4 +1,4 @@
-import { ApiVersion } from "../internal/constants";
+import { AvailableVersions } from "../internal";
 import {
   Access,
   Properties,
@@ -33,7 +33,7 @@ export interface ChatsSummary extends CommonChatSummary {
   users: User[];
 }
 
-export interface EmptyResponse {}
+export type EmptyResponse = Record<string, never>;
 
 export interface ListChatParameters {
   filters?: ChatsFilters;
@@ -312,7 +312,7 @@ export interface LoginRequest {
   application?: Application;
   away?: boolean;
   customer_monitoring_level?: CustomerMonitoringLevel;
-  pushes?: { [ApiVersion]: Pushes[] };
+  pushes?: Record<AvailableVersions, PushesAgentAPI[]>;
 }
 
 export enum CustomerMonitoringLevel {
@@ -359,7 +359,7 @@ export interface SetRoutingStatusResponse {
   status: RoutingStatus;
 }
 
-export enum Pushes {
+export enum PushesAgentAPI {
   /**
    * Informs about a chat coming with a new thread. The push payload contains the whole chat data structure.
    * If the chat was started with some initial events, the thread object contains them.
@@ -519,7 +519,7 @@ export enum Pushes {
   /**
    * New positions and wait times for queued chats.
    */
-  QueuePostitionsUpdated = "queue_postitions_updated",
+  QueuePositionsUpdated = "queue_positions_updated",
 
   /**
    * Informs about customers the agent should be aware of.
