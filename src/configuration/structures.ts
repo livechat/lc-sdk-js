@@ -96,7 +96,7 @@ export interface PropertiesConfig {
 
 export interface PropertyConfig {
   name: string;
-  owner_client_id: string;
+  owner_client_id?: string;
   type: string;
   access: {
     [locationName: string]: LocationAccess;
