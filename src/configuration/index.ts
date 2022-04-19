@@ -24,6 +24,8 @@ import {
   UpdateAutoAccessRequest,
   GetOrganizationIDResponse,
   GetLicenseIDResponse,
+  PlanLimit,
+  ChannelActivity
 } from "./structures";
 import { Properties, WebAPIOptions } from "../objects/index";
 
@@ -434,5 +436,20 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async getLicenseID(organizationID: string): Promise<GetLicenseIDResponse> {
     return this.send("get_license_id", { organization_id: organizationID });
+  }
+
+  /**
+   * Compares your organization's current resources with a given plan and returns those which exceeded the called plan's limits.
+   * @param plan - `plan` must be one of: 'starter', 'team', 'enterprise' or 'enterpriseplus'
+   */
+  async checkProductLimitsForPlan(plan: string): Promise<PlanLimit[]> {
+    return this.send("check_product_limits_for_plan", { plan });
+  }
+
+  /**
+   * Returns the summary of communication channels for your LiveChat product.
+   */
+  async listChannels(): Promise<ChannelActivity[]> {
+    return this.send("list_channels", {});
   }
 }

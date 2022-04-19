@@ -202,3 +202,15 @@ export interface GetOrganizationIDResponse {
 export interface GetLicenseIDResponse {
   license_id: string;
 }
+
+export interface PlanLimit {
+  resource: string;
+  limit_balance: number;
+  id?: string;
+}
+
+export interface ChannelActivity {
+  channel_type: string;
+  channel_subtype: string;
+  first_activity_timestamp: string;
+}
