@@ -4,7 +4,7 @@
     "variable-name": {
       "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case", "allow-snake-case"]
     },
-	"no-empty-interface": false,
-	"max-classes-per-file": [false, 1]
+    "no-empty-interface": false,
+    "max-classes-per-file": [false, 1]
   }
 }

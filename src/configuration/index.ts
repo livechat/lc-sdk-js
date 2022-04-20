@@ -227,7 +227,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param name - property name
    * @param owner_client_id - clientID of property owner
    */
-  async unregisterProperty(name: string, owner_client_id: string = ''): Promise<EmptyResponse> {
+  async unregisterProperty(name: string, owner_client_id: string = ""): Promise<EmptyResponse> {
     return this.send("unregister_property", { name, owner_client_id });
   }
 
@@ -238,7 +238,12 @@ export default class ConfigurationAPI extends WebAPI {
    * @param read - determines whether non-owners can read the property
    * @param write - determines whether non-owners can write the property
    */
-  async publishProperty(name: string, owner_client_id: string = '', read: boolean, write: boolean): Promise<EmptyResponse> {
+  async publishProperty(
+    name: string,
+    owner_client_id: string = "",
+    read: boolean,
+    write: boolean,
+  ): Promise<EmptyResponse> {
     const access_type = new Array<string>();
     if (read) {
       access_type.push("read");
@@ -253,7 +258,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Lists properties for given client_id.
    * @param owner_client_id - client_id of property owner
    */
-  async listProperties(owner_client_id: string = ''): Promise<PropertiesConfig> {
+  async listProperties(owner_client_id: string = ""): Promise<PropertiesConfig> {
     return this.send("list_properties", { owner_client_id });
   }
 
@@ -327,7 +332,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param webhook - webhook to register
    * @param owner_client_id - must be provided when authorizing with Personal Access Token
    */
-  async registerWebhook(webhook: Webhook, owner_client_id: string = ''): Promise<RegisterWebhookResponse> {
+  async registerWebhook(webhook: Webhook, owner_client_id: string = ""): Promise<RegisterWebhookResponse> {
     return this.send("register_webhook", { ...webhook, owner_client_id });
   }
 
@@ -335,7 +340,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Lists registered webhooks.
    * @param owner_client_id - must be provided when authorizing with Personal Access Token
    */
-  async listWebhooks(owner_client_id: string = ''): Promise<RegisteredWebhook[]> {
+  async listWebhooks(owner_client_id: string = ""): Promise<RegisteredWebhook[]> {
     return this.send("list_webhooks", { owner_client_id });
   }
 
@@ -344,7 +349,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of webhook to unregister
    * @param owner_client_id - must be provided when authorizing with Personal Access Token
    */
-  async unregisterWebhook(id: string, owner_client_id: string = ''): Promise<EmptyResponse> {
+  async unregisterWebhook(id: string, owner_client_id: string = ""): Promise<EmptyResponse> {
     return this.send("unregister_webhook", { id, owner_client_id });
   }
 
