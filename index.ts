@@ -12,16 +12,16 @@ import * as ConfigurationObjects from "./src/configuration/structures";
 export const Agent = {
   Web: AgentWeb,
   RTM: AgentRTM,
-  Objects: AgentObjects
+  Objects: AgentObjects,
 };
 export const Customer = {
   Web: CustomerWeb,
   RTM: CustomerRTM,
-  Objects: CustomerObjects
+  Objects: CustomerObjects,
 };
 export const Configuration = {
   Web: ConfigurationAPI,
-  Objects: ConfigurationObjects
+  Objects: ConfigurationObjects,
 };
 
 export * as Webhooks from "./src/webhooks";
