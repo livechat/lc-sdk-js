@@ -221,7 +221,7 @@ export interface Statistics {
 export interface Chat {
   id: string;
   users: User[];
-  threads: Thread[];
+  thread: Thread;
   properties?: Properties;
   access: Access;
   is_followed: boolean;
