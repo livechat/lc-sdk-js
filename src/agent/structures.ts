@@ -26,7 +26,7 @@ export interface Chat extends CommonChat {
 }
 
 export interface ArchivedChat extends Chat {
-  threads: ArchivedThread[];
+  thread: ArchivedThread;
 }
 
 export interface ChatsSummary extends CommonChatSummary {
