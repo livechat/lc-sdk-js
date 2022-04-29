@@ -519,7 +519,7 @@ export enum Pushes {
   /**
    * New positions and wait times for queued chats.
    */
-  QueuePostitionsUpdated = "queue_postitions_updated",
+  QueuePositionsUpdated = "queue_positions_updated",
 
   /**
    * Informs about customers the agent should be aware of.
