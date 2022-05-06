@@ -26,7 +26,7 @@ export interface Chat extends CommonChat {
 }
 
 export interface ArchivedChat extends Chat {
-  threads: ArchivedThread[];
+  thread: ArchivedThread;
 }
 
 export interface ChatsSummary extends CommonChatSummary {
@@ -519,7 +519,7 @@ export enum Pushes {
   /**
    * New positions and wait times for queued chats.
    */
-  QueuePostitionsUpdated = "queue_postitions_updated",
+  QueuePositionsUpdated = "queue_positions_updated",
 
   /**
    * Informs about customers the agent should be aware of.
