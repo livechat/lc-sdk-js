@@ -214,3 +214,10 @@ export interface ChannelActivity {
   channel_subtype: string;
   first_activity_timestamp: string;
 }
+
+export interface Tag {
+  name: string;
+  group_ids: number[];
+  author_id: string;
+  created_at: string;
+}

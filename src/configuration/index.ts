@@ -25,7 +25,8 @@ import {
   GetOrganizationIDResponse,
   GetLicenseIDResponse,
   PlanLimit,
-  ChannelActivity
+  ChannelActivity,
+  Tag
 } from "./structures";
 import { Properties, WebAPIOptions } from "../objects/index";
 
@@ -451,5 +452,39 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async listChannels(): Promise<ChannelActivity[]> {
     return this.send("list_channels", {});
+  }
+
+  /**
+   * Creates a new tag.
+   * @param name - name of the created tag
+   * @param groupIDs - list of groups where tag will be assigned
+   */
+  async createTag(name: string, groupIDs: number[]): Promise<void> {
+    await this.send("list_tags", { name, group_ids: groupIDs });
+  }
+
+  /**
+   * Deletes an existing tag.
+   * @param name - name of the removed tag
+   */
+  async deleteTag(name: string): Promise<void> {
+    await this.send("delete_tag", { name });
+  }
+
+  /**
+   * Returns tags assigned to requested groups.
+   * @param groupIDs - filter tags by groups where there are assigned
+   */
+  async listTags(groupIDs: number[]): Promise<Tag[]> {
+    return this.send("list_tags", { group_ids: groupIDs });
+  }
+
+  /**
+   * Updates an existing tag.
+   * @param name - name of the updated tag
+   * @param groupIDs - list of groups where tag will be assigned
+   */
+  async updateTag(name: string, groupIDs: number[]): Promise<void> {
+    await this.send("update_tag", { name, group_ids: groupIDs });
   }
 }
