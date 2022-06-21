@@ -4,19 +4,76 @@ import {
   Properties,
   SortOrder,
   Thread,
-  Customer,
   InitialChat,
   MyProfile,
   RoutingStatus,
   Filter,
   ArchivedThread,
-  Agent as CommonAgent,
   Chat as CommonChat,
   ChatsSummary as CommonChatSummary,
 } from "../objects";
 
-export interface Agent extends CommonAgent {
+export interface Agent {
+  id: string;
+  type: string;
+  name: string;
+  email: string;
+  present: boolean;
+  events_seen_up_to: string;
+  avatar: string;
+  routing_status: string;
   visibility?: string;
+}
+
+export interface Geolocation {
+  country: string;
+  country_code: string;
+  region: string;
+  city: string;
+  timezone: string;
+}
+
+export interface LastPage {
+  opened_at: string;
+  url: string;
+  title: string;
+}
+
+export interface Visit {
+  started_at: string;
+  ended_at: string;
+  referrer: string;
+  ip: string;
+  user_agent: string;
+  geolocation: Geolocation;
+  last_pages: LastPage[];
+}
+
+export interface Statistics {
+  chats_count: number;
+  threads_count: number;
+  visits_count: number;
+}
+
+export interface Customer {
+  id: string;
+  type: string;
+  name: string;
+  email: string;
+  email_verified: boolean;
+  avatar: string;
+  last_visit: Visit;
+  session_fields: Array<Record<string, string>>;
+  statistics: Statistics;
+  __priv_lc2_customer_id: string;
+  agent_last_event_created_at: string;
+  customer_last_event_created_at: string;
+  created_at: string;
+  present: boolean;
+  events_seen_up_to: string;
+  followed: boolean;
+  group_ids: number[];
+  state: string;
 }
 
 export type User = Agent | Customer;

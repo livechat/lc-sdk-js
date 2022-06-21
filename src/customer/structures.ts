@@ -6,12 +6,32 @@ import {
   Access,
   InitialChat,
   GroupStatus,
-  Customer,
   User,
   ChatsSummary,
 } from "../objects";
 
 export interface EmptyResponse {}
+
+export interface Customer {
+  id: string;
+  type: string;
+  name?: string;
+  email?: string;
+  email_verified?: boolean;
+  avatar?: string;
+  session_fields?: Array<Record<string, string>>;
+  present: boolean;
+  events_seen_up_to: string;
+}
+
+export interface Agent {
+  id: string;
+  type: string;
+  name?: string;
+  avatar?: string;
+  present: boolean;
+  events_seen_up_to: string;
+}
 
 export interface ListChatParameters {
   sort_order?: SortOrder;
