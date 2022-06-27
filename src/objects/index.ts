@@ -1,19 +1,19 @@
 import { 
-  Customer as CustomerCustomer,
-  Agent as CustomerAgent,
+  Customer as CustomerFromAgentAPI,
+  Agent as AgentFromAgentAPI,
   Statistics as CustomerStatistics,
   Geolocation as CustomerGeolocation,
   LastPage as CustomerLastPage,
   Visit as CustomerVisit,
  } from "../agent/structures";
  import {
-  Customer as AgentCustomer,
-  Agent as AgentAgent,
+  Customer as CustomerFromCustomerAPI,
+  Agent as AgentFromCustomerAPI,
  } from "../customer/structures";
 
-export type Agent = AgentAgent | AgentCustomer;
+export type Agent = AgentFromAgentAPI | AgentFromCustomerAPI;
 
-export type Customer = AgentCustomer | CustomerCustomer;
+export type Customer = CustomerFromAgentAPI | CustomerFromCustomerAPI;
 
 export type User = Agent | Customer;
 
