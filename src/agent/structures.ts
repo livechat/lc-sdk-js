@@ -63,7 +63,7 @@ export interface Customer {
   email_verified: boolean;
   avatar: string;
   last_visit: Visit;
-  session_fields: Array<Record<string, string>>;
+  session_fields: Record<string, string>[];
   statistics: Statistics;
   __priv_lc2_customer_id: string;
   agent_last_event_created_at: string;
