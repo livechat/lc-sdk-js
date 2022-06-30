@@ -1,15 +1,21 @@
-export type User = Agent | Customer;
+import { 
+  Customer as CustomerFromAgentAPI,
+  Agent as AgentFromAgentAPI,
+  Statistics as CustomerStatistics,
+  Geolocation as CustomerGeolocation,
+  LastPage as CustomerLastPage,
+  Visit as CustomerVisit,
+ } from "../agent/structures";
+ import {
+  Customer as CustomerFromCustomerAPI,
+  Agent as AgentFromCustomerAPI,
+ } from "../customer/structures";
 
-export interface Agent {
-  id: string;
-  type: string;
-  name: string;
-  email: string;
-  present: boolean;
-  events_seen_up_to: string;
-  avatar: string;
-  routing_status: string;
-}
+export type Agent = AgentFromAgentAPI | AgentFromCustomerAPI;
+
+export type Customer = CustomerFromAgentAPI | CustomerFromCustomerAPI;
+
+export type User = Agent | Customer;
 
 export interface Chat {
   id: string;
@@ -186,62 +192,6 @@ export interface MyProfile {
   permission: string;
 }
 
-export interface Customer {
-  id: string;
-  type: string;
-  name: string;
-  email: string;
-  email_verified: boolean;
-  avatar: string;
-  last_visit: Visit;
-  session_fields: SessionField[];
-  statistics: Statistics;
-  __priv_lc2_customer_id: string;
-  agent_last_event_created_at: string;
-  customer_last_event_created_at: string;
-  created_at: string;
-  present: boolean;
-  events_seen_up_to: string;
-  followed: boolean;
-  group_ids: number[];
-  state: string;
-}
-
-export interface Visit {
-  started_at: string;
-  ended_at: string;
-  referrer: string;
-  ip: string;
-  user_agent: string;
-  geolocation: Geolocation;
-  last_pages: LastPage[];
-}
-
-export interface Geolocation {
-  country: string;
-  country_code: string;
-  region: string;
-  city: string;
-  timezone: string;
-}
-
-export interface LastPage {
-  opened_at: string;
-  url: string;
-  title: string;
-}
-
-export interface SessionField {
-  custom_key?: string;
-  another_custom_key?: string;
-}
-
-export interface Statistics {
-  chats_count: number;
-  threads_count: number;
-  visits_count: number;
-}
-
 export interface InitialChat {
   properties?: Properties;
   access?: Access;
@@ -268,15 +218,6 @@ export interface Field {
   type: string;
   label: string;
   answer: string;
-}
-
-export interface Statistics {
-  chats_count: number;
-  threads_count: number;
-  visits_count: number;
-  page_views_count: number;
-  greetings_shown_count: number;
-  greetings_accepted_count: number;
 }
 
 export interface Thread {
@@ -365,3 +306,12 @@ export interface Push<P = unknown> {
   type: string;
   payload: P;
 }
+
+/**
+ * Backward compatibility
+ */
+export type Statistics = CustomerStatistics
+export type SessionField = Record<string, string>;
+export type Geolocation = CustomerGeolocation
+export type LastPage = CustomerLastPage
+export type Visit = CustomerVisit
