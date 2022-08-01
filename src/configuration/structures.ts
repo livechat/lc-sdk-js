@@ -2,8 +2,23 @@ import { Filter, RoutingStatus } from "../objects";
 
 export interface EmptyResponse {}
 
+export interface ErrorResponse {
+  error: {
+    type: string;
+    message: string;
+  };
+}
+
+export interface BatchNullableResponse {
+  responses: (EmptyResponse | ErrorResponse)[];
+}
+
 export interface CreateAgentResponse {
   id: string;
+}
+
+export interface BatchCreateAgentsResponse {
+  responses: (CreateAgentResponse | ErrorResponse)[];
 }
 
 export interface Agent extends AgentFields {

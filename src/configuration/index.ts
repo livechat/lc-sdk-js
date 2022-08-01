@@ -5,6 +5,8 @@ import {
   Agent,
   EmptyResponse,
   CreateAgentResponse,
+  BatchCreateAgentsResponse,
+  BatchNullableResponse,
   BotFields,
   CreateBotResponse,
   Bot,
@@ -45,8 +47,16 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
+   * Creates new Agents with specified parameters within a license.
+   * @param agents - agents to create
+   */
+   async batchCreateAgents(agents: Agent[]): Promise<BatchCreateAgentsResponse> {
+    return this.send("batch_create_agents", { requests: agents });
+  }
+
+  /**
    * It returns the info about an Agent specified by id.
-   * @param id - IF of agent to get
+   * @param id - ID of agent to get
    * @param fields - additional fields to include
    */
   async getAgent(id: string, fields?: string[]): Promise<Agent> {
@@ -72,11 +82,27 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
+   * Updates the properties of Agents specified by ids.
+   * @param agents - agents to update
+   */
+   async batchUpdateAgents(agents: Agent[]): Promise<BatchNullableResponse> {
+    return this.send("batch_update_agents", { requests: agents });
+  }
+
+  /**
    * Deletes an Agent specified by id.
    * @param id - ID of agent to delete
    */
   async deleteAgent(id: string): Promise<EmptyResponse> {
     return this.send("delete_agent", { id });
+  }
+
+  /**
+   * Deletes Agents specified by ids.
+   * @param ids - IDs of agents to delete
+   */
+   async batchDeleteAgents(ids: string[]): Promise<BatchNullableResponse> {
+    return this.send("batch_delete_agents", { requests: ids.map(id => ({id})) });
   }
 
   /**
@@ -88,12 +114,28 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
+   * Suspends Agents specified by ids.
+   * @param ids - IDs of agents to suspend
+   */
+     async batchSuspendAgents(ids: string[]): Promise<BatchNullableResponse> {
+      return this.send("batch_suspend_agents", { requests: ids.map(id => ({id})) });
+    }
+
+  /**
    * Unsuspends an Agent specified by id.
    * @param id - ID of agent to unsuspend
    */
   async unsuspendAgent(id: string): Promise<EmptyResponse> {
     return this.send("unsuspend_agent", { id });
   }
+
+  /**
+   * Unsuspends Agents specified by ids.
+   * @param ids - IDs of agents to unsuspend
+   */
+     async batchUnsuspendAgents(ids: string[]): Promise<BatchNullableResponse> {
+      return this.send("batch_unsuspend_agents", { requests: ids.map(id => ({id})) });
+    }
 
   /**
    * A suspended Agent can send emails to license owners and vice owners with an unsuspension request.
@@ -108,6 +150,14 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async approveAgent(id: string): Promise<EmptyResponse> {
     return this.send("approve_agent", { id });
+  }
+
+  /**
+   * Approves Agents thus allowing the Agents to use the application.
+   * @param ids - IDs of agents to approve
+   */
+   async batchApproveAgents(ids: string[]): Promise<BatchNullableResponse> {
+    return this.send("batch_approve_agents", { requests: ids.map(id => ({id})) });
   }
 
   /**
