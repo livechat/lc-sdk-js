@@ -23,6 +23,7 @@ export interface BatchCreateAgentsResponse {
 
 export interface Agent extends AgentFields {
   id: string;
+  account_id?: string;
 }
 
 export interface AgentFields {
