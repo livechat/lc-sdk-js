@@ -24,6 +24,7 @@ export interface BatchCreateAgentsResponse {
 export interface Agent extends AgentFields {
   id: string;
   account_id?: string;
+  last_logout?: string;
 }
 
 export interface AgentFields {
