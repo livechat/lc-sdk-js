@@ -47,10 +47,13 @@ export interface GroupConfig {
 }
 
 export interface WorkScheduler {
-  [day: string]: DaySchedule;
+  timezone: string;
+  schedule: Schedule[];
 }
 
-export interface DaySchedule {
+export interface Schedule {
+  day: string;
+  enabled: boolean;
   start: string;
   end: string;
 }
