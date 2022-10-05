@@ -196,8 +196,8 @@ interface WorkScheduler {
 }
 
 interface Schedule {
-  enabled: boolean;
   day: string;
+  enabled: boolean;
   start: string;
   end: string;
 }
