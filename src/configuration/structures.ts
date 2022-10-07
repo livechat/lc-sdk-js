@@ -1,4 +1,4 @@
-import { Filter, RoutingStatus } from "../objects";
+import { Filter, RoutingStatus, Properties } from "../objects";
 
 export interface EmptyResponse {}
 
@@ -237,4 +237,12 @@ export interface Tag {
   group_ids: number[];
   author_id: string;
   created_at: string;
+}
+
+export interface GroupProperties {
+  id: string;
+  properties: Properties
+}
+export interface GroupsProperties {
+  list_groups_properties: GroupProperties[]
 }
