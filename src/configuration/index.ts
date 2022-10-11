@@ -546,6 +546,6 @@ export default class ConfigurationAPI extends WebAPI {
    * @param namePrefix - name prefix
    */
   async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupsProperties> {
-    return this.send("list_groups_properties", { group_ids: groupIDs, namespace, namePrefix  })
+    return this.send("list_groups_properties", { group_ids: groupIDs, namespace, name_prefix: namePrefix  })
    }
 }

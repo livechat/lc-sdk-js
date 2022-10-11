@@ -243,6 +243,5 @@ export interface GroupProperties {
   id: string;
   properties: Properties
 }
-export interface GroupsProperties {
-  list_groups_properties: GroupProperties[]
-}
+
+export type GroupsProperties = GroupProperties[]
