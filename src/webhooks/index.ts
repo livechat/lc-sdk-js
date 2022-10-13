@@ -190,13 +190,17 @@ interface GroupAssignment {
   priority: number;
 }
 
-type WorkScheduler = Record<
-  string,
-  {
-    start: string;
-    end: string;
-  }
->;
+interface WorkScheduler {
+  timezone: string;
+  schedule: Schedule[];
+}
+
+interface Schedule {
+  day: string;
+  enabled: boolean;
+  start: string;
+  end: string;
+}
 
 export interface AgentCreated {
   id: string;
