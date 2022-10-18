@@ -28,7 +28,8 @@ import {
   GetLicenseIDResponse,
   PlanLimit,
   ChannelActivity,
-  Tag
+  Tag,
+  GroupsProperties
 } from "./structures";
 import { Properties, WebAPIOptions } from "../objects/index";
 
@@ -537,4 +538,14 @@ export default class ConfigurationAPI extends WebAPI {
   async updateTag(name: string, groupIDs?: number[]): Promise<void> {
     await this.send("update_tag", { name, group_ids: groupIDs });
   }
+
+  /**
+   * Lists groups' properties
+   * @param groupIDs - list of groups whose properties will be returned
+   * @param namespace - namespace
+   * @param namePrefix - name prefix
+   */
+  async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupsProperties> {
+    return this.send("list_groups_properties", { group_ids: groupIDs, namespace, name_prefix: namePrefix  })
+   }
 }
