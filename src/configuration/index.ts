@@ -355,19 +355,6 @@ export default class ConfigurationAPI extends WebAPI {
       properties,
     });
   }
-  /**
-   * Returns the properties set within a group.
-   * @param id - group ID to get properties from
-   * @param namespace_prefix - namespace prefix
-   * @param name_prefix - name prefix
-   */
-  async listGroupProperties(id: number, namespace_prefix?: string, name_prefix?: string): Promise<Properties> {
-    return this.send("list_group_properties", {
-      id,
-      namespace_prefix,
-      name_prefix,
-    });
-  }
 
   /**
    * Deletes the properties set within a group.
