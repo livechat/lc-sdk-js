@@ -9,6 +9,7 @@ import {
   BatchNullableResponse,
   BotFields,
   CreateBotResponse,
+  BatchCreateBotResponse,
   Bot,
   AgentPriorities,
   CreateGroupResponse,
@@ -31,7 +32,7 @@ import {
   Tag,
   GroupsProperties
 } from "./structures";
-import { Properties, WebAPIOptions } from "../objects/index";
+import { Properties, WebAPIOptions } from "../objects";
 
 export default class ConfigurationAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
@@ -170,11 +171,27 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
+   * Creates new Bots with specified parameters within a license.
+   * @param bots - bots to create
+   */
+  async batchCreateBots(bots: Bot[]): Promise<BatchCreateBotResponse> {
+    return this.send("batch_create_bots", { requests: bots });
+  }
+
+  /**
    * Deletes bot specified by id.
    * @param id - ID of bot to delete
    */
   async deleteBot(id: string): Promise<EmptyResponse> {
     return this.send("delete_bot", { id });
+  }
+
+  /**
+   * Deletes Bots specified by ids.
+   * @param ids - IDs of bots to delete
+   */
+  async batchDeleteBots(ids: string[]): Promise<BatchNullableResponse> {
+    return this.send("batch_delete_bots", { requests: ids.map(id => ({id})) });
   }
 
   /**
@@ -184,6 +201,14 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async updateBot(id: string, fields: BotFields): Promise<EmptyResponse> {
     return this.send("update_bot", { id, ...fields });
+  }
+
+  /**
+   * Updates the properties of Bots specified by ids.
+   * @param bots - bots to update
+   */
+  async batchUpdateBots(bots: Bot[]): Promise<BatchNullableResponse> {
+    return this.send("batch_update_bots", { requests: bots });
   }
 
   /**

@@ -62,6 +62,10 @@ export interface CreateBotResponse {
   id: string;
 }
 
+export interface BatchCreateBotResponse {
+  responses: (CreateBotResponse | ErrorResponse)[];
+}
+
 export interface BotFields {
   name?: string;
   avatar_path?: string;
