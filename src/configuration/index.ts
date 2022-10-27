@@ -5,11 +5,9 @@ import {
   Agent,
   EmptyResponse,
   CreateAgentResponse,
-  BatchCreateAgentsResponse,
-  BatchNullableResponse,
+  BatchResponse,
   BotFields,
   CreateBotResponse,
-  BatchCreateBotResponse,
   Bot,
   AgentPriorities,
   CreateGroupResponse,
@@ -52,7 +50,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Creates new Agents with specified parameters within a license.
    * @param agents - agents to create
    */
-   async batchCreateAgents(agents: Agent[]): Promise<BatchCreateAgentsResponse> {
+   async batchCreateAgents(agents: Agent[]): Promise<BatchResponse<CreateAgentResponse>> {
     return this.send("batch_create_agents", { requests: agents });
   }
 
@@ -87,7 +85,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Updates the properties of Agents specified by ids.
    * @param agents - agents to update
    */
-   async batchUpdateAgents(agents: Agent[]): Promise<BatchNullableResponse> {
+   async batchUpdateAgents(agents: Agent[]): Promise<BatchResponse<EmptyResponse>> {
     return this.send("batch_update_agents", { requests: agents });
   }
 
@@ -103,7 +101,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Deletes Agents specified by ids.
    * @param ids - IDs of agents to delete
    */
-   async batchDeleteAgents(ids: string[]): Promise<BatchNullableResponse> {
+   async batchDeleteAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
     return this.send("batch_delete_agents", { requests: ids.map(id => ({id})) });
   }
 
@@ -119,7 +117,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Suspends Agents specified by ids.
    * @param ids - IDs of agents to suspend
    */
-     async batchSuspendAgents(ids: string[]): Promise<BatchNullableResponse> {
+     async batchSuspendAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
       return this.send("batch_suspend_agents", { requests: ids.map(id => ({id})) });
     }
 
@@ -135,7 +133,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Unsuspends Agents specified by ids.
    * @param ids - IDs of agents to unsuspend
    */
-     async batchUnsuspendAgents(ids: string[]): Promise<BatchNullableResponse> {
+     async batchUnsuspendAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
       return this.send("batch_unsuspend_agents", { requests: ids.map(id => ({id})) });
     }
 
@@ -158,7 +156,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Approves Agents thus allowing the Agents to use the application.
    * @param ids - IDs of agents to approve
    */
-   async batchApproveAgents(ids: string[]): Promise<BatchNullableResponse> {
+   async batchApproveAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
     return this.send("batch_approve_agents", { requests: ids.map(id => ({id})) });
   }
 
@@ -174,7 +172,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Creates new Bots with specified parameters within a license.
    * @param bots - bots to create
    */
-  async batchCreateBots(bots: Bot[]): Promise<BatchCreateBotResponse> {
+  async batchCreateBots(bots: Bot[]): Promise<BatchResponse<CreateBotResponse>> {
     return this.send("batch_create_bots", { requests: bots });
   }
 
@@ -190,7 +188,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Deletes Bots specified by ids.
    * @param ids - IDs of bots to delete
    */
-  async batchDeleteBots(ids: string[]): Promise<BatchNullableResponse> {
+  async batchDeleteBots(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
     return this.send("batch_delete_bots", { requests: ids.map(id => ({id})) });
   }
 
@@ -207,7 +205,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Updates the properties of Bots specified by ids.
    * @param bots - bots to update
    */
-  async batchUpdateBots(bots: Bot[]): Promise<BatchNullableResponse> {
+  async batchUpdateBots(bots: Bot[]): Promise<BatchResponse<EmptyResponse>> {
     return this.send("batch_update_bots", { requests: bots });
   }
 
