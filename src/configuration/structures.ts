@@ -9,16 +9,12 @@ export interface ErrorResponse {
   };
 }
 
-export interface BatchNullableResponse {
-  responses: (EmptyResponse | ErrorResponse)[];
+export interface BatchResponse<T> {
+  responses: (T | ErrorResponse)[];
 }
 
 export interface CreateAgentResponse {
   id: string;
-}
-
-export interface BatchCreateAgentsResponse {
-  responses: (CreateAgentResponse | ErrorResponse)[];
 }
 
 export interface Agent extends AgentFields {
