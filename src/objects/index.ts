@@ -1,15 +1,12 @@
-import { 
+import {
   Customer as CustomerFromAgentAPI,
   Agent as AgentFromAgentAPI,
   Statistics as CustomerStatistics,
   Geolocation as CustomerGeolocation,
   LastPage as CustomerLastPage,
   Visit as CustomerVisit,
- } from "../agent/structures";
- import {
-  Customer as CustomerFromCustomerAPI,
-  Agent as AgentFromCustomerAPI,
- } from "../customer/structures";
+} from "../agent/structures";
+import { Customer as CustomerFromCustomerAPI, Agent as AgentFromCustomerAPI } from "../customer/structures";
 
 export type Agent = AgentFromAgentAPI | AgentFromCustomerAPI;
 
@@ -310,8 +307,8 @@ export interface Push<P = unknown> {
 /**
  * Backward compatibility
  */
-export type Statistics = CustomerStatistics
+export type Statistics = CustomerStatistics;
 export type SessionField = Record<string, string>;
-export type Geolocation = CustomerGeolocation
-export type LastPage = CustomerLastPage
-export type Visit = CustomerVisit
+export type Geolocation = CustomerGeolocation;
+export type LastPage = CustomerLastPage;
+export type Visit = CustomerVisit;

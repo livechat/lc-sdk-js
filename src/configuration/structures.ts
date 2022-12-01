@@ -240,7 +240,7 @@ export interface Tag {
 
 export interface GroupProperties {
   id: string;
-  properties: Properties
+  properties: Properties;
 }
 
-export type GroupsProperties = GroupProperties[]
+export type GroupsProperties = GroupProperties[];

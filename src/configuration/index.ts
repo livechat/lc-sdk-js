@@ -28,7 +28,7 @@ import {
   PlanLimit,
   ChannelActivity,
   Tag,
-  GroupsProperties
+  GroupsProperties,
 } from "./structures";
 import { Properties, WebAPIOptions } from "../objects";
 
@@ -50,7 +50,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Creates new Agents with specified parameters within a license.
    * @param agents - agents to create
    */
-   async batchCreateAgents(agents: Agent[]): Promise<BatchResponse<CreateAgentResponse>> {
+  async batchCreateAgents(agents: Agent[]): Promise<BatchResponse<CreateAgentResponse>> {
     return this.send("batch_create_agents", { requests: agents });
   }
 
@@ -85,7 +85,7 @@ export default class ConfigurationAPI extends WebAPI {
    * Updates the properties of Agents specified by ids.
    * @param agents - agents to update
    */
-   async batchUpdateAgents(agents: Agent[]): Promise<BatchResponse<EmptyResponse>> {
+  async batchUpdateAgents(agents: Agent[]): Promise<BatchResponse<EmptyResponse>> {
     return this.send("batch_update_agents", { requests: agents });
   }
 
@@ -101,8 +101,8 @@ export default class ConfigurationAPI extends WebAPI {
    * Deletes Agents specified by ids.
    * @param ids - IDs of agents to delete
    */
-   async batchDeleteAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
-    return this.send("batch_delete_agents", { requests: ids.map(id => ({id})) });
+  async batchDeleteAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
+    return this.send("batch_delete_agents", { requests: ids.map((id) => ({ id })) });
   }
 
   /**
@@ -117,9 +117,9 @@ export default class ConfigurationAPI extends WebAPI {
    * Suspends Agents specified by ids.
    * @param ids - IDs of agents to suspend
    */
-     async batchSuspendAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
-      return this.send("batch_suspend_agents", { requests: ids.map(id => ({id})) });
-    }
+  async batchSuspendAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
+    return this.send("batch_suspend_agents", { requests: ids.map((id) => ({ id })) });
+  }
 
   /**
    * Unsuspends an Agent specified by id.
@@ -133,9 +133,9 @@ export default class ConfigurationAPI extends WebAPI {
    * Unsuspends Agents specified by ids.
    * @param ids - IDs of agents to unsuspend
    */
-     async batchUnsuspendAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
-      return this.send("batch_unsuspend_agents", { requests: ids.map(id => ({id})) });
-    }
+  async batchUnsuspendAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
+    return this.send("batch_unsuspend_agents", { requests: ids.map((id) => ({ id })) });
+  }
 
   /**
    * A suspended Agent can send emails to license owners and vice owners with an unsuspension request.
@@ -156,8 +156,8 @@ export default class ConfigurationAPI extends WebAPI {
    * Approves Agents thus allowing the Agents to use the application.
    * @param ids - IDs of agents to approve
    */
-   async batchApproveAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
-    return this.send("batch_approve_agents", { requests: ids.map(id => ({id})) });
+  async batchApproveAgents(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
+    return this.send("batch_approve_agents", { requests: ids.map((id) => ({ id })) });
   }
 
   /**
@@ -189,7 +189,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param ids - IDs of bots to delete
    */
   async batchDeleteBots(ids: string[]): Promise<BatchResponse<EmptyResponse>> {
-    return this.send("batch_delete_bots", { requests: ids.map(id => ({id})) });
+    return this.send("batch_delete_bots", { requests: ids.map((id) => ({ id })) });
   }
 
   /**
@@ -556,6 +556,6 @@ export default class ConfigurationAPI extends WebAPI {
    * @param namePrefix - name prefix
    */
   async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupsProperties> {
-    return this.send("list_groups_properties", { group_ids: groupIDs, namespace, name_prefix: namePrefix  })
-   }
+    return this.send("list_groups_properties", { group_ids: groupIDs, namespace, name_prefix: namePrefix });
+  }
 }
