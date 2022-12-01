@@ -19,7 +19,7 @@ export interface Customer {
   email?: string;
   email_verified?: boolean;
   avatar?: string;
-  session_fields?: Array<Record<string, string>>;
+  session_fields?: Record<string, string>[];
   present: boolean;
   events_seen_up_to: string;
 }
