@@ -17,8 +17,6 @@ import type {
   SendEventResponse,
   SendRichMessagePostbackParameters,
   GetCustomerResponse,
-  ListCustomersParameters,
-  ListCustomersResponse,
   CustomerParameters,
   CreateCustomerResponse,
   MulticastRecipients,
@@ -323,14 +321,6 @@ export default class Web extends WebAPI {
    */
   async getCustomer(id: string): Promise<GetCustomerResponse> {
     return this.send("get_customer", { id });
-  }
-
-  /**
-   * It returns the list of Customers.
-   * @param opts - options like filters or pagination
-   */
-  async listCustomers(opts?: ListCustomersParameters): Promise<ListCustomersResponse> {
-    return this.send("list_customers", opts || {});
   }
 
   /**

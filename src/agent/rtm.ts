@@ -15,8 +15,6 @@ import type {
   SendEventResponse,
   SendRichMessagePostbackParameters,
   GetCustomerResponse,
-  ListCustomersParameters,
-  ListCustomersResponse,
   CustomerParameters,
   CreateCustomerResponse,
   MulticastRecipients,
@@ -28,7 +26,7 @@ import type {
   SetRoutingStatusResponse,
 } from "./structures";
 import { Event, Properties, Push, RoutingStatus, RTMAPIOptions } from "../objects";
-import { RTMAPI } from "../internal/index";
+import { RTMAPI } from "../internal";
 
 export default class RTM extends RTMAPI {
   constructor(options?: RTMAPIOptions) {
@@ -352,14 +350,6 @@ export default class RTM extends RTMAPI {
    */
   async getCustomer(id: string): Promise<GetCustomerResponse> {
     return this.send("get_customer", { id });
-  }
-
-  /**
-   * It returns the list of Customers.
-   * @param opts - options like filters or pagination
-   */
-  async listCustomers(opts?: ListCustomersParameters): Promise<ListCustomersResponse> {
-    return this.send("list_customers", opts || {});
   }
 
   /**

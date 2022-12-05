@@ -267,65 +267,6 @@ export interface GetCustomerResponse extends Customer {
   chat_ids: string[];
 }
 
-export interface ListCustomersParameters {
-  page_id?: string;
-  limit?: number;
-  sort_order?: SortOrder;
-  filters?: CustomerFilters;
-  sort_by?: CustomerSortBy;
-}
-
-export enum CustomerSortBy {
-  CreateAt = "created_at",
-  ThreadsCount = "threads_count",
-  VisitsCount = "visits_count",
-  AgentLastEvent = "agent_last_event",
-  CustomerLastEvent = "customer_last_event",
-}
-
-export interface CustomerFilters {
-  country?: StringFilter;
-  email?: StringFilter;
-  name?: StringFilter;
-  customer_id?: StringFilter;
-  chat_group_ids?: IntegerFilter;
-  chats_count?: RangeFilter;
-  threads_count?: RangeFilter;
-  visits_count?: RangeFilter;
-  created_at?: DateRangeFilter;
-  agent_last_event_created_at?: DateRangeFilter;
-  customer_last_event_created_at?: DateRangeFilter;
-  include_customers_without_chats?: boolean;
-}
-
-export type StringFilter = Filter<string>;
-
-export type IntegerFilter = Filter<number>;
-
-export interface RangeFilter {
-  lte?: number;
-  lt?: number;
-  gte?: number;
-  gt?: number;
-  eq?: number;
-}
-
-export interface DateRangeFilter {
-  lte?: string;
-  lt?: string;
-  gte?: string;
-  gt?: string;
-  eq?: string;
-}
-
-export interface ListCustomersResponse {
-  customers: Customer[];
-  total_customers: number;
-  limited_customers?: number;
-  next_page_id?: string;
-  previous_page_id?: string;
-}
-
 export interface CustomerParameters {
   name?: string;
   email?: string;
