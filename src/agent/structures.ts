@@ -31,6 +31,8 @@ export interface Geolocation {
   region: string;
   city: string;
   timezone: string;
+  longitude: string;
+  latitude: string;
 }
 
 export interface LastPage {
@@ -47,6 +49,12 @@ export interface Visit {
   user_agent: string;
   geolocation: Geolocation;
   last_pages: LastPage[];
+}
+
+export interface CustomerVisit {
+  ip: string;
+  user_agent: string;
+  geolocation: Geolocation;
 }
 
 export interface Statistics {
@@ -90,7 +98,7 @@ export interface ChatsSummary extends CommonChatSummary {
   users: User[];
 }
 
-export interface EmptyResponse {}
+export interface EmptyResponse { }
 
 export interface ListChatParameters {
   filters?: ChatsFilters;

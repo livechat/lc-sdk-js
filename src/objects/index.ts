@@ -4,7 +4,7 @@ import {
   Statistics as CustomerStatistics,
   Geolocation as CustomerGeolocation,
   LastPage as CustomerLastPage,
-  Visit as CustomerVisit,
+  CustomerVisit,
 } from "../agent/structures";
 import { Customer as CustomerFromCustomerAPI, Agent as AgentFromCustomerAPI } from "../customer/structures";
 
@@ -228,6 +228,7 @@ export interface Thread {
   previous_thread_id: string;
   next_thread_id: string;
   created_at: string;
+  customer_visit: CustomerVisit;
 }
 
 export interface ArchivedThread extends Thread {
@@ -311,4 +312,3 @@ export type Statistics = CustomerStatistics;
 export type SessionField = Record<string, string>;
 export type Geolocation = CustomerGeolocation;
 export type LastPage = CustomerLastPage;
-export type Visit = CustomerVisit;
