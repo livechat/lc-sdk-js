@@ -98,7 +98,7 @@ export interface ChatsSummary extends CommonChatSummary {
   users: User[];
 }
 
-export interface EmptyResponse { }
+export interface EmptyResponse {}
 
 export interface ListChatParameters {
   filters?: ChatsFilters;
