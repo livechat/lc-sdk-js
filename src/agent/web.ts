@@ -197,7 +197,7 @@ export default class Web extends WebAPI {
   async uploadFile(file: string | Buffer, filename: string): Promise<UploadFileResponse> {
     let content = file;
     if (typeof file === "string") content = await fs.readFile(file, "binary");
-    const url = `${this.APIURL}/${this.version}/${this.type}/action/upload_file`;
+    const url = `${this.APIURL}/v${this.version}/${this.type}/action/upload_file`;
     const formData = new FormData();
     formData.append("file", content, filename);
 

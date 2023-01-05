@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import ws from "ws";
 import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
@@ -26,13 +26,13 @@ export class WebAPI {
     try {
       const response = await this.call(name, req || {});
       return response.data;
-    } catch (e) {
+    } catch (e: any) {
       return Promise.reject(e.response.data.error as APIError);
     }
   }
 
   private async call(action: string, payload: any): Promise<any> {
-    const url = ["https:/", this.APIURL, this.version, this.type, "action", action].join("/");
+    const url = ["https:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
     const token = this.tokenGetter();
     const method = action in ["list_license_properties", "list_group_properties"] ? "GET" : "POST";
 
@@ -72,7 +72,7 @@ export class RTMAPI {
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
       const wsURL =
-        `wss://${this.APIURL}/${this.version}/${this.type}/rtm/ws` +
+        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` +
         (this.license ? `?license_id=${this.license}` : "");
 
       this.socket = new ws(wsURL);

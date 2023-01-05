@@ -1,2 +1,2 @@
-export const ApiVersion: string = "v3.2";
-export const ApiURL: string = "api.livechatinc.com";
+export const ApiVersion = "3.2";
+export const ApiURL = "api.livechatinc.com";

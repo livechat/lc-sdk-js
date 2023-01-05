@@ -1,0 +1,6 @@
+{
+  "readme": "none",
+  "entryPointStrategy": "expand",
+  "entryPoints": ["src"],
+  "out": "docs"
+}
