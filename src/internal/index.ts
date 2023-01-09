@@ -26,7 +26,7 @@ export class WebAPI {
     try {
       const response = await this.call(name, req || {});
       return response.data;
-    } catch (e) {
+    } catch (e: any) {
       return Promise.reject(e.response.data.error as APIError);
     }
   }
