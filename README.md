@@ -8,7 +8,7 @@ For protocol documentation of LiveChat APIs, please go to [Livechat Platform Doc
 
 ## Technical docs
 
-For technical documentation visit [docs](docs/globals.md)
+For technical documentation visit [docs](https://github.com/livechat/lc-sdk-js/blob/v3.5/docs/README.md)
 
 ## Installation
 
@@ -20,7 +20,7 @@ npm install --save @livechat/lc-sdk-js
 
 ## Feedback
 
-​If you find any bugs or have trouble implementing the code on your own, please create an issue or contact us [LiveChat for Developers](https://developers.livechatinc.com/).
+If you find any bugs or have trouble implementing the code on your own, please create an issue or contact us [LiveChat for Developers](https://developers.livechatinc.com/).
 
 ## About LiveChat
 

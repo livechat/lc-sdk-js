@@ -1,31 +1,21 @@
-[@livechat/lc-sdk-js](README.md) › [Globals](globals.md)
+@livechat/lc-sdk-js
 
 # @livechat/lc-sdk-js
 
-# LiveChat Platform API SDK for Javascript
+## Table of contents
 
-This Software Development Kit written in Typescript helps developers build external backend apps that extend LiveChat features. The SDK makes it easy to use Agent Chat API, Customer Chat API and Configuration API.
+### Modules
 
-## API protocol docs
-
-For protocol documentation of LiveChat APIs, please go to [Livechat Platform Docs](https://developers.livechatinc.com/docs/).
-
-## Technical docs
-
-For technical documentation visit [docs](docs/globals.md)
-
-## Installation
-
-### npm
-
-```bash
-npm install --save @livechat/lc-sdk-js
-```
-
-## Feedback
-
-​If you find any bugs or have trouble implementing the code on your own, please create an issue or contact us [LiveChat for Developers](https://developers.livechatinc.com/).
-
-## About LiveChat
-
-LiveChat is an online customer service software with live support, help desk software, and web analytics capabilities. It's used by more than 30,000 companies all over the world. For more info, check out [LiveChat](https://livechat.com/).
+- [agent/rtm](modules/agent_rtm.md)
+- [agent/structures](modules/agent_structures.md)
+- [agent/web](modules/agent_web.md)
+- [authorization](modules/authorization.md)
+- [configuration](modules/configuration.md)
+- [configuration/structures](modules/configuration_structures.md)
+- [customer/rtm](modules/customer_rtm.md)
+- [customer/structures](modules/customer_structures.md)
+- [customer/web](modules/customer_web.md)
+- [internal](modules/internal.md)
+- [internal/constants](modules/internal_constants.md)
+- [objects](modules/objects.md)
+- [webhooks](modules/webhooks.md)
