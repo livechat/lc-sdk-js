@@ -1,4 +1,4 @@
-import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter, Thread } from "../objects";
+import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter } from "../objects";
 import { User, Chat } from "../agent/structures";
 
 export interface Webhook {

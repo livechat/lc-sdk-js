@@ -1,30 +1,33 @@
 import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
-  ListChatsResponse,
-  ListChatParameters,
+  AgentForTransfer,
+  CreateCustomerResponse,
+  CustomerParameters,
   EmptyResponse,
-  ListThreadsParameters,
-  ListThreadsResponse,
+  Event,
   GetChatResponse,
+  GetCustomerResponse,
   ListArchivesParameters,
   ListArchivesResponse,
-  StartChatParameters,
-  StartChatResponse,
+  ListChatParameters,
+  ListChatsResponse,
+  ListThreadsParameters,
+  ListThreadsResponse,
+  MulticastRecipients,
+  Properties,
   ResumeChatParameters,
   ResumeChatResponse,
-  TransferChatParameters,
+  RoutingStatus,
   SendEventResponse,
   SendRichMessagePostbackParameters,
-  GetCustomerResponse,
-  CustomerParameters,
-  CreateCustomerResponse,
-  MulticastRecipients,
-  AgentForTransfer,
-  UploadFileResponse,
   SetRoutingStatusResponse,
+  StartChatParameters,
+  StartChatResponse,
+  TransferChatParameters,
+  UploadFileResponse,
+  WebAPIOptions,
 } from "./structures";
-import { Event, Properties, RoutingStatus, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";

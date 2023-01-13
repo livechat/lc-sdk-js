@@ -31,7 +31,7 @@ export interface ListChatParameters {
 }
 
 export interface ListChatsResponse {
-  previuous_page_id?: string;
+  previous_page_id?: string;
   next_page_id?: string;
   chats_summary: ChatsSummary[];
   total_chats: number;
