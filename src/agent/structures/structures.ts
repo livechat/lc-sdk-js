@@ -1,4 +1,5 @@
 import { ApiVersion } from "../../internal/constants";
+import { Event } from "./events";
 import { Pushes } from "./pushes";
 import { ArchivesFilters, ChatsFilters, FilterType, ThreadsFilters } from "./filters";
 

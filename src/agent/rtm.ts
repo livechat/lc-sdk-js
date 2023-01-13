@@ -1,3 +1,4 @@
+import { RTMAPI } from "../internal";
 import type {
   AgentForTransfer,
   ChangePushNotificationsRequest,
@@ -30,7 +31,6 @@ import type {
   StartChatResponse,
   TransferChatParameters,
 } from "./structures";
-import { RTMAPI } from "../internal";
 
 export default class RTM extends RTMAPI {
   constructor(options?: RTMAPIOptions) {
@@ -58,6 +58,7 @@ export default class RTM extends RTMAPI {
     }
     return this.send("login", loginData);
   }
+
   /**
    * Change the firebase push notifications properties.
    * @param change - properties to change
@@ -108,6 +109,7 @@ export default class RTM extends RTMAPI {
   async getChat(chat_id: string, thread_id?: string): Promise<GetChatResponse> {
     return this.send("get_chat", { chat_id, thread_id });
   }
+
   /**
    * It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
    *
@@ -198,6 +200,7 @@ export default class RTM extends RTMAPI {
       ignore_requester_presence,
     });
   }
+
   /**
    * Removes a user from chat. Removing customer user type is not allowed. It's always possible to remove the requester from the chat.
    * @param chat_id - chat to remove user from
@@ -216,6 +219,7 @@ export default class RTM extends RTMAPI {
       ignore_requester_presence,
     });
   }
+
   /**
    * Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
    * It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
