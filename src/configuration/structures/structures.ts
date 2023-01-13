@@ -1,22 +1,3 @@
-import { Filter, RoutingStatus, Properties } from "../objects";
-
-export interface EmptyResponse {}
-
-export interface ErrorResponse {
-  error: {
-    type: string;
-    message: string;
-  };
-}
-
-export interface BatchResponse<T> {
-  responses: (T | ErrorResponse)[];
-}
-
-export interface CreateAgentResponse {
-  id: string;
-}
-
 export interface Agent extends AgentFields {
   id: string;
   account_id?: string;
@@ -54,10 +35,6 @@ export interface Schedule {
   end: string;
 }
 
-export interface CreateBotResponse {
-  id: string;
-}
-
 export interface BotFields {
   name?: string;
   avatar_path?: string;
@@ -92,10 +69,6 @@ export enum GroupPriority {
 
 export interface AgentPriorities {
   [agent_id: string]: GroupPriority;
-}
-
-export interface CreateGroupResponse {
-  id: string;
 }
 
 export interface Group {
@@ -159,10 +132,6 @@ export interface RegisteredWebhook extends Webhook {
   owner_client_id: string;
 }
 
-export interface RegisterWebhookResponse {
-  id: string;
-}
-
 export interface WebhookData {
   action: string;
   additional_data?: string[];
@@ -207,18 +176,6 @@ export interface UpdateAutoAccessRequest extends Omit<AutoAccess, "id"> {
   conditions?: AutoAccessConditions;
 }
 
-export interface AddAutoAccessResponse {
-  id: string;
-}
-
-export interface GetOrganizationIDResponse {
-  organization_id: string;
-}
-
-export interface GetLicenseIDResponse {
-  license_id: string;
-}
-
 export interface PlanLimit {
   resource: string;
   limit_balance: number;
@@ -244,3 +201,26 @@ export interface GroupProperties {
 }
 
 export type GroupsProperties = GroupProperties[];
+
+export interface Properties {
+  [property_namespace: string]: PropertyNamespace;
+}
+
+export interface PropertyNamespace {
+  [property_name: string]: any;
+}
+
+export enum RoutingStatus {
+  AcceptingChats = "accepting_chats",
+  NotAcceptingChats = "not_accepting_chats",
+  Offline = "offline",
+}
+
+export interface Filter<T> {
+  values?: T[];
+  exclude_values?: T[];
+}
+
+export interface WebAPIOptions {
+  apiUrl?: string;
+}
