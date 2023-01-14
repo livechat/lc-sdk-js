@@ -1,13 +1,17 @@
 import { Properties } from "./structures";
 
-export interface File {
+interface BaseEvent {
   id: string;
-  custom_id?: string;
-  type: string;
-  author_id: string;
   created_at: string;
-  recipients: string;
   properties?: Properties;
+  recipients?: string;
+  visibility?: string;
+  type: string;
+}
+
+export interface File extends BaseEvent {
+  custom_id?: string;
+  author_id: string;
   name: string;
   url: string;
   thumbnail_url?: string;
@@ -19,14 +23,9 @@ export interface File {
   alternative_text?: string;
 }
 
-export interface FilledForm {
-  id: string;
+export interface FilledForm extends BaseEvent {
   custom_id?: string;
-  type: string;
   author_id: string;
-  created_at: string;
-  recipients: string;
-  properties?: Properties;
   form_id: string;
   fields: FormField[];
 }
@@ -45,16 +44,11 @@ export interface Answer {
   group_id?: number;
 }
 
-export interface Message {
-  id: string;
+export interface Message extends BaseEvent {
   custom_id?: string;
-  type: string;
   author_id: string;
-  created_at: string;
   text: string;
   postback?: Postback;
-  recipients: string;
-  properties?: Properties;
 }
 
 export interface Postback {
@@ -65,14 +59,9 @@ export interface Postback {
   value?: string;
 }
 
-export interface RichMessage {
-  id: string;
+export interface RichMessage extends BaseEvent {
   custom_id?: string;
-  type: string;
   author_id: string;
-  created_at: string;
-  recipients: string;
-  properties?: Properties;
   template_id: string;
   elements?: Element[];
 }
@@ -104,26 +93,16 @@ export interface Image {
   alternative_text: string;
 }
 
-export interface CustomEvent {
-  id: string;
+export interface CustomEvent extends BaseEvent {
   custom_id?: string;
-  type: string;
   author_id: string;
-  created_at: string;
   content?: object;
-  recipients: string;
-  properties?: Properties;
 }
 
-export interface SystemMessage {
-  id: string;
-  custom_id?: string;
-  type: string;
-  created_at: string;
-  text?: string;
+export interface SystemMessage extends BaseEvent {
   system_message_type: string;
-  text_vars: object;
-  recipients?: string;
+  text?: string;
+  text_vars?: object;
 }
 
 export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage;
