@@ -2,18 +2,7 @@ import { ApiVersion } from "../../internal/constants";
 import { Event } from "./events";
 import { Pushes } from "./pushes";
 import { ArchivesFilters, ChatsFilters, FilterType, ThreadsFilters } from "./filters";
-
-export interface Agent {
-  id: string;
-  type: string;
-  name: string;
-  email: string;
-  present: boolean;
-  events_seen_up_to: string;
-  avatar: string;
-  routing_status: string;
-  visibility?: string;
-}
+import { InitialUser, User } from "./users";
 
 export interface Geolocation {
   country: string;
@@ -53,35 +42,12 @@ export interface Statistics {
   visits_count: number;
 }
 
-export interface Customer {
-  id: string;
-  type: string;
-  name: string;
-  email: string;
-  email_verified: boolean;
-  avatar: string;
-  last_visit: Visit;
-  session_fields: Record<string, string>[];
-  statistics: Statistics;
-  __priv_lc2_customer_id: string;
-  agent_last_event_created_at: string;
-  customer_last_event_created_at: string;
-  created_at: string;
-  present: boolean;
-  events_seen_up_to: string;
-  followed: boolean;
-  group_ids: number[];
-  state: string;
-}
-
-export type User = Agent | Customer;
-
 export interface Chat {
   id: string;
   users: User[];
   threads: Thread[];
   properties?: Properties;
-  access: Access;
+  access?: Access;
   is_followed: boolean;
 }
 
@@ -91,12 +57,11 @@ export interface ArchivedChat extends Chat {
 
 export interface ChatsSummary {
   id: string;
-  last_event_per_type: LastEventPerType;
+  last_event_per_type?: LastEventPerType;
   users: User[];
-  last_thread_summary: LastThreadSummary;
-  properties: Properties;
-  access: Access;
-  order: number;
+  last_thread_summary?: LastThreadSummary;
+  properties?: Properties;
+  access?: Access;
   is_followed: boolean;
 }
 
@@ -255,33 +220,31 @@ export interface Thread {
   id: string;
   active: boolean;
   user_ids: string[];
-  restricted_access: boolean;
+  restricted_access?: string;
+  tags: string[];
   events: Event[];
   properties?: Properties;
-  access: Access;
+  access?: Access;
   previous_thread_id: string;
   next_thread_id: string;
   created_at: string;
+  queue?: Queue;
+  queues_duration?: number;
   customer_visit: CustomerVisit;
 }
 
+export interface Queue {
+  position: number;
+  wait_time: number;
+  queued_at?: string;
+}
+
 export interface InitialChat {
+  id?: string;
   properties?: Properties;
   access?: Access;
   users?: InitialUser[];
   thread?: InitialThread;
-}
-
-export interface MyProfile {
-  id: string;
-  type: string;
-  name: string;
-  email: string;
-  present: boolean;
-  events_seen_up_to: string;
-  avatar: string;
-  routing_status: string;
-  permission: string;
 }
 
 export enum RoutingStatus {
@@ -293,11 +256,6 @@ export enum RoutingStatus {
 export interface ArchivedThread extends Thread {
   previous_accessible_thread_id?: string;
   next_accessible_thread_id?: string;
-}
-
-export interface InitialUser {
-  id: string;
-  type: string;
 }
 
 export interface InitialThread {
@@ -312,9 +270,9 @@ export interface LastEventPerType {
 export interface LastThreadSummary {
   id: string;
   user_ids: string[];
-  properties: Properties;
+  properties?: Properties;
   active: boolean;
-  access: Access;
+  access?: Access;
   created_at: string;
 }
 

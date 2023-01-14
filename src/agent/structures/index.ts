@@ -3,3 +3,4 @@ export * from "./filters";
 export * from "./pushes";
 export * from "./responses";
 export * from "./structures";
+export * from "./users";

@@ -1,15 +1,5 @@
-import {
-  Access,
-  ArchivedChat,
-  ChatsSummary,
-  Customer,
-  License,
-  MyProfile,
-  Properties,
-  RoutingStatus,
-  Thread,
-  User,
-} from "./structures";
+import { Access, ArchivedChat, ChatsSummary, License, Properties, RoutingStatus, Thread } from "./structures";
+import { Customer, MyProfile, User } from "./users";
 
 export interface EmptyResponse {}
 
@@ -32,7 +22,7 @@ export interface GetChatResponse {
   users: User[];
   thread: Thread;
   properties?: Properties;
-  access: Access;
+  access?: Access;
   is_followed: boolean;
 }
 
