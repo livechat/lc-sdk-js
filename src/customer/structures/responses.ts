@@ -1,4 +1,5 @@
-import { Access, ChatsSummary, Customer, Form, GroupStatus, Properties, Thread, User } from "./structures";
+import { Access, ChatsSummary, Form, GroupStatus, Properties, Thread } from "./structures";
+import { Customer, User } from "./users";
 
 export interface EmptyResponse {}
 
@@ -21,7 +22,7 @@ export interface GetChatResponse {
   users: User[];
   thread: Thread;
   properties?: Properties;
-  access: Access;
+  access?: Access;
   is_followed: boolean;
 }
 

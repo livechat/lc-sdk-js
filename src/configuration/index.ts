@@ -18,7 +18,7 @@ import {
   GetLicenseIDResponse,
   GetOrganizationIDResponse,
   Group,
-  GroupsProperties,
+  GroupProperties,
   PlanLimit,
   Properties,
   PropertiesConfig,
@@ -551,7 +551,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param namespace - namespace
    * @param namePrefix - name prefix
    */
-  async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupsProperties> {
+  async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupProperties[]> {
     return this.send("list_groups_properties", { group_ids: groupIDs, namespace, name_prefix: namePrefix });
   }
 }

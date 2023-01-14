@@ -1,29 +1,7 @@
 import { ApiVersion } from "../../internal/constants";
 import { Event } from "./events";
 import { Pushes } from "./pushes";
-
-export interface Customer {
-  id: string;
-  type: string;
-  name?: string;
-  email?: string;
-  email_verified?: boolean;
-  avatar?: string;
-  session_fields?: Record<string, string>[];
-  present: boolean;
-  events_seen_up_to: string;
-}
-
-export interface Agent {
-  id: string;
-  type: string;
-  name?: string;
-  avatar?: string;
-  present: boolean;
-  events_seen_up_to: string;
-}
-
-export type User = Agent | Customer;
+import { InitialUser, User } from "./users";
 
 export interface ListChatParameters {
   sort_order?: SortOrder;
@@ -144,14 +122,19 @@ export interface Thread {
   id: string;
   active: boolean;
   user_ids: string[];
-  restricted_access: boolean;
   events: Event[];
   properties?: Properties;
-  access: Access;
+  access?: Access;
   previous_thread_id: string;
   next_thread_id: string;
   created_at: string;
-  customer_visit: CustomerVisit;
+  queue?: Queue;
+}
+
+export interface Queue {
+  position: number;
+  wait_time: number;
+  queued_at?: string;
 }
 
 export interface Properties {
@@ -167,6 +150,7 @@ export interface Access {
 }
 
 export interface InitialChat {
+  id?: string;
   properties?: Properties;
   access?: Access;
   users?: InitialUser[];
@@ -181,18 +165,14 @@ export enum GroupStatus {
 
 export interface ChatsSummary {
   id: string;
-  last_event_per_type: LastEventPerType;
+  last_event_per_type?: LastEventPerType;
   users: User[];
-  last_thread_summary: LastThreadSummary;
+  last_thread_id?: string;
+  last_thread_created_at?: string;
+  last_thread_summary?: LastThreadSummary;
   properties: Properties;
-  access: Access;
-  order: number;
-  is_followed: boolean;
-}
-
-export interface InitialUser {
-  id: string;
-  type: string;
+  access?: Access;
+  active: boolean;
 }
 
 export interface InitialThread {
@@ -209,24 +189,8 @@ export interface LastThreadSummary {
   user_ids: string[];
   properties: Properties;
   active: boolean;
-  access: Access;
+  access?: Access;
   created_at: string;
-}
-
-export interface CustomerVisit {
-  ip: string;
-  user_agent: string;
-  geolocation: Geolocation;
-}
-
-export interface Geolocation {
-  country: string;
-  country_code: string;
-  region: string;
-  city: string;
-  timezone: string;
-  longitude: string;
-  latitude: string;
 }
 
 export interface WebAPIOptions {

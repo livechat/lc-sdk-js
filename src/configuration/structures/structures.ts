@@ -200,8 +200,6 @@ export interface GroupProperties {
   properties: Properties;
 }
 
-export type GroupsProperties = GroupProperties[];
-
 export interface Properties {
   [property_namespace: string]: PropertyNamespace;
 }
