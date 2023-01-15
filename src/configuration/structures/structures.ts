@@ -1,13 +1,7 @@
-import { Filter, RoutingStatus } from "../objects";
-
-export interface EmptyResponse {}
-
-export interface CreateAgentResponse {
-  id: string;
-}
-
 export interface Agent extends AgentFields {
   id: string;
+  account_id?: string;
+  last_logout?: string;
 }
 
 export interface AgentFields {
@@ -30,16 +24,15 @@ export interface GroupConfig {
 }
 
 export interface WorkScheduler {
-  [day: string]: DaySchedule;
+  timezone: string;
+  schedule: Schedule[];
 }
 
-export interface DaySchedule {
+export interface Schedule {
+  day: string;
+  enabled: boolean;
   start: string;
   end: string;
-}
-
-export interface CreateBotResponse {
-  id: string;
 }
 
 export interface BotFields {
@@ -78,10 +71,6 @@ export interface AgentPriorities {
   [agent_id: string]: GroupPriority;
 }
 
-export interface CreateGroupResponse {
-  id: string;
-}
-
 export interface Group {
   id: number;
   name: string;
@@ -96,7 +85,7 @@ export interface PropertiesConfig {
 
 export interface PropertyConfig {
   name: string;
-  owner_client_id: string;
+  owner_client_id?: string;
   type: string;
   access: {
     [locationName: string]: LocationAccess;
@@ -143,10 +132,6 @@ export interface RegisteredWebhook extends Webhook {
   owner_client_id: string;
 }
 
-export interface RegisterWebhookResponse {
-  id: string;
-}
-
 export interface WebhookData {
   action: string;
   additional_data?: string[];
@@ -191,14 +176,49 @@ export interface UpdateAutoAccessRequest extends Omit<AutoAccess, "id"> {
   conditions?: AutoAccessConditions;
 }
 
-export interface AddAutoAccessResponse {
+export interface PlanLimit {
+  resource: string;
+  limit_balance: number;
+  id?: string;
+}
+
+export interface ChannelActivity {
+  channel_type: string;
+  channel_subtype: string;
+  first_activity_timestamp: string;
+}
+
+export interface Tag {
+  name: string;
+  group_ids: number[];
+  author_id: string;
+  created_at: string;
+}
+
+export interface GroupProperties {
   id: string;
+  properties: Properties;
 }
 
-export interface GetOrganizationIDResponse {
-  organization_id: string;
+export interface Properties {
+  [property_namespace: string]: PropertyNamespace;
 }
 
-export interface GetLicenseIDResponse {
-  license_id: string;
+export interface PropertyNamespace {
+  [property_name: string]: any;
+}
+
+export enum RoutingStatus {
+  AcceptingChats = "accepting_chats",
+  NotAcceptingChats = "not_accepting_chats",
+  Offline = "offline",
+}
+
+export interface Filter<T> {
+  values?: T[];
+  exclude_values?: T[];
+}
+
+export interface WebAPIOptions {
+  apiUrl?: string;
 }
