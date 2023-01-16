@@ -1,7 +1,5 @@
 export interface Agent extends AgentFields {
   id: string;
-  account_id?: string;
-  last_logout?: string;
 }
 
 export interface AgentFields {
@@ -24,13 +22,10 @@ export interface GroupConfig {
 }
 
 export interface WorkScheduler {
-  timezone: string;
-  schedule: Schedule[];
+  [day: string]: DaySchedule;
 }
 
-export interface Schedule {
-  day: string;
-  enabled: boolean;
+export interface DaySchedule {
   start: string;
   end: string;
 }
@@ -85,7 +80,7 @@ export interface PropertiesConfig {
 
 export interface PropertyConfig {
   name: string;
-  owner_client_id?: string;
+  owner_client_id: string;
   type: string;
   access: {
     [locationName: string]: LocationAccess;
