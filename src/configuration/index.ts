@@ -44,7 +44,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * It returns the info about an Agent specified by id.
-   * @param id - IF of agent to get
+   * @param id - ID of agent to get
    * @param fields - additional fields to include
    */
   async getAgent(id: string, fields?: string[]): Promise<Agent> {

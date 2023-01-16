@@ -176,30 +176,6 @@ export interface UpdateAutoAccessRequest extends Omit<AutoAccess, "id"> {
   conditions?: AutoAccessConditions;
 }
 
-export interface PlanLimit {
-  resource: string;
-  limit_balance: number;
-  id?: string;
-}
-
-export interface ChannelActivity {
-  channel_type: string;
-  channel_subtype: string;
-  first_activity_timestamp: string;
-}
-
-export interface Tag {
-  name: string;
-  group_ids: number[];
-  author_id: string;
-  created_at: string;
-}
-
-export interface GroupProperties {
-  id: string;
-  properties: Properties;
-}
-
 export interface Properties {
   [property_namespace: string]: PropertyNamespace;
 }

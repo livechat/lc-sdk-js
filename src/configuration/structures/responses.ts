@@ -1,16 +1,5 @@
 export interface EmptyResponse {}
 
-export interface ErrorResponse {
-  error: {
-    type: string;
-    message: string;
-  };
-}
-
-export interface BatchResponse<T> {
-  responses: (T | ErrorResponse)[];
-}
-
 export interface CreateAgentResponse {
   id: string;
 }
