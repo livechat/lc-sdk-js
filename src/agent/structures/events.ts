@@ -4,7 +4,7 @@ interface BaseEvent {
   id: string;
   created_at: string;
   properties?: Properties;
-  visibility: string;
+  recipients: string;
   type: string;
 }
 

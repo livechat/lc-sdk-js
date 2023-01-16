@@ -1,6 +1,6 @@
 import { ApiVersion } from "../../internal/constants";
 import { Event } from "./events";
-import { ArchivesFilters, ChatsFilters, Filter, FilterType, ThreadsFilters } from "./filters";
+import { ArchivesFilters, ChatsFilters, CustomerFilters, ThreadsFilters } from "./filters";
 import { Pushes } from "./pushes";
 import { InitialUser, User } from "./users";
 
@@ -37,14 +37,10 @@ export interface Statistics {
 export interface Chat {
   id: string;
   users: User[];
-  threads: Thread[];
+  thread: Thread;
   properties?: Properties;
   access?: Access;
   is_followed: boolean;
-}
-
-export interface ArchivedChat extends Chat {
-  thread: ArchivedThread;
 }
 
 export interface ChatsSummary {
@@ -79,12 +75,6 @@ export interface ListArchivesParameters {
   limit?: number;
 }
 
-export interface PropertiesFilter {
-  [namespace: string]: {
-    [name: string]: Omit<FilterType<any>, "require_every_value">;
-  };
-}
-
 export interface StartChatParameters {
   chat?: InitialChat;
   continuous?: boolean;
@@ -99,8 +89,7 @@ export interface ResumeChatParameters {
 
 export interface TransferChatParameters {
   target?: TransferTarget;
-  ignore_requester_presence?: boolean;
-  ignore_agents_availability?: boolean;
+  force?: boolean;
 }
 
 interface TransferTarget {
@@ -158,41 +147,6 @@ export enum CustomerSortBy {
   CustomerLastEvent = "customer_last_event",
 }
 
-export interface CustomerFilters {
-  country?: StringFilter;
-  email?: StringFilter;
-  name?: StringFilter;
-  customer_id?: StringFilter;
-  chat_group_ids?: IntegerFilter;
-  chats_count?: RangeFilter;
-  threads_count?: RangeFilter;
-  visits_count?: RangeFilter;
-  created_at?: DateRangeFilter;
-  agent_last_event_created_at?: DateRangeFilter;
-  customer_last_event_created_at?: DateRangeFilter;
-  include_customers_without_chats?: boolean;
-}
-
-export type StringFilter = Filter<string>;
-
-export type IntegerFilter = Filter<number>;
-
-export interface RangeFilter {
-  lte?: number;
-  lt?: number;
-  gte?: number;
-  gt?: number;
-  eq?: number;
-}
-
-export interface DateRangeFilter {
-  lte?: string;
-  lt?: string;
-  gte?: string;
-  gt?: string;
-  eq?: string;
-}
-
 export interface AgentForTransfer {
   agent_id: string;
   total_active_chats: number;
@@ -228,7 +182,6 @@ export interface Application {
 
 export interface License {
   id: string;
-  organization_id: string;
   plan: string;
   expiration_timestamp: number;
   creation_timestamp: number;
@@ -295,11 +248,6 @@ export enum RoutingStatus {
   Offline = "offline",
 }
 
-export interface ArchivedThread extends Thread {
-  previous_accessible_thread_id?: string;
-  next_accessible_thread_id?: string;
-}
-
 export interface InitialThread {
   events?: Event[];
   properties?: Properties;
@@ -329,4 +277,9 @@ export interface WebAPIOptions {
 
 export interface RTMAPIOptions {
   apiUrl?: string;
+}
+
+export enum SurveyType {
+  PreChat = "pre_chat",
+  PostChat = "post_chat",
 }

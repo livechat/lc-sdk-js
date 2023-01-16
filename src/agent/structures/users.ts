@@ -10,9 +10,7 @@ interface BaseUser {
   avatar: string;
 }
 
-export interface Agent extends BaseUser {
-  visibility: string;
-}
+export interface Agent extends BaseUser {}
 
 export interface Customer extends BaseUser {
   email_verified: boolean;

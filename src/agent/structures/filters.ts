@@ -1,4 +1,4 @@
-import { Properties, PropertiesFilter } from "./structures";
+import { Properties, SurveyType } from "./structures";
 
 export interface Filter<T> {
   values?: T[];
@@ -7,31 +7,6 @@ export interface Filter<T> {
 
 export interface FilterType<T> extends Filter<T> {
   exists?: boolean;
-  require_every_value?: boolean;
-}
-
-export interface SurveyFilter {
-  from?: string;
-  to?: string;
-  type: SurveyType;
-  values?: string[];
-  exclude_values?: string[];
-  exists?: boolean;
-  groups?: Filter<number>;
-}
-
-export interface GreetingsFilter extends Filter<number> {
-  from?: string;
-  to?: string;
-  exists?: boolean;
-  groups?: Filter<number>;
-}
-
-export interface AgentResponseFilter {
-  first?: boolean;
-  exists?: boolean;
-  agents?: Filter<string>;
-  groups?: Filter<number>;
 }
 
 export interface ChatsFilters {
@@ -58,12 +33,55 @@ export interface ArchivesFilters {
   sales?: FilterType<number>;
   goals?: FilterType<number>;
   surveys?: SurveyFilter[];
-  event_types?: Omit<FilterType<string>, "exists">;
-  greetings?: GreetingsFilter;
-  agent_response?: AgentResponseFilter;
+  events?: EventsFilter;
 }
 
-export enum SurveyType {
-  PreChat = "pre_chat",
-  PostChat = "post_chat",
+export interface SurveyFilter {
+  type: SurveyType;
+  answer_id: string;
+}
+
+export interface EventsFilter {
+  types: string[];
+}
+
+export interface PropertiesFilter {
+  [namespace: string]: {
+    [name: string]: FilterType<any>;
+  };
+}
+
+export interface CustomerFilters {
+  country?: StringFilter;
+  email?: StringFilter;
+  name?: StringFilter;
+  customer_id?: StringFilter;
+  chat_group_ids?: IntegerFilter;
+  chats_count?: RangeFilter;
+  threads_count?: RangeFilter;
+  visits_count?: RangeFilter;
+  created_at?: DateRangeFilter;
+  agent_last_event_created_at?: DateRangeFilter;
+  customer_last_event_created_at?: DateRangeFilter;
+  include_customers_without_chats?: boolean;
+}
+
+export type StringFilter = Filter<string>;
+
+export type IntegerFilter = Filter<number>;
+
+export interface RangeFilter {
+  lte?: number;
+  lt?: number;
+  gte?: number;
+  gt?: number;
+  eq?: number;
+}
+
+export interface DateRangeFilter {
+  lte?: string;
+  lt?: string;
+  gte?: string;
+  gt?: string;
+  eq?: string;
 }

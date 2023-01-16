@@ -19,9 +19,14 @@ export enum Pushes {
   ChatDeactivated = "chat_deactivated",
 
   /**
-   * Informs that the chat's access is updated. It contains full access of the chat.
+   * Informs that new, single access to a chat was granted. The existing access isn't overwritten.
    */
-  ChatAccessUpdated = "chat_access_updated",
+  ChatAccessGranted = "chat_access_granted",
+
+  /**
+   * Informs that access to a certain chat was revoked.
+   */
+  ChatAccessRevoked = "chat_access_revoked",
 
   /**
    * Informs that a chat was transferred to a different group or to an Agent.
@@ -187,79 +192,4 @@ export enum Pushes {
    * Informs that a customer was unfollowed.
    */
   CustomerUnfollowed = "customer_unfollowed",
-
-  /**
-   * Informs that an agent has been created.
-   */
-  AgentCreated = "agent_created",
-
-  /**
-   * Informs that an agent has been deleted.
-   */
-  AgentDeleted = "agent_deleted",
-
-  /**
-   * Informs that an agent has been updated.
-   */
-  AgentUpdated = "agent_updated",
-
-  /**
-   * Informs that an agent has been suspended.
-   */
-  AgentSuspended = "agent_suspended",
-
-  /**
-   * Informs that an agent has been unsuspended.
-   */
-  AgentUnsuspended = "agent_unsuspended",
-
-  /**
-   * Informs that an agent has been approved.
-   */
-  AgentApproved = "agent_approved",
-
-  /**
-   * Informs that a bot has been created.
-   */
-  BotCreated = "bot_created",
-
-  /**
-   * Informs that a bot has been updated.
-   */
-  BotUpdated = "bot_updated",
-
-  /**
-   * Informs that a bot has been deleted.
-   */
-  BotDeleted = "bot_deleted",
-
-  /**
-   * Informs that a group has been created.
-   */
-  GroupCreated = "group_created",
-
-  /**
-   * Informs that a group has been updated.
-   */
-  GroupUpdated = "group_updated",
-
-  /**
-   * Informs that a group has been deleted.
-   */
-  GroupDeleted = "group_deleted",
-
-  /**
-   * Informs that an auto access has been added.
-   */
-  AutoAccessAdded = "auto_access_added",
-
-  /**
-   * Informs that an auto access has been deleted.
-   */
-  AutoAccessDeleted = "auto_access_deleted",
-
-  /**
-   * Informs that an auto access has been updated.
-   */
-  AutoAccessUpdated = "auto_access_updated",
 }

@@ -1,4 +1,4 @@
-import { Access, ArchivedChat, ChatsSummary, License, Properties, RoutingStatus, Thread } from "./structures";
+import { Access, Chat, ChatsSummary, License, Properties, RoutingStatus, Thread } from "./structures";
 import { Customer, MyProfile, User } from "./users";
 
 export interface EmptyResponse {}
@@ -27,7 +27,7 @@ export interface GetChatResponse {
 }
 
 export interface ListArchivesResponse {
-  chats: ArchivedChat[];
+  chats: Chat[];
   found_chats: number;
   next_page_id: string;
   previous_page_id: string;
