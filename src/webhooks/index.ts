@@ -1,4 +1,5 @@
-import { Chat, Access, User, Event, Postback, Properties, Customer, RoutingStatus } from "../objects";
+import { Chat, User } from "../agent/structures";
+import { Access, Customer, Event, Postback, Properties, RoutingStatus } from "./structures";
 
 export interface Webhook {
   webhook_id: string;

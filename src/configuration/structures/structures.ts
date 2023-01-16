@@ -1,11 +1,3 @@
-import { Filter, RoutingStatus } from "../objects";
-
-export interface EmptyResponse {}
-
-export interface CreateAgentResponse {
-  id: string;
-}
-
 export interface Agent extends AgentFields {
   id: string;
 }
@@ -36,10 +28,6 @@ export interface WorkScheduler {
 export interface DaySchedule {
   start: string;
   end: string;
-}
-
-export interface CreateBotResponse {
-  id: string;
 }
 
 export interface BotFields {
@@ -76,10 +64,6 @@ export enum GroupPriority {
 
 export interface AgentPriorities {
   [agent_id: string]: GroupPriority;
-}
-
-export interface CreateGroupResponse {
-  id: string;
 }
 
 export interface Group {
@@ -126,6 +110,8 @@ export interface Webhook {
   filters?: WebhookFilters;
 }
 
+type WebhookSourceType = "my_client" | "other_clients" | "system";
+
 export interface WebhookFilters {
   author_type?: string;
   only_my_chats?: boolean;
@@ -133,15 +119,12 @@ export interface WebhookFilters {
     user_ids?: Filter<string>;
     my_bots: boolean;
   };
+  source_type?: WebhookSourceType[];
 }
 
 export interface RegisteredWebhook extends Webhook {
   id: string;
   owner_client_id: string;
-}
-
-export interface RegisterWebhookResponse {
-  id: string;
 }
 
 export interface WebhookData {
@@ -188,6 +171,25 @@ export interface UpdateAutoAccessRequest extends Omit<AutoAccess, "id"> {
   conditions?: AutoAccessConditions;
 }
 
-export interface AddAutoAccessResponse {
-  id: string;
+export interface Properties {
+  [property_namespace: string]: PropertyNamespace;
+}
+
+export interface PropertyNamespace {
+  [property_name: string]: any;
+}
+
+export enum RoutingStatus {
+  AcceptingChats = "accepting_chats",
+  NotAcceptingChats = "not_accepting_chats",
+  Offline = "offline",
+}
+
+export interface Filter<T> {
+  values?: T[];
+  exclude_values?: T[];
+}
+
+export interface WebAPIOptions {
+  apiUrl?: string;
 }
