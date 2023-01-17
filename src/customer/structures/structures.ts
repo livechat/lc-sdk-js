@@ -167,11 +167,10 @@ export interface ChatsSummary {
   id: string;
   last_event_per_type?: LastEventPerType;
   users: User[];
-  last_thread_id?: string;
-  last_thread_created_at?: string;
   last_thread_summary?: LastThreadSummary;
-  properties: Properties;
+  properties?: Properties;
   access?: Access;
+  is_followed: boolean;
   active: boolean;
 }
 

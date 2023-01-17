@@ -88,7 +88,6 @@ export interface LoginResponse {
 
 export interface GetDynamicConfigurationResponse {
   group_id: number;
-  organization_id: string;
   client_limit_exceeded: boolean;
   domain_allowed: boolean;
   config_version: string;
