@@ -243,7 +243,8 @@ export interface ChangePushNotificationsRequest {
 }
 
 export interface Access {
-  group_ids: number[];
+  group_ids?: number[];
+  agent_ids?: string[];
 }
 
 export interface Properties {
@@ -303,6 +304,7 @@ export interface ArchivedThread extends Thread {
 export interface InitialThread {
   events?: Event[];
   properties?: Properties;
+  tags?: string[];
 }
 
 export interface LastEventPerType {
