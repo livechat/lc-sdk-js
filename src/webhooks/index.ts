@@ -16,8 +16,8 @@ type WebhookPayload =
   | ChatAccessGranted
   | ChatAccessRevoked
   | ChatAccessSet
-  | ChatUserAdded
-  | ChatUserRemoved
+  | UserAddedToChat
+  | UserRemovedFromChat
   | IncomingEvent
   | EventUpdated
   | IncomingRichMessagePostback
@@ -61,14 +61,14 @@ export interface ChatAccessSet {
   access: Access;
 }
 
-export interface ChatUserAdded {
+export interface UserAddedToChat {
   chat_id: string;
   thread_id: string;
   user: User;
   user_type: string;
 }
 
-export interface ChatUserRemoved {
+export interface UserRemovedFromChat {
   chat_id: string;
   thread_id: string;
   user_id: string;
