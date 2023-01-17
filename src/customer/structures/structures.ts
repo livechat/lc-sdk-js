@@ -146,7 +146,8 @@ export interface PropertyNamespace {
 }
 
 export interface Access {
-  group_ids: number[];
+  group_ids?: number[];
+  agent_ids?: string[];
 }
 
 export interface InitialChat {
