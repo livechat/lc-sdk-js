@@ -1,9 +1,8 @@
-import axios, { AxiosError } from "axios";
-import WebSocket = require("isomorphic-ws");
-import { v4 } from "uuid";
 import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
-import { Push, RTMRequest, RTMAPIOptions, WebAPIOptions } from "../objects";
+import axios, { AxiosError } from "axios";
+import { v4 } from "uuid";
+import WebSocket = require("isomorphic-ws");
 
 type apiType = "agent" | "customer" | "configuration";
 
@@ -175,12 +174,36 @@ export class RTMAPI {
   }
 }
 
+interface WebAPIOptions {
+  apiUrl?: string;
+}
+
+interface RTMAPIOptions {
+  apiUrl?: string;
+}
+
+interface RTMRequest {
+  action: string;
+  payload: any;
+  author_id?: string;
+  request_id?: string;
+  version?: string;
+}
+
 interface ResponseError {
   error: APIError;
 }
 
-export interface APIError<P = unknown> {
+interface APIError<P = unknown> {
   type: string;
   message: string;
   data?: P;
+}
+
+interface Push<P = unknown> {
+  version: string;
+  request_id?: string;
+  action: string;
+  type: string;
+  payload: P;
 }
