@@ -1,29 +1,30 @@
 import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import {
-  AgentFields,
+  AddAutoAccessRequest,
+  AddAutoAccessResponse,
   Agent,
-  EmptyResponse,
-  CreateAgentResponse,
-  BotFields,
-  CreateBotResponse,
-  Bot,
+  AgentFields,
   AgentPriorities,
+  AutoAccess,
+  Bot,
+  BotFields,
+  CreateAgentResponse,
+  CreateBotResponse,
   CreateGroupResponse,
+  EmptyResponse,
   Group,
-  PropertyConfig,
+  Properties,
   PropertiesConfig,
-  Webhook,
+  PropertyConfig,
   RegisteredWebhook,
   RegisterWebhookResponse,
+  UpdateAutoAccessRequest,
+  WebAPIOptions,
+  Webhook,
   WebhookData,
   WebhooksState,
-  AddAutoAccessResponse,
-  AutoAccess,
-  AddAutoAccessRequest,
-  UpdateAutoAccessRequest,
 } from "./structures";
-import { Properties, WebAPIOptions } from "../objects/index";
 
 export default class ConfigurationAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
@@ -41,7 +42,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * It returns the info about an Agent specified by id.
-   * @param id - IF of agent to get
+   * @param id - ID of agent to get
    * @param fields - additional fields to include
    */
   async getAgent(id: string, fields?: string[]): Promise<Agent> {
@@ -206,7 +207,7 @@ export default class ConfigurationAPI extends WebAPI {
   /**
    * Returns details about a group specified by its id.
    * @param id - group ID to get info about
-   * @param fields - additiona fields to include
+   * @param fields - additional fields to include
    */
   async getGroup(id: number, fields?: string[]): Promise<Group> {
     return this.send("get_group", { id, fields });
@@ -294,6 +295,7 @@ export default class ConfigurationAPI extends WebAPI {
       properties,
     });
   }
+
   /**
    * Returns the properties set within a group.
    * @param id - group ID to get properties from
@@ -356,7 +358,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Enables license webhooks for authorization token's clientID
-   * @param clientID - clientID when authorizing via Personal Access Token
+   * @param client_id - clientID when authorizing via Personal Access Token
    */
   async enableLicenseWebhooks(client_id?: string): Promise<EmptyResponse> {
     return this.send("enable_license_webhooks", { client_id });
@@ -364,7 +366,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Disables license webhooks for authorization token's clientID
-   * @param clientID - clientID when authorizing via Personal Access Token
+   * @param client_id - clientID when authorizing via Personal Access Token
    */
   async disableLicenseWebhooks(client_id?: string): Promise<EmptyResponse> {
     return this.send("disable_license_webhooks", { client_id });
@@ -372,7 +374,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Gets license webhooks' state for authorization token's clientID
-   * @param clientID - clientID when authorizing via Personal Access Token
+   * @param client_id - clientID when authorizing via Personal Access Token
    */
   async getLicenseWebhooksState(client_id?: string): Promise<WebhooksState> {
     return this.send("get_license_webhooks_state", { client_id });

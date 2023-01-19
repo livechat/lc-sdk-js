@@ -1,27 +1,30 @@
 import { RTMAPI } from "../internal";
 import type {
-  EmptyResponse,
-  ListChatParameters,
-  ListThreadsParameters,
-  ListThreadsResponse,
-  ListChatsResponse,
-  GetChatResponse,
-  StartChatParameters,
-  StartChatResponse,
-  ResumeChatResponse,
-  ResumeChatParameters,
-  SendEventResponse,
-  SendRichMessagePostbackParameters,
   CustomerParameters,
-  ListGroupStatusesResponse,
+  EmptyResponse,
+  Event,
+  GetChatResponse,
   GetFormResponse,
   GetPredictedAgentResponse,
   GetURLInfoResponse,
+  ListChatParameters,
+  ListChatsResponse,
+  ListGroupStatusesResponse,
+  ListThreadsParameters,
+  ListThreadsResponse,
   LoginRequest,
   LoginResponse,
+  Properties,
+  Push,
   Pushes,
+  ResumeChatParameters,
+  ResumeChatResponse,
+  RTMAPIOptions,
+  SendEventResponse,
+  SendRichMessagePostbackParameters,
+  StartChatParameters,
+  StartChatResponse,
 } from "./structures";
-import { Properties, Event, Push, RTMAPIOptions } from "../objects";
 
 export default class RTM extends RTMAPI {
   constructor(license: number, options?: RTMAPIOptions) {
@@ -297,6 +300,7 @@ export default class RTM extends RTMAPI {
       page_url,
     });
   }
+
   /**
    * Returns an empty ticket form of a prechat or postchat survey.
    * @param group_id = group id to get form for
