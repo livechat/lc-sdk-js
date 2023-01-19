@@ -1,29 +1,31 @@
 import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
-  EmptyResponse,
-  ListChatParameters,
-  ListThreadsParameters,
-  ListThreadsResponse,
-  ListChatsResponse,
-  GetChatResponse,
-  StartChatParameters,
-  StartChatResponse,
-  ResumeChatResponse,
-  ResumeChatParameters,
-  SendEventResponse,
-  SendRichMessagePostbackParameters,
   CustomerParameters,
-  ListGroupStatusesResponse,
+  EmptyResponse,
+  Event,
+  GetChatResponse,
+  GetDynamicConfigurationRequest,
+  GetDynamicConfigurationResponse,
   GetFormResponse,
   GetPredictedAgentResponse,
   GetURLInfoResponse,
-  UploadFileResponse,
-  GetDynamicConfigurationRequest,
-  GetDynamicConfigurationResponse,
   GroupConfiguration,
+  ListChatParameters,
+  ListChatsResponse,
+  ListGroupStatusesResponse,
+  ListThreadsParameters,
+  ListThreadsResponse,
+  Properties,
+  ResumeChatParameters,
+  ResumeChatResponse,
+  SendEventResponse,
+  SendRichMessagePostbackParameters,
+  StartChatParameters,
+  StartChatResponse,
+  UploadFileResponse,
+  WebAPIOptions,
 } from "./structures";
-import { Properties, Event, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";
@@ -295,6 +297,7 @@ export default class Web extends WebAPI {
       page_url,
     });
   }
+
   /**
    * Returns an empty ticket form of a prechat or postchat survey.
    * @param group_id - group id to get form for
