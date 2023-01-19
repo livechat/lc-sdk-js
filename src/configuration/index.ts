@@ -1,36 +1,37 @@
 import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import {
-  AgentFields,
+  AddAutoAccessRequest,
+  AddAutoAccessResponse,
   Agent,
-  EmptyResponse,
-  CreateAgentResponse,
-  BatchResponse,
-  BotFields,
-  CreateBotResponse,
-  Bot,
+  AgentFields,
   AgentPriorities,
+  AutoAccess,
+  BatchResponse,
+  Bot,
+  BotFields,
+  ChannelActivity,
+  CreateAgentResponse,
+  CreateBotResponse,
   CreateGroupResponse,
+  EmptyResponse,
+  GetLicenseIDResponse,
+  GetOrganizationIDResponse,
   Group,
-  PropertyConfig,
+  GroupProperties,
+  PlanLimit,
+  Properties,
   PropertiesConfig,
-  Webhook,
+  PropertyConfig,
   RegisteredWebhook,
   RegisterWebhookResponse,
+  Tag,
+  UpdateAutoAccessRequest,
+  WebAPIOptions,
+  Webhook,
   WebhookData,
   WebhooksState,
-  AddAutoAccessResponse,
-  AutoAccess,
-  AddAutoAccessRequest,
-  UpdateAutoAccessRequest,
-  GetOrganizationIDResponse,
-  GetLicenseIDResponse,
-  PlanLimit,
-  ChannelActivity,
-  Tag,
-  GroupsProperties,
 } from "./structures";
-import { Properties, WebAPIOptions } from "../objects";
 
 export default class ConfigurationAPI extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
@@ -211,7 +212,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Lists all bots within license.
-   * @param all - switch if should return all bots or only caller's bots
+   * @param all - switch if it should return all bots or only caller's bots
    * @param fields - additional fields to include
    */
   async listBots(all?: boolean, fields?: BotFields): Promise<Bot[]> {
@@ -285,7 +286,7 @@ export default class ConfigurationAPI extends WebAPI {
   /**
    * Returns details about a group specified by its id.
    * @param id - group ID to get info about
-   * @param fields - additiona fields to include
+   * @param fields - additional fields to include
    */
   async getGroup(id: number, fields?: string[]): Promise<Group> {
     return this.send("get_group", { id, fields });
@@ -344,7 +345,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Returns the properties set within a license.
-   * @param namespace_prefix - namsepace prefix
+   * @param namespace_prefix - namespace prefix
    * @param name_prefix - name prefix
    */
   async listLicenseProperties(namespace_prefix?: string, name_prefix?: string): Promise<Properties> {
@@ -422,7 +423,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Enables license webhooks for authorization token's clientID
-   * @param clientID - clientID when authorizing via Personal Access Token
+   * @param client_id - clientID when authorizing via Personal Access Token
    */
   async enableLicenseWebhooks(client_id?: string): Promise<EmptyResponse> {
     return this.send("enable_license_webhooks", { client_id });
@@ -430,7 +431,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Disables license webhooks for authorization token's clientID
-   * @param clientID - clientID when authorizing via Personal Access Token
+   * @param client_id - clientID when authorizing via Personal Access Token
    */
   async disableLicenseWebhooks(client_id?: string): Promise<EmptyResponse> {
     return this.send("disable_license_webhooks", { client_id });
@@ -438,7 +439,7 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Gets license webhooks' state for authorization token's clientID
-   * @param clientID - clientID when authorizing via Personal Access Token
+   * @param client_id - clientID when authorizing via Personal Access Token
    */
   async getLicenseWebhooksState(client_id?: string): Promise<WebhooksState> {
     return this.send("get_license_webhooks_state", { client_id });
@@ -550,7 +551,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param namespace - namespace
    * @param namePrefix - name prefix
    */
-  async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupsProperties> {
+  async listGroupsProperties(groupIDs?: number[], namespace?: string, namePrefix?: string): Promise<GroupProperties[]> {
     return this.send("list_groups_properties", { group_ids: groupIDs, namespace, name_prefix: namePrefix });
   }
 }

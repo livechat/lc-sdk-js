@@ -1,5 +1,5 @@
-import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter, Thread } from "../objects";
 import { User, Chat } from "../agent/structures";
+import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter } from "./structures";
 
 export interface Webhook {
   webhook_id: string;
@@ -14,8 +14,8 @@ type WebhookPayload =
   | IncomingChat
   | ChatDeactivated
   | ChatAccessUpdated
-  | ChatUserAdded
-  | ChatUserRemoved
+  | UserAddedToChat
+  | UserRemovedFromChat
   | IncomingEvent
   | EventUpdated
   | IncomingRichMessagePostback
@@ -63,14 +63,14 @@ export interface ChatAccessUpdated {
   access: Access;
 }
 
-export interface ChatUserAdded {
+export interface UserAddedToChat {
   chat_id: string;
   thread_id: string;
   user: User;
   user_type: string;
 }
 
-export interface ChatUserRemoved {
+export interface UserRemovedFromChat {
   chat_id: string;
   thread_id: string;
   user_id: string;

@@ -1,30 +1,33 @@
 import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
-  ListChatsResponse,
-  ListChatParameters,
+  AgentForTransfer,
+  CreateCustomerResponse,
+  CustomerParameters,
   EmptyResponse,
-  ListThreadsParameters,
-  ListThreadsResponse,
+  Event,
   GetChatResponse,
+  GetCustomerResponse,
   ListArchivesParameters,
   ListArchivesResponse,
-  StartChatParameters,
-  StartChatResponse,
+  ListChatParameters,
+  ListChatsResponse,
+  ListThreadsParameters,
+  ListThreadsResponse,
+  MulticastRecipients,
+  Properties,
   ResumeChatParameters,
   ResumeChatResponse,
-  TransferChatParameters,
+  RoutingStatus,
   SendEventResponse,
   SendRichMessagePostbackParameters,
-  GetCustomerResponse,
-  CustomerParameters,
-  CreateCustomerResponse,
-  MulticastRecipients,
-  AgentForTransfer,
-  UploadFileResponse,
   SetRoutingStatusResponse,
+  StartChatParameters,
+  StartChatResponse,
+  TransferChatParameters,
+  UploadFileResponse,
+  WebAPIOptions,
 } from "./structures";
-import { Event, Properties, RoutingStatus, WebAPIOptions } from "../objects";
 import { promises as fs } from "fs";
 import axios from "axios";
 import FormData from "form-data";
@@ -150,6 +153,7 @@ export default class Web extends WebAPI {
       ignore_requester_presence,
     });
   }
+
   /**
    * Removes a user from chat. Removing customer user type is not allowed. It's always possible to remove the requester from the chat.
    * @param chat_id - chat to remove user from
@@ -168,6 +172,7 @@ export default class Web extends WebAPI {
       ignore_requester_presence,
     });
   }
+
   /**
    * Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
    * It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
