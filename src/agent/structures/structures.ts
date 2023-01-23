@@ -214,6 +214,7 @@ export enum CustomerMonitoringLevel {
   Chatting = "chatting",
   Invited = "invited",
   Online = "online",
+  HighestAvailable = "highest_available",
 }
 
 export interface PushNotifications {
