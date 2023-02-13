@@ -1,4 +1,4 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Controller, Get, Post, Query } from '@nestjs/common';
 import { InstallationService } from './installation.service';
 import { MessagesService } from './messages.service';
 
@@ -10,8 +10,8 @@ export class AppController {
   ) {}
 
   @Get('install')
-  install(): string {
-    return this.installationService.install();
+  async install(@Query('code') code: string): Promise<string> {
+    return await this.installationService.install(code);
   }
 
   @Post('reply')
