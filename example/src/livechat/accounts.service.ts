@@ -1,7 +1,7 @@
+import axios from 'axios';
 import { Injectable } from '@nestjs/common';
 import { LivechatConfig } from './livechat.config';
 import { Auth } from '@livechat/lc-sdk-js';
-import axios from 'axios';
 
 /**
  * For more information, see our documentation about Authorization code grant:

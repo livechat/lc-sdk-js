@@ -6,7 +6,7 @@ import { RoutingStatus } from '@livechat/lc-sdk-js/lib/src/agent/structures';
 export class InstallationService {
   constructor(private livechatService: LivechatService) {}
 
-  async install(code: string): Promise<string> {
+  async install(code: string) {
     await this.livechatService.initialize(code);
     const { configurationWeb, agentRtm } = this.livechatService;
 

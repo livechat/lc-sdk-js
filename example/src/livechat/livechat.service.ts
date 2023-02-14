@@ -2,13 +2,13 @@ import { Injectable } from '@nestjs/common';
 import { LivechatConfig } from './livechat.config';
 import { AccountsService } from './accounts.service';
 import { Agent, Configuration } from '@livechat/lc-sdk-js';
-import ConfigurationAPI from '@livechat/lc-sdk-js/lib/src/configuration';
 import AgentRtm from '@livechat/lc-sdk-js/lib/src/agent/rtm';
+import ConfigurationApi from '@livechat/lc-sdk-js/lib/src/configuration';
 
 @Injectable()
 export class LivechatService {
   public botId: string;
-  public configurationWeb: ConfigurationAPI;
+  public configurationWeb: ConfigurationApi;
   public agentRtm: AgentRtm;
 
   constructor(

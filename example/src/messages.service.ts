@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { IncomingEvent } from '@livechat/lc-sdk-js/lib/src/webhooks';
 import { LivechatService } from './livechat/livechat.service';
+import { IncomingEvent } from '@livechat/lc-sdk-js/lib/src/webhooks';
 import { Message } from '@livechat/lc-sdk-js/lib/src/webhooks/structures';
 import { Event } from '@livechat/lc-sdk-js/lib/src/agent/structures';
 
@@ -39,7 +39,7 @@ export class MessagesService {
           type: 'agent',
           ids: agentsForTransfer.map((a) => a.agent_id),
         },
-      } as any) // TODO: SDK TransferChatParameters require numerical ids while API accepts string agent ids
+      })
       .catch(() =>
         this.sendMessage(
           chat_id,
@@ -48,7 +48,7 @@ export class MessagesService {
       );
   }
 
-  private sendMessage(chat_id: string, text: string): Promise<any> {
+  private sendMessage(chat_id: string, text: string) {
     const { agentRtm, botId } = this.livechatService;
     return agentRtm.sendEvent(chat_id, this.getRichMessageEvent(text, botId));
   }
