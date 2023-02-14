@@ -36,6 +36,8 @@ export class LivechatService {
 
   setBotId(botId: string): void {
     this.botId = botId;
+    this.configurationWeb.setAuthorId(botId);
+    this.agentRtm.setAuthorId(botId);
   }
 
   verifyWebhookSecret(secret: string) {
