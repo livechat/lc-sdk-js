@@ -1,6 +1,6 @@
 import { Properties } from "./structures";
 
-interface BaseEvent {
+export interface BaseEvent {
   id: string;
   created_at: string;
   properties?: Properties;
