@@ -3,12 +3,13 @@ import { LivechatConfig } from './livechat.config';
 import { AccountsService } from './accounts.service';
 import { Agent, Configuration } from '@livechat/lc-sdk-js';
 import ConfigurationAPI from '@livechat/lc-sdk-js/lib/src/configuration';
-import AgentWeb from '@livechat/lc-sdk-js/lib/src/agent/web';
+import AgentRtm from '@livechat/lc-sdk-js/lib/src/agent/rtm';
 
 @Injectable()
 export class LivechatService {
+  public botId: string;
   public configurationWeb: ConfigurationAPI;
-  public agentWeb: AgentWeb;
+  public agentRtm: AgentRtm;
 
   constructor(
     private cfg: LivechatConfig,
@@ -26,8 +27,18 @@ export class LivechatService {
       { apiUrl: this.cfg.baseApiUrl },
     );
 
-    this.agentWeb = new Agent.Web(this.cfg.clientId, tokenGetter, {
+    this.agentRtm = new Agent.RTM({
       apiUrl: this.cfg.baseApiUrl,
     });
+    await this.agentRtm.connect();
+    await this.agentRtm.login(`Bearer ${tokenGetter().accessToken}`);
+  }
+
+  setBotId(botId: string): void {
+    this.botId = botId;
+  }
+
+  verifyWebhookSecret(secret: string) {
+    return this.cfg.webhookSecret === secret;
   }
 }

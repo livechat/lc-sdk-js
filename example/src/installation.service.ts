@@ -8,15 +8,16 @@ export class InstallationService {
 
   async install(code: string): Promise<string> {
     await this.livechatService.initialize(code);
-    const { configurationWeb, agentWeb } = this.livechatService;
+    const { configurationWeb, agentRtm } = this.livechatService;
 
     return configurationWeb
       .createBot({
         name: 'Example bot',
       })
-      .then(({ id }) =>
-        agentWeb.setRoutingStatus(RoutingStatus.AcceptingChats, id),
-      )
+      .then(({ id }) => {
+        this.livechatService.setBotId(id);
+        return agentRtm.setRoutingStatus(RoutingStatus.AcceptingChats, id);
+      })
       .then(() => 'Example integration installed');
   }
 }

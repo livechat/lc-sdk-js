@@ -8,6 +8,7 @@ export class LivechatConfig {
   public readonly clientSecret: string;
   public readonly codeExchangeUrl: string;
   public readonly redirectUri: string;
+  public readonly webhookSecret: string;
 
   constructor(private configService: ConfigService) {
     this.baseApiUrl = configService.get('BASE_API_URL');
@@ -15,5 +16,6 @@ export class LivechatConfig {
     this.clientSecret = configService.get('CLIENT_SECRET');
     this.codeExchangeUrl = configService.get('ACCOUNTS_URL') + '/token';
     this.redirectUri = configService.get('APP_URL') + '/install';
+    this.webhookSecret = configService.get('WEBHOOK_SECRET');
   }
 }
