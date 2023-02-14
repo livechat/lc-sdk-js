@@ -12,6 +12,6 @@ export type RequestRichMessage = Omit <RichMessage,keyof RequestToOmit | "author
 
 export type RequestCustomEvent = Omit <CustomEvent,keyof RequestToOmit | "author_id"> & Partial<Pick<CustomEvent, "recipients">>
 
-export type RequestSystemMessage = Omit <CustomEvent, keyof RequestToOmit | "author_id"> & Partial<Pick<SystemMessage, "recipients">>
+export type RequestSystemMessage = Omit <SystemMessage, keyof RequestToOmit | "author_id"> & Partial<Pick<SystemMessage, "recipients">>
 
 export type RequestEvent = RequestFile | RequestFilledForm | RequestMessage | RequestRichMessage | RequestCustomEvent | RequestSystemMessage;
