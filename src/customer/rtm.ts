@@ -25,6 +25,7 @@ import type {
   StartChatParameters,
   StartChatResponse,
 } from "./structures";
+import { RequestEvent } from "./structures/requestEvents";
 
 export default class RTM extends RTMAPI {
   constructor(license: number, options?: RTMAPIOptions) {
@@ -112,7 +113,7 @@ export default class RTM extends RTMAPI {
    * @param event - Event object
    * @param attach_to_last_thread - if true, adds event to last inactive thread
    */
-  async sendEvent(chat_id: string, event: Event, attach_to_last_thread?: boolean): Promise<SendEventResponse> {
+  async sendEvent(chat_id: string, event: RequestEvent, attach_to_last_thread?: boolean): Promise<SendEventResponse> {
     return this.send("send_event", {
       chat_id,
       event,
