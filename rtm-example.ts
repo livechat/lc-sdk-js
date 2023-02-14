@@ -1,6 +1,4 @@
 import { Agent, Customer } from "./index";
-import { Event as AgentEvent } from "./src/agent/structures";
-import { Event as CustomerEvent } from "./src/agent/structures";
 
 const { IncomingEvent } = Agent.Objects.Pushes;
 const agentAPI = new Agent.RTM();
