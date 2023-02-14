@@ -1,35 +1,22 @@
 import { Injectable } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
-import axios from 'axios';
+import { LivechatService } from './livechat/livechat.service';
+import { RoutingStatus } from '@livechat/lc-sdk-js/lib/src/agent/structures';
 
 @Injectable()
 export class InstallationService {
-  private readonly clientId: string;
-  private readonly clientSecret: string;
-  private readonly codeExchangeUrl: string;
-  private readonly redirectUri: string;
-
-  constructor(private configService: ConfigService) {
-    this.clientId = configService.get('CLIENT_ID');
-    this.clientSecret = configService.get('CLIENT_SECRET');
-    this.codeExchangeUrl = configService.get('ACCOUNTS_URL') + '/token';
-    this.redirectUri = configService.get('APP_URL') + '/install';
-  }
+  constructor(private livechatService: LivechatService) {}
 
   async install(code: string): Promise<string> {
-    const data = new URLSearchParams({
-      grant_type: 'authorization_code',
-      code: code,
-      client_id: this.clientId,
-      client_secret: this.clientSecret,
-      redirect_uri: this.redirectUri,
-    });
+    await this.livechatService.initialize(code);
+    const { configurationWeb, agentWeb } = this.livechatService;
 
-    await axios
-      .post(this.codeExchangeUrl, data)
-      .then((r) => console.log(r))
-      .catch((e) => console.log(e));
-
-    return 'install';
+    return configurationWeb
+      .createBot({
+        name: 'Example bot',
+      })
+      .then(({ id }) =>
+        agentWeb.setRoutingStatus(RoutingStatus.AcceptingChats, id),
+      )
+      .then(() => 'Example integration installed');
   }
 }
