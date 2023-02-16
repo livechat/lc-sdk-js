@@ -23,7 +23,7 @@ export class MessagesService {
   }
 
   private async handleTransfer(chat_id: string) {
-    const { agentRtm } = this.livechatService;
+    const { agentRtm, botId } = this.livechatService;
     const agentsForTransfer = await agentRtm.listAgentsForTransfer(chat_id);
 
     if (agentsForTransfer.length === 0) {
@@ -32,12 +32,15 @@ export class MessagesService {
         'There are no available humans at the moment :(',
       );
     }
+    const agentIds = agentsForTransfer
+      .map((a) => a.agent_id)
+      .filter((id) => id !== botId);
 
     return await agentRtm
       .transferChat(chat_id, {
         target: {
           type: 'agent',
-          ids: agentsForTransfer.map((a) => a.agent_id),
+          ids: agentIds,
         },
       })
       .catch(() =>
