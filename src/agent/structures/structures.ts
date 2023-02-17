@@ -88,13 +88,18 @@ export interface ResumeChatParameters {
 }
 
 export interface TransferChatParameters {
-  target?: TransferTarget;
+  target?: TransferTargetGroup | TransferTargetAgent;
   force?: boolean;
 }
 
-interface TransferTarget {
-  type: string;
+interface TransferTargetGroup {
+  type: "group";
   ids: number[];
+}
+
+interface TransferTargetAgent {
+  type: "agent";
+  ids: string[];
 }
 
 export interface SendRichMessagePostbackParameters {
