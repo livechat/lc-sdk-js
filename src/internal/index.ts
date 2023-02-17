@@ -13,6 +13,7 @@ function isAxiosError<T = unknown>(e: unknown): e is AxiosError<T> {
 export class WebAPI {
   APIURL: string;
   version: string;
+  author_id?: string;
   private readonly actionsMethodGet = [
     "list_license_properties",
     "list_group_properties",
@@ -58,6 +59,9 @@ export class WebAPI {
     if (typeof window === "undefined") {
       headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
     }
+    if (this.author_id) {
+      headers["X-Author-Id"] = this.author_id;
+    }
 
     let params = method === "GET" ? payload : {};
     if (this.type === "customer") {
@@ -72,6 +76,10 @@ export class WebAPI {
       headers,
     });
   }
+
+  setAuthorId(author_id?: string) {
+    this.author_id = author_id;
+  }
 }
 
 export class RTMAPI {
@@ -83,6 +91,7 @@ export class RTMAPI {
   heartbeatInterval?: NodeJS.Timeout;
   requestsQueue: any = {};
   subscribedPushes: any = {};
+  author_id?: string;
 
   constructor(type: apiType, organization_id?: string, options?: RTMAPIOptions) {
     this.APIURL = options?.apiUrl || ApiURL;
@@ -155,6 +164,9 @@ export class RTMAPI {
       action,
       payload,
     };
+    if (this.author_id) {
+      req.author_id = this.author_id;
+    }
 
     return new Promise((resolve, reject) => {
       this.socket?.send(JSON.stringify(req));
@@ -171,6 +183,10 @@ export class RTMAPI {
 
   unsubscribePush(push: string): void {
     delete this.subscribedPushes[push];
+  }
+
+  setAuthorId(author_id?: string) {
+    this.author_id = author_id;
   }
 }
 
