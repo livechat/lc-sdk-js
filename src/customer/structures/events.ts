@@ -105,3 +105,16 @@ export interface SystemMessage extends BaseEvent {
 }
 
 export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage;
+
+type ResponseOnlyFields =
+  | "id"
+  | "created_at"
+  | "author_id"
+  | "thumbnail_url"
+  | "thumbnail2x_url"
+  | "content_type"
+  | "size"
+  | "width"
+  | "height";
+
+export type RequestEvent<E extends Event> = Omit<E, ResponseOnlyFields>;
