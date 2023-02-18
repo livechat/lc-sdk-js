@@ -66,9 +66,9 @@ export interface RichMessage extends BaseEvent {
 }
 
 export interface Element {
-  title: string;
-  subtitle: string;
-  image: Image;
+  title?: string;
+  subtitle?: string;
+  image?: Image;
   buttons?: Button[];
 }
 
