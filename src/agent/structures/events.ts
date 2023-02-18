@@ -126,7 +126,10 @@ type ResponseOnlyFields =
   | "height"
   | "form_type";
 
-export type LimitEventToRequestFields<E extends Event> = Omit<E, ResponseOnlyFields>;
+export type LimitEventToRequestFields<E extends Event> = Omit<E, ResponseOnlyFields> & {
+  visibility?: string;
+};
+
 export type RequestEvent =
   | LimitEventToRequestFields<File>
   | LimitEventToRequestFields<FilledForm>
