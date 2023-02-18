@@ -5,7 +5,6 @@ import type {
   CreateCustomerResponse,
   CustomerParameters,
   EmptyResponse,
-  Event,
   GetChatResponse,
   GetCustomerResponse,
   ListArchivesParameters,
@@ -182,11 +181,7 @@ export default class Web extends WebAPI {
    * @param event - Event object limited to request fields only
    * @param attach_to_last_thread - if true, adds event to last inactive thread
    */
-  async sendEvent<E extends Event>(
-    chat_id: string,
-    event: RequestEvent<E>,
-    attach_to_last_thread?: boolean,
-  ): Promise<SendEventResponse> {
+  async sendEvent(chat_id: string, event: RequestEvent, attach_to_last_thread?: boolean): Promise<SendEventResponse> {
     return this.send("send_event", {
       chat_id,
       event,
