@@ -26,6 +26,7 @@ export interface FilledForm extends BaseEvent {
   custom_id?: string;
   author_id: string;
   form_id: string;
+  form_type?: string;
   fields: FormField[];
 }
 
@@ -116,7 +117,8 @@ type ResponseOnlyFields =
   | "content_type"
   | "size"
   | "width"
-  | "height";
+  | "height"
+  | "form_type";
 
 export type RequestEvent<E extends Event> = Omit<E, ResponseOnlyFields> & {
   visibility?: string;
