@@ -1,6 +1,4 @@
 import { Agent, Customer } from "./index";
-import { Message as AgentMessage } from "./src/agent/structures";
-import { Message as CustomerMessage } from "./src/customer/structures";
 const { IncomingEvent } = Agent.Objects.Pushes;
 const aapi = new Agent.RTM();
 const capi = new Customer.RTM(1234567890);
@@ -11,12 +9,12 @@ const capi = new Customer.RTM(1234567890);
     .then(async () => {
       let { chat_id } = await capi.startChat();
       aapi.on(IncomingEvent, () => {
-        aapi.sendEvent<AgentMessage>(chat_id, {
+        aapi.sendEvent(chat_id, {
           type: "message",
           text: "agent msg 1",
         });
       });
-      await capi.sendEvent<CustomerMessage>(chat_id, {
+      await capi.sendEvent(chat_id, {
         type: "message",
         text: "customer msg 1",
       });
