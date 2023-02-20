@@ -15,7 +15,7 @@
     "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix"
   },
   "dependencies": {
-    "@livechat/lc-sdk-js": "github:livechat/lc-sdk-js#API-12128-lc-sdk-js-too-general-type-for-event-v35",
+    "@livechat/lc-sdk-js": "github:livechat/lc-sdk-js#v3.5",
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.0.0",
