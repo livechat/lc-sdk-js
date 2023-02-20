@@ -1,12 +1,11 @@
-import { Agent, Customer } from "./index";
+import { Agent, Customer } from "@livechat/lc-sdk-js";
 
 const { IncomingEvent } = Agent.Objects.Pushes;
 const agentAPI = new Agent.RTM();
-const customerAPI = new Customer.RTM("a24e2422-db10-4714-9852-dd74e0ad6420");
+const customerAPI = new Customer.RTM("organization id");
 
 (async () => {
   await Promise.all([agentAPI.connect(), customerAPI.connect()]);
-
   await Promise.all([agentAPI.login("Bearer dal:token"), customerAPI.login("Bearer dal:token")]);
 
   const { chat_id } = await customerAPI.startChat();
