@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@livechat/lc-sdk-js": "github:livechat/lc-sdk-js#API-12128-lc-sdk-js-too-general-type-for-event-v36"
+    "@livechat/lc-sdk-js": "github:livechat/lc-sdk-js#v3.6"
   }
 }
