@@ -1,6 +1,4 @@
 import { Agent, Customer } from "./index";
-import { Event as AgentEvent } from "./src/agent/structures";
-import { Event as CustomerEvent } from "./src/agent/structures";
 
 const { IncomingEvent } = Agent.Objects.Pushes;
 const agentAPI = new Agent.RTM();
@@ -16,13 +14,13 @@ const customerAPI = new Customer.RTM("a24e2422-db10-4714-9852-dd74e0ad6420");
     agentAPI.sendEvent(chat_id, {
       type: "message",
       text: "agent msg 1",
-    } as AgentEvent);
+    });
   });
 
   customerAPI.sendEvent(chat_id, {
     type: "message",
     text: "customer msg 1",
-  } as CustomerEvent);
+  });
 
   await agentAPI.logout();
 })();
