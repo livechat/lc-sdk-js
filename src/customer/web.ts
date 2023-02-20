@@ -3,7 +3,6 @@ import { TokenGetter } from "../authorization";
 import type {
   CustomerParameters,
   EmptyResponse,
-  Event,
   GetChatResponse,
   GetDynamicConfigurationRequest,
   GetDynamicConfigurationResponse,
@@ -17,6 +16,7 @@ import type {
   ListThreadsParameters,
   ListThreadsResponse,
   Properties,
+  RequestEvent,
   ResumeChatParameters,
   ResumeChatResponse,
   SendEventResponse,
@@ -91,10 +91,10 @@ export default class Web extends WebAPI {
    * It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
    * with the present parameter set to false.
    * @param chat_id - chat to send event to
-   * @param event - Event object
+   * @param event - Event request object
    * @param attach_to_last_thread - if true, adds event to last inactive thread
    */
-  async sendEvent(chat_id: string, event: Event, attach_to_last_thread?: boolean): Promise<SendEventResponse> {
+  async sendEvent(chat_id: string, event: RequestEvent, attach_to_last_thread?: boolean): Promise<SendEventResponse> {
     return this.send("send_event", {
       chat_id,
       event,
