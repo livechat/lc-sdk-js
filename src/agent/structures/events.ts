@@ -4,11 +4,12 @@ interface BaseEvent {
   id: string;
   created_at: string;
   properties?: Properties;
-  recipients: string;
-  type: string;
+  recipients?: string;
+  type: "file" | "form" | "filled_form" | "message" | "rich_message" | "custom" | "system_message";
 }
 
 export interface File extends BaseEvent {
+  type: "file";
   custom_id?: string;
   author_id: string;
   name: string;
@@ -23,6 +24,7 @@ export interface File extends BaseEvent {
 }
 
 export interface FilledForm extends BaseEvent {
+  type: "form" | "filled_form";
   custom_id?: string;
   author_id: string;
   form_id: string;
@@ -44,6 +46,7 @@ export interface Answer {
 }
 
 export interface Message extends BaseEvent {
+  type: "message";
   custom_id?: string;
   author_id: string;
   text: string;
@@ -59,6 +62,7 @@ export interface Postback {
 }
 
 export interface RichMessage extends BaseEvent {
+  type: "rich_message";
   custom_id?: string;
   author_id: string;
   template_id: string;
@@ -66,9 +70,9 @@ export interface RichMessage extends BaseEvent {
 }
 
 export interface Element {
-  title: string;
-  subtitle: string;
-  image: Image;
+  title?: string;
+  subtitle?: string;
+  image?: Image;
   buttons?: Button[];
 }
 
@@ -93,15 +97,37 @@ export interface Image {
 }
 
 export interface CustomEvent extends BaseEvent {
+  type: "custom";
   custom_id?: string;
   author_id: string;
   content?: object;
 }
 
 export interface SystemMessage extends BaseEvent {
+  type: "system_message";
   system_message_type: string;
   text?: string;
   text_vars?: object;
 }
 
 export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage;
+
+type ResponseOnlyFields =
+  | "id"
+  | "created_at"
+  | "author_id"
+  | "thumbnail_url"
+  | "thumbnail2x_url"
+  | "content_type"
+  | "size"
+  | "width"
+  | "height";
+
+export type LimitEventToRequestFields<E extends Event> = Omit<E, ResponseOnlyFields>;
+export type RequestEvent =
+  | LimitEventToRequestFields<File>
+  | LimitEventToRequestFields<FilledForm>
+  | LimitEventToRequestFields<Message>
+  | LimitEventToRequestFields<RichMessage>
+  | LimitEventToRequestFields<CustomEvent>
+  | LimitEventToRequestFields<SystemMessage>;
