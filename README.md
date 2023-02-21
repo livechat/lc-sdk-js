@@ -18,7 +18,7 @@ Here is the relation between SDK versions and API versions:
 * lc-sdk-js 5.x.x -> LiveChat API 3.5
 * ...
 
-All open versions of LiveChat API are available as git tags in lc-sdk-js. However, a developer-preview version (not completed yet, may introduce breaking changes in the future) is avaiable in lc-sdk-js as a git branch.
+All open versions of LiveChat API are available as git tags in lc-sdk-js. However, a developer-preview version (not completed yet, may introduce breaking changes in the future) is available in lc-sdk-js as a git branch.
 
 ## Installation
 
