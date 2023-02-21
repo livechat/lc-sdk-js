@@ -19,6 +19,7 @@
 ### Properties
 
 - [APIURL](agent_web.default.md#apiurl)
+- [author\_id](agent_web.default.md#author_id)
 - [clientID](agent_web.default.md#clientid)
 - [tokenGetter](agent_web.default.md#tokengetter)
 - [type](agent_web.default.md#type)
@@ -53,6 +54,7 @@
 - [sendEvent](agent_web.default.md#sendevent)
 - [sendRichMessagePostback](agent_web.default.md#sendrichmessagepostback)
 - [sendTypingIndicator](agent_web.default.md#sendtypingindicator)
+- [setAuthorId](agent_web.default.md#setauthorid)
 - [setRoutingStatus](agent_web.default.md#setroutingstatus)
 - [startChat](agent_web.default.md#startchat)
 - [tagThread](agent_web.default.md#tagthread)
@@ -78,7 +80,7 @@
 | :------ | :------ |
 | `clientID` | `string` |
 | `tokenGetter` | [`TokenGetter`](../modules/authorization.md#tokengetter) |
-| `options?` | [`WebAPIOptions`](../interfaces/objects.WebAPIOptions.md) |
+| `options?` | [`WebAPIOptions`](../interfaces/agent_structures_structures.WebAPIOptions.md) |
 
 #### Overrides
 
@@ -86,7 +88,7 @@
 
 #### Defined in
 
-[agent/web.ts:35](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L35)
+[agent/web.ts:39](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L39)
 
 ## Properties
 
@@ -100,7 +102,21 @@
 
 #### Defined in
 
-[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L11)
+[internal/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L10)
+
+___
+
+### author\_id
+
+• `Optional` **author\_id**: `string`
+
+#### Inherited from
+
+[WebAPI](internal.WebAPI.md).[author_id](internal.WebAPI.md#author_id)
+
+#### Defined in
+
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L15)
 
 ___
 
@@ -114,7 +130,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L12)
+[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L11)
 
 ___
 
@@ -128,7 +144,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L15)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L14)
 
 ___
 
@@ -142,7 +158,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L14)
+[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L13)
 
 ___
 
@@ -156,13 +172,13 @@ ___
 
 #### Defined in
 
-[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L13)
+[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L12)
 
 ## Methods
 
 ### addUserToChat
 
-▸ **addUserToChat**(`chat_id`, `user_id`, `user_type`, `require_active_thread?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **addUserToChat**(`chat_id`, `user_id`, `user_type`, `require_active_thread?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Adds a user to the chat. You can't add more than one customer user type to the chat.
 
@@ -177,17 +193,17 @@ Adds a user to the chat. You can't add more than one customer user type to the c
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:153](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L153)
+[agent/web.ts:157](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L157)
 
 ___
 
 ### banCustomer
 
-▸ **banCustomer**(`id`, `days`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **banCustomer**(`id`, `days`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Bans the customer for a specific period of time. It immediately disconnects all active sessions of this customer
 and does not accept new ones during the ban lifespan.
@@ -201,17 +217,17 @@ and does not accept new ones during the ban lifespan.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:364](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L364)
+[agent/web.ts:370](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L370)
 
 ___
 
 ### createCustomer
 
-▸ **createCustomer**(`opts?`): `Promise`<[`CreateCustomerResponse`](../interfaces/agent_structures.CreateCustomerResponse.md)\>
+▸ **createCustomer**(`opts?`): `Promise`<[`CreateCustomerResponse`](../interfaces/agent_structures_responses.CreateCustomerResponse.md)\>
 
 Creates a new Customer user type.
 
@@ -219,21 +235,21 @@ Creates a new Customer user type.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`CustomerParameters`](../interfaces/agent_structures.CustomerParameters.md) | customer data |
+| `opts?` | [`CustomerParameters`](../interfaces/agent_structures_structures.CustomerParameters.md) | customer data |
 
 #### Returns
 
-`Promise`<[`CreateCustomerResponse`](../interfaces/agent_structures.CreateCustomerResponse.md)\>
+`Promise`<[`CreateCustomerResponse`](../interfaces/agent_structures_responses.CreateCustomerResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:345](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L345)
+[agent/web.ts:351](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L351)
 
 ___
 
 ### deactivateChat
 
-▸ **deactivateChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **deactivateChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
 
@@ -245,17 +261,17 @@ Deactivates a chat by closing the currently open thread. Sending messages to thi
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:97](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L97)
+[agent/web.ts:101](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L101)
 
 ___
 
 ### deleteChatProperties
 
-▸ **deleteChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **deleteChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Deletes chat properties
 
@@ -264,21 +280,21 @@ Deletes chat properties
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | chat to delete properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/agent_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:231](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L231)
+[agent/web.ts:237](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L237)
 
 ___
 
 ### deleteEventProperties
 
-▸ **deleteEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **deleteEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Deletes event properties
 
@@ -289,21 +305,21 @@ Deletes event properties
 | `chat_id` | `string` | chat ID of event to delete |
 | `thread_id` | `string` | thread ID of event to delete |
 | `event_id` | `string` | event to delete properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/agent_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:291](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L291)
+[agent/web.ts:297](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L297)
 
 ___
 
 ### deleteThreadProperties
 
-▸ **deleteThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **deleteThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Deletes thread properties
 
@@ -313,21 +329,21 @@ Deletes thread properties
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID of thread to delete |
 | `thread_id` | `string` | thread to delete properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/agent_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:255](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L255)
+[agent/web.ts:261](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L261)
 
 ___
 
 ### followChat
 
-▸ **followChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **followChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Marks a chat as followed. All changes to the chat will be sent to the requester until the chat is reactivated or unfollowed.
 Chat members don't need to follow their chats. They receive all chat pushes regardless of their follower status.
@@ -340,17 +356,17 @@ Chat members don't need to follow their chats. They receive all chat pushes rega
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:106](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L106)
+[agent/web.ts:110](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L110)
 
 ___
 
 ### followCustomer
 
-▸ **followCustomer**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **followCustomer**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Marks a customer as followed. As a result, the requester (an agent) will receive
 the info about all the changes related to that customer via pushes.
@@ -363,17 +379,17 @@ the info about all the changes related to that customer via pushes.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:427](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L427)
+[agent/web.ts:433](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L433)
 
 ___
 
 ### getChat
 
-▸ **getChat**(`chat_id`, `thread_id?`): `Promise`<[`GetChatResponse`](../interfaces/agent_structures.GetChatResponse.md)\>
+▸ **getChat**(`chat_id`, `thread_id?`): `Promise`<[`GetChatResponse`](../interfaces/agent_structures_responses.GetChatResponse.md)\>
 
 It returns a thread that the current Agent has access to in a given chat.
 
@@ -386,17 +402,17 @@ It returns a thread that the current Agent has access to in a given chat.
 
 #### Returns
 
-`Promise`<[`GetChatResponse`](../interfaces/agent_structures.GetChatResponse.md)\>
+`Promise`<[`GetChatResponse`](../interfaces/agent_structures_responses.GetChatResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:61](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L61)
+[agent/web.ts:65](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L65)
 
 ___
 
 ### getCustomer
 
-▸ **getCustomer**(`id`): `Promise`<[`GetCustomerResponse`](../interfaces/agent_structures.GetCustomerResponse.md)\>
+▸ **getCustomer**(`id`): `Promise`<[`GetCustomerResponse`](../interfaces/agent_structures_responses.GetCustomerResponse.md)\>
 
 Returns the info about the Customer with a given id.
 
@@ -408,17 +424,17 @@ Returns the info about the Customer with a given id.
 
 #### Returns
 
-`Promise`<[`GetCustomerResponse`](../interfaces/agent_structures.GetCustomerResponse.md)\>
+`Promise`<[`GetCustomerResponse`](../interfaces/agent_structures_responses.GetCustomerResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:329](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L329)
+[agent/web.ts:335](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L335)
 
 ___
 
 ### grantChatAccess
 
-▸ **grantChatAccess**(`chat_id`, `access`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **grantChatAccess**(`chat_id`, `access`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Grants access to a new chat without overwriting the existing ones.
 
@@ -427,21 +443,21 @@ Grants access to a new chat without overwriting the existing ones.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID to grant access to |
-| `access` | [`ChatAccess`](../interfaces/objects.ChatAccess.md) | access to grant |
+| `access` | [`ChatAccess`](../interfaces/agent_structures_structures.ChatAccess.md) | access to grant |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:124](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L124)
+[agent/web.ts:128](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L128)
 
 ___
 
 ### listAgentsForTransfer
 
-▸ **listAgentsForTransfer**(`chat_id`): `Promise`<[`AgentForTransfer`](../interfaces/agent_structures.AgentForTransfer.md)[]\>
+▸ **listAgentsForTransfer**(`chat_id`): `Promise`<[`AgentForTransfer`](../interfaces/agent_structures_structures.AgentForTransfer.md)[]\>
 
 It returns the Agents you can transfer a chat to. Agents are sorted ascendingly by the total number of active chats they have. Note that:
 - The method only returns Agents with statuses online and not accepting chats. Offline Agents aren't returned.
@@ -455,17 +471,17 @@ It returns the Agents you can transfer a chat to. Agents are sorted ascendingly 
 
 #### Returns
 
-`Promise`<[`AgentForTransfer`](../interfaces/agent_structures.AgentForTransfer.md)[]\>
+`Promise`<[`AgentForTransfer`](../interfaces/agent_structures_structures.AgentForTransfer.md)[]\>
 
 #### Defined in
 
-[agent/web.ts:418](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L418)
+[agent/web.ts:424](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L424)
 
 ___
 
 ### listArchives
 
-▸ **listArchives**(`opts?`): `Promise`<[`ListArchivesResponse`](../interfaces/agent_structures.ListArchivesResponse.md)\>
+▸ **listArchives**(`opts?`): `Promise`<[`ListArchivesResponse`](../interfaces/agent_structures_responses.ListArchivesResponse.md)\>
 
 It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
 
@@ -476,21 +492,21 @@ but each time with a different thread. The returned chat is a complete object, n
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`ListArchivesParameters`](../interfaces/agent_structures.ListArchivesParameters.md) | options like filters or pagination |
+| `opts?` | [`ListArchivesParameters`](../interfaces/agent_structures_structures.ListArchivesParameters.md) | options like filters or pagination |
 
 #### Returns
 
-`Promise`<[`ListArchivesResponse`](../interfaces/agent_structures.ListArchivesResponse.md)\>
+`Promise`<[`ListArchivesResponse`](../interfaces/agent_structures_responses.ListArchivesResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:72](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L72)
+[agent/web.ts:76](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L76)
 
 ___
 
 ### listChats
 
-▸ **listChats**(`opts?`): `Promise`<[`ListChatsResponse`](../interfaces/agent_structures.ListChatsResponse.md)\>
+▸ **listChats**(`opts?`): `Promise`<[`ListChatsResponse`](../interfaces/agent_structures_responses.ListChatsResponse.md)\>
 
 It returns summaries of the chats an Agent has access to.
 
@@ -498,21 +514,21 @@ It returns summaries of the chats an Agent has access to.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`ListChatParameters`](../interfaces/agent_structures.ListChatParameters.md) | set of filters and pagination to limit returned entries |
+| `opts?` | [`ListChatParameters`](../interfaces/agent_structures_structures.ListChatParameters.md) | set of filters and pagination to limit returned entries |
 
 #### Returns
 
-`Promise`<[`ListChatsResponse`](../interfaces/agent_structures.ListChatsResponse.md)\>
+`Promise`<[`ListChatsResponse`](../interfaces/agent_structures_responses.ListChatsResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:43](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L43)
+[agent/web.ts:47](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L47)
 
 ___
 
 ### listCustomers
 
-▸ **listCustomers**(`opts?`): `Promise`<[`ListCustomersResponse`](../interfaces/agent_structures.ListCustomersResponse.md)\>
+▸ **listCustomers**(`opts?`): `Promise`<[`ListCustomersResponse`](../interfaces/agent_structures_responses.ListCustomersResponse.md)\>
 
 It returns the list of Customers.
 
@@ -520,21 +536,21 @@ It returns the list of Customers.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`ListCustomersParameters`](../interfaces/agent_structures.ListCustomersParameters.md) | options like filters or pagination |
+| `opts?` | [`ListCustomersParameters`](../interfaces/agent_structures_structures.ListCustomersParameters.md) | options like filters or pagination |
 
 #### Returns
 
-`Promise`<[`ListCustomersResponse`](../interfaces/agent_structures.ListCustomersResponse.md)\>
+`Promise`<[`ListCustomersResponse`](../interfaces/agent_structures_responses.ListCustomersResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:337](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L337)
+[agent/web.ts:343](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L343)
 
 ___
 
 ### listRoutingStatuses
 
-▸ **listRoutingStatuses**(`group_ids?`): `Promise`<[`SetRoutingStatusResponse`](../interfaces/agent_structures.SetRoutingStatusResponse.md)[]\>
+▸ **listRoutingStatuses**(`group_ids?`): `Promise`<[`SetRoutingStatusResponse`](../interfaces/agent_structures_responses.SetRoutingStatusResponse.md)[]\>
 
 Returns the current routing status of each agent.
 
@@ -546,17 +562,17 @@ Returns the current routing status of each agent.
 
 #### Returns
 
-`Promise`<[`SetRoutingStatusResponse`](../interfaces/agent_structures.SetRoutingStatusResponse.md)[]\>
+`Promise`<[`SetRoutingStatusResponse`](../interfaces/agent_structures_responses.SetRoutingStatusResponse.md)[]\>
 
 #### Defined in
 
-[agent/web.ts:443](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L443)
+[agent/web.ts:449](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L449)
 
 ___
 
 ### listThreads
 
-▸ **listThreads**(`chat_id`, `opts?`): `Promise`<[`ListThreadsResponse`](../interfaces/agent_structures.ListThreadsResponse.md)\>
+▸ **listThreads**(`chat_id`, `opts?`): `Promise`<[`ListThreadsResponse`](../interfaces/agent_structures_responses.ListThreadsResponse.md)\>
 
 Returns threads that the current Agent has access to in a given chat.
 
@@ -565,21 +581,21 @@ Returns threads that the current Agent has access to in a given chat.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID to get threads from |
-| `opts?` | [`ListThreadsParameters`](../interfaces/agent_structures.ListThreadsParameters.md) | additional options like pagination and sorting |
+| `opts?` | [`ListThreadsParameters`](../interfaces/agent_structures_structures.ListThreadsParameters.md) | additional options like pagination and sorting |
 
 #### Returns
 
-`Promise`<[`ListThreadsResponse`](../interfaces/agent_structures.ListThreadsResponse.md)\>
+`Promise`<[`ListThreadsResponse`](../interfaces/agent_structures_responses.ListThreadsResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:52](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L52)
+[agent/web.ts:56](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L56)
 
 ___
 
 ### markEventsAsSeen
 
-▸ **markEventsAsSeen**(`chat_id`, `seen_up_to`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **markEventsAsSeen**(`chat_id`, `seen_up_to`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Marks events as seen by Agent.
 
@@ -592,17 +608,17 @@ Marks events as seen by Agent.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:382](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L382)
+[agent/web.ts:388](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L388)
 
 ___
 
 ### multicast
 
-▸ **multicast**(`recipients`, `content`, `type?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **multicast**(`recipients`, `content`, `type?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 This method serves for the chat-unrelated communication. Messages sent using multicast are not being saved.
 For example, it could be used in an app that sends notifications to Agents or Customers,
@@ -612,23 +628,23 @@ when a certain condition is met (e.g. an important Customer started the chat).
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `recipients` | [`MulticastRecipients`](../interfaces/agent_structures.MulticastRecipients.md) | who should receive multicast |
+| `recipients` | [`MulticastRecipients`](../interfaces/agent_structures_structures.MulticastRecipients.md) | who should receive multicast |
 | `content` | `object` | = JSON content to send |
 | `type?` | `string` | message type |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:408](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L408)
+[agent/web.ts:414](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L414)
 
 ___
 
 ### removeUserFromChat
 
-▸ **removeUserFromChat**(`chat_id`, `user_id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **removeUserFromChat**(`chat_id`, `user_id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Removes a user from chat. Removing customer user type is not allowed. It's always possible to remove the requester from the chat.
 
@@ -641,17 +657,17 @@ Removes a user from chat. Removing customer user type is not allowed. It's alway
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:171](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L171)
+[agent/web.ts:176](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L176)
 
 ___
 
 ### resumeChat
 
-▸ **resumeChat**(`param`): `Promise`<[`ResumeChatResponse`](../interfaces/agent_structures.ResumeChatResponse.md)\>
+▸ **resumeChat**(`param`): `Promise`<[`ResumeChatResponse`](../interfaces/agent_structures_responses.ResumeChatResponse.md)\>
 
 Restarts an archived chat
 
@@ -659,21 +675,21 @@ Restarts an archived chat
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `param` | `string` \| [`ResumeChatParameters`](../interfaces/agent_structures.ResumeChatParameters.md) | either string ID of a chat to activate or full initial chat object |
+| `param` | `string` \| [`ResumeChatParameters`](../interfaces/agent_structures_structures.ResumeChatParameters.md) | either string ID of a chat to activate or full initial chat object |
 
 #### Returns
 
-`Promise`<[`ResumeChatResponse`](../interfaces/agent_structures.ResumeChatResponse.md)\>
+`Promise`<[`ResumeChatResponse`](../interfaces/agent_structures_responses.ResumeChatResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:88](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L88)
+[agent/web.ts:92](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L92)
 
 ___
 
 ### revokeChatAccess
 
-▸ **revokeChatAccess**(`chat_id`, `access`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **revokeChatAccess**(`chat_id`, `access`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Revokes access to chat
 
@@ -682,15 +698,15 @@ Revokes access to chat
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID to grant access to |
-| `access` | [`ChatAccess`](../interfaces/objects.ChatAccess.md) | access to revoke |
+| `access` | [`ChatAccess`](../interfaces/agent_structures_structures.ChatAccess.md) | access to revoke |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:133](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L133)
+[agent/web.ts:137](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L137)
 
 ___
 
@@ -715,13 +731,13 @@ ___
 
 #### Defined in
 
-[internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L25)
+[internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L25)
 
 ___
 
 ### sendEvent
 
-▸ **sendEvent**(`chat_id`, `event`, `attach_to_last_thread?`): `Promise`<[`SendEventResponse`](../interfaces/agent_structures.SendEventResponse.md)\>
+▸ **sendEvent**(`chat_id`, `event`, `attach_to_last_thread?`): `Promise`<[`SendEventResponse`](../interfaces/agent_structures_responses.SendEventResponse.md)\>
 
 Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
 It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
@@ -732,22 +748,22 @@ with the present parameter set to false.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat to send event to |
-| `event` | [`Event`](../modules/objects.md#event) | Event object |
+| `event` | [`RequestEvent`](../modules/agent_structures_events.md#requestevent) | Event request object |
 | `attach_to_last_thread?` | `boolean` | if true, adds event to last inactive thread |
 
 #### Returns
 
-`Promise`<[`SendEventResponse`](../interfaces/agent_structures.SendEventResponse.md)\>
+`Promise`<[`SendEventResponse`](../interfaces/agent_structures_responses.SendEventResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:186](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L186)
+[agent/web.ts:192](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L192)
 
 ___
 
 ### sendRichMessagePostback
 
-▸ **sendRichMessagePostback**(`opts`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **sendRichMessagePostback**(`opts`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Sends postback for rich message
 
@@ -755,21 +771,21 @@ Sends postback for rich message
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`SendRichMessagePostbackParameters`](../interfaces/agent_structures.SendRichMessagePostbackParameters.md) | postback data |
+| `opts` | [`SendRichMessagePostbackParameters`](../interfaces/agent_structures_structures.SendRichMessagePostbackParameters.md) | postback data |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:213](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L213)
+[agent/web.ts:219](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L219)
 
 ___
 
 ### sendTypingIndicator
 
-▸ **sendTypingIndicator**(`chat_id`, `is_typing`, `recipients?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **sendTypingIndicator**(`chat_id`, `is_typing`, `recipients?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Sends typing indicator
 
@@ -783,17 +799,41 @@ Sends typing indicator
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:392](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L392)
+[agent/web.ts:398](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L398)
+
+___
+
+### setAuthorId
+
+▸ **setAuthorId**(`author_id?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `author_id?` | `string` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[WebAPI](internal.WebAPI.md).[setAuthorId](internal.WebAPI.md#setauthorid)
+
+#### Defined in
+
+[internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L75)
 
 ___
 
 ### setRoutingStatus
 
-▸ **setRoutingStatus**(`status`, `agent_id?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **setRoutingStatus**(`status`, `agent_id?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Changes the status of an Agent or a Bot Agent.
 
@@ -801,22 +841,22 @@ Changes the status of an Agent or a Bot Agent.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `status` | [`RoutingStatus`](../enums/objects.RoutingStatus.md) | status to set |
+| `status` | [`RoutingStatus`](../enums/agent_structures_structures.RoutingStatus.md) | status to set |
 | `agent_id?` | `string` | ID of agent to update status |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:373](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L373)
+[agent/web.ts:379](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L379)
 
 ___
 
 ### startChat
 
-▸ **startChat**(`opts?`): `Promise`<[`StartChatResponse`](../interfaces/agent_structures.StartChatResponse.md)\>
+▸ **startChat**(`opts?`): `Promise`<[`StartChatResponse`](../interfaces/agent_structures_responses.StartChatResponse.md)\>
 
 Starts a chat
 
@@ -824,21 +864,21 @@ Starts a chat
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`StartChatParameters`](../interfaces/agent_structures.StartChatParameters.md) | options like initial chat data or continuous switch |
+| `opts?` | [`StartChatParameters`](../interfaces/agent_structures_structures.StartChatParameters.md) | options like initial chat data or continuous switch |
 
 #### Returns
 
-`Promise`<[`StartChatResponse`](../interfaces/agent_structures.StartChatResponse.md)\>
+`Promise`<[`StartChatResponse`](../interfaces/agent_structures_responses.StartChatResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:80](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L80)
+[agent/web.ts:84](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L84)
 
 ___
 
 ### tagThread
 
-▸ **tagThread**(`chat_id`, `thread_id`, `tag`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **tagThread**(`chat_id`, `thread_id`, `tag`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Tags thread with given tag
 
@@ -852,17 +892,17 @@ Tags thread with given tag
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:311](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L311)
+[agent/web.ts:317](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L317)
 
 ___
 
 ### transferChat
 
-▸ **transferChat**(`id`, `opts?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **transferChat**(`id`, `opts?`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Transfers a chat to an Agent or a group.
 
@@ -871,21 +911,21 @@ Transfers a chat to an Agent or a group.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | chat to transfer |
-| `opts?` | [`TransferChatParameters`](../interfaces/agent_structures.TransferChatParameters.md) | specific target or force flag |
+| `opts?` | [`TransferChatParameters`](../interfaces/agent_structures_structures.TransferChatParameters.md) | specific target or force flag |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:142](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L142)
+[agent/web.ts:146](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L146)
 
 ___
 
 ### unfollowChat
 
-▸ **unfollowChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **unfollowChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Removes the requester from the chat followers. After that, only key changes to the chat (like transfer_chat or close_active_thread)
 will be sent to the requester. Chat members cannot unfollow the chat.
@@ -898,17 +938,17 @@ will be sent to the requester. Chat members cannot unfollow the chat.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:115](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L115)
+[agent/web.ts:119](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L119)
 
 ___
 
 ### unfollowCustomer
 
-▸ **unfollowCustomer**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **unfollowCustomer**(`id`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Removes the agent from the list of customer's followers.
 
@@ -920,17 +960,17 @@ Removes the agent from the list of customer's followers.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:435](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L435)
+[agent/web.ts:441](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L441)
 
 ___
 
 ### untagThread
 
-▸ **untagThread**(`chat_id`, `thread_id`, `tag`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **untagThread**(`chat_id`, `thread_id`, `tag`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Removes tag from thread
 
@@ -944,17 +984,17 @@ Removes tag from thread
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:321](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L321)
+[agent/web.ts:327](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L327)
 
 ___
 
 ### updateChatProperties
 
-▸ **updateChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **updateChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Updates chat properties
 
@@ -963,21 +1003,21 @@ Updates chat properties
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | chat to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/agent_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:222](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L222)
+[agent/web.ts:228](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L228)
 
 ___
 
 ### updateCustomer
 
-▸ **updateCustomer**(`id`, `opts`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **updateCustomer**(`id`, `opts`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Updates Customer's properties.
 
@@ -986,21 +1026,21 @@ Updates Customer's properties.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | ID of a customer to update |
-| `opts` | [`CustomerParameters`](../interfaces/agent_structures.CustomerParameters.md) | properties to update |
+| `opts` | [`CustomerParameters`](../interfaces/agent_structures_structures.CustomerParameters.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:354](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L354)
+[agent/web.ts:360](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L360)
 
 ___
 
 ### updateEventProperties
 
-▸ **updateEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **updateEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Updates event properties
 
@@ -1011,21 +1051,21 @@ Updates event properties
 | `chat_id` | `string` | chat ID of event to update |
 | `thread_id` | `string` | thread ID of event to update |
 | `event_id` | `string` | event to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/agent_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:270](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L270)
+[agent/web.ts:276](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L276)
 
 ___
 
 ### updateThreadProperties
 
-▸ **updateThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+▸ **updateThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 Updates thread properties
 
@@ -1035,21 +1075,21 @@ Updates thread properties
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID of thread to update |
 | `thread_id` | `string` | thread to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/agent_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/agent_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:241](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L241)
+[agent/web.ts:247](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L247)
 
 ___
 
 ### uploadFile
 
-▸ **uploadFile**(`file`, `filename`): `Promise`<[`UploadFileResponse`](../interfaces/agent_structures.UploadFileResponse.md)\>
+▸ **uploadFile**(`file`, `filename`): `Promise`<[`UploadFileResponse`](../interfaces/agent_structures_responses.UploadFileResponse.md)\>
 
 Uploads a file to the server as a temporary file. It returns a URL that expires after 24 hours unless the URL is used in send_event.
 
@@ -1062,8 +1102,8 @@ Uploads a file to the server as a temporary file. It returns a URL that expires 
 
 #### Returns
 
-`Promise`<[`UploadFileResponse`](../interfaces/agent_structures.UploadFileResponse.md)\>
+`Promise`<[`UploadFileResponse`](../interfaces/agent_structures_responses.UploadFileResponse.md)\>
 
 #### Defined in
 
-[agent/web.ts:199](https://github.com/livechat/lc-sdk-js/blob/951da85/src/agent/web.ts#L199)
+[agent/web.ts:205](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/web.ts#L205)

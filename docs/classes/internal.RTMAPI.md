@@ -21,6 +21,7 @@
 ### Properties
 
 - [APIURL](internal.RTMAPI.md#apiurl)
+- [author\_id](internal.RTMAPI.md#author_id)
 - [heartbeatInterval](internal.RTMAPI.md#heartbeatinterval)
 - [license](internal.RTMAPI.md#license)
 - [requestsQueue](internal.RTMAPI.md#requestsqueue)
@@ -35,6 +36,7 @@
 - [handlePush](internal.RTMAPI.md#handlepush)
 - [handleResponse](internal.RTMAPI.md#handleresponse)
 - [send](internal.RTMAPI.md#send)
+- [setAuthorId](internal.RTMAPI.md#setauthorid)
 - [subscribePush](internal.RTMAPI.md#subscribepush)
 - [unsubscribePush](internal.RTMAPI.md#unsubscribepush)
 
@@ -50,11 +52,11 @@
 | :------ | :------ |
 | `type` | `apiType` |
 | `license?` | `number` |
-| `options?` | [`RTMAPIOptions`](../interfaces/objects.RTMAPIOptions.md) |
+| `options?` | `RTMAPIOptions` |
 
 #### Defined in
 
-[internal/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L83)
+[internal/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L91)
 
 ## Properties
 
@@ -64,7 +66,17 @@
 
 #### Defined in
 
-[internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L74)
+[internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L81)
+
+___
+
+### author\_id
+
+• `Optional` **author\_id**: `string`
+
+#### Defined in
+
+[internal/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L89)
 
 ___
 
@@ -74,7 +86,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L79)
+[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L86)
 
 ___
 
@@ -84,7 +96,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:77](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L77)
+[internal/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L84)
 
 ___
 
@@ -94,7 +106,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L80)
+[internal/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L87)
 
 ___
 
@@ -104,7 +116,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:78](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L78)
+[internal/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L85)
 
 ___
 
@@ -114,7 +126,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L81)
+[internal/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L88)
 
 ___
 
@@ -124,7 +136,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:76](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L76)
+[internal/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L83)
 
 ___
 
@@ -134,7 +146,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L75)
+[internal/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L82)
 
 ## Methods
 
@@ -148,7 +160,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L92)
+[internal/index.ts:100](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L100)
 
 ___
 
@@ -161,7 +173,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `type` | `string` |
-| `payload` | [`Push`](../interfaces/objects.Push.md)<`unknown`\> |
+| `payload` | `Push`<`unknown`\> |
 
 #### Returns
 
@@ -169,7 +181,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:134](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L134)
+[internal/index.ts:142](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L142)
 
 ___
 
@@ -191,7 +203,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:126](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L126)
+[internal/index.ts:134](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L134)
 
 ___
 
@@ -212,7 +224,27 @@ ___
 
 #### Defined in
 
-[internal/index.ts:140](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L140)
+[internal/index.ts:148](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L148)
+
+___
+
+### setAuthorId
+
+▸ **setAuthorId**(`author_id?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `author_id?` | `string` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[internal/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L179)
 
 ___
 
@@ -225,7 +257,7 @@ ___
 | Name | Type |
 | :------ | :------ |
 | `push` | `string` |
-| `callback` | (`payload`: [`Push`](../interfaces/objects.Push.md)<`unknown`\>) => `void` |
+| `callback` | (`payload`: `Push`<`unknown`\>) => `void` |
 
 #### Returns
 
@@ -233,7 +265,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:157](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L157)
+[internal/index.ts:168](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L168)
 
 ___
 
@@ -253,4 +285,4 @@ ___
 
 #### Defined in
 
-[internal/index.ts:164](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L164)
+[internal/index.ts:175](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L175)

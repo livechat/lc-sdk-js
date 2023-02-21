@@ -14,8 +14,8 @@
 
 ### chat
 
-• **chat**: [`Chat`](objects.Chat.md)
+• **chat**: [`Chat`](agent_structures_structures.Chat.md)
 
 #### Defined in
 
-[webhooks/index.ts:39](https://github.com/livechat/lc-sdk-js/blob/951da85/src/webhooks/index.ts#L39)
+[webhooks/index.ts:40](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/webhooks/index.ts#L40)

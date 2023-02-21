@@ -23,6 +23,7 @@
 ### Properties
 
 - [APIURL](internal.WebAPI.md#apiurl)
+- [author\_id](internal.WebAPI.md#author_id)
 - [clientID](internal.WebAPI.md#clientid)
 - [tokenGetter](internal.WebAPI.md#tokengetter)
 - [type](internal.WebAPI.md#type)
@@ -32,6 +33,7 @@
 
 - [call](internal.WebAPI.md#call)
 - [send](internal.WebAPI.md#send)
+- [setAuthorId](internal.WebAPI.md#setauthorid)
 
 ## Constructors
 
@@ -46,11 +48,11 @@
 | `clientID` | `string` |
 | `tokenGetter` | [`TokenGetter`](../modules/authorization.md#tokengetter) |
 | `type` | `apiType` |
-| `options?` | [`WebAPIOptions`](../interfaces/objects.WebAPIOptions.md) |
+| `options?` | `WebAPIOptions` |
 
 #### Defined in
 
-[internal/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L17)
+[internal/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L17)
 
 ## Properties
 
@@ -60,7 +62,17 @@
 
 #### Defined in
 
-[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L11)
+[internal/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L10)
+
+___
+
+### author\_id
+
+• `Optional` **author\_id**: `string`
+
+#### Defined in
+
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L15)
 
 ___
 
@@ -70,7 +82,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L12)
+[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L11)
 
 ___
 
@@ -80,7 +92,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L15)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L14)
 
 ___
 
@@ -90,7 +102,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L14)
+[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L13)
 
 ___
 
@@ -100,7 +112,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L13)
+[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L12)
 
 ## Methods
 
@@ -121,7 +133,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:34](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L34)
+[internal/index.ts:34](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L34)
 
 ___
 
@@ -142,4 +154,24 @@ ___
 
 #### Defined in
 
-[internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/951da85/src/internal/index.ts#L25)
+[internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L25)
+
+___
+
+### setAuthorId
+
+▸ **setAuthorId**(`author_id?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `author_id?` | `string` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L75)
