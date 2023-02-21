@@ -10,6 +10,16 @@ For protocol documentation of LiveChat APIs, please go to [Livechat Platform Doc
 
 For technical documentation visit [docs](https://github.com/livechat/lc-sdk-js/blob/v3.5/docs/README.md)
 
+## SDK version vs API version
+
+Here is the relation between SDK versions and API versions:
+* lc-sdk-js 3.x.x -> LiveChat API 3.3
+* lc-sdk-js 4.x.x -> LiveChat API 3.4
+* lc-sdk-js 5.x.x -> LiveChat API 3.5
+* ...
+
+All open versions of LiveChat API are available as git tags in lc-sdk-js. However, a developer-preview version (not completed yet, may introduce breaking changes in the future) is available in lc-sdk-js as a git branch.
+
 ## Installation
 
 ### npm

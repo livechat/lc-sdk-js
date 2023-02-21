@@ -14,8 +14,8 @@
 
 ### customer
 
-• **customer**: [`Customer`](../modules/objects.md#customer)
+• **customer**: [`Customer`](../modules/webhooks_structures_structures.md#customer)
 
 #### Defined in
 
-[webhooks/index.ts:154](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/webhooks/index.ts#L154)
+[webhooks/index.ts:154](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/webhooks/index.ts#L154)
