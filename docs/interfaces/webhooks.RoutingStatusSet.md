@@ -19,14 +19,14 @@
 
 #### Defined in
 
-[webhooks/index.ts:146](https://github.com/livechat/lc-sdk-js/blob/951da85/src/webhooks/index.ts#L146)
+[webhooks/index.ts:147](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/webhooks/index.ts#L147)
 
 ___
 
 ### status
 
-• **status**: [`RoutingStatus`](../enums/objects.RoutingStatus.md)
+• **status**: [`RoutingStatus`](../enums/webhooks_structures_structures.RoutingStatus.md)
 
 #### Defined in
 
-[webhooks/index.ts:147](https://github.com/livechat/lc-sdk-js/blob/951da85/src/webhooks/index.ts#L147)
+[webhooks/index.ts:148](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/webhooks/index.ts#L148)
