@@ -19,6 +19,7 @@
 ### Properties
 
 - [APIURL](configuration.default.md#apiurl)
+- [author\_id](configuration.default.md#author_id)
 - [clientID](configuration.default.md#clientid)
 - [tokenGetter](configuration.default.md#tokengetter)
 - [type](configuration.default.md#type)
@@ -59,6 +60,7 @@
 - [registerWebhook](configuration.default.md#registerwebhook)
 - [requestAgentUnsuspension](configuration.default.md#requestagentunsuspension)
 - [send](configuration.default.md#send)
+- [setAuthorId](configuration.default.md#setauthorid)
 - [suspendAgent](configuration.default.md#suspendagent)
 - [unregisterProperty](configuration.default.md#unregisterproperty)
 - [unregisterWebhook](configuration.default.md#unregisterwebhook)
@@ -82,7 +84,7 @@
 | :------ | :------ |
 | `clientID` | `string` |
 | `tokenGetter` | [`TokenGetter`](../modules/authorization.md#tokengetter) |
-| `options?` | [`WebAPIOptions`](../interfaces/objects.WebAPIOptions.md) |
+| `options?` | [`WebAPIOptions`](../interfaces/configuration_structures_structures.WebAPIOptions.md) |
 
 #### Overrides
 
@@ -90,7 +92,7 @@
 
 #### Defined in
 
-[configuration/index.ts:31](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L31)
+[configuration/index.ts:32](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L32)
 
 ## Properties
 
@@ -104,7 +106,21 @@
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/internal/index.ts#L15)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L14)
+
+___
+
+### author\_id
+
+• `Optional` **author\_id**: `string`
+
+#### Inherited from
+
+[WebAPI](internal.WebAPI.md).[author_id](internal.WebAPI.md#author_id)
+
+#### Defined in
+
+[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L16)
 
 ___
 
@@ -118,7 +134,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/internal/index.ts#L28)
+[internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L28)
 
 ___
 
@@ -132,7 +148,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/internal/index.ts#L29)
+[internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L29)
 
 ___
 
@@ -146,7 +162,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/internal/index.ts#L30)
+[internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L30)
 
 ___
 
@@ -160,13 +176,13 @@ ___
 
 #### Defined in
 
-[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/internal/index.ts#L16)
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L15)
 
 ## Methods
 
 ### addAutoAccess
 
-▸ **addAutoAccess**(`opts`): `Promise`<[`AddAutoAccessResponse`](../interfaces/configuration_structures.AddAutoAccessResponse.md)\>
+▸ **addAutoAccess**(`opts`): `Promise`<[`AddAutoAccessResponse`](../interfaces/configuration_structures_responses.AddAutoAccessResponse.md)\>
 
 Creates an auto access data structure, which is a set of conditions for the tracking URL and geolocation of a customer.
 
@@ -174,21 +190,21 @@ Creates an auto access data structure, which is a set of conditions for the trac
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`AddAutoAccessRequest`](../interfaces/configuration_structures.AddAutoAccessRequest.md) | options for auto access like conditions |
+| `opts` | [`AddAutoAccessRequest`](../interfaces/configuration_structures_structures.AddAutoAccessRequest.md) | options for auto access like conditions |
 
 #### Returns
 
-`Promise`<[`AddAutoAccessResponse`](../interfaces/configuration_structures.AddAutoAccessResponse.md)\>
+`Promise`<[`AddAutoAccessResponse`](../interfaces/configuration_structures_responses.AddAutoAccessResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:387](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L387)
+[configuration/index.ts:389](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L389)
 
 ___
 
 ### approveAgent
 
-▸ **approveAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **approveAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Approves an Agent thus allowing the Agent to use the application.
 
@@ -200,17 +216,17 @@ Approves an Agent thus allowing the Agent to use the application.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:106](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L106)
+[configuration/index.ts:107](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L107)
 
 ___
 
 ### createAgent
 
-▸ **createAgent**(`id`, `fields`): `Promise`<[`CreateAgentResponse`](../interfaces/configuration_structures.CreateAgentResponse.md)\>
+▸ **createAgent**(`id`, `fields`): `Promise`<[`CreateAgentResponse`](../interfaces/configuration_structures_responses.CreateAgentResponse.md)\>
 
 Creates a new Agent with specified parameters within a license.
 
@@ -219,21 +235,21 @@ Creates a new Agent with specified parameters within a license.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | ID of an agent to create |
-| `fields` | [`AgentFields`](../interfaces/configuration_structures.AgentFields.md) | agent properties |
+| `fields` | [`AgentFields`](../interfaces/configuration_structures_structures.AgentFields.md) | agent properties |
 
 #### Returns
 
-`Promise`<[`CreateAgentResponse`](../interfaces/configuration_structures.CreateAgentResponse.md)\>
+`Promise`<[`CreateAgentResponse`](../interfaces/configuration_structures_responses.CreateAgentResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:40](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L40)
+[configuration/index.ts:41](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L41)
 
 ___
 
 ### createBot
 
-▸ **createBot**(`fields`): `Promise`<[`CreateBotResponse`](../interfaces/configuration_structures.CreateBotResponse.md)\>
+▸ **createBot**(`fields`): `Promise`<[`CreateBotResponse`](../interfaces/configuration_structures_responses.CreateBotResponse.md)\>
 
 Creates a new Bot with specified parameters within a license.
 
@@ -241,21 +257,21 @@ Creates a new Bot with specified parameters within a license.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `fields` | [`BotFields`](../interfaces/configuration_structures.BotFields.md) | bot properties |
+| `fields` | [`BotFields`](../interfaces/configuration_structures_structures.BotFields.md) | bot properties |
 
 #### Returns
 
-`Promise`<[`CreateBotResponse`](../interfaces/configuration_structures.CreateBotResponse.md)\>
+`Promise`<[`CreateBotResponse`](../interfaces/configuration_structures_responses.CreateBotResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:114](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L114)
+[configuration/index.ts:115](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L115)
 
 ___
 
 ### createGroup
 
-▸ **createGroup**(`name`, `agent_priorities`, `language_code?`): `Promise`<[`CreateGroupResponse`](../interfaces/configuration_structures.CreateGroupResponse.md)\>
+▸ **createGroup**(`name`, `agent_priorities`, `language_code?`): `Promise`<[`CreateGroupResponse`](../interfaces/configuration_structures_responses.CreateGroupResponse.md)\>
 
 Creates new group.
 
@@ -264,22 +280,22 @@ Creates new group.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `name` | `string` | group name |
-| `agent_priorities` | [`AgentPriorities`](../interfaces/configuration_structures.AgentPriorities.md) | agents priorities within a group |
+| `agent_priorities` | [`AgentPriorities`](../interfaces/configuration_structures_structures.AgentPriorities.md) | agents priorities within a group |
 | `language_code?` | `string` | groups language |
 
 #### Returns
 
-`Promise`<[`CreateGroupResponse`](../interfaces/configuration_structures.CreateGroupResponse.md)\>
+`Promise`<[`CreateGroupResponse`](../interfaces/configuration_structures_responses.CreateGroupResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:159](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L159)
+[configuration/index.ts:160](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L160)
 
 ___
 
 ### deleteAgent
 
-▸ **deleteAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **deleteAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Deletes an Agent specified by id.
 
@@ -291,17 +307,17 @@ Deletes an Agent specified by id.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L75)
+[configuration/index.ts:76](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L76)
 
 ___
 
 ### deleteAutoAccess
 
-▸ **deleteAutoAccess**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **deleteAutoAccess**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Deletes an existing auto access data structure specified by its ID.
 
@@ -313,17 +329,17 @@ Deletes an existing auto access data structure specified by its ID.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:402](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L402)
+[configuration/index.ts:404](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L404)
 
 ___
 
 ### deleteBot
 
-▸ **deleteBot**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **deleteBot**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Deletes bot specified by id.
 
@@ -335,17 +351,17 @@ Deletes bot specified by id.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:122](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L122)
+[configuration/index.ts:123](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L123)
 
 ___
 
 ### deleteGroup
 
-▸ **deleteGroup**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **deleteGroup**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Deletes group specified by id.
 
@@ -357,17 +373,17 @@ Deletes group specified by id.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L196)
+[configuration/index.ts:197](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L197)
 
 ___
 
 ### deleteGroupProperties
 
-▸ **deleteGroupProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **deleteGroupProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Deletes the properties set within a group.
 
@@ -376,21 +392,21 @@ Deletes the properties set within a group.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `number` | group ID to delete properties from |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/configuration_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:318](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L318)
+[configuration/index.ts:320](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L320)
 
 ___
 
 ### deleteLicenseProperties
 
-▸ **deleteLicenseProperties**(`properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **deleteLicenseProperties**(`properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Deletes the properties set within a license.
 
@@ -398,65 +414,65 @@ Deletes the properties set within a license.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/configuration_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:284](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L284)
+[configuration/index.ts:285](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L285)
 
 ___
 
 ### disableLicenseWebhooks
 
-▸ **disableLicenseWebhooks**(`client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **disableLicenseWebhooks**(`client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Disables license webhooks for authorization token's clientID
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `client_id?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `client_id?` | `string` | clientID when authorizing via Personal Access Token |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:371](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L371)
+[configuration/index.ts:373](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L373)
 
 ___
 
 ### enableLicenseWebhooks
 
-▸ **enableLicenseWebhooks**(`client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **enableLicenseWebhooks**(`client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Enables license webhooks for authorization token's clientID
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `client_id?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `client_id?` | `string` | clientID when authorizing via Personal Access Token |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:363](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L363)
+[configuration/index.ts:365](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L365)
 
 ___
 
 ### getAgent
 
-▸ **getAgent**(`id`, `fields?`): `Promise`<[`Agent`](../interfaces/configuration_structures.Agent.md)\>
+▸ **getAgent**(`id`, `fields?`): `Promise`<[`Agent`](../interfaces/configuration_structures_structures.Agent.md)\>
 
 It returns the info about an Agent specified by id.
 
@@ -464,22 +480,22 @@ It returns the info about an Agent specified by id.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `id` | `string` | IF of agent to get |
+| `id` | `string` | ID of agent to get |
 | `fields?` | `string`[] | additional fields to include |
 
 #### Returns
 
-`Promise`<[`Agent`](../interfaces/configuration_structures.Agent.md)\>
+`Promise`<[`Agent`](../interfaces/configuration_structures_structures.Agent.md)\>
 
 #### Defined in
 
-[configuration/index.ts:49](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L49)
+[configuration/index.ts:50](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L50)
 
 ___
 
 ### getBot
 
-▸ **getBot**(`id`, `fields?`): `Promise`<[`Bot`](../interfaces/configuration_structures.Bot.md)\>
+▸ **getBot**(`id`, `fields?`): `Promise`<[`Bot`](../interfaces/configuration_structures_structures.Bot.md)\>
 
 Gets info about Bot.
 
@@ -488,21 +504,21 @@ Gets info about Bot.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | bot ID to get info about |
-| `fields?` | [`BotFields`](../interfaces/configuration_structures.BotFields.md) | additional fields to include |
+| `fields?` | [`BotFields`](../interfaces/configuration_structures_structures.BotFields.md) | additional fields to include |
 
 #### Returns
 
-`Promise`<[`Bot`](../interfaces/configuration_structures.Bot.md)\>
+`Promise`<[`Bot`](../interfaces/configuration_structures_structures.Bot.md)\>
 
 #### Defined in
 
-[configuration/index.ts:149](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L149)
+[configuration/index.ts:150](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L150)
 
 ___
 
 ### getGroup
 
-▸ **getGroup**(`id`, `fields?`): `Promise`<[`Group`](../interfaces/configuration_structures.Group.md)\>
+▸ **getGroup**(`id`, `fields?`): `Promise`<[`Group`](../interfaces/configuration_structures_structures.Group.md)\>
 
 Returns details about a group specified by its id.
 
@@ -511,21 +527,21 @@ Returns details about a group specified by its id.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `number` | group ID to get info about |
-| `fields?` | `string`[] | additiona fields to include |
+| `fields?` | `string`[] | additional fields to include |
 
 #### Returns
 
-`Promise`<[`Group`](../interfaces/configuration_structures.Group.md)\>
+`Promise`<[`Group`](../interfaces/configuration_structures_structures.Group.md)\>
 
 #### Defined in
 
-[configuration/index.ts:213](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L213)
+[configuration/index.ts:214](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L214)
 
 ___
 
 ### getLicenseID
 
-▸ **getLicenseID**(`organizationID`): `Promise`<[`GetLicenseIDResponse`](../interfaces/configuration_structures.GetLicenseIDResponse.md)\>
+▸ **getLicenseID**(`organizationID`): `Promise`<[`GetLicenseIDResponse`](../interfaces/configuration_structures_responses.GetLicenseIDResponse.md)\>
 
 Returns license ID for given organizationID.
 
@@ -537,39 +553,39 @@ Returns license ID for given organizationID.
 
 #### Returns
 
-`Promise`<[`GetLicenseIDResponse`](../interfaces/configuration_structures.GetLicenseIDResponse.md)\>
+`Promise`<[`GetLicenseIDResponse`](../interfaces/configuration_structures_responses.GetLicenseIDResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:430](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L430)
+[configuration/index.ts:432](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L432)
 
 ___
 
 ### getLicenseWebhooksState
 
-▸ **getLicenseWebhooksState**(`client_id?`): `Promise`<[`WebhooksState`](../interfaces/configuration_structures.WebhooksState.md)\>
+▸ **getLicenseWebhooksState**(`client_id?`): `Promise`<[`WebhooksState`](../interfaces/configuration_structures_structures.WebhooksState.md)\>
 
 Gets license webhooks' state for authorization token's clientID
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `client_id?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `client_id?` | `string` | clientID when authorizing via Personal Access Token |
 
 #### Returns
 
-`Promise`<[`WebhooksState`](../interfaces/configuration_structures.WebhooksState.md)\>
+`Promise`<[`WebhooksState`](../interfaces/configuration_structures_structures.WebhooksState.md)\>
 
 #### Defined in
 
-[configuration/index.ts:379](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L379)
+[configuration/index.ts:381](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L381)
 
 ___
 
 ### getOrganizationID
 
-▸ **getOrganizationID**(`licenseID`): `Promise`<[`GetOrganizationIDResponse`](../interfaces/configuration_structures.GetOrganizationIDResponse.md)\>
+▸ **getOrganizationID**(`licenseID`): `Promise`<[`GetOrganizationIDResponse`](../interfaces/configuration_structures_responses.GetOrganizationIDResponse.md)\>
 
 Returns organization ID for given license ID.
 
@@ -581,17 +597,17 @@ Returns organization ID for given license ID.
 
 #### Returns
 
-`Promise`<[`GetOrganizationIDResponse`](../interfaces/configuration_structures.GetOrganizationIDResponse.md)\>
+`Promise`<[`GetOrganizationIDResponse`](../interfaces/configuration_structures_responses.GetOrganizationIDResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:422](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L422)
+[configuration/index.ts:424](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L424)
 
 ___
 
 ### listAgents
 
-▸ **listAgents**(`group_ids?`, `fields?`): `Promise`<[`Agent`](../interfaces/configuration_structures.Agent.md)[]\>
+▸ **listAgents**(`group_ids?`, `fields?`): `Promise`<[`Agent`](../interfaces/configuration_structures_structures.Agent.md)[]\>
 
 Returns all Agents within a license.
 
@@ -604,33 +620,33 @@ Returns all Agents within a license.
 
 #### Returns
 
-`Promise`<[`Agent`](../interfaces/configuration_structures.Agent.md)[]\>
+`Promise`<[`Agent`](../interfaces/configuration_structures_structures.Agent.md)[]\>
 
 #### Defined in
 
-[configuration/index.ts:58](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L58)
+[configuration/index.ts:59](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L59)
 
 ___
 
 ### listAutoAccesses
 
-▸ **listAutoAccesses**(): `Promise`<[`AutoAccess`](../interfaces/configuration_structures.AutoAccess.md)[]\>
+▸ **listAutoAccesses**(): `Promise`<[`AutoAccess`](../interfaces/configuration_structures_structures.AutoAccess.md)[]\>
 
 Returns all existing auto access data structures.
 
 #### Returns
 
-`Promise`<[`AutoAccess`](../interfaces/configuration_structures.AutoAccess.md)[]\>
+`Promise`<[`AutoAccess`](../interfaces/configuration_structures_structures.AutoAccess.md)[]\>
 
 #### Defined in
 
-[configuration/index.ts:394](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L394)
+[configuration/index.ts:396](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L396)
 
 ___
 
 ### listBots
 
-▸ **listBots**(`all?`, `fields?`): `Promise`<[`Bot`](../interfaces/configuration_structures.Bot.md)[]\>
+▸ **listBots**(`all?`, `fields?`): `Promise`<[`Bot`](../interfaces/configuration_structures_structures.Bot.md)[]\>
 
 Lists all bots within license.
 
@@ -639,21 +655,21 @@ Lists all bots within license.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `all?` | `boolean` | switch if should return all bots or only caller's bots |
-| `fields?` | [`BotFields`](../interfaces/configuration_structures.BotFields.md) | additional fields to include |
+| `fields?` | [`BotFields`](../interfaces/configuration_structures_structures.BotFields.md) | additional fields to include |
 
 #### Returns
 
-`Promise`<[`Bot`](../interfaces/configuration_structures.Bot.md)[]\>
+`Promise`<[`Bot`](../interfaces/configuration_structures_structures.Bot.md)[]\>
 
 #### Defined in
 
-[configuration/index.ts:140](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L140)
+[configuration/index.ts:141](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L141)
 
 ___
 
 ### listGroupProperties
 
-▸ **listGroupProperties**(`id`, `namespace_prefix?`, `name_prefix?`): `Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+▸ **listGroupProperties**(`id`, `namespace_prefix?`, `name_prefix?`): `Promise`<[`Properties`](../interfaces/configuration_structures_structures.Properties.md)\>
 
 Returns the properties set within a group.
 
@@ -667,17 +683,17 @@ Returns the properties set within a group.
 
 #### Returns
 
-`Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+`Promise`<[`Properties`](../interfaces/configuration_structures_structures.Properties.md)\>
 
 #### Defined in
 
-[configuration/index.ts:305](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L305)
+[configuration/index.ts:307](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L307)
 
 ___
 
 ### listGroups
 
-▸ **listGroups**(`fields?`): `Promise`<[`Group`](../interfaces/configuration_structures.Group.md)[]\>
+▸ **listGroups**(`fields?`): `Promise`<[`Group`](../interfaces/configuration_structures_structures.Group.md)[]\>
 
 Lists all existing groups.
 
@@ -689,17 +705,17 @@ Lists all existing groups.
 
 #### Returns
 
-`Promise`<[`Group`](../interfaces/configuration_structures.Group.md)[]\>
+`Promise`<[`Group`](../interfaces/configuration_structures_structures.Group.md)[]\>
 
 #### Defined in
 
-[configuration/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L204)
+[configuration/index.ts:205](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L205)
 
 ___
 
 ### listLicenseProperties
 
-▸ **listLicenseProperties**(`namespace_prefix?`, `name_prefix?`): `Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+▸ **listLicenseProperties**(`namespace_prefix?`, `name_prefix?`): `Promise`<[`Properties`](../interfaces/configuration_structures_structures.Properties.md)\>
 
 Returns the properties set within a license.
 
@@ -707,22 +723,22 @@ Returns the properties set within a license.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `namespace_prefix?` | `string` | namsepace prefix |
+| `namespace_prefix?` | `string` | namespace prefix |
 | `name_prefix?` | `string` | name prefix |
 
 #### Returns
 
-`Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+`Promise`<[`Properties`](../interfaces/configuration_structures_structures.Properties.md)\>
 
 #### Defined in
 
-[configuration/index.ts:273](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L273)
+[configuration/index.ts:274](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L274)
 
 ___
 
 ### listProperties
 
-▸ **listProperties**(`owner_client_id`): `Promise`<[`PropertiesConfig`](../interfaces/configuration_structures.PropertiesConfig.md)\>
+▸ **listProperties**(`owner_client_id`): `Promise`<[`PropertiesConfig`](../interfaces/configuration_structures_structures.PropertiesConfig.md)\>
 
 Lists properties for given client_id.
 
@@ -734,17 +750,17 @@ Lists properties for given client_id.
 
 #### Returns
 
-`Promise`<[`PropertiesConfig`](../interfaces/configuration_structures.PropertiesConfig.md)\>
+`Promise`<[`PropertiesConfig`](../interfaces/configuration_structures_structures.PropertiesConfig.md)\>
 
 #### Defined in
 
-[configuration/index.ts:256](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L256)
+[configuration/index.ts:257](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L257)
 
 ___
 
 ### listWebhookNames
 
-▸ **listWebhookNames**(`version?`): `Promise`<[`WebhookData`](../interfaces/configuration_structures.WebhookData.md)[]\>
+▸ **listWebhookNames**(`version?`): `Promise`<[`WebhookData`](../interfaces/configuration_structures_structures.WebhookData.md)[]\>
 
 Lists webhooks available in given API version
 
@@ -756,17 +772,17 @@ Lists webhooks available in given API version
 
 #### Returns
 
-`Promise`<[`WebhookData`](../interfaces/configuration_structures.WebhookData.md)[]\>
+`Promise`<[`WebhookData`](../interfaces/configuration_structures_structures.WebhookData.md)[]\>
 
 #### Defined in
 
-[configuration/index.ts:355](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L355)
+[configuration/index.ts:357](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L357)
 
 ___
 
 ### listWebhooks
 
-▸ **listWebhooks**(`owner_client_id?`): `Promise`<[`RegisteredWebhook`](../interfaces/configuration_structures.RegisteredWebhook.md)[]\>
+▸ **listWebhooks**(`owner_client_id?`): `Promise`<[`RegisteredWebhook`](../interfaces/configuration_structures_structures.RegisteredWebhook.md)[]\>
 
 Lists registered webhooks.
 
@@ -778,17 +794,17 @@ Lists registered webhooks.
 
 #### Returns
 
-`Promise`<[`RegisteredWebhook`](../interfaces/configuration_structures.RegisteredWebhook.md)[]\>
+`Promise`<[`RegisteredWebhook`](../interfaces/configuration_structures_structures.RegisteredWebhook.md)[]\>
 
 #### Defined in
 
-[configuration/index.ts:338](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L338)
+[configuration/index.ts:340](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L340)
 
 ___
 
 ### publishProperty
 
-▸ **publishProperty**(`name`, `owner_client_id`, `read`, `write`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **publishProperty**(`name`, `owner_client_id`, `read`, `write`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Publishes private property.
 
@@ -803,17 +819,17 @@ Publishes private property.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:241](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L241)
+[configuration/index.ts:242](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L242)
 
 ___
 
 ### registerProperty
 
-▸ **registerProperty**(`property`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **registerProperty**(`property`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Registers private property.
 
@@ -821,21 +837,21 @@ Registers private property.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `property` | [`PropertyConfig`](../interfaces/configuration_structures.PropertyConfig.md) | property to register |
+| `property` | [`PropertyConfig`](../interfaces/configuration_structures_structures.PropertyConfig.md) | property to register |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:221](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L221)
+[configuration/index.ts:222](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L222)
 
 ___
 
 ### registerWebhook
 
-▸ **registerWebhook**(`webhook`, `owner_client_id?`): `Promise`<[`RegisterWebhookResponse`](../interfaces/configuration_structures.RegisterWebhookResponse.md)\>
+▸ **registerWebhook**(`webhook`, `owner_client_id?`): `Promise`<[`RegisterWebhookResponse`](../interfaces/configuration_structures_responses.RegisterWebhookResponse.md)\>
 
 Registers webhook on a license.
 
@@ -843,32 +859,32 @@ Registers webhook on a license.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `webhook` | [`Webhook`](../interfaces/configuration_structures.Webhook.md) | webhook to register |
+| `webhook` | [`Webhook`](../interfaces/configuration_structures_structures.Webhook.md) | webhook to register |
 | `owner_client_id?` | `string` | must be provided when authorizing with Personal Access Token |
 
 #### Returns
 
-`Promise`<[`RegisterWebhookResponse`](../interfaces/configuration_structures.RegisterWebhookResponse.md)\>
+`Promise`<[`RegisterWebhookResponse`](../interfaces/configuration_structures_responses.RegisterWebhookResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:330](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L330)
+[configuration/index.ts:332](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L332)
 
 ___
 
 ### requestAgentUnsuspension
 
-▸ **requestAgentUnsuspension**(): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **requestAgentUnsuspension**(): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 A suspended Agent can send emails to license owners and vice owners with an unsuspension request.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:98](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L98)
+[configuration/index.ts:99](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L99)
 
 ___
 
@@ -899,13 +915,37 @@ ___
 
 #### Defined in
 
-[internal/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/internal/index.ts#L37)
+[internal/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L37)
+
+___
+
+### setAuthorId
+
+▸ **setAuthorId**(`author_id?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `author_id?` | `string` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[WebAPI](internal.WebAPI.md).[setAuthorId](internal.WebAPI.md#setauthorid)
+
+#### Defined in
+
+[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L80)
 
 ___
 
 ### suspendAgent
 
-▸ **suspendAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **suspendAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Suspends an Agent specified by id.
 
@@ -917,17 +957,17 @@ Suspends an Agent specified by id.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L83)
+[configuration/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L84)
 
 ___
 
 ### unregisterProperty
 
-▸ **unregisterProperty**(`name`, `owner_client_id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **unregisterProperty**(`name`, `owner_client_id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Unregisters private property.
 
@@ -940,17 +980,17 @@ Unregisters private property.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:230](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L230)
+[configuration/index.ts:231](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L231)
 
 ___
 
 ### unregisterWebhook
 
-▸ **unregisterWebhook**(`id`, `owner_client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **unregisterWebhook**(`id`, `owner_client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Removes webhook from license.
 
@@ -963,17 +1003,17 @@ Removes webhook from license.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:347](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L347)
+[configuration/index.ts:349](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L349)
 
 ___
 
 ### unsuspendAgent
 
-▸ **unsuspendAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **unsuspendAgent**(`id`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Unsuspends an Agent specified by id.
 
@@ -985,17 +1025,17 @@ Unsuspends an Agent specified by id.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L91)
+[configuration/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L92)
 
 ___
 
 ### updateAgent
 
-▸ **updateAgent**(`id`, `fields`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **updateAgent**(`id`, `fields`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Updates the properties of an Agent specified by id.
 
@@ -1004,21 +1044,21 @@ Updates the properties of an Agent specified by id.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | ID of agent to update |
-| `fields` | [`AgentFields`](../interfaces/configuration_structures.AgentFields.md) | properties to update |
+| `fields` | [`AgentFields`](../interfaces/configuration_structures_structures.AgentFields.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:67](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L67)
+[configuration/index.ts:68](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L68)
 
 ___
 
 ### updateAutoAccess
 
-▸ **updateAutoAccess**(`id`, `access`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **updateAutoAccess**(`id`, `access`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Updates an existing auto access. Only specified fields are updated (overwritten), leaving unspecified fields unchanged.
 
@@ -1027,21 +1067,21 @@ Updates an existing auto access. Only specified fields are updated (overwritten)
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | ID of the auto access to modify |
-| `access` | [`UpdateAutoAccessRequest`](../interfaces/configuration_structures.UpdateAutoAccessRequest.md) | fields of auto access you want to overwrite |
+| `access` | [`UpdateAutoAccessRequest`](../interfaces/configuration_structures_structures.UpdateAutoAccessRequest.md) | fields of auto access you want to overwrite |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:411](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L411)
+[configuration/index.ts:413](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L413)
 
 ___
 
 ### updateBot
 
-▸ **updateBot**(`id`, `fields`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **updateBot**(`id`, `fields`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Updates the properties of Bot specified by id.
 
@@ -1050,21 +1090,21 @@ Updates the properties of Bot specified by id.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | ID of bot to update |
-| `fields` | [`BotFields`](../interfaces/configuration_structures.BotFields.md) | properties to update |
+| `fields` | [`BotFields`](../interfaces/configuration_structures_structures.BotFields.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:131](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L131)
+[configuration/index.ts:132](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L132)
 
 ___
 
 ### updateGroup
 
-▸ **updateGroup**(`id`, `name?`, `agent_priorities?`, `language_code?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **updateGroup**(`id`, `name?`, `agent_priorities?`, `language_code?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Updates an existing group.
 
@@ -1074,22 +1114,22 @@ Updates an existing group.
 | :------ | :------ | :------ |
 | `id` | `number` | group id |
 | `name?` | `string` | group name |
-| `agent_priorities?` | [`AgentPriorities`](../interfaces/configuration_structures.AgentPriorities.md) | agents priorities within a group |
+| `agent_priorities?` | [`AgentPriorities`](../interfaces/configuration_structures_structures.AgentPriorities.md) | agents priorities within a group |
 | `language_code?` | `string` | groups language |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:178](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L178)
+[configuration/index.ts:179](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L179)
 
 ___
 
 ### updateGroupProperties
 
-▸ **updateGroupProperties**(`group_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **updateGroupProperties**(`group_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Updates a property value within a group as the property location. This operation doesn't overwrite the existing values.
 
@@ -1098,21 +1138,21 @@ Updates a property value within a group as the property location. This operation
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `group_id` | `number` | group ID to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/configuration_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:293](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L293)
+[configuration/index.ts:294](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L294)
 
 ___
 
 ### updateLicenseProperties
 
-▸ **updateLicenseProperties**(`properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+▸ **updateLicenseProperties**(`properties`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 Updates a property value within a license. This operation doesn't overwrite the existing values.
 
@@ -1120,12 +1160,12 @@ Updates a property value within a license. This operation doesn't overwrite the 
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/configuration_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/configuration_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[configuration/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/configuration/index.ts#L264)
+[configuration/index.ts:265](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/configuration/index.ts#L265)

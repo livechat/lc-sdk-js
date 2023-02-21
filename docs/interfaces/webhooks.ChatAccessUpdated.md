@@ -15,11 +15,11 @@
 
 ### access
 
-• **access**: [`Access`](objects.Access.md)
+• **access**: [`Access`](webhooks_structures_structures.Access.md)
 
 #### Defined in
 
-[webhooks/index.ts:63](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/webhooks/index.ts#L63)
+[webhooks/index.ts:63](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/webhooks/index.ts#L63)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:62](https://github.com/livechat/lc-sdk-js/blob/11cc290/src/webhooks/index.ts#L62)
+[webhooks/index.ts:62](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/webhooks/index.ts#L62)
