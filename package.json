@@ -1,6 +1,6 @@
 {
   "name": "@livechat/lc-sdk-js",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "LiveChat SDK in JS",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
