@@ -19,6 +19,7 @@
 ### Properties
 
 - [APIURL](customer_web.default.md#apiurl)
+- [author\_id](customer_web.default.md#author_id)
 - [clientID](customer_web.default.md#clientid)
 - [tokenGetter](customer_web.default.md#tokengetter)
 - [type](customer_web.default.md#type)
@@ -53,6 +54,7 @@
 - [sendEvent](customer_web.default.md#sendevent)
 - [sendRichMessagePostback](customer_web.default.md#sendrichmessagepostback)
 - [sendSneakPeek](customer_web.default.md#sendsneakpeek)
+- [setAuthorId](customer_web.default.md#setauthorid)
 - [setCustomerSessionFields](customer_web.default.md#setcustomersessionfields)
 - [startChat](customer_web.default.md#startchat)
 - [updateChatProperties](customer_web.default.md#updatechatproperties)
@@ -73,7 +75,7 @@
 | :------ | :------ |
 | `clientID` | `string` |
 | `tokenGetter` | [`TokenGetter`](../modules/authorization.md#tokengetter) |
-| `options?` | [`WebAPIOptions`](../interfaces/objects.WebAPIOptions.md) |
+| `options?` | [`WebAPIOptions`](../interfaces/customer_structures_structures.WebAPIOptions.md) |
 
 #### Overrides
 
@@ -81,7 +83,7 @@
 
 #### Defined in
 
-[customer/web.ts:32](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L32)
+[customer/web.ts:34](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L34)
 
 ## Properties
 
@@ -95,7 +97,21 @@
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/internal/index.ts#L15)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L14)
+
+___
+
+### author\_id
+
+• `Optional` **author\_id**: `string`
+
+#### Inherited from
+
+[WebAPI](internal.WebAPI.md).[author_id](internal.WebAPI.md#author_id)
+
+#### Defined in
+
+[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L16)
 
 ___
 
@@ -109,7 +125,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/internal/index.ts#L28)
+[internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L28)
 
 ___
 
@@ -123,7 +139,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/internal/index.ts#L29)
+[internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L29)
 
 ___
 
@@ -137,7 +153,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/internal/index.ts#L30)
+[internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L30)
 
 ___
 
@@ -151,13 +167,13 @@ ___
 
 #### Defined in
 
-[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/internal/index.ts#L16)
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L15)
 
 ## Methods
 
 ### acceptGreeting
 
-▸ **acceptGreeting**(`greeting_id`, `unique_id`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **acceptGreeting**(`greeting_id`, `unique_id`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Marks an incoming greeting as seen.
 
@@ -170,17 +186,17 @@ Marks an incoming greeting as seen.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:337](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L337)
+[customer/web.ts:340](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L340)
 
 ___
 
 ### cancelGreeting
 
-▸ **cancelGreeting**(`unique_id`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **cancelGreeting**(`unique_id`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Cancels a greeting (an invitation to the chat).
 For example, Customers could cancel greetings by minimalizing the chat widget with a greeting.
@@ -193,17 +209,17 @@ For example, Customers could cancel greetings by minimalizing the chat widget wi
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:346](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L346)
+[customer/web.ts:349](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L349)
 
 ___
 
 ### checkGoals
 
-▸ **checkGoals**(`session_fields`, `group_id`, `page_url`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **checkGoals**(`session_fields`, `group_id`, `page_url`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Customer can use this method to trigger checking if goals were achieved.
 Then, Agents receive the information. You should call this method to provide goals
@@ -219,17 +235,17 @@ parameters for the server when the customers limit is reached. Works only for of
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:291](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L291)
+[customer/web.ts:293](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L293)
 
 ___
 
 ### deactivateChat
 
-▸ **deactivateChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **deactivateChat**(`id`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Deactivates a chat by closing the currently open thread. Sending messages to this thread will no longer be possible.
 
@@ -241,17 +257,17 @@ Deactivates a chat by closing the currently open thread. Sending messages to thi
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:83](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L83)
+[customer/web.ts:85](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L85)
 
 ___
 
 ### deleteChatProperties
 
-▸ **deleteChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **deleteChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Deletes chat properties
 
@@ -260,21 +276,21 @@ Deletes chat properties
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | chat to delete properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/customer_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:150](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L150)
+[customer/web.ts:152](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L152)
 
 ___
 
 ### deleteEventProperties
 
-▸ **deleteEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **deleteEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Deletes event properties
 
@@ -285,21 +301,21 @@ Deletes event properties
 | `chat_id` | `string` | chat ID of event to delete |
 | `thread_id` | `string` | thread ID of event to delete |
 | `event_id` | `string` | event to delete properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/customer_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:210](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L210)
+[customer/web.ts:212](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L212)
 
 ___
 
 ### deleteThreadProperties
 
-▸ **deleteThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **deleteThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Deletes thread properties
 
@@ -309,21 +325,21 @@ Deletes thread properties
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID of thread to delete |
 | `thread_id` | `string` | thread to delete properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to delete |
+| `properties` | [`Properties`](../interfaces/customer_structures_structures.Properties.md) | properties to delete |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:174](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L174)
+[customer/web.ts:176](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L176)
 
 ___
 
 ### getChat
 
-▸ **getChat**(`chat_id`, `thread_id?`): `Promise`<[`GetChatResponse`](../interfaces/customer_structures.GetChatResponse.md)\>
+▸ **getChat**(`chat_id`, `thread_id?`): `Promise`<[`GetChatResponse`](../interfaces/customer_structures_responses.GetChatResponse.md)\>
 
 It returns a thread that the current Customer has access to in a given chat.
 
@@ -336,17 +352,17 @@ It returns a thread that the current Customer has access to in a given chat.
 
 #### Returns
 
-`Promise`<[`GetChatResponse`](../interfaces/customer_structures.GetChatResponse.md)\>
+`Promise`<[`GetChatResponse`](../interfaces/customer_structures_responses.GetChatResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:58](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L58)
+[customer/web.ts:60](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L60)
 
 ___
 
 ### getConfiguration
 
-▸ **getConfiguration**(`group_id`, `version`): `Promise`<[`GroupConfiguration`](../interfaces/customer_structures.GroupConfiguration.md)\>
+▸ **getConfiguration**(`group_id`, `version`): `Promise`<[`GroupConfiguration`](../interfaces/customer_structures_structures.GroupConfiguration.md)\>
 
 Returns the configuration of a given group in a given version.
 
@@ -359,33 +375,33 @@ Returns the configuration of a given group in a given version.
 
 #### Returns
 
-`Promise`<[`GroupConfiguration`](../interfaces/customer_structures.GroupConfiguration.md)\>
+`Promise`<[`GroupConfiguration`](../interfaces/customer_structures_structures.GroupConfiguration.md)\>
 
 #### Defined in
 
-[customer/web.ts:371](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L371)
+[customer/web.ts:374](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L374)
 
 ___
 
 ### getCustomer
 
-▸ **getCustomer**(): `Promise`<[`CustomerParameters`](../interfaces/customer_structures.CustomerParameters.md)\>
+▸ **getCustomer**(): `Promise`<[`CustomerParameters`](../interfaces/customer_structures_structures.CustomerParameters.md)\>
 
 Returns the info about the Customer requesting it.
 
 #### Returns
 
-`Promise`<[`CustomerParameters`](../interfaces/customer_structures.CustomerParameters.md)\>
+`Promise`<[`CustomerParameters`](../interfaces/customer_structures_structures.CustomerParameters.md)\>
 
 #### Defined in
 
-[customer/web.ts:269](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L269)
+[customer/web.ts:271](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L271)
 
 ___
 
 ### getDynamicConfiguration
 
-▸ **getDynamicConfiguration**(`opts?`): `Promise`<[`GetDynamicConfigurationResponse`](../interfaces/customer_structures.GetDynamicConfigurationResponse.md)\>
+▸ **getDynamicConfiguration**(`opts?`): `Promise`<[`GetDynamicConfigurationResponse`](../interfaces/customer_structures_responses.GetDynamicConfigurationResponse.md)\>
 
 Returns the dynamic configuration of a given group.
 
@@ -393,21 +409,21 @@ Returns the dynamic configuration of a given group.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`GetDynamicConfigurationRequest`](../interfaces/customer_structures.GetDynamicConfigurationRequest.md) | properties used to find matching group |
+| `opts?` | [`GetDynamicConfigurationRequest`](../interfaces/customer_structures_structures.GetDynamicConfigurationRequest.md) | properties used to find matching group |
 
 #### Returns
 
-`Promise`<[`GetDynamicConfigurationResponse`](../interfaces/customer_structures.GetDynamicConfigurationResponse.md)\>
+`Promise`<[`GetDynamicConfigurationResponse`](../interfaces/customer_structures_responses.GetDynamicConfigurationResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:362](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L362)
+[customer/web.ts:365](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L365)
 
 ___
 
 ### getForm
 
-▸ **getForm**(`group_id`, `type`): `Promise`<[`GetFormResponse`](../interfaces/customer_structures.GetFormResponse.md)\>
+▸ **getForm**(`group_id`, `type`): `Promise`<[`GetFormResponse`](../interfaces/customer_structures_responses.GetFormResponse.md)\>
 
 Returns an empty ticket form of a prechat or postchat survey.
 
@@ -420,11 +436,11 @@ Returns an empty ticket form of a prechat or postchat survey.
 
 #### Returns
 
-`Promise`<[`GetFormResponse`](../interfaces/customer_structures.GetFormResponse.md)\>
+`Promise`<[`GetFormResponse`](../interfaces/customer_structures_responses.GetFormResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:303](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L303)
+[customer/web.ts:306](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L306)
 
 ___
 
@@ -448,30 +464,30 @@ Returns the localization of a given language and group in a given version.
 
 #### Defined in
 
-[customer/web.ts:384](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L384)
+[customer/web.ts:387](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L387)
 
 ___
 
 ### getPredictedAgent
 
-▸ **getPredictedAgent**(): `Promise`<[`GetPredictedAgentResponse`](../interfaces/customer_structures.GetPredictedAgentResponse.md)\>
+▸ **getPredictedAgent**(): `Promise`<[`GetPredictedAgentResponse`](../interfaces/customer_structures_responses.GetPredictedAgentResponse.md)\>
 
 Gets the predicted Agent - the one the Customer will chat with when the chat starts.
 To use this method, the Customer needs to be logged in, which can be done via the login method.
 
 #### Returns
 
-`Promise`<[`GetPredictedAgentResponse`](../interfaces/customer_structures.GetPredictedAgentResponse.md)\>
+`Promise`<[`GetPredictedAgentResponse`](../interfaces/customer_structures_responses.GetPredictedAgentResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:311](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L311)
+[customer/web.ts:314](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L314)
 
 ___
 
 ### getURLInfo
 
-▸ **getURLInfo**(`url`): `Promise`<[`GetURLInfoResponse`](../interfaces/customer_structures.GetURLInfoResponse.md)\>
+▸ **getURLInfo**(`url`): `Promise`<[`GetURLInfoResponse`](../interfaces/customer_structures_responses.GetURLInfoResponse.md)\>
 
 It returns the info on a given URL.
 
@@ -483,17 +499,17 @@ It returns the info on a given URL.
 
 #### Returns
 
-`Promise`<[`GetURLInfoResponse`](../interfaces/customer_structures.GetURLInfoResponse.md)\>
+`Promise`<[`GetURLInfoResponse`](../interfaces/customer_structures_responses.GetURLInfoResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:319](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L319)
+[customer/web.ts:322](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L322)
 
 ___
 
 ### listChats
 
-▸ **listChats**(`opts?`): `Promise`<[`ListChatsResponse`](../interfaces/customer_structures.ListChatsResponse.md)\>
+▸ **listChats**(`opts?`): `Promise`<[`ListChatsResponse`](../interfaces/customer_structures_responses.ListChatsResponse.md)\>
 
 It returns summaries of the chats a Customer participated in.
 
@@ -501,21 +517,21 @@ It returns summaries of the chats a Customer participated in.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`ListChatParameters`](../interfaces/customer_structures.ListChatParameters.md) | set of filters and pagination to limit returned entries |
+| `opts?` | [`ListChatParameters`](../interfaces/customer_structures_structures.ListChatParameters.md) | set of filters and pagination to limit returned entries |
 
 #### Returns
 
-`Promise`<[`ListChatsResponse`](../interfaces/customer_structures.ListChatsResponse.md)\>
+`Promise`<[`ListChatsResponse`](../interfaces/customer_structures_responses.ListChatsResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:40](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L40)
+[customer/web.ts:42](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L42)
 
 ___
 
 ### listGroupProperties
 
-▸ **listGroupProperties**(`id`, `namespace?`, `name?`): `Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+▸ **listGroupProperties**(`id`, `namespace?`, `name?`): `Promise`<[`Properties`](../interfaces/customer_structures_structures.Properties.md)\>
 
 Returns the properties of a given group. It only returns the properties a Customer has access to.
 
@@ -529,17 +545,17 @@ Returns the properties of a given group. It only returns the properties a Custom
 
 #### Returns
 
-`Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+`Promise`<[`Properties`](../interfaces/customer_structures_structures.Properties.md)\>
 
 #### Defined in
 
-[customer/web.ts:242](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L242)
+[customer/web.ts:244](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L244)
 
 ___
 
 ### listGroupStatuses
 
-▸ **listGroupStatuses**(`param`): `Promise`<[`ListGroupStatusesResponse`](../interfaces/customer_structures.ListGroupStatusesResponse.md)\>
+▸ **listGroupStatuses**(`param`): `Promise`<[`ListGroupStatusesResponse`](../interfaces/customer_structures_responses.ListGroupStatusesResponse.md)\>
 
 Lists statuses of groups.
 
@@ -551,17 +567,17 @@ Lists statuses of groups.
 
 #### Returns
 
-`Promise`<[`ListGroupStatusesResponse`](../interfaces/customer_structures.ListGroupStatusesResponse.md)\>
+`Promise`<[`ListGroupStatusesResponse`](../interfaces/customer_structures_responses.ListGroupStatusesResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:277](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L277)
+[customer/web.ts:279](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L279)
 
 ___
 
 ### listLicenseProperties
 
-▸ **listLicenseProperties**(`namespace?`, `name?`): `Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+▸ **listLicenseProperties**(`namespace?`, `name?`): `Promise`<[`Properties`](../interfaces/customer_structures_structures.Properties.md)\>
 
 Returns the properties of a given license. It only returns the properties a Customer has access to.
 
@@ -574,17 +590,17 @@ Returns the properties of a given license. It only returns the properties a Cust
 
 #### Returns
 
-`Promise`<[`Properties`](../interfaces/objects.Properties.md)\>
+`Promise`<[`Properties`](../interfaces/customer_structures_structures.Properties.md)\>
 
 #### Defined in
 
-[customer/web.ts:229](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L229)
+[customer/web.ts:231](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L231)
 
 ___
 
 ### listThreads
 
-▸ **listThreads**(`chat_id`, `opts?`): `Promise`<[`ListThreadsResponse`](../interfaces/customer_structures.ListThreadsResponse.md)\>
+▸ **listThreads**(`chat_id`, `opts?`): `Promise`<[`ListThreadsResponse`](../interfaces/customer_structures_responses.ListThreadsResponse.md)\>
 
 Returns threads that the current Customer has access to in a given chat.
 
@@ -593,21 +609,21 @@ Returns threads that the current Customer has access to in a given chat.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID to get threads from |
-| `opts?` | [`ListThreadsParameters`](../interfaces/customer_structures.ListThreadsParameters.md) | additional options like pagination and sorting |
+| `opts?` | [`ListThreadsParameters`](../interfaces/customer_structures_structures.ListThreadsParameters.md) | additional options like pagination and sorting |
 
 #### Returns
 
-`Promise`<[`ListThreadsResponse`](../interfaces/customer_structures.ListThreadsResponse.md)\>
+`Promise`<[`ListThreadsResponse`](../interfaces/customer_structures_responses.ListThreadsResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:49](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L49)
+[customer/web.ts:51](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L51)
 
 ___
 
 ### markEventsAsSeen
 
-▸ **markEventsAsSeen**(`chat_id`, `seen_up_to`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **markEventsAsSeen**(`chat_id`, `seen_up_to`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Marks events as seen by Agent.
 
@@ -620,17 +636,17 @@ Marks events as seen by Agent.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:328](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L328)
+[customer/web.ts:331](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L331)
 
 ___
 
 ### requestEmailVerification
 
-▸ **requestEmailVerification**(`callback_uri`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **requestEmailVerification**(`callback_uri`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Requests customer to verify email.
 
@@ -642,17 +658,17 @@ Requests customer to verify email.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:354](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L354)
+[customer/web.ts:357](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L357)
 
 ___
 
 ### resumeChat
 
-▸ **resumeChat**(`param`): `Promise`<[`ResumeChatResponse`](../interfaces/customer_structures.ResumeChatResponse.md)\>
+▸ **resumeChat**(`param`): `Promise`<[`ResumeChatResponse`](../interfaces/customer_structures_responses.ResumeChatResponse.md)\>
 
 Restarts an archived chat
 
@@ -660,15 +676,15 @@ Restarts an archived chat
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `param` | `string` \| [`ResumeChatParameters`](../interfaces/customer_structures.ResumeChatParameters.md) | either string ID of a chat to activate or full initial chat object |
+| `param` | `string` \| [`ResumeChatParameters`](../interfaces/customer_structures_structures.ResumeChatParameters.md) | either string ID of a chat to activate or full initial chat object |
 
 #### Returns
 
-`Promise`<[`ResumeChatResponse`](../interfaces/customer_structures.ResumeChatResponse.md)\>
+`Promise`<[`ResumeChatResponse`](../interfaces/customer_structures_responses.ResumeChatResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:74](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L74)
+[customer/web.ts:76](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L76)
 
 ___
 
@@ -699,13 +715,13 @@ ___
 
 #### Defined in
 
-[internal/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/internal/index.ts#L37)
+[internal/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L37)
 
 ___
 
 ### sendEvent
 
-▸ **sendEvent**(`chat_id`, `event`, `attach_to_last_thread?`): `Promise`<[`SendEventResponse`](../interfaces/customer_structures.SendEventResponse.md)\>
+▸ **sendEvent**(`chat_id`, `event`, `attach_to_last_thread?`): `Promise`<[`SendEventResponse`](../interfaces/customer_structures_responses.SendEventResponse.md)\>
 
 Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
 It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
@@ -716,22 +732,22 @@ with the present parameter set to false.
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat to send event to |
-| `event` | [`Event`](../modules/objects.md#event) | Event object |
+| `event` | [`RequestEvent`](../modules/customer_structures_events.md#requestevent) | Event request object |
 | `attach_to_last_thread?` | `boolean` | if true, adds event to last inactive thread |
 
 #### Returns
 
-`Promise`<[`SendEventResponse`](../interfaces/customer_structures.SendEventResponse.md)\>
+`Promise`<[`SendEventResponse`](../interfaces/customer_structures_responses.SendEventResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:95](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L95)
+[customer/web.ts:97](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L97)
 
 ___
 
 ### sendRichMessagePostback
 
-▸ **sendRichMessagePostback**(`opts`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **sendRichMessagePostback**(`opts`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Sends postback for rich message
 
@@ -739,21 +755,21 @@ Sends postback for rich message
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`SendRichMessagePostbackParameters`](../interfaces/customer_structures.SendRichMessagePostbackParameters.md) | postback data |
+| `opts` | [`SendRichMessagePostbackParameters`](../interfaces/customer_structures_structures.SendRichMessagePostbackParameters.md) | postback data |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:122](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L122)
+[customer/web.ts:124](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L124)
 
 ___
 
 ### sendSneakPeek
 
-▸ **sendSneakPeek**(`chat_id`, `sneak_peek_text`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **sendSneakPeek**(`chat_id`, `sneak_peek_text`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Sends a sneak peek to a chat.
 
@@ -766,17 +782,41 @@ Sends a sneak peek to a chat.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:132](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L132)
+[customer/web.ts:134](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L134)
+
+___
+
+### setAuthorId
+
+▸ **setAuthorId**(`author_id?`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `author_id?` | `string` |
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+[WebAPI](internal.WebAPI.md).[setAuthorId](internal.WebAPI.md#setauthorid)
+
+#### Defined in
+
+[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/index.ts#L80)
 
 ___
 
 ### setCustomerSessionFields
 
-▸ **setCustomerSessionFields**(`session_fields`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **setCustomerSessionFields**(`session_fields`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Sets session fields for Customer.
 
@@ -788,17 +828,17 @@ Sets session fields for Customer.
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:262](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L262)
+[customer/web.ts:264](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L264)
 
 ___
 
 ### startChat
 
-▸ **startChat**(`opts?`): `Promise`<[`StartChatResponse`](../interfaces/customer_structures.StartChatResponse.md)\>
+▸ **startChat**(`opts?`): `Promise`<[`StartChatResponse`](../interfaces/customer_structures_responses.StartChatResponse.md)\>
 
 Starts a chat
 
@@ -806,21 +846,21 @@ Starts a chat
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts?` | [`StartChatParameters`](../interfaces/customer_structures.StartChatParameters.md) | options like initial chat data or continuous switch |
+| `opts?` | [`StartChatParameters`](../interfaces/customer_structures_structures.StartChatParameters.md) | options like initial chat data or continuous switch |
 
 #### Returns
 
-`Promise`<[`StartChatResponse`](../interfaces/customer_structures.StartChatResponse.md)\>
+`Promise`<[`StartChatResponse`](../interfaces/customer_structures_responses.StartChatResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:66](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L66)
+[customer/web.ts:68](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L68)
 
 ___
 
 ### updateChatProperties
 
-▸ **updateChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **updateChatProperties**(`id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Updates chat properties
 
@@ -829,21 +869,21 @@ Updates chat properties
 | Name | Type | Description |
 | :------ | :------ | :------ |
 | `id` | `string` | chat to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/customer_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:141](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L141)
+[customer/web.ts:143](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L143)
 
 ___
 
 ### updateCustomer
 
-▸ **updateCustomer**(`opts`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **updateCustomer**(`opts`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Updates Customer's properties.
 
@@ -851,21 +891,21 @@ Updates Customer's properties.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `opts` | [`CustomerParameters`](../interfaces/customer_structures.CustomerParameters.md) | properties to update |
+| `opts` | [`CustomerParameters`](../interfaces/customer_structures_structures.CustomerParameters.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:254](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L254)
+[customer/web.ts:256](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L256)
 
 ___
 
 ### updateEventProperties
 
-▸ **updateEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **updateEventProperties**(`chat_id`, `thread_id`, `event_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Updates event properties
 
@@ -876,21 +916,21 @@ Updates event properties
 | `chat_id` | `string` | chat ID of event to update |
 | `thread_id` | `string` | thread ID of event to update |
 | `event_id` | `string` | event to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/customer_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:189](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L189)
+[customer/web.ts:191](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L191)
 
 ___
 
 ### updateThreadProperties
 
-▸ **updateThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+▸ **updateThreadProperties**(`chat_id`, `thread_id`, `properties`): `Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 Updates thread properties
 
@@ -900,21 +940,21 @@ Updates thread properties
 | :------ | :------ | :------ |
 | `chat_id` | `string` | chat ID of thread to update |
 | `thread_id` | `string` | thread to update properties |
-| `properties` | [`Properties`](../interfaces/objects.Properties.md) | properties to update |
+| `properties` | [`Properties`](../interfaces/customer_structures_structures.Properties.md) | properties to update |
 
 #### Returns
 
-`Promise`<[`EmptyResponse`](../interfaces/customer_structures.EmptyResponse.md)\>
+`Promise`<[`EmptyResponse`](../interfaces/customer_structures_responses.EmptyResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:160](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L160)
+[customer/web.ts:162](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L162)
 
 ___
 
 ### uploadFile
 
-▸ **uploadFile**(`file`, `filename`): `Promise`<[`UploadFileResponse`](../interfaces/customer_structures.UploadFileResponse.md)\>
+▸ **uploadFile**(`file`, `filename`): `Promise`<[`UploadFileResponse`](../interfaces/customer_structures_responses.UploadFileResponse.md)\>
 
 Uploads a file to the server as a temporary file. It returns a URL that expires after 24 hours unless the URL is used in send_event.
 
@@ -927,8 +967,8 @@ Uploads a file to the server as a temporary file. It returns a URL that expires 
 
 #### Returns
 
-`Promise`<[`UploadFileResponse`](../interfaces/customer_structures.UploadFileResponse.md)\>
+`Promise`<[`UploadFileResponse`](../interfaces/customer_structures_responses.UploadFileResponse.md)\>
 
 #### Defined in
 
-[customer/web.ts:108](https://github.com/livechat/lc-sdk-js/blob/4da1eb6/src/customer/web.ts#L108)
+[customer/web.ts:110](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/customer/web.ts#L110)

@@ -8,7 +8,3 @@
 
 - [RTMAPI](../classes/internal.RTMAPI.md)
 - [WebAPI](../classes/internal.WebAPI.md)
-
-### Interfaces
-
-- [APIError](../interfaces/internal.APIError.md)
