@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[webhooks/index.ts:326](https://github.com/livechat/lc-sdk-js/blob/a3fdde0/src/webhooks/index.ts#L326)
+[webhooks/index.ts:326](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/webhooks/index.ts#L326)
 
 ___
 
@@ -40,13 +40,13 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `domain` | [`Filter`](objects.Filter.md)<{ `exact_match`: `boolean` ; `value`: `string`  }\> |
-| `geolocation` | `Pick`<[`Filter`](objects.Filter.md)<{ `city?`: `string` ; `country?`: `string` ; `country_code?`: `string` ; `region?`: `string`  }\>, ``"values"``\> |
-| `url` | [`Filter`](objects.Filter.md)<{ `exact_match`: `boolean` ; `value`: `string`  }\> |
+| `domain` | [`Filter`](webhooks_structures_structures.Filter.md)<{ `exact_match`: `boolean` ; `value`: `string`  }\> |
+| `geolocation` | `Pick`<[`Filter`](webhooks_structures_structures.Filter.md)<{ `city?`: `string` ; `country?`: `string` ; `country_code?`: `string` ; `region?`: `string`  }\>, ``"values"``\> |
+| `url` | [`Filter`](webhooks_structures_structures.Filter.md)<{ `exact_match`: `boolean` ; `value`: `string`  }\> |
 
 #### Defined in
 
-[webhooks/index.ts:329](https://github.com/livechat/lc-sdk-js/blob/a3fdde0/src/webhooks/index.ts#L329)
+[webhooks/index.ts:329](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/webhooks/index.ts#L329)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:325](https://github.com/livechat/lc-sdk-js/blob/a3fdde0/src/webhooks/index.ts#L325)
+[webhooks/index.ts:325](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/webhooks/index.ts#L325)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:324](https://github.com/livechat/lc-sdk-js/blob/a3fdde0/src/webhooks/index.ts#L324)
+[webhooks/index.ts:324](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/webhooks/index.ts#L324)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:342](https://github.com/livechat/lc-sdk-js/blob/a3fdde0/src/webhooks/index.ts#L342)
+[webhooks/index.ts:342](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/webhooks/index.ts#L342)
