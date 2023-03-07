@@ -20,7 +20,7 @@ export interface ListThreadsResponse {
 export interface GetChatResponse {
   id: string;
   users: User[];
-  thread: Thread;
+  thread?: Thread;
   properties?: Properties;
   access?: Access;
   is_followed: boolean;
@@ -28,9 +28,9 @@ export interface GetChatResponse {
 
 export interface ListArchivesResponse {
   chats: ArchivedChat[];
-  found_chats: number;
-  next_page_id: string;
-  previous_page_id: string;
+  found_chats?: number;
+  next_page_id?: string;
+  previous_page_id?: string;
 }
 
 export interface StartChatResponse {
