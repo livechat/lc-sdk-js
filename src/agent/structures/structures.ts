@@ -5,46 +5,52 @@ import { Pushes } from "./pushes";
 import { InitialUser, User } from "./users";
 
 export interface Geolocation {
-  country: string;
-  country_code: string;
-  region: string;
-  city: string;
-  timezone: string;
+  country?: string;
+  country_code?: string;
+  region?: string;
+  city?: string;
+  timezone?: string;
+  latitude?: string;
+  longitude?: string;
 }
 
 export interface LastPage {
   opened_at: string;
   url: string;
-  title: string;
+  title?: string;
 }
 
 export interface Visit {
-  started_at: string;
-  ended_at: string;
-  referrer: string;
-  ip: string;
-  user_agent: string;
-  geolocation: Geolocation;
-  last_pages: LastPage[];
+  id: number;
+  started_at?: string;
+  ended_at?: string;
+  referrer?: string;
+  ip?: string;
+  user_agent?: string;
+  geolocation?: Geolocation;
+  last_pages?: LastPage[];
 }
 
 export interface Statistics {
   chats_count: number;
   threads_count: number;
   visits_count: number;
+  page_views_count: number;
+  greetings_shown_count: number;
+  greetings_accepted_count: number;
 }
 
 export interface Chat {
   id: string;
   users: User[];
-  threads: Thread[];
+  thread?: Thread;
   properties?: Properties;
   access?: Access;
   is_followed: boolean;
 }
 
 export interface ArchivedChat extends Chat {
-  thread: ArchivedThread;
+  thread?: ArchivedThread;
 }
 
 export interface ChatsSummary {
@@ -77,6 +83,7 @@ export interface ListArchivesParameters {
   page_id?: string;
   sort_order?: SortOrder;
   limit?: number;
+  highlights?: Highlights;
 }
 
 export interface PropertiesFilter {
@@ -324,6 +331,11 @@ export interface LastThreadSummary {
   active: boolean;
   access?: Access;
   created_at: string;
+}
+
+export interface Highlights {
+  pre_tag: string;
+  post_tag: string;
 }
 
 export interface WebAPIOptions {
