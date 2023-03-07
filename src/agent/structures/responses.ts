@@ -28,9 +28,9 @@ export interface GetChatResponse {
 
 export interface ListArchivesResponse {
   chats: Chat[];
-  found_chats: number;
-  next_page_id: string;
-  previous_page_id: string;
+  found_chats?: number;
+  next_page_id?: string;
+  previous_page_id?: string;
 }
 
 export interface StartChatResponse {
