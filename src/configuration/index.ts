@@ -516,16 +516,16 @@ export default class ConfigurationAPI extends WebAPI {
    * @param name - name of the created tag
    * @param groupIDs - list of groups where tag will be assigned
    */
-  async createTag(name: string, groupIDs?: number[]): Promise<void> {
-    await this.send("create_tag", { name, group_ids: groupIDs });
+  async createTag(name: string, groupIDs?: number[]): Promise<EmptyResponse> {
+    return this.send("create_tag", { name, group_ids: groupIDs });
   }
 
   /**
    * Deletes an existing tag.
    * @param name - name of the tag to be deleted
    */
-  async deleteTag(name: string): Promise<void> {
-    await this.send("delete_tag", { name });
+  async deleteTag(name: string): Promise<EmptyResponse> {
+    return this.send("delete_tag", { name });
   }
 
   /**
@@ -541,8 +541,8 @@ export default class ConfigurationAPI extends WebAPI {
    * @param name - name of the updated tag
    * @param groupIDs - list of groups where tag will be assigned
    */
-  async updateTag(name: string, groupIDs?: number[]): Promise<void> {
-    await this.send("update_tag", { name, group_ids: groupIDs });
+  async updateTag(name: string, groupIDs?: number[]): Promise<EmptyResponse> {
+    return this.send("update_tag", { name, group_ids: groupIDs });
   }
 
   /**
