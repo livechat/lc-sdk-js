@@ -27,8 +27,8 @@ import type {
 } from "./structures";
 
 export default class RTM extends RTMAPI {
-  constructor(organization_id: string, options?: RTMAPIOptions) {
-    super("customer", organization_id, options);
+  constructor(webSocketClass: any, organization_id: string, options?: RTMAPIOptions) {
+    super(webSocketClass, "customer", organization_id, options);
   }
 
   /**

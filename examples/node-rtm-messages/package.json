@@ -1,5 +1,5 @@
 {
-  "name": "rtm-messages",
+  "name": "node-rtm-messages",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@livechat/lc-sdk-js": "github:livechat/lc-sdk-js#v3.6"
+    "@livechat/lc-sdk-js": "file:../..",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4"
   }
 }
