@@ -4,6 +4,7 @@ import { AccountsService } from './accounts.service';
 import { Agent, Configuration } from '@livechat/lc-sdk-js';
 import AgentRtm from '@livechat/lc-sdk-js/lib/src/agent/rtm';
 import ConfigurationApi from '@livechat/lc-sdk-js/lib/src/configuration';
+import WebSocket from 'ws';
 
 @Injectable()
 export class LivechatService {
@@ -27,7 +28,7 @@ export class LivechatService {
       { apiUrl: this.cfg.baseApiUrl },
     );
 
-    this.agentRtm = new Agent.RTM({
+    this.agentRtm = new Agent.RTM(WebSocket, {
       apiUrl: this.cfg.baseApiUrl,
     });
     await this.agentRtm.connect();

@@ -1,5 +1,5 @@
 {
-  "name": "bot-integration",
+  "name": "node-bot-integration",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -15,7 +15,7 @@
     "lint": "eslint \"{src,apps,libs}/**/*.ts\" --fix"
   },
   "dependencies": {
-    "@livechat/lc-sdk-js": "github:livechat/lc-sdk-js#v3.5",
+    "@livechat/lc-sdk-js": "file:../..",
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.0.0",
@@ -24,13 +24,15 @@
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "ws": "^8.13.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@types/express": "^4.17.13",
     "@types/node": "18.11.18",
+    "@types/ws": "^8.5.4",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^8.0.1",

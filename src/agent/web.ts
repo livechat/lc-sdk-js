@@ -30,9 +30,7 @@ import type {
   UploadFileResponse,
   WebAPIOptions,
 } from "./structures";
-import { promises as fs } from "fs";
 import axios from "axios";
-import FormData from "form-data";
 
 export default class Web extends WebAPI {
   constructor(clientID: string, tokenGetter: TokenGetter, options?: WebAPIOptions) {
@@ -192,18 +190,18 @@ export default class Web extends WebAPI {
   }
 
   /**
+   * Note: the browser and Node.js may use different implementations of the file upload logic.
+   * This method is just an axios wrapper pointing to the upload file URL - you have to provide your own form data
+   * and headers in the config object.
+   * See [Agent Chat API - upload file]{@link https://developers.livechat.com/docs/messaging/agent-chat-api#upload-file}
+   *
    * Uploads a file to the server as a temporary file. It returns a URL that expires after 24 hours unless the URL is used in send_event.
-   * @param file - path of file to upload or Buffer with content
-   * @param filename - filename for uploaded file
+   * @param data - axios data parameter
+   * @param config - axios config parameter
    */
-  async uploadFile(file: string | Buffer, filename: string): Promise<UploadFileResponse> {
-    let content = file;
-    if (typeof file === "string") content = await fs.readFile(file, "binary");
+  async uploadFile(data: any, config: any): Promise<UploadFileResponse> {
     const url = `${this.APIURL}/v${this.version}/${this.type}/action/upload_file`;
-    const formData = new FormData();
-    formData.append("file", content, filename);
-
-    return axios.post(url, formData.getBuffer(), formData.getHeaders());
+    return axios.post(url, data, config);
   }
 
   /**
