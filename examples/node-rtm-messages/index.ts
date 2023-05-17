@@ -1,9 +1,9 @@
 import { Agent, Customer } from "@livechat/lc-sdk-js";
+import WebSocket from "ws";
 
 const { IncomingEvent } = Agent.Objects.Pushes;
-
-const agentAPI = new Agent.RTM();
-const customerAPI = new Customer.RTM(1234567890);
+const agentAPI = new Agent.RTM(WebSocket);
+const customerAPI = new Customer.RTM(WebSocket, 1234567890);
 
 (async () => {
   Promise.all([agentAPI.connect(), customerAPI.connect()])

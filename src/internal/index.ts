@@ -2,7 +2,6 @@ import { TokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
 import axios from "axios";
 import { v4 } from "uuid";
-import WebSocket = require("isomorphic-ws");
 
 type apiType = "agent" | "customer" | "configuration";
 
@@ -82,13 +81,13 @@ export class RTMAPI {
   version: string;
   type: apiType;
   license?: number;
-  socket?: WebSocket;
-  heartbeatInterval?: NodeJS.Timeout;
+  socket?: any;
+  heartbeatInterval?: any;
   requestsQueue: any = {};
   subscribedPushes: any = {};
   author_id?: string;
 
-  constructor(type: apiType, license?: number, options?: RTMAPIOptions) {
+  constructor(protected readonly webSocketClass: any, type: apiType, license?: number, options?: RTMAPIOptions) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
@@ -103,13 +102,13 @@ export class RTMAPI {
         `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` +
         (this.license ? `?license_id=${this.license}` : "");
 
-      this.socket = new WebSocket(wsURL);
+      this.socket = new this.webSocketClass(wsURL);
       this.socket.onopen = () => {
         this.heartbeatInterval = setInterval(() => this.send("ping", undefined), 10000);
         resolve();
       };
 
-      this.socket.onmessage = (msg) => {
+      this.socket.onmessage = (msg: any) => {
         let parsedMessage;
         try {
           parsedMessage = JSON.parse(msg.data.toString());

@@ -36,8 +36,8 @@ import type {
 import { RTMAPI } from "../internal";
 
 export default class RTM extends RTMAPI {
-  constructor(options?: RTMAPIOptions) {
-    super("agent", undefined, options);
+  constructor(webSocketClass: any, options?: RTMAPIOptions) {
+    super(webSocketClass, "agent", undefined, options);
   }
 
   /**

@@ -1,4 +1,4 @@
-import { Chat, User } from "../agent/structures";
+import { Chat, CustomerMonitoringLevel, User } from "../agent/structures";
 import { Access, Customer, Event, Postback, Properties, RoutingStatus } from "./structures";
 
 export interface Webhook {
@@ -32,6 +32,7 @@ type WebhookPayload =
   | RoutingStatusSet
   | AgentDeleted
   | IncomingCustomer
+  | IncomingCustomers
   | EventsMarkedAsSeen
   | ChatTransferred
   | CustomerSessionFieldsUpdated;
@@ -154,6 +155,11 @@ export interface AgentDeleted {
 
 export interface IncomingCustomer {
   customer: Customer;
+}
+
+export interface IncomingCustomers {
+  customers: Customer[];
+  customer_monitoring_level: CustomerMonitoringLevel;
 }
 
 export interface EventsMarkedAsSeen {

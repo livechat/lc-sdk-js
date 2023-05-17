@@ -67,7 +67,7 @@ export interface UploadFileResponse {
 export interface LoginResponse {
   license: License;
   my_profile: MyProfile;
-  chats_summary: ChatsSummary;
+  chats_summary: ChatsSummary[];
 }
 
 export interface SetRoutingStatusResponse {
