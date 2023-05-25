@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[customer/structures/responses.ts:56](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/customer/structures/responses.ts#L56)
+[customer/structures/responses.ts:56](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L56)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:64](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/customer/structures/responses.ts#L64)
+[customer/structures/responses.ts:64](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L64)

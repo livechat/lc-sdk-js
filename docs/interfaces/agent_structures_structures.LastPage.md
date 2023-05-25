@@ -20,17 +20,17 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:18](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L18)
+[agent/structures/structures.ts:18](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L18)
 
 ___
 
 ### title
 
-• **title**: `string`
+• `Optional` **title**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:20](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L20)
+[agent/structures/structures.ts:20](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L20)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:19](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L19)
+[agent/structures/structures.ts:19](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L19)

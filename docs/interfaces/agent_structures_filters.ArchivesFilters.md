@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[agent/structures/filters.ts:63](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L63)
+[agent/structures/filters.ts:63](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L63)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:56](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L56)
+[agent/structures/filters.ts:56](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L56)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:61](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L61)
+[agent/structures/filters.ts:61](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L61)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:51](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L51)
+[agent/structures/filters.ts:51](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L51)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:59](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L59)
+[agent/structures/filters.ts:59](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L59)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:62](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L62)
+[agent/structures/filters.ts:62](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L62)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:54](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L54)
+[agent/structures/filters.ts:54](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L54)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:55](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L55)
+[agent/structures/filters.ts:55](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L55)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:50](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L50)
+[agent/structures/filters.ts:50](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L50)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:58](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L58)
+[agent/structures/filters.ts:58](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L58)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:60](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L60)
+[agent/structures/filters.ts:60](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L60)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:57](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L57)
+[agent/structures/filters.ts:57](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L57)
 
 ___
 
@@ -151,7 +151,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:53](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L53)
+[agent/structures/filters.ts:53](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L53)
 
 ___
 
@@ -161,4 +161,4 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:52](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/filters.ts#L52)
+[agent/structures/filters.ts:52](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/filters.ts#L52)

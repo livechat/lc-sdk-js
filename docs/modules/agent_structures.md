@@ -38,6 +38,7 @@
 - [GetChatResponse](agent_structures.md#getchatresponse)
 - [GetCustomerResponse](agent_structures.md#getcustomerresponse)
 - [GreetingsFilter](agent_structures.md#greetingsfilter)
+- [Highlights](agent_structures.md#highlights)
 - [Image](agent_structures.md#image)
 - [InitialChat](agent_structures.md#initialchat)
 - [InitialThread](agent_structures.md#initialthread)
@@ -281,6 +282,12 @@ ___
 ### GreetingsFilter
 
 Re-exports [GreetingsFilter](../interfaces/agent_structures_filters.GreetingsFilter.md)
+
+___
+
+### Highlights
+
+Re-exports [Highlights](../interfaces/agent_structures_structures.Highlights.md)
 
 ___
 

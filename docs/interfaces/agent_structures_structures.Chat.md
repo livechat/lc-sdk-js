@@ -18,7 +18,7 @@
 - [id](agent_structures_structures.Chat.md#id)
 - [is\_followed](agent_structures_structures.Chat.md#is_followed)
 - [properties](agent_structures_structures.Chat.md#properties)
-- [threads](agent_structures_structures.Chat.md#threads)
+- [thread](agent_structures_structures.Chat.md#thread)
 - [users](agent_structures_structures.Chat.md#users)
 
 ## Properties
@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:50](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L50)
+[agent/structures/structures.ts:54](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L54)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L46)
+[agent/structures/structures.ts:50](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L50)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:51](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L51)
+[agent/structures/structures.ts:55](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L55)
 
 ___
 
@@ -59,17 +59,17 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L49)
+[agent/structures/structures.ts:53](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L53)
 
 ___
 
-### threads
+### thread
 
-• **threads**: [`Thread`](agent_structures_structures.Thread.md)[]
+• `Optional` **thread**: [`Thread`](agent_structures_structures.Thread.md)
 
 #### Defined in
 
-[agent/structures/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L48)
+[agent/structures/structures.ts:52](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L52)
 
 ___
 
@@ -79,4 +79,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/structures.ts#L47)
+[agent/structures/structures.ts:51](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/structures.ts#L51)

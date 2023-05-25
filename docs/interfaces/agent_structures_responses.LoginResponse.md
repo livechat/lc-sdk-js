@@ -16,11 +16,11 @@
 
 ### chats\_summary
 
-• **chats\_summary**: [`ChatsSummary`](agent_structures_structures.ChatsSummary.md)
+• **chats\_summary**: [`ChatsSummary`](agent_structures_structures.ChatsSummary.md)[]
 
 #### Defined in
 
-[agent/structures/responses.ts:62](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/responses.ts#L62)
+[agent/structures/responses.ts:62](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/responses.ts#L62)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:60](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/responses.ts#L60)
+[agent/structures/responses.ts:60](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/responses.ts#L60)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:61](https://github.com/livechat/lc-sdk-js/blob/1fa827f/src/agent/structures/responses.ts#L61)
+[agent/structures/responses.ts:61](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/responses.ts#L61)
