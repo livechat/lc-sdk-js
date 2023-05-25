@@ -38,6 +38,7 @@
 - [Geolocation](agent_structures.md#geolocation)
 - [GetChatResponse](agent_structures.md#getchatresponse)
 - [GetCustomerResponse](agent_structures.md#getcustomerresponse)
+- [Highlights](agent_structures.md#highlights)
 - [Image](agent_structures.md#image)
 - [InitialChat](agent_structures.md#initialchat)
 - [InitialThread](agent_structures.md#initialthread)
@@ -286,6 +287,12 @@ ___
 ### GetCustomerResponse
 
 Re-exports [GetCustomerResponse](../interfaces/agent_structures_responses.GetCustomerResponse.md)
+
+___
+
+### Highlights
+
+Re-exports [Highlights](../interfaces/agent_structures_structures.Highlights.md)
 
 ___
 

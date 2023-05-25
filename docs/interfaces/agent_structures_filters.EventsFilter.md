@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[agent/structures/filters.ts:45](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/filters.ts#L45)
+[agent/structures/filters.ts:45](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/filters.ts#L45)

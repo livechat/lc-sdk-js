@@ -21,34 +21,34 @@
 
 #### Defined in
 
-[agent/structures/responses.ts:30](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/responses.ts#L30)
+[agent/structures/responses.ts:30](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/responses.ts#L30)
 
 ___
 
 ### found\_chats
 
-• **found\_chats**: `number`
+• `Optional` **found\_chats**: `number`
 
 #### Defined in
 
-[agent/structures/responses.ts:31](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/responses.ts#L31)
+[agent/structures/responses.ts:31](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/responses.ts#L31)
 
 ___
 
 ### next\_page\_id
 
-• **next\_page\_id**: `string`
+• `Optional` **next\_page\_id**: `string`
 
 #### Defined in
 
-[agent/structures/responses.ts:32](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/responses.ts#L32)
+[agent/structures/responses.ts:32](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/responses.ts#L32)
 
 ___
 
 ### previous\_page\_id
 
-• **previous\_page\_id**: `string`
+• `Optional` **previous\_page\_id**: `string`
 
 #### Defined in
 
-[agent/structures/responses.ts:33](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/responses.ts#L33)
+[agent/structures/responses.ts:33](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/responses.ts#L33)

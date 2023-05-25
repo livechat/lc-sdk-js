@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[customer/structures/users.ts:34](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/users.ts#L34)
+[customer/structures/users.ts:34](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/users.ts#L34)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[customer/structures/users.ts:35](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/users.ts#L35)
+[customer/structures/users.ts:35](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/users.ts#L35)

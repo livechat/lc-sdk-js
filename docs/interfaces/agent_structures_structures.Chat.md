@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L42)
+[agent/structures/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L48)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L38)
+[agent/structures/structures.ts:44](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L44)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L43)
+[agent/structures/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L49)
 
 ___
 
@@ -53,17 +53,17 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:41](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L41)
+[agent/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L47)
 
 ___
 
 ### thread
 
-• **thread**: [`Thread`](agent_structures_structures.Thread.md)
+• `Optional` **thread**: [`Thread`](agent_structures_structures.Thread.md)
 
 #### Defined in
 
-[agent/structures/structures.ts:40](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L40)
+[agent/structures/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L46)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:39](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L39)
+[agent/structures/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L45)

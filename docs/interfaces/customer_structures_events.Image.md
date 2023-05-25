@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[customer/structures/events.ts:96](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L96)
+[customer/structures/events.ts:96](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L96)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:92](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L92)
+[customer/structures/events.ts:92](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L92)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:95](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L95)
+[customer/structures/events.ts:95](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L95)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:90](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L90)
+[customer/structures/events.ts:90](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L90)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:93](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L93)
+[customer/structures/events.ts:93](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L93)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:91](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L91)
+[customer/structures/events.ts:91](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L91)
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:94](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/customer/structures/events.ts#L94)
+[customer/structures/events.ts:94](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/customer/structures/events.ts#L94)

@@ -52,7 +52,7 @@
 
 #### Defined in
 
-[internal/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L17)
+[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L16)
 
 ## Properties
 
@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[internal/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L10)
+[internal/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L9)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L15)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L14)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L11)
+[internal/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L10)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L14)
+[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L13)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L13)
+[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L12)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L12)
+[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L11)
 
 ## Methods
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:34](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L34)
+[internal/index.ts:33](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L33)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:25](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L25)
+[internal/index.ts:24](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L24)
 
 ___
 
@@ -174,4 +174,4 @@ ___
 
 #### Defined in
 
-[internal/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/internal/index.ts#L75)
+[internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L74)

@@ -9,6 +9,7 @@
 ### Properties
 
 - [filters](agent_structures_structures.ListArchivesParameters.md#filters)
+- [highlights](agent_structures_structures.ListArchivesParameters.md#highlights)
 - [limit](agent_structures_structures.ListArchivesParameters.md#limit)
 - [page\_id](agent_structures_structures.ListArchivesParameters.md#page_id)
 - [sort\_order](agent_structures_structures.ListArchivesParameters.md#sort_order)
@@ -21,7 +22,17 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L72)
+[agent/structures/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L78)
+
+___
+
+### highlights
+
+• `Optional` **highlights**: [`Highlights`](agent_structures_structures.Highlights.md)
+
+#### Defined in
+
+[agent/structures/structures.ts:82](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L82)
 
 ___
 
@@ -31,7 +42,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:75](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L75)
+[agent/structures/structures.ts:81](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L81)
 
 ___
 
@@ -41,7 +52,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L73)
+[agent/structures/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L79)
 
 ___
 
@@ -51,4 +62,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:74](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/structures.ts#L74)
+[agent/structures/structures.ts:80](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/structures.ts#L80)

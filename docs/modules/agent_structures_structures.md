@@ -23,6 +23,7 @@
 - [ChatsSummary](../interfaces/agent_structures_structures.ChatsSummary.md)
 - [CustomerParameters](../interfaces/agent_structures_structures.CustomerParameters.md)
 - [Geolocation](../interfaces/agent_structures_structures.Geolocation.md)
+- [Highlights](../interfaces/agent_structures_structures.Highlights.md)
 - [InitialChat](../interfaces/agent_structures_structures.InitialChat.md)
 - [InitialThread](../interfaces/agent_structures_structures.InitialThread.md)
 - [LastEventPerType](../interfaces/agent_structures_structures.LastEventPerType.md)

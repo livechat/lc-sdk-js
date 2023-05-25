@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[agent/structures/events.ts:45](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/events.ts#L45)
+[agent/structures/events.ts:45](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/events.ts#L45)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:43](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/events.ts#L43)
+[agent/structures/events.ts:43](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/events.ts#L43)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:44](https://github.com/livechat/lc-sdk-js/blob/5f5afdd/src/agent/structures/events.ts#L44)
+[agent/structures/events.ts:44](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/events.ts#L44)
