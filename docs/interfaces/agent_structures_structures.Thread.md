@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:277](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L277)
+[agent/structures/structures.ts:284](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L284)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:271](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L271)
+[agent/structures/structures.ts:278](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L278)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:280](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L280)
+[agent/structures/structures.ts:287](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L287)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:275](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L275)
+[agent/structures/structures.ts:282](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L282)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:270](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L270)
+[agent/structures/structures.ts:277](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L277)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:279](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L279)
+[agent/structures/structures.ts:286](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L286)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:278](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L278)
+[agent/structures/structures.ts:285](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L285)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:276](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L276)
+[agent/structures/structures.ts:283](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L283)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:281](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L281)
+[agent/structures/structures.ts:288](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L288)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:282](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L282)
+[agent/structures/structures.ts:289](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L289)
 
 ___
 
@@ -136,7 +136,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:273](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L273)
+[agent/structures/structures.ts:280](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L280)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:274](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L274)
+[agent/structures/structures.ts:281](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L281)
 
 ___
 
@@ -156,4 +156,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L272)
+[agent/structures/structures.ts:279](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L279)

@@ -29,6 +29,7 @@
 - [subscribedPushes](internal.RTMAPI.md#subscribedpushes)
 - [type](internal.RTMAPI.md#type)
 - [version](internal.RTMAPI.md#version)
+- [webSocketClass](internal.RTMAPI.md#websocketclass)
 
 ### Methods
 
@@ -44,19 +45,20 @@
 
 ### constructor
 
-• **new RTMAPI**(`type`, `organization_id?`, `options?`)
+• **new RTMAPI**(`webSocketClass`, `type`, `organization_id?`, `options?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `webSocketClass` | `any` |
 | `type` | `apiType` |
 | `organization_id?` | `string` |
 | `options?` | `RTMAPIOptions` |
 
 #### Defined in
 
-[internal/index.ts:96](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L96)
+[internal/index.ts:95](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L95)
 
 ## Properties
 
@@ -66,7 +68,7 @@
 
 #### Defined in
 
-[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L86)
+[internal/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L85)
 
 ___
 
@@ -76,17 +78,17 @@ ___
 
 #### Defined in
 
-[internal/index.ts:94](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L94)
+[internal/index.ts:93](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L93)
 
 ___
 
 ### heartbeatInterval
 
-• `Optional` **heartbeatInterval**: `Timeout`
+• `Optional` **heartbeatInterval**: `any`
 
 #### Defined in
 
-[internal/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L91)
+[internal/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L90)
 
 ___
 
@@ -96,7 +98,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L89)
+[internal/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L88)
 
 ___
 
@@ -106,17 +108,17 @@ ___
 
 #### Defined in
 
-[internal/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L92)
+[internal/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L91)
 
 ___
 
 ### socket
 
-• `Optional` **socket**: `WebSocket`
+• `Optional` **socket**: `any`
 
 #### Defined in
 
-[internal/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L90)
+[internal/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L89)
 
 ___
 
@@ -126,7 +128,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:93](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L93)
+[internal/index.ts:92](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L92)
 
 ___
 
@@ -136,7 +138,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:88](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L88)
+[internal/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L87)
 
 ___
 
@@ -146,7 +148,17 @@ ___
 
 #### Defined in
 
-[internal/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L87)
+[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L86)
+
+___
+
+### webSocketClass
+
+• `Protected` `Readonly` **webSocketClass**: `any`
+
+#### Defined in
+
+[internal/index.ts:96](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L96)
 
 ## Methods
 
@@ -160,7 +172,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:106](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L106)
+[internal/index.ts:110](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L110)
 
 ___
 
@@ -181,7 +193,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:151](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L151)
+[internal/index.ts:155](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L155)
 
 ___
 
@@ -203,7 +215,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:143](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L143)
+[internal/index.ts:147](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L147)
 
 ___
 
@@ -224,7 +236,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:157](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L157)
+[internal/index.ts:161](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L161)
 
 ___
 
@@ -244,7 +256,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L188)
+[internal/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L192)
 
 ___
 
@@ -265,7 +277,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:177](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L177)
+[internal/index.ts:181](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L181)
 
 ___
 
@@ -285,4 +297,4 @@ ___
 
 #### Defined in
 
-[internal/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/internal/index.ts#L184)
+[internal/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/125a327/src/internal/index.ts#L188)

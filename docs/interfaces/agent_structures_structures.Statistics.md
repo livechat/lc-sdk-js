@@ -9,6 +9,9 @@
 ### Properties
 
 - [chats\_count](agent_structures_structures.Statistics.md#chats_count)
+- [greetings\_accepted\_count](agent_structures_structures.Statistics.md#greetings_accepted_count)
+- [greetings\_shown\_count](agent_structures_structures.Statistics.md#greetings_shown_count)
+- [page\_views\_count](agent_structures_structures.Statistics.md#page_views_count)
 - [threads\_count](agent_structures_structures.Statistics.md#threads_count)
 - [visits\_count](agent_structures_structures.Statistics.md#visits_count)
 
@@ -20,7 +23,37 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:32](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L32)
+[agent/structures/structures.ts:35](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L35)
+
+___
+
+### greetings\_accepted\_count
+
+• **greetings\_accepted\_count**: `number`
+
+#### Defined in
+
+[agent/structures/structures.ts:40](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L40)
+
+___
+
+### greetings\_shown\_count
+
+• **greetings\_shown\_count**: `number`
+
+#### Defined in
+
+[agent/structures/structures.ts:39](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L39)
+
+___
+
+### page\_views\_count
+
+• **page\_views\_count**: `number`
+
+#### Defined in
+
+[agent/structures/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L38)
 
 ___
 
@@ -30,7 +63,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:33](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L33)
+[agent/structures/structures.ts:36](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L36)
 
 ___
 
@@ -40,4 +73,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:34](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L34)
+[agent/structures/structures.ts:37](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L37)

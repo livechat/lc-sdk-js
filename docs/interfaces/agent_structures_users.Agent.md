@@ -29,19 +29,15 @@
 
 • **avatar**: `string`
 
-#### Inherited from
-
-BaseUser.avatar
-
 #### Defined in
 
-[agent/structures/users.ts:10](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L10)
+[agent/structures/users.ts:14](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L14)
 
 ___
 
 ### email
 
-• **email**: `string`
+• `Optional` **email**: `string`
 
 #### Inherited from
 
@@ -49,13 +45,13 @@ BaseUser.email
 
 #### Defined in
 
-[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L6)
+[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L6)
 
 ___
 
 ### events\_seen\_up\_to
 
-• **events\_seen\_up\_to**: `string`
+• `Optional` **events\_seen\_up\_to**: `string`
 
 #### Inherited from
 
@@ -63,7 +59,7 @@ BaseUser.events\_seen\_up\_to
 
 #### Defined in
 
-[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L7)
+[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L7)
 
 ___
 
@@ -77,13 +73,13 @@ BaseUser.id
 
 #### Defined in
 
-[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L4)
+[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L4)
 
 ___
 
 ### name
 
-• **name**: `string`
+• `Optional` **name**: `string`
 
 #### Inherited from
 
@@ -91,13 +87,13 @@ BaseUser.name
 
 #### Defined in
 
-[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L5)
+[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L5)
 
 ___
 
 ### present
 
-• **present**: `boolean`
+• `Optional` **present**: `boolean`
 
 #### Inherited from
 
@@ -105,7 +101,7 @@ BaseUser.present
 
 #### Defined in
 
-[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L9)
+[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L9)
 
 ___
 
@@ -119,7 +115,7 @@ BaseUser.type
 
 #### Defined in
 
-[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L8)
+[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L8)
 
 ___
 
@@ -129,4 +125,4 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:14](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/users.ts#L14)
+[agent/structures/users.ts:13](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/users.ts#L13)

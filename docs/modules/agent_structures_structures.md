@@ -25,6 +25,7 @@
 - [CustomerParameters](../interfaces/agent_structures_structures.CustomerParameters.md)
 - [DateRangeFilter](../interfaces/agent_structures_structures.DateRangeFilter.md)
 - [Geolocation](../interfaces/agent_structures_structures.Geolocation.md)
+- [Highlights](../interfaces/agent_structures_structures.Highlights.md)
 - [InitialChat](../interfaces/agent_structures_structures.InitialChat.md)
 - [InitialThread](../interfaces/agent_structures_structures.InitialThread.md)
 - [LastEventPerType](../interfaces/agent_structures_structures.LastEventPerType.md)
@@ -66,7 +67,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L183)
+[agent/structures/structures.ts:190](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L190)
 
 ___
 
@@ -76,4 +77,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:181](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/agent/structures/structures.ts#L181)
+[agent/structures/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/125a327/src/agent/structures/structures.ts#L188)

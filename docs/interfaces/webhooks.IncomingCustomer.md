@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[webhooks/index.ts:154](https://github.com/livechat/lc-sdk-js/blob/a921f8a/src/webhooks/index.ts#L154)
+[webhooks/index.ts:155](https://github.com/livechat/lc-sdk-js/blob/125a327/src/webhooks/index.ts#L155)
