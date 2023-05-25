@@ -10,6 +10,7 @@
 
 - [ended\_at](agent_structures_structures.Visit.md#ended_at)
 - [geolocation](agent_structures_structures.Visit.md#geolocation)
+- [id](agent_structures_structures.Visit.md#id)
 - [ip](agent_structures_structures.Visit.md#ip)
 - [last\_pages](agent_structures_structures.Visit.md#last_pages)
 - [referrer](agent_structures_structures.Visit.md#referrer)
@@ -20,68 +21,78 @@
 
 ### ended\_at
 
-• **ended\_at**: `string`
+• `Optional` **ended\_at**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:23](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L23)
+[agent/structures/structures.ts:26](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L26)
 
 ___
 
 ### geolocation
 
-• **geolocation**: [`Geolocation`](agent_structures_structures.Geolocation.md)
+• `Optional` **geolocation**: [`Geolocation`](agent_structures_structures.Geolocation.md)
 
 #### Defined in
 
-[agent/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L27)
+[agent/structures/structures.ts:30](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L30)
+
+___
+
+### id
+
+• **id**: `number`
+
+#### Defined in
+
+[agent/structures/structures.ts:24](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L24)
 
 ___
 
 ### ip
 
-• **ip**: `string`
+• `Optional` **ip**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:25](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L25)
+[agent/structures/structures.ts:28](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L28)
 
 ___
 
 ### last\_pages
 
-• **last\_pages**: [`LastPage`](agent_structures_structures.LastPage.md)[]
+• `Optional` **last\_pages**: [`LastPage`](agent_structures_structures.LastPage.md)[]
 
 #### Defined in
 
-[agent/structures/structures.ts:28](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L28)
+[agent/structures/structures.ts:31](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L31)
 
 ___
 
 ### referrer
 
-• **referrer**: `string`
+• `Optional` **referrer**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:24](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L24)
+[agent/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L27)
 
 ___
 
 ### started\_at
 
-• **started\_at**: `string`
+• `Optional` **started\_at**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:22](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L22)
+[agent/structures/structures.ts:25](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L25)
 
 ___
 
 ### user\_agent
 
-• **user\_agent**: `string`
+• `Optional` **user\_agent**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:26](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L26)
+[agent/structures/structures.ts:29](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L29)

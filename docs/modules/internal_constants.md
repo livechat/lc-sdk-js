@@ -17,7 +17,7 @@
 
 #### Defined in
 
-[internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/constants.ts#L2)
+[internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/10347df/src/internal/constants.ts#L2)
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 #### Defined in
 
-[internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/internal/constants.ts#L1)
+[internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/10347df/src/internal/constants.ts#L1)

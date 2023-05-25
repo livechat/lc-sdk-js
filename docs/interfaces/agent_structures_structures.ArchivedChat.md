@@ -19,7 +19,6 @@
 - [is\_followed](agent_structures_structures.ArchivedChat.md#is_followed)
 - [properties](agent_structures_structures.ArchivedChat.md#properties)
 - [thread](agent_structures_structures.ArchivedChat.md#thread)
-- [threads](agent_structures_structures.ArchivedChat.md#threads)
 - [users](agent_structures_structures.ArchivedChat.md#users)
 
 ## Properties
@@ -34,7 +33,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L42)
+[agent/structures/structures.ts:48](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L48)
 
 ___
 
@@ -48,7 +47,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:38](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L38)
+[agent/structures/structures.ts:44](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L44)
 
 ___
 
@@ -62,7 +61,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L43)
+[agent/structures/structures.ts:49](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L49)
 
 ___
 
@@ -76,31 +75,21 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:41](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L41)
+[agent/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L47)
 
 ___
 
 ### thread
 
-• **thread**: [`ArchivedThread`](agent_structures_structures.ArchivedThread.md)
+• `Optional` **thread**: [`ArchivedThread`](agent_structures_structures.ArchivedThread.md)
+
+#### Overrides
+
+[Chat](agent_structures_structures.Chat.md).[thread](agent_structures_structures.Chat.md#thread)
 
 #### Defined in
 
-[agent/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L47)
-
-___
-
-### threads
-
-• **threads**: [`Thread`](agent_structures_structures.Thread.md)[]
-
-#### Inherited from
-
-[Chat](agent_structures_structures.Chat.md).[threads](agent_structures_structures.Chat.md#threads)
-
-#### Defined in
-
-[agent/structures/structures.ts:40](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L40)
+[agent/structures/structures.ts:53](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L53)
 
 ___
 
@@ -114,4 +103,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:39](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/structures.ts#L39)
+[agent/structures/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L45)

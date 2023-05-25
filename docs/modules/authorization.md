@@ -28,4 +28,4 @@
 
 #### Defined in
 
-[authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/authorization/index.ts#L7)
+[authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/10347df/src/authorization/index.ts#L7)

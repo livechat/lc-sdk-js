@@ -69,7 +69,7 @@ Informs that an agent has been approved.
 
 #### Defined in
 
-[agent/structures/pushes.ts:219](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L219)
+[agent/structures/pushes.ts:219](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L219)
 
 ___
 
@@ -81,7 +81,7 @@ Informs that an agent has been created.
 
 #### Defined in
 
-[agent/structures/pushes.ts:194](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L194)
+[agent/structures/pushes.ts:194](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L194)
 
 ___
 
@@ -93,7 +93,7 @@ Informs that an agent has been deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:199](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L199)
+[agent/structures/pushes.ts:199](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L199)
 
 ___
 
@@ -105,7 +105,7 @@ Informs that an Agent was disconnected. The payload contains the reason of Custo
 
 #### Defined in
 
-[agent/structures/pushes.ts:137](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L137)
+[agent/structures/pushes.ts:137](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L137)
 
 ___
 
@@ -117,7 +117,7 @@ Informs that an agent has been suspended.
 
 #### Defined in
 
-[agent/structures/pushes.ts:209](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L209)
+[agent/structures/pushes.ts:209](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L209)
 
 ___
 
@@ -129,7 +129,7 @@ Informs that an agent has been unsuspended.
 
 #### Defined in
 
-[agent/structures/pushes.ts:214](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L214)
+[agent/structures/pushes.ts:214](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L214)
 
 ___
 
@@ -141,7 +141,7 @@ Informs that an agent has been updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:204](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L204)
+[agent/structures/pushes.ts:204](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L204)
 
 ___
 
@@ -153,7 +153,7 @@ Informs that an auto access has been added.
 
 #### Defined in
 
-[agent/structures/pushes.ts:254](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L254)
+[agent/structures/pushes.ts:254](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L254)
 
 ___
 
@@ -165,7 +165,7 @@ Informs that an auto access has been deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:259](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L259)
+[agent/structures/pushes.ts:259](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L259)
 
 ___
 
@@ -177,7 +177,7 @@ Informs that an auto access has been updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:264](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L264)
+[agent/structures/pushes.ts:264](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L264)
 
 ___
 
@@ -189,7 +189,7 @@ Informs that a bot has been created.
 
 #### Defined in
 
-[agent/structures/pushes.ts:224](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L224)
+[agent/structures/pushes.ts:224](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L224)
 
 ___
 
@@ -201,7 +201,7 @@ Informs that a bot has been deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:234](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L234)
+[agent/structures/pushes.ts:234](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L234)
 
 ___
 
@@ -213,7 +213,7 @@ Informs that a bot has been updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:229](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L229)
+[agent/structures/pushes.ts:229](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L229)
 
 ___
 
@@ -225,7 +225,7 @@ Informs that the chat's access is updated. It contains full access of the chat.
 
 #### Defined in
 
-[agent/structures/pushes.ts:24](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L24)
+[agent/structures/pushes.ts:24](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L24)
 
 ___
 
@@ -237,7 +237,7 @@ Informs that a chat was deactivated by closing the currently open thread.
 
 #### Defined in
 
-[agent/structures/pushes.ts:19](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L19)
+[agent/structures/pushes.ts:19](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L19)
 
 ___
 
@@ -249,7 +249,7 @@ Informs about those chat properties that were deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:67](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L67)
+[agent/structures/pushes.ts:67](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L67)
 
 ___
 
@@ -261,7 +261,7 @@ Informs about those chat properties that were updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:62](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L62)
+[agent/structures/pushes.ts:62](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L62)
 
 ___
 
@@ -273,7 +273,7 @@ Informs that a chat was transferred to a different group or to an Agent.
 
 #### Defined in
 
-[agent/structures/pushes.ts:29](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L29)
+[agent/structures/pushes.ts:29](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L29)
 
 ___
 
@@ -286,7 +286,7 @@ where one app/integration needs to know that another one unfollowed the chat.
 
 #### Defined in
 
-[agent/structures/pushes.ts:164](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L164)
+[agent/structures/pushes.ts:164](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L164)
 
 ___
 
@@ -298,7 +298,7 @@ Informs that a Customer was banned for a specified number of days.
 
 #### Defined in
 
-[agent/structures/pushes.ts:122](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L122)
+[agent/structures/pushes.ts:122](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L122)
 
 ___
 
@@ -310,7 +310,7 @@ Informs that a new Customer registered.
 
 #### Defined in
 
-[agent/structures/pushes.ts:107](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L107)
+[agent/structures/pushes.ts:107](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L107)
 
 ___
 
@@ -322,7 +322,7 @@ Informs that a Customer left the tracked website.
 
 #### Defined in
 
-[agent/structures/pushes.ts:184](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L184)
+[agent/structures/pushes.ts:184](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L184)
 
 ___
 
@@ -334,7 +334,7 @@ Informs that a Customer moved to another page of the website.
 
 #### Defined in
 
-[agent/structures/pushes.ts:117](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L117)
+[agent/structures/pushes.ts:117](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L117)
 
 ___
 
@@ -346,7 +346,7 @@ Informs that a customer was unfollowed.
 
 #### Defined in
 
-[agent/structures/pushes.ts:189](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L189)
+[agent/structures/pushes.ts:189](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L189)
 
 ___
 
@@ -358,7 +358,7 @@ Informs that Customer's data was updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:112](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L112)
+[agent/structures/pushes.ts:112](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L112)
 
 ___
 
@@ -370,7 +370,7 @@ Informs that a Customer left the tracked website.
 
 #### Defined in
 
-[agent/structures/pushes.ts:127](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L127)
+[agent/structures/pushes.ts:127](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L127)
 
 ___
 
@@ -382,7 +382,7 @@ Informs that a Customer entered the tracked website.
 
 #### Defined in
 
-[agent/structures/pushes.ts:102](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L102)
+[agent/structures/pushes.ts:102](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L102)
 
 ___
 
@@ -394,7 +394,7 @@ Informs about those event properties that were deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:87](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L87)
+[agent/structures/pushes.ts:87](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L87)
 
 ___
 
@@ -406,7 +406,7 @@ Informs about those event properties that were updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:82](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L82)
+[agent/structures/pushes.ts:82](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L82)
 
 ___
 
@@ -418,7 +418,7 @@ Informs that an event was updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:51](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L51)
+[agent/structures/pushes.ts:51](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L51)
 
 ___
 
@@ -430,7 +430,7 @@ Informs that a user has seen events up to a specific time.
 
 #### Defined in
 
-[agent/structures/pushes.ts:153](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L153)
+[agent/structures/pushes.ts:153](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L153)
 
 ___
 
@@ -442,7 +442,7 @@ Informs that a group has been created.
 
 #### Defined in
 
-[agent/structures/pushes.ts:239](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L239)
+[agent/structures/pushes.ts:239](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L239)
 
 ___
 
@@ -454,7 +454,7 @@ Informs that a group has been deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:249](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L249)
+[agent/structures/pushes.ts:249](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L249)
 
 ___
 
@@ -466,7 +466,7 @@ Informs that a group has been updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:244](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L244)
+[agent/structures/pushes.ts:244](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L244)
 
 ___
 
@@ -479,7 +479,7 @@ If the chat was started with some initial events, the thread object contains the
 
 #### Defined in
 
-[agent/structures/pushes.ts:14](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L14)
+[agent/structures/pushes.ts:14](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L14)
 
 ___
 
@@ -491,7 +491,7 @@ Informs that a new or returning customer is available to the agent.
 
 #### Defined in
 
-[agent/structures/pushes.ts:179](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L179)
+[agent/structures/pushes.ts:179](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L179)
 
 ___
 
@@ -503,7 +503,7 @@ Informs about customers the agent should be aware of.
 
 #### Defined in
 
-[agent/structures/pushes.ts:174](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L174)
+[agent/structures/pushes.ts:174](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L174)
 
 ___
 
@@ -515,7 +515,7 @@ Informs about an incoming event sent to a chat.
 
 #### Defined in
 
-[agent/structures/pushes.ts:46](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L46)
+[agent/structures/pushes.ts:46](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L46)
 
 ___
 
@@ -527,7 +527,7 @@ Informs about messages sent via the multicast method or by the system.
 
 #### Defined in
 
-[agent/structures/pushes.ts:158](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L158)
+[agent/structures/pushes.ts:158](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L158)
 
 ___
 
@@ -540,7 +540,7 @@ as well as the chat it was sent in.
 
 #### Defined in
 
-[agent/structures/pushes.ts:57](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L57)
+[agent/structures/pushes.ts:57](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L57)
 
 ___
 
@@ -552,7 +552,7 @@ Informs about the message a Customer is currently typing. The push payload conta
 
 #### Defined in
 
-[agent/structures/pushes.ts:148](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L148)
+[agent/structures/pushes.ts:148](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L148)
 
 ___
 
@@ -565,7 +565,7 @@ The push payload contains the typing indicator object.
 
 #### Defined in
 
-[agent/structures/pushes.ts:143](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L143)
+[agent/structures/pushes.ts:143](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L143)
 
 ___
 
@@ -577,7 +577,7 @@ New positions and wait times for queued chats.
 
 #### Defined in
 
-[agent/structures/pushes.ts:169](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L169)
+[agent/structures/pushes.ts:169](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L169)
 
 ___
 
@@ -589,7 +589,7 @@ Informs that an Agent's or Bot Agent's status was changed.
 
 #### Defined in
 
-[agent/structures/pushes.ts:132](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L132)
+[agent/structures/pushes.ts:132](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L132)
 
 ___
 
@@ -601,7 +601,7 @@ Informs about those thread properties that were deleted.
 
 #### Defined in
 
-[agent/structures/pushes.ts:77](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L77)
+[agent/structures/pushes.ts:77](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L77)
 
 ___
 
@@ -613,7 +613,7 @@ Informs about those thread properties that were updated.
 
 #### Defined in
 
-[agent/structures/pushes.ts:72](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L72)
+[agent/structures/pushes.ts:72](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L72)
 
 ___
 
@@ -625,7 +625,7 @@ Informs that a chat thread was tagged.
 
 #### Defined in
 
-[agent/structures/pushes.ts:92](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L92)
+[agent/structures/pushes.ts:92](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L92)
 
 ___
 
@@ -637,7 +637,7 @@ Informs that a chat thread was untagged.
 
 #### Defined in
 
-[agent/structures/pushes.ts:97](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L97)
+[agent/structures/pushes.ts:97](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L97)
 
 ___
 
@@ -651,7 +651,7 @@ You can achieve that via the Send Event method.
 
 #### Defined in
 
-[agent/structures/pushes.ts:36](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L36)
+[agent/structures/pushes.ts:36](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L36)
 
 ___
 
@@ -663,4 +663,4 @@ Informs that a user (Customer or Agent) was removed from a chat.
 
 #### Defined in
 
-[agent/structures/pushes.ts:41](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/agent/structures/pushes.ts#L41)
+[agent/structures/pushes.ts:41](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/pushes.ts#L41)

@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/authorization/index.ts#L3)
+[authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/10347df/src/authorization/index.ts#L3)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/authorization/index.ts#L2)
+[authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/10347df/src/authorization/index.ts#L2)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/8462be9/src/authorization/index.ts#L4)
+[authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/10347df/src/authorization/index.ts#L4)
