@@ -27,6 +27,23 @@ All open versions of LiveChat API are available as git tags in lc-sdk-js. Howeve
 npm install --save @livechat/lc-sdk-js
 ```
 
+## Browser and Node.js compatibility
+
+Due to the absence of standard library WebSocket implementation in Node.js and presence of [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) class in browser environments,
+using the RTM API requires the developer to pass an appropriate WebSocket implementation to the constructor of the RTM clients:
+
+```javascript
+import { Agent, Customer } from "@livechat/lc-sdk-js";
+
+const agentAPI = new Agent.RTM(WebSocket);
+const customerAPI = new Customer.RTM(WebSocket, "organization id");
+```
+
+See the examples:
+
+* [browser](https://github.com/livechat/lc-sdk-js/blob/v3.4/examples/react-rtm-messages/src/ws.tsx) - here we use the [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+* [Node.js](https://github.com/livechat/lc-sdk-js/blob/v3.4/examples/node-rtm-messages/index.ts) - here we recommend the [ws](https://www.npmjs.com/package/ws) package
+
 ## Feedback
 
 If you find any bugs or have trouble implementing the code on your own, please create an issue or contact us [LiveChat for Developers](https://developers.livechatinc.com/).
