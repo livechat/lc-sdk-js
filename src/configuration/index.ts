@@ -11,6 +11,7 @@ import {
   Bot,
   BotFields,
   ChannelActivity,
+  CompanyDetails,
   CreateAgentResponse,
   CreateBotResponse,
   CreateGroupResponse,
@@ -561,5 +562,14 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async reactivateEmail(agentID: string): Promise<EmptyResponse> {
     return this.send("reactivate_email", { agent_id: agentID });
+  }
+
+  /**
+   * Updates company details in the license.
+   * @param companyDetails - company details to update
+   * @param enrich - if true, system will search for company's url or email domain to automatically fill empty fields
+   */
+  async updateCompanyDetails(companyDetails: CompanyDetails, enrich: boolean): Promise<EmptyResponse> {
+    return this.send("update_company_details", { ...companyDetails, enrich });
   }
 }

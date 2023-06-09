@@ -195,6 +195,25 @@ export interface Tag {
   created_at: string;
 }
 
+export interface CompanyDetails {
+  invoice_name?: string;
+  company?: string;
+  street?: string;
+  postal_code?: string;
+  city?: string;
+  country?: string;
+  nip?: string;
+  state?: string;
+  province?: string;
+  phone?: string;
+  url?: string;
+  invoice_email?: string;
+  company_size?: string;
+  chat_purpose?: string;
+  audience?: string;
+  industry?: string;
+}
+
 export interface GroupProperties {
   id: string;
   properties: Properties;
