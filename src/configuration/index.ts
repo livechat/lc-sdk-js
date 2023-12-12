@@ -263,9 +263,10 @@ export default class ConfigurationAPI extends WebAPI {
   /**
    * Creates a new Bot Template with specified parameters.
    * @param fields - bot template properties
+   * @param owner_client_id - clientID the bot template is assigned to
    */
-  async createBotTemplate(fields: BotTemplateFields): Promise<CreateBotTemplateResponse> {
-    return this.send("create_bot_template", fields || {});
+  async createBotTemplate(fields: BotTemplateFields, owner_client_id?: string): Promise<CreateBotTemplateResponse> {
+    return this.send("create_bot_template", { ...fields, owner_client_id });
   }
 
   /**
@@ -273,17 +274,15 @@ export default class ConfigurationAPI extends WebAPI {
    * @param id - ID of bot template to update
    * @param fields - properties to update
    * @param affect_existing_installations - if true, all bots created from this template will be affected
+   * @param owner_client_id - clientID the bot template is assigned to
    */
-  async updateBotTemplate({
-    id,
-    fields,
-    affect_existing_installations,
-  }: {
-    id: string;
-    fields: BotTemplateFields;
-    affect_existing_installations?: boolean;
-  }): Promise<EmptyResponse> {
-    return this.send("update_bot_template", { id, ...fields, affect_existing_installations });
+  async updateBotTemplate(
+    id: string,
+    fields: BotTemplateFields,
+    affect_existing_installations?: boolean,
+    owner_client_id?: string,
+  ): Promise<EmptyResponse> {
+    return this.send("update_bot_template", { id, ...fields, affect_existing_installations, owner_client_id });
   }
 
   /**
@@ -301,10 +300,11 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
-   * Lists all bot templates.
+   * Lists bot templates.
+   * @param owner_client_id - clientID the bot templates are assigned to
    */
-  async listBotTemplates(): Promise<BotTemplate[]> {
-    return this.send("list_bot_templates", {});
+  async listBotTemplates(owner_client_id?: string): Promise<BotTemplate[]> {
+    return this.send("list_bot_templates", { owner_client_id });
   }
 
   /**
