@@ -19,12 +19,29 @@ export interface CreateBotResponse {
   id: string;
 }
 
+export interface CreateBotTemplateResponse {
+  id: string;
+  secret: string;
+}
+
 export interface CreateGroupResponse {
   id: string;
 }
 
+export interface IssueBotTokenResponse {
+  token: string;
+}
+
 export interface RegisterWebhookResponse {
   id: string;
+}
+
+export interface ResetBotSecretResponse {
+  secret: string;
+}
+
+export interface ResetBotTemplateSecretResponse {
+  secret: string;
 }
 
 export interface AddAutoAccessResponse {

@@ -48,16 +48,31 @@ export interface BotFields {
   timezone?: string;
 }
 
+export interface BotTemplateFields {
+  name?: string;
+  avatar?: string;
+  default_group_priority?: GroupPriority;
+  job_title?: string;
+}
+
 export interface Bot {
   id: string;
   name?: string;
-  avatar_path?: string;
+  avatar?: string;
   default_group_priority?: GroupPriority;
   owner_client_id?: string;
   max_chats_count?: number;
   groups?: GroupConfig[];
   job_title?: string;
   work_scheduler?: WorkScheduler;
+}
+
+export interface BotTemplate {
+  id: string;
+  name?: string;
+  avatar?: string;
+  default_group_priority?: GroupPriority;
+  job_title?: string;
 }
 
 export enum GroupPriority {

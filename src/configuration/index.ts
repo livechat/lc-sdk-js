@@ -10,22 +10,28 @@ import {
   BatchResponse,
   Bot,
   BotFields,
+  BotTemplate,
+  BotTemplateFields,
   ChannelActivity,
   CompanyDetails,
   CreateAgentResponse,
   CreateBotResponse,
+  CreateBotTemplateResponse,
   CreateGroupResponse,
   EmptyResponse,
   GetLicenseIDResponse,
   GetOrganizationIDResponse,
   Group,
   GroupProperties,
+  IssueBotTokenResponse,
   PlanLimit,
   Properties,
   PropertiesConfig,
   PropertyConfig,
   RegisteredWebhook,
   RegisterWebhookResponse,
+  ResetBotSecretResponse,
+  ResetBotTemplateSecretResponse,
   Tag,
   UpdateAutoAccessRequest,
   WebAPIOptions,
@@ -204,6 +210,31 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
+   * Resets secret of Bot specified by id.
+   * @param id - ID of bot to reset secret
+   * @param owner_client_id - clientID the bot is assigned to
+   */
+  async resetBotSecret(id: string, owner_client_id?: string): Promise<ResetBotSecretResponse> {
+    return this.send("reset_bot_secret", { id, owner_client_id });
+  }
+
+  /**
+   * Issues authorization token for Bot.
+   * @param bot_id - ID of bot to issue token
+   * @param client_id - clientID the bot is assigned to
+   * @param bot_secret - bot secret
+   * @param organization_id - organization ID to issue token for
+   */
+  async issueBotToken(
+    bot_id: string,
+    client_id: string,
+    bot_secret: string,
+    organization_id: string,
+  ): Promise<IssueBotTokenResponse> {
+    return this.send("issue_bot_token", { bot_id, client_id, bot_secret, organization_id });
+  }
+
+  /**
    * Updates the properties of Bots specified by ids.
    * @param bots - bots to update
    */
@@ -227,6 +258,67 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async getBot(id: string, fields?: BotFields): Promise<Bot> {
     return this.send("get_bot", { id, ...fields });
+  }
+
+  /**
+   * Creates a new Bot Template with specified parameters.
+   * @param fields - bot template properties
+   */
+  async createBotTemplate(fields: BotTemplateFields): Promise<CreateBotTemplateResponse> {
+    return this.send("create_bot_template", fields || {});
+  }
+
+  /**
+   * Updates the properties of Bot Template specified by id.
+   * @param id - ID of bot template to update
+   * @param fields - properties to update
+   * @param affect_existing_installations - if true, all bots created from this template will be affected
+   */
+  async updateBotTemplate({
+    id,
+    fields,
+    affect_existing_installations,
+  }: {
+    id: string;
+    fields: BotTemplateFields;
+    affect_existing_installations?: boolean;
+  }): Promise<EmptyResponse> {
+    return this.send("update_bot_template", { id, ...fields, affect_existing_installations });
+  }
+
+  /**
+   * Deletes bot template specified by id.
+   * @param id - ID of bot template to delete
+   * @param owner_client_id - clientID the bot template is assigned to
+   * @param affect_existing_installations - if true, all bots created from this template will be affected
+   */
+  async deleteBotTemplate(
+    id: string,
+    owner_client_id?: string,
+    affect_existing_installations?: boolean,
+  ): Promise<EmptyResponse> {
+    return this.send("delete_bot_template", { id, owner_client_id, affect_existing_installations });
+  }
+
+  /**
+   * Lists all bot templates.
+   */
+  async listBotTemplates(): Promise<BotTemplate[]> {
+    return this.send("list_bot_templates", {});
+  }
+
+  /**
+   * Resets bot template secret specified by id.
+   * @param id - ID of bot template to reset secret
+   * @param owner_client_id - clientID the bot template is assigned to
+   * @param affect_existing_installations - if true, all bots created from this template will be affected
+   */
+  async resetBotTemplateSecret(
+    id: string,
+    owner_client_id?: string,
+    affect_existing_installations?: boolean,
+  ): Promise<ResetBotTemplateSecretResponse> {
+    return this.send("reset_bot_template_secret", { id, owner_client_id, affect_existing_installations });
   }
 
   /**
