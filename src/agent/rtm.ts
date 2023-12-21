@@ -79,9 +79,10 @@ export default class RTM extends RTMAPI {
 
   /**
    * Logs the Agent out.
+   * @param agent_id - specifies agent to be logged out. If empty, logs out the current agent.
    */
-  async logout(): Promise<EmptyResponse> {
-    return this.send("logout", {});
+  async logout(agent_id?: string): Promise<EmptyResponse> {
+    return this.send("logout", { agent_id });
   }
 
   /**
