@@ -304,8 +304,8 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async deleteBotTemplate(
     id: string,
-    owner_client_id?: string,
     affect_existing_installations?: boolean,
+    owner_client_id?: string,
   ): Promise<EmptyResponse> {
     return this.send("delete_bot_template", { id, affect_existing_installations, owner_client_id });
   }
@@ -321,15 +321,15 @@ export default class ConfigurationAPI extends WebAPI {
   /**
    * Resets bot template secret specified by id.
    * @param id - ID of bot template to reset secret
+   * @param affect_existing_installations - if true, new secret is set to for all existing bots based on this template
    * @param owner_client_id - clientID the bot template is assigned to
-   * @param affect_existing_installations - if true, all bots created from this template will be affected
    */
   async resetBotTemplateSecret(
     id: string,
-    owner_client_id?: string,
     affect_existing_installations?: boolean,
+    owner_client_id?: string,
   ): Promise<ResetBotTemplateSecretResponse> {
-    return this.send("reset_bot_template_secret", { id, owner_client_id, affect_existing_installations });
+    return this.send("reset_bot_template_secret", { id, affect_existing_installations, owner_client_id });
   }
 
   /**
