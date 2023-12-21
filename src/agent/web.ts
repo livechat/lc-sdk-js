@@ -432,11 +432,11 @@ export default class Web extends WebAPI {
     return this.send("list_routing_statuses", { filters: { group_ids } });
   }
 
-   /**
+  /**
    * Logs the Agent out.
    * @param agent_id - specifies agent to be logged out.
    */
-   async logout(agent_id: string): Promise<EmptyResponse> {
+  async logout(agent_id: string): Promise<EmptyResponse> {
     return this.send("logout", { agent_id });
   }
 }
