@@ -11,7 +11,8 @@ import {
   Bot,
   BotFields,
   BotTemplate,
-  BotTemplateFields,
+  BotTemplateFieldsCreate,
+  BotTemplateFieldsUpdate,
   ChannelActivity,
   CompanyDetails,
   CreateAgentResponse,
@@ -262,23 +263,32 @@ export default class ConfigurationAPI extends WebAPI {
 
   /**
    * Creates a new Bot Template with specified parameters.
+   * @param name - display name
    * @param fields - bot template properties
+   * @param affect_existing_installations - if true, bots based on this template will be created on all licenses
+   *    that have given application installed. Otherwise, only new installations will trigger bot creation
    * @param owner_client_id - clientID the bot template is assigned to
    */
-  async createBotTemplate(fields: BotTemplateFields, owner_client_id?: string): Promise<CreateBotTemplateResponse> {
-    return this.send("create_bot_template", { ...fields, owner_client_id });
+  async createBotTemplate(
+    name: string,
+    fields: BotTemplateFieldsCreate,
+    affect_existing_installations?: boolean,
+    owner_client_id?: string,
+  ): Promise<CreateBotTemplateResponse> {
+    return this.send("create_bot_template", { name, ...fields, affect_existing_installations, owner_client_id });
   }
 
   /**
-   * Updates the properties of Bot Template specified by id.
+   * Updates the properties of the Bot Template specified by id.
    * @param id - ID of bot template to update
-   * @param fields - properties to update
-   * @param affect_existing_installations - if true, all bots created from this template will be affected
+   * @param fields - bot template properties
+   * @param affect_existing_installations - if true, bots based on this template will be updated on all licenses
+   *    that have given application installed
    * @param owner_client_id - clientID the bot template is assigned to
    */
   async updateBotTemplate(
     id: string,
-    fields: BotTemplateFields,
+    fields: BotTemplateFieldsUpdate,
     affect_existing_installations?: boolean,
     owner_client_id?: string,
   ): Promise<EmptyResponse> {
@@ -286,17 +296,18 @@ export default class ConfigurationAPI extends WebAPI {
   }
 
   /**
-   * Deletes bot template specified by id.
+   * Deletes the bot template specified by id.
    * @param id - ID of bot template to delete
+   * @param affect_existing_installations - if true, bots based on this template will be deleted from all licenses
+   *    that have given application installed
    * @param owner_client_id - clientID the bot template is assigned to
-   * @param affect_existing_installations - if true, all bots created from this template will be affected
    */
   async deleteBotTemplate(
     id: string,
     owner_client_id?: string,
     affect_existing_installations?: boolean,
   ): Promise<EmptyResponse> {
-    return this.send("delete_bot_template", { id, owner_client_id, affect_existing_installations });
+    return this.send("delete_bot_template", { id, affect_existing_installations, owner_client_id });
   }
 
   /**
