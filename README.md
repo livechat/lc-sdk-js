@@ -19,14 +19,17 @@ Here is the relation between SDK versions and API versions:
 * lc-sdk-js 6.x.x -> LiveChat API 3.6
 * ...
 
-All open versions of LiveChat API are available as git tags in lc-sdk-js. However, a developer-preview version (not completed yet, may introduce breaking changes in the future) is available in lc-sdk-js as a git branch.
+All versions of LiveChat JS SDK are available on [npm](https://www.npmjs.com/package/@livechat/lc-sdk-js).
+Note that developer-preview version is not completed yet - it may introduce breaking changes in the future.
 
 ## Installation
 
 ### npm
 
+To install latest stable version use:
+
 ```bash
-npm install --save @livechat/lc-sdk-js
+npm install @livechat/lc-sdk-js
 ```
 
 ## Browser and Node.js compatibility
