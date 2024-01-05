@@ -82,7 +82,7 @@ export class RTMAPI {
   type: apiType;
   license?: number;
   socket?: any;
-  heartbeatInterval?: any;
+  heartbeatInterval?: number;
   requestsQueue: any = {};
   subscribedPushes: any = {};
   author_id?: string;
@@ -104,7 +104,10 @@ export class RTMAPI {
 
       this.socket = new this.webSocketClass(wsURL);
       this.socket.onopen = () => {
-        this.heartbeatInterval = setInterval(() => this.send("ping", undefined), 10000);
+        this.heartbeatInterval = setInterval(
+          () => this.send("ping", undefined).catch(() => clearInterval(this.heartbeatInterval)),
+          10000,
+        );
         resolve();
       };
 
@@ -146,7 +149,7 @@ export class RTMAPI {
 
   send(action: string, payload: any): Promise<any> {
     if (this.socket?.readyState !== 1) {
-      return Promise.reject(new Error("socket not connected"));
+      return Promise.reject(new Error("Socket not connected"));
     }
     const request_id = v4();
     const req: RTMRequest = {
