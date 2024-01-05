@@ -85,6 +85,7 @@ export class RTMAPI {
   APIURL: string;
   version: string;
   type: apiType;
+  has_error: boolean;
   organization_id?: string;
   socket?: any;
   heartbeatInterval?: number;
@@ -101,6 +102,7 @@ export class RTMAPI {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
+    this.has_error = false;
 
     if (organization_id) {
       this.organization_id = organization_id;
@@ -109,6 +111,8 @@ export class RTMAPI {
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
+      this.has_error = false;
+
       const qs = new URLSearchParams({});
       if (this.organization_id) {
         qs.append("organization_id", this.organization_id);
@@ -125,7 +129,7 @@ export class RTMAPI {
         resolve();
       };
 
-      this.socket.onmessage = (msg: any) => {
+      this.socket.onmessage = (msg: MessageEvent) => {
         let parsedMessage;
         try {
           parsedMessage = JSON.parse(msg.data.toString());
@@ -143,7 +147,17 @@ export class RTMAPI {
         }
       };
 
-      this.socket.onerror = reject;
+      this.socket.onclose = (event: CloseEvent) => {
+        if (!this.has_error) {
+          return;
+        }
+
+        reject(new Error(`Socket closed after error with code: ${event.code} (reason: ${event.reason})`));
+      };
+
+      this.socket.onerror = () => {
+        this.has_error = true;
+      };
     });
   }
 
