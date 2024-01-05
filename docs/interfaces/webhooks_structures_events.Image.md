@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[webhooks/structures/events.ts:98](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L98)
+[webhooks/structures/events.ts:98](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L98)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:94](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L94)
+[webhooks/structures/events.ts:94](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L94)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:97](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L97)
+[webhooks/structures/events.ts:97](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L97)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:92](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L92)
+[webhooks/structures/events.ts:92](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L92)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:95](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L95)
+[webhooks/structures/events.ts:95](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L95)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:93](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L93)
+[webhooks/structures/events.ts:93](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L93)
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:96](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/webhooks/structures/events.ts#L96)
+[webhooks/structures/events.ts:96](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/webhooks/structures/events.ts#L96)

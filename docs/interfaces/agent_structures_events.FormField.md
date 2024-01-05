@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[agent/structures/events.ts:39](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/events.ts#L39)
+[agent/structures/events.ts:39](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/agent/structures/events.ts#L39)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:40](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/events.ts#L40)
+[agent/structures/events.ts:40](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/agent/structures/events.ts#L40)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:37](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/events.ts#L37)
+[agent/structures/events.ts:37](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/agent/structures/events.ts#L37)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:38](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/events.ts#L38)
+[agent/structures/events.ts:38](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/agent/structures/events.ts#L38)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:36](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/agent/structures/events.ts#L36)
+[agent/structures/events.ts:36](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/agent/structures/events.ts#L36)

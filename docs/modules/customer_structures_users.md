@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[customer/structures/users.ts:21](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/users.ts#L21)
+[customer/structures/users.ts:21](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/users.ts#L21)

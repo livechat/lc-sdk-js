@@ -15,9 +15,14 @@
 - [BatchResponse](configuration_structures.md#batchresponse)
 - [Bot](configuration_structures.md#bot)
 - [BotFields](configuration_structures.md#botfields)
+- [BotTemplate](configuration_structures.md#bottemplate)
+- [BotTemplateFieldsCreate](configuration_structures.md#bottemplatefieldscreate)
+- [BotTemplateFieldsUpdate](configuration_structures.md#bottemplatefieldsupdate)
 - [ChannelActivity](configuration_structures.md#channelactivity)
+- [CompanyDetails](configuration_structures.md#companydetails)
 - [CreateAgentResponse](configuration_structures.md#createagentresponse)
 - [CreateBotResponse](configuration_structures.md#createbotresponse)
+- [CreateBotTemplateResponse](configuration_structures.md#createbottemplateresponse)
 - [CreateGroupResponse](configuration_structures.md#creategroupresponse)
 - [EmptyResponse](configuration_structures.md#emptyresponse)
 - [ErrorResponse](configuration_structures.md#errorresponse)
@@ -28,6 +33,7 @@
 - [GroupConfig](configuration_structures.md#groupconfig)
 - [GroupPriority](configuration_structures.md#grouppriority)
 - [GroupProperties](configuration_structures.md#groupproperties)
+- [IssueBotTokenResponse](configuration_structures.md#issuebottokenresponse)
 - [LocationAccess](configuration_structures.md#locationaccess)
 - [PlanLimit](configuration_structures.md#planlimit)
 - [Properties](configuration_structures.md#properties)
@@ -36,6 +42,8 @@
 - [PropertyNamespace](configuration_structures.md#propertynamespace)
 - [RegisterWebhookResponse](configuration_structures.md#registerwebhookresponse)
 - [RegisteredWebhook](configuration_structures.md#registeredwebhook)
+- [ResetBotSecretResponse](configuration_structures.md#resetbotsecretresponse)
+- [ResetBotTemplateSecretResponse](configuration_structures.md#resetbottemplatesecretresponse)
 - [RoutingStatus](configuration_structures.md#routingstatus)
 - [Schedule](configuration_structures.md#schedule)
 - [Tag](configuration_structures.md#tag)
@@ -103,9 +111,33 @@ Re-exports [BotFields](../interfaces/configuration_structures_structures.BotFiel
 
 ___
 
+### BotTemplate
+
+Re-exports [BotTemplate](../interfaces/configuration_structures_structures.BotTemplate.md)
+
+___
+
+### BotTemplateFieldsCreate
+
+Re-exports [BotTemplateFieldsCreate](../interfaces/configuration_structures_structures.BotTemplateFieldsCreate.md)
+
+___
+
+### BotTemplateFieldsUpdate
+
+Re-exports [BotTemplateFieldsUpdate](../interfaces/configuration_structures_structures.BotTemplateFieldsUpdate.md)
+
+___
+
 ### ChannelActivity
 
 Re-exports [ChannelActivity](../interfaces/configuration_structures_structures.ChannelActivity.md)
+
+___
+
+### CompanyDetails
+
+Re-exports [CompanyDetails](../interfaces/configuration_structures_structures.CompanyDetails.md)
 
 ___
 
@@ -118,6 +150,12 @@ ___
 ### CreateBotResponse
 
 Re-exports [CreateBotResponse](../interfaces/configuration_structures_responses.CreateBotResponse.md)
+
+___
+
+### CreateBotTemplateResponse
+
+Re-exports [CreateBotTemplateResponse](../interfaces/configuration_structures_responses.CreateBotTemplateResponse.md)
 
 ___
 
@@ -181,6 +219,12 @@ Re-exports [GroupProperties](../interfaces/configuration_structures_structures.G
 
 ___
 
+### IssueBotTokenResponse
+
+Re-exports [IssueBotTokenResponse](../interfaces/configuration_structures_responses.IssueBotTokenResponse.md)
+
+___
+
 ### LocationAccess
 
 Re-exports [LocationAccess](../interfaces/configuration_structures_structures.LocationAccess.md)
@@ -226,6 +270,18 @@ ___
 ### RegisteredWebhook
 
 Re-exports [RegisteredWebhook](../interfaces/configuration_structures_structures.RegisteredWebhook.md)
+
+___
+
+### ResetBotSecretResponse
+
+Re-exports [ResetBotSecretResponse](../interfaces/configuration_structures_responses.ResetBotSecretResponse.md)
+
+___
+
+### ResetBotTemplateSecretResponse
+
+Re-exports [ResetBotTemplateSecretResponse](../interfaces/configuration_structures_responses.ResetBotTemplateSecretResponse.md)
 
 ___
 

@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[customer/structures/responses.ts:25](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L25)
+[customer/structures/responses.ts:25](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/responses.ts#L25)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:21](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L21)
+[customer/structures/responses.ts:21](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/responses.ts#L21)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:26](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L26)
+[customer/structures/responses.ts:26](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/responses.ts#L26)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:24](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L24)
+[customer/structures/responses.ts:24](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/responses.ts#L24)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:23](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L23)
+[customer/structures/responses.ts:23](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/responses.ts#L23)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:22](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/customer/structures/responses.ts#L22)
+[customer/structures/responses.ts:22](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/responses.ts#L22)

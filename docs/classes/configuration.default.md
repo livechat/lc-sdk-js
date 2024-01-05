@@ -41,11 +41,13 @@
 - [checkProductLimitsForPlan](configuration.default.md#checkproductlimitsforplan)
 - [createAgent](configuration.default.md#createagent)
 - [createBot](configuration.default.md#createbot)
+- [createBotTemplate](configuration.default.md#createbottemplate)
 - [createGroup](configuration.default.md#creategroup)
 - [createTag](configuration.default.md#createtag)
 - [deleteAgent](configuration.default.md#deleteagent)
 - [deleteAutoAccess](configuration.default.md#deleteautoaccess)
 - [deleteBot](configuration.default.md#deletebot)
+- [deleteBotTemplate](configuration.default.md#deletebottemplate)
 - [deleteGroup](configuration.default.md#deletegroup)
 - [deleteGroupProperties](configuration.default.md#deletegroupproperties)
 - [deleteLicenseProperties](configuration.default.md#deletelicenseproperties)
@@ -58,8 +60,10 @@
 - [getLicenseID](configuration.default.md#getlicenseid)
 - [getLicenseWebhooksState](configuration.default.md#getlicensewebhooksstate)
 - [getOrganizationID](configuration.default.md#getorganizationid)
+- [issueBotToken](configuration.default.md#issuebottoken)
 - [listAgents](configuration.default.md#listagents)
 - [listAutoAccesses](configuration.default.md#listautoaccesses)
+- [listBotTemplates](configuration.default.md#listbottemplates)
 - [listBots](configuration.default.md#listbots)
 - [listChannels](configuration.default.md#listchannels)
 - [listGroups](configuration.default.md#listgroups)
@@ -74,6 +78,8 @@
 - [registerProperty](configuration.default.md#registerproperty)
 - [registerWebhook](configuration.default.md#registerwebhook)
 - [requestAgentUnsuspension](configuration.default.md#requestagentunsuspension)
+- [resetBotSecret](configuration.default.md#resetbotsecret)
+- [resetBotTemplateSecret](configuration.default.md#resetbottemplatesecret)
 - [send](configuration.default.md#send)
 - [setAuthorId](configuration.default.md#setauthorid)
 - [suspendAgent](configuration.default.md#suspendagent)
@@ -83,6 +89,8 @@
 - [updateAgent](configuration.default.md#updateagent)
 - [updateAutoAccess](configuration.default.md#updateautoaccess)
 - [updateBot](configuration.default.md#updatebot)
+- [updateBotTemplate](configuration.default.md#updatebottemplate)
+- [updateCompanyDetails](configuration.default.md#updatecompanydetails)
 - [updateGroup](configuration.default.md#updategroup)
 - [updateGroupProperties](configuration.default.md#updategroupproperties)
 - [updateLicenseProperties](configuration.default.md#updatelicenseproperties)
@@ -108,7 +116,7 @@
 
 #### Defined in
 
-[configuration/index.ts:37](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L37)
+[configuration/index.ts:45](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L45)
 
 ## Properties
 
@@ -122,7 +130,7 @@
 
 #### Defined in
 
-[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L13)
+[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L13)
 
 ___
 
@@ -136,7 +144,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L15)
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L15)
 
 ___
 
@@ -150,7 +158,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:27](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L27)
+[internal/index.ts:27](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L27)
 
 ___
 
@@ -164,7 +172,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L28)
+[internal/index.ts:28](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L28)
 
 ___
 
@@ -178,7 +186,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L29)
+[internal/index.ts:29](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L29)
 
 ___
 
@@ -192,7 +200,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L14)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L14)
 
 ## Methods
 
@@ -214,7 +222,7 @@ Creates an auto access data structure, which is a set of conditions for the trac
 
 #### Defined in
 
-[configuration/index.ts:452](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L452)
+[configuration/index.ts:556](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L556)
 
 ___
 
@@ -236,7 +244,7 @@ Approves an Agent thus allowing the Agent to use the application.
 
 #### Defined in
 
-[configuration/index.ts:152](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L152)
+[configuration/index.ts:160](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L160)
 
 ___
 
@@ -258,7 +266,7 @@ Approves Agents thus allowing the Agents to use the application.
 
 #### Defined in
 
-[configuration/index.ts:160](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L160)
+[configuration/index.ts:168](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L168)
 
 ___
 
@@ -280,7 +288,7 @@ Creates new Agents with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:54](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L54)
+[configuration/index.ts:62](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L62)
 
 ___
 
@@ -302,7 +310,7 @@ Creates new Bots with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:176](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L176)
+[configuration/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L184)
 
 ___
 
@@ -324,7 +332,7 @@ Deletes Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:105](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L105)
+[configuration/index.ts:113](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L113)
 
 ___
 
@@ -346,7 +354,7 @@ Deletes Bots specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L192)
+[configuration/index.ts:200](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L200)
 
 ___
 
@@ -368,7 +376,7 @@ Suspends Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:121](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L121)
+[configuration/index.ts:129](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L129)
 
 ___
 
@@ -390,7 +398,7 @@ Unsuspends Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:137](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L137)
+[configuration/index.ts:145](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L145)
 
 ___
 
@@ -412,7 +420,7 @@ Updates the properties of Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L89)
+[configuration/index.ts:97](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L97)
 
 ___
 
@@ -434,7 +442,7 @@ Updates the properties of Bots specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:209](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L209)
+[configuration/index.ts:242](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L242)
 
 ___
 
@@ -456,7 +464,7 @@ Compares your organization's current resources with a given plan and returns tho
 
 #### Defined in
 
-[configuration/index.ts:503](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L503)
+[configuration/index.ts:607](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L607)
 
 ___
 
@@ -479,7 +487,7 @@ Creates a new Agent with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:46](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L46)
+[configuration/index.ts:54](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L54)
 
 ___
 
@@ -501,7 +509,32 @@ Creates a new Bot with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:168](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L168)
+[configuration/index.ts:176](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L176)
+
+___
+
+### createBotTemplate
+
+▸ **createBotTemplate**(`name`, `fields`, `affect_existing_installations?`, `owner_client_id?`): `Promise`<[`CreateBotTemplateResponse`](../interfaces/configuration_structures_responses.CreateBotTemplateResponse.md)\>
+
+Creates a new Bot Template with specified parameters.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | `string` | display name |
+| `fields` | [`BotTemplateFieldsCreate`](../interfaces/configuration_structures_structures.BotTemplateFieldsCreate.md) | bot template properties |
+| `affect_existing_installations?` | `boolean` | if true, bots based on this template will be created on all licenses that have given application installed. Otherwise, only new installations will trigger bot creation |
+| `owner_client_id?` | `string` | clientID the bot template is assigned to |
+
+#### Returns
+
+`Promise`<[`CreateBotTemplateResponse`](../interfaces/configuration_structures_responses.CreateBotTemplateResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:272](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L272)
 
 ___
 
@@ -525,7 +558,7 @@ Creates new group.
 
 #### Defined in
 
-[configuration/index.ts:237](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L237)
+[configuration/index.ts:341](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L341)
 
 ___
 
@@ -548,7 +581,7 @@ Creates a new tag.
 
 #### Defined in
 
-[configuration/index.ts:519](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L519)
+[configuration/index.ts:623](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L623)
 
 ___
 
@@ -570,7 +603,7 @@ Deletes an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:97](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L97)
+[configuration/index.ts:105](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L105)
 
 ___
 
@@ -592,7 +625,7 @@ Deletes an existing auto access data structure specified by its ID.
 
 #### Defined in
 
-[configuration/index.ts:467](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L467)
+[configuration/index.ts:571](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L571)
 
 ___
 
@@ -614,7 +647,31 @@ Deletes bot specified by id.
 
 #### Defined in
 
-[configuration/index.ts:184](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L184)
+[configuration/index.ts:192](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L192)
+
+___
+
+### deleteBotTemplate
+
+▸ **deleteBotTemplate**(`id`, `affect_existing_installations?`, `owner_client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
+
+Deletes the bot template specified by id.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | ID of bot template to delete |
+| `affect_existing_installations?` | `boolean` | if true, bots based on this template will be deleted from all licenses that have given application installed |
+| `owner_client_id?` | `string` | clientID the bot template is assigned to |
+
+#### Returns
+
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:305](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L305)
 
 ___
 
@@ -636,7 +693,7 @@ Deletes group specified by id.
 
 #### Defined in
 
-[configuration/index.ts:274](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L274)
+[configuration/index.ts:378](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L378)
 
 ___
 
@@ -659,7 +716,7 @@ Deletes the properties set within a group.
 
 #### Defined in
 
-[configuration/index.ts:383](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L383)
+[configuration/index.ts:487](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L487)
 
 ___
 
@@ -681,7 +738,7 @@ Deletes the properties set within a license.
 
 #### Defined in
 
-[configuration/index.ts:362](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L362)
+[configuration/index.ts:466](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L466)
 
 ___
 
@@ -703,7 +760,7 @@ Deletes an existing tag.
 
 #### Defined in
 
-[configuration/index.ts:527](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L527)
+[configuration/index.ts:631](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L631)
 
 ___
 
@@ -725,7 +782,7 @@ Disables license webhooks for authorization token's clientID
 
 #### Defined in
 
-[configuration/index.ts:436](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L436)
+[configuration/index.ts:540](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L540)
 
 ___
 
@@ -747,7 +804,7 @@ Enables license webhooks for authorization token's clientID
 
 #### Defined in
 
-[configuration/index.ts:428](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L428)
+[configuration/index.ts:532](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L532)
 
 ___
 
@@ -770,7 +827,7 @@ It returns the info about an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:63](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L63)
+[configuration/index.ts:71](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L71)
 
 ___
 
@@ -793,7 +850,7 @@ Gets info about Bot.
 
 #### Defined in
 
-[configuration/index.ts:227](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L227)
+[configuration/index.ts:260](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L260)
 
 ___
 
@@ -816,7 +873,7 @@ Returns details about a group specified by its id.
 
 #### Defined in
 
-[configuration/index.ts:291](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L291)
+[configuration/index.ts:395](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L395)
 
 ___
 
@@ -838,7 +895,7 @@ Returns license ID for given organizationID.
 
 #### Defined in
 
-[configuration/index.ts:495](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L495)
+[configuration/index.ts:599](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L599)
 
 ___
 
@@ -860,7 +917,7 @@ Gets license webhooks' state for authorization token's clientID
 
 #### Defined in
 
-[configuration/index.ts:444](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L444)
+[configuration/index.ts:548](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L548)
 
 ___
 
@@ -882,7 +939,32 @@ Returns organization ID for given license ID.
 
 #### Defined in
 
-[configuration/index.ts:487](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L487)
+[configuration/index.ts:591](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L591)
+
+___
+
+### issueBotToken
+
+▸ **issueBotToken**(`bot_id`, `client_id`, `bot_secret`, `organization_id`): `Promise`<[`IssueBotTokenResponse`](../interfaces/configuration_structures_responses.IssueBotTokenResponse.md)\>
+
+Issues authorization token for Bot.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `bot_id` | `string` | ID of bot to issue token |
+| `client_id` | `string` | clientID the bot is assigned to |
+| `bot_secret` | `string` | bot secret |
+| `organization_id` | `string` | organization ID to issue token for |
+
+#### Returns
+
+`Promise`<[`IssueBotTokenResponse`](../interfaces/configuration_structures_responses.IssueBotTokenResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:229](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L229)
 
 ___
 
@@ -905,7 +987,7 @@ Returns all Agents within a license.
 
 #### Defined in
 
-[configuration/index.ts:72](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L72)
+[configuration/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L80)
 
 ___
 
@@ -921,7 +1003,29 @@ Returns all existing auto access data structures.
 
 #### Defined in
 
-[configuration/index.ts:459](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L459)
+[configuration/index.ts:563](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L563)
+
+___
+
+### listBotTemplates
+
+▸ **listBotTemplates**(`owner_client_id?`): `Promise`<[`BotTemplate`](../interfaces/configuration_structures_structures.BotTemplate.md)[]\>
+
+Lists bot templates.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `owner_client_id?` | `string` | clientID the bot templates are assigned to |
+
+#### Returns
+
+`Promise`<[`BotTemplate`](../interfaces/configuration_structures_structures.BotTemplate.md)[]\>
+
+#### Defined in
+
+[configuration/index.ts:317](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L317)
 
 ___
 
@@ -944,7 +1048,7 @@ Lists all bots within license.
 
 #### Defined in
 
-[configuration/index.ts:218](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L218)
+[configuration/index.ts:251](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L251)
 
 ___
 
@@ -960,7 +1064,7 @@ Returns the summary of communication channels for your LiveChat product.
 
 #### Defined in
 
-[configuration/index.ts:510](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L510)
+[configuration/index.ts:614](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L614)
 
 ___
 
@@ -982,7 +1086,7 @@ Lists all existing groups.
 
 #### Defined in
 
-[configuration/index.ts:282](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L282)
+[configuration/index.ts:386](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L386)
 
 ___
 
@@ -1006,7 +1110,7 @@ Lists groups' properties
 
 #### Defined in
 
-[configuration/index.ts:554](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L554)
+[configuration/index.ts:658](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L658)
 
 ___
 
@@ -1029,7 +1133,7 @@ Returns the properties set within a license.
 
 #### Defined in
 
-[configuration/index.ts:351](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L351)
+[configuration/index.ts:455](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L455)
 
 ___
 
@@ -1051,7 +1155,7 @@ Lists properties for given client_id.
 
 #### Defined in
 
-[configuration/index.ts:334](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L334)
+[configuration/index.ts:438](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L438)
 
 ___
 
@@ -1073,7 +1177,7 @@ Returns tags assigned to requested groups.
 
 #### Defined in
 
-[configuration/index.ts:535](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L535)
+[configuration/index.ts:639](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L639)
 
 ___
 
@@ -1095,7 +1199,7 @@ Lists webhooks available in given API version
 
 #### Defined in
 
-[configuration/index.ts:420](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L420)
+[configuration/index.ts:524](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L524)
 
 ___
 
@@ -1117,7 +1221,7 @@ Lists registered webhooks.
 
 #### Defined in
 
-[configuration/index.ts:403](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L403)
+[configuration/index.ts:507](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L507)
 
 ___
 
@@ -1142,7 +1246,7 @@ Publishes private property.
 
 #### Defined in
 
-[configuration/index.ts:319](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L319)
+[configuration/index.ts:423](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L423)
 
 ___
 
@@ -1164,7 +1268,7 @@ Reactivates bounced email
 
 #### Defined in
 
-[configuration/index.ts:562](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L562)
+[configuration/index.ts:666](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L666)
 
 ___
 
@@ -1186,7 +1290,7 @@ Registers private property.
 
 #### Defined in
 
-[configuration/index.ts:299](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L299)
+[configuration/index.ts:403](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L403)
 
 ___
 
@@ -1209,7 +1313,7 @@ Registers webhook on a license.
 
 #### Defined in
 
-[configuration/index.ts:395](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L395)
+[configuration/index.ts:499](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L499)
 
 ___
 
@@ -1225,7 +1329,54 @@ A suspended Agent can send emails to license owners and vice owners with an unsu
 
 #### Defined in
 
-[configuration/index.ts:144](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L144)
+[configuration/index.ts:152](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L152)
+
+___
+
+### resetBotSecret
+
+▸ **resetBotSecret**(`id`, `owner_client_id?`): `Promise`<[`ResetBotSecretResponse`](../interfaces/configuration_structures_responses.ResetBotSecretResponse.md)\>
+
+Resets secret of Bot specified by id.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | ID of bot to reset secret |
+| `owner_client_id?` | `string` | clientID the bot is assigned to |
+
+#### Returns
+
+`Promise`<[`ResetBotSecretResponse`](../interfaces/configuration_structures_responses.ResetBotSecretResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:218](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L218)
+
+___
+
+### resetBotTemplateSecret
+
+▸ **resetBotTemplateSecret**(`id`, `affect_existing_installations?`, `owner_client_id?`): `Promise`<[`ResetBotTemplateSecretResponse`](../interfaces/configuration_structures_responses.ResetBotTemplateSecretResponse.md)\>
+
+Resets bot template secret specified by id.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | ID of bot template to reset secret |
+| `affect_existing_installations?` | `boolean` | if true, new secret is set to for all existing bots based on this template |
+| `owner_client_id?` | `string` | clientID the bot template is assigned to |
+
+#### Returns
+
+`Promise`<[`ResetBotTemplateSecretResponse`](../interfaces/configuration_structures_responses.ResetBotTemplateSecretResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:327](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L327)
 
 ___
 
@@ -1256,7 +1407,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:36](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L36)
+[internal/index.ts:36](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L36)
 
 ___
 
@@ -1280,7 +1431,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/internal/index.ts#L79)
+[internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/internal/index.ts#L79)
 
 ___
 
@@ -1302,7 +1453,7 @@ Suspends an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:113](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L113)
+[configuration/index.ts:121](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L121)
 
 ___
 
@@ -1325,7 +1476,7 @@ Unregisters private property.
 
 #### Defined in
 
-[configuration/index.ts:308](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L308)
+[configuration/index.ts:412](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L412)
 
 ___
 
@@ -1348,7 +1499,7 @@ Removes webhook from license.
 
 #### Defined in
 
-[configuration/index.ts:412](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L412)
+[configuration/index.ts:516](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L516)
 
 ___
 
@@ -1370,7 +1521,7 @@ Unsuspends an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:129](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L129)
+[configuration/index.ts:137](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L137)
 
 ___
 
@@ -1393,7 +1544,7 @@ Updates the properties of an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L81)
+[configuration/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L89)
 
 ___
 
@@ -1416,7 +1567,7 @@ Updates an existing auto access. Only specified fields are updated (overwritten)
 
 #### Defined in
 
-[configuration/index.ts:476](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L476)
+[configuration/index.ts:580](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L580)
 
 ___
 
@@ -1439,7 +1590,55 @@ Updates the properties of Bot specified by id.
 
 #### Defined in
 
-[configuration/index.ts:201](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L201)
+[configuration/index.ts:209](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L209)
+
+___
+
+### updateBotTemplate
+
+▸ **updateBotTemplate**(`id`, `fields`, `affect_existing_installations?`, `owner_client_id?`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
+
+Updates the properties of the Bot Template specified by id.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `id` | `string` | ID of bot template to update |
+| `fields` | [`BotTemplateFieldsUpdate`](../interfaces/configuration_structures_structures.BotTemplateFieldsUpdate.md) | bot template properties |
+| `affect_existing_installations?` | `boolean` | if true, bots based on this template will be updated on all licenses that have given application installed |
+| `owner_client_id?` | `string` | clientID the bot template is assigned to |
+
+#### Returns
+
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:289](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L289)
+
+___
+
+### updateCompanyDetails
+
+▸ **updateCompanyDetails**(`companyDetails`, `enrich`): `Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
+
+Updates company details in the license.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `companyDetails` | [`CompanyDetails`](../interfaces/configuration_structures_structures.CompanyDetails.md) | company details to update |
+| `enrich` | `boolean` | if true, system will search for company's url or email domain to automatically fill empty fields |
+
+#### Returns
+
+`Promise`<[`EmptyResponse`](../interfaces/configuration_structures_responses.EmptyResponse.md)\>
+
+#### Defined in
+
+[configuration/index.ts:675](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L675)
 
 ___
 
@@ -1464,7 +1663,7 @@ Updates an existing group.
 
 #### Defined in
 
-[configuration/index.ts:256](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L256)
+[configuration/index.ts:360](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L360)
 
 ___
 
@@ -1487,7 +1686,7 @@ Updates a property value within a group as the property location. This operation
 
 #### Defined in
 
-[configuration/index.ts:371](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L371)
+[configuration/index.ts:475](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L475)
 
 ___
 
@@ -1509,7 +1708,7 @@ Updates a property value within a license. This operation doesn't overwrite the 
 
 #### Defined in
 
-[configuration/index.ts:342](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L342)
+[configuration/index.ts:446](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L446)
 
 ___
 
@@ -1532,4 +1731,4 @@ Updates an existing tag.
 
 #### Defined in
 
-[configuration/index.ts:544](https://github.com/livechat/lc-sdk-js/blob/a63b0a6/src/configuration/index.ts#L544)
+[configuration/index.ts:648](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/configuration/index.ts#L648)
