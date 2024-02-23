@@ -17,7 +17,7 @@ export interface CreateAgentResponse {
 
 export interface CreateBotResponse {
   id: string;
-   secret: string;
+  secret: string;
 }
 
 export interface CreateBotTemplateResponse {
