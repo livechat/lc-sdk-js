@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[webhooks/index.ts:118](https://github.com/livechat/lc-sdk-js/blob/10347df/src/webhooks/index.ts#L118)
+[webhooks/index.ts:118](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/webhooks/index.ts#L118)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:120](https://github.com/livechat/lc-sdk-js/blob/10347df/src/webhooks/index.ts#L120)
+[webhooks/index.ts:120](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/webhooks/index.ts#L120)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:119](https://github.com/livechat/lc-sdk-js/blob/10347df/src/webhooks/index.ts#L119)
+[webhooks/index.ts:119](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/webhooks/index.ts#L119)

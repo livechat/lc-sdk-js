@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[agent/structures/filters.ts:18](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L18)
+[agent/structures/filters.ts:18](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L18)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:19](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L19)
+[agent/structures/filters.ts:19](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L19)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:14](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L14)
+[agent/structures/filters.ts:14](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L14)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:20](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L20)
+[agent/structures/filters.ts:20](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L20)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:15](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L15)
+[agent/structures/filters.ts:15](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L15)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:16](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L16)
+[agent/structures/filters.ts:16](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L16)
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:17](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/filters.ts#L17)
+[agent/structures/filters.ts:17](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/filters.ts#L17)

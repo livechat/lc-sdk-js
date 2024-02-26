@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[webhooks/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/10347df/src/webhooks/structures/structures.ts#L27)
+[webhooks/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/webhooks/structures/structures.ts#L27)

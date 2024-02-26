@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:234](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L234)
+[agent/structures/structures.ts:234](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/structures.ts#L234)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/10347df/src/agent/structures/structures.ts#L233)
+[agent/structures/structures.ts:233](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/agent/structures/structures.ts#L233)

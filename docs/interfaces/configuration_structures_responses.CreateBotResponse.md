@@ -9,6 +9,7 @@
 ### Properties
 
 - [id](configuration_structures_responses.CreateBotResponse.md#id)
+- [secret](configuration_structures_responses.CreateBotResponse.md#secret)
 
 ## Properties
 
@@ -18,4 +19,14 @@
 
 #### Defined in
 
-[configuration/structures/responses.ts:19](https://github.com/livechat/lc-sdk-js/blob/10347df/src/configuration/structures/responses.ts#L19)
+[configuration/structures/responses.ts:19](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/configuration/structures/responses.ts#L19)
+
+___
+
+### secret
+
+• **secret**: `string`
+
+#### Defined in
+
+[configuration/structures/responses.ts:20](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/configuration/structures/responses.ts#L20)
