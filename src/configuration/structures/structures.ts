@@ -60,6 +60,26 @@ export interface Bot {
   work_scheduler?: WorkScheduler;
 }
 
+export interface BotTemplate extends BotTemplateFieldsCreate {
+  id: string;
+  name: string;
+}
+
+export interface BotTemplateFieldsCreate {
+  avatar?: string;
+  max_chats_count?: number;
+  default_group_priority?: GroupPriority;
+  job_title?: string;
+}
+
+export interface BotTemplateFieldsUpdate {
+  name?: string;
+  avatar?: string;
+  max_chats_count?: number;
+  default_group_priority?: GroupPriority;
+  job_title?: string;
+}
+
 export enum GroupPriority {
   First = "first",
   Normal = "normal",
