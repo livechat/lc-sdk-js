@@ -466,4 +466,13 @@ export default class RTM extends RTMAPI {
   async listRoutingStatuses(group_ids?: number[]): Promise<SetRoutingStatusResponse[]> {
     return this.send("list_routing_statuses", { filters: { group_ids } });
   }
+
+  /**
+   * Replaces the token used in the login request with a new one. This allows the websocket connection to remain open
+   * after the former token expires as its lifetime is now tied to the new token.
+   * @param token - OAuth token from the Agent's account
+   */
+  async updateSession(token: string): Promise<EmptyResponse> {
+    return this.send("update_session", { token });
+  }
 }
