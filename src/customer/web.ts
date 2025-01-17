@@ -222,32 +222,6 @@ export default class Web extends WebAPI {
   }
 
   /**
-   * Returns the properties of a given license. It only returns the properties a Customer has access to.
-   * @param namespace - property namespace
-   * @param name - property name
-   */
-  async listLicenseProperties(namespace?: string, name?: string): Promise<Properties> {
-    return this.send("list_license_properties", {
-      namespace,
-      name,
-    });
-  }
-
-  /**
-   * Returns the properties of a given group. It only returns the properties a Customer has access to.
-   * @param id - ID of group to return properties of
-   * @param namespace - property namespace
-   * @param name - property name
-   */
-  async listGroupProperties(id: number, namespace?: string, name?: string): Promise<Properties> {
-    return this.send("list_group_properties", {
-      id,
-      namespace,
-      name,
-    });
-  }
-
-  /**
    * Updates Customer's properties.
    * @param opts - properties to update
    */
