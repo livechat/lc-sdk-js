@@ -55,13 +55,13 @@ export default class RTM extends RTMAPI {
    */
   async login(loginData?: LoginRequest): Promise<LoginResponse> {
     const { accessToken, tokenType } = this.tokenGetter();
-    const authenticationHeader = `${tokenType} ${accessToken}`;
+    const authorizationHeader = `${tokenType} ${accessToken}`;
 
     if (typeof loginData === "undefined") {
-      return this.send("login", { token: authenticationHeader });
+      return this.send("login", { token: authorizationHeader });
     }
 
-    loginData.token = authenticationHeader;
+    loginData.token = authorizationHeader;
     return this.send("login", loginData);
   }
 
@@ -480,8 +480,8 @@ export default class RTM extends RTMAPI {
    * @param tokenType - Bearer or Basic
    */
   async updateSession(accessToken: string, tokenType: TokenType): Promise<EmptyResponse> {
-    const authenticationHeader = `${tokenType} ${accessToken}`;
-    return this.send("update_session", { token: authenticationHeader }).then((res) => {
+    const authorizationHeader = `${tokenType} ${accessToken}`;
+    return this.send("update_session", { token: authorizationHeader }).then((res) => {
       const { organizationID, region } = this.tokenGetter();
       this.tokenGetter = () => ({ accessToken, organizationID, region, tokenType });
 

@@ -49,13 +49,13 @@ export default class RTM extends RTMAPI {
    */
   async login(loginData?: LoginRequest): Promise<LoginResponse> {
     const { accessToken, tokenType } = this.tokenGetter();
-    const authenticationHeader = `${tokenType} ${accessToken}`;
+    const authorizationHeader = `${tokenType} ${accessToken}`;
 
     if (typeof loginData === "undefined") {
-      return this.send("login", { token: authenticationHeader });
+      return this.send("login", { token: authorizationHeader });
     }
 
-    loginData.token = authenticationHeader;
+    loginData.token = authorizationHeader;
     return this.send("login", loginData);
   }
 

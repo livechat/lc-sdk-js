@@ -32,6 +32,36 @@ To install latest stable version use:
 npm install @livechat/lc-sdk-js
 ```
 
+## Authorization
+
+Authorization in SDK is based on [TokenGetter](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/token.ts)
+required in both Web and RTM API classes. Example token getter:
+
+```javascript
+const tokenGetter = () => ({
+  accessToken: "dal:ab-Cd_dE40f9G3H297Ijkl6MN24",
+  organizationID: "c31de08c-799b-488a-982a-8e64dbadbf5a",
+  region: "dal",
+  tokenType: "Bearer",
+});
+```
+
+In case of Web APIs, the example token getter corresponds to the following headers in requests:
+* `Authorization: Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
+* `X-Region: dal`
+
+In case of RTM APIs, the example token getter corresponds to:
+* query string for opening the WebSocket connection: `?organization_id=c31de08c-799b-488a-982a-8e64dbadbf5a&region=dal`
+* token used for login: `Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
+
+### Organization's region
+
+For `Bearer` tokens, organization's region is the token prefix before the colon:
+* `dal:ab-Cd_dE40f9G3H297Ijkl6MN24` -> `dal`
+
+If you need to find organization's region without it, use 
+[getRegionForOrganization](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/region.ts) helper.
+
 ## Browser and Node.js compatibility
 
 Due to the absence of standard library WebSocket implementation in Node.js and presence of [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) class in browser environments,
