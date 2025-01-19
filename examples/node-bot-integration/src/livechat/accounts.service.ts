@@ -28,20 +28,21 @@ export class AccountsService {
 
     return axios
       .post<CodeExchangeResponse>(url)
-      .then(({ data: { access_token, organization_id } }) => {
+      .then(({ data: { access_token, organization_id, token_type } }) => {
         const tokenPrefix = access_token.split(':')[0];
 
         return () => ({
           organizationID: organization_id,
           accessToken: access_token,
           region: tokenPrefix,
+          tokenType: token_type,
         });
       });
   }
 }
 
 interface CodeExchangeResponse {
-  token_type: string;
+  token_type: Auth.TokenType;
   access_token: string;
   refresh_token: string;
   expires_in: number;

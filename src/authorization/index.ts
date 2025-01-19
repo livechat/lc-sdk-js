@@ -1,7 +1,2 @@
-export interface Token {
-  organizationID: string;
-  accessToken: string;
-  region: string;
-}
-
-export type TokenGetter = () => Token;
+export * from "./token";
+export * from "./region";

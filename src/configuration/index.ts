@@ -20,8 +20,6 @@ import {
   CreateBotTemplateResponse,
   CreateGroupResponse,
   EmptyResponse,
-  GetLicenseIDResponse,
-  GetOrganizationIDResponse,
   Group,
   GroupProperties,
   IssueBotTokenResponse,
@@ -582,22 +580,6 @@ export default class ConfigurationAPI extends WebAPI {
       id,
       ...access,
     });
-  }
-
-  /**
-   * Returns organization ID for given license ID.
-   * @param licenseID - ID of the license
-   */
-  async getOrganizationID(licenseID: number): Promise<GetOrganizationIDResponse> {
-    return this.send("get_organization_id", { license_id: licenseID });
-  }
-
-  /**
-   * Returns license ID for given organizationID.
-   * @param organizationID - UUID of the organization
-   */
-  async getLicenseID(organizationID: string): Promise<GetLicenseIDResponse> {
-    return this.send("get_license_id", { organization_id: organizationID });
   }
 
   /**
