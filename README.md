@@ -34,7 +34,7 @@ npm install @livechat/lc-sdk-js
 
 ## Authorization
 
-Authorization in SDK is based on [TokenGetter](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/token.ts)
+Authorization in SDK is based on [TokenGetter](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/token_getter.ts)
 required in both Web and RTM API classes. Example token getter:
 
 ```javascript
@@ -46,21 +46,24 @@ const tokenGetter = () => ({
 });
 ```
 
+### Web API vs RTM API
+
 In case of Web APIs, the example token getter corresponds to the following headers in requests:
 * `Authorization: Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
 * `X-Region: dal`
 
 In case of RTM APIs, the example token getter corresponds to:
-* query string for opening the WebSocket connection: `?organization_id=c31de08c-799b-488a-982a-8e64dbadbf5a&region=dal`
-* token used for login: `Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
+* query string used when opening the WebSocket connection: `?organization_id=c31de08c-799b-488a-982a-8e64dbadbf5a&region=dal`
+* token used in login method: `Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
 
 ### Organization's region
 
 For `Bearer` tokens, organization's region is the token prefix before the colon:
-* `dal:ab-Cd_dE40f9G3H297Ijkl6MN24` -> `dal`
+* accessToken: `dal:ab-Cd_dE40f9G3H297Ijkl6MN24` -> region: `dal`
 
-If you need to find organization's region without it, use 
-[getRegionForOrganization](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/region.ts) helper.
+If you need to find region
+for [Personal Access Token (PAT)](https://platform.text.com/docs/authorization/agent-authorization#personal-access-tokens),
+use [tokenGetterFromPAT](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/personal_access_token.ts) helper.
 
 ## Browser and Node.js compatibility
 
@@ -70,8 +73,11 @@ using the RTM API requires the developer to pass an appropriate WebSocket implem
 ```javascript
 import { Agent, Customer } from "@livechat/lc-sdk-js";
 
-const agentAPI = new Agent.RTM(WebSocket);
-const customerAPI = new Customer.RTM(WebSocket, "organization id");
+const agentTokenGetter = () => ...
+const customerTokenGetter = () => ...
+
+const agentAPI = new Agent.RTM(WebSocket, agentTokenGetter);
+const customerAPI = new Customer.RTM(WebSocket, customerTokenGetter);
 ```
 
 See the examples:

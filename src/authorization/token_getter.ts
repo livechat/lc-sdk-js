@@ -16,6 +16,11 @@ export function validateTokenGetter(tokenGetter: TokenGetter) {
   validateStringNonEmpty("organizationID", organizationID);
   validateStringNonEmpty("region", region);
   validateStringNonEmpty("tokenType", tokenType);
+
+  const tokenTypeLower = tokenType.toLowerCase();
+  if (tokenTypeLower !== "bearer" && tokenTypeLower !== "basic") {
+    throw new Error(`Token.tokenType must be either Bearer or Basic`);
+  }
 }
 
 function validateStringNonEmpty(name: string, value: unknown) {
