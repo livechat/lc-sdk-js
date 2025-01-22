@@ -48,11 +48,3 @@ export interface ResetBotTemplateSecretResponse {
 export interface AddAutoAccessResponse {
   id: string;
 }
-
-export interface GetOrganizationIDResponse {
-  organization_id: string;
-}
-
-export interface GetLicenseIDResponse {
-  license_id: string;
-}

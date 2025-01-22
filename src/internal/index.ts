@@ -1,4 +1,4 @@
-import { TokenGetter } from "../authorization";
+import { TokenGetter, validateTokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
 import axios, { AxiosError } from "axios";
 import { v4 } from "uuid";
@@ -13,15 +13,7 @@ export class WebAPI {
   APIURL: string;
   version: string;
   author_id?: string;
-  private readonly actionsMethodGet = [
-    "list_license_properties",
-    "list_group_properties",
-    "get_dynamic_configuration",
-    "get_configuration",
-    "get_localization",
-    "get_organization_id",
-    "get_license_id",
-  ];
+  private readonly actionsMethodGet = ["get_dynamic_configuration", "get_configuration", "get_localization"];
 
   constructor(
     protected readonly clientID: string,
@@ -31,6 +23,8 @@ export class WebAPI {
   ) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
+
+    validateTokenGetter(tokenGetter);
   }
 
   async send<T = unknown>(name: string, req: any): Promise<T> {
@@ -47,13 +41,13 @@ export class WebAPI {
 
   private async call(action: string, payload: any): Promise<any> {
     const url = ["https:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
-    const token = this.tokenGetter();
+    const { accessToken, organizationID, region, tokenType } = this.tokenGetter();
     const method = this.actionsMethodGet.indexOf(action) >= 0 ? "GET" : "POST";
 
     const headers: Record<string, string> = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token.accessToken}`,
-      "X-Region": token.region,
+      Authorization: `${tokenType} ${accessToken}`,
+      "X-Region": region,
     };
     if (typeof window === "undefined") {
       headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
@@ -64,7 +58,7 @@ export class WebAPI {
 
     let params = method === "GET" ? payload : {};
     if (this.type === "customer") {
-      params = { ...params, organization_id: token.organizationID };
+      params = { ...params, organization_id: organizationID };
     }
 
     return axios({
@@ -85,7 +79,6 @@ export class RTMAPI {
   APIURL: string;
   version: string;
   type: apiType;
-  organization_id?: string;
   socket?: any;
   heartbeatInterval?: number;
   requestsQueue: any = {};
@@ -94,27 +87,25 @@ export class RTMAPI {
 
   constructor(
     protected readonly webSocketClass: any,
+    protected readonly tokenGetter: TokenGetter,
     type: apiType,
-    organization_id?: string,
     options?: RTMAPIOptions,
   ) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
 
-    if (organization_id) {
-      this.organization_id = organization_id;
-    }
+    validateTokenGetter(tokenGetter);
   }
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
+      const { organizationID, region } = this.tokenGetter();
       const qs = new URLSearchParams({});
-      if (this.organization_id) {
-        qs.append("organization_id", this.organization_id);
-      }
-      const wsURL =
-        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` + (this.organization_id ? `?${qs.toString()}` : "");
+      qs.append("organization_id", organizationID);
+      qs.append("region", region);
+
+      const wsURL = `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws?` + qs.toString();
 
       this.socket = new this.webSocketClass(wsURL);
       this.socket.onopen = () => {
@@ -155,7 +146,7 @@ export class RTMAPI {
     }
   }
 
-  private handlePush(type: string, payload: Push) {
+  private handlePush(type: string, payload: any) {
     if (this.subscribedPushes[type]) {
       this.subscribedPushes[type](payload);
     }
@@ -181,7 +172,7 @@ export class RTMAPI {
     });
   }
 
-  subscribePush(push: string, callback: (payload: Push) => void): void {
+  subscribePush<P>(push: string, callback: (payload: P) => void): void {
     if (this.subscribedPushes[push]) {
       throw new Error("Push already subscribed");
     }
@@ -221,12 +212,4 @@ interface APIError<P = unknown> {
   type: string;
   message: string;
   data?: P;
-}
-
-interface Push<P = unknown> {
-  version: string;
-  request_id?: string;
-  action: string;
-  type: string;
-  payload: P;
 }
