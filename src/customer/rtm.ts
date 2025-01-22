@@ -33,7 +33,7 @@ export default class RTM extends RTMAPI {
 
   /**
    * Allows to subscribe a handler for a given push. Returns function to unsubscribe.
-   * Note: multiple subscriptions for the same push are not allowed in sigle websocket connection.
+   * Note: multiple subscriptions for the same push are not allowed in single websocket connection.
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
@@ -223,32 +223,6 @@ export default class RTM extends RTMAPI {
       thread_id,
       event_id,
       properties,
-    });
-  }
-
-  /**
-   * Returns the properties of a given license. It only returns the properties a Customer has access to.
-   * @param namespace - property namespace
-   * @param name - property name
-   */
-  async listLicenseProperties(namespace?: string, name?: string): Promise<Properties> {
-    return this.send("list_license_properties", {
-      namespace,
-      name,
-    });
-  }
-
-  /**
-   * Returns the properties of a given group. It only returns the properties a Customer has access to.
-   * @param id - ID of group to return properties of
-   * @param namespace - property namespace
-   * @param name - property name
-   */
-  async listGroupProperties(id: number, namespace?: string, name?: string): Promise<Properties> {
-    return this.send("list_group_properties", {
-      id,
-      namespace,
-      name,
     });
   }
 
