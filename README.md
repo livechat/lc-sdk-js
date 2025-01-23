@@ -61,7 +61,6 @@ If you need to find region
 for [Personal Access Token (PAT)](https://platform.text.com/docs/authorization/agent-authorization#personal-access-tokens),
 use [tokenGetterFromPAT](https://github.com/livechat/lc-sdk-js/blob/v3.5/src/authorization/personal_access_token.ts) helper.
 
-
 ## Browser and Node.js compatibility
 
 Due to the absence of standard library WebSocket implementation in Node.js and presence of [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) class in browser environments,
