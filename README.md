@@ -26,6 +26,35 @@ All open versions of LiveChat API are available as git tags in lc-sdk-js. Howeve
 npm install --save @livechat/lc-sdk-js
 ```
 
+## Authorization
+
+Authorization in SDK is based on [TokenGetter](https://github.com/livechat/lc-sdk-js/blob/v3.3/src/authorization/token_getter.ts)
+required in both Web and RTM API classes. Example token getter:
+
+```javascript
+const tokenGetter = () => ({
+  accessToken: "dal:ab-Cd_dE40f9G3H297Ijkl6MN24",
+  licenseID: "123456789",
+  region: "dal",
+  tokenType: "Bearer",
+});
+```
+
+### Web API vs RTM API
+
+In case of Web APIs, the example token getter corresponds to the following headers in requests:
+* `Authorization: Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
+* `X-Region: dal`
+
+In case of RTM APIs, the example token getter corresponds to:
+* query string used when opening the WebSocket connection: `?license_id=123456789&region=dal`
+* token used in login method: `Bearer dal:ab-Cd_dE40f9G3H297Ijkl6MN24`
+
+### License's region
+
+For `Bearer` tokens, license's region is the token prefix before the colon:
+* accessToken: `dal:ab-Cd_dE40f9G3H297Ijkl6MN24` -> region: `dal`
+
 ## Browser and Node.js compatibility
 
 Due to the absence of standard library WebSocket implementation in Node.js and presence of [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) class in browser environments,
@@ -34,8 +63,11 @@ using the RTM API requires the developer to pass an appropriate WebSocket implem
 ```javascript
 import { Agent, Customer } from "@livechat/lc-sdk-js";
 
-const agentAPI = new Agent.RTM(WebSocket);
-const customerAPI = new Customer.RTM(WebSocket, "organization id");
+const agentTokenGetter = () => ...
+const customerTokenGetter = () => ...
+
+const agentAPI = new Agent.RTM(WebSocket, agentTokenGetter);
+const customerAPI = new Customer.RTM(WebSocket, customerTokenGetter);
 ```
 
 See the examples:

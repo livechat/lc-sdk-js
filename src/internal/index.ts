@@ -1,4 +1,4 @@
-import { TokenGetter } from "../authorization";
+import { TokenGetter, validateTokenGetter } from "../authorization";
 import { ApiURL, ApiVersion } from "./constants";
 import axios from "axios";
 import { v4 } from "uuid";
@@ -12,6 +12,7 @@ export class WebAPI {
   type: apiType;
   tokenGetter: TokenGetter;
   author_id?: string;
+  private readonly actionsMethodGet = ["get_dynamic_configuration", "get_configuration", "get_localization"];
 
   constructor(clientID: string, tokenGetter: TokenGetter, type: apiType, options?: WebAPIOptions) {
     this.APIURL = options?.apiUrl || ApiURL;
@@ -19,6 +20,8 @@ export class WebAPI {
     this.clientID = clientID;
     this.type = type;
     this.tokenGetter = tokenGetter;
+
+    validateTokenGetter(tokenGetter);
   }
 
   async send(name: string, req: any): Promise<any> {
@@ -32,23 +35,13 @@ export class WebAPI {
 
   private async call(action: string, payload: any): Promise<any> {
     const url = ["https:/", this.APIURL, `v${this.version}`, this.type, "action", action].join("/");
-    const token = this.tokenGetter();
-    const method =
-      action in
-      [
-        "list_license_properties",
-        "list_group_properties",
-        "get_dynamic_configuration",
-        "get_configuration",
-        "get_localization",
-      ]
-        ? "GET"
-        : "POST";
+    const { accessToken, licenseID, region, tokenType } = this.tokenGetter();
+    const method = this.actionsMethodGet.indexOf(action) >= 0 ? "GET" : "POST";
 
     const headers: any = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${token.accessToken}`,
-      "X-Region": token.region,
+      Authorization: `${tokenType} ${accessToken}`,
+      "X-Region": region,
     };
     if (typeof window === "undefined") {
       headers["User-Agent"] = `JS SDK Application ${this.clientID}`;
@@ -59,7 +52,7 @@ export class WebAPI {
 
     let params: any;
     if (this.type === "customer") {
-      params = { license_id: token.licenseID };
+      params = { license_id: licenseID };
     }
 
     return axios({
@@ -80,27 +73,35 @@ export class RTMAPI {
   APIURL: string;
   version: string;
   type: apiType;
-  license?: number;
   socket?: any;
   heartbeatInterval?: number;
   requestsQueue: any = {};
   subscribedPushes: any = {};
   author_id?: string;
 
-  constructor(protected readonly webSocketClass: any, type: apiType, license?: number, options?: RTMAPIOptions) {
+  constructor(
+    protected readonly webSocketClass: any,
+    protected readonly tokenGetter: TokenGetter,
+    type: apiType,
+    options?: RTMAPIOptions,
+  ) {
     this.APIURL = options?.apiUrl || ApiURL;
     this.version = ApiVersion;
     this.type = type;
-    if (license) {
-      this.license = license;
-    }
+
+    validateTokenGetter(tokenGetter);
   }
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
-      const wsURL =
-        `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws` +
-        (this.license ? `?license_id=${this.license}` : "");
+      const { licenseID, region } = this.tokenGetter();
+      const qs = new URLSearchParams({});
+      qs.append("region", region);
+      if (this.type === "customer") {
+        qs.append("license_id", licenseID.toString(10));
+      }
+
+      const wsURL = `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws?` + qs.toString();
 
       this.socket = new this.webSocketClass(wsURL);
       this.socket.onopen = () => {
@@ -141,7 +142,7 @@ export class RTMAPI {
     }
   }
 
-  private handlePush(type: string, payload: Push) {
+  private handlePush(type: string, payload: any) {
     if (this.subscribedPushes[type]) {
       this.subscribedPushes[type](payload);
     }
@@ -167,7 +168,7 @@ export class RTMAPI {
     });
   }
 
-  subscribePush(push: string, callback: (payload: Push) => void): void {
+  subscribePush<P>(push: string, callback: (payload: P) => void): void {
     if (this.subscribedPushes[push]) {
       throw new Error("Push already subscribed");
     }
@@ -203,12 +204,4 @@ interface APIError<P = unknown> {
   type: string;
   message: string;
   data?: P;
-}
-
-interface Push<P = unknown> {
-  version: string;
-  request_id?: string;
-  action: string;
-  type: string;
-  payload: P;
 }
