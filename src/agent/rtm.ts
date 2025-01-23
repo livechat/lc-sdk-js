@@ -1,4 +1,5 @@
 import { RTMAPI } from "../internal";
+import { TokenGetter } from "../authorization";
 import type {
   AgentForTransfer,
   ChangePushNotificationsRequest,
@@ -19,7 +20,6 @@ import type {
   LoginResponse,
   MulticastRecipients,
   Properties,
-  Push,
   Pushes,
   RequestEvent,
   ResumeChatParameters,
@@ -35,8 +35,8 @@ import type {
 } from "./structures";
 
 export default class RTM extends RTMAPI {
-  constructor(webSocketClass: any, options?: RTMAPIOptions) {
-    super(webSocketClass, "agent", undefined, options);
+  constructor(webSocketClass: any, tokenGetter: TokenGetter, options?: RTMAPIOptions) {
+    super(webSocketClass, tokenGetter, "agent", options);
   }
 
   /**
@@ -45,19 +45,25 @@ export default class RTM extends RTMAPI {
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
-  on(push: Pushes, handler: (payload: Push) => void): () => void {
+  on<P>(push: Pushes, handler: (payload: P) => void): () => void {
     this.subscribePush(push, handler);
     return this.unsubscribePush.bind(this, push);
   }
 
   /**
    * It returns the initial state of the current Agent.
-   * @param loginData - OAuth token from Agent's account or full object with login options
+   * Note: uses the access token from TokenGetter provided in the constructor.
+   * @param loginData - optional object with login parameters
    */
-  async login(loginData: string | LoginRequest): Promise<LoginResponse> {
-    if (typeof loginData === "string") {
-      return this.send("login", { token: loginData });
+  async login(loginData?: LoginRequest): Promise<LoginResponse> {
+    const { accessToken, tokenType } = this.tokenGetter();
+    const authorizationHeader = `${tokenType} ${accessToken}`;
+
+    if (typeof loginData === "undefined") {
+      return this.send("login", { token: authorizationHeader });
     }
+
+    loginData.token = authorizationHeader;
     return this.send("login", loginData);
   }
 

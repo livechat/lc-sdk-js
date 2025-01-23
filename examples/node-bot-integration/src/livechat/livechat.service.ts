@@ -28,11 +28,11 @@ export class LivechatService {
       { apiUrl: this.cfg.baseApiUrl },
     );
 
-    this.agentRtm = new Agent.RTM(WebSocket, {
+    this.agentRtm = new Agent.RTM(WebSocket, tokenGetter, {
       apiUrl: this.cfg.baseApiUrl,
     });
     await this.agentRtm.connect();
-    await this.agentRtm.login(`Bearer ${tokenGetter().accessToken}`);
+    await this.agentRtm.login();
   }
 
   setBotId(botId: string): void {
