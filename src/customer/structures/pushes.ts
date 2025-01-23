@@ -1,11 +1,3 @@
-export interface Push<P = unknown> {
-  version: string;
-  request_id?: string;
-  action: string;
-  type: string;
-  payload: P;
-}
-
 export enum Pushes {
   /**
    * Informs about a chat coming with a new thread. The push payload contains the whole chat data structure.
