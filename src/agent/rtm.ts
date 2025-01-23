@@ -1,4 +1,5 @@
 import { RTMAPI } from "../internal";
+import { TokenGetter, TokenType } from "../authorization";
 import type {
   AgentForTransfer,
   ChangePushNotificationsRequest,
@@ -17,7 +18,6 @@ import type {
   LoginResponse,
   MulticastRecipients,
   Properties,
-  Push,
   Pushes,
   RequestEvent,
   ResumeChatParameters,
@@ -33,29 +33,35 @@ import type {
 } from "./structures";
 
 export default class RTM extends RTMAPI {
-  constructor(webSocketClass: any, options?: RTMAPIOptions) {
-    super(webSocketClass, "agent", undefined, options);
+  constructor(webSocketClass: any, tokenGetter: TokenGetter, options?: RTMAPIOptions) {
+    super(webSocketClass, tokenGetter, "agent", options);
   }
 
   /**
    * Allows to subscribe a handler for a given push. Returns function to unsubscribe.
-   * Note: multiple subscriptions for the same push are not allowed in sigle websocket connection.
+   * Note: multiple subscriptions for the same push are not allowed in single websocket connection.
    * @param push - push name to subscribe to
    * @param handler - function receiving push payload
    */
-  on(push: Pushes, handler: (payload: Push) => void): () => void {
+  on<P>(push: Pushes, handler: (payload: P) => void): () => void {
     this.subscribePush(push, handler);
     return this.unsubscribePush.bind(this, push);
   }
 
   /**
    * It returns the initial state of the current Agent.
-   * @param loginData - OAuth token from Agent's account or full object with login options
+   * Note: uses the access token from TokenGetter provided in the constructor.
+   * @param loginData - optional object with login parameters
    */
-  async login(loginData: string | LoginRequest): Promise<LoginResponse> {
-    if (typeof loginData === "string") {
-      return this.send("login", { token: loginData });
+  async login(loginData?: LoginRequest): Promise<LoginResponse> {
+    const { accessToken, tokenType } = this.tokenGetter();
+    const authorizationHeader = `${tokenType} ${accessToken}`;
+
+    if (typeof loginData === "undefined") {
+      return this.send("login", { token: authorizationHeader });
     }
+
+    loginData.token = authorizationHeader;
     return this.send("login", loginData);
   }
 
@@ -470,9 +476,16 @@ export default class RTM extends RTMAPI {
   /**
    * Replaces the token used in the login request with a new one. This allows the websocket connection to remain open
    * after the former token expires as its lifetime is now tied to the new token.
-   * @param token - OAuth token from the Agent's account
+   * @param accessToken - OAuth token from the Agent's account
+   * @param tokenType - Bearer or Basic
    */
-  async updateSession(token: string): Promise<EmptyResponse> {
-    return this.send("update_session", { token });
+  async updateSession(accessToken: string, tokenType: TokenType): Promise<EmptyResponse> {
+    const authorizationHeader = `${tokenType} ${accessToken}`;
+    return this.send("update_session", { token: authorizationHeader }).then((res) => {
+      const { organizationID, region } = this.tokenGetter();
+      this.tokenGetter = () => ({ accessToken, organizationID, region, tokenType });
+
+      return res;
+    });
   }
 }
