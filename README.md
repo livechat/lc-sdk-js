@@ -34,7 +34,7 @@ required in both Web and RTM API classes. Example token getter:
 ```javascript
 const tokenGetter = () => ({
   accessToken: "dal:ab-Cd_dE40f9G3H297Ijkl6MN24",
-  licenseID: "123456789",
+  licenseID: 123456789,
   region: "dal",
   tokenType: "Bearer",
 });
