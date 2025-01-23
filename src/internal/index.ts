@@ -108,8 +108,10 @@ export class RTMAPI {
     return new Promise((resolve, reject) => {
       const { organizationID, region } = this.tokenGetter();
       const qs = new URLSearchParams({});
-      qs.append("organization_id", organizationID);
       qs.append("region", region);
+      if (this.type === "customer") {
+        qs.append("organization_id", organizationID);
+      }
 
       const wsURL = `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws?` + qs.toString();
 
