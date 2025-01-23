@@ -1,10 +1,30 @@
-import React, {useEffect} from 'react';
-import {initializeConnection} from "./ws";
+import React, { useEffect } from "react";
+import { TokenGetter, TokenType } from "@livechat/lc-sdk-js/src/authorization";
+import { initializeConnection } from "./ws";
+import { initCustomerTokenGetter } from "./customer";
+
+const agentAccessToken = "<access_token>"; // e.g. dal:abc123abc123abc123abc123456
+const agentTokenType: TokenType = "Bearer"; // Bearer or Basic
+
+const licenseID = 123456789; // LiveChat license ID
+const organizationID = "<organization_id>";
+const organizationRegion = "<region>"; // e.g. dal
+
+const clientID = "<client_id>"; // your LiveChat integration client ID
+const redirectURI = "<redirect_uri>"; // your LiveChat integration redirect URI
 
 function App() {
   useEffect(() => {
-    void initializeConnection();
-  }, [])
+    const agentTokenGetter: TokenGetter = () => ({
+      accessToken: agentAccessToken,
+      licenseID: licenseID,
+      region: organizationRegion,
+      tokenType: agentTokenType,
+    });
+    void initCustomerTokenGetter(licenseID, organizationID, clientID, redirectURI)
+      .then(customerTokenGetter => initializeConnection(agentTokenGetter, customerTokenGetter))
+      .catch(console.log);
+  }, []);
 
   return (
     <div className="App">
