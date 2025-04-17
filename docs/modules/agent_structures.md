@@ -68,7 +68,6 @@
 - [Properties](agent_structures.md#properties)
 - [PropertiesFilter](agent_structures.md#propertiesfilter)
 - [PropertyNamespace](agent_structures.md#propertynamespace)
-- [Push](agent_structures.md#push)
 - [PushNotifications](agent_structures.md#pushnotifications)
 - [Pushes](agent_structures.md#pushes)
 - [Queue](agent_structures.md#queue)
@@ -469,12 +468,6 @@ ___
 ### PropertyNamespace
 
 Re-exports [PropertyNamespace](../interfaces/agent_structures_structures.PropertyNamespace.md)
-
-___
-
-### Push
-
-Re-exports [Push](../interfaces/agent_structures_pushes.Push.md)
 
 ___
 

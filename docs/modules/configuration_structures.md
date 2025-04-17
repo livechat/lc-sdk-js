@@ -26,8 +26,6 @@
 - [EmptyResponse](configuration_structures.md#emptyresponse)
 - [ErrorResponse](configuration_structures.md#errorresponse)
 - [Filter](configuration_structures.md#filter)
-- [GetLicenseIDResponse](configuration_structures.md#getlicenseidresponse)
-- [GetOrganizationIDResponse](configuration_structures.md#getorganizationidresponse)
 - [Group](configuration_structures.md#group)
 - [GroupConfig](configuration_structures.md#groupconfig)
 - [GroupPriority](configuration_structures.md#grouppriority)
@@ -173,18 +171,6 @@ ___
 ### Filter
 
 Re-exports [Filter](../interfaces/configuration_structures_structures.Filter.md)
-
-___
-
-### GetLicenseIDResponse
-
-Re-exports [GetLicenseIDResponse](../interfaces/configuration_structures_responses.GetLicenseIDResponse.md)
-
-___
-
-### GetOrganizationIDResponse
-
-Re-exports [GetOrganizationIDResponse](../interfaces/configuration_structures_responses.GetOrganizationIDResponse.md)
 
 ___
 

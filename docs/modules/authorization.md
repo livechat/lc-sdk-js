@@ -4,28 +4,40 @@
 
 ## Table of contents
 
-### Interfaces
+### References
 
-- [Token](../interfaces/authorization.Token.md)
-
-### Type Aliases
-
+- [Token](authorization.md#token)
 - [TokenGetter](authorization.md#tokengetter)
+- [TokenType](authorization.md#tokentype)
+- [tokenGetterFromPAT](authorization.md#tokengetterfrompat)
+- [validateTokenGetter](authorization.md#validatetokengetter)
 
-## Type Aliases
+## References
+
+### Token
+
+Re-exports [Token](../interfaces/authorization_token_getter.Token.md)
+
+___
 
 ### TokenGetter
 
-Ƭ **TokenGetter**: () => [`Token`](../interfaces/authorization.Token.md)
+Re-exports [TokenGetter](authorization_token_getter.md#tokengetter)
 
-#### Type declaration
+___
 
-▸ (): [`Token`](../interfaces/authorization.Token.md)
+### TokenType
 
-##### Returns
+Re-exports [TokenType](authorization_token_getter.md#tokentype)
 
-[`Token`](../interfaces/authorization.Token.md)
+___
 
-#### Defined in
+### tokenGetterFromPAT
 
-[authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/25e113d/src/authorization/index.ts#L7)
+Re-exports [tokenGetterFromPAT](authorization_personal_access_token.md#tokengetterfrompat)
+
+___
+
+### validateTokenGetter
+
+Re-exports [validateTokenGetter](authorization_token_getter.md#validatetokengetter)

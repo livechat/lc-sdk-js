@@ -16,6 +16,8 @@
 - [agent/structures/users](modules/agent_structures_users.md)
 - [agent/web](modules/agent_web.md)
 - [authorization](modules/authorization.md)
+- [authorization/personal\_access\_token](modules/authorization_personal_access_token.md)
+- [authorization/token\_getter](modules/authorization_token_getter.md)
 - [configuration](modules/configuration.md)
 - [configuration/structures](modules/configuration_structures.md)
 - [configuration/structures/responses](modules/configuration_structures_responses.md)
