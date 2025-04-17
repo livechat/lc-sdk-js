@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@livechat/lc-sdk-js": "file:../..",
-    "axios": "^1.7.9",
+    "axios": "^1.8.4",
     "ws": "^8.13.0"
   },
   "devDependencies": {
