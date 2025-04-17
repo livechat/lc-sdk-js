@@ -11,6 +11,7 @@
 - [accessToken](authorization.Token.md#accesstoken)
 - [licenseID](authorization.Token.md#licenseid)
 - [region](authorization.Token.md#region)
+- [tokenType](authorization.Token.md#tokentype)
 
 ## Properties
 
@@ -20,7 +21,7 @@
 
 #### Defined in
 
-[authorization/index.ts:3](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/authorization/index.ts#L3)
+[authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/authorization/index.ts#L4)
 
 ___
 
@@ -30,7 +31,7 @@ ___
 
 #### Defined in
 
-[authorization/index.ts:2](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/authorization/index.ts#L2)
+[authorization/index.ts:5](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/authorization/index.ts#L5)
 
 ___
 
@@ -40,4 +41,14 @@ ___
 
 #### Defined in
 
-[authorization/index.ts:4](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/authorization/index.ts#L4)
+[authorization/index.ts:6](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/authorization/index.ts#L6)
+
+___
+
+### tokenType
+
+• **tokenType**: [`TokenType`](../modules/authorization.md#tokentype)
+
+#### Defined in
+
+[authorization/index.ts:7](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/authorization/index.ts#L7)

@@ -23,6 +23,7 @@
 ### Properties
 
 - [APIURL](internal.WebAPI.md#apiurl)
+- [actionsMethodGet](internal.WebAPI.md#actionsmethodget)
 - [author\_id](internal.WebAPI.md#author_id)
 - [clientID](internal.WebAPI.md#clientid)
 - [tokenGetter](internal.WebAPI.md#tokengetter)
@@ -52,7 +53,7 @@
 
 #### Defined in
 
-[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L16)
+[internal/index.ts:17](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L17)
 
 ## Properties
 
@@ -62,7 +63,17 @@
 
 #### Defined in
 
-[internal/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L9)
+[internal/index.ts:9](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L9)
+
+___
+
+### actionsMethodGet
+
+• `Private` `Readonly` **actionsMethodGet**: `string`[]
+
+#### Defined in
+
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L15)
 
 ___
 
@@ -72,7 +83,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L14)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L14)
 
 ___
 
@@ -82,7 +93,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L10)
+[internal/index.ts:10](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L10)
 
 ___
 
@@ -92,7 +103,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L13)
+[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L13)
 
 ___
 
@@ -102,7 +113,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L12)
+[internal/index.ts:12](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L12)
 
 ___
 
@@ -112,7 +123,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L11)
+[internal/index.ts:11](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L11)
 
 ## Methods
 
@@ -133,7 +144,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:33](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L33)
+[internal/index.ts:36](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L36)
 
 ___
 
@@ -154,7 +165,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:24](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L24)
+[internal/index.ts:27](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L27)
 
 ___
 
@@ -174,4 +185,4 @@ ___
 
 #### Defined in
 
-[internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/internal/index.ts#L74)
+[internal/index.ts:67](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/internal/index.ts#L67)

@@ -52,7 +52,6 @@
 - [Postback](customer_structures.md#postback)
 - [Properties](customer_structures.md#properties)
 - [PropertyNamespace](customer_structures.md#propertynamespace)
-- [Push](customer_structures.md#push)
 - [Pushes](customer_structures.md#pushes)
 - [Queue](customer_structures.md#queue)
 - [RTMAPIOptions](customer_structures.md#rtmapioptions)
@@ -346,12 +345,6 @@ ___
 ### PropertyNamespace
 
 Re-exports [PropertyNamespace](../interfaces/customer_structures_structures.PropertyNamespace.md)
-
-___
-
-### Push
-
-Re-exports [Push](../interfaces/customer_structures_pushes.Push.md)
 
 ___
 

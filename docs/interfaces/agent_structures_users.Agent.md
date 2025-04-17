@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[agent/structures/users.ts:13](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L13)
+[agent/structures/users.ts:13](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L13)
 
 ___
 
@@ -44,7 +44,7 @@ BaseUser.email
 
 #### Defined in
 
-[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L6)
+[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L6)
 
 ___
 
@@ -58,7 +58,7 @@ BaseUser.events\_seen\_up\_to
 
 #### Defined in
 
-[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L7)
+[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L7)
 
 ___
 
@@ -72,7 +72,7 @@ BaseUser.id
 
 #### Defined in
 
-[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L4)
+[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L4)
 
 ___
 
@@ -86,7 +86,7 @@ BaseUser.name
 
 #### Defined in
 
-[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L5)
+[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L5)
 
 ___
 
@@ -100,7 +100,7 @@ BaseUser.present
 
 #### Defined in
 
-[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L9)
+[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L9)
 
 ___
 
@@ -114,4 +114,4 @@ BaseUser.type
 
 #### Defined in
 
-[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/d267eeb/src/agent/structures/users.ts#L8)
+[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/e62e196/src/agent/structures/users.ts#L8)
