@@ -7,7 +7,3 @@
 ### Enumerations
 
 - [Pushes](../enums/agent_structures_pushes.Pushes.md)
-
-### Interfaces
-
-- [Push](../interfaces/agent_structures_pushes.Push.md)

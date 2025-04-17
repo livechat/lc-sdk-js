@@ -44,7 +44,7 @@ Informs that a chat was deactivated by closing the currently open thread.
 
 #### Defined in
 
-[customer/structures/pushes.ts:19](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L19)
+[customer/structures/pushes.ts:11](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L11)
 
 ___
 
@@ -56,7 +56,7 @@ Informs about those chat properties that were deleted.
 
 #### Defined in
 
-[customer/structures/pushes.ts:62](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L62)
+[customer/structures/pushes.ts:54](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L54)
 
 ___
 
@@ -68,7 +68,7 @@ Informs about those chat properties that were updated.
 
 #### Defined in
 
-[customer/structures/pushes.ts:57](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L57)
+[customer/structures/pushes.ts:49](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L49)
 
 ___
 
@@ -80,7 +80,7 @@ Informs that a chat was transferred to a different group or to an Agent.
 
 #### Defined in
 
-[customer/structures/pushes.ts:24](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L24)
+[customer/structures/pushes.ts:16](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L16)
 
 ___
 
@@ -92,7 +92,7 @@ Informs that a Customer was disconnected. The payload contains the reason of Cus
 
 #### Defined in
 
-[customer/structures/pushes.ts:102](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L102)
+[customer/structures/pushes.ts:94](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L94)
 
 ___
 
@@ -104,7 +104,7 @@ Informs that a Customer moved to another page of the website.
 
 #### Defined in
 
-[customer/structures/pushes.ts:92](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L92)
+[customer/structures/pushes.ts:84](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L84)
 
 ___
 
@@ -116,7 +116,7 @@ Informs that a Customer updated the data stored on their side.
 
 #### Defined in
 
-[customer/structures/pushes.ts:97](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L97)
+[customer/structures/pushes.ts:89](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L89)
 
 ___
 
@@ -128,7 +128,7 @@ Informs that Customer's data was updated.
 
 #### Defined in
 
-[customer/structures/pushes.ts:87](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L87)
+[customer/structures/pushes.ts:79](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L79)
 
 ___
 
@@ -140,7 +140,7 @@ Informs about those event properties that were deleted.
 
 #### Defined in
 
-[customer/structures/pushes.ts:82](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L82)
+[customer/structures/pushes.ts:74](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L74)
 
 ___
 
@@ -152,7 +152,7 @@ Informs about those event properties that were updated.
 
 #### Defined in
 
-[customer/structures/pushes.ts:77](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L77)
+[customer/structures/pushes.ts:69](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L69)
 
 ___
 
@@ -164,7 +164,7 @@ Informs that an event was updated.
 
 #### Defined in
 
-[customer/structures/pushes.ts:46](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L46)
+[customer/structures/pushes.ts:38](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L38)
 
 ___
 
@@ -176,7 +176,7 @@ Informs that a user has seen events up to a specific time.
 
 #### Defined in
 
-[customer/structures/pushes.ts:114](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L114)
+[customer/structures/pushes.ts:106](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L106)
 
 ___
 
@@ -188,7 +188,7 @@ Informs about a greeting accepted by the Customer.
 
 #### Defined in
 
-[customer/structures/pushes.ts:129](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L129)
+[customer/structures/pushes.ts:121](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L121)
 
 ___
 
@@ -201,7 +201,7 @@ Also, the push is sent when a new greeting automatically cancels the currently d
 
 #### Defined in
 
-[customer/structures/pushes.ts:135](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L135)
+[customer/structures/pushes.ts:127](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L127)
 
 ___
 
@@ -214,7 +214,7 @@ If the chat was started with some initial events, the thread object contains the
 
 #### Defined in
 
-[customer/structures/pushes.ts:14](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L14)
+[customer/structures/pushes.ts:6](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L6)
 
 ___
 
@@ -226,7 +226,7 @@ Informs about an incoming event sent to a chat.
 
 #### Defined in
 
-[customer/structures/pushes.ts:41](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L41)
+[customer/structures/pushes.ts:33](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L33)
 
 ___
 
@@ -238,7 +238,7 @@ Informs about an incoming greeting.
 
 #### Defined in
 
-[customer/structures/pushes.ts:124](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L124)
+[customer/structures/pushes.ts:116](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L116)
 
 ___
 
@@ -250,7 +250,7 @@ Informs about messages sent via the multicast method or by the system.
 
 #### Defined in
 
-[customer/structures/pushes.ts:119](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L119)
+[customer/structures/pushes.ts:111](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L111)
 
 ___
 
@@ -263,7 +263,7 @@ as well as the chat it was sent in.
 
 #### Defined in
 
-[customer/structures/pushes.ts:52](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L52)
+[customer/structures/pushes.ts:44](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L44)
 
 ___
 
@@ -280,7 +280,7 @@ callback
 
 #### Defined in
 
-[customer/structures/pushes.ts:109](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L109)
+[customer/structures/pushes.ts:101](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L101)
 
 ___
 
@@ -292,7 +292,7 @@ Informs about an updated position in the queue and about the wait time.
 
 #### Defined in
 
-[customer/structures/pushes.ts:140](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L140)
+[customer/structures/pushes.ts:132](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L132)
 
 ___
 
@@ -304,7 +304,7 @@ Informs about those thread properties that were deleted.
 
 #### Defined in
 
-[customer/structures/pushes.ts:72](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L72)
+[customer/structures/pushes.ts:64](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L64)
 
 ___
 
@@ -316,7 +316,7 @@ Informs about those thread properties that were updated.
 
 #### Defined in
 
-[customer/structures/pushes.ts:67](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L67)
+[customer/structures/pushes.ts:59](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L59)
 
 ___
 
@@ -330,7 +330,7 @@ You can achieve that via the Send Event method.
 
 #### Defined in
 
-[customer/structures/pushes.ts:31](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L31)
+[customer/structures/pushes.ts:23](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L23)
 
 ___
 
@@ -342,4 +342,4 @@ Informs that a user (Customer or Agent) was removed from a chat.
 
 #### Defined in
 
-[customer/structures/pushes.ts:36](https://github.com/livechat/lc-sdk-js/blob/c7b3817/src/customer/structures/pushes.ts#L36)
+[customer/structures/pushes.ts:28](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/pushes.ts#L28)
