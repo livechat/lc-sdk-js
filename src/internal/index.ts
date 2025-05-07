@@ -97,9 +97,7 @@ export class RTMAPI {
       const { licenseID, region } = this.tokenGetter();
       const qs = new URLSearchParams({});
       qs.append("region", region);
-      if (this.type === "customer") {
-        qs.append("license_id", licenseID.toString(10));
-      }
+      qs.append("license_id", licenseID.toString(10));
 
       const wsURL = `wss://${this.APIURL}/v${this.version}/${this.type}/rtm/ws?` + qs.toString();
 
