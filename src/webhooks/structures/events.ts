@@ -6,7 +6,7 @@ interface BaseEvent {
   properties?: Properties;
   recipients?: string;
   visibility?: string;
-  type: "file" | "form" | "filled_form" | "message" | "rich_message" | "custom" | "system_message";
+  type: "file" | "form" | "filled_form" | "message" | "rich_message" | "custom" | "system_message" | "system";
 }
 
 export interface File extends BaseEvent {
@@ -112,4 +112,13 @@ export interface SystemMessage extends BaseEvent {
   text_vars?: object;
 }
 
-export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage;
+export interface System extends BaseEvent {
+  type: "system";
+  custom_id?: string;
+  source: string;
+  subtype: string;
+  details: string;
+  version: number;
+}
+
+export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage | System;
