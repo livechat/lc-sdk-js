@@ -17,6 +17,7 @@
 - [Message](../interfaces/webhooks_structures_events.Message.md)
 - [Postback](../interfaces/webhooks_structures_events.Postback.md)
 - [RichMessage](../interfaces/webhooks_structures_events.RichMessage.md)
+- [System](../interfaces/webhooks_structures_events.System.md)
 - [SystemMessage](../interfaces/webhooks_structures_events.SystemMessage.md)
 
 ### Type Aliases
@@ -27,8 +28,8 @@
 
 ### Event
 
-Ƭ **Event**: [`File`](../interfaces/webhooks_structures_events.File.md) \| [`FilledForm`](../interfaces/webhooks_structures_events.FilledForm.md) \| [`Message`](../interfaces/webhooks_structures_events.Message.md) \| [`RichMessage`](../interfaces/webhooks_structures_events.RichMessage.md) \| [`CustomEvent`](../interfaces/webhooks_structures_events.CustomEvent.md) \| [`SystemMessage`](../interfaces/webhooks_structures_events.SystemMessage.md)
+Ƭ **Event**: [`File`](../interfaces/webhooks_structures_events.File.md) \| [`FilledForm`](../interfaces/webhooks_structures_events.FilledForm.md) \| [`Message`](../interfaces/webhooks_structures_events.Message.md) \| [`RichMessage`](../interfaces/webhooks_structures_events.RichMessage.md) \| [`CustomEvent`](../interfaces/webhooks_structures_events.CustomEvent.md) \| [`SystemMessage`](../interfaces/webhooks_structures_events.SystemMessage.md) \| [`System`](../interfaces/webhooks_structures_events.System.md)
 
 #### Defined in
 
-[webhooks/structures/events.ts:115](https://github.com/livechat/lc-sdk-js/blob/e187316/src/webhooks/structures/events.ts#L115)
+[webhooks/structures/events.ts:124](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/webhooks/structures/events.ts#L124)

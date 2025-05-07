@@ -17,6 +17,7 @@
 - [Message](../interfaces/customer_structures_events.Message.md)
 - [Postback](../interfaces/customer_structures_events.Postback.md)
 - [RichMessage](../interfaces/customer_structures_events.RichMessage.md)
+- [System](../interfaces/customer_structures_events.System.md)
 - [SystemMessage](../interfaces/customer_structures_events.SystemMessage.md)
 
 ### Type Aliases
@@ -29,11 +30,11 @@
 
 ### Event
 
-Ƭ **Event**: [`File`](../interfaces/customer_structures_events.File.md) \| [`FilledForm`](../interfaces/customer_structures_events.FilledForm.md) \| [`Message`](../interfaces/customer_structures_events.Message.md) \| [`RichMessage`](../interfaces/customer_structures_events.RichMessage.md) \| [`CustomEvent`](../interfaces/customer_structures_events.CustomEvent.md) \| [`SystemMessage`](../interfaces/customer_structures_events.SystemMessage.md)
+Ƭ **Event**: [`File`](../interfaces/customer_structures_events.File.md) \| [`FilledForm`](../interfaces/customer_structures_events.FilledForm.md) \| [`Message`](../interfaces/customer_structures_events.Message.md) \| [`RichMessage`](../interfaces/customer_structures_events.RichMessage.md) \| [`CustomEvent`](../interfaces/customer_structures_events.CustomEvent.md) \| [`SystemMessage`](../interfaces/customer_structures_events.SystemMessage.md) \| [`System`](../interfaces/customer_structures_events.System.md)
 
 #### Defined in
 
-[customer/structures/events.ts:114](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/events.ts#L114)
+[customer/structures/events.ts:123](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/customer/structures/events.ts#L123)
 
 ___
 
@@ -49,14 +50,14 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:128](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/events.ts#L128)
+[customer/structures/events.ts:137](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/customer/structures/events.ts#L137)
 
 ___
 
 ### RequestEvent
 
-Ƭ **RequestEvent**: [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`File`](../interfaces/customer_structures_events.File.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`FilledForm`](../interfaces/customer_structures_events.FilledForm.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`Message`](../interfaces/customer_structures_events.Message.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`RichMessage`](../interfaces/customer_structures_events.RichMessage.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`CustomEvent`](../interfaces/customer_structures_events.CustomEvent.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`SystemMessage`](../interfaces/customer_structures_events.SystemMessage.md)\>
+Ƭ **RequestEvent**: [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`File`](../interfaces/customer_structures_events.File.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`FilledForm`](../interfaces/customer_structures_events.FilledForm.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`Message`](../interfaces/customer_structures_events.Message.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`RichMessage`](../interfaces/customer_structures_events.RichMessage.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`CustomEvent`](../interfaces/customer_structures_events.CustomEvent.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`SystemMessage`](../interfaces/customer_structures_events.SystemMessage.md)\> \| [`LimitEventToRequestFields`](customer_structures_events.md#limiteventtorequestfields)<[`System`](../interfaces/customer_structures_events.System.md)\>
 
 #### Defined in
 
-[customer/structures/events.ts:129](https://github.com/livechat/lc-sdk-js/blob/e187316/src/customer/structures/events.ts#L129)
+[customer/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/customer/structures/events.ts#L138)

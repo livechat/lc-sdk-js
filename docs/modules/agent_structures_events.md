@@ -17,6 +17,7 @@
 - [Message](../interfaces/agent_structures_events.Message.md)
 - [Postback](../interfaces/agent_structures_events.Postback.md)
 - [RichMessage](../interfaces/agent_structures_events.RichMessage.md)
+- [System](../interfaces/agent_structures_events.System.md)
 - [SystemMessage](../interfaces/agent_structures_events.SystemMessage.md)
 
 ### Type Aliases
@@ -29,11 +30,11 @@
 
 ### Event
 
-Ƭ **Event**: [`File`](../interfaces/agent_structures_events.File.md) \| [`FilledForm`](../interfaces/agent_structures_events.FilledForm.md) \| [`Message`](../interfaces/agent_structures_events.Message.md) \| [`RichMessage`](../interfaces/agent_structures_events.RichMessage.md) \| [`CustomEvent`](../interfaces/agent_structures_events.CustomEvent.md) \| [`SystemMessage`](../interfaces/agent_structures_events.SystemMessage.md)
+Ƭ **Event**: [`File`](../interfaces/agent_structures_events.File.md) \| [`FilledForm`](../interfaces/agent_structures_events.FilledForm.md) \| [`Message`](../interfaces/agent_structures_events.Message.md) \| [`RichMessage`](../interfaces/agent_structures_events.RichMessage.md) \| [`CustomEvent`](../interfaces/agent_structures_events.CustomEvent.md) \| [`SystemMessage`](../interfaces/agent_structures_events.SystemMessage.md) \| [`System`](../interfaces/agent_structures_events.System.md)
 
 #### Defined in
 
-[agent/structures/events.ts:114](https://github.com/livechat/lc-sdk-js/blob/e187316/src/agent/structures/events.ts#L114)
+[agent/structures/events.ts:123](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L123)
 
 ___
 
@@ -49,14 +50,14 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:129](https://github.com/livechat/lc-sdk-js/blob/e187316/src/agent/structures/events.ts#L129)
+[agent/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L138)
 
 ___
 
 ### RequestEvent
 
-Ƭ **RequestEvent**: [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`File`](../interfaces/agent_structures_events.File.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`FilledForm`](../interfaces/agent_structures_events.FilledForm.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`Message`](../interfaces/agent_structures_events.Message.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`RichMessage`](../interfaces/agent_structures_events.RichMessage.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`CustomEvent`](../interfaces/agent_structures_events.CustomEvent.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`SystemMessage`](../interfaces/agent_structures_events.SystemMessage.md)\>
+Ƭ **RequestEvent**: [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`File`](../interfaces/agent_structures_events.File.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`FilledForm`](../interfaces/agent_structures_events.FilledForm.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`Message`](../interfaces/agent_structures_events.Message.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`RichMessage`](../interfaces/agent_structures_events.RichMessage.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`CustomEvent`](../interfaces/agent_structures_events.CustomEvent.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`SystemMessage`](../interfaces/agent_structures_events.SystemMessage.md)\> \| [`LimitEventToRequestFields`](agent_structures_events.md#limiteventtorequestfields)<[`System`](../interfaces/agent_structures_events.System.md)\>
 
 #### Defined in
 
-[agent/structures/events.ts:133](https://github.com/livechat/lc-sdk-js/blob/e187316/src/agent/structures/events.ts#L133)
+[agent/structures/events.ts:142](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L142)

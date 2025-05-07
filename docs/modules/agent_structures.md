@@ -81,6 +81,7 @@
 - [Statistics](agent_structures.md#statistics)
 - [SurveyFilter](agent_structures.md#surveyfilter)
 - [SurveyType](agent_structures.md#surveytype)
+- [System](agent_structures.md#system)
 - [SystemMessage](agent_structures.md#systemmessage)
 - [Thread](agent_structures.md#thread)
 - [ThreadsFilters](agent_structures.md#threadsfilters)
@@ -539,6 +540,12 @@ ___
 ### SurveyType
 
 Re-exports [SurveyType](../enums/agent_structures_filters.SurveyType.md)
+
+___
+
+### System
+
+Re-exports [System](../interfaces/agent_structures_events.System.md)
 
 ___
 

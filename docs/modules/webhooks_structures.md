@@ -24,6 +24,7 @@
 - [PropertyNamespace](webhooks_structures.md#propertynamespace)
 - [RichMessage](webhooks_structures.md#richmessage)
 - [RoutingStatus](webhooks_structures.md#routingstatus)
+- [System](webhooks_structures.md#system)
 - [SystemMessage](webhooks_structures.md#systemmessage)
 
 ## References
@@ -133,6 +134,12 @@ ___
 ### RoutingStatus
 
 Re-exports [RoutingStatus](../enums/webhooks_structures_structures.RoutingStatus.md)
+
+___
+
+### System
+
+Re-exports [System](../interfaces/webhooks_structures_events.System.md)
 
 ___
 

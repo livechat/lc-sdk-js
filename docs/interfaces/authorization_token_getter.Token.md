@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[authorization/token_getter.ts:4](https://github.com/livechat/lc-sdk-js/blob/e187316/src/authorization/token_getter.ts#L4)
+[authorization/token_getter.ts:4](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/authorization/token_getter.ts#L4)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[authorization/token_getter.ts:5](https://github.com/livechat/lc-sdk-js/blob/e187316/src/authorization/token_getter.ts#L5)
+[authorization/token_getter.ts:5](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/authorization/token_getter.ts#L5)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[authorization/token_getter.ts:6](https://github.com/livechat/lc-sdk-js/blob/e187316/src/authorization/token_getter.ts#L6)
+[authorization/token_getter.ts:6](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/authorization/token_getter.ts#L6)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[authorization/token_getter.ts:7](https://github.com/livechat/lc-sdk-js/blob/e187316/src/authorization/token_getter.ts#L7)
+[authorization/token_getter.ts:7](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/authorization/token_getter.ts#L7)

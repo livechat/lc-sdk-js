@@ -63,6 +63,7 @@
 - [SortOrder](customer_structures.md#sortorder)
 - [StartChatParameters](customer_structures.md#startchatparameters)
 - [StartChatResponse](customer_structures.md#startchatresponse)
+- [System](customer_structures.md#system)
 - [SystemMessage](customer_structures.md#systemmessage)
 - [Thread](customer_structures.md#thread)
 - [UploadFileResponse](customer_structures.md#uploadfileresponse)
@@ -410,6 +411,12 @@ ___
 ### StartChatResponse
 
 Re-exports [StartChatResponse](../interfaces/customer_structures_responses.StartChatResponse.md)
+
+___
+
+### System
+
+Re-exports [System](../interfaces/customer_structures_events.System.md)
 
 ___
 
