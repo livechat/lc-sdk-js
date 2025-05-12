@@ -1,5 +1,5 @@
-import { User, Chat, CustomerMonitoringLevel } from "../agent/structures";
-import { Access, Event, Postback, Properties, Customer, RoutingStatus, Filter } from "./structures";
+import { Chat, CustomerMonitoringLevel, User } from "../agent/structures";
+import { Access, Customer, Event, Filter, Postback, Properties, RoutingStatus } from "./structures";
 
 export interface Webhook {
   webhook_id: string;
@@ -18,6 +18,7 @@ type WebhookPayload =
   | UserRemovedFromChat
   | IncomingEvent
   | EventUpdated
+  | EventDeleted
   | IncomingRichMessagePostback
   | ChatPropertiesUpdated
   | ChatPropertiesDeleted
@@ -88,6 +89,12 @@ export interface EventUpdated {
   chat_id: string;
   thread_id: string;
   event: Event;
+}
+
+export interface EventDeleted {
+  chat_id: string;
+  thread_id: string;
+  event_id: string;
 }
 
 export interface IncomingRichMessagePostback {

@@ -222,6 +222,20 @@ export default class Web extends WebAPI {
   }
 
   /**
+   * Deletes event
+   * @param chat_id - chat ID of event to delete
+   * @param thread_id - thread ID of event to delete
+   * @param event_id - ID of event to delete
+   */
+  async deleteEvent(chat_id: string, thread_id: string, event_id: string): Promise<EmptyResponse> {
+    return this.send("delete_event", {
+      chat_id,
+      thread_id,
+      event_id,
+    });
+  }
+
+  /**
    * Updates Customer's properties.
    * @param opts - properties to update
    */
