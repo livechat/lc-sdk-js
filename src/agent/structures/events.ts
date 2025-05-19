@@ -121,13 +121,7 @@ export interface System extends BaseEvent {
   version: number;
 }
 
-export interface DeletedEvent extends BaseEvent {
-  deleted: true;
-  custom_id?: string;
-  author_id?: string;
-}
-
-export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage | System | DeletedEvent;
+export type Event = File | FilledForm | Message | RichMessage | CustomEvent | SystemMessage | System;
 
 type ResponseOnlyFields =
   | "id"
