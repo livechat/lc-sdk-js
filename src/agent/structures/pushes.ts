@@ -43,6 +43,11 @@ export enum Pushes {
   EventUpdated = "event_updated",
 
   /**
+   * Informs that an event was deleted.
+   */
+  EventDeleted = "event_deleted",
+
+  /**
    * Informs about an incoming rich message postback. The push payload contains the info on the postback itself,
    * as well as the chat it was sent in.
    */
