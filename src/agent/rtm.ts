@@ -26,6 +26,7 @@ import type {
   RTMAPIOptions,
   SendEventResponse,
   SendRichMessagePostbackParameters,
+  SendThinkingIndicatorParameters,
   SetRoutingStatusResponse,
   StartChatParameters,
   StartChatResponse,
@@ -410,6 +411,15 @@ export default class RTM extends RTMAPI {
    */
   async markEventsAsSeen(chat_id: string, seen_up_to: string): Promise<EmptyResponse> {
     return this.send("mark_events_as_seen", { chat_id, seen_up_to });
+  }
+
+  /**
+   * Sends thinking indicator
+   * @param chat_id - chat for thinking indicator
+   * @param opts - thinking indicator options like title, description, visibility and custom ID
+   */
+  async sendThinkingIndicator(chat_id: string, opts?: SendThinkingIndicatorParameters): Promise<EmptyResponse> {
+    return this.send("send_thinking_indicator", { chat_id, ...opts });
   }
 
   /**

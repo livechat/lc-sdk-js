@@ -134,6 +134,11 @@ export enum Pushes {
   AgentDisconnected = "agent_disconnected",
 
   /**
+   * Informs that one of the chat users is currently preparing a response. The message hasn't been sent yet.
+   */
+  IncomingThinkingIndicator = "incoming_thinking_indicator",
+
+  /**
    * Informs that one of the chat users is currently typing a message. The message hasn't been sent yet.
    * The push payload contains the typing indicator object.
    */

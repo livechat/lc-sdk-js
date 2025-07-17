@@ -294,6 +294,13 @@ export interface Highlights {
   post_tag: string;
 }
 
+export interface SendThinkingIndicatorParameters {
+  title?: string;
+  description?: string;
+  visibility?: string;
+  custom_id?: string;
+}
+
 export interface WebAPIOptions {
   apiUrl?: string;
 }
