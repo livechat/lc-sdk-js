@@ -17,6 +17,7 @@
 - [author\_id](agent_structures_events.RichMessage.md#author_id)
 - [created\_at](agent_structures_events.RichMessage.md#created_at)
 - [custom\_id](agent_structures_events.RichMessage.md#custom_id)
+- [deleted](agent_structures_events.RichMessage.md#deleted)
 - [elements](agent_structures_events.RichMessage.md#elements)
 - [id](agent_structures_events.RichMessage.md#id)
 - [properties](agent_structures_events.RichMessage.md#properties)
@@ -32,7 +33,7 @@
 
 #### Defined in
 
-[agent/structures/events.ts:68](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L68)
+[agent/structures/events.ts:69](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L69)
 
 ___
 
@@ -46,7 +47,7 @@ BaseEvent.created\_at
 
 #### Defined in
 
-[agent/structures/events.ts:5](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L5)
+[agent/structures/events.ts:5](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L5)
 
 ___
 
@@ -56,7 +57,21 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:67](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L67)
+[agent/structures/events.ts:68](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L68)
+
+___
+
+### deleted
+
+• **deleted**: `boolean`
+
+#### Inherited from
+
+BaseEvent.deleted
+
+#### Defined in
+
+[agent/structures/events.ts:8](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L8)
 
 ___
 
@@ -66,7 +81,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:70](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L70)
+[agent/structures/events.ts:71](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L71)
 
 ___
 
@@ -80,7 +95,7 @@ BaseEvent.id
 
 #### Defined in
 
-[agent/structures/events.ts:4](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L4)
+[agent/structures/events.ts:4](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L4)
 
 ___
 
@@ -94,7 +109,7 @@ BaseEvent.properties
 
 #### Defined in
 
-[agent/structures/events.ts:6](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L6)
+[agent/structures/events.ts:6](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L6)
 
 ___
 
@@ -104,7 +119,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:69](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L69)
+[agent/structures/events.ts:70](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L70)
 
 ___
 
@@ -118,7 +133,7 @@ BaseEvent.type
 
 #### Defined in
 
-[agent/structures/events.ts:66](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L66)
+[agent/structures/events.ts:67](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L67)
 
 ___
 
@@ -132,4 +147,4 @@ BaseEvent.visibility
 
 #### Defined in
 
-[agent/structures/events.ts:7](https://github.com/livechat/lc-sdk-js/blob/1b4de27/src/agent/structures/events.ts#L7)
+[agent/structures/events.ts:7](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/structures/events.ts#L7)

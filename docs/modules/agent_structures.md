@@ -74,6 +74,7 @@
 - [RoutingStatus](agent_structures.md#routingstatus)
 - [SendEventResponse](agent_structures.md#sendeventresponse)
 - [SendRichMessagePostbackParameters](agent_structures.md#sendrichmessagepostbackparameters)
+- [SendThinkingIndicatorParameters](agent_structures.md#sendthinkingindicatorparameters)
 - [SetRoutingStatusResponse](agent_structures.md#setroutingstatusresponse)
 - [SortOrder](agent_structures.md#sortorder)
 - [StartChatParameters](agent_structures.md#startchatparameters)
@@ -498,6 +499,12 @@ ___
 ### SendRichMessagePostbackParameters
 
 Re-exports [SendRichMessagePostbackParameters](../interfaces/agent_structures_structures.SendRichMessagePostbackParameters.md)
+
+___
+
+### SendThinkingIndicatorParameters
+
+Re-exports [SendThinkingIndicatorParameters](../interfaces/agent_structures_structures.SendThinkingIndicatorParameters.md)
 
 ___
 

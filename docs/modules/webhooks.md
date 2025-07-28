@@ -24,6 +24,7 @@
 - [ChatPropertiesUpdated](../interfaces/webhooks.ChatPropertiesUpdated.md)
 - [ChatTransferred](../interfaces/webhooks.ChatTransferred.md)
 - [CustomerSessionFieldsUpdated](../interfaces/webhooks.CustomerSessionFieldsUpdated.md)
+- [EventDeleted](../interfaces/webhooks.EventDeleted.md)
 - [EventPropertiesDeleted](../interfaces/webhooks.EventPropertiesDeleted.md)
 - [EventPropertiesUpdated](../interfaces/webhooks.EventPropertiesUpdated.md)
 - [EventUpdated](../interfaces/webhooks.EventUpdated.md)

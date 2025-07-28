@@ -43,6 +43,7 @@
 - [RTMAPIOptions](../interfaces/agent_structures_structures.RTMAPIOptions.md)
 - [ResumeChatParameters](../interfaces/agent_structures_structures.ResumeChatParameters.md)
 - [SendRichMessagePostbackParameters](../interfaces/agent_structures_structures.SendRichMessagePostbackParameters.md)
+- [SendThinkingIndicatorParameters](../interfaces/agent_structures_structures.SendThinkingIndicatorParameters.md)
 - [StartChatParameters](../interfaces/agent_structures_structures.StartChatParameters.md)
 - [Statistics](../interfaces/agent_structures_structures.Statistics.md)
 - [Thread](../interfaces/agent_structures_structures.Thread.md)
