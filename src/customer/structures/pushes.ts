@@ -28,6 +28,11 @@ export enum Pushes {
   UserRemovedFromChat = "user_removed_from_chat",
 
   /**
+   * Informs about an incoming event preview sent to a chat.
+   */
+  IncomingEventPreview = "incoming_event_preview",
+
+  /**
    * Informs about an incoming event sent to a chat.
    */
   IncomingEvent = "incoming_event",

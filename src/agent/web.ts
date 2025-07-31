@@ -172,6 +172,19 @@ export default class Web extends WebAPI {
   }
 
   /**
+   * Sends an Event object. Use this method to send a message preview by specifing the Message event type in the request.
+   * This event is not saved in the chat.
+   * @param chat_id - chat to send event to
+   * @param event - Event request object
+   */
+  async sendEventPreview(chat_id: string, event: RequestEvent): Promise<EmptyResponse> {
+    return this.send("send_event_preview", {
+      chat_id,
+      event,
+    });
+  }
+
+  /**
    * Sends an Event object. Use this method to send a message by specifing the Message event type in the request.
    * It's possible to write to a chat without joining it. The user sending an event will be automatically added to the chat
    * with the present parameter set to false.
