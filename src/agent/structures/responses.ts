@@ -48,10 +48,6 @@ export interface SendEventResponse {
   event_id: string;
 }
 
-export interface CreateCustomerResponse {
-  customer_id: string;
-}
-
 export interface UploadFileResponse {
   url: string;
 }
