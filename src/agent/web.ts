@@ -2,7 +2,6 @@ import { WebAPI } from "../internal";
 import { TokenGetter } from "../authorization";
 import type {
   AgentForTransfer,
-  CreateCustomerResponse,
   CustomerParameters,
   EmptyResponse,
   GetChatResponse,
@@ -325,14 +324,6 @@ export default class Web extends WebAPI {
    */
   async getCustomer(id: string): Promise<GetCustomerResponse> {
     return this.send("get_customer", { id });
-  }
-
-  /**
-   * Creates a new Customer user type.
-   * @param opts - customer data
-   */
-  async createCustomer(opts?: CustomerParameters): Promise<CreateCustomerResponse> {
-    return this.send("create_customer", opts || {});
   }
 
   /**

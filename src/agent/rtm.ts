@@ -3,7 +3,6 @@ import { TokenGetter, TokenType } from "../authorization";
 import type {
   AgentForTransfer,
   ChangePushNotificationsRequest,
-  CreateCustomerResponse,
   CustomerParameters,
   EmptyResponse,
   GetChatResponse,
@@ -366,14 +365,6 @@ export default class RTM extends RTMAPI {
    */
   async getCustomer(id: string): Promise<GetCustomerResponse> {
     return this.send("get_customer", { id });
-  }
-
-  /**
-   * Creates a new Customer user type.
-   * @param opts - customer data
-   */
-  async createCustomer(opts?: CustomerParameters): Promise<CreateCustomerResponse> {
-    return this.send("create_customer", opts || {});
   }
 
   /**
