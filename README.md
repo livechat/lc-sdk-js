@@ -8,15 +8,15 @@ For protocol documentation of LiveChat APIs, please go to [Livechat Platform Doc
 
 ## Technical docs
 
-For technical documentation visit [docs](https://github.com/livechat/lc-sdk-js/blob/v3.6/docs/README.md)
+For technical documentation visit [docs](https://github.com/livechat/lc-sdk-js/blob/v3.7/docs/README.md)
 
 ## SDK version vs API version
 
 Here is the relation between SDK versions and API versions:
-* lc-sdk-js 3.x.x -> LiveChat API 3.3
 * lc-sdk-js 4.x.x -> LiveChat API 3.4
 * lc-sdk-js 5.x.x -> LiveChat API 3.5
 * lc-sdk-js 6.x.x -> LiveChat API 3.6
+* lc-sdk-js 7.x.x -> LiveChat API 3.7
 * ...
 
 All versions of LiveChat JS SDK are available on [npm](https://www.npmjs.com/package/@livechat/lc-sdk-js).
@@ -34,7 +34,7 @@ npm install @livechat/lc-sdk-js
 
 ## Authorization
 
-Authorization in SDK is based on [TokenGetter](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/token_getter.ts)
+Authorization in SDK is based on [TokenGetter](https://github.com/livechat/lc-sdk-js/blob/v3.7/src/authorization/token_getter.ts)
 required in both Web and RTM API classes. Example token getter:
 
 ```javascript
@@ -63,7 +63,7 @@ For `Bearer` tokens, organization's region is the token prefix before the colon:
 
 If you need to find region
 for [Personal Access Token (PAT)](https://platform.text.com/docs/authorization/agent-authorization#personal-access-tokens),
-use [tokenGetterFromPAT](https://github.com/livechat/lc-sdk-js/blob/v3.6/src/authorization/personal_access_token.ts) helper.
+use [tokenGetterFromPAT](https://github.com/livechat/lc-sdk-js/blob/v3.7/src/authorization/personal_access_token.ts) helper.
 
 ## Browser and Node.js compatibility
 
@@ -82,8 +82,8 @@ const customerAPI = new Customer.RTM(WebSocket, customerTokenGetter);
 
 See the examples:
 
-* [browser](https://github.com/livechat/lc-sdk-js/blob/v3.6/examples/react-rtm-messages/src/ws.tsx) - here we use the [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
-* [Node.js](https://github.com/livechat/lc-sdk-js/blob/v3.6/examples/node-rtm-messages/index.ts) - here we recommend the [ws](https://www.npmjs.com/package/ws) package
+* [browser](https://github.com/livechat/lc-sdk-js/blob/v3.7/examples/react-rtm-messages/src/ws.tsx) - here we use the [WebSocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket)
+* [Node.js](https://github.com/livechat/lc-sdk-js/blob/v3.7/examples/node-rtm-messages/index.ts) - here we recommend the [ws](https://www.npmjs.com/package/ws) package
 
 ## Feedback
 
