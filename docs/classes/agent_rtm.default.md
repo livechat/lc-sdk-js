@@ -35,7 +35,6 @@
 - [banCustomer](agent_rtm.default.md#bancustomer)
 - [changePushNotifications](agent_rtm.default.md#changepushnotifications)
 - [connect](agent_rtm.default.md#connect)
-- [createCustomer](agent_rtm.default.md#createcustomer)
 - [deactivateChat](agent_rtm.default.md#deactivatechat)
 - [deleteChatProperties](agent_rtm.default.md#deletechatproperties)
 - [deleteEventProperties](agent_rtm.default.md#deleteeventproperties)
@@ -58,6 +57,7 @@
 - [resumeChat](agent_rtm.default.md#resumechat)
 - [send](agent_rtm.default.md#send)
 - [sendEvent](agent_rtm.default.md#sendevent)
+- [sendEventPreview](agent_rtm.default.md#sendeventpreview)
 - [sendRichMessagePostback](agent_rtm.default.md#sendrichmessagepostback)
 - [sendThinkingIndicator](agent_rtm.default.md#sendthinkingindicator)
 - [sendTypingIndicator](agent_rtm.default.md#sendtypingindicator)
@@ -98,7 +98,7 @@
 
 #### Defined in
 
-[agent/rtm.ts:37](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L37)
+[agent/rtm.ts:36](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L36)
 
 ## Properties
 
@@ -112,7 +112,7 @@
 
 #### Defined in
 
-[internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L79)
+[internal/index.ts:79](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L79)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L86)
+[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L86)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L83)
+[internal/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L83)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L84)
+[internal/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L84)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L82)
+[internal/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L82)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L85)
+[internal/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L85)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L90)
+[internal/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L90)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L81)
+[internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L81)
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L80)
+[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L80)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L89)
+[internal/index.ts:89](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L89)
 
 ## Methods
 
@@ -264,7 +264,7 @@ Adds a user to the chat. You can't add more than one customer user type to the c
 
 #### Defined in
 
-[agent/rtm.ts:196](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L196)
+[agent/rtm.ts:195](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L195)
 
 ___
 
@@ -288,7 +288,7 @@ and does not accept new ones during the ban lifespan.
 
 #### Defined in
 
-[agent/rtm.ts:394](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L394)
+[agent/rtm.ts:398](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L398)
 
 ___
 
@@ -310,7 +310,7 @@ Change the firebase push notifications properties.
 
 #### Defined in
 
-[agent/rtm.ts:73](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L73)
+[agent/rtm.ts:72](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L72)
 
 ___
 
@@ -328,29 +328,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L101)
-
-___
-
-### createCustomer
-
-▸ **createCustomer**(`opts?`): `Promise`<[`CreateCustomerResponse`](../interfaces/agent_structures_responses.CreateCustomerResponse.md)\>
-
-Creates a new Customer user type.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `opts?` | [`CustomerParameters`](../interfaces/agent_structures_structures.CustomerParameters.md) | customer data |
-
-#### Returns
-
-`Promise`<[`CreateCustomerResponse`](../interfaces/agent_structures_responses.CreateCustomerResponse.md)\>
-
-#### Defined in
-
-[agent/rtm.ts:375](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L375)
+[internal/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L101)
 
 ___
 
@@ -373,7 +351,7 @@ Deactivates a chat by closing the currently open thread. Sending messages to thi
 
 #### Defined in
 
-[agent/rtm.ts:154](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L154)
+[agent/rtm.ts:153](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L153)
 
 ___
 
@@ -396,7 +374,7 @@ Deletes chat properties
 
 #### Defined in
 
-[agent/rtm.ts:269](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L269)
+[agent/rtm.ts:281](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L281)
 
 ___
 
@@ -421,7 +399,7 @@ Deletes event properties
 
 #### Defined in
 
-[agent/rtm.ts:329](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L329)
+[agent/rtm.ts:341](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L341)
 
 ___
 
@@ -445,7 +423,7 @@ Deletes thread properties
 
 #### Defined in
 
-[agent/rtm.ts:293](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L293)
+[agent/rtm.ts:305](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L305)
 
 ___
 
@@ -468,7 +446,7 @@ Chat members don't need to follow their chats. They receive all chat pushes rega
 
 #### Defined in
 
-[agent/rtm.ts:166](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L166)
+[agent/rtm.ts:165](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L165)
 
 ___
 
@@ -491,7 +469,7 @@ the info about all the changes related to that customer via pushes.
 
 #### Defined in
 
-[agent/rtm.ts:466](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L466)
+[agent/rtm.ts:470](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L470)
 
 ___
 
@@ -514,7 +492,7 @@ It returns a thread that the current Agent has access to in a given chat.
 
 #### Defined in
 
-[agent/rtm.ts:117](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L117)
+[agent/rtm.ts:116](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L116)
 
 ___
 
@@ -536,7 +514,7 @@ Returns the info about the Customer with a given id.
 
 #### Defined in
 
-[agent/rtm.ts:367](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L367)
+[agent/rtm.ts:379](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L379)
 
 ___
 
@@ -560,7 +538,7 @@ It returns the Agents you can transfer a chat to. Agents are sorted ascendingly 
 
 #### Defined in
 
-[agent/rtm.ts:457](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L457)
+[agent/rtm.ts:461](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L461)
 
 ___
 
@@ -585,7 +563,7 @@ but each time with a different thread. The returned chat is a complete object, n
 
 #### Defined in
 
-[agent/rtm.ts:128](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L128)
+[agent/rtm.ts:127](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L127)
 
 ___
 
@@ -607,7 +585,7 @@ It returns summaries of the chats an Agent has access to.
 
 #### Defined in
 
-[agent/rtm.ts:99](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L99)
+[agent/rtm.ts:98](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L98)
 
 ___
 
@@ -629,7 +607,7 @@ Returns the current routing status of each agent.
 
 #### Defined in
 
-[agent/rtm.ts:482](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L482)
+[agent/rtm.ts:486](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L486)
 
 ___
 
@@ -652,7 +630,7 @@ Returns threads that the current Agent has access to in a given chat.
 
 #### Defined in
 
-[agent/rtm.ts:108](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L108)
+[agent/rtm.ts:107](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L107)
 
 ___
 
@@ -675,7 +653,7 @@ Note: uses the access token from TokenGetter provided in the constructor.
 
 #### Defined in
 
-[agent/rtm.ts:57](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L57)
+[agent/rtm.ts:56](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L56)
 
 ___
 
@@ -697,7 +675,7 @@ Logs the Agent out.
 
 #### Defined in
 
-[agent/rtm.ts:91](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L91)
+[agent/rtm.ts:90](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L90)
 
 ___
 
@@ -720,7 +698,7 @@ Marks events as seen by Agent.
 
 #### Defined in
 
-[agent/rtm.ts:412](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L412)
+[agent/rtm.ts:416](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L416)
 
 ___
 
@@ -746,7 +724,7 @@ when a certain condition is met (e.g. an important Customer started the chat).
 
 #### Defined in
 
-[agent/rtm.ts:447](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L447)
+[agent/rtm.ts:451](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L451)
 
 ___
 
@@ -785,7 +763,7 @@ Note: multiple subscriptions for the same push are not allowed in single websock
 
 #### Defined in
 
-[agent/rtm.ts:47](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L47)
+[agent/rtm.ts:46](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L46)
 
 ___
 
@@ -809,7 +787,7 @@ Removes a user from chat. Removing customer user type is not allowed. It's alway
 
 #### Defined in
 
-[agent/rtm.ts:218](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L218)
+[agent/rtm.ts:217](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L217)
 
 ___
 
@@ -831,7 +809,7 @@ Restarts an archived chat
 
 #### Defined in
 
-[agent/rtm.ts:144](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L144)
+[agent/rtm.ts:143](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L143)
 
 ___
 
@@ -856,7 +834,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:155](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L155)
+[internal/index.ts:155](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L155)
 
 ___
 
@@ -882,7 +860,31 @@ with the present parameter set to false.
 
 #### Defined in
 
-[agent/rtm.ts:239](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L239)
+[agent/rtm.ts:251](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L251)
+
+___
+
+### sendEventPreview
+
+▸ **sendEventPreview**(`chat_id`, `event`): `Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
+
+Sends an Event object. Use this method to send a message preview by specifing the Message event type in the request.
+This event is not saved in the chat.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `chat_id` | `string` | chat to send event to |
+| `event` | [`RequestEvent`](../modules/agent_structures_events.md#requestevent) | Event request object |
+
+#### Returns
+
+`Promise`<[`EmptyResponse`](../interfaces/agent_structures_responses.EmptyResponse.md)\>
+
+#### Defined in
+
+[agent/rtm.ts:236](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L236)
 
 ___
 
@@ -904,7 +906,7 @@ Sends postback for rich message
 
 #### Defined in
 
-[agent/rtm.ts:251](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L251)
+[agent/rtm.ts:263](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L263)
 
 ___
 
@@ -927,7 +929,7 @@ Sends thinking indicator
 
 #### Defined in
 
-[agent/rtm.ts:421](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L421)
+[agent/rtm.ts:425](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L425)
 
 ___
 
@@ -951,7 +953,7 @@ Sends typing indicator
 
 #### Defined in
 
-[agent/rtm.ts:431](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L431)
+[agent/rtm.ts:435](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L435)
 
 ___
 
@@ -975,7 +977,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L186)
+[internal/index.ts:186](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L186)
 
 ___
 
@@ -999,7 +1001,7 @@ for the Agent's status to be changed to not_accepting_chats.
 
 #### Defined in
 
-[agent/rtm.ts:83](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L83)
+[agent/rtm.ts:82](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L82)
 
 ___
 
@@ -1022,7 +1024,7 @@ Changes the status of an Agent or a Bot Agent.
 
 #### Defined in
 
-[agent/rtm.ts:403](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L403)
+[agent/rtm.ts:407](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L407)
 
 ___
 
@@ -1044,7 +1046,7 @@ Starts a chat
 
 #### Defined in
 
-[agent/rtm.ts:136](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L136)
+[agent/rtm.ts:135](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L135)
 
 ___
 
@@ -1075,7 +1077,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:175](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L175)
+[internal/index.ts:175](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L175)
 
 ___
 
@@ -1099,7 +1101,7 @@ Tags thread with given tag
 
 #### Defined in
 
-[agent/rtm.ts:349](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L349)
+[agent/rtm.ts:361](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L361)
 
 ___
 
@@ -1122,7 +1124,7 @@ Transfers a chat to an Agent or a group.
 
 #### Defined in
 
-[agent/rtm.ts:184](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L184)
+[agent/rtm.ts:183](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L183)
 
 ___
 
@@ -1145,7 +1147,7 @@ will be sent to the requester. Chat members cannot unfollow the chat.
 
 #### Defined in
 
-[agent/rtm.ts:175](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L175)
+[agent/rtm.ts:174](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L174)
 
 ___
 
@@ -1167,7 +1169,7 @@ Removes the agent from the list of customer's followers.
 
 #### Defined in
 
-[agent/rtm.ts:474](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L474)
+[agent/rtm.ts:478](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L478)
 
 ___
 
@@ -1191,7 +1193,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:182](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/internal/index.ts#L182)
+[internal/index.ts:182](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L182)
 
 ___
 
@@ -1215,7 +1217,7 @@ Removes tag from thread
 
 #### Defined in
 
-[agent/rtm.ts:359](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L359)
+[agent/rtm.ts:371](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L371)
 
 ___
 
@@ -1238,7 +1240,7 @@ Updates chat properties
 
 #### Defined in
 
-[agent/rtm.ts:260](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L260)
+[agent/rtm.ts:272](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L272)
 
 ___
 
@@ -1261,7 +1263,7 @@ Updates Customer's properties.
 
 #### Defined in
 
-[agent/rtm.ts:384](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L384)
+[agent/rtm.ts:388](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L388)
 
 ___
 
@@ -1286,7 +1288,7 @@ Updates event properties
 
 #### Defined in
 
-[agent/rtm.ts:308](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L308)
+[agent/rtm.ts:320](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L320)
 
 ___
 
@@ -1310,7 +1312,7 @@ after the former token expires as its lifetime is now tied to the new token.
 
 #### Defined in
 
-[agent/rtm.ts:492](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L492)
+[agent/rtm.ts:496](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L496)
 
 ___
 
@@ -1334,4 +1336,4 @@ Updates thread properties
 
 #### Defined in
 
-[agent/rtm.ts:279](https://github.com/livechat/lc-sdk-js/blob/a8e5703/src/agent/rtm.ts#L279)
+[agent/rtm.ts:291](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/rtm.ts#L291)

@@ -20,7 +20,6 @@
 - [Chat](agent_structures.md#chat)
 - [ChatsFilters](agent_structures.md#chatsfilters)
 - [ChatsSummary](agent_structures.md#chatssummary)
-- [CreateCustomerResponse](agent_structures.md#createcustomerresponse)
 - [CustomEvent](agent_structures.md#customevent)
 - [Customer](agent_structures.md#customer)
 - [CustomerMonitoringLevel](agent_structures.md#customermonitoringlevel)
@@ -175,12 +174,6 @@ ___
 ### ChatsSummary
 
 Re-exports [ChatsSummary](../interfaces/agent_structures_structures.ChatsSummary.md)
-
-___
-
-### CreateCustomerResponse
-
-Re-exports [CreateCustomerResponse](../interfaces/agent_structures_responses.CreateCustomerResponse.md)
 
 ___
 

@@ -6,7 +6,6 @@
 
 ### Interfaces
 
-- [CreateCustomerResponse](../interfaces/agent_structures_responses.CreateCustomerResponse.md)
 - [EmptyResponse](../interfaces/agent_structures_responses.EmptyResponse.md)
 - [GetChatResponse](../interfaces/agent_structures_responses.GetChatResponse.md)
 - [GetCustomerResponse](../interfaces/agent_structures_responses.GetCustomerResponse.md)
