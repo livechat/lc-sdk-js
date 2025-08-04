@@ -82,7 +82,7 @@
 
 #### Defined in
 
-[customer/web.ts:32](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L32)
+[customer/web.ts:32](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L32)
 
 ## Properties
 
@@ -96,7 +96,7 @@
 
 #### Defined in
 
-[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L13)
+[internal/index.ts:13](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L13)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L15)
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L15)
 
 ___
 
@@ -124,7 +124,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:19](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L19)
+[internal/index.ts:19](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L19)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:20](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L20)
+[internal/index.ts:20](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L20)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:21](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L21)
+[internal/index.ts:21](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L21)
 
 ___
 
@@ -166,7 +166,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L14)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L14)
 
 ## Methods
 
@@ -189,7 +189,7 @@ Marks an incoming greeting as seen.
 
 #### Defined in
 
-[customer/web.ts:326](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L326)
+[customer/web.ts:326](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L326)
 
 ___
 
@@ -212,7 +212,7 @@ For example, Customers could cancel greetings by minimalizing the chat widget wi
 
 #### Defined in
 
-[customer/web.ts:335](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L335)
+[customer/web.ts:335](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L335)
 
 ___
 
@@ -238,7 +238,7 @@ parameters for the server when the customers limit is reached. Works only for of
 
 #### Defined in
 
-[customer/web.ts:279](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L279)
+[customer/web.ts:279](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L279)
 
 ___
 
@@ -260,7 +260,7 @@ Deactivates a chat by closing the currently open thread. Sending messages to thi
 
 #### Defined in
 
-[customer/web.ts:83](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L83)
+[customer/web.ts:83](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L83)
 
 ___
 
@@ -283,7 +283,7 @@ Deletes chat properties
 
 #### Defined in
 
-[customer/web.ts:150](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L150)
+[customer/web.ts:150](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L150)
 
 ___
 
@@ -307,7 +307,7 @@ Deletes event
 
 #### Defined in
 
-[customer/web.ts:230](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L230)
+[customer/web.ts:230](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L230)
 
 ___
 
@@ -332,7 +332,7 @@ Deletes event properties
 
 #### Defined in
 
-[customer/web.ts:210](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L210)
+[customer/web.ts:210](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L210)
 
 ___
 
@@ -356,7 +356,7 @@ Deletes thread properties
 
 #### Defined in
 
-[customer/web.ts:174](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L174)
+[customer/web.ts:174](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L174)
 
 ___
 
@@ -379,7 +379,7 @@ It returns a thread that the current Customer has access to in a given chat.
 
 #### Defined in
 
-[customer/web.ts:58](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L58)
+[customer/web.ts:58](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L58)
 
 ___
 
@@ -402,7 +402,7 @@ Returns the configuration of a given group in a given version.
 
 #### Defined in
 
-[customer/web.ts:360](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L360)
+[customer/web.ts:360](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L360)
 
 ___
 
@@ -418,7 +418,7 @@ Returns the info about the Customer requesting it.
 
 #### Defined in
 
-[customer/web.ts:257](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L257)
+[customer/web.ts:257](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L257)
 
 ___
 
@@ -440,7 +440,7 @@ Returns the dynamic configuration of a given group.
 
 #### Defined in
 
-[customer/web.ts:351](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L351)
+[customer/web.ts:351](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L351)
 
 ___
 
@@ -463,7 +463,7 @@ Returns an empty ticket form of a prechat or postchat survey.
 
 #### Defined in
 
-[customer/web.ts:292](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L292)
+[customer/web.ts:292](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L292)
 
 ___
 
@@ -487,7 +487,7 @@ Returns the localization of a given language and group in a given version.
 
 #### Defined in
 
-[customer/web.ts:373](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L373)
+[customer/web.ts:373](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L373)
 
 ___
 
@@ -504,7 +504,7 @@ To use this method, the Customer needs to be logged in, which can be done via th
 
 #### Defined in
 
-[customer/web.ts:300](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L300)
+[customer/web.ts:300](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L300)
 
 ___
 
@@ -526,7 +526,7 @@ It returns the info on a given URL.
 
 #### Defined in
 
-[customer/web.ts:308](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L308)
+[customer/web.ts:308](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L308)
 
 ___
 
@@ -548,7 +548,7 @@ It returns summaries of the chats a Customer participated in.
 
 #### Defined in
 
-[customer/web.ts:40](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L40)
+[customer/web.ts:40](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L40)
 
 ___
 
@@ -570,7 +570,7 @@ Lists statuses of groups.
 
 #### Defined in
 
-[customer/web.ts:265](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L265)
+[customer/web.ts:265](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L265)
 
 ___
 
@@ -593,7 +593,7 @@ Returns threads that the current Customer has access to in a given chat.
 
 #### Defined in
 
-[customer/web.ts:49](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L49)
+[customer/web.ts:49](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L49)
 
 ___
 
@@ -616,7 +616,7 @@ Marks events as seen by Agent.
 
 #### Defined in
 
-[customer/web.ts:317](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L317)
+[customer/web.ts:317](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L317)
 
 ___
 
@@ -638,7 +638,7 @@ Requests customer to verify email.
 
 #### Defined in
 
-[customer/web.ts:343](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L343)
+[customer/web.ts:343](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L343)
 
 ___
 
@@ -660,7 +660,7 @@ Restarts an archived chat
 
 #### Defined in
 
-[customer/web.ts:74](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L74)
+[customer/web.ts:74](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L74)
 
 ___
 
@@ -691,7 +691,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L30)
+[internal/index.ts:30](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L30)
 
 ___
 
@@ -717,7 +717,7 @@ with the present parameter set to false.
 
 #### Defined in
 
-[customer/web.ts:95](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L95)
+[customer/web.ts:95](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L95)
 
 ___
 
@@ -739,7 +739,7 @@ Sends postback for rich message
 
 #### Defined in
 
-[customer/web.ts:122](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L122)
+[customer/web.ts:122](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L122)
 
 ___
 
@@ -762,7 +762,7 @@ Sends a sneak peek to a chat.
 
 #### Defined in
 
-[customer/web.ts:132](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L132)
+[customer/web.ts:132](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L132)
 
 ___
 
@@ -786,7 +786,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:73](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/index.ts#L73)
+[internal/index.ts:73](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/index.ts#L73)
 
 ___
 
@@ -808,7 +808,7 @@ Sets session fields for Customer.
 
 #### Defined in
 
-[customer/web.ts:250](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L250)
+[customer/web.ts:250](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L250)
 
 ___
 
@@ -830,7 +830,7 @@ Starts a chat
 
 #### Defined in
 
-[customer/web.ts:66](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L66)
+[customer/web.ts:66](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L66)
 
 ___
 
@@ -853,7 +853,7 @@ Updates chat properties
 
 #### Defined in
 
-[customer/web.ts:141](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L141)
+[customer/web.ts:141](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L141)
 
 ___
 
@@ -875,7 +875,7 @@ Updates Customer's properties.
 
 #### Defined in
 
-[customer/web.ts:242](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L242)
+[customer/web.ts:242](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L242)
 
 ___
 
@@ -900,7 +900,7 @@ Updates event properties
 
 #### Defined in
 
-[customer/web.ts:189](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L189)
+[customer/web.ts:189](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L189)
 
 ___
 
@@ -924,7 +924,7 @@ Updates thread properties
 
 #### Defined in
 
-[customer/web.ts:160](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L160)
+[customer/web.ts:160](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L160)
 
 ___
 
@@ -952,4 +952,4 @@ Uploads a file to the server as a temporary file. It returns a URL that expires 
 
 #### Defined in
 
-[customer/web.ts:113](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/web.ts#L113)
+[customer/web.ts:113](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/web.ts#L113)

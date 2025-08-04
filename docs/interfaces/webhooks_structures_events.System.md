@@ -38,7 +38,7 @@ BaseEvent.created\_at
 
 #### Defined in
 
-[webhooks/structures/events.ts:5](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L5)
+[webhooks/structures/events.ts:5](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L5)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:117](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L117)
+[webhooks/structures/events.ts:117](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L117)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:120](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L120)
+[webhooks/structures/events.ts:120](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L120)
 
 ___
 
@@ -72,7 +72,7 @@ BaseEvent.id
 
 #### Defined in
 
-[webhooks/structures/events.ts:4](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L4)
+[webhooks/structures/events.ts:4](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L4)
 
 ___
 
@@ -86,7 +86,7 @@ BaseEvent.properties
 
 #### Defined in
 
-[webhooks/structures/events.ts:6](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L6)
+[webhooks/structures/events.ts:6](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L6)
 
 ___
 
@@ -100,7 +100,7 @@ BaseEvent.recipients
 
 #### Defined in
 
-[webhooks/structures/events.ts:7](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L7)
+[webhooks/structures/events.ts:7](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L7)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:118](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L118)
+[webhooks/structures/events.ts:118](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L118)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:119](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L119)
+[webhooks/structures/events.ts:119](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L119)
 
 ___
 
@@ -134,7 +134,7 @@ BaseEvent.type
 
 #### Defined in
 
-[webhooks/structures/events.ts:116](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L116)
+[webhooks/structures/events.ts:116](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L116)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:121](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L121)
+[webhooks/structures/events.ts:121](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L121)
 
 ___
 
@@ -158,4 +158,4 @@ BaseEvent.visibility
 
 #### Defined in
 
-[webhooks/structures/events.ts:8](https://github.com/livechat/lc-sdk-js/blob/300991c/src/webhooks/structures/events.ts#L8)
+[webhooks/structures/events.ts:8](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/webhooks/structures/events.ts#L8)

@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[customer/structures/events.ts:123](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/structures/events.ts#L123)
+[customer/structures/events.ts:123](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/structures/events.ts#L123)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:137](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/structures/events.ts#L137)
+[customer/structures/events.ts:137](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/structures/events.ts#L137)
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/structures/events.ts#L138)
+[customer/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/customer/structures/events.ts#L138)

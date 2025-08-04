@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[configuration/structures/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/300991c/src/configuration/structures/structures.ts#L87)
+[configuration/structures/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/configuration/structures/structures.ts#L87)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/300991c/src/configuration/structures/structures.ts#L84)
+[configuration/structures/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/configuration/structures/structures.ts#L84)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/300991c/src/configuration/structures/structures.ts#L86)
+[configuration/structures/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/configuration/structures/structures.ts#L86)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/300991c/src/configuration/structures/structures.ts#L85)
+[configuration/structures/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/configuration/structures/structures.ts#L85)

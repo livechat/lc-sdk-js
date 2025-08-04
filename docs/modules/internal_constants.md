@@ -17,14 +17,14 @@
 
 #### Defined in
 
-[internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/constants.ts#L2)
+[internal/constants.ts:2](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/constants.ts#L2)
 
 ___
 
 ### ApiVersion
 
-• `Const` **ApiVersion**: ``"3.6"``
+• `Const` **ApiVersion**: ``"3.7"``
 
 #### Defined in
 
-[internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/300991c/src/internal/constants.ts#L1)
+[internal/constants.ts:1](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/internal/constants.ts#L1)
