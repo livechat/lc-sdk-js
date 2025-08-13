@@ -29,8 +29,6 @@ type WebhookPayload =
   | ThreadTagged
   | ThreadUntagged
   | RoutingStatusSet
-  | IncomingCustomer
-  | IncomingCustomers
   | EventsMarkedAsSeen
   | ChatTransferred
   | CustomerSessionFieldsUpdated
@@ -156,15 +154,6 @@ export interface ThreadUntagged {
 export interface RoutingStatusSet {
   agent_id: string;
   status: RoutingStatus;
-}
-
-export interface IncomingCustomer {
-  customer: Customer;
-}
-
-export interface IncomingCustomers {
-  customers: Customer[];
-  customer_monitoring_level: CustomerMonitoringLevel;
 }
 
 export interface EventsMarkedAsSeen {
