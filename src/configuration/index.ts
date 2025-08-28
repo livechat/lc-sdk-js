@@ -13,7 +13,6 @@ import {
   BotTemplate,
   BotTemplateFieldsCreate,
   BotTemplateFieldsUpdate,
-  CannedResponse,
   ChannelActivity,
   CompanyDetails,
   CreateAgentResponse,
