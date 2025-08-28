@@ -676,13 +676,7 @@ export default class ConfigurationAPI extends WebAPI {
    * @param options - filtering and pagination options
    */
   async listCannedResponses(options?: ListCannedResponsesRequest): Promise<ListCannedResponsesResponse> {
-    const request = options || {};
-    return this.send("list_canned_responses", {
-      group_ids: request.group_ids,
-      include_private: request.include_private,
-      limit: request.limit,
-      page_id: request.page_id,
-    });
+    return this.send("list_canned_responses", options || {});
   }
 
   /**
