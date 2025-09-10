@@ -42,8 +42,9 @@ export interface Statistics {
   threads_count: number;
   visits_count: number;
   page_views_count: number;
-  greetings_shown_count: number;
+  greetings_converted_count: number;
   greetings_accepted_count: number;
+  tickets_count: number;
 }
 
 export interface Chat {
