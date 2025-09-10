@@ -10,11 +10,10 @@
 
 - [chats\_count](agent_structures_structures.Statistics.md#chats_count)
 - [greetings\_accepted\_count](agent_structures_structures.Statistics.md#greetings_accepted_count)
-- [greetings\_converted\_count](agent_structures_structures.Statistics.md#greetings_converted_count)
+- [greetings\_shown\_count](agent_structures_structures.Statistics.md#greetings_shown_count)
 - [page\_views\_count](agent_structures_structures.Statistics.md#page_views_count)
 - [threads\_count](agent_structures_structures.Statistics.md#threads_count)
 - [visits\_count](agent_structures_structures.Statistics.md#visits_count)
-- [tickets\_count](agent_structures_structures.Statistics.md#tickets_count)
 
 ## Properties
 
@@ -38,9 +37,9 @@ ___
 
 ___
 
-### greetings\_converted\_count
+### greetings\_shown\_count
 
-• **greetings\_converted\_count**: `number`
+• **greetings\_shown\_count**: `number`
 
 #### Defined in
 
@@ -75,13 +74,3 @@ ___
 #### Defined in
 
 [agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L43)
-
-___
-
-### tickets\_count
-
-• **tickets\_count**: `number`
-
-#### Defined in
-
-[agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L47)
