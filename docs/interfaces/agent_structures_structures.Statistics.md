@@ -10,11 +10,10 @@
 
 - [chats\_count](agent_structures_structures.Statistics.md#chats_count)
 - [greetings\_accepted\_count](agent_structures_structures.Statistics.md#greetings_accepted_count)
-- [greetings\_converted\_count](agent_structures_structures.Statistics.md#greetings_converted_count)
+- [greetings\_shown\_count](agent_structures_structures.Statistics.md#greetings_shown_count)
 - [page\_views\_count](agent_structures_structures.Statistics.md#page_views_count)
 - [threads\_count](agent_structures_structures.Statistics.md#threads_count)
 - [visits\_count](agent_structures_structures.Statistics.md#visits_count)
-- [tickets\_count](agent_structures_structures.Statistics.md#tickets_count)
 
 ## Properties
 
@@ -24,7 +23,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:41](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L41)
+[agent/structures/structures.ts:41](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L41)
 
 ___
 
@@ -34,17 +33,17 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L46)
+[agent/structures/structures.ts:46](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L46)
 
 ___
 
-### greetings\_converted\_count
+### greetings\_shown\_count
 
-• **greetings\_converted\_count**: `number`
+• **greetings\_shown\_count**: `number`
 
 #### Defined in
 
-[agent/structures/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L45)
+[agent/structures/structures.ts:45](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L45)
 
 ___
 
@@ -54,7 +53,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:44](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L44)
+[agent/structures/structures.ts:44](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L44)
 
 ___
 
@@ -64,7 +63,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L42)
+[agent/structures/structures.ts:42](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L42)
 
 ___
 
@@ -74,14 +73,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L43)
-
-___
-
-### tickets\_count
-
-• **tickets\_count**: `number`
-
-#### Defined in
-
-[agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/300991c/src/agent/structures/structures.ts#L47)
+[agent/structures/structures.ts:43](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L43)
