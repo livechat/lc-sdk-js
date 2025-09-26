@@ -144,6 +144,7 @@ export interface CustomerParameters {
   email?: string;
   avatar?: string;
   session_fields?: object[];
+  phone_number?: string;
 }
 
 export interface MulticastRecipients {
