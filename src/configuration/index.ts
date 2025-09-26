@@ -18,11 +18,15 @@ import {
   CreateAgentResponse,
   CreateBotResponse,
   CreateBotTemplateResponse,
+  CreateCannedResponseRequest,
+  CreateCannedResponseResponse,
   CreateGroupResponse,
   EmptyResponse,
   Group,
   GroupProperties,
   IssueBotTokenResponse,
+  ListCannedResponsesRequest,
+  ListCannedResponsesResponse,
   PlanLimit,
   Properties,
   PropertiesConfig,
@@ -33,6 +37,7 @@ import {
   ResetBotTemplateSecretResponse,
   Tag,
   UpdateAutoAccessRequest,
+  UpdateCannedResponseRequest,
   WebAPIOptions,
   Webhook,
   WebhookData,
@@ -656,5 +661,37 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async updateCompanyDetails(companyDetails: CompanyDetails, enrich: boolean): Promise<EmptyResponse> {
     return this.send("update_company_details", { ...companyDetails, enrich });
+  }
+
+  /**
+   * Creates a new canned response.
+   * @param request - canned response details
+   */
+  async createCannedResponse(request: CreateCannedResponseRequest): Promise<CreateCannedResponseResponse> {
+    return this.send("create_canned_response", request);
+  }
+
+  /**
+   * Returns canned responses with optional filtering and pagination.
+   * @param options - filtering and pagination options
+   */
+  async listCannedResponses(options?: ListCannedResponsesRequest): Promise<ListCannedResponsesResponse> {
+    return this.send("list_canned_responses", options || {});
+  }
+
+  /**
+   * Updates an existing canned response.
+   * @param request - canned response update details
+   */
+  async updateCannedResponse(request: UpdateCannedResponseRequest): Promise<EmptyResponse> {
+    return this.send("update_canned_response", request);
+  }
+
+  /**
+   * Deletes a canned response.
+   * @param id - ID of the canned response to delete
+   */
+  async deleteCannedResponse(id: number): Promise<EmptyResponse> {
+    return this.send("delete_canned_response", { id });
   }
 }

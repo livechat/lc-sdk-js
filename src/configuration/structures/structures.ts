@@ -258,6 +258,46 @@ export interface Filter<T> {
   exclude_values?: T[];
 }
 
+export interface CannedResponse {
+  id: number;
+  text: string;
+  tags?: string[];
+  group_id: number;
+  created_at: string;
+  updated_at: string;
+  author_id: string;
+  is_private: boolean;
+}
+
+export interface CreateCannedResponseRequest {
+  name: string;
+  text: string;
+  tags?: string[];
+  group_id: number;
+  is_private: boolean;
+}
+
+export interface UpdateCannedResponseRequest {
+  id: number;
+  text?: string;
+  tags?: string[];
+  group_id?: number;
+  is_private?: boolean;
+}
+
+export interface ListCannedResponsesRequest {
+  group_ids?: number[];
+  include_private?: boolean;
+  limit?: number;
+  page_id?: string;
+}
+
+export interface ListCannedResponsesResponse {
+  canned_responses: CannedResponse[];
+  found_canned_responses: number;
+  next_page_id?: string;
+}
+
 export interface WebAPIOptions {
   apiUrl?: string;
 }
