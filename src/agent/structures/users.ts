@@ -28,6 +28,7 @@ export interface Customer extends BaseUser {
   state?: string;
   avatar?: string;
   online?: boolean;
+  phone_number?: string;
 }
 
 export type User = Agent | Customer;
