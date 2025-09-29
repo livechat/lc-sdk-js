@@ -5,7 +5,7 @@ interface BaseEvent {
   created_at: string;
   properties?: Properties;
   visibility: string;
-  deleted: boolean;
+  deleted?: boolean;
   type: "file" | "form" | "filled_form" | "message" | "rich_message" | "custom" | "system_message" | "system";
 }
 
