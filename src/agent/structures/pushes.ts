@@ -94,6 +94,11 @@ export enum Pushes {
   ThreadUntagged = "thread_untagged",
 
   /**
+   * Informs that a thread summary has been set.
+   */
+  ThreadSummarySet = "thread_summary_set",
+
+  /**
    * Informs that a Customer entered the tracked website.
    */
   CustomerVisitStarted = "customer_visit_started",

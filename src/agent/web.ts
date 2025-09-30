@@ -332,6 +332,15 @@ export default class Web extends WebAPI {
   }
 
   /**
+   * Requests thread summary
+   * @param chat_id - chat ID of thread to request summary for
+   * @param thread_id - thread to request summary for
+   */
+  async requestThreadSummary(chat_id: string, thread_id: string): Promise<EmptyResponse> {
+    return this.send("request_thread_summary", { chat_id, thread_id });
+  }
+
+  /**
    * Returns the info about the Customer with a given id.
    * @param id - customer ID to get
    */
