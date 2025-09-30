@@ -46,6 +46,7 @@
 - [SendThinkingIndicatorParameters](../interfaces/agent_structures_structures.SendThinkingIndicatorParameters.md)
 - [StartChatParameters](../interfaces/agent_structures_structures.StartChatParameters.md)
 - [Statistics](../interfaces/agent_structures_structures.Statistics.md)
+- [Summary](../interfaces/agent_structures_structures.Summary.md)
 - [Thread](../interfaces/agent_structures_structures.Thread.md)
 - [TransferChatParameters](../interfaces/agent_structures_structures.TransferChatParameters.md)
 - [Visit](../interfaces/agent_structures_structures.Visit.md)

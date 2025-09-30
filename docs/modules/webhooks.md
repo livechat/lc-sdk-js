@@ -33,8 +33,6 @@
 - [GroupDeleted](../interfaces/webhooks.GroupDeleted.md)
 - [GroupUpdated](../interfaces/webhooks.GroupUpdated.md)
 - [IncomingChat](../interfaces/webhooks.IncomingChat.md)
-- [IncomingCustomer](../interfaces/webhooks.IncomingCustomer.md)
-- [IncomingCustomers](../interfaces/webhooks.IncomingCustomers.md)
 - [IncomingEvent](../interfaces/webhooks.IncomingEvent.md)
 - [IncomingRichMessagePostback](../interfaces/webhooks.IncomingRichMessagePostback.md)
 - [RoutingStatusSet](../interfaces/webhooks.RoutingStatusSet.md)

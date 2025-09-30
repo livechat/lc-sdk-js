@@ -11,6 +11,7 @@
 - [avatar](agent_structures_structures.CustomerParameters.md#avatar)
 - [email](agent_structures_structures.CustomerParameters.md#email)
 - [name](agent_structures_structures.CustomerParameters.md#name)
+- [phone\_number](agent_structures_structures.CustomerParameters.md#phone_number)
 - [session\_fields](agent_structures_structures.CustomerParameters.md#session_fields)
 
 ## Properties
@@ -21,7 +22,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L144)
+[agent/structures/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L145)
 
 ___
 
@@ -31,7 +32,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L143)
+[agent/structures/structures.ts:144](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L144)
 
 ___
 
@@ -41,7 +42,17 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:142](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L142)
+[agent/structures/structures.ts:143](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L143)
+
+___
+
+### phone\_number
+
+• `Optional` **phone\_number**: `string`
+
+#### Defined in
+
+[agent/structures/structures.ts:147](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L147)
 
 ___
 
@@ -51,4 +62,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:145](https://github.com/livechat/lc-sdk-js/blob/a90d101/src/agent/structures/structures.ts#L145)
+[agent/structures/structures.ts:146](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L146)

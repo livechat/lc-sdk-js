@@ -18,11 +18,14 @@
 - [BotTemplate](configuration_structures.md#bottemplate)
 - [BotTemplateFieldsCreate](configuration_structures.md#bottemplatefieldscreate)
 - [BotTemplateFieldsUpdate](configuration_structures.md#bottemplatefieldsupdate)
+- [CannedResponse](configuration_structures.md#cannedresponse)
 - [ChannelActivity](configuration_structures.md#channelactivity)
 - [CompanyDetails](configuration_structures.md#companydetails)
 - [CreateAgentResponse](configuration_structures.md#createagentresponse)
 - [CreateBotResponse](configuration_structures.md#createbotresponse)
 - [CreateBotTemplateResponse](configuration_structures.md#createbottemplateresponse)
+- [CreateCannedResponseRequest](configuration_structures.md#createcannedresponserequest)
+- [CreateCannedResponseResponse](configuration_structures.md#createcannedresponseresponse)
 - [CreateGroupResponse](configuration_structures.md#creategroupresponse)
 - [EmptyResponse](configuration_structures.md#emptyresponse)
 - [ErrorResponse](configuration_structures.md#errorresponse)
@@ -32,6 +35,8 @@
 - [GroupPriority](configuration_structures.md#grouppriority)
 - [GroupProperties](configuration_structures.md#groupproperties)
 - [IssueBotTokenResponse](configuration_structures.md#issuebottokenresponse)
+- [ListCannedResponsesRequest](configuration_structures.md#listcannedresponsesrequest)
+- [ListCannedResponsesResponse](configuration_structures.md#listcannedresponsesresponse)
 - [LocationAccess](configuration_structures.md#locationaccess)
 - [PlanLimit](configuration_structures.md#planlimit)
 - [Properties](configuration_structures.md#properties)
@@ -46,6 +51,7 @@
 - [Schedule](configuration_structures.md#schedule)
 - [Tag](configuration_structures.md#tag)
 - [UpdateAutoAccessRequest](configuration_structures.md#updateautoaccessrequest)
+- [UpdateCannedResponseRequest](configuration_structures.md#updatecannedresponserequest)
 - [WebAPIOptions](configuration_structures.md#webapioptions)
 - [Webhook](configuration_structures.md#webhook)
 - [WebhookData](configuration_structures.md#webhookdata)
@@ -127,6 +133,12 @@ Re-exports [BotTemplateFieldsUpdate](../interfaces/configuration_structures_stru
 
 ___
 
+### CannedResponse
+
+Re-exports [CannedResponse](../interfaces/configuration_structures_structures.CannedResponse.md)
+
+___
+
 ### ChannelActivity
 
 Re-exports [ChannelActivity](../interfaces/configuration_structures_structures.ChannelActivity.md)
@@ -154,6 +166,18 @@ ___
 ### CreateBotTemplateResponse
 
 Re-exports [CreateBotTemplateResponse](../interfaces/configuration_structures_responses.CreateBotTemplateResponse.md)
+
+___
+
+### CreateCannedResponseRequest
+
+Re-exports [CreateCannedResponseRequest](../interfaces/configuration_structures_structures.CreateCannedResponseRequest.md)
+
+___
+
+### CreateCannedResponseResponse
+
+Re-exports [CreateCannedResponseResponse](../interfaces/configuration_structures_responses.CreateCannedResponseResponse.md)
 
 ___
 
@@ -208,6 +232,18 @@ ___
 ### IssueBotTokenResponse
 
 Re-exports [IssueBotTokenResponse](../interfaces/configuration_structures_responses.IssueBotTokenResponse.md)
+
+___
+
+### ListCannedResponsesRequest
+
+Re-exports [ListCannedResponsesRequest](../interfaces/configuration_structures_structures.ListCannedResponsesRequest.md)
+
+___
+
+### ListCannedResponsesResponse
+
+Re-exports [ListCannedResponsesResponse](../interfaces/configuration_structures_structures.ListCannedResponsesResponse.md)
 
 ___
 
@@ -292,6 +328,12 @@ ___
 ### UpdateAutoAccessRequest
 
 Re-exports [UpdateAutoAccessRequest](../interfaces/configuration_structures_structures.UpdateAutoAccessRequest.md)
+
+___
+
+### UpdateCannedResponseRequest
+
+Re-exports [UpdateCannedResponseRequest](../interfaces/configuration_structures_structures.UpdateCannedResponseRequest.md)
 
 ___
 
