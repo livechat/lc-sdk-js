@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[configuration/structures/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/300991c/src/configuration/structures/structures.ts#L162)
+[configuration/structures/structures.ts:162](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/configuration/structures/structures.ts#L162)

@@ -22,4 +22,4 @@
 
 #### Defined in
 
-[customer/structures/responses.ts:45](https://github.com/livechat/lc-sdk-js/blob/300991c/src/customer/structures/responses.ts#L45)
+[customer/structures/responses.ts:45](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L45)

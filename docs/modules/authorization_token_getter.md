@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[authorization/token_getter.ts:10](https://github.com/livechat/lc-sdk-js/blob/300991c/src/authorization/token_getter.ts#L10)
+[authorization/token_getter.ts:10](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/authorization/token_getter.ts#L10)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[authorization/token_getter.ts:1](https://github.com/livechat/lc-sdk-js/blob/300991c/src/authorization/token_getter.ts#L1)
+[authorization/token_getter.ts:1](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/authorization/token_getter.ts#L1)
 
 ## Functions
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[authorization/token_getter.ts:12](https://github.com/livechat/lc-sdk-js/blob/300991c/src/authorization/token_getter.ts#L12)
+[authorization/token_getter.ts:12](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/authorization/token_getter.ts#L12)

@@ -79,6 +79,7 @@
 - [StartChatParameters](agent_structures.md#startchatparameters)
 - [StartChatResponse](agent_structures.md#startchatresponse)
 - [Statistics](agent_structures.md#statistics)
+- [Summary](agent_structures.md#summary)
 - [SurveyFilter](agent_structures.md#surveyfilter)
 - [SurveyType](agent_structures.md#surveytype)
 - [System](agent_structures.md#system)
@@ -528,6 +529,12 @@ ___
 ### Statistics
 
 Re-exports [Statistics](../interfaces/agent_structures_structures.Statistics.md)
+
+___
+
+### Summary
+
+Re-exports [Summary](../interfaces/agent_structures_structures.Summary.md)
 
 ___
 
