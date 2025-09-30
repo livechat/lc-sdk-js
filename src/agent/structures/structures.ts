@@ -230,6 +230,12 @@ export enum SortOrder {
   Desc = "desc",
 }
 
+export interface Summary {
+  summary: string;
+  status: string;
+  updated_at: string;
+}
+
 export interface Thread {
   id: string;
   active: boolean;
@@ -245,6 +251,7 @@ export interface Thread {
   queue?: Queue;
   queues_duration?: number;
   customer_visit: CustomerVisit;
+  summary?: Summary;
 }
 
 export interface Queue {
