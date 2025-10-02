@@ -24,4 +24,11 @@ export interface Filter<T> {
   exclude_values?: T[];
 }
 
+export interface ThreadSummary {
+  text: string;
+  status: string;
+  status_details?: string;
+  updated_at: string;
+}
+
 export type Customer = CustomerFromAgentAPI | CustomerFromCustomerAPI;
