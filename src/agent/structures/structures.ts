@@ -231,8 +231,9 @@ export enum SortOrder {
 }
 
 export interface Summary {
-  summary: string;
+  text: string;
   status: string;
+  status_details?: string;
   updated_at: string;
 }
 
