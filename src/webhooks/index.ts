@@ -28,6 +28,7 @@ type WebhookPayload =
   | EventPropertiesDeleted
   | ThreadTagged
   | ThreadUntagged
+  | ThreadSummarySet
   | RoutingStatusSet
   | EventsMarkedAsSeen
   | ChatTransferred
