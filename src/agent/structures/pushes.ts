@@ -119,6 +119,11 @@ export enum Pushes {
   CustomerPageUpdated = "customer_page_updated",
 
   /**
+   * Informs that Customer's statistics were updated.
+   */
+  CustomerStatisticsUpdated = "customer_statistics_updated",
+
+  /**
    * Informs that a Customer was banned for a specified number of days.
    */
   CustomerBanned = "customer_banned",
@@ -269,4 +274,14 @@ export enum Pushes {
    * Informs that an auto access has been updated.
    */
   AutoAccessUpdated = "auto_access_updated",
+
+  /**
+   * Informs that a ticket was created for the Customer.
+   */
+  TicketCreated = "ticket_created",
+
+  /**
+   * Informs that a Customer's ticket was deleted.
+   */
+  TicketDeleted = "ticket_deleted",
 }
