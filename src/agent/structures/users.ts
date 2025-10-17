@@ -1,4 +1,4 @@
-import { Statistics, Visit } from "./structures";
+import { CustomerChat, Omnichannel, Order, Statistics, Ticket, Visit } from "./structures";
 
 interface BaseUser {
   id: string;
@@ -15,20 +15,24 @@ export interface Agent extends BaseUser {
 }
 
 export interface Customer extends BaseUser {
-  email_verified?: boolean;
-  last_visit?: Visit;
+  avatar?: string;
+  phone_number?: string;
+  created_at?: string;
   session_fields?: Record<string, string>[];
+  visit?: Visit;
   statistics?: Statistics;
-  __priv_lc2_customer_id?: string;
   agent_last_event_created_at?: string;
   customer_last_event_created_at?: string;
-  created_at?: string;
-  followed?: boolean;
+  chats?: CustomerChat[];
+  followed: boolean;
+  online: boolean;
   group_ids?: number[];
   state?: string;
-  avatar?: string;
-  online?: boolean;
-  phone_number?: string;
+  greeting_id?: number;
+  email_verified: boolean;
+  tickets?: Ticket[];
+  orders?: Order[];
+  omnichannel?: Omnichannel;
 }
 
 export type User = Agent | Customer;
