@@ -14,7 +14,7 @@ export interface Geolocation {
   latitude?: string;
 }
 
-export interface LastPage {
+export interface Page {
   opened_at: string;
   url: string;
   title?: string;
@@ -28,7 +28,8 @@ export interface Visit {
   ip?: string;
   user_agent?: string;
   geolocation?: Geolocation;
-  last_pages?: LastPage[];
+  last_pages?: Page[];
+  previous_visit_started_at?: string;
 }
 
 export interface CustomerVisit {
@@ -42,9 +43,57 @@ export interface Statistics {
   threads_count: number;
   visits_count: number;
   page_views_count: number;
-  greetings_converted_count: number;
   greetings_accepted_count: number;
+  greetings_converted_count: number;
   tickets_count: number;
+  tickets_inbox_count: number;
+  tickets_archive_count: number;
+  tickets_spam_count: number;
+  tickets_trash_count: number;
+  orders_count: number;
+  last_visit_started_at?: string;
+}
+
+export interface Ticket {
+  ticket_id: string;
+  silo: string;
+  created_at: string;
+}
+
+export interface Order {
+  store_platform: string;
+  store_uuid: string;
+  order_id: string;
+  order_number: string;
+  currency: string;
+  total_price: number;
+  created_at: string;
+}
+
+export interface Omnichannel {
+  fbmessenger?: FBMessenger[];
+  twilio?: Twilio[];
+}
+
+export interface FBMessenger {
+  id: string;
+  name?: string;
+  first_name?: string;
+  last_name?: string;
+  profile_pic?: string;
+  gender?: string;
+  locale?: string;
+  is_verified_user?: boolean;
+}
+
+export interface Twilio {
+  phone_number: string;
+}
+
+export interface CustomerChat {
+  chat_id: string;
+  thread_id?: string;
+  last_thread_started_at: string;
 }
 
 export interface Chat {
