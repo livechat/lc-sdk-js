@@ -57,6 +57,7 @@ export interface Bot {
   max_chats_count?: number;
   groups?: GroupConfig[];
   job_title?: string;
+  type?: string;
   work_scheduler?: WorkScheduler;
 }
 
