@@ -27,7 +27,6 @@ export interface Filter<T> {
 export interface ThreadSummary {
   text: string;
   status: string;
-  status_details?: string;
   updated_at: string;
 }
 
