@@ -4,6 +4,7 @@ import axios, { AxiosError } from "axios";
 import { v4 } from "uuid";
 
 type apiType = "agent" | "customer" | "configuration";
+type pushCallback = (payload: any) => void;
 
 function isAxiosError<T = unknown>(e: unknown): e is AxiosError<T> {
   return typeof e === "object" && null !== e && "isAxiosError" in e;
@@ -88,7 +89,7 @@ export class RTMAPI {
   socket?: any;
   heartbeatInterval?: number;
   requestsQueue: any = {};
-  subscribedPushes: any = {};
+  subscribedPushes: Map<string, pushCallback> = new Map<string, pushCallback>();
   author_id?: string;
 
   constructor(
@@ -153,8 +154,9 @@ export class RTMAPI {
   }
 
   private handlePush(type: string, payload: any) {
-    if (this.subscribedPushes[type]) {
-      this.subscribedPushes[type](payload);
+    const callback = this.subscribedPushes.get(type);
+    if (typeof callback === "function") {
+      callback(payload);
     }
   }
 
@@ -179,14 +181,17 @@ export class RTMAPI {
   }
 
   subscribePush<P>(push: string, callback: (payload: P) => void): void {
-    if (this.subscribedPushes[push]) {
+    if (this.subscribedPushes.has(push)) {
       throw new Error("Push already subscribed");
     }
-    this.subscribedPushes[push] = callback;
+    if (typeof callback !== "function") {
+      throw new Error("Push callback must be a function");
+    }
+    this.subscribedPushes.set(push, callback);
   }
 
   unsubscribePush(push: string): void {
-    delete this.subscribedPushes[push];
+    this.subscribedPushes.delete(push);
   }
 
   setAuthorId(author_id?: string) {
