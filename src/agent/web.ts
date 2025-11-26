@@ -65,7 +65,7 @@ export default class Web extends WebAPI {
    * It returns a list of the chats an Agent has access to. Together with a chat, the events of one thread from this chat are returned.
    *
    * The list classification is based on threads; 1 chat per 1 thread. Thus, the same chat object may appear on the list several times,
-   * but each time with a different thread. The returned chat is a complete object, not only a chat summary.
+   * but each time with a different thread. The returned chat is a complete object, not only a chat info.
    * @param opts - options like filters or pagination
    */
   async listArchives(opts?: ListArchivesParameters): Promise<ListArchivesResponse> {

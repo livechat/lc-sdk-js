@@ -164,13 +164,13 @@ export enum GroupStatus {
   OnlineForQueue = "online_for_queue",
 }
 
-export interface ChatsSummary {
+export interface ChatsInfo {
   id: string;
   last_event_per_type?: LastEventPerType;
   users: User[];
   last_thread_id?: string;
   last_thread_created_at?: string;
-  last_thread_summary?: LastThreadSummary;
+  last_thread_info?: LastThreadInfo;
   properties: Properties;
   access?: Access;
   active: boolean;
@@ -185,7 +185,7 @@ export interface LastEventPerType {
   [type: string]: Event;
 }
 
-export interface LastThreadSummary {
+export interface LastThreadInfo {
   id: string;
   user_ids: string[];
   properties: Properties;

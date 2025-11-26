@@ -1,4 +1,4 @@
-import { Access, ArchivedChat, ChatsSummary, License, Properties, RoutingStatus, Thread } from "./structures";
+import { Access, ArchivedChat, ChatsInfo, License, Properties, RoutingStatus, Thread } from "./structures";
 import { Customer, MyProfile, User } from "./users";
 
 export interface EmptyResponse {}
@@ -6,7 +6,7 @@ export interface EmptyResponse {}
 export interface ListChatsResponse {
   previous_page_id?: string;
   next_page_id?: string;
-  chats_summary: ChatsSummary[];
+  chats_info: ChatsInfo[];
   found_chats: number;
 }
 
@@ -55,7 +55,7 @@ export interface UploadFileResponse {
 export interface LoginResponse {
   license: License;
   my_profile: MyProfile;
-  chats_summary: ChatsSummary[];
+  chats_info: ChatsInfo[];
 }
 
 export interface SetRoutingStatusResponse {

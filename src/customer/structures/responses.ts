@@ -1,4 +1,4 @@
-import { Access, ChatsSummary, Form, GroupStatus, Properties, Thread } from "./structures";
+import { Access, ChatsInfo, Form, GroupStatus, Properties, Thread } from "./structures";
 import { Customer, User } from "./users";
 
 export interface EmptyResponse {}
@@ -6,7 +6,7 @@ export interface EmptyResponse {}
 export interface ListChatsResponse {
   previous_page_id?: string;
   next_page_id?: string;
-  chats_summary: ChatsSummary[];
+  chats_info: ChatsInfo[];
   total_chats: number;
 }
 
