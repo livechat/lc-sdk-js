@@ -92,7 +92,7 @@ export default class RTM extends RTMAPI {
   }
 
   /**
-   * It returns summaries of the chats an Agent has access to.
+   * It returns chat info for the chats an Agent has access to.
    * @param opts - set of filters and pagination to limit returned entries
    */
   async listChats(opts?: ListChatParameters): Promise<ListChatsResponse> {
