@@ -44,6 +44,7 @@ export interface BotFields {
   max_chats_count?: number;
   groups?: GroupConfig[];
   work_scheduler?: WorkScheduler;
+  type?: string;
   owner_client_id?: string;
   timezone?: string;
 }
