@@ -34,7 +34,7 @@ export default class Web extends WebAPI {
   }
 
   /**
-   * It returns summaries of the chats a Customer participated in.
+   * It returns chat info for the chats a Customer participated in.
    * @param opts - set of filters and pagination to limit returned entries
    */
   async listChats(opts?: ListChatParameters): Promise<ListChatsResponse> {
