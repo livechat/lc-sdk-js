@@ -198,17 +198,12 @@ export interface CustomerParameters {
 
 export interface MulticastRecipients {
   agents: MulticastAgents;
-  customers: MulticastCustomers;
 }
 
 interface MulticastAgents {
   all: boolean;
   ids: string[];
   groups: number[];
-}
-
-interface MulticastCustomers {
-  ids: string[];
 }
 
 export interface AgentForTransfer {

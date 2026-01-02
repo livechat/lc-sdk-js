@@ -410,7 +410,7 @@ export default class Web extends WebAPI {
 
   /**
    * This method serves for the chat-unrelated communication. Messages sent using multicast are not being saved.
-   * For example, it could be used in an app that sends notifications to Agents or Customers,
+   * For example, it could be used in an app that sends notifications to Agents,
    * when a certain condition is met (e.g. an important Customer started the chat).
    * @param recipients - who should receive multicast
    * @param content = JSON content to send
