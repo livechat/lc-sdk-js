@@ -458,23 +458,6 @@ export default class RTM extends RTMAPI {
   }
 
   /**
-   * Marks a customer as followed. As a result, the requester (an agent) will receive
-   * the info about all the changes related to that customer via pushes.
-   * @param id - ID of customer to follow
-   */
-  async followCustomer(id: string): Promise<EmptyResponse> {
-    return this.send("follow_customer", { id });
-  }
-
-  /**
-   * Removes the agent from the list of customer's followers.
-   * @param id - ID of customer to unfollow
-   */
-  async unfollowCustomer(id: string): Promise<EmptyResponse> {
-    return this.send("unfollow_customer", { id });
-  }
-
-  /**
    * Returns the current routing status of each agent.
    * @param group_ids - groups to list agent routing statuses from
    */
