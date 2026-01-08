@@ -5,7 +5,8 @@ import type {
   EmptyResponse,
   GetChatResponse,
   GetFormResponse,
-  GetPredictedAgentResponse,
+  RequestWelcomeMessageParameters,
+  RequestWelcomeMessageResponse,
   GetURLInfoResponse,
   ListChatParameters,
   ListChatsResponse,
@@ -305,11 +306,11 @@ export default class RTM extends RTMAPI {
   }
 
   /**
-   * Gets the predicted Agent - the one the Customer will chat with when the chat starts.
-   * To use this method, the Customer needs to be logged in, which can be done via the login method.
+   * Requests a welcome message.
+   * @param opts - options like id of previous welcome message or group id
    */
-  async getPredictedAgent(): Promise<GetPredictedAgentResponse> {
-    return this.send("get_predicted_agent", {});
+  async requestWelcomeMessage(opts?: RequestWelcomeMessageParameters): Promise<RequestWelcomeMessageResponse> {
+    return this.send("request_welcome_message", opts || {});
   }
 
   /**

@@ -47,6 +47,11 @@ export interface CustomerParameters {
   session_fields?: object[];
 }
 
+export interface RequestWelcomeMessageParameters {
+  id?: string;
+  group_id?: number;
+}
+
 export interface Form {
   id: string;
   fields: Field[];

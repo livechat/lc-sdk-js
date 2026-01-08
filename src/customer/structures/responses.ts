@@ -52,12 +52,14 @@ export interface GetFormResponse {
   enabled: boolean;
 }
 
-export interface GetPredictedAgentResponse {
-  agent: {
+export interface RequestWelcomeMessageResponse {
+  id: string;
+  predicted_agent: {
     id: string;
     name: string;
     avatar: string;
     is_bot: boolean;
+    bot_type?: string;
     job_title: string;
     type: string;
   };
