@@ -8,6 +8,8 @@ import type {
   GetDynamicConfigurationResponse,
   GetFormResponse,
   GetPredictedAgentResponse,
+  RequestWelcomeMessageParameters,
+  RequestWelcomeMessageResponse,
   GetURLInfoResponse,
   GroupConfiguration,
   ListChatParameters,
@@ -299,6 +301,14 @@ export default class Web extends WebAPI {
    */
   async getPredictedAgent(): Promise<GetPredictedAgentResponse> {
     return this.send("get_predicted_agent", {});
+  }
+
+/**
+   * Requests a welcome message.
+   * @param opts - options like id of previous welcome message or group id
+   */
+  async requestWelcomeMessage(opts?: RequestWelcomeMessageParameters): Promise<RequestWelcomeMessageResponse> {
+    return this.send("request_welcome_message", opts || {});
   }
 
   /**

@@ -64,6 +64,20 @@ export interface GetPredictedAgentResponse {
   queue: boolean;
 }
 
+export interface RequestWelcomeMessageResponse {
+  id: string;
+  predicted_agent: {
+    id: string;
+    name: string;
+    avatar: string;
+    is_bot: boolean;
+    bot_type?: string;
+    job_title: string;
+    type: string;
+  };
+  queue: boolean;
+}
+
 export interface GetURLInfoResponse {
   title: string;
   description: string;
