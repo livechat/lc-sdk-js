@@ -145,4 +145,9 @@ export enum Pushes {
    * Informs about an updated position in the queue and about the wait time.
    */
   QueuePostitionUpdated = "queue_postition_updated",
+
+  /**
+   * Informs about an incoming welcome message.
+   */
+  IncomingWelcomeMessage = "incoming_welcome_message",
 }

@@ -6,6 +6,8 @@ import type {
   GetChatResponse,
   GetFormResponse,
   GetPredictedAgentResponse,
+  RequestWelcomeMessageParameters,
+  RequestWelcomeMessageResponse,
   GetURLInfoResponse,
   ListChatParameters,
   ListChatsResponse,
@@ -310,6 +312,14 @@ export default class RTM extends RTMAPI {
    */
   async getPredictedAgent(): Promise<GetPredictedAgentResponse> {
     return this.send("get_predicted_agent", {});
+  }
+
+  /**
+   * Requests a welcome message.
+   * @param opts - options like id of previous welcome message or group id
+   */
+  async requestWelcomeMessage(opts?: RequestWelcomeMessageParameters): Promise<RequestWelcomeMessageResponse> {
+    return this.send("request_welcome_message", opts || {});
   }
 
   /**
