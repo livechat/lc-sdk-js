@@ -42,6 +42,7 @@ interface PostbackToggle {
 
 export interface CustomerParameters {
   name?: string;
+  name_is_default?: boolean;
   email?: string;
   avatar?: string;
   session_fields?: object[];
@@ -81,6 +82,7 @@ export interface LoginCustomer {
   avatar?: string;
   email?: string;
   name?: string;
+  name_is_default?: boolean;
   session_fields?: object[];
 }
 
