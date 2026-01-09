@@ -9,6 +9,7 @@ interface BaseUser {
 }
 
 export interface Customer extends BaseUser {
+  name_is_default: boolean;
   email_verified?: boolean;
   session_fields?: Record<string, string>[];
 }
