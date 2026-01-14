@@ -196,11 +196,6 @@ export enum Pushes {
   CustomerLeft = "customer_left",
 
   /**
-   * Informs that a customer was unfollowed.
-   */
-  CustomerUnfollowed = "customer_unfollowed",
-
-  /**
    * Informs that an agent has been created.
    */
   AgentCreated = "agent_created",
