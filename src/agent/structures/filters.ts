@@ -34,6 +34,12 @@ export interface AgentResponseFilter {
   groups?: Filter<number>;
 }
 
+export interface AgentTypesFilter {
+  all_values?: string[];
+  any_values?: string[];
+  exclude_values?: string[];
+}
+
 export interface ChatsFilters {
   include_active?: boolean;
   include_chats_without_threads?: boolean;
@@ -54,6 +60,7 @@ export interface ArchivesFilters {
   group_ids?: number[];
   properties?: PropertiesFilter;
   agents?: FilterType<string>;
+  agent_types?: AgentTypesFilter;
   tags?: FilterType<string>;
   sales?: FilterType<number>;
   goals?: FilterType<number>;
