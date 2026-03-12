@@ -48,3 +48,7 @@ export interface ResetBotTemplateSecretResponse {
 export interface AddAutoAccessResponse {
   id: string;
 }
+
+export interface CreateGreetingResponse {
+  id: number;
+}
