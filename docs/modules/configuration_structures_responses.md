@@ -12,6 +12,7 @@
 - [CreateBotResponse](../interfaces/configuration_structures_responses.CreateBotResponse.md)
 - [CreateBotTemplateResponse](../interfaces/configuration_structures_responses.CreateBotTemplateResponse.md)
 - [CreateCannedResponseResponse](../interfaces/configuration_structures_responses.CreateCannedResponseResponse.md)
+- [CreateGreetingResponse](../interfaces/configuration_structures_responses.CreateGreetingResponse.md)
 - [CreateGroupResponse](../interfaces/configuration_structures_responses.CreateGroupResponse.md)
 - [EmptyResponse](../interfaces/configuration_structures_responses.EmptyResponse.md)
 - [ErrorResponse](../interfaces/configuration_structures_responses.ErrorResponse.md)

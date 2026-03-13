@@ -26,6 +26,7 @@
 - [RoutingStatus](webhooks_structures.md#routingstatus)
 - [System](webhooks_structures.md#system)
 - [SystemMessage](webhooks_structures.md#systemmessage)
+- [ThreadSummary](webhooks_structures.md#threadsummary)
 
 ## References
 
@@ -146,3 +147,9 @@ ___
 ### SystemMessage
 
 Re-exports [SystemMessage](../interfaces/webhooks_structures_events.SystemMessage.md)
+
+___
+
+### ThreadSummary
+
+Re-exports [ThreadSummary](../interfaces/webhooks_structures_structures.ThreadSummary.md)

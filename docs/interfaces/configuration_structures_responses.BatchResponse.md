@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[configuration/structures/responses.ts:11](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/configuration/structures/responses.ts#L11)
+[configuration/structures/responses.ts:11](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/responses.ts#L11)

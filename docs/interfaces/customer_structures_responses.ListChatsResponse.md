@@ -8,20 +8,20 @@
 
 ### Properties
 
-- [chats\_summary](customer_structures_responses.ListChatsResponse.md#chats_summary)
+- [chats\_info](customer_structures_responses.ListChatsResponse.md#chats_info)
 - [next\_page\_id](customer_structures_responses.ListChatsResponse.md#next_page_id)
 - [previous\_page\_id](customer_structures_responses.ListChatsResponse.md#previous_page_id)
 - [total\_chats](customer_structures_responses.ListChatsResponse.md#total_chats)
 
 ## Properties
 
-### chats\_summary
+### chats\_info
 
-• **chats\_summary**: [`ChatsSummary`](customer_structures_structures.ChatsSummary.md)[]
+• **chats\_info**: [`ChatsInfo`](customer_structures_structures.ChatsInfo.md)[]
 
 #### Defined in
 
-[customer/structures/responses.ts:9](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/responses.ts#L9)
+[customer/structures/responses.ts:9](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/responses.ts#L9)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:8](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/responses.ts#L8)
+[customer/structures/responses.ts:8](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/responses.ts#L8)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:7](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/responses.ts#L7)
+[customer/structures/responses.ts:7](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/responses.ts#L7)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:10](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/responses.ts#L10)
+[customer/structures/responses.ts:10](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/responses.ts#L10)

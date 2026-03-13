@@ -8,20 +8,20 @@
 
 ### Properties
 
-- [chats\_summary](agent_structures_responses.ListChatsResponse.md#chats_summary)
+- [chats\_info](agent_structures_responses.ListChatsResponse.md#chats_info)
 - [found\_chats](agent_structures_responses.ListChatsResponse.md#found_chats)
 - [next\_page\_id](agent_structures_responses.ListChatsResponse.md#next_page_id)
 - [previous\_page\_id](agent_structures_responses.ListChatsResponse.md#previous_page_id)
 
 ## Properties
 
-### chats\_summary
+### chats\_info
 
-• **chats\_summary**: [`ChatsSummary`](agent_structures_structures.ChatsSummary.md)[]
+• **chats\_info**: [`ChatsInfo`](agent_structures_structures.ChatsInfo.md)[]
 
 #### Defined in
 
-[agent/structures/responses.ts:9](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L9)
+[agent/structures/responses.ts:9](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L9)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:10](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L10)
+[agent/structures/responses.ts:10](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L10)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:8](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L8)
+[agent/structures/responses.ts:8](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L8)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:7](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L7)
+[agent/structures/responses.ts:7](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L7)

@@ -10,6 +10,7 @@
 - [Agent](agent_structures.md#agent)
 - [AgentForTransfer](agent_structures.md#agentfortransfer)
 - [AgentResponseFilter](agent_structures.md#agentresponsefilter)
+- [AgentTypesFilter](agent_structures.md#agenttypesfilter)
 - [Answer](agent_structures.md#answer)
 - [Application](agent_structures.md#application)
 - [ArchivedChat](agent_structures.md#archivedchat)
@@ -19,15 +20,17 @@
 - [ChangePushNotificationsRequest](agent_structures.md#changepushnotificationsrequest)
 - [Chat](agent_structures.md#chat)
 - [ChatsFilters](agent_structures.md#chatsfilters)
-- [ChatsSummary](agent_structures.md#chatssummary)
+- [ChatsInfo](agent_structures.md#chatsinfo)
 - [CustomEvent](agent_structures.md#customevent)
 - [Customer](agent_structures.md#customer)
+- [CustomerChat](agent_structures.md#customerchat)
 - [CustomerMonitoringLevel](agent_structures.md#customermonitoringlevel)
 - [CustomerParameters](agent_structures.md#customerparameters)
 - [CustomerVisit](agent_structures.md#customervisit)
 - [Element](agent_structures.md#element)
 - [EmptyResponse](agent_structures.md#emptyresponse)
 - [Event](agent_structures.md#event)
+- [FBMessenger](agent_structures.md#fbmessenger)
 - [File](agent_structures.md#file)
 - [FilledForm](agent_structures.md#filledform)
 - [Filter](agent_structures.md#filter)
@@ -43,8 +46,7 @@
 - [InitialThread](agent_structures.md#initialthread)
 - [InitialUser](agent_structures.md#initialuser)
 - [LastEventPerType](agent_structures.md#lasteventpertype)
-- [LastPage](agent_structures.md#lastpage)
-- [LastThreadSummary](agent_structures.md#lastthreadsummary)
+- [LastThreadInfo](agent_structures.md#lastthreadinfo)
 - [License](agent_structures.md#license)
 - [LimitEventToRequestFields](agent_structures.md#limiteventtorequestfields)
 - [ListArchivesParameters](agent_structures.md#listarchivesparameters)
@@ -58,6 +60,9 @@
 - [Message](agent_structures.md#message)
 - [MulticastRecipients](agent_structures.md#multicastrecipients)
 - [MyProfile](agent_structures.md#myprofile)
+- [Omnichannel](agent_structures.md#omnichannel)
+- [Order](agent_structures.md#order)
+- [Page](agent_structures.md#page)
 - [Postback](agent_structures.md#postback)
 - [Properties](agent_structures.md#properties)
 - [PropertiesFilter](agent_structures.md#propertiesfilter)
@@ -79,14 +84,16 @@
 - [StartChatParameters](agent_structures.md#startchatparameters)
 - [StartChatResponse](agent_structures.md#startchatresponse)
 - [Statistics](agent_structures.md#statistics)
-- [Summary](agent_structures.md#summary)
 - [SurveyFilter](agent_structures.md#surveyfilter)
 - [SurveyType](agent_structures.md#surveytype)
 - [System](agent_structures.md#system)
 - [SystemMessage](agent_structures.md#systemmessage)
 - [Thread](agent_structures.md#thread)
+- [ThreadSummary](agent_structures.md#threadsummary)
 - [ThreadsFilters](agent_structures.md#threadsfilters)
+- [Ticket](agent_structures.md#ticket)
 - [TransferChatParameters](agent_structures.md#transferchatparameters)
+- [Twilio](agent_structures.md#twilio)
 - [UploadFileResponse](agent_structures.md#uploadfileresponse)
 - [User](agent_structures.md#user)
 - [Visit](agent_structures.md#visit)
@@ -115,6 +122,12 @@ ___
 ### AgentResponseFilter
 
 Re-exports [AgentResponseFilter](../interfaces/agent_structures_filters.AgentResponseFilter.md)
+
+___
+
+### AgentTypesFilter
+
+Re-exports [AgentTypesFilter](../interfaces/agent_structures_filters.AgentTypesFilter.md)
 
 ___
 
@@ -172,9 +185,9 @@ Re-exports [ChatsFilters](../interfaces/agent_structures_filters.ChatsFilters.md
 
 ___
 
-### ChatsSummary
+### ChatsInfo
 
-Re-exports [ChatsSummary](../interfaces/agent_structures_structures.ChatsSummary.md)
+Re-exports [ChatsInfo](../interfaces/agent_structures_structures.ChatsInfo.md)
 
 ___
 
@@ -187,6 +200,12 @@ ___
 ### Customer
 
 Re-exports [Customer](../interfaces/agent_structures_users.Customer.md)
+
+___
+
+### CustomerChat
+
+Re-exports [CustomerChat](../interfaces/agent_structures_structures.CustomerChat.md)
 
 ___
 
@@ -223,6 +242,12 @@ ___
 ### Event
 
 Re-exports [Event](agent_structures_events.md#event)
+
+___
+
+### FBMessenger
+
+Re-exports [FBMessenger](../interfaces/agent_structures_structures.FBMessenger.md)
 
 ___
 
@@ -316,15 +341,9 @@ Re-exports [LastEventPerType](../interfaces/agent_structures_structures.LastEven
 
 ___
 
-### LastPage
+### LastThreadInfo
 
-Re-exports [LastPage](../interfaces/agent_structures_structures.LastPage.md)
-
-___
-
-### LastThreadSummary
-
-Re-exports [LastThreadSummary](../interfaces/agent_structures_structures.LastThreadSummary.md)
+Re-exports [LastThreadInfo](../interfaces/agent_structures_structures.LastThreadInfo.md)
 
 ___
 
@@ -403,6 +422,24 @@ ___
 ### MyProfile
 
 Re-exports [MyProfile](../interfaces/agent_structures_users.MyProfile.md)
+
+___
+
+### Omnichannel
+
+Re-exports [Omnichannel](../interfaces/agent_structures_structures.Omnichannel.md)
+
+___
+
+### Order
+
+Re-exports [Order](../interfaces/agent_structures_structures.Order.md)
+
+___
+
+### Page
+
+Re-exports [Page](../interfaces/agent_structures_structures.Page.md)
 
 ___
 
@@ -532,12 +569,6 @@ Re-exports [Statistics](../interfaces/agent_structures_structures.Statistics.md)
 
 ___
 
-### Summary
-
-Re-exports [Summary](../interfaces/agent_structures_structures.Summary.md)
-
-___
-
 ### SurveyFilter
 
 Re-exports [SurveyFilter](../interfaces/agent_structures_filters.SurveyFilter.md)
@@ -568,15 +599,33 @@ Re-exports [Thread](../interfaces/agent_structures_structures.Thread.md)
 
 ___
 
+### ThreadSummary
+
+Re-exports [ThreadSummary](../interfaces/agent_structures_structures.ThreadSummary.md)
+
+___
+
 ### ThreadsFilters
 
 Re-exports [ThreadsFilters](../interfaces/agent_structures_filters.ThreadsFilters.md)
 
 ___
 
+### Ticket
+
+Re-exports [Ticket](../interfaces/agent_structures_structures.Ticket.md)
+
+___
+
 ### TransferChatParameters
 
 Re-exports [TransferChatParameters](../interfaces/agent_structures_structures.TransferChatParameters.md)
+
+___
+
+### Twilio
+
+Re-exports [Twilio](../interfaces/agent_structures_structures.Twilio.md)
 
 ___
 

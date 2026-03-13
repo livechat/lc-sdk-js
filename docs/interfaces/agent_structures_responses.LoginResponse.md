@@ -8,19 +8,19 @@
 
 ### Properties
 
-- [chats\_summary](agent_structures_responses.LoginResponse.md#chats_summary)
+- [chats\_info](agent_structures_responses.LoginResponse.md#chats_info)
 - [license](agent_structures_responses.LoginResponse.md#license)
 - [my\_profile](agent_structures_responses.LoginResponse.md#my_profile)
 
 ## Properties
 
-### chats\_summary
+### chats\_info
 
-• **chats\_summary**: [`ChatsSummary`](agent_structures_structures.ChatsSummary.md)[]
+• **chats\_info**: [`ChatsInfo`](agent_structures_structures.ChatsInfo.md)[]
 
 #### Defined in
 
-[agent/structures/responses.ts:58](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L58)
+[agent/structures/responses.ts:58](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L58)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:56](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L56)
+[agent/structures/responses.ts:56](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L56)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:57](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L57)
+[agent/structures/responses.ts:57](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L57)

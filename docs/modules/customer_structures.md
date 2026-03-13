@@ -11,7 +11,7 @@
 - [Answer](customer_structures.md#answer)
 - [Application](customer_structures.md#application)
 - [Button](customer_structures.md#button)
-- [ChatsSummary](customer_structures.md#chatssummary)
+- [ChatsInfo](customer_structures.md#chatsinfo)
 - [CustomEvent](customer_structures.md#customevent)
 - [Customer](customer_structures.md#customer)
 - [CustomerPage](customer_structures.md#customerpage)
@@ -28,7 +28,6 @@
 - [GetDynamicConfigurationRequest](customer_structures.md#getdynamicconfigurationrequest)
 - [GetDynamicConfigurationResponse](customer_structures.md#getdynamicconfigurationresponse)
 - [GetFormResponse](customer_structures.md#getformresponse)
-- [GetPredictedAgentResponse](customer_structures.md#getpredictedagentresponse)
 - [GetURLInfoResponse](customer_structures.md#geturlinforesponse)
 - [GroupConfiguration](customer_structures.md#groupconfiguration)
 - [GroupStatus](customer_structures.md#groupstatus)
@@ -37,7 +36,7 @@
 - [InitialThread](customer_structures.md#initialthread)
 - [InitialUser](customer_structures.md#initialuser)
 - [LastEventPerType](customer_structures.md#lasteventpertype)
-- [LastThreadSummary](customer_structures.md#lastthreadsummary)
+- [LastThreadInfo](customer_structures.md#lastthreadinfo)
 - [LimitEventToRequestFields](customer_structures.md#limiteventtorequestfields)
 - [ListChatParameters](customer_structures.md#listchatparameters)
 - [ListChatsResponse](customer_structures.md#listchatsresponse)
@@ -55,6 +54,8 @@
 - [Queue](customer_structures.md#queue)
 - [RTMAPIOptions](customer_structures.md#rtmapioptions)
 - [RequestEvent](customer_structures.md#requestevent)
+- [RequestWelcomeMessageParameters](customer_structures.md#requestwelcomemessageparameters)
+- [RequestWelcomeMessageResponse](customer_structures.md#requestwelcomemessageresponse)
 - [ResumeChatParameters](customer_structures.md#resumechatparameters)
 - [ResumeChatResponse](customer_structures.md#resumechatresponse)
 - [RichMessage](customer_structures.md#richmessage)
@@ -102,9 +103,9 @@ Re-exports [Button](../interfaces/customer_structures_events.Button.md)
 
 ___
 
-### ChatsSummary
+### ChatsInfo
 
-Re-exports [ChatsSummary](../interfaces/customer_structures_structures.ChatsSummary.md)
+Re-exports [ChatsInfo](../interfaces/customer_structures_structures.ChatsInfo.md)
 
 ___
 
@@ -204,12 +205,6 @@ Re-exports [GetFormResponse](../interfaces/customer_structures_responses.GetForm
 
 ___
 
-### GetPredictedAgentResponse
-
-Re-exports [GetPredictedAgentResponse](../interfaces/customer_structures_responses.GetPredictedAgentResponse.md)
-
-___
-
 ### GetURLInfoResponse
 
 Re-exports [GetURLInfoResponse](../interfaces/customer_structures_responses.GetURLInfoResponse.md)
@@ -258,9 +253,9 @@ Re-exports [LastEventPerType](../interfaces/customer_structures_structures.LastE
 
 ___
 
-### LastThreadSummary
+### LastThreadInfo
 
-Re-exports [LastThreadSummary](../interfaces/customer_structures_structures.LastThreadSummary.md)
+Re-exports [LastThreadInfo](../interfaces/customer_structures_structures.LastThreadInfo.md)
 
 ___
 
@@ -363,6 +358,18 @@ ___
 ### RequestEvent
 
 Re-exports [RequestEvent](customer_structures_events.md#requestevent)
+
+___
+
+### RequestWelcomeMessageParameters
+
+Re-exports [RequestWelcomeMessageParameters](../interfaces/customer_structures_structures.RequestWelcomeMessageParameters.md)
+
+___
+
+### RequestWelcomeMessageResponse
+
+Re-exports [RequestWelcomeMessageResponse](../interfaces/customer_structures_responses.RequestWelcomeMessageResponse.md)
 
 ___
 
