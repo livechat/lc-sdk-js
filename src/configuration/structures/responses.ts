@@ -52,3 +52,7 @@ export interface AddAutoAccessResponse {
 export interface CreateCannedResponseResponse {
   id: number;
 }
+
+export interface CreateGreetingResponse {
+  id: number;
+}

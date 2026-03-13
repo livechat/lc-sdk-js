@@ -42,6 +42,12 @@ import {
   Webhook,
   WebhookData,
   WebhooksState,
+  CreateGreetingRequest,
+  CreateGreetingResponse,
+  UpdateGreetingRequest,
+  Greeting,
+  ListGreetingsRequest,
+  ListGreetingsResponse,
 } from "./structures";
 
 export default class ConfigurationAPI extends WebAPI {
@@ -693,5 +699,45 @@ export default class ConfigurationAPI extends WebAPI {
    */
   async deleteCannedResponse(id: number): Promise<EmptyResponse> {
     return this.send("delete_canned_response", { id });
+  }
+
+  /**
+   * Creates a new greeting and returns its ID.
+   * @param request - greeting details including type, active status, name, group, and rules
+   */
+  async createGreeting(request: CreateGreetingRequest): Promise<CreateGreetingResponse> {
+    return this.send("create_greeting", request);
+  }
+
+  /**
+   * Updates an existing greeting.
+   * @param request - greeting update details including id and optional fields to update
+   */
+  async updateGreeting(request: UpdateGreetingRequest): Promise<EmptyResponse> {
+    return this.send("update_greeting", request);
+  }
+
+  /**
+   * Deletes an existing greeting.
+   * @param id - ID of the greeting to delete
+   */
+  async deleteGreeting(id: number): Promise<EmptyResponse> {
+    return this.send("delete_greeting", { id });
+  }
+
+  /**
+   * Returns a greeting by ID.
+   * @param id - ID of the greeting to retrieve
+   */
+  async getGreeting(id: number): Promise<Greeting> {
+    return this.send("get_greeting", { id });
+  }
+
+  /**
+   * Returns a list of greetings, optionally filtered by groups.
+   * @param options - optional filtering by group IDs
+   */
+  async listGreetings(options?: ListGreetingsRequest): Promise<ListGreetingsResponse> {
+    return this.send("list_greetings", options || {});
   }
 }

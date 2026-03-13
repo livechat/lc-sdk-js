@@ -303,3 +303,91 @@ export interface ListCannedResponsesResponse {
 export interface WebAPIOptions {
   apiUrl?: string;
 }
+
+export interface RichMessageElementImage {
+  url: string;
+  alternative_text: string;
+}
+
+export interface RichMessageElementButton {
+  button_id?: string;
+  postback_id?: string;
+  text: string;
+  type: string;
+  value: string;
+  role?: string;
+}
+
+export interface RichMessageElement {
+  title?: string;
+  subtitle?: string;
+  image?: RichMessageElementImage;
+  buttons?: RichMessageElementButton[];
+}
+
+export interface RichMessage {
+  template_id: string;
+  elements: RichMessageElement[];
+}
+
+export interface ActionURL {
+  url?: string;
+  operator?: string;
+}
+
+export interface ActionRule {
+  id?: number;
+  value?: string;
+  type: string;
+  operator?: string;
+  condition: string;
+  session_field?: Record<string, string>;
+  urls?: ActionURL[];
+}
+
+export interface Greeting {
+  id: number;
+  type: string;
+  active: boolean;
+  name: string;
+  group: number;
+  active_from?: string;
+  active_until?: string;
+  rules: ActionRule[];
+  properties: Record<string, string>;
+  rich_message?: RichMessage;
+}
+
+export interface CreateGreetingRequest {
+  type: string;
+  active: boolean;
+  name: string;
+  group: number;
+  rules: ActionRule[];
+  active_from?: string;
+  active_until?: string;
+  properties?: Record<string, string>;
+  rich_message?: RichMessage;
+}
+
+export interface UpdateGreetingRequest {
+  id: number;
+  type?: string;
+  active?: boolean;
+  active_from?: string;
+  active_until?: string;
+  name?: string;
+  rules?: ActionRule[];
+  properties?: Record<string, string>;
+  rich_message?: RichMessage;
+}
+
+export interface ListGreetingsRequest {
+  groups?: number[];
+}
+
+export interface ListGreetingsResponse {
+  greetings: Greeting[];
+  found_greetings: number;
+  next_page_id?: string;
+}
