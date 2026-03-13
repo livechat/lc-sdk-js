@@ -338,7 +338,7 @@ export interface ActionURL {
 export interface ActionRule {
   id?: number;
   value?: string;
-  type?: string;
+  type: string;
   operator?: string;
   condition: string;
   session_field?: Record<string, string>;
@@ -347,14 +347,14 @@ export interface ActionRule {
 
 export interface Greeting {
   id: number;
-  type?: string;
+  type: string;
   active: boolean;
   name: string;
   group: number;
   active_from?: string;
   active_until?: string;
-  rules?: ActionRule[];
-  properties?: Record<string, string>;
+  rules: ActionRule[];
+  properties: Record<string, string>;
   rich_message?: RichMessage;
 }
 
