@@ -31,4 +31,4 @@
 
 #### Defined in
 
-[webhooks/structures/events.ts:115](https://github.com/livechat/lc-sdk-js/blob/b363d91/src/webhooks/structures/events.ts#L115)
+[webhooks/structures/events.ts:115](https://github.com/livechat/lc-sdk-js/blob/9ae2b76/src/webhooks/structures/events.ts#L115)
