@@ -9,7 +9,7 @@
 ### Properties
 
 - [status](agent_structures_structures.Summary.md#status)
-- [summary](agent_structures_structures.Summary.md#summary)
+- [text](agent_structures_structures.Summary.md#text)
 - [updated\_at](agent_structures_structures.Summary.md#updated_at)
 
 ## Properties
@@ -20,17 +20,17 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:235](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/agent/structures/structures.ts#L235)
+[agent/structures/structures.ts:279](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/structures.ts#L279)
 
 ___
 
-### summary
+### text
 
-• **summary**: `string`
+• **text**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:234](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/agent/structures/structures.ts#L234)
+[agent/structures/structures.ts:278](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/structures.ts#L278)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:236](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/agent/structures/structures.ts#L236)
+[agent/structures/structures.ts:280](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/structures.ts#L280)

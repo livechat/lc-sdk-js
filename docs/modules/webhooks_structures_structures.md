@@ -14,6 +14,7 @@
 - [Filter](../interfaces/webhooks_structures_structures.Filter.md)
 - [Properties](../interfaces/webhooks_structures_structures.Properties.md)
 - [PropertyNamespace](../interfaces/webhooks_structures_structures.PropertyNamespace.md)
+- [ThreadSummary](../interfaces/webhooks_structures_structures.ThreadSummary.md)
 
 ### Type Aliases
 
@@ -27,4 +28,4 @@
 
 #### Defined in
 
-[webhooks/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/webhooks/structures/structures.ts#L27)
+[webhooks/structures/structures.ts:33](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/structures/structures.ts#L33)

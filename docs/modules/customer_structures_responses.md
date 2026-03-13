@@ -16,6 +16,7 @@
 - [ListGroupStatusesResponse](../interfaces/customer_structures_responses.ListGroupStatusesResponse.md)
 - [ListThreadsResponse](../interfaces/customer_structures_responses.ListThreadsResponse.md)
 - [LoginResponse](../interfaces/customer_structures_responses.LoginResponse.md)
+- [RequestWelcomeMessageResponse](../interfaces/customer_structures_responses.RequestWelcomeMessageResponse.md)
 - [ResumeChatResponse](../interfaces/customer_structures_responses.ResumeChatResponse.md)
 - [SendEventResponse](../interfaces/customer_structures_responses.SendEventResponse.md)
 - [StartChatResponse](../interfaces/customer_structures_responses.StartChatResponse.md)

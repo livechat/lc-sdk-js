@@ -38,6 +38,7 @@
 - [RoutingStatusSet](../interfaces/webhooks.RoutingStatusSet.md)
 - [ThreadPropertiesDeleted](../interfaces/webhooks.ThreadPropertiesDeleted.md)
 - [ThreadPropertiesUpdated](../interfaces/webhooks.ThreadPropertiesUpdated.md)
+- [ThreadSummarySet](../interfaces/webhooks.ThreadSummarySet.md)
 - [ThreadTagged](../interfaces/webhooks.ThreadTagged.md)
 - [ThreadUntagged](../interfaces/webhooks.ThreadUntagged.md)
 - [UserAddedToChat](../interfaces/webhooks.UserAddedToChat.md)

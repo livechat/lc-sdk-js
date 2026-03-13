@@ -32,6 +32,7 @@
 - [PropertyNamespace](../interfaces/customer_structures_structures.PropertyNamespace.md)
 - [Queue](../interfaces/customer_structures_structures.Queue.md)
 - [RTMAPIOptions](../interfaces/customer_structures_structures.RTMAPIOptions.md)
+- [RequestWelcomeMessageParameters](../interfaces/customer_structures_structures.RequestWelcomeMessageParameters.md)
 - [ResumeChatParameters](../interfaces/customer_structures_structures.ResumeChatParameters.md)
 - [SendRichMessagePostbackParameters](../interfaces/customer_structures_structures.SendRichMessagePostbackParameters.md)
 - [StartChatParameters](../interfaces/customer_structures_structures.StartChatParameters.md)

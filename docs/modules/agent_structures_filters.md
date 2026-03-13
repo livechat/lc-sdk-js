@@ -11,6 +11,7 @@
 ### Interfaces
 
 - [AgentResponseFilter](../interfaces/agent_structures_filters.AgentResponseFilter.md)
+- [AgentTypesFilter](../interfaces/agent_structures_filters.AgentTypesFilter.md)
 - [ArchivesFilters](../interfaces/agent_structures_filters.ArchivesFilters.md)
 - [ChatsFilters](../interfaces/agent_structures_filters.ChatsFilters.md)
 - [Filter](../interfaces/agent_structures_filters.Filter.md)

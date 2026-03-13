@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[customer/structures/responses.ts:69](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L69)
+[customer/structures/responses.ts:83](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L83)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:73](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L73)
+[customer/structures/responses.ts:87](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L87)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:71](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L71)
+[customer/structures/responses.ts:85](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L85)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:70](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L70)
+[customer/structures/responses.ts:84](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L84)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:72](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L72)
+[customer/structures/responses.ts:86](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L86)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:68](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L68)
+[customer/structures/responses.ts:82](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L82)
 
 ___
 
@@ -84,4 +84,4 @@ ___
 
 #### Defined in
 
-[customer/structures/responses.ts:74](https://github.com/livechat/lc-sdk-js/blob/ea531c7/src/customer/structures/responses.ts#L74)
+[customer/structures/responses.ts:88](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/responses.ts#L88)

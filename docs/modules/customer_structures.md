@@ -55,6 +55,8 @@
 - [Queue](customer_structures.md#queue)
 - [RTMAPIOptions](customer_structures.md#rtmapioptions)
 - [RequestEvent](customer_structures.md#requestevent)
+- [RequestWelcomeMessageParameters](customer_structures.md#requestwelcomemessageparameters)
+- [RequestWelcomeMessageResponse](customer_structures.md#requestwelcomemessageresponse)
 - [ResumeChatParameters](customer_structures.md#resumechatparameters)
 - [ResumeChatResponse](customer_structures.md#resumechatresponse)
 - [RichMessage](customer_structures.md#richmessage)
@@ -363,6 +365,18 @@ ___
 ### RequestEvent
 
 Re-exports [RequestEvent](customer_structures_events.md#requestevent)
+
+___
+
+### RequestWelcomeMessageParameters
+
+Re-exports [RequestWelcomeMessageParameters](../interfaces/customer_structures_structures.RequestWelcomeMessageParameters.md)
+
+___
+
+### RequestWelcomeMessageResponse
+
+Re-exports [RequestWelcomeMessageResponse](../interfaces/customer_structures_responses.RequestWelcomeMessageResponse.md)
 
 ___
 
