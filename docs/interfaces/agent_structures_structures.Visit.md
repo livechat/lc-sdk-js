@@ -13,6 +13,7 @@
 - [id](agent_structures_structures.Visit.md#id)
 - [ip](agent_structures_structures.Visit.md#ip)
 - [last\_pages](agent_structures_structures.Visit.md#last_pages)
+- [previous\_visit\_started\_at](agent_structures_structures.Visit.md#previous_visit_started_at)
 - [referrer](agent_structures_structures.Visit.md#referrer)
 - [started\_at](agent_structures_structures.Visit.md#started_at)
 - [user\_agent](agent_structures_structures.Visit.md#user_agent)
@@ -25,7 +26,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:26](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L26)
+[agent/structures/structures.ts:26](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L26)
 
 ___
 
@@ -35,7 +36,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:30](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L30)
+[agent/structures/structures.ts:30](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L30)
 
 ___
 
@@ -45,7 +46,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:24](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L24)
+[agent/structures/structures.ts:24](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L24)
 
 ___
 
@@ -55,17 +56,27 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:28](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L28)
+[agent/structures/structures.ts:28](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L28)
 
 ___
 
 ### last\_pages
 
-• `Optional` **last\_pages**: [`LastPage`](agent_structures_structures.LastPage.md)[]
+• `Optional` **last\_pages**: [`Page`](agent_structures_structures.Page.md)[]
 
 #### Defined in
 
-[agent/structures/structures.ts:31](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L31)
+[agent/structures/structures.ts:31](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L31)
+
+___
+
+### previous\_visit\_started\_at
+
+• `Optional` **previous\_visit\_started\_at**: `string`
+
+#### Defined in
+
+[agent/structures/structures.ts:32](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L32)
 
 ___
 
@@ -75,7 +86,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L27)
+[agent/structures/structures.ts:27](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L27)
 
 ___
 
@@ -85,7 +96,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:25](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L25)
+[agent/structures/structures.ts:25](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L25)
 
 ___
 
@@ -95,4 +106,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:29](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L29)
+[agent/structures/structures.ts:29](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L29)

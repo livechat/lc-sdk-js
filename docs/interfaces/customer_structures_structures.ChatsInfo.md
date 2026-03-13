@@ -1,0 +1,109 @@
+[@livechat/lc-sdk-js](../README.md) / [customer/structures/structures](../modules/customer_structures_structures.md) / ChatsInfo
+
+# Interface: ChatsInfo
+
+[customer/structures/structures](../modules/customer_structures_structures.md).ChatsInfo
+
+## Table of contents
+
+### Properties
+
+- [access](customer_structures_structures.ChatsInfo.md#access)
+- [active](customer_structures_structures.ChatsInfo.md#active)
+- [id](customer_structures_structures.ChatsInfo.md#id)
+- [last\_event\_per\_type](customer_structures_structures.ChatsInfo.md#last_event_per_type)
+- [last\_thread\_created\_at](customer_structures_structures.ChatsInfo.md#last_thread_created_at)
+- [last\_thread\_id](customer_structures_structures.ChatsInfo.md#last_thread_id)
+- [last\_thread\_info](customer_structures_structures.ChatsInfo.md#last_thread_info)
+- [properties](customer_structures_structures.ChatsInfo.md#properties)
+- [users](customer_structures_structures.ChatsInfo.md#users)
+
+## Properties
+
+### access
+
+• `Optional` **access**: [`Access`](customer_structures_structures.Access.md)
+
+#### Defined in
+
+[customer/structures/structures.ts:182](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L182)
+
+___
+
+### active
+
+• **active**: `boolean`
+
+#### Defined in
+
+[customer/structures/structures.ts:183](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L183)
+
+___
+
+### id
+
+• **id**: `string`
+
+#### Defined in
+
+[customer/structures/structures.ts:175](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L175)
+
+___
+
+### last\_event\_per\_type
+
+• `Optional` **last\_event\_per\_type**: [`LastEventPerType`](customer_structures_structures.LastEventPerType.md)
+
+#### Defined in
+
+[customer/structures/structures.ts:176](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L176)
+
+___
+
+### last\_thread\_created\_at
+
+• `Optional` **last\_thread\_created\_at**: `string`
+
+#### Defined in
+
+[customer/structures/structures.ts:179](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L179)
+
+___
+
+### last\_thread\_id
+
+• `Optional` **last\_thread\_id**: `string`
+
+#### Defined in
+
+[customer/structures/structures.ts:178](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L178)
+
+___
+
+### last\_thread\_info
+
+• `Optional` **last\_thread\_info**: [`LastThreadInfo`](customer_structures_structures.LastThreadInfo.md)
+
+#### Defined in
+
+[customer/structures/structures.ts:180](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L180)
+
+___
+
+### properties
+
+• **properties**: [`Properties`](customer_structures_structures.Properties.md)
+
+#### Defined in
+
+[customer/structures/structures.ts:181](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L181)
+
+___
+
+### users
+
+• **users**: [`User`](../modules/customer_structures_users.md#user)[]
+
+#### Defined in
+
+[customer/structures/structures.ts:177](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L177)

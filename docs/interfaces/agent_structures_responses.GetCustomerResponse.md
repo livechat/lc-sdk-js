@@ -14,43 +14,34 @@
 
 ### Properties
 
-- [\_\_priv\_lc2\_customer\_id](agent_structures_responses.GetCustomerResponse.md#__priv_lc2_customer_id)
 - [agent\_last\_event\_created\_at](agent_structures_responses.GetCustomerResponse.md#agent_last_event_created_at)
 - [avatar](agent_structures_responses.GetCustomerResponse.md#avatar)
 - [chat\_ids](agent_structures_responses.GetCustomerResponse.md#chat_ids)
+- [chats](agent_structures_responses.GetCustomerResponse.md#chats)
 - [created\_at](agent_structures_responses.GetCustomerResponse.md#created_at)
 - [customer\_last\_event\_created\_at](agent_structures_responses.GetCustomerResponse.md#customer_last_event_created_at)
 - [email](agent_structures_responses.GetCustomerResponse.md#email)
 - [email\_verified](agent_structures_responses.GetCustomerResponse.md#email_verified)
 - [events\_seen\_up\_to](agent_structures_responses.GetCustomerResponse.md#events_seen_up_to)
 - [followed](agent_structures_responses.GetCustomerResponse.md#followed)
+- [greeting\_id](agent_structures_responses.GetCustomerResponse.md#greeting_id)
 - [group\_ids](agent_structures_responses.GetCustomerResponse.md#group_ids)
 - [id](agent_structures_responses.GetCustomerResponse.md#id)
-- [last\_visit](agent_structures_responses.GetCustomerResponse.md#last_visit)
 - [name](agent_structures_responses.GetCustomerResponse.md#name)
+- [name\_is\_default](agent_structures_responses.GetCustomerResponse.md#name_is_default)
+- [omnichannel](agent_structures_responses.GetCustomerResponse.md#omnichannel)
 - [online](agent_structures_responses.GetCustomerResponse.md#online)
+- [orders](agent_structures_responses.GetCustomerResponse.md#orders)
 - [phone\_number](agent_structures_responses.GetCustomerResponse.md#phone_number)
 - [present](agent_structures_responses.GetCustomerResponse.md#present)
 - [session\_fields](agent_structures_responses.GetCustomerResponse.md#session_fields)
 - [state](agent_structures_responses.GetCustomerResponse.md#state)
 - [statistics](agent_structures_responses.GetCustomerResponse.md#statistics)
+- [tickets](agent_structures_responses.GetCustomerResponse.md#tickets)
 - [type](agent_structures_responses.GetCustomerResponse.md#type)
+- [visit](agent_structures_responses.GetCustomerResponse.md#visit)
 
 ## Properties
-
-### \_\_priv\_lc2\_customer\_id
-
-• `Optional` **\_\_priv\_lc2\_customer\_id**: `string`
-
-#### Inherited from
-
-[Customer](agent_structures_users.Customer.md).[__priv_lc2_customer_id](agent_structures_users.Customer.md#__priv_lc2_customer_id)
-
-#### Defined in
-
-[agent/structures/users.ts:22](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L22)
-
-___
 
 ### agent\_last\_event\_created\_at
 
@@ -62,7 +53,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:23](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L23)
+[agent/structures/users.ts:25](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L25)
 
 ___
 
@@ -76,7 +67,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:29](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L29)
+[agent/structures/users.ts:19](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L19)
 
 ___
 
@@ -86,7 +77,21 @@ ___
 
 #### Defined in
 
-[agent/structures/responses.ts:67](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/responses.ts#L67)
+[agent/structures/responses.ts:67](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/responses.ts#L67)
+
+___
+
+### chats
+
+• `Optional` **chats**: [`CustomerChat`](agent_structures_structures.CustomerChat.md)[]
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[chats](agent_structures_users.Customer.md#chats)
+
+#### Defined in
+
+[agent/structures/users.ts:27](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L27)
 
 ___
 
@@ -100,7 +105,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:25](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L25)
+[agent/structures/users.ts:21](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L21)
 
 ___
 
@@ -114,7 +119,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:24](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L24)
+[agent/structures/users.ts:26](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L26)
 
 ___
 
@@ -128,13 +133,13 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L6)
+[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L6)
 
 ___
 
 ### email\_verified
 
-• `Optional` **email\_verified**: `boolean`
+• **email\_verified**: `boolean`
 
 #### Inherited from
 
@@ -142,7 +147,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:18](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L18)
+[agent/structures/users.ts:33](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L33)
 
 ___
 
@@ -156,13 +161,13 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L7)
+[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L7)
 
 ___
 
 ### followed
 
-• `Optional` **followed**: `boolean`
+• **followed**: `boolean`
 
 #### Inherited from
 
@@ -170,7 +175,21 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:26](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L26)
+[agent/structures/users.ts:28](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L28)
+
+___
+
+### greeting\_id
+
+• `Optional` **greeting\_id**: `number`
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[greeting_id](agent_structures_users.Customer.md#greeting_id)
+
+#### Defined in
+
+[agent/structures/users.ts:32](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L32)
 
 ___
 
@@ -184,7 +203,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:27](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L27)
+[agent/structures/users.ts:30](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L30)
 
 ___
 
@@ -198,21 +217,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L4)
-
-___
-
-### last\_visit
-
-• `Optional` **last\_visit**: [`Visit`](agent_structures_structures.Visit.md)
-
-#### Inherited from
-
-[Customer](agent_structures_users.Customer.md).[last_visit](agent_structures_users.Customer.md#last_visit)
-
-#### Defined in
-
-[agent/structures/users.ts:19](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L19)
+[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L4)
 
 ___
 
@@ -226,13 +231,41 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L5)
+[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L5)
+
+___
+
+### name\_is\_default
+
+• **name\_is\_default**: `boolean`
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[name_is_default](agent_structures_users.Customer.md#name_is_default)
+
+#### Defined in
+
+[agent/structures/users.ts:18](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L18)
+
+___
+
+### omnichannel
+
+• `Optional` **omnichannel**: [`Omnichannel`](agent_structures_structures.Omnichannel.md)
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[omnichannel](agent_structures_users.Customer.md#omnichannel)
+
+#### Defined in
+
+[agent/structures/users.ts:36](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L36)
 
 ___
 
 ### online
 
-• `Optional` **online**: `boolean`
+• **online**: `boolean`
 
 #### Inherited from
 
@@ -240,7 +273,21 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:30](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L30)
+[agent/structures/users.ts:29](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L29)
+
+___
+
+### orders
+
+• `Optional` **orders**: [`Order`](agent_structures_structures.Order.md)[]
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[orders](agent_structures_users.Customer.md#orders)
+
+#### Defined in
+
+[agent/structures/users.ts:35](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L35)
 
 ___
 
@@ -254,7 +301,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:31](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L31)
+[agent/structures/users.ts:20](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L20)
 
 ___
 
@@ -268,7 +315,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L9)
+[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L9)
 
 ___
 
@@ -282,7 +329,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:20](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L20)
+[agent/structures/users.ts:22](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L22)
 
 ___
 
@@ -296,7 +343,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:28](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L28)
+[agent/structures/users.ts:31](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L31)
 
 ___
 
@@ -310,7 +357,21 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:21](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L21)
+[agent/structures/users.ts:24](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L24)
+
+___
+
+### tickets
+
+• `Optional` **tickets**: [`Ticket`](agent_structures_structures.Ticket.md)[]
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[tickets](agent_structures_users.Customer.md#tickets)
+
+#### Defined in
+
+[agent/structures/users.ts:34](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L34)
 
 ___
 
@@ -324,4 +385,18 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/users.ts#L8)
+[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L8)
+
+___
+
+### visit
+
+• `Optional` **visit**: [`Visit`](agent_structures_structures.Visit.md)
+
+#### Inherited from
+
+[Customer](agent_structures_users.Customer.md).[visit](agent_structures_users.Customer.md#visit)
+
+#### Defined in
+
+[agent/structures/users.ts:23](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L23)

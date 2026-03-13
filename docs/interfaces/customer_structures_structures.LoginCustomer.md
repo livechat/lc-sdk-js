@@ -11,6 +11,7 @@
 - [avatar](customer_structures_structures.LoginCustomer.md#avatar)
 - [email](customer_structures_structures.LoginCustomer.md#email)
 - [name](customer_structures_structures.LoginCustomer.md#name)
+- [name\_is\_default](customer_structures_structures.LoginCustomer.md#name_is_default)
 - [session\_fields](customer_structures_structures.LoginCustomer.md#session_fields)
 
 ## Properties
@@ -21,7 +22,7 @@
 
 #### Defined in
 
-[customer/structures/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/structures.ts#L76)
+[customer/structures/structures.ts:82](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L82)
 
 ___
 
@@ -31,7 +32,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/structures.ts#L77)
+[customer/structures/structures.ts:83](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L83)
 
 ___
 
@@ -41,7 +42,17 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/structures.ts#L78)
+[customer/structures/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L84)
+
+___
+
+### name\_is\_default
+
+• `Optional` **name\_is\_default**: `boolean`
+
+#### Defined in
+
+[customer/structures/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L85)
 
 ___
 
@@ -51,4 +62,4 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/customer/structures/structures.ts#L79)
+[customer/structures/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/structures.ts#L86)

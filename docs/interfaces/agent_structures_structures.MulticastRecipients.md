@@ -9,7 +9,6 @@
 ### Properties
 
 - [agents](agent_structures_structures.MulticastRecipients.md#agents)
-- [customers](agent_structures_structures.MulticastRecipients.md#customers)
 
 ## Properties
 
@@ -19,14 +18,4 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:151](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L151)
-
-___
-
-### customers
-
-• **customers**: `MulticastCustomers`
-
-#### Defined in
-
-[agent/structures/structures.ts:152](https://github.com/livechat/lc-sdk-js/blob/2ce9409/src/agent/structures/structures.ts#L152)
+[agent/structures/structures.ts:200](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/structures.ts#L200)
