@@ -303,7 +303,7 @@ export default class Web extends WebAPI {
     return this.send("get_predicted_agent", {});
   }
 
-/**
+  /**
    * Requests a welcome message.
    * @param opts - options like id of previous welcome message or group id
    */
