@@ -249,6 +249,29 @@ export default class RTM extends RTMAPI {
   }
 
   /**
+   * Updates the page URL and title
+   * @param url - page URL
+   * @param title - page title
+   */
+  async updateCustomerPage(url: string, title?: string): Promise<EmptyResponse> {
+    return this.send("update_customer_page", { url, title });
+  }
+
+  /**
+   * Marks the current Customer's page tab as active (focused)
+   */
+  async activateCustomerPage(): Promise<EmptyResponse> {
+    return this.send("activate_customer_page", {});
+  }
+
+  /**
+   * Marks the current Customer's page tab as inactive (unfocused)
+   */
+  async deactivateCustomerPage(): Promise<EmptyResponse> {
+    return this.send("deactivate_customer_page", {});
+  }
+
+  /**
    * Updates Customer's properties.
    * @param opts - properties to update
    */
