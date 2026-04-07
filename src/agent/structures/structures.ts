@@ -14,10 +14,20 @@ export interface Geolocation {
   latitude?: string;
 }
 
+export interface FocusInterval {
+  started_at: string;
+  ended_at?: string;
+}
+
 export interface Page {
   opened_at: string;
   url: string;
   title?: string;
+  tab_id?: string;
+  is_focused?: boolean;
+  ended_at?: string;
+  focus_intervals?: FocusInterval[];
+  prior_focused_duration?: number;
 }
 
 export interface Visit {

@@ -119,6 +119,21 @@ export enum Pushes {
   CustomerPageUpdated = "customer_page_updated",
 
   /**
+   * Informs that a Customer's page tab became active (focused).
+   */
+  CustomerPageActivated = "customer_page_activated",
+
+  /**
+   * Informs that a Customer's page tab became inactive (unfocused).
+   */
+  CustomerPageDeactivated = "customer_page_deactivated",
+
+  /**
+   * Informs that a Customer's page tab was closed.
+   */
+  CustomerPageClosed = "customer_page_closed",
+
+  /**
    * Informs that Customer's statistics were updated.
    */
   CustomerStatisticsUpdated = "customer_statistics_updated",
