@@ -76,6 +76,7 @@ export interface LoginRequest {
   group_id?: number;
   referrer?: string;
   pushes?: { [ApiVersion]: Pushes[] };
+  tab_id?: string;
 }
 
 export interface LoginCustomer {
