@@ -1,5 +1,5 @@
-import { Chat, CustomerMonitoringLevel, User } from "../agent/structures";
-import { Access, Customer, Event, Filter, Postback, Properties, RoutingStatus, ThreadSummary } from "./structures";
+import { Chat, User } from "../agent/structures";
+import { Access, Event, Filter, Properties, RichMessagePostback, RoutingStatus, ThreadSummary } from "./structures";
 
 export interface Webhook {
   webhook_id: string;
@@ -101,7 +101,7 @@ export interface IncomingRichMessagePostback {
   chat_id: string;
   thread_id: string;
   event_id: string;
-  postback: Postback;
+  postback: RichMessagePostback;
 }
 
 export interface ChatPropertiesUpdated {
