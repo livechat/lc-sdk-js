@@ -1,4 +1,4 @@
-import { Properties } from "./structures";
+import { Properties, PostbackEcommerce } from "./structures";
 
 interface BaseEvent {
   id: string;
@@ -61,6 +61,7 @@ export interface Postback {
   event_id: string;
   type?: string;
   value?: string;
+  ecommerce?: PostbackEcommerce;
 }
 
 export interface RichMessage extends BaseEvent {
@@ -76,6 +77,35 @@ export interface Element {
   subtitle?: string;
   image?: Image;
   buttons?: Button[];
+  ecommerce?: Ecommerce;
+}
+
+export interface Ecommerce {
+  view_type: string;
+  product_id: string;
+  label?: string;
+  options?: EcommerceOption[];
+  addons?: EcommerceAddon[];
+}
+
+export interface EcommerceOption {
+  option_id: string;
+  label: string;
+  price?: string;
+  regular_price?: string;
+  currency?: string;
+  color?: string;
+  image_url?: string;
+  image_thumbnail_url?: string;
+  available?: boolean;
+  selected?: boolean;
+}
+
+export interface EcommerceAddon {
+  addon_type: string;
+  range_from?: string;
+  range_to?: string;
+  currency?: string;
 }
 
 export interface Button {
