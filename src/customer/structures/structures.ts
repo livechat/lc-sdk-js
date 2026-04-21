@@ -38,6 +38,15 @@ export interface SendRichMessagePostbackParameters {
 interface PostbackToggle {
   id: string;
   toggled: boolean;
+  button_type?: string;
+  button_value?: string;
+  ecommerce?: PostbackEcommerce;
+}
+
+export interface PostbackEcommerce {
+  product_id: string;
+  option_id: string;
+  quantity?: number;
 }
 
 export interface CustomerParameters {
