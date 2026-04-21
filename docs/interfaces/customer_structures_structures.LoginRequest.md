@@ -16,6 +16,7 @@
 - [is\_mobile](customer_structures_structures.LoginRequest.md#is_mobile)
 - [pushes](customer_structures_structures.LoginRequest.md#pushes)
 - [referrer](customer_structures_structures.LoginRequest.md#referrer)
+- [tab\_id](customer_structures_structures.LoginRequest.md#tab_id)
 - [token](customer_structures_structures.LoginRequest.md#token)
 
 ## Properties
@@ -26,7 +27,7 @@
 
 #### Defined in
 
-[customer/structures/structures.ts:73](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L73)
+[customer/structures/structures.ts:82](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L82)
 
 ___
 
@@ -36,7 +37,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:71](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L71)
+[customer/structures/structures.ts:80](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L80)
 
 ___
 
@@ -46,7 +47,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:72](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L72)
+[customer/structures/structures.ts:81](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L81)
 
 ___
 
@@ -56,7 +57,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:75](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L75)
+[customer/structures/structures.ts:84](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L84)
 
 ___
 
@@ -66,7 +67,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:76](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L76)
+[customer/structures/structures.ts:85](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L85)
 
 ___
 
@@ -76,7 +77,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:74](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L74)
+[customer/structures/structures.ts:83](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L83)
 
 ___
 
@@ -92,7 +93,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:78](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L78)
+[customer/structures/structures.ts:87](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L87)
 
 ___
 
@@ -102,7 +103,17 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:77](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L77)
+[customer/structures/structures.ts:86](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L86)
+
+___
+
+### tab\_id
+
+• `Optional` **tab\_id**: `string`
+
+#### Defined in
+
+[customer/structures/structures.ts:88](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L88)
 
 ___
 
@@ -112,4 +123,4 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:70](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/structures.ts#L70)
+[customer/structures/structures.ts:79](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/structures.ts#L79)

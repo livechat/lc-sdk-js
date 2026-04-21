@@ -8,6 +8,7 @@
 
 ### Properties
 
+- [ecommerce](agent_structures_events.Postback.md#ecommerce)
 - [event\_id](agent_structures_events.Postback.md#event_id)
 - [id](agent_structures_events.Postback.md#id)
 - [thread\_id](agent_structures_events.Postback.md#thread_id)
@@ -16,13 +17,23 @@
 
 ## Properties
 
+### ecommerce
+
+• `Optional` **ecommerce**: [`PostbackEcommerce`](agent_structures_structures.PostbackEcommerce.md)
+
+#### Defined in
+
+[agent/structures/events.ts:64](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L64)
+
+___
+
 ### event\_id
 
 • **event\_id**: `string`
 
 #### Defined in
 
-[agent/structures/events.ts:61](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L61)
+[agent/structures/events.ts:61](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L61)
 
 ___
 
@@ -32,7 +43,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:59](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L59)
+[agent/structures/events.ts:59](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L59)
 
 ___
 
@@ -42,7 +53,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:60](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L60)
+[agent/structures/events.ts:60](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L60)
 
 ___
 
@@ -52,7 +63,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:62](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L62)
+[agent/structures/events.ts:62](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L62)
 
 ___
 
@@ -62,4 +73,4 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:63](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L63)
+[agent/structures/events.ts:63](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L63)

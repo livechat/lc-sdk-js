@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[webhooks/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/index.ts#L101)
+[webhooks/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/index.ts#L101)
 
 ___
 
@@ -32,17 +32,17 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:103](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/index.ts#L103)
+[webhooks/index.ts:103](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/index.ts#L103)
 
 ___
 
 ### postback
 
-• **postback**: [`Postback`](webhooks_structures_events.Postback.md)
+• **postback**: [`RichMessagePostback`](webhooks_structures_structures.RichMessagePostback.md)
 
 #### Defined in
 
-[webhooks/index.ts:104](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/index.ts#L104)
+[webhooks/index.ts:104](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/index.ts#L104)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:102](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/index.ts#L102)
+[webhooks/index.ts:102](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/index.ts#L102)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[webhooks/index.ts:100](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/index.ts#L100)
+[webhooks/index.ts:100](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/index.ts#L100)

@@ -9,6 +9,9 @@
 - [Answer](../interfaces/agent_structures_events.Answer.md)
 - [Button](../interfaces/agent_structures_events.Button.md)
 - [CustomEvent](../interfaces/agent_structures_events.CustomEvent.md)
+- [Ecommerce](../interfaces/agent_structures_events.Ecommerce.md)
+- [EcommerceAddon](../interfaces/agent_structures_events.EcommerceAddon.md)
+- [EcommerceOption](../interfaces/agent_structures_events.EcommerceOption.md)
 - [Element](../interfaces/agent_structures_events.Element.md)
 - [File](../interfaces/agent_structures_events.File.md)
 - [FilledForm](../interfaces/agent_structures_events.FilledForm.md)
@@ -34,7 +37,7 @@
 
 #### Defined in
 
-[agent/structures/events.ts:124](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L124)
+[agent/structures/events.ts:154](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L154)
 
 ___
 
@@ -50,7 +53,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:139](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L139)
+[agent/structures/events.ts:169](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L169)
 
 ___
 
@@ -60,4 +63,4 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:143](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L143)
+[agent/structures/events.ts:173](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L173)

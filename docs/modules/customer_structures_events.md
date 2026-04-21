@@ -9,6 +9,9 @@
 - [Answer](../interfaces/customer_structures_events.Answer.md)
 - [Button](../interfaces/customer_structures_events.Button.md)
 - [CustomEvent](../interfaces/customer_structures_events.CustomEvent.md)
+- [Ecommerce](../interfaces/customer_structures_events.Ecommerce.md)
+- [EcommerceAddon](../interfaces/customer_structures_events.EcommerceAddon.md)
+- [EcommerceOption](../interfaces/customer_structures_events.EcommerceOption.md)
 - [Element](../interfaces/customer_structures_events.Element.md)
 - [File](../interfaces/customer_structures_events.File.md)
 - [FilledForm](../interfaces/customer_structures_events.FilledForm.md)
@@ -34,7 +37,7 @@
 
 #### Defined in
 
-[customer/structures/events.ts:123](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L123)
+[customer/structures/events.ts:153](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L153)
 
 ___
 
@@ -50,7 +53,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:137](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L137)
+[customer/structures/events.ts:167](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L167)
 
 ___
 
@@ -60,4 +63,4 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L138)
+[customer/structures/events.ts:168](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L168)

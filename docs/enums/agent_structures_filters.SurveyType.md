@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[agent/structures/filters.ts:75](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/filters.ts#L75)
+[agent/structures/filters.ts:75](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/filters.ts#L75)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:74](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/filters.ts#L74)
+[agent/structures/filters.ts:74](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/filters.ts#L74)

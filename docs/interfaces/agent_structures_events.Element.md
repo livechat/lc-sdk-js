@@ -9,6 +9,7 @@
 ### Properties
 
 - [buttons](agent_structures_events.Element.md#buttons)
+- [ecommerce](agent_structures_events.Element.md#ecommerce)
 - [image](agent_structures_events.Element.md#image)
 - [subtitle](agent_structures_events.Element.md#subtitle)
 - [title](agent_structures_events.Element.md#title)
@@ -21,7 +22,17 @@
 
 #### Defined in
 
-[agent/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L78)
+[agent/structures/events.ts:79](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L79)
+
+___
+
+### ecommerce
+
+• `Optional` **ecommerce**: [`Ecommerce`](agent_structures_events.Ecommerce.md)
+
+#### Defined in
+
+[agent/structures/events.ts:80](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L80)
 
 ___
 
@@ -31,7 +42,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L77)
+[agent/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L78)
 
 ___
 
@@ -41,7 +52,7 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L76)
+[agent/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L77)
 
 ___
 
@@ -51,4 +62,4 @@ ___
 
 #### Defined in
 
-[agent/structures/events.ts:75](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/events.ts#L75)
+[agent/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/events.ts#L76)

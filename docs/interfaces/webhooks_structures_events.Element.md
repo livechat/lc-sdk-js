@@ -9,6 +9,7 @@
 ### Properties
 
 - [buttons](webhooks_structures_events.Element.md#buttons)
+- [ecommerce](webhooks_structures_events.Element.md#ecommerce)
 - [image](webhooks_structures_events.Element.md#image)
 - [subtitle](webhooks_structures_events.Element.md#subtitle)
 - [title](webhooks_structures_events.Element.md#title)
@@ -21,7 +22,17 @@
 
 #### Defined in
 
-[webhooks/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/structures/events.ts#L78)
+[webhooks/structures/events.ts:79](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/events.ts#L79)
+
+___
+
+### ecommerce
+
+• `Optional` **ecommerce**: [`Ecommerce`](webhooks_structures_events.Ecommerce.md)
+
+#### Defined in
+
+[webhooks/structures/events.ts:80](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/events.ts#L80)
 
 ___
 
@@ -31,7 +42,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/structures/events.ts#L77)
+[webhooks/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/events.ts#L78)
 
 ___
 
@@ -41,7 +52,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/structures/events.ts#L76)
+[webhooks/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/events.ts#L77)
 
 ___
 
@@ -51,4 +62,4 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:75](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/structures/events.ts#L75)
+[webhooks/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/events.ts#L76)

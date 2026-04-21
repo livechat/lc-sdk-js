@@ -9,6 +9,7 @@
 ### Properties
 
 - [buttons](customer_structures_events.Element.md#buttons)
+- [ecommerce](customer_structures_events.Element.md#ecommerce)
 - [image](customer_structures_events.Element.md#image)
 - [subtitle](customer_structures_events.Element.md#subtitle)
 - [title](customer_structures_events.Element.md#title)
@@ -21,7 +22,17 @@
 
 #### Defined in
 
-[customer/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L77)
+[customer/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L78)
+
+___
+
+### ecommerce
+
+• `Optional` **ecommerce**: [`Ecommerce`](customer_structures_events.Ecommerce.md)
+
+#### Defined in
+
+[customer/structures/events.ts:79](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L79)
 
 ___
 
@@ -31,7 +42,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L76)
+[customer/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L77)
 
 ___
 
@@ -41,7 +52,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:75](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L75)
+[customer/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L76)
 
 ___
 
@@ -51,4 +62,4 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:74](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/customer/structures/events.ts#L74)
+[customer/structures/events.ts:75](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/customer/structures/events.ts#L75)

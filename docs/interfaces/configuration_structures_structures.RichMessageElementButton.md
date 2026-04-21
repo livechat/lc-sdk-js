@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[configuration/structures/structures.ts:271](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/structures/structures.ts#L271)
+[configuration/structures/structures.ts:271](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/structures/structures.ts#L271)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/structures/structures.ts#L272)
+[configuration/structures/structures.ts:272](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/structures/structures.ts#L272)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:276](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/structures/structures.ts#L276)
+[configuration/structures/structures.ts:276](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/structures/structures.ts#L276)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:273](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/structures/structures.ts#L273)
+[configuration/structures/structures.ts:273](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/structures/structures.ts#L273)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:274](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/structures/structures.ts#L274)
+[configuration/structures/structures.ts:274](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/structures/structures.ts#L274)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:275](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/structures/structures.ts#L275)
+[configuration/structures/structures.ts:275](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/structures/structures.ts#L275)
