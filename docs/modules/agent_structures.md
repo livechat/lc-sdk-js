@@ -27,6 +27,9 @@
 - [CustomerMonitoringLevel](agent_structures.md#customermonitoringlevel)
 - [CustomerParameters](agent_structures.md#customerparameters)
 - [CustomerVisit](agent_structures.md#customervisit)
+- [Ecommerce](agent_structures.md#ecommerce)
+- [EcommerceAddon](agent_structures.md#ecommerceaddon)
+- [EcommerceOption](agent_structures.md#ecommerceoption)
 - [Element](agent_structures.md#element)
 - [EmptyResponse](agent_structures.md#emptyresponse)
 - [Event](agent_structures.md#event)
@@ -35,6 +38,7 @@
 - [FilledForm](agent_structures.md#filledform)
 - [Filter](agent_structures.md#filter)
 - [FilterType](agent_structures.md#filtertype)
+- [FocusInterval](agent_structures.md#focusinterval)
 - [FormField](agent_structures.md#formfield)
 - [Geolocation](agent_structures.md#geolocation)
 - [GetChatResponse](agent_structures.md#getchatresponse)
@@ -64,6 +68,7 @@
 - [Order](agent_structures.md#order)
 - [Page](agent_structures.md#page)
 - [Postback](agent_structures.md#postback)
+- [PostbackEcommerce](agent_structures.md#postbackecommerce)
 - [Properties](agent_structures.md#properties)
 - [PropertiesFilter](agent_structures.md#propertiesfilter)
 - [PropertyNamespace](agent_structures.md#propertynamespace)
@@ -227,6 +232,24 @@ Re-exports [CustomerVisit](../interfaces/agent_structures_structures.CustomerVis
 
 ___
 
+### Ecommerce
+
+Re-exports [Ecommerce](../interfaces/agent_structures_events.Ecommerce.md)
+
+___
+
+### EcommerceAddon
+
+Re-exports [EcommerceAddon](../interfaces/agent_structures_events.EcommerceAddon.md)
+
+___
+
+### EcommerceOption
+
+Re-exports [EcommerceOption](../interfaces/agent_structures_events.EcommerceOption.md)
+
+___
+
 ### Element
 
 Re-exports [Element](../interfaces/agent_structures_events.Element.md)
@@ -272,6 +295,12 @@ ___
 ### FilterType
 
 Re-exports [FilterType](../interfaces/agent_structures_filters.FilterType.md)
+
+___
+
+### FocusInterval
+
+Re-exports [FocusInterval](../interfaces/agent_structures_structures.FocusInterval.md)
 
 ___
 
@@ -446,6 +475,12 @@ ___
 ### Postback
 
 Re-exports [Postback](../interfaces/agent_structures_events.Postback.md)
+
+___
+
+### PostbackEcommerce
+
+Re-exports [PostbackEcommerce](../interfaces/agent_structures_structures.PostbackEcommerce.md)
 
 ___
 

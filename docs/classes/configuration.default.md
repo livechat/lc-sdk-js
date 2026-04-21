@@ -119,7 +119,7 @@
 
 #### Defined in
 
-[configuration/index.ts:49](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L49)
+[configuration/index.ts:49](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L49)
 
 ## Properties
 
@@ -133,7 +133,7 @@
 
 #### Defined in
 
-[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L14)
+[internal/index.ts:14](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L14)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L16)
+[internal/index.ts:16](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L16)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:20](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L20)
+[internal/index.ts:20](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L20)
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:21](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L21)
+[internal/index.ts:21](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L21)
 
 ___
 
@@ -189,7 +189,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:22](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L22)
+[internal/index.ts:22](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L22)
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L15)
+[internal/index.ts:15](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L15)
 
 ## Methods
 
@@ -225,7 +225,7 @@ Creates an auto access data structure, which is a set of conditions for the trac
 
 #### Defined in
 
-[configuration/index.ts:560](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L560)
+[configuration/index.ts:560](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L560)
 
 ___
 
@@ -247,7 +247,7 @@ Approves an Agent thus allowing the Agent to use the application.
 
 #### Defined in
 
-[configuration/index.ts:164](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L164)
+[configuration/index.ts:164](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L164)
 
 ___
 
@@ -269,7 +269,7 @@ Approves Agents thus allowing the Agents to use the application.
 
 #### Defined in
 
-[configuration/index.ts:172](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L172)
+[configuration/index.ts:172](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L172)
 
 ___
 
@@ -291,7 +291,7 @@ Creates new Agents with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:66](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L66)
+[configuration/index.ts:66](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L66)
 
 ___
 
@@ -313,7 +313,7 @@ Creates new Bots with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L188)
+[configuration/index.ts:188](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L188)
 
 ___
 
@@ -335,7 +335,7 @@ Deletes Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:117](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L117)
+[configuration/index.ts:117](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L117)
 
 ___
 
@@ -357,7 +357,7 @@ Deletes Bots specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L204)
+[configuration/index.ts:204](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L204)
 
 ___
 
@@ -379,7 +379,7 @@ Suspends Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:133](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L133)
+[configuration/index.ts:133](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L133)
 
 ___
 
@@ -401,7 +401,7 @@ Unsuspends Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:149](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L149)
+[configuration/index.ts:149](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L149)
 
 ___
 
@@ -423,7 +423,7 @@ Updates the properties of Agents specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L101)
+[configuration/index.ts:101](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L101)
 
 ___
 
@@ -445,7 +445,7 @@ Updates the properties of Bots specified by ids.
 
 #### Defined in
 
-[configuration/index.ts:246](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L246)
+[configuration/index.ts:246](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L246)
 
 ___
 
@@ -467,7 +467,7 @@ Compares your organization's current resources with a given plan and returns tho
 
 #### Defined in
 
-[configuration/index.ts:595](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L595)
+[configuration/index.ts:595](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L595)
 
 ___
 
@@ -490,7 +490,7 @@ Creates a new Agent with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:58](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L58)
+[configuration/index.ts:58](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L58)
 
 ___
 
@@ -512,7 +512,7 @@ Creates a new Bot with specified parameters within a license.
 
 #### Defined in
 
-[configuration/index.ts:180](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L180)
+[configuration/index.ts:180](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L180)
 
 ___
 
@@ -537,7 +537,7 @@ Creates a new Bot Template with specified parameters.
 
 #### Defined in
 
-[configuration/index.ts:276](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L276)
+[configuration/index.ts:276](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L276)
 
 ___
 
@@ -559,7 +559,7 @@ Creates a new greeting and returns its ID.
 
 #### Defined in
 
-[configuration/index.ts:671](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L671)
+[configuration/index.ts:671](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L671)
 
 ___
 
@@ -583,7 +583,7 @@ Creates new group.
 
 #### Defined in
 
-[configuration/index.ts:345](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L345)
+[configuration/index.ts:345](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L345)
 
 ___
 
@@ -606,7 +606,7 @@ Creates a new tag.
 
 #### Defined in
 
-[configuration/index.ts:611](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L611)
+[configuration/index.ts:611](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L611)
 
 ___
 
@@ -628,7 +628,7 @@ Deletes an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:109](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L109)
+[configuration/index.ts:109](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L109)
 
 ___
 
@@ -650,7 +650,7 @@ Deletes an existing auto access data structure specified by its ID.
 
 #### Defined in
 
-[configuration/index.ts:575](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L575)
+[configuration/index.ts:575](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L575)
 
 ___
 
@@ -672,7 +672,7 @@ Deletes bot specified by id.
 
 #### Defined in
 
-[configuration/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L196)
+[configuration/index.ts:196](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L196)
 
 ___
 
@@ -696,7 +696,7 @@ Deletes the bot template specified by id.
 
 #### Defined in
 
-[configuration/index.ts:309](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L309)
+[configuration/index.ts:309](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L309)
 
 ___
 
@@ -718,7 +718,7 @@ Deletes an existing greeting.
 
 #### Defined in
 
-[configuration/index.ts:687](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L687)
+[configuration/index.ts:687](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L687)
 
 ___
 
@@ -740,7 +740,7 @@ Deletes group specified by id.
 
 #### Defined in
 
-[configuration/index.ts:382](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L382)
+[configuration/index.ts:382](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L382)
 
 ___
 
@@ -763,7 +763,7 @@ Deletes the properties set within a group.
 
 #### Defined in
 
-[configuration/index.ts:491](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L491)
+[configuration/index.ts:491](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L491)
 
 ___
 
@@ -785,7 +785,7 @@ Deletes the properties set within a license.
 
 #### Defined in
 
-[configuration/index.ts:470](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L470)
+[configuration/index.ts:470](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L470)
 
 ___
 
@@ -807,7 +807,7 @@ Deletes an existing tag.
 
 #### Defined in
 
-[configuration/index.ts:619](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L619)
+[configuration/index.ts:619](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L619)
 
 ___
 
@@ -829,7 +829,7 @@ Disables license webhooks for authorization token's clientID
 
 #### Defined in
 
-[configuration/index.ts:544](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L544)
+[configuration/index.ts:544](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L544)
 
 ___
 
@@ -851,7 +851,7 @@ Enables license webhooks for authorization token's clientID
 
 #### Defined in
 
-[configuration/index.ts:536](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L536)
+[configuration/index.ts:536](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L536)
 
 ___
 
@@ -874,7 +874,7 @@ It returns the info about an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L75)
+[configuration/index.ts:75](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L75)
 
 ___
 
@@ -897,7 +897,7 @@ Gets info about Bot.
 
 #### Defined in
 
-[configuration/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L264)
+[configuration/index.ts:264](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L264)
 
 ___
 
@@ -919,7 +919,7 @@ Returns a greeting by ID.
 
 #### Defined in
 
-[configuration/index.ts:695](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L695)
+[configuration/index.ts:695](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L695)
 
 ___
 
@@ -942,7 +942,7 @@ Returns details about a group specified by its id.
 
 #### Defined in
 
-[configuration/index.ts:399](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L399)
+[configuration/index.ts:399](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L399)
 
 ___
 
@@ -964,7 +964,7 @@ Gets license webhooks' state for authorization token's clientID
 
 #### Defined in
 
-[configuration/index.ts:552](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L552)
+[configuration/index.ts:552](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L552)
 
 ___
 
@@ -989,7 +989,7 @@ Issues authorization token for Bot.
 
 #### Defined in
 
-[configuration/index.ts:233](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L233)
+[configuration/index.ts:233](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L233)
 
 ___
 
@@ -1012,7 +1012,7 @@ Returns all Agents within a license.
 
 #### Defined in
 
-[configuration/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L84)
+[configuration/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L84)
 
 ___
 
@@ -1028,7 +1028,7 @@ Returns all existing auto access data structures.
 
 #### Defined in
 
-[configuration/index.ts:567](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L567)
+[configuration/index.ts:567](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L567)
 
 ___
 
@@ -1050,7 +1050,7 @@ Lists bot templates.
 
 #### Defined in
 
-[configuration/index.ts:321](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L321)
+[configuration/index.ts:321](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L321)
 
 ___
 
@@ -1073,7 +1073,7 @@ Lists all bots within license.
 
 #### Defined in
 
-[configuration/index.ts:255](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L255)
+[configuration/index.ts:255](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L255)
 
 ___
 
@@ -1089,7 +1089,7 @@ Returns the summary of communication channels for your LiveChat product.
 
 #### Defined in
 
-[configuration/index.ts:602](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L602)
+[configuration/index.ts:602](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L602)
 
 ___
 
@@ -1111,7 +1111,7 @@ Returns a list of greetings, optionally filtered by groups.
 
 #### Defined in
 
-[configuration/index.ts:703](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L703)
+[configuration/index.ts:703](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L703)
 
 ___
 
@@ -1133,7 +1133,7 @@ Lists all existing groups.
 
 #### Defined in
 
-[configuration/index.ts:390](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L390)
+[configuration/index.ts:390](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L390)
 
 ___
 
@@ -1157,7 +1157,7 @@ Lists groups' properties
 
 #### Defined in
 
-[configuration/index.ts:646](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L646)
+[configuration/index.ts:646](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L646)
 
 ___
 
@@ -1180,7 +1180,7 @@ Returns the properties set within a license.
 
 #### Defined in
 
-[configuration/index.ts:459](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L459)
+[configuration/index.ts:459](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L459)
 
 ___
 
@@ -1202,7 +1202,7 @@ Lists properties for given client_id.
 
 #### Defined in
 
-[configuration/index.ts:442](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L442)
+[configuration/index.ts:442](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L442)
 
 ___
 
@@ -1224,7 +1224,7 @@ Returns tags assigned to requested groups.
 
 #### Defined in
 
-[configuration/index.ts:627](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L627)
+[configuration/index.ts:627](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L627)
 
 ___
 
@@ -1246,7 +1246,7 @@ Lists webhooks available in given API version
 
 #### Defined in
 
-[configuration/index.ts:528](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L528)
+[configuration/index.ts:528](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L528)
 
 ___
 
@@ -1268,7 +1268,7 @@ Lists registered webhooks.
 
 #### Defined in
 
-[configuration/index.ts:511](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L511)
+[configuration/index.ts:511](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L511)
 
 ___
 
@@ -1293,7 +1293,7 @@ Publishes private property.
 
 #### Defined in
 
-[configuration/index.ts:427](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L427)
+[configuration/index.ts:427](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L427)
 
 ___
 
@@ -1315,7 +1315,7 @@ Reactivates bounced email
 
 #### Defined in
 
-[configuration/index.ts:654](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L654)
+[configuration/index.ts:654](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L654)
 
 ___
 
@@ -1337,7 +1337,7 @@ Registers private property.
 
 #### Defined in
 
-[configuration/index.ts:407](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L407)
+[configuration/index.ts:407](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L407)
 
 ___
 
@@ -1360,7 +1360,7 @@ Registers webhook on a license.
 
 #### Defined in
 
-[configuration/index.ts:503](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L503)
+[configuration/index.ts:503](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L503)
 
 ___
 
@@ -1376,7 +1376,7 @@ A suspended Agent can send emails to license owners and vice owners with an unsu
 
 #### Defined in
 
-[configuration/index.ts:156](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L156)
+[configuration/index.ts:156](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L156)
 
 ___
 
@@ -1399,7 +1399,7 @@ Resets secret of Bot specified by id.
 
 #### Defined in
 
-[configuration/index.ts:222](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L222)
+[configuration/index.ts:222](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L222)
 
 ___
 
@@ -1423,7 +1423,7 @@ Resets bot template secret specified by id.
 
 #### Defined in
 
-[configuration/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L331)
+[configuration/index.ts:331](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L331)
 
 ___
 
@@ -1454,7 +1454,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:31](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L31)
+[internal/index.ts:31](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L31)
 
 ___
 
@@ -1478,7 +1478,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/internal/index.ts#L74)
+[internal/index.ts:74](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/internal/index.ts#L74)
 
 ___
 
@@ -1500,7 +1500,7 @@ Suspends an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:125](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L125)
+[configuration/index.ts:125](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L125)
 
 ___
 
@@ -1523,7 +1523,7 @@ Unregisters private property.
 
 #### Defined in
 
-[configuration/index.ts:416](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L416)
+[configuration/index.ts:416](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L416)
 
 ___
 
@@ -1546,7 +1546,7 @@ Removes webhook from license.
 
 #### Defined in
 
-[configuration/index.ts:520](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L520)
+[configuration/index.ts:520](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L520)
 
 ___
 
@@ -1568,7 +1568,7 @@ Unsuspends an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:141](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L141)
+[configuration/index.ts:141](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L141)
 
 ___
 
@@ -1591,7 +1591,7 @@ Updates the properties of an Agent specified by id.
 
 #### Defined in
 
-[configuration/index.ts:93](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L93)
+[configuration/index.ts:93](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L93)
 
 ___
 
@@ -1614,7 +1614,7 @@ Updates an existing auto access. Only specified fields are updated (overwritten)
 
 #### Defined in
 
-[configuration/index.ts:584](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L584)
+[configuration/index.ts:584](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L584)
 
 ___
 
@@ -1637,7 +1637,7 @@ Updates the properties of Bot specified by id.
 
 #### Defined in
 
-[configuration/index.ts:213](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L213)
+[configuration/index.ts:213](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L213)
 
 ___
 
@@ -1662,7 +1662,7 @@ Updates the properties of the Bot Template specified by id.
 
 #### Defined in
 
-[configuration/index.ts:293](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L293)
+[configuration/index.ts:293](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L293)
 
 ___
 
@@ -1685,7 +1685,7 @@ Updates company details in the license.
 
 #### Defined in
 
-[configuration/index.ts:663](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L663)
+[configuration/index.ts:663](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L663)
 
 ___
 
@@ -1707,7 +1707,7 @@ Updates an existing greeting.
 
 #### Defined in
 
-[configuration/index.ts:679](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L679)
+[configuration/index.ts:679](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L679)
 
 ___
 
@@ -1732,7 +1732,7 @@ Updates an existing group.
 
 #### Defined in
 
-[configuration/index.ts:364](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L364)
+[configuration/index.ts:364](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L364)
 
 ___
 
@@ -1755,7 +1755,7 @@ Updates a property value within a group as the property location. This operation
 
 #### Defined in
 
-[configuration/index.ts:479](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L479)
+[configuration/index.ts:479](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L479)
 
 ___
 
@@ -1777,7 +1777,7 @@ Updates a property value within a license. This operation doesn't overwrite the 
 
 #### Defined in
 
-[configuration/index.ts:450](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L450)
+[configuration/index.ts:450](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L450)
 
 ___
 
@@ -1800,4 +1800,4 @@ Updates an existing tag.
 
 #### Defined in
 
-[configuration/index.ts:636](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/configuration/index.ts#L636)
+[configuration/index.ts:636](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/configuration/index.ts#L636)

@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[agent/structures/filters.ts:46](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/filters.ts#L46)
+[agent/structures/filters.ts:46](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/filters.ts#L46)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:44](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/filters.ts#L44)
+[agent/structures/filters.ts:44](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/filters.ts#L44)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:45](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/filters.ts#L45)
+[agent/structures/filters.ts:45](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/filters.ts#L45)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:47](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/agent/structures/filters.ts#L47)
+[agent/structures/filters.ts:47](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/agent/structures/filters.ts#L47)

@@ -12,8 +12,10 @@
 
 - [Access](../interfaces/webhooks_structures_structures.Access.md)
 - [Filter](../interfaces/webhooks_structures_structures.Filter.md)
+- [PostbackEcommerce](../interfaces/webhooks_structures_structures.PostbackEcommerce.md)
 - [Properties](../interfaces/webhooks_structures_structures.Properties.md)
 - [PropertyNamespace](../interfaces/webhooks_structures_structures.PropertyNamespace.md)
+- [RichMessagePostback](../interfaces/webhooks_structures_structures.RichMessagePostback.md)
 - [ThreadSummary](../interfaces/webhooks_structures_structures.ThreadSummary.md)
 
 ### Type Aliases
@@ -28,4 +30,4 @@
 
 #### Defined in
 
-[webhooks/structures/structures.ts:33](https://github.com/livechat/lc-sdk-js/blob/c3bdcd1/src/webhooks/structures/structures.ts#L33)
+[webhooks/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/structures.ts#L47)

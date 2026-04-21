@@ -28,6 +28,7 @@
 - [ListThreadsParameters](../interfaces/customer_structures_structures.ListThreadsParameters.md)
 - [LoginCustomer](../interfaces/customer_structures_structures.LoginCustomer.md)
 - [LoginRequest](../interfaces/customer_structures_structures.LoginRequest.md)
+- [PostbackEcommerce](../interfaces/customer_structures_structures.PostbackEcommerce.md)
 - [Properties](../interfaces/customer_structures_structures.Properties.md)
 - [PropertyNamespace](../interfaces/customer_structures_structures.PropertyNamespace.md)
 - [Queue](../interfaces/customer_structures_structures.Queue.md)
