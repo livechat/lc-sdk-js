@@ -8,6 +8,7 @@
 
 ### Properties
 
+- [ecommerce](customer_structures_events.Postback.md#ecommerce)
 - [event\_id](customer_structures_events.Postback.md#event_id)
 - [id](customer_structures_events.Postback.md#id)
 - [thread\_id](customer_structures_events.Postback.md#thread_id)
@@ -16,13 +17,23 @@
 
 ## Properties
 
+### ecommerce
+
+• `Optional` **ecommerce**: [`PostbackEcommerce`](customer_structures_structures.PostbackEcommerce.md)
+
+#### Defined in
+
+[customer/structures/events.ts:63](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L63)
+
+___
+
 ### event\_id
 
 • **event\_id**: `string`
 
 #### Defined in
 
-[customer/structures/events.ts:60](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/events.ts#L60)
+[customer/structures/events.ts:60](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L60)
 
 ___
 
@@ -32,7 +43,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:58](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/events.ts#L58)
+[customer/structures/events.ts:58](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L58)
 
 ___
 
@@ -42,7 +53,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:59](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/events.ts#L59)
+[customer/structures/events.ts:59](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L59)
 
 ___
 
@@ -52,7 +63,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:61](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/events.ts#L61)
+[customer/structures/events.ts:61](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L61)
 
 ___
 
@@ -62,4 +73,4 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:62](https://github.com/livechat/lc-sdk-js/blob/7985816/src/customer/structures/events.ts#L62)
+[customer/structures/events.ts:62](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L62)

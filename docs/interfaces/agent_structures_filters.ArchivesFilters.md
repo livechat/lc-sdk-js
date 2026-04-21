@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[agent/structures/filters.ts:70](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L70)
+[agent/structures/filters.ts:70](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L70)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:63](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L63)
+[agent/structures/filters.ts:63](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L63)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:62](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L62)
+[agent/structures/filters.ts:62](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L62)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:68](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L68)
+[agent/structures/filters.ts:68](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L68)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:57](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L57)
+[agent/structures/filters.ts:57](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L57)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:66](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L66)
+[agent/structures/filters.ts:66](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L66)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:69](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L69)
+[agent/structures/filters.ts:69](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L69)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:60](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L60)
+[agent/structures/filters.ts:60](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L60)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:61](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L61)
+[agent/structures/filters.ts:61](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L61)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:56](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L56)
+[agent/structures/filters.ts:56](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L56)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:65](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L65)
+[agent/structures/filters.ts:65](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L65)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:67](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L67)
+[agent/structures/filters.ts:67](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L67)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:64](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L64)
+[agent/structures/filters.ts:64](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L64)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:59](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L59)
+[agent/structures/filters.ts:59](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L59)
 
 ___
 
@@ -172,4 +172,4 @@ ___
 
 #### Defined in
 
-[agent/structures/filters.ts:58](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/filters.ts#L58)
+[agent/structures/filters.ts:58](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/filters.ts#L58)

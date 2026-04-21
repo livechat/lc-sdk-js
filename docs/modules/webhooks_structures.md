@@ -11,6 +11,9 @@
 - [Button](webhooks_structures.md#button)
 - [CustomEvent](webhooks_structures.md#customevent)
 - [Customer](webhooks_structures.md#customer)
+- [Ecommerce](webhooks_structures.md#ecommerce)
+- [EcommerceAddon](webhooks_structures.md#ecommerceaddon)
+- [EcommerceOption](webhooks_structures.md#ecommerceoption)
 - [Element](webhooks_structures.md#element)
 - [Event](webhooks_structures.md#event)
 - [File](webhooks_structures.md#file)
@@ -20,9 +23,11 @@
 - [Image](webhooks_structures.md#image)
 - [Message](webhooks_structures.md#message)
 - [Postback](webhooks_structures.md#postback)
+- [PostbackEcommerce](webhooks_structures.md#postbackecommerce)
 - [Properties](webhooks_structures.md#properties)
 - [PropertyNamespace](webhooks_structures.md#propertynamespace)
 - [RichMessage](webhooks_structures.md#richmessage)
+- [RichMessagePostback](webhooks_structures.md#richmessagepostback)
 - [RoutingStatus](webhooks_structures.md#routingstatus)
 - [System](webhooks_structures.md#system)
 - [SystemMessage](webhooks_structures.md#systemmessage)
@@ -57,6 +62,24 @@ ___
 ### Customer
 
 Re-exports [Customer](webhooks_structures_structures.md#customer)
+
+___
+
+### Ecommerce
+
+Re-exports [Ecommerce](../interfaces/webhooks_structures_events.Ecommerce.md)
+
+___
+
+### EcommerceAddon
+
+Re-exports [EcommerceAddon](../interfaces/webhooks_structures_events.EcommerceAddon.md)
+
+___
+
+### EcommerceOption
+
+Re-exports [EcommerceOption](../interfaces/webhooks_structures_events.EcommerceOption.md)
 
 ___
 
@@ -114,6 +137,12 @@ Re-exports [Postback](../interfaces/webhooks_structures_events.Postback.md)
 
 ___
 
+### PostbackEcommerce
+
+Re-exports [PostbackEcommerce](../interfaces/webhooks_structures_structures.PostbackEcommerce.md)
+
+___
+
 ### Properties
 
 Re-exports [Properties](../interfaces/webhooks_structures_structures.Properties.md)
@@ -129,6 +158,12 @@ ___
 ### RichMessage
 
 Re-exports [RichMessage](../interfaces/webhooks_structures_events.RichMessage.md)
+
+___
+
+### RichMessagePostback
+
+Re-exports [RichMessagePostback](../interfaces/webhooks_structures_structures.RichMessagePostback.md)
 
 ___
 

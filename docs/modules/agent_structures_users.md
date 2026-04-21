@@ -23,4 +23,4 @@
 
 #### Defined in
 
-[agent/structures/users.ts:39](https://github.com/livechat/lc-sdk-js/blob/7985816/src/agent/structures/users.ts#L39)
+[agent/structures/users.ts:39](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L39)

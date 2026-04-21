@@ -20,7 +20,7 @@
 
 #### Defined in
 
-[configuration/structures/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L209)
+[configuration/structures/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L209)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:208](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L208)
+[configuration/structures/structures.ts:208](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L208)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L210)
+[configuration/structures/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L210)
