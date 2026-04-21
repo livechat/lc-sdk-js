@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[configuration/structures/structures.ts:313](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L313)
+[configuration/structures/structures.ts:313](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L313)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:314](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L314)
+[configuration/structures/structures.ts:314](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L314)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:318](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L318)
+[configuration/structures/structures.ts:318](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L318)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L315)
+[configuration/structures/structures.ts:315](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L315)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:316](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L316)
+[configuration/structures/structures.ts:316](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L316)
 
 ___
 
@@ -73,4 +73,4 @@ ___
 
 #### Defined in
 
-[configuration/structures/structures.ts:317](https://github.com/livechat/lc-sdk-js/blob/7985816/src/configuration/structures/structures.ts#L317)
+[configuration/structures/structures.ts:317](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/configuration/structures/structures.ts#L317)

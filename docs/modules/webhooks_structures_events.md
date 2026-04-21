@@ -9,6 +9,9 @@
 - [Answer](../interfaces/webhooks_structures_events.Answer.md)
 - [Button](../interfaces/webhooks_structures_events.Button.md)
 - [CustomEvent](../interfaces/webhooks_structures_events.CustomEvent.md)
+- [Ecommerce](../interfaces/webhooks_structures_events.Ecommerce.md)
+- [EcommerceAddon](../interfaces/webhooks_structures_events.EcommerceAddon.md)
+- [EcommerceOption](../interfaces/webhooks_structures_events.EcommerceOption.md)
 - [Element](../interfaces/webhooks_structures_events.Element.md)
 - [File](../interfaces/webhooks_structures_events.File.md)
 - [FilledForm](../interfaces/webhooks_structures_events.FilledForm.md)
@@ -32,4 +35,4 @@
 
 #### Defined in
 
-[webhooks/structures/events.ts:124](https://github.com/livechat/lc-sdk-js/blob/7985816/src/webhooks/structures/events.ts#L124)
+[webhooks/structures/events.ts:154](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L154)

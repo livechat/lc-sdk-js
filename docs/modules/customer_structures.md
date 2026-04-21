@@ -16,6 +16,9 @@
 - [Customer](customer_structures.md#customer)
 - [CustomerPage](customer_structures.md#customerpage)
 - [CustomerParameters](customer_structures.md#customerparameters)
+- [Ecommerce](customer_structures.md#ecommerce)
+- [EcommerceAddon](customer_structures.md#ecommerceaddon)
+- [EcommerceOption](customer_structures.md#ecommerceoption)
 - [Element](customer_structures.md#element)
 - [EmptyResponse](customer_structures.md#emptyresponse)
 - [Event](customer_structures.md#event)
@@ -48,6 +51,7 @@
 - [LoginResponse](customer_structures.md#loginresponse)
 - [Message](customer_structures.md#message)
 - [Postback](customer_structures.md#postback)
+- [PostbackEcommerce](customer_structures.md#postbackecommerce)
 - [Properties](customer_structures.md#properties)
 - [PropertyNamespace](customer_structures.md#propertynamespace)
 - [Pushes](customer_structures.md#pushes)
@@ -130,6 +134,24 @@ ___
 ### CustomerParameters
 
 Re-exports [CustomerParameters](../interfaces/customer_structures_structures.CustomerParameters.md)
+
+___
+
+### Ecommerce
+
+Re-exports [Ecommerce](../interfaces/customer_structures_events.Ecommerce.md)
+
+___
+
+### EcommerceAddon
+
+Re-exports [EcommerceAddon](../interfaces/customer_structures_events.EcommerceAddon.md)
+
+___
+
+### EcommerceOption
+
+Re-exports [EcommerceOption](../interfaces/customer_structures_events.EcommerceOption.md)
 
 ___
 
@@ -322,6 +344,12 @@ ___
 ### Postback
 
 Re-exports [Postback](../interfaces/customer_structures_events.Postback.md)
+
+___
+
+### PostbackEcommerce
+
+Re-exports [PostbackEcommerce](../interfaces/customer_structures_structures.PostbackEcommerce.md)
 
 ___
 

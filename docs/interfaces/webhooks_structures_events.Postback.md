@@ -8,6 +8,7 @@
 
 ### Properties
 
+- [ecommerce](webhooks_structures_events.Postback.md#ecommerce)
 - [event\_id](webhooks_structures_events.Postback.md#event_id)
 - [id](webhooks_structures_events.Postback.md#id)
 - [thread\_id](webhooks_structures_events.Postback.md#thread_id)
@@ -16,13 +17,23 @@
 
 ## Properties
 
+### ecommerce
+
+• `Optional` **ecommerce**: [`PostbackEcommerce`](webhooks_structures_structures.PostbackEcommerce.md)
+
+#### Defined in
+
+[webhooks/structures/events.ts:64](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L64)
+
+___
+
 ### event\_id
 
 • **event\_id**: `string`
 
 #### Defined in
 
-[webhooks/structures/events.ts:61](https://github.com/livechat/lc-sdk-js/blob/7985816/src/webhooks/structures/events.ts#L61)
+[webhooks/structures/events.ts:61](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L61)
 
 ___
 
@@ -32,7 +43,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:59](https://github.com/livechat/lc-sdk-js/blob/7985816/src/webhooks/structures/events.ts#L59)
+[webhooks/structures/events.ts:59](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L59)
 
 ___
 
@@ -42,7 +53,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:60](https://github.com/livechat/lc-sdk-js/blob/7985816/src/webhooks/structures/events.ts#L60)
+[webhooks/structures/events.ts:60](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L60)
 
 ___
 
@@ -52,7 +63,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:62](https://github.com/livechat/lc-sdk-js/blob/7985816/src/webhooks/structures/events.ts#L62)
+[webhooks/structures/events.ts:62](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L62)
 
 ___
 
@@ -62,4 +73,4 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:63](https://github.com/livechat/lc-sdk-js/blob/7985816/src/webhooks/structures/events.ts#L63)
+[webhooks/structures/events.ts:63](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L63)
