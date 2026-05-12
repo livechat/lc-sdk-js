@@ -121,7 +121,6 @@ export interface ArchivedChat extends Chat {
 
 export interface ChatsInfo {
   id: string;
-  last_event_per_type?: LastEventPerType;
   users: User[];
   last_thread_info?: LastThreadInfo;
   properties?: Properties;
@@ -359,6 +358,7 @@ export interface LastThreadInfo {
   active: boolean;
   access?: Access;
   created_at: string;
+  last_event_per_type?: LastEventPerType;
 }
 
 export interface Highlights {
