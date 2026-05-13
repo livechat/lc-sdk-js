@@ -45,7 +45,7 @@ interface PostbackToggle {
 
 export interface PostbackEcommerce {
   product_id: string;
-  option_id: string;
+  option_id?: string;
   quantity?: number;
 }
 
