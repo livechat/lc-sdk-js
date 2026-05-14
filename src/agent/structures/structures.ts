@@ -77,6 +77,7 @@ export interface Order {
   order_number: string;
   currency: string;
   total_price: number;
+  total_price_usd: number;
   created_at: string;
 }
 
