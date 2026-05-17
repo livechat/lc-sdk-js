@@ -1,3 +1,5 @@
+import { Address } from "./structures";
+
 interface BaseUser {
   id: string;
   name?: string;
@@ -12,6 +14,7 @@ export interface Customer extends BaseUser {
   name_is_default: boolean;
   email_verified?: boolean;
   session_fields?: Record<string, string>[];
+  address?: Address;
 }
 
 export interface Agent extends BaseUser {

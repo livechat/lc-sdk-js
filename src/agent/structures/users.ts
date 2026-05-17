@@ -1,4 +1,4 @@
-import { CustomerChat, Omnichannel, Order, Statistics, Ticket, Visit } from "./structures";
+import { Address, CustomerChat, Omnichannel, Order, Statistics, Ticket, Visit } from "./structures";
 
 interface BaseUser {
   id: string;
@@ -34,6 +34,7 @@ export interface Customer extends BaseUser {
   tickets?: Ticket[];
   orders?: Order[];
   omnichannel?: Omnichannel;
+  address?: Address;
 }
 
 export type User = Agent | Customer;
