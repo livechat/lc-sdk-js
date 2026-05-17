@@ -183,11 +183,8 @@ export enum GroupStatus {
 
 export interface ChatsInfo {
   id: string;
-  last_event_per_type?: LastEventPerType;
-  users: User[];
-  last_thread_id?: string;
-  last_thread_created_at?: string;
   last_thread_info?: LastThreadInfo;
+  users: User[];
   properties: Properties;
   access?: Access;
   active: boolean;
@@ -204,11 +201,8 @@ export interface LastEventPerType {
 
 export interface LastThreadInfo {
   id: string;
-  user_ids: string[];
-  properties: Properties;
-  active: boolean;
-  access?: Access;
   created_at: string;
+  last_event_per_type?: LastEventPerType;
 }
 
 export interface WebAPIOptions {
