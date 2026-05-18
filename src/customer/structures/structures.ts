@@ -55,6 +55,7 @@ export interface CustomerParameters {
   email?: string;
   avatar?: string;
   session_fields?: object[];
+  address?: Address;
 }
 
 export interface RequestWelcomeMessageParameters {
@@ -94,6 +95,15 @@ export interface LoginCustomer {
   name?: string;
   name_is_default?: boolean;
   session_fields?: object[];
+  address?: Address;
+}
+
+export interface Address {
+  address?: string;
+  city?: string;
+  country?: string;
+  state?: string;
+  postal_code?: string;
 }
 
 export interface CustomerPage {
