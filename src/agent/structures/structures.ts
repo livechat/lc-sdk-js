@@ -101,6 +101,14 @@ export interface Twilio {
   phone_number: string;
 }
 
+export interface Address {
+  address?: string;
+  city?: string;
+  country?: string;
+  state?: string;
+  postal_code?: string;
+}
+
 export interface CustomerChat {
   chat_id: string;
   thread_id?: string;
@@ -213,6 +221,7 @@ export interface CustomerParameters {
   avatar?: string;
   session_fields?: object[];
   phone_number?: string;
+  address?: Address;
 }
 
 export interface MulticastRecipients {
