@@ -40,6 +40,12 @@ export interface AgentTypesFilter {
   exclude_values?: string[];
 }
 
+export interface EcommerceSalesFilter {
+  all_values?: string[];
+  any_values?: string[];
+  exclude_values?: string[];
+}
+
 export interface ChatsFilters {
   include_active?: boolean;
   include_chats_without_threads?: boolean;
@@ -68,6 +74,7 @@ export interface ArchivesFilters {
   event_types?: Omit<FilterType<string>, "exists">;
   greetings?: GreetingsFilter;
   agent_response?: AgentResponseFilter;
+  ecommerce_sales?: EcommerceSalesFilter;
 }
 
 export enum SurveyType {
