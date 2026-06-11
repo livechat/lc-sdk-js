@@ -79,6 +79,7 @@ export interface Order {
   total_price: number;
   total_price_usd: number;
   created_at: string;
+  source?: string;
 }
 
 export interface Omnichannel {
