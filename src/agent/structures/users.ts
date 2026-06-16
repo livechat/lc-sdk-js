@@ -1,4 +1,13 @@
-import { Address, CustomerChat, Omnichannel, Order, Statistics, Ticket, Visit } from "./structures";
+import {
+  Address,
+  CustomerChat,
+  CustomerPropertyValue,
+  Omnichannel,
+  Order,
+  Statistics,
+  Ticket,
+  Visit,
+} from "./structures";
 
 interface BaseUser {
   id: string;
@@ -35,6 +44,7 @@ export interface Customer extends BaseUser {
   orders?: Order[];
   omnichannel?: Omnichannel;
   address?: Address;
+  customer_properties?: Record<string, CustomerPropertyValue>;
 }
 
 export type User = Agent | Customer;
