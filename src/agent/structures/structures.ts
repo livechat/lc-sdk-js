@@ -110,6 +110,13 @@ export interface Address {
   postal_code?: string;
 }
 
+export interface CustomerPropertyValue {
+  value: null | boolean | number | string;
+  last_updated_at: string;
+  last_updated_agent_account_id?: string;
+  last_updated_agent_client_id?: string;
+}
+
 export interface CustomerChat {
   chat_id: string;
   thread_id?: string;
