@@ -13,6 +13,7 @@ interface BaseUser {
 export interface Customer extends BaseUser {
   name_is_default: boolean;
   email_verified?: boolean;
+  phone_number?: string;
   session_fields?: Record<string, string>[];
   address?: Address;
 }

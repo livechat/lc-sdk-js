@@ -53,6 +53,7 @@ export interface CustomerParameters {
   name?: string;
   name_is_default?: boolean;
   email?: string;
+  phone_number?: string;
   avatar?: string;
   session_fields?: object[];
   address?: Address;
@@ -93,6 +94,7 @@ export interface LoginCustomer {
   avatar?: string;
   email?: string;
   name?: string;
+  phone_number?: string;
   name_is_default?: boolean;
   session_fields?: object[];
   address?: Address;
