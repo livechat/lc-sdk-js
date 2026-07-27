@@ -321,7 +321,14 @@ export interface InitialThread {
 }
 
 export interface LastEventPerType {
-  [type: string]: Event;
+  [type: string]: LastEvent;
+}
+
+export interface LastEvent {
+  thread_id: string;
+  thread_created_at: string;
+  event?: Event;
+  restricted_access?: string;
 }
 
 export interface LastThreadSummary {
