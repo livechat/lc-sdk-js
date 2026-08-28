@@ -14,6 +14,7 @@ export interface Customer extends BaseUser {
   name_is_default: boolean;
   email_verified?: boolean;
   phone_number?: string;
+  suggested_email?: string;
   session_fields?: Record<string, string>[];
   address?: Address;
 }
