@@ -229,6 +229,7 @@ export interface CustomerParameters {
   avatar?: string;
   session_fields?: object[];
   phone_number?: string;
+  suggested_email?: string;
   address?: Address;
 }
 
