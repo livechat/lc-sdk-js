@@ -18,6 +18,7 @@ export interface Customer extends BaseUser {
   name_is_default: boolean;
   avatar?: string;
   phone_number?: string;
+  suggested_email?: string;
   created_at?: string;
   session_fields?: Record<string, string>[];
   visit?: Visit;
