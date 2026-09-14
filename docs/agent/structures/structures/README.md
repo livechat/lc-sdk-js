@@ -1,0 +1,65 @@
+[**@livechat/lc-sdk-js**](../../../README.md)
+
+***
+
+[@livechat/lc-sdk-js](../../../README.md) / agent/structures/structures
+
+# agent/structures/structures
+
+## Enumerations
+
+- [CustomerMonitoringLevel](enumerations/CustomerMonitoringLevel.md)
+- [RoutingStatus](enumerations/RoutingStatus.md)
+- [SortOrder](enumerations/SortOrder.md)
+
+## Interfaces
+
+- [Access](interfaces/Access.md)
+- [Address](interfaces/Address.md)
+- [AgentForTransfer](interfaces/AgentForTransfer.md)
+- [Application](interfaces/Application.md)
+- [ArchivedChat](interfaces/ArchivedChat.md)
+- [ArchivedThread](interfaces/ArchivedThread.md)
+- [ChangePushNotificationsRequest](interfaces/ChangePushNotificationsRequest.md)
+- [Chat](interfaces/Chat.md)
+- [ChatsInfo](interfaces/ChatsInfo.md)
+- [CustomerChat](interfaces/CustomerChat.md)
+- [CustomerParameters](interfaces/CustomerParameters.md)
+- [CustomerPropertyValue](interfaces/CustomerPropertyValue.md)
+- [CustomerVisit](interfaces/CustomerVisit.md)
+- [FBMessenger](interfaces/FBMessenger.md)
+- [FocusInterval](interfaces/FocusInterval.md)
+- [Geolocation](interfaces/Geolocation.md)
+- [Highlights](interfaces/Highlights.md)
+- [InitialChat](interfaces/InitialChat.md)
+- [InitialThread](interfaces/InitialThread.md)
+- [LastEventPerType](interfaces/LastEventPerType.md)
+- [LastThreadInfo](interfaces/LastThreadInfo.md)
+- [License](interfaces/License.md)
+- [ListArchivesParameters](interfaces/ListArchivesParameters.md)
+- [ListChatParameters](interfaces/ListChatParameters.md)
+- [ListThreadsParameters](interfaces/ListThreadsParameters.md)
+- [LoginRequest](interfaces/LoginRequest.md)
+- [MulticastRecipients](interfaces/MulticastRecipients.md)
+- [Omnichannel](interfaces/Omnichannel.md)
+- [Order](interfaces/Order.md)
+- [Page](interfaces/Page.md)
+- [PostbackEcommerce](interfaces/PostbackEcommerce.md)
+- [Properties](interfaces/Properties.md)
+- [PropertiesFilter](interfaces/PropertiesFilter.md)
+- [PropertyNamespace](interfaces/PropertyNamespace.md)
+- [PushNotifications](interfaces/PushNotifications.md)
+- [Queue](interfaces/Queue.md)
+- [ResumeChatParameters](interfaces/ResumeChatParameters.md)
+- [RTMAPIOptions](interfaces/RTMAPIOptions.md)
+- [SendRichMessagePostbackParameters](interfaces/SendRichMessagePostbackParameters.md)
+- [SendThinkingIndicatorParameters](interfaces/SendThinkingIndicatorParameters.md)
+- [StartChatParameters](interfaces/StartChatParameters.md)
+- [Statistics](interfaces/Statistics.md)
+- [Thread](interfaces/Thread.md)
+- [ThreadSummary](interfaces/ThreadSummary.md)
+- [Ticket](interfaces/Ticket.md)
+- [TransferChatParameters](interfaces/TransferChatParameters.md)
+- [Twilio](interfaces/Twilio.md)
+- [Visit](interfaces/Visit.md)
+- [WebAPIOptions](interfaces/WebAPIOptions.md)
