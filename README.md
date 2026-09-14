@@ -26,7 +26,7 @@ Note that developer-preview version is not completed yet - it may introduce brea
 
 ### Requirements
 
-Starting with 7.1.0, this SDK requires **Node.js >= 20.19** (or >= 22.12).
+Starting with 7.1.0, this SDK requires **Node.js >= 20.19**.
 
 ### npm
 
