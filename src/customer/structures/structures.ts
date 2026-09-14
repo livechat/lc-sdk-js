@@ -63,6 +63,7 @@ export interface CustomerParameters {
 export interface RequestWelcomeMessageParameters {
   id?: string;
   group_id?: number;
+  ai_agent_response_scope?: string;
 }
 
 export interface Form {
