@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[customer/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L78)
+[customer/structures/events.ts:78](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L78)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:79](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L79)
+[customer/structures/events.ts:79](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L79)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L77)
+[customer/structures/events.ts:77](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L77)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L76)
+[customer/structures/events.ts:76](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L76)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:75](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L75)
+[customer/structures/events.ts:75](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L75)

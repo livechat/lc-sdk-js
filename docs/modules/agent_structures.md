@@ -7,6 +7,7 @@
 ### References
 
 - [Access](agent_structures.md#access)
+- [Address](agent_structures.md#address)
 - [Agent](agent_structures.md#agent)
 - [AgentForTransfer](agent_structures.md#agentfortransfer)
 - [AgentResponseFilter](agent_structures.md#agentresponsefilter)
@@ -26,10 +27,12 @@
 - [CustomerChat](agent_structures.md#customerchat)
 - [CustomerMonitoringLevel](agent_structures.md#customermonitoringlevel)
 - [CustomerParameters](agent_structures.md#customerparameters)
+- [CustomerPropertyValue](agent_structures.md#customerpropertyvalue)
 - [CustomerVisit](agent_structures.md#customervisit)
 - [Ecommerce](agent_structures.md#ecommerce)
 - [EcommerceAddon](agent_structures.md#ecommerceaddon)
 - [EcommerceOption](agent_structures.md#ecommerceoption)
+- [EcommerceSalesFilter](agent_structures.md#ecommercesalesfilter)
 - [Element](agent_structures.md#element)
 - [EmptyResponse](agent_structures.md#emptyresponse)
 - [Event](agent_structures.md#event)
@@ -109,6 +112,12 @@
 ### Access
 
 Re-exports [Access](../interfaces/agent_structures_structures.Access.md)
+
+___
+
+### Address
+
+Re-exports [Address](../interfaces/agent_structures_structures.Address.md)
 
 ___
 
@@ -226,6 +235,12 @@ Re-exports [CustomerParameters](../interfaces/agent_structures_structures.Custom
 
 ___
 
+### CustomerPropertyValue
+
+Re-exports [CustomerPropertyValue](../interfaces/agent_structures_structures.CustomerPropertyValue.md)
+
+___
+
 ### CustomerVisit
 
 Re-exports [CustomerVisit](../interfaces/agent_structures_structures.CustomerVisit.md)
@@ -247,6 +262,12 @@ ___
 ### EcommerceOption
 
 Re-exports [EcommerceOption](../interfaces/agent_structures_events.EcommerceOption.md)
+
+___
+
+### EcommerceSalesFilter
+
+Re-exports [EcommerceSalesFilter](../interfaces/agent_structures_filters.EcommerceSalesFilter.md)
 
 ___
 

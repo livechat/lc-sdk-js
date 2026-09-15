@@ -8,34 +8,11 @@
 
 ### Properties
 
-- [access](customer_structures_structures.LastThreadInfo.md#access)
-- [active](customer_structures_structures.LastThreadInfo.md#active)
 - [created\_at](customer_structures_structures.LastThreadInfo.md#created_at)
 - [id](customer_structures_structures.LastThreadInfo.md#id)
-- [properties](customer_structures_structures.LastThreadInfo.md#properties)
-- [user\_ids](customer_structures_structures.LastThreadInfo.md#user_ids)
+- [last\_event\_per\_type](customer_structures_structures.LastThreadInfo.md#last_event_per_type)
 
 ## Properties
-
-### access
-
-• `Optional` **access**: [`Access`](customer_structures_structures.Access.md)
-
-#### Defined in
-
-[customer/structures/structures.ts:210](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/structures.ts#L210)
-
-___
-
-### active
-
-• **active**: `boolean`
-
-#### Defined in
-
-[customer/structures/structures.ts:209](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/structures.ts#L209)
-
-___
 
 ### created\_at
 
@@ -43,7 +20,7 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:211](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/structures.ts#L211)
+[customer/structures/structures.ts:219](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/structures.ts#L219)
 
 ___
 
@@ -53,24 +30,14 @@ ___
 
 #### Defined in
 
-[customer/structures/structures.ts:206](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/structures.ts#L206)
+[customer/structures/structures.ts:218](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/structures.ts#L218)
 
 ___
 
-### properties
+### last\_event\_per\_type
 
-• **properties**: [`Properties`](customer_structures_structures.Properties.md)
-
-#### Defined in
-
-[customer/structures/structures.ts:208](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/structures.ts#L208)
-
-___
-
-### user\_ids
-
-• **user\_ids**: `string`[]
+• `Optional` **last\_event\_per\_type**: [`LastEventPerType`](customer_structures_structures.LastEventPerType.md)
 
 #### Defined in
 
-[customer/structures/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/structures.ts#L207)
+[customer/structures/structures.ts:220](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/structures.ts#L220)

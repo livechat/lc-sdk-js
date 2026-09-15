@@ -12,6 +12,7 @@
 ### Interfaces
 
 - [Access](../interfaces/customer_structures_structures.Access.md)
+- [Address](../interfaces/customer_structures_structures.Address.md)
 - [Application](../interfaces/customer_structures_structures.Application.md)
 - [ChatsInfo](../interfaces/customer_structures_structures.ChatsInfo.md)
 - [CustomerPage](../interfaces/customer_structures_structures.CustomerPage.md)

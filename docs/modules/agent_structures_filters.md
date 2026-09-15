@@ -14,6 +14,7 @@
 - [AgentTypesFilter](../interfaces/agent_structures_filters.AgentTypesFilter.md)
 - [ArchivesFilters](../interfaces/agent_structures_filters.ArchivesFilters.md)
 - [ChatsFilters](../interfaces/agent_structures_filters.ChatsFilters.md)
+- [EcommerceSalesFilter](../interfaces/agent_structures_filters.EcommerceSalesFilter.md)
 - [Filter](../interfaces/agent_structures_filters.Filter.md)
 - [FilterType](../interfaces/agent_structures_filters.FilterType.md)
 - [GreetingsFilter](../interfaces/agent_structures_filters.GreetingsFilter.md)
