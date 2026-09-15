@@ -16,11 +16,11 @@
 
 ### option\_id
 
-• **option\_id**: `string`
+• `Optional` **option\_id**: `string`
 
 #### Defined in
 
-[agent/structures/structures.ts:206](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/structures.ts#L206)
+[agent/structures/structures.ts:222](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/structures.ts#L222)
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:205](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/structures.ts#L205)
+[agent/structures/structures.ts:221](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/structures.ts#L221)
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:207](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/structures.ts#L207)
+[agent/structures/structures.ts:223](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/structures.ts#L223)

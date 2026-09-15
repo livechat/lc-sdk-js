@@ -35,7 +35,7 @@ BaseUser.email
 
 #### Defined in
 
-[agent/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L6)
+[agent/structures/users.ts:15](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L15)
 
 ___
 
@@ -49,7 +49,7 @@ BaseUser.events\_seen\_up\_to
 
 #### Defined in
 
-[agent/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L7)
+[agent/structures/users.ts:16](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L16)
 
 ___
 
@@ -63,7 +63,7 @@ BaseUser.id
 
 #### Defined in
 
-[agent/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L4)
+[agent/structures/users.ts:13](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L13)
 
 ___
 
@@ -77,7 +77,7 @@ BaseUser.name
 
 #### Defined in
 
-[agent/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L5)
+[agent/structures/users.ts:14](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L14)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:43](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L43)
+[agent/structures/users.ts:55](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L55)
 
 ___
 
@@ -101,7 +101,7 @@ BaseUser.present
 
 #### Defined in
 
-[agent/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L9)
+[agent/structures/users.ts:18](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L18)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[agent/structures/users.ts:42](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L42)
+[agent/structures/users.ts:54](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L54)
 
 ___
 
@@ -125,4 +125,4 @@ BaseUser.type
 
 #### Defined in
 
-[agent/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/agent/structures/users.ts#L8)
+[agent/structures/users.ts:17](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/users.ts#L17)

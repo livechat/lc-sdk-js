@@ -13,6 +13,7 @@
 ### Interfaces
 
 - [Access](../interfaces/agent_structures_structures.Access.md)
+- [Address](../interfaces/agent_structures_structures.Address.md)
 - [AgentForTransfer](../interfaces/agent_structures_structures.AgentForTransfer.md)
 - [Application](../interfaces/agent_structures_structures.Application.md)
 - [ArchivedChat](../interfaces/agent_structures_structures.ArchivedChat.md)
@@ -22,6 +23,7 @@
 - [ChatsInfo](../interfaces/agent_structures_structures.ChatsInfo.md)
 - [CustomerChat](../interfaces/agent_structures_structures.CustomerChat.md)
 - [CustomerParameters](../interfaces/agent_structures_structures.CustomerParameters.md)
+- [CustomerPropertyValue](../interfaces/agent_structures_structures.CustomerPropertyValue.md)
 - [CustomerVisit](../interfaces/agent_structures_structures.CustomerVisit.md)
 - [FBMessenger](../interfaces/agent_structures_structures.FBMessenger.md)
 - [FocusInterval](../interfaces/agent_structures_structures.FocusInterval.md)

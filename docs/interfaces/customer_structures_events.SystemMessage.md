@@ -35,7 +35,7 @@ BaseEvent.created\_at
 
 #### Defined in
 
-[customer/structures/events.ts:5](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L5)
+[customer/structures/events.ts:5](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L5)
 
 ___
 
@@ -49,7 +49,7 @@ BaseEvent.id
 
 #### Defined in
 
-[customer/structures/events.ts:4](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L4)
+[customer/structures/events.ts:4](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L4)
 
 ___
 
@@ -63,7 +63,7 @@ BaseEvent.properties
 
 #### Defined in
 
-[customer/structures/events.ts:6](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L6)
+[customer/structures/events.ts:6](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L6)
 
 ___
 
@@ -77,7 +77,7 @@ BaseEvent.recipients
 
 #### Defined in
 
-[customer/structures/events.ts:7](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L7)
+[customer/structures/events.ts:7](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L7)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:139](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L139)
+[customer/structures/events.ts:139](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L139)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:140](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L140)
+[customer/structures/events.ts:140](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L140)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[customer/structures/events.ts:141](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L141)
+[customer/structures/events.ts:141](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L141)
 
 ___
 
@@ -121,4 +121,4 @@ BaseEvent.type
 
 #### Defined in
 
-[customer/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/events.ts#L138)
+[customer/structures/events.ts:138](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/events.ts#L138)

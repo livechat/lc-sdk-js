@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[webhooks/structures/events.ts:88](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L88)
+[webhooks/structures/events.ts:88](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/webhooks/structures/events.ts#L88)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:86](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L86)
+[webhooks/structures/events.ts:86](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/webhooks/structures/events.ts#L86)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:87](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L87)
+[webhooks/structures/events.ts:87](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/webhooks/structures/events.ts#L87)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:85](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L85)
+[webhooks/structures/events.ts:85](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/webhooks/structures/events.ts#L85)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[webhooks/structures/events.ts:84](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/webhooks/structures/events.ts#L84)
+[webhooks/structures/events.ts:84](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/webhooks/structures/events.ts#L84)

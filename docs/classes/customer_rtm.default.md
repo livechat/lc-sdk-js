@@ -89,7 +89,7 @@
 
 #### Defined in
 
-[customer/rtm.ts:31](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L31)
+[customer/rtm.ts:31](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L31)
 
 ## Properties
 
@@ -103,7 +103,7 @@
 
 #### Defined in
 
-[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L80)
+[internal/index.ts:80](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L80)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L87)
+[internal/index.ts:87](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L87)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L84)
+[internal/index.ts:84](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L84)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L85)
+[internal/index.ts:85](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L85)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L83)
+[internal/index.ts:83](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L83)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L86)
+[internal/index.ts:86](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L86)
 
 ___
 
@@ -187,7 +187,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L91)
+[internal/index.ts:91](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L91)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L82)
+[internal/index.ts:82](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L82)
 
 ___
 
@@ -215,7 +215,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L81)
+[internal/index.ts:81](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L81)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L90)
+[internal/index.ts:90](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L90)
 
 ## Methods
 
@@ -252,7 +252,7 @@ Marks an incoming greeting as seen.
 
 #### Defined in
 
-[customer/rtm.ts:361](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L361)
+[customer/rtm.ts:361](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L361)
 
 ___
 
@@ -268,7 +268,7 @@ Marks the current Customer's page tab as active (focused)
 
 #### Defined in
 
-[customer/rtm.ts:262](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L262)
+[customer/rtm.ts:262](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L262)
 
 ___
 
@@ -291,7 +291,7 @@ For example, Customers could cancel greetings by minimalizing the chat widget wi
 
 #### Defined in
 
-[customer/rtm.ts:370](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L370)
+[customer/rtm.ts:370](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L370)
 
 ___
 
@@ -317,7 +317,7 @@ parameters for the server when the customers limit is reached. Works only for of
 
 #### Defined in
 
-[customer/rtm.ts:314](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L314)
+[customer/rtm.ts:314](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L314)
 
 ___
 
@@ -335,7 +335,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:102](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L102)
+[internal/index.ts:102](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L102)
 
 ___
 
@@ -357,7 +357,7 @@ Deactivates a chat by closing the currently open thread. Sending messages to thi
 
 #### Defined in
 
-[customer/rtm.ts:110](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L110)
+[customer/rtm.ts:110](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L110)
 
 ___
 
@@ -373,7 +373,7 @@ Marks the current Customer's page tab as inactive (unfocused)
 
 #### Defined in
 
-[customer/rtm.ts:269](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L269)
+[customer/rtm.ts:269](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L269)
 
 ___
 
@@ -396,7 +396,7 @@ Deletes chat properties
 
 #### Defined in
 
-[customer/rtm.ts:162](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L162)
+[customer/rtm.ts:162](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L162)
 
 ___
 
@@ -420,7 +420,7 @@ Deletes event
 
 #### Defined in
 
-[customer/rtm.ts:242](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L242)
+[customer/rtm.ts:242](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L242)
 
 ___
 
@@ -445,7 +445,7 @@ Deletes event properties
 
 #### Defined in
 
-[customer/rtm.ts:222](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L222)
+[customer/rtm.ts:222](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L222)
 
 ___
 
@@ -469,7 +469,7 @@ Deletes thread properties
 
 #### Defined in
 
-[customer/rtm.ts:186](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L186)
+[customer/rtm.ts:186](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L186)
 
 ___
 
@@ -492,7 +492,7 @@ It returns a thread that the current Customer has access to in a given chat.
 
 #### Defined in
 
-[customer/rtm.ts:85](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L85)
+[customer/rtm.ts:85](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L85)
 
 ___
 
@@ -508,7 +508,7 @@ Returns the info about the Customer requesting it.
 
 #### Defined in
 
-[customer/rtm.ts:292](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L292)
+[customer/rtm.ts:292](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L292)
 
 ___
 
@@ -531,7 +531,7 @@ Returns an empty ticket form of a prechat or postchat survey.
 
 #### Defined in
 
-[customer/rtm.ts:327](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L327)
+[customer/rtm.ts:327](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L327)
 
 ___
 
@@ -553,7 +553,7 @@ It returns the info on a given URL.
 
 #### Defined in
 
-[customer/rtm.ts:343](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L343)
+[customer/rtm.ts:343](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L343)
 
 ___
 
@@ -575,7 +575,7 @@ It returns chat info for the chats a Customer participated in.
 
 #### Defined in
 
-[customer/rtm.ts:67](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L67)
+[customer/rtm.ts:67](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L67)
 
 ___
 
@@ -597,7 +597,7 @@ Lists statuses of groups.
 
 #### Defined in
 
-[customer/rtm.ts:300](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L300)
+[customer/rtm.ts:300](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L300)
 
 ___
 
@@ -620,7 +620,7 @@ Returns threads that the current Customer has access to in a given chat.
 
 #### Defined in
 
-[customer/rtm.ts:76](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L76)
+[customer/rtm.ts:76](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L76)
 
 ___
 
@@ -643,7 +643,7 @@ Note: uses the access token from TokenGetter provided in the constructor.
 
 #### Defined in
 
-[customer/rtm.ts:51](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L51)
+[customer/rtm.ts:51](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L51)
 
 ___
 
@@ -666,7 +666,7 @@ Marks events as seen by Agent.
 
 #### Defined in
 
-[customer/rtm.ts:352](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L352)
+[customer/rtm.ts:352](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L352)
 
 ___
 
@@ -705,7 +705,7 @@ Note: multiple subscriptions for the same push are not allowed in sigle websocke
 
 #### Defined in
 
-[customer/rtm.ts:41](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L41)
+[customer/rtm.ts:41](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L41)
 
 ___
 
@@ -727,7 +727,7 @@ Requests a welcome message.
 
 #### Defined in
 
-[customer/rtm.ts:335](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L335)
+[customer/rtm.ts:335](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L335)
 
 ___
 
@@ -749,7 +749,7 @@ Restarts an archived chat
 
 #### Defined in
 
-[customer/rtm.ts:101](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L101)
+[customer/rtm.ts:101](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L101)
 
 ___
 
@@ -774,7 +774,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:157](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L157)
+[internal/index.ts:157](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L157)
 
 ___
 
@@ -800,7 +800,7 @@ with the present parameter set to false.
 
 #### Defined in
 
-[customer/rtm.ts:122](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L122)
+[customer/rtm.ts:122](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L122)
 
 ___
 
@@ -822,7 +822,7 @@ Sends postback for rich message
 
 #### Defined in
 
-[customer/rtm.ts:134](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L134)
+[customer/rtm.ts:134](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L134)
 
 ___
 
@@ -845,7 +845,7 @@ Sends a sneak peek to a chat.
 
 #### Defined in
 
-[customer/rtm.ts:144](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L144)
+[customer/rtm.ts:144](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L144)
 
 ___
 
@@ -869,7 +869,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L191)
+[internal/index.ts:191](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L191)
 
 ___
 
@@ -891,7 +891,7 @@ Sets session fields for Customer.
 
 #### Defined in
 
-[customer/rtm.ts:285](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L285)
+[customer/rtm.ts:285](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L285)
 
 ___
 
@@ -913,7 +913,7 @@ Starts a chat
 
 #### Defined in
 
-[customer/rtm.ts:93](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L93)
+[customer/rtm.ts:93](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L93)
 
 ___
 
@@ -944,7 +944,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:177](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L177)
+[internal/index.ts:177](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L177)
 
 ___
 
@@ -968,7 +968,7 @@ ___
 
 #### Defined in
 
-[internal/index.ts:187](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/internal/index.ts#L187)
+[internal/index.ts:187](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/internal/index.ts#L187)
 
 ___
 
@@ -991,7 +991,7 @@ Updates chat properties
 
 #### Defined in
 
-[customer/rtm.ts:153](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L153)
+[customer/rtm.ts:153](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L153)
 
 ___
 
@@ -1013,7 +1013,7 @@ Updates Customer's properties.
 
 #### Defined in
 
-[customer/rtm.ts:277](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L277)
+[customer/rtm.ts:277](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L277)
 
 ___
 
@@ -1036,7 +1036,7 @@ Updates the page URL and title
 
 #### Defined in
 
-[customer/rtm.ts:255](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L255)
+[customer/rtm.ts:255](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L255)
 
 ___
 
@@ -1061,7 +1061,7 @@ Updates event properties
 
 #### Defined in
 
-[customer/rtm.ts:201](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L201)
+[customer/rtm.ts:201](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L201)
 
 ___
 
@@ -1085,4 +1085,4 @@ Updates thread properties
 
 #### Defined in
 
-[customer/rtm.ts:172](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/rtm.ts#L172)
+[customer/rtm.ts:172](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/rtm.ts#L172)

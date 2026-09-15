@@ -36,7 +36,7 @@ BaseUser.avatar
 
 #### Defined in
 
-[customer/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L8)
+[customer/structures/users.ts:10](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L10)
 
 ___
 
@@ -50,7 +50,7 @@ BaseUser.email
 
 #### Defined in
 
-[customer/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L4)
+[customer/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L6)
 
 ___
 
@@ -64,7 +64,7 @@ BaseUser.events\_seen\_up\_to
 
 #### Defined in
 
-[customer/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L5)
+[customer/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L7)
 
 ___
 
@@ -78,7 +78,7 @@ BaseUser.id
 
 #### Defined in
 
-[customer/structures/users.ts:2](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L2)
+[customer/structures/users.ts:4](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L4)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[customer/structures/users.ts:19](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L19)
+[customer/structures/users.ts:24](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L24)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[customer/structures/users.ts:18](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L18)
+[customer/structures/users.ts:23](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L23)
 
 ___
 
@@ -112,7 +112,7 @@ BaseUser.name
 
 #### Defined in
 
-[customer/structures/users.ts:3](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L3)
+[customer/structures/users.ts:5](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L5)
 
 ___
 
@@ -126,7 +126,7 @@ BaseUser.present
 
 #### Defined in
 
-[customer/structures/users.ts:7](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L7)
+[customer/structures/users.ts:9](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L9)
 
 ___
 
@@ -140,4 +140,4 @@ BaseUser.type
 
 #### Defined in
 
-[customer/structures/users.ts:6](https://github.com/livechat/lc-sdk-js/blob/fb04738/src/customer/structures/users.ts#L6)
+[customer/structures/users.ts:8](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/customer/structures/users.ts#L8)
