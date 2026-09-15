@@ -28,6 +28,7 @@
 - [Highlights](../interfaces/agent_structures_structures.Highlights.md)
 - [InitialChat](../interfaces/agent_structures_structures.InitialChat.md)
 - [InitialThread](../interfaces/agent_structures_structures.InitialThread.md)
+- [LastEvent](../interfaces/agent_structures_structures.LastEvent.md)
 - [LastEventPerType](../interfaces/agent_structures_structures.LastEventPerType.md)
 - [LastPage](../interfaces/agent_structures_structures.LastPage.md)
 - [LastThreadSummary](../interfaces/agent_structures_structures.LastThreadSummary.md)
@@ -67,7 +68,7 @@
 
 #### Defined in
 
-[agent/structures/structures.ts:190](https://github.com/livechat/lc-sdk-js/blob/99c5b92/src/agent/structures/structures.ts#L190)
+[agent/structures/structures.ts:190](https://github.com/livechat/lc-sdk-js/blob/6ee6e34/src/agent/structures/structures.ts#L190)
 
 ___
 
@@ -77,4 +78,4 @@ ___
 
 #### Defined in
 
-[agent/structures/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/99c5b92/src/agent/structures/structures.ts#L188)
+[agent/structures/structures.ts:188](https://github.com/livechat/lc-sdk-js/blob/6ee6e34/src/agent/structures/structures.ts#L188)
