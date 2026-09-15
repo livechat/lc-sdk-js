@@ -46,6 +46,7 @@
 - [InitialThread](agent_structures.md#initialthread)
 - [InitialUser](agent_structures.md#initialuser)
 - [IntegerFilter](agent_structures.md#integerfilter)
+- [LastEvent](agent_structures.md#lastevent)
 - [LastEventPerType](agent_structures.md#lasteventpertype)
 - [LastPage](agent_structures.md#lastpage)
 - [LastThreadSummary](agent_structures.md#lastthreadsummary)
@@ -336,6 +337,12 @@ ___
 ### IntegerFilter
 
 Re-exports [IntegerFilter](agent_structures_structures.md#integerfilter)
+
+___
+
+### LastEvent
+
+Re-exports [LastEvent](../interfaces/agent_structures_structures.LastEvent.md)
 
 ___
 
