@@ -13,6 +13,7 @@
 ### Interfaces
 
 - [Access](../interfaces/agent_structures_structures.Access.md)
+- [Address](../interfaces/agent_structures_structures.Address.md)
 - [AgentForTransfer](../interfaces/agent_structures_structures.AgentForTransfer.md)
 - [Application](../interfaces/agent_structures_structures.Application.md)
 - [ArchivedChat](../interfaces/agent_structures_structures.ArchivedChat.md)
@@ -29,6 +30,7 @@
 - [Highlights](../interfaces/agent_structures_structures.Highlights.md)
 - [InitialChat](../interfaces/agent_structures_structures.InitialChat.md)
 - [InitialThread](../interfaces/agent_structures_structures.InitialThread.md)
+- [LastEvent](../interfaces/agent_structures_structures.LastEvent.md)
 - [LastEventPerType](../interfaces/agent_structures_structures.LastEventPerType.md)
 - [LastThreadSummary](../interfaces/agent_structures_structures.LastThreadSummary.md)
 - [License](../interfaces/agent_structures_structures.License.md)

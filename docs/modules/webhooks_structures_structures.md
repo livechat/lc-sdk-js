@@ -30,4 +30,4 @@
 
 #### Defined in
 
-[webhooks/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/303bec4/src/webhooks/structures/structures.ts#L47)
+[webhooks/structures/structures.ts:47](https://github.com/livechat/lc-sdk-js/blob/33c4430/src/webhooks/structures/structures.ts#L47)

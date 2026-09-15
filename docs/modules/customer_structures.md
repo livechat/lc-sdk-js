@@ -7,6 +7,7 @@
 ### References
 
 - [Access](customer_structures.md#access)
+- [Address](customer_structures.md#address)
 - [Agent](customer_structures.md#agent)
 - [Answer](customer_structures.md#answer)
 - [Application](customer_structures.md#application)
@@ -81,6 +82,12 @@
 ### Access
 
 Re-exports [Access](../interfaces/customer_structures_structures.Access.md)
+
+___
+
+### Address
+
+Re-exports [Address](../interfaces/customer_structures_structures.Address.md)
 
 ___
 

@@ -7,6 +7,7 @@
 ### References
 
 - [Access](agent_structures.md#access)
+- [Address](agent_structures.md#address)
 - [Agent](agent_structures.md#agent)
 - [AgentForTransfer](agent_structures.md#agentfortransfer)
 - [AgentResponseFilter](agent_structures.md#agentresponsefilter)
@@ -30,6 +31,7 @@
 - [Ecommerce](agent_structures.md#ecommerce)
 - [EcommerceAddon](agent_structures.md#ecommerceaddon)
 - [EcommerceOption](agent_structures.md#ecommerceoption)
+- [EcommerceSalesFilter](agent_structures.md#ecommercesalesfilter)
 - [Element](agent_structures.md#element)
 - [EmptyResponse](agent_structures.md#emptyresponse)
 - [Event](agent_structures.md#event)
@@ -49,6 +51,7 @@
 - [InitialChat](agent_structures.md#initialchat)
 - [InitialThread](agent_structures.md#initialthread)
 - [InitialUser](agent_structures.md#initialuser)
+- [LastEvent](agent_structures.md#lastevent)
 - [LastEventPerType](agent_structures.md#lasteventpertype)
 - [LastThreadSummary](agent_structures.md#lastthreadsummary)
 - [License](agent_structures.md#license)
@@ -109,6 +112,12 @@
 ### Access
 
 Re-exports [Access](../interfaces/agent_structures_structures.Access.md)
+
+___
+
+### Address
+
+Re-exports [Address](../interfaces/agent_structures_structures.Address.md)
 
 ___
 
@@ -250,6 +259,12 @@ Re-exports [EcommerceOption](../interfaces/agent_structures_events.EcommerceOpti
 
 ___
 
+### EcommerceSalesFilter
+
+Re-exports [EcommerceSalesFilter](../interfaces/agent_structures_filters.EcommerceSalesFilter.md)
+
+___
+
 ### Element
 
 Re-exports [Element](../interfaces/agent_structures_events.Element.md)
@@ -361,6 +376,12 @@ ___
 ### InitialUser
 
 Re-exports [InitialUser](../interfaces/agent_structures_users.InitialUser.md)
+
+___
+
+### LastEvent
+
+Re-exports [LastEvent](../interfaces/agent_structures_structures.LastEvent.md)
 
 ___
 

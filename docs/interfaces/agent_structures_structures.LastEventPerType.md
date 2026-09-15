@@ -6,4 +6,4 @@
 
 ## Indexable
 
-▪ [type: `string`]: [`Event`](../modules/agent_structures_events.md#event)
+▪ [type: `string`]: [`LastEvent`](agent_structures_structures.LastEvent.md)
