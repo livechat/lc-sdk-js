@@ -17,6 +17,12 @@ export interface ListThreadsResponse {
   previous_page_id?: string;
 }
 
+export interface GetThreadTranscriptResponse {
+  chat_id: string;
+  thread_id: string;
+  transcript: string;
+}
+
 export interface GetChatResponse {
   id: string;
   users: User[];
