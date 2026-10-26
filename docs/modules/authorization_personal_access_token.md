@@ -27,4 +27,4 @@
 
 #### Defined in
 
-[authorization/personal_access_token.ts:6](https://github.com/livechat/lc-sdk-js/blob/6ee6e34/src/authorization/personal_access_token.ts#L6)
+[authorization/personal_access_token.ts:6](https://github.com/livechat/lc-sdk-js/blob/ce65b5d8/src/authorization/personal_access_token.ts#L6)
