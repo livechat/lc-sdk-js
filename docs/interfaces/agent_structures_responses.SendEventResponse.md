@@ -18,4 +18,4 @@
 
 #### Defined in
 
-[agent/structures/responses.ts:48](https://github.com/livechat/lc-sdk-js/blob/72635fc/src/agent/structures/responses.ts#L48)
+[agent/structures/responses.ts:54](https://github.com/livechat/lc-sdk-js/blob/a3fc3971/src/agent/structures/responses.ts#L54)

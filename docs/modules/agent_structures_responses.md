@@ -9,6 +9,7 @@
 - [EmptyResponse](../interfaces/agent_structures_responses.EmptyResponse.md)
 - [GetChatResponse](../interfaces/agent_structures_responses.GetChatResponse.md)
 - [GetCustomerResponse](../interfaces/agent_structures_responses.GetCustomerResponse.md)
+- [GetThreadTranscriptResponse](../interfaces/agent_structures_responses.GetThreadTranscriptResponse.md)
 - [ListArchivesResponse](../interfaces/agent_structures_responses.ListArchivesResponse.md)
 - [ListChatsResponse](../interfaces/agent_structures_responses.ListChatsResponse.md)
 - [ListThreadsResponse](../interfaces/agent_structures_responses.ListThreadsResponse.md)
