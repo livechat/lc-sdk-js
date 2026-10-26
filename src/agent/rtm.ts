@@ -7,6 +7,7 @@ import type {
   EmptyResponse,
   GetChatResponse,
   GetCustomerResponse,
+  GetThreadTranscriptResponse,
   ListArchivesParameters,
   ListArchivesResponse,
   ListChatParameters,
@@ -379,6 +380,15 @@ export default class RTM extends RTMAPI {
    */
   async requestThreadSummary(chat_id: string, thread_id: string): Promise<EmptyResponse> {
     return this.send("request_thread_summary", { chat_id, thread_id });
+  }
+
+  /**
+   * Returns a plain-text transcript of a given thread.
+   * @param chat_id - chat ID of thread to get transcript for
+   * @param thread_id - thread to get transcript for
+   */
+  async getThreadTranscript(chat_id: string, thread_id: string): Promise<GetThreadTranscriptResponse> {
+    return this.send("get_thread_transcript", { chat_id, thread_id });
   }
 
   /**
