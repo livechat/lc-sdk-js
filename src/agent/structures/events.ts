@@ -69,6 +69,7 @@ export interface RichMessage extends BaseEvent {
   custom_id?: string;
   author_id: string;
   template_id: string;
+  layout?: string;
   elements?: Element[];
 }
 
